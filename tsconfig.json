@@ -1,16 +1,13 @@
 {
     "compilerOptions": {
       "module": "none",
-      "target": "ES5",
-      "noImplicitAny": false,
-      "skipLibCheck": true,
-      "sourceMap": false,
-      "declaration": false,
-      "downlevelIteration": true,
-      "experimentalDecorators": true,
+      "lib": [
+        "es5"
+      ],
+      "outDir": "dist"
     },
 
     "paths": {
-        "*": ["Parsed_JS/*.d.ts"]
+        "*": ["PixInsightDefinitions/*.d.ts"]
     },
 }
