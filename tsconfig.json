@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "none",
+      "target": "ES5",
+      "noImplicitAny": false,
+      "skipLibCheck": true,
+      "sourceMap": false,
+      "declaration": false,
+      "downlevelIteration": true,
+      "experimentalDecorators": true,
+    },
+
+    "paths": {
+        "*": ["Parsed_JS/*.d.ts"]
+    },
+}
