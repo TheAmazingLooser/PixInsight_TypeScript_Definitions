@@ -1,31 +1,31 @@
 # PixInsight TypeScript Definitions
-This repository provides you with an easy way to code scripts for PixInsight.
-PixInsight is a Software-Program used for editing and processing astrophotography images.
-It does provide a small JavaScript-Runtime to automate certain processes. But this JavaScript Runtime lacks documentation.
-The only real way of getting PJSR (PixInsight JavaScript Runtime) information is via the ObjectExplorer in PixInsight.
-This tool just gives an overview of what types are defined in the PJSR and what their Methods,... are.
+This repository provides TypeScript definitions to be able to code scripts for PixInsight.
+PixInsight is a software program for editing and processing astrophotographic images.
+It provides a small JavaScript runtime to automate certain processes. However, this JavaScript runtime lacks documentation.
+The only real way to get information about the PJSR (PixInsight JavaScript Runtime) is through the ObjectExplorer in PixInsight.
+This tool only gives an overview of what types are defined in the PJSR and what their methods,... are.
 
-## Known Bugs
-- The parser does not correctly translates functions which do have a non-optional parameter following a optional one.
-  The resulting funcions will have only optional ones (even tho this is per definition wrong).
+## Known bugs
+- The parser does not correctly translate functions which have a non-optional parameter after an optional one.
+  The resulting functions will have only optional ones (even though this is wrong by definition).
   
-- There are not constantces.
-  PI uses a unique `#import`-system which is not represented in the default ES5-Standard and not reproduceable in TS.
-  This leads to the need of declaring constances in TypeScript, which are currently missing as a whole!
+- There are no constants.
+  PI uses a unique `#import`-system which is not represented in the standard ES5 and cannot be reproduced in TypeScript.
+  This leads to the need to declare constants in TypeScript, which is currently missing altogether!
 
 
 # FAQ
-## How are the definitions generated?
-If you look at a definition-file, it seems obvious, that they have to be generated. And guess what,... They are!
-To generate those following things need to be done:
+## How are definitions generated?
+When you look at a definition file, it seems obvious that they are generated. And guess what... They are!
+To generate them, the following things are needed
 
-1) Dump the whole PJSR (this is pretty easy since PI provides you an class to do all this work for you. The `TypeDescription`.
-2) Convert the dumped data to the _.d.ts_ files.
+1) Dump the whole PJSR (this is quite easy, since PI provides you with a class that does all this work for you. The `TypeDescription`.
+2) Convert the dumped data into _.d.ts_ files.
 
-This all might sound easy in theory, but it does get quite complicated once you get started with it.
-The main complication here is, that the methods are just strings representing the function signature. (And BOY, they look uniform but they're not!)
+This all sounds simple in theory, but it gets quite complicated once you start doing it.
+The main complication here is that the methods are just strings representing the function signature. (And BOY, they look uniform, but they're not!)
 
-If you want to get the same base-data I got: Here is the JavaScript (run it directly in PI) which I'm using to dump the PJSR into a JSON-File:
+If you want to get the same basic data I have: Here's the JavaScript (run directly in PI) I use to dump the PJSR into a JSON file:
 ```js
 var a = {};
 
@@ -79,20 +79,20 @@ f.close();
 
 ```
 
-Before running this blindly, you need to _**change the File-Path**_ so that the file is actually saved, where you want it to be saved.
+Before you run this blindly, you need to _**change the file path**_ so that the file is actually stored where you want it.
 
-## A process is not in the definitions. Why?
-This can happen. In order for me to generate information about a process, I do need to have it installed.
-This not only trashes my PI installation, this would also overfill the definitions with useless processes over time.
+## A process is not in the definitions. Why not?
+This can happen. In order for me to generate information about a process, I need to have it installed.
+Not only would this trash up my PI installation, it would also over time fill the definitions with useless processes.
 If you want a very specific process to be part of the definitions, you can fork the repository and make a PR (pull request).
-I'll review it and if it fits, approve it.
+I'll look at it, and if it fits, I'll approve it.
 
-## How can I help to improve the parser/generator for the definitions?
-The JSON-File is pretty final. There wont be any changes soon.
-The parser for this very file (which also generates the definitions) is currently private.
-If you're really interested in helping me improving this, you might want to know following things:
-It's written is C#, if you cannot code in C#, you might not be able to help.
+## How can I help improve the parser/generator for the definitions?
+The JSON file is pretty final. There will be no changes to this in the near future.
+The parser for that file (which also generates the definitions) is currently private.
+If you're really interested in helping me improve it, you might want to know the following:
+It's written in C#, so if you can't code in C#, you might not be able to help.
 
-**I might port the parser to JS at some point**.
-This would allow me to actually include a script in PI which then completely generates a TS-environment on a click.
-But for that to come reality I definitely need to make the parser work like intended.
+**I may port the parser to JavaScript at some point.**
+This would allow me to actually include a script in PI that would generate a complete TypeScript environment in one click.
+But for that to become a reality, I definitely need to get the parser to work as intended.
