@@ -17,7 +17,7 @@ declare class VerticalSlider extends Slider {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -32,5 +32,10 @@ declare class VerticalSlider extends Slider {
 
     //-------------------------
     //----static Properties----
+    //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
     //-------------------------
 }

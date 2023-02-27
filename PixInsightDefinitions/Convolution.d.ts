@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Image: Convolution.prototype.Image;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Library: Convolution.prototype.Library;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Parametric: Convolution.prototype.Parametric;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -28,7 +25,7 @@ declare class Convolution extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Convolution: Convolution);
+    constructor(Convolution?: Convolution);
 
 
     //-------------------------
@@ -52,4 +49,12 @@ declare class Convolution extends ProcessInstance {
     static shape: number;
     static sigma: number;
     static viewId: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Image;
+    Library;
+    Parametric;
 }

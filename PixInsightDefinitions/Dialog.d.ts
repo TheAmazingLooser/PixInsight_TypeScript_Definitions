@@ -19,7 +19,7 @@ declare class Dialog extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -43,14 +43,14 @@ declare class Dialog extends Control {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public browseScriptDocumentation(scriptName: string): boolean;
-    public browseScriptDocumentation(scriptName: string, title: string): boolean;
-    public browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
+    public static browseScriptDocumentation(scriptName: string): boolean;
+    public static browseScriptDocumentation(scriptName: string, title: string): boolean;
+    public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
 
 
-    public openBrowser(uri: string): void;
-    public openBrowser(uri: string, title: string): void;
-    public openBrowser(uri: string, title: string, width: number, height: number): void;
+    public static openBrowser(uri: string): void;
+    public static openBrowser(uri: string, title: string): void;
+    public static openBrowser(uri: string, title: string, width: number, height: number): void;
 
 
 
@@ -60,4 +60,9 @@ declare class Dialog extends Control {
     //-------------------------
     static result: number;
     static userResizable: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

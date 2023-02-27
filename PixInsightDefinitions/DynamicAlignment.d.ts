@@ -1,12 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const SameAsTarget: DynamicAlignment.prototype.SameAsTarget;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f32: DynamicAlignment.prototype.f32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f64: DynamicAlignment.prototype.f64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i16: DynamicAlignment.prototype.i16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i32: DynamicAlignment.prototype.i32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i8: DynamicAlignment.prototype.i8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -42,7 +36,7 @@ declare class DynamicAlignment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DynamicAlignment: DynamicAlignment);
+    constructor(DynamicAlignment?: DynamicAlignment);
 
 
     //-------------------------
@@ -77,4 +71,15 @@ declare class DynamicAlignment extends ProcessInstance {
     static targetImageWidth: number;
     static targetSearchRadius: number;
     static threshold: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    SameAsTarget;
+    f32;
+    f64;
+    i16;
+    i32;
+    i8;
 }

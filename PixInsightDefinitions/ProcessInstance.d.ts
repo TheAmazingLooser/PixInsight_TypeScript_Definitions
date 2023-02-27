@@ -17,7 +17,7 @@ declare class ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ProcessInstance: ProcessInstance);
+    constructor(ProcessInstance?: ProcessInstance);
 
 
     //-------------------------
@@ -100,17 +100,22 @@ declare class ProcessInstance {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public fromIcon(iconId: string): ProcessInstance;
+    public static fromIcon(iconId: string): ProcessInstance;
 
 
 
 
-    public iconsByProcessId(processId: string): Array<any>;
+    public static iconsByProcessId(processId: string): Array<any>;
 
 
 
 
     //-------------------------
     //----static Properties----
+    //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
     //-------------------------
 }

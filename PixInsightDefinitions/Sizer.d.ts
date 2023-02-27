@@ -28,7 +28,7 @@ declare class Sizer {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(vertical: boolean);
+    constructor(vertical?: boolean);
 
 
     //-------------------------
@@ -137,4 +137,9 @@ declare class Sizer {
     static spacing: number /* unsigned */;
     static unscaledMargin: number /* unsigned */;
     static unscaledSpacing: number /* unsigned */;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

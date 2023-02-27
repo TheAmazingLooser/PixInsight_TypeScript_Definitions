@@ -20,7 +20,7 @@ declare class StarXTerminator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarXTerminator: StarXTerminator);
+    constructor(StarXTerminator?: StarXTerminator);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class StarXTerminator extends ProcessInstance {
     static overlap: number;
     static stars: boolean;
     static unscreen: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

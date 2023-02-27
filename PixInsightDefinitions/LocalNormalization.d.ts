@@ -1,26 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const GenerateNormalizedImages_Always: LocalNormalization.prototype.GenerateNormalizedImages_Always;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GenerateNormalizedImages_GlobalExecutionOnly: LocalNormalization.prototype.GenerateNormalizedImages_GlobalExecutionOnly;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GenerateNormalizedImages_Never: LocalNormalization.prototype.GenerateNormalizedImages_Never;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GenerateNormalizedImages_ViewExecutionOnly: LocalNormalization.prototype.GenerateNormalizedImages_ViewExecutionOnly;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_Abort: LocalNormalization.prototype.OnError_Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_AskUser: LocalNormalization.prototype.OnError_AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_Continue: LocalNormalization.prototype.OnError_Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Auto: LocalNormalization.prototype.PSFType_Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Gaussian: LocalNormalization.prototype.PSFType_Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat15: LocalNormalization.prototype.PSFType_Moffat15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat4: LocalNormalization.prototype.PSFType_Moffat4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat6: LocalNormalization.prototype.PSFType_Moffat6;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat8: LocalNormalization.prototype.PSFType_Moffat8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_MoffatA: LocalNormalization.prototype.PSFType_MoffatA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PlotNormalizationFunctions_DontPlot: LocalNormalization.prototype.PlotNormalizationFunctions_DontPlot;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PlotNormalizationFunctions_Line3D: LocalNormalization.prototype.PlotNormalizationFunctions_Line3D;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PlotNormalizationFunctions_Map3D: LocalNormalization.prototype.PlotNormalizationFunctions_Map3D;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PlotNormalizationFunctions_Palette3D: LocalNormalization.prototype.PlotNormalizationFunctions_Palette3D;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ScaleEvaluationMethod_MultiscaleAnalysis: LocalNormalization.prototype.ScaleEvaluationMethod_MultiscaleAnalysis;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ScaleEvaluationMethod_PSFSignal: LocalNormalization.prototype.ScaleEvaluationMethod_PSFSignal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -98,7 +78,7 @@ declare class LocalNormalization extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LocalNormalization: LocalNormalization);
+    constructor(LocalNormalization?: LocalNormalization);
 
 
     //-------------------------
@@ -175,4 +155,29 @@ declare class LocalNormalization extends ProcessInstance {
     static targetRejectionThreshold: number;
     static truncate: boolean;
     static useFileThreads: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    GenerateNormalizedImages_Always;
+    GenerateNormalizedImages_GlobalExecutionOnly;
+    GenerateNormalizedImages_Never;
+    GenerateNormalizedImages_ViewExecutionOnly;
+    OnError_Abort;
+    OnError_AskUser;
+    OnError_Continue;
+    PSFType_Auto;
+    PSFType_Gaussian;
+    PSFType_Moffat15;
+    PSFType_Moffat4;
+    PSFType_Moffat6;
+    PSFType_Moffat8;
+    PSFType_MoffatA;
+    PlotNormalizationFunctions_DontPlot;
+    PlotNormalizationFunctions_Line3D;
+    PlotNormalizationFunctions_Map3D;
+    PlotNormalizationFunctions_Palette3D;
+    ScaleEvaluationMethod_MultiscaleAnalysis;
+    ScaleEvaluationMethod_PSFSignal;
 }

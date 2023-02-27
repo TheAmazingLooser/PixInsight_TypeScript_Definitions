@@ -38,7 +38,7 @@ declare class ScrollBox extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -101,4 +101,9 @@ declare class ScrollBox extends Frame {
     static verticalScrollPosition: number;
     static verticalTracking: boolean;
     static viewport: Control;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

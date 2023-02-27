@@ -47,4 +47,9 @@ declare class CryptographicHash {
     //-------------------------
     static algorithmName: string;
     static hashLength: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

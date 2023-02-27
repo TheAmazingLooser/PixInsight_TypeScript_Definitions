@@ -1,40 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Abort: ImageCalibration.prototype.Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AskUser: ImageCalibration.prototype.AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Auto: ImageCalibration.prototype.Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BGGR: ImageCalibration.prototype.BGGR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BGRG: ImageCalibration.prototype.BGRG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Continue: ImageCalibration.prototype.Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CustomKeyword: ImageCalibration.prototype.CustomKeyword;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DetectCFA: ImageCalibration.prototype.DetectCFA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ForceCFA: ImageCalibration.prototype.ForceCFA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GBGR: ImageCalibration.prototype.GBGR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GBRG: ImageCalibration.prototype.GBRG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GRBG: ImageCalibration.prototype.GRBG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GRGB: ImageCalibration.prototype.GRGB;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IgnoreCFA: ImageCalibration.prototype.IgnoreCFA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Keyword: ImageCalibration.prototype.Keyword;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Literal: ImageCalibration.prototype.Literal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_KSigma: ImageCalibration.prototype.NoiseEvaluation_KSigma;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_MRS: ImageCalibration.prototype.NoiseEvaluation_MRS;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_NStar: ImageCalibration.prototype.NoiseEvaluation_NStar;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OutputPedestal_Auto: ImageCalibration.prototype.OutputPedestal_Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OutputPedestal_Literal: ImageCalibration.prototype.OutputPedestal_Literal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Auto: ImageCalibration.prototype.PSFType_Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Gaussian: ImageCalibration.prototype.PSFType_Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat15: ImageCalibration.prototype.PSFType_Moffat15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat4: ImageCalibration.prototype.PSFType_Moffat4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat6: ImageCalibration.prototype.PSFType_Moffat6;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat8: ImageCalibration.prototype.PSFType_Moffat8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_MoffatA: ImageCalibration.prototype.PSFType_MoffatA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGBG: ImageCalibration.prototype.RGBG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGGB: ImageCalibration.prototype.RGGB;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f32: ImageCalibration.prototype.f32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f64: ImageCalibration.prototype.f64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i16: ImageCalibration.prototype.i16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i32: ImageCalibration.prototype.i32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -110,7 +76,7 @@ declare class ImageCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ImageCalibration: ImageCalibration);
+    constructor(ImageCalibration?: ImageCalibration);
 
 
     //-------------------------
@@ -185,4 +151,43 @@ declare class ImageCalibration extends ProcessInstance {
     static structureLayers: number;
     static targetFrames: Array<any>;
     static useFileThreads: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Abort;
+    AskUser;
+    Auto;
+    BGGR;
+    BGRG;
+    Continue;
+    CustomKeyword;
+    DetectCFA;
+    ForceCFA;
+    GBGR;
+    GBRG;
+    GRBG;
+    GRGB;
+    IgnoreCFA;
+    Keyword;
+    Literal;
+    NoiseEvaluation_KSigma;
+    NoiseEvaluation_MRS;
+    NoiseEvaluation_NStar;
+    OutputPedestal_Auto;
+    OutputPedestal_Literal;
+    PSFType_Auto;
+    PSFType_Gaussian;
+    PSFType_Moffat15;
+    PSFType_Moffat4;
+    PSFType_Moffat6;
+    PSFType_Moffat8;
+    PSFType_MoffatA;
+    RGBG;
+    RGGB;
+    f32;
+    f64;
+    i16;
+    i32;
 }

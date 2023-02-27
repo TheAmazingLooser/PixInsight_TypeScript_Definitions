@@ -27,7 +27,7 @@ declare class FITSKeyword {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(name: string, value: string, comment: string);
+    constructor(name: string, value: string, comment?: string);
     constructor(k: FITSKeyword);
 
 
@@ -66,4 +66,9 @@ declare class FITSKeyword {
     static numericValue: number;
     static strippedValue: string;
     static value: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

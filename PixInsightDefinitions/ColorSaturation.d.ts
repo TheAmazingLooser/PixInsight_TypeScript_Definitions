@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AkimaSubsplines: ColorSaturation.prototype.AkimaSubsplines;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CubicSpline: ColorSaturation.prototype.CubicSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Linear: ColorSaturation.prototype.Linear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -23,7 +20,7 @@ declare class ColorSaturation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ColorSaturation: ColorSaturation);
+    constructor(ColorSaturation?: ColorSaturation);
 
 
     //-------------------------
@@ -42,4 +39,12 @@ declare class ColorSaturation extends ProcessInstance {
     static HS: Array<any>;
     static HSt: number;
     static hueShift: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AkimaSubsplines;
+    CubicSpline;
+    Linear;
 }

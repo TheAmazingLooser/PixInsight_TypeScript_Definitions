@@ -20,7 +20,7 @@ declare class RadialGradientBrush extends GradientBrush {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(center: Point, radius: number, focalPoint: Point, stops: Array<any>, spread: number);
+    constructor(center: Point, radius: number, focalPoint?: Point, stops?: Array<any>, spread?: number);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class RadialGradientBrush extends GradientBrush {
     static center: Point;
     static focalPoint: Point;
     static radius: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

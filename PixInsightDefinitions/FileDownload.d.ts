@@ -35,4 +35,9 @@ declare class FileDownload extends FileTransfer {
     //----static Properties----
     //-------------------------
     static contentType: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

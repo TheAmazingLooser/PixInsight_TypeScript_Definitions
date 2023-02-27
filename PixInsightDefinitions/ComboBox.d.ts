@@ -27,7 +27,7 @@ declare class ComboBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -96,4 +96,9 @@ declare class ComboBox extends Control {
     static minItemCharWidth: number;
     static numberOfItems: number;
     static popupToolTip: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

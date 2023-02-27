@@ -17,7 +17,7 @@ declare class NetworkService extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NetworkService: NetworkService);
+    constructor(NetworkService?: NetworkService);
 
 
     //-------------------------
@@ -32,5 +32,10 @@ declare class NetworkService extends ProcessInstance {
 
     //-------------------------
     //----static Properties----
+    //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
     //-------------------------
 }

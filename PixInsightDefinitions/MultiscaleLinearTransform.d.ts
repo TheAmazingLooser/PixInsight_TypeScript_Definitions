@@ -1,16 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AllPixelChanges: MultiscaleLinearTransform.prototype.AllPixelChanges;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DecreasingPixels: MultiscaleLinearTransform.prototype.DecreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Disabled: MultiscaleLinearTransform.prototype.Disabled;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Hyperbolic: MultiscaleLinearTransform.prototype.Hyperbolic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IncreasingPixels: MultiscaleLinearTransform.prototype.IncreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Ln: MultiscaleLinearTransform.prototype.Ln;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Log10: MultiscaleLinearTransform.prototype.Log10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MultiscaleLinearTransform: MultiscaleLinearTransform.prototype.MultiscaleLinearTransform;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoFunction: MultiscaleLinearTransform.prototype.NoFunction;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StarletTransform: MultiscaleLinearTransform.prototype.StarletTransform;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -58,7 +48,7 @@ declare class MultiscaleLinearTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MultiscaleLinearTransform: MultiscaleLinearTransform);
+    constructor(MultiscaleLinearTransform?: MultiscaleLinearTransform);
 
 
     //-------------------------
@@ -105,4 +95,19 @@ declare class MultiscaleLinearTransform extends ProcessInstance {
     static toLuminance: boolean;
     static transform: number;
     static useMultiresolutionSupport: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AllPixelChanges;
+    DecreasingPixels;
+    Disabled;
+    Hyperbolic;
+    IncreasingPixels;
+    Ln;
+    Log10;
+    MultiscaleLinearTransform;
+    NoFunction;
+    StarletTransform;
 }

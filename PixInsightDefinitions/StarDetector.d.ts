@@ -65,4 +65,9 @@ declare class StarDetector {
     static structureLayers: number;
     static upperLimit: number;
     static xyStretch: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

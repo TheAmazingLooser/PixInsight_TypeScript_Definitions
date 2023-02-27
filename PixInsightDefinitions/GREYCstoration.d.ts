@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Bilinear: GREYCstoration.prototype.Bilinear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Nearest: GREYCstoration.prototype.Nearest;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RungeKutta: GREYCstoration.prototype.RungeKutta;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -32,7 +29,7 @@ declare class GREYCstoration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GREYCstoration: GREYCstoration);
+    constructor(GREYCstoration?: GREYCstoration);
 
 
     //-------------------------
@@ -60,4 +57,12 @@ declare class GREYCstoration extends ProcessInstance {
     static numberOfIterations: number;
     static precision: number;
     static spatialIntegrationStep: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Bilinear;
+    Nearest;
+    RungeKutta;
 }

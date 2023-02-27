@@ -20,7 +20,7 @@ declare class RadioButton extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class RadioButton extends Control {
     static checked: boolean;
     static state: number;
     static text: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

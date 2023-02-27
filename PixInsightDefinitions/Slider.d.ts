@@ -26,7 +26,7 @@ declare class Slider extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control, vertical: boolean /* false*/);
+    constructor(parent?: Control, vertical?: boolean /* false*/);
 
 
     //-------------------------
@@ -54,4 +54,9 @@ declare class Slider extends Control {
     static tickStyle: number;
     static tracking: boolean;
     static value: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -454,4 +454,9 @@ declare class VectorGraphics {
     static transformationEnabled: boolean;
     static transformationMatrix: Matrix;
     static transparentBackground: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

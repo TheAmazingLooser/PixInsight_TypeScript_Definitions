@@ -18,7 +18,7 @@ declare class ChannelMatch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ChannelMatch: ChannelMatch);
+    constructor(ChannelMatch?: ChannelMatch);
 
 
     //-------------------------
@@ -35,4 +35,9 @@ declare class ChannelMatch extends ProcessInstance {
     //----static Properties----
     //-------------------------
     static channels: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

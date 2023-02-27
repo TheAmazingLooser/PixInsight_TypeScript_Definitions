@@ -55,47 +55,47 @@ declare class TypeDescription {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public beginObjectDefinition(objectId: string): void;
+    public static beginObjectDefinition(objectId: string): void;
 
 
 
 
-    public defineConstant(formalDescription: string): void;
+    public static defineConstant(formalDescription: string): void;
 
 
-    public defineConstructor(formalDescription: string): void;
+    public static defineConstructor(formalDescription: string): void;
 
 
-    public defineEventHandler(formalDescription: string): void;
+    public static defineEventHandler(formalDescription: string): void;
 
 
-    public defineIncludedFile(formalDescription: string): void;
+    public static defineIncludedFile(formalDescription: string): void;
 
 
-    public defineMethod(formalDescription: string): void;
+    public static defineMethod(formalDescription: string): void;
 
 
-    public defineProperty(formalDescription: string): void;
-    public defineProperty(formalDescription: string, readOnly: boolean /* false*/): void;
+    public static defineProperty(formalDescription: string): void;
+    public static defineProperty(formalDescription: string, readOnly: boolean /* false*/): void;
 
 
-    public defineStaticMethod(formalDescription: string): void;
+    public static defineStaticMethod(formalDescription: string): void;
 
 
-    public defineStaticProperty(formalDescription: string): void;
-    public defineStaticProperty(formalDescription: string, readOnly: boolean /* false*/): void;
-
-
-
-
-
-
-    public inherit(objectId: string): void;
+    public static defineStaticProperty(formalDescription: string): void;
+    public static defineStaticProperty(formalDescription: string, readOnly: boolean /* false*/): void;
 
 
 
 
-    public objectDefined(objectId: string): boolean;
+
+
+    public static inherit(objectId: string): void;
+
+
+
+
+    public static objectDefined(objectId: string): boolean;
 
 
 
@@ -124,4 +124,9 @@ declare class TypeDescription {
     static properties: Array<any>;
     static staticMethods: Array<any>;
     static staticProperties: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

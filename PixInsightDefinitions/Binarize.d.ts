@@ -21,7 +21,7 @@ declare class Binarize extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Binarize: Binarize);
+    constructor(Binarize?: Binarize);
 
 
     //-------------------------
@@ -41,4 +41,9 @@ declare class Binarize extends ProcessInstance {
     static thresholdB: number;
     static thresholdG: number;
     static thresholdRK: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -1,18 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AllPixelChanges: ATrousWaveletTransformV1.prototype.AllPixelChanges;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DecreasingPixels: ATrousWaveletTransformV1.prototype.DecreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DirectionalMultiway: ATrousWaveletTransformV1.prototype.DirectionalMultiway;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Disabled: ATrousWaveletTransformV1.prototype.Disabled;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Hyperbolic: ATrousWaveletTransformV1.prototype.Hyperbolic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IncreasingPixels: ATrousWaveletTransformV1.prototype.IncreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Ln: ATrousWaveletTransformV1.prototype.Ln;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Log10: ATrousWaveletTransformV1.prototype.Log10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Morphological: ATrousWaveletTransformV1.prototype.Morphological;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoFunction: ATrousWaveletTransformV1.prototype.NoFunction;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Recursive: ATrousWaveletTransformV1.prototype.Recursive;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SignificantStructures: ATrousWaveletTransformV1.prototype.SignificantStructures;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -48,7 +36,7 @@ declare class ATrousWaveletTransformV1 extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ATrousWaveletTransformV1: ATrousWaveletTransformV1);
+    constructor(ATrousWaveletTransformV1?: ATrousWaveletTransformV1);
 
 
     //-------------------------
@@ -83,4 +71,21 @@ declare class ATrousWaveletTransformV1 extends ProcessInstance {
     static toChrominance: boolean;
     static toLuminance: boolean;
     static version: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AllPixelChanges;
+    DecreasingPixels;
+    DirectionalMultiway;
+    Disabled;
+    Hyperbolic;
+    IncreasingPixels;
+    Ln;
+    Log10;
+    Morphological;
+    NoFunction;
+    Recursive;
+    SignificantStructures;
 }

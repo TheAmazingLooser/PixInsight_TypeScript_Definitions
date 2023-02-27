@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AkimaSubsplines: CurvesTransformation.prototype.AkimaSubsplines;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CubicSpline: CurvesTransformation.prototype.CubicSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Linear: CurvesTransformation.prototype.Linear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -42,7 +39,7 @@ declare class CurvesTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CurvesTransformation: CurvesTransformation);
+    constructor(CurvesTransformation?: CurvesTransformation);
 
 
     //-------------------------
@@ -80,4 +77,12 @@ declare class CurvesTransformation extends ProcessInstance {
     static bt: number;
     static c: Array<any>;
     static ct: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AkimaSubsplines;
+    CubicSpline;
+    Linear;
 }

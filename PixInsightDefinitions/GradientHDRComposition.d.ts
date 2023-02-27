@@ -22,7 +22,7 @@ declare class GradientHDRComposition extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GradientHDRComposition: GradientHDRComposition);
+    constructor(GradientHDRComposition?: GradientHDRComposition);
 
 
     //-------------------------
@@ -43,4 +43,9 @@ declare class GradientHDRComposition extends ProcessInstance {
     static dLogBias: number;
     static generateMask: boolean;
     static targetFrames: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

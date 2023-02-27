@@ -19,7 +19,7 @@ declare class SectionBar extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control, title: string);
+    constructor(parent?: Control, title?: string);
 
 
     //-------------------------
@@ -61,4 +61,9 @@ declare class SectionBar extends Control {
     //-------------------------
     static checkBox: CheckBox;
     static section: Control;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

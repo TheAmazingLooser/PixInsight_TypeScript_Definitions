@@ -113,4 +113,9 @@ declare class ImageStatistics {
     static sumOfSquaresEnabled: boolean;
     static variance: number;
     static varianceEnabled: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

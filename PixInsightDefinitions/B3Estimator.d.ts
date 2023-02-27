@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const IntensityUnits_EnergyFrequency: B3Estimator.prototype.IntensityUnits_EnergyFrequency;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IntensityUnits_EnergyWavelength: B3Estimator.prototype.IntensityUnits_EnergyWavelength;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IntensityUnits_PhotonsFrequency: B3Estimator.prototype.IntensityUnits_PhotonsFrequency;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IntensityUnits_PhotonsWavelength: B3Estimator.prototype.IntensityUnits_PhotonsWavelength;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -53,7 +49,7 @@ declare class B3Estimator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(B3Estimator: B3Estimator);
+    constructor(B3Estimator?: B3Estimator);
 
 
     //-------------------------
@@ -101,4 +97,13 @@ declare class B3Estimator extends ProcessInstance {
     static syntheticImageViewId: string;
     static thermalMap: boolean;
     static thermalMapViewId: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    IntensityUnits_EnergyFrequency;
+    IntensityUnits_EnergyWavelength;
+    IntensityUnits_PhotonsFrequency;
+    IntensityUnits_PhotonsWavelength;
 }

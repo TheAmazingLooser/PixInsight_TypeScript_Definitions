@@ -21,7 +21,7 @@ declare class SurfaceSimplifier {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(tolerance: number);
+    constructor(tolerance?: number);
 
 
     //-------------------------
@@ -44,4 +44,9 @@ declare class SurfaceSimplifier {
     static rejectFraction: number;
     static rejectionEnabled: boolean;
     static tolerance: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

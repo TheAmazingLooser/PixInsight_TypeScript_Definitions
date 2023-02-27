@@ -39,7 +39,7 @@ declare class CosmeticCorrection extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CosmeticCorrection: CosmeticCorrection);
+    constructor(CosmeticCorrection?: CosmeticCorrection);
 
 
     //-------------------------
@@ -77,4 +77,9 @@ declare class CosmeticCorrection extends ProcessInstance {
     static useAutoDetect: boolean;
     static useDefectList: boolean;
     static useMasterDark: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -25,7 +25,7 @@ declare class LRGBCombination extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LRGBCombination: LRGBCombination);
+    constructor(LRGBCombination?: LRGBCombination);
 
 
     //-------------------------
@@ -49,4 +49,9 @@ declare class LRGBCombination extends ProcessInstance {
     static mL: number;
     static mc: number;
     static noiseReduction: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

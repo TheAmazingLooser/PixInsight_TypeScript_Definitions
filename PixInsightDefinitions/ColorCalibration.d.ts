@@ -42,7 +42,7 @@ declare class ColorCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ColorCalibration: ColorCalibration);
+    constructor(ColorCalibration?: ColorCalibration);
 
 
     //-------------------------
@@ -83,4 +83,9 @@ declare class ColorCalibration extends ProcessInstance {
     static whiteROIY1: number;
     static whiteReferenceViewId: string;
     static whiteUseROI: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

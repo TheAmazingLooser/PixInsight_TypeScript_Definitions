@@ -33,7 +33,7 @@ declare class HDRComposition extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(HDRComposition: HDRComposition);
+    constructor(HDRComposition?: HDRComposition);
 
 
     //-------------------------
@@ -65,4 +65,9 @@ declare class HDRComposition extends ProcessInstance {
     static rejectBlack: boolean;
     static replaceLargeScales: number;
     static useFittingRegion: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

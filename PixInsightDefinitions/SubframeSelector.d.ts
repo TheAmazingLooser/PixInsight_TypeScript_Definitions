@@ -1,60 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Abort: SubframeSelector.prototype.Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Altitude: SubframeSelector.prototype.Altitude;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ArcSeconds: SubframeSelector.prototype.ArcSeconds;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AskUser: SubframeSelector.prototype.AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Azimuth: SubframeSelector.prototype.Azimuth;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bits10: SubframeSelector.prototype.Bits10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bits12: SubframeSelector.prototype.Bits12;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bits14: SubframeSelector.prototype.Bits14;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bits16: SubframeSelector.prototype.Bits16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bits8: SubframeSelector.prototype.Bits8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Continue: SubframeSelector.prototype.Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataNumber: SubframeSelector.prototype.DataNumber;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Eccentricity: SubframeSelector.prototype.Eccentricity;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const EccentricityMeanDev: SubframeSelector.prototype.EccentricityMeanDev;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Electron: SubframeSelector.prototype.Electron;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FWHM: SubframeSelector.prototype.FWHM;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FWHMMeanDev: SubframeSelector.prototype.FWHMMeanDev;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Gaussian: SubframeSelector.prototype.Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Index: SubframeSelector.prototype.Index;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lorentzian: SubframeSelector.prototype.Lorentzian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MStar: SubframeSelector.prototype.MStar;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MeasureSubframes: SubframeSelector.prototype.MeasureSubframes;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median: SubframeSelector.prototype.Median;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MedianMeanDev: SubframeSelector.prototype.MedianMeanDev;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Moffat10: SubframeSelector.prototype.Moffat10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Moffat15: SubframeSelector.prototype.Moffat15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Moffat25: SubframeSelector.prototype.Moffat25;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Moffat4: SubframeSelector.prototype.Moffat4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Moffat6: SubframeSelector.prototype.Moffat6;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Moffat8: SubframeSelector.prototype.Moffat8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NStar: SubframeSelector.prototype.NStar;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Noise: SubframeSelector.prototype.Noise;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseRatio: SubframeSelector.prototype.NoiseRatio;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Normalized: SubframeSelector.prototype.Normalized;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OutputSubframes: SubframeSelector.prototype.OutputSubframes;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFCount: SubframeSelector.prototype.PSFCount;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFFlux: SubframeSelector.prototype.PSFFlux;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFFluxPower: SubframeSelector.prototype.PSFFluxPower;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFSNR: SubframeSelector.prototype.PSFSNR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFScale: SubframeSelector.prototype.PSFScale;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFScaleSNR: SubframeSelector.prototype.PSFScaleSNR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFSignalWeight: SubframeSelector.prototype.PSFSignalWeight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFTotalMeanFlux: SubframeSelector.prototype.PSFTotalMeanFlux;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFTotalMeanPowerFlux: SubframeSelector.prototype.PSFTotalMeanPowerFlux;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Pedestal_CustomKeyword: SubframeSelector.prototype.Pedestal_CustomKeyword;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Pedestal_Keyword: SubframeSelector.prototype.Pedestal_Keyword;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Pedestal_Literal: SubframeSelector.prototype.Pedestal_Literal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Pixel: SubframeSelector.prototype.Pixel;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SNR: SubframeSelector.prototype.SNR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StarDetectionPreview: SubframeSelector.prototype.StarDetectionPreview;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StarResidual: SubframeSelector.prototype.StarResidual;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StarResidualMeanDev: SubframeSelector.prototype.StarResidualMeanDev;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Stars: SubframeSelector.prototype.Stars;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Weight: SubframeSelector.prototype.Weight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -122,7 +68,7 @@ declare class SubframeSelector extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SubframeSelector: SubframeSelector);
+    constructor(SubframeSelector?: SubframeSelector);
 
 
     //-------------------------
@@ -189,4 +135,63 @@ declare class SubframeSelector extends ProcessInstance {
     static upperLimit: number;
     static useFileThreads: boolean;
     static weightingExpression: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Abort;
+    Altitude;
+    ArcSeconds;
+    AskUser;
+    Azimuth;
+    Bits10;
+    Bits12;
+    Bits14;
+    Bits16;
+    Bits8;
+    Continue;
+    DataNumber;
+    Eccentricity;
+    EccentricityMeanDev;
+    Electron;
+    FWHM;
+    FWHMMeanDev;
+    Gaussian;
+    Index;
+    Lorentzian;
+    MStar;
+    MeasureSubframes;
+    Median;
+    MedianMeanDev;
+    Moffat10;
+    Moffat15;
+    Moffat25;
+    Moffat4;
+    Moffat6;
+    Moffat8;
+    NStar;
+    Noise;
+    NoiseRatio;
+    Normalized;
+    OutputSubframes;
+    PSFCount;
+    PSFFlux;
+    PSFFluxPower;
+    PSFSNR;
+    PSFScale;
+    PSFScaleSNR;
+    PSFSignalWeight;
+    PSFTotalMeanFlux;
+    PSFTotalMeanPowerFlux;
+    Pedestal_CustomKeyword;
+    Pedestal_Keyword;
+    Pedestal_Literal;
+    Pixel;
+    SNR;
+    StarDetectionPreview;
+    StarResidual;
+    StarResidualMeanDev;
+    Stars;
+    Weight;
 }

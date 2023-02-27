@@ -52,4 +52,9 @@ declare class FileWatcher {
     //-------------------------
     static directories: Array<any>;
     static files: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

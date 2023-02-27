@@ -52,4 +52,9 @@ declare class FileTransfer {
     static responseCode: number;
     static totalSpeed: number;
     static totalTime: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

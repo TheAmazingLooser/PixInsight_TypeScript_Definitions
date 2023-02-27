@@ -39,7 +39,7 @@ declare class TGVDenoise extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(TGVDenoise: TGVDenoise);
+    constructor(TGVDenoise?: TGVDenoise);
 
 
     //-------------------------
@@ -77,4 +77,9 @@ declare class TGVDenoise extends ProcessInstance {
     static supportRemovedWaveletLayers: number;
     static supportShadowsClip: number;
     static supportViewId: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

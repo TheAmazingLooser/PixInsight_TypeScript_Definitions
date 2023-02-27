@@ -18,7 +18,7 @@ declare class HistogramTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(HistogramTransformation: HistogramTransformation);
+    constructor(HistogramTransformation?: HistogramTransformation);
 
 
     //-------------------------
@@ -35,4 +35,9 @@ declare class HistogramTransformation extends ProcessInstance {
     //----static Properties----
     //-------------------------
     static H: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

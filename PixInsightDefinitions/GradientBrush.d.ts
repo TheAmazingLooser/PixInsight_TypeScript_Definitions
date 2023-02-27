@@ -36,4 +36,9 @@ declare class GradientBrush extends Brush {
     //-------------------------
     static spreadMode: number;
     static stops: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

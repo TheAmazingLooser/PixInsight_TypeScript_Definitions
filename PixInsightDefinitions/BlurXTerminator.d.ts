@@ -27,7 +27,7 @@ declare class BlurXTerminator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(BlurXTerminator: BlurXTerminator);
+    constructor(BlurXTerminator?: BlurXTerminator);
 
 
     //-------------------------
@@ -53,4 +53,9 @@ declare class BlurXTerminator extends ProcessInstance {
     static nonstellar_then_stellar: boolean;
     static sharpen_nonstellar: number;
     static sharpen_stars: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

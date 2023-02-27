@@ -25,7 +25,7 @@ declare class Superbias extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Superbias: Superbias);
+    constructor(Superbias?: Superbias);
 
 
     //-------------------------
@@ -49,4 +49,9 @@ declare class Superbias extends ProcessInstance {
     static superbiasViewId: string;
     static superbiasViewId1: string;
     static trimmingFactor: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

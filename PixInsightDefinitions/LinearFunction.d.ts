@@ -54,4 +54,9 @@ declare class LinearFunction {
     static isValid: boolean;
     static m: number;
     static slope: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

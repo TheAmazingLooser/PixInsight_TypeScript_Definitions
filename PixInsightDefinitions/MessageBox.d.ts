@@ -26,7 +26,7 @@ declare class MessageBox {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(text: string, caption: string, icon: number, button1: number, button2: number, button3: number, defaultButton: number, escapeButton: number);
+    constructor(text?: string, caption?: string, icon?: number, button1?: number, button2?: number, button3?: number, defaultButton?: number, escapeButton?: number);
 
 
     //-------------------------
@@ -53,4 +53,9 @@ declare class MessageBox {
     static secondButton: number;
     static text: string;
     static thirdButton: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -1,8 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Average: GradientMergeMosaic.prototype.Average;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Overlay: GradientMergeMosaic.prototype.Overlay;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -25,7 +23,7 @@ declare class GradientMergeMosaic extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GradientMergeMosaic: GradientMergeMosaic);
+    constructor(GradientMergeMosaic?: GradientMergeMosaic);
 
 
     //-------------------------
@@ -47,4 +45,11 @@ declare class GradientMergeMosaic extends ProcessInstance {
     static nShrinkCount: number;
     static targetFrames: Array<any>;
     static type: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Average;
+    Overlay;
 }

@@ -28,7 +28,7 @@ declare class SplitCFA extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SplitCFA: SplitCFA);
+    constructor(SplitCFA?: SplitCFA);
 
 
     //-------------------------
@@ -55,4 +55,9 @@ declare class SplitCFA extends ProcessInstance {
     static postfix: string;
     static prefix: string;
     static targetFrames: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

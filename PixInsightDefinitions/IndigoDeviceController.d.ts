@@ -28,7 +28,7 @@ declare class IndigoDeviceController extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IndigoDeviceController: IndigoDeviceController);
+    constructor(IndigoDeviceController?: IndigoDeviceController);
 
 
     //-------------------------
@@ -55,4 +55,9 @@ declare class IndigoDeviceController extends ProcessInstance {
     static serverHostName: string;
     static serverPort: number;
     static verbosity: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

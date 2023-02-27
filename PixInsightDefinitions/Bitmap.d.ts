@@ -23,9 +23,9 @@ declare class Bitmap {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(width: number, height: number, format: number /* BitmapFormat_ARGB32*/);
+    constructor(width: number, height: number, format?: number /* BitmapFormat_ARGB32*/);
     constructor(filePath: string);
-    constructor(data: ByteArray, format: string /* "SVG"*/);
+    constructor(data: ByteArray, format?: string /* "SVG"*/);
     constructor(bmp: Bitmap, r: Rect);
     constructor(bmp: Bitmap, x0: number, y0: number, x1: number, y1: number);
     constructor(bmp: Bitmap);
@@ -232,10 +232,10 @@ declare class Bitmap {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public fromSVG(data: ByteArray, width: number, height: number, pixelRatio: number /* 1.0*/, flags: number /* 0*/): Bitmap;
+    public static fromSVG(data: ByteArray, width: number, height: number, pixelRatio: number /* 1.0*/, flags: number /* 0*/): Bitmap;
 
 
-    public fromSVGFile(filePath: string, width: number, height: number, pixelRatio: number /* 1.0*/, flags: number /* 0*/): Bitmap;
+    public static fromSVGFile(filePath: string, width: number, height: number, pixelRatio: number /* 1.0*/, flags: number /* 0*/): Bitmap;
 
 
 
@@ -248,4 +248,9 @@ declare class Bitmap {
     static physicalPixelRatio: number;
     static pixelFormat: number;
     static width: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

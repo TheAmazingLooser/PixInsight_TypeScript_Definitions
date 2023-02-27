@@ -1,8 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const PIP: ExponentialTransformation.prototype.PIP;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SMI: ExponentialTransformation.prototype.SMI;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -24,7 +22,7 @@ declare class ExponentialTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ExponentialTransformation: ExponentialTransformation);
+    constructor(ExponentialTransformation?: ExponentialTransformation);
 
 
     //-------------------------
@@ -45,4 +43,11 @@ declare class ExponentialTransformation extends ProcessInstance {
     static order: number;
     static sigma: number;
     static useLightnessMask: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    PIP;
+    SMI;
 }

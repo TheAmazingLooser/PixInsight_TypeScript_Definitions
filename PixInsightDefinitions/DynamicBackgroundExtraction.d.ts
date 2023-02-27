@@ -1,15 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Divide: DynamicBackgroundExtraction.prototype.Divide;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const None: DynamicBackgroundExtraction.prototype.None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SameAsTarget: DynamicBackgroundExtraction.prototype.SameAsTarget;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Subtract: DynamicBackgroundExtraction.prototype.Subtract;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f32: DynamicBackgroundExtraction.prototype.f32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f64: DynamicBackgroundExtraction.prototype.f64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i16: DynamicBackgroundExtraction.prototype.i16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i32: DynamicBackgroundExtraction.prototype.i32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i8: DynamicBackgroundExtraction.prototype.i8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -59,7 +50,7 @@ declare class DynamicBackgroundExtraction extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DynamicBackgroundExtraction: DynamicBackgroundExtraction);
+    constructor(DynamicBackgroundExtraction?: DynamicBackgroundExtraction);
 
 
     //-------------------------
@@ -108,4 +99,18 @@ declare class DynamicBackgroundExtraction extends ProcessInstance {
     static symmetryCenterY: number;
     static targetCorrection: number;
     static tolerance: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Divide;
+    None;
+    SameAsTarget;
+    Subtract;
+    f32;
+    f64;
+    i16;
+    i32;
+    i8;
 }

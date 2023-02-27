@@ -1,11 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Stride_128: StarNet.prototype.Stride_128;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Stride_16: StarNet.prototype.Stride_16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Stride_32: StarNet.prototype.Stride_32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Stride_64: StarNet.prototype.Stride_64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Stride_8: StarNet.prototype.Stride_8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -24,7 +19,7 @@ declare class StarNet extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarNet: StarNet);
+    constructor(StarNet?: StarNet);
 
 
     //-------------------------
@@ -42,4 +37,14 @@ declare class StarNet extends ProcessInstance {
     //-------------------------
     static mask: boolean;
     static stride: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Stride_128;
+    Stride_16;
+    Stride_32;
+    Stride_64;
+    Stride_8;
 }

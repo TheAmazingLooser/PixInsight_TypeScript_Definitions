@@ -22,7 +22,7 @@ declare class Timer {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(interval: number /* 1.0*/, periodic: boolean /* true*/);
+    constructor(interval?: number /* 1.0*/, periodic?: boolean /* true*/);
 
 
     //-------------------------
@@ -47,4 +47,9 @@ declare class Timer {
     static isRunning: boolean;
     static periodic: boolean;
     static singleShot: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

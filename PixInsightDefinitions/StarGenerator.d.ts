@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Conformal: StarGenerator.prototype.Conformal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Gnomonic: StarGenerator.prototype.Gnomonic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Output_CSVFile: StarGenerator.prototype.Output_CSVFile;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Output_Image: StarGenerator.prototype.Output_Image;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -36,7 +32,7 @@ declare class StarGenerator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarGenerator: StarGenerator);
+    constructor(StarGenerator?: StarGenerator);
 
 
     //-------------------------
@@ -67,4 +63,13 @@ declare class StarGenerator extends ProcessInstance {
     static starDatabasePath: string;
     static starFWHM: number;
     static targetMinimumValue: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Conformal;
+    Gnomonic;
+    Output_CSVFile;
+    Output_Image;
 }

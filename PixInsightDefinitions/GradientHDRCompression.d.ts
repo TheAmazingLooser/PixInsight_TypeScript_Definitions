@@ -22,7 +22,7 @@ declare class GradientHDRCompression extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GradientHDRCompression: GradientHDRCompression);
+    constructor(GradientHDRCompression?: GradientHDRCompression);
 
 
     //-------------------------
@@ -43,4 +43,9 @@ declare class GradientHDRCompression extends ProcessInstance {
     static expGradient: number;
     static logMaxGradient: number;
     static logMinGradient: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

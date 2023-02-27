@@ -22,7 +22,7 @@ declare class MergeCFA extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MergeCFA: MergeCFA);
+    constructor(MergeCFA?: MergeCFA);
 
 
     //-------------------------
@@ -43,4 +43,9 @@ declare class MergeCFA extends ProcessInstance {
     static sourceCFAImage1: string;
     static sourceCFAImage2: string;
     static sourceCFAImage3: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

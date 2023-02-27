@@ -21,7 +21,7 @@ declare class RGBWorkingSpace extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(RGBWorkingSpace: RGBWorkingSpace);
+    constructor(RGBWorkingSpace?: RGBWorkingSpace);
 
 
     //-------------------------
@@ -41,4 +41,9 @@ declare class RGBWorkingSpace extends ProcessInstance {
     static channels: Array<any>;
     static gamma: number;
     static sRGBGamma: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

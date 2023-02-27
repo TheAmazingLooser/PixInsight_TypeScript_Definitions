@@ -96,4 +96,9 @@ declare class FileInfo {
     static symbolicLinkTarget: string;
     static timeCreated: Date;
     static userId: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

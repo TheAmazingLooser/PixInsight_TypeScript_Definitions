@@ -34,7 +34,7 @@ declare class ExternalProcess {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(program: string, arguments: Array<any>);
+    constructor(program?: string, arguments?: Array<any>);
 
 
     //-------------------------
@@ -89,17 +89,17 @@ declare class ExternalProcess {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public execute(program: string): number;
-    public execute(program: string, arguments: Array<any>): number;
+    public static execute(program: string): number;
+    public static execute(program: string, arguments: Array<any>): number;
 
 
-    public startDetached(program: string): number;
-    public startDetached(program: string, arguments: Array<any>): number;
-    public startDetached(program: string, arguments: Array<any>, workingDirectory: string): number;
+    public static startDetached(program: string): number;
+    public static startDetached(program: string, arguments: Array<any>): number;
+    public static startDetached(program: string, arguments: Array<any>, workingDirectory: string): number;
 
 
-    public startDetached(program: string): number;
-    public startDetached(program: string, workingDirectory: string): number;
+    public static startDetached(program: string): number;
+    public static startDetached(program: string, workingDirectory: string): number;
 
 
 
@@ -124,4 +124,9 @@ declare class ExternalProcess {
     static stdin: ByteArray | string;
     static stdout: ByteArray;
     static workingDirectory: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

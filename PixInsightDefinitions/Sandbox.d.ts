@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const FirstItem: Sandbox.prototype.FirstItem;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SecondItem: Sandbox.prototype.SecondItem;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ThirdItem: Sandbox.prototype.ThirdItem;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -25,7 +22,7 @@ declare class Sandbox extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Sandbox: Sandbox);
+    constructor(Sandbox?: Sandbox);
 
 
     //-------------------------
@@ -46,4 +43,12 @@ declare class Sandbox extends ProcessInstance {
     static sampleOne: number;
     static sampleThree: boolean;
     static sampleTwo: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    FirstItem;
+    SecondItem;
+    ThirdItem;
 }

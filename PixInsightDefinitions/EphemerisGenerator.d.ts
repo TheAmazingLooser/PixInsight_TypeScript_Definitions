@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const WorkingMode_DatabaseObjects: EphemerisGenerator.prototype.WorkingMode_DatabaseObjects;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WorkingMode_OrbitalElements: EphemerisGenerator.prototype.WorkingMode_OrbitalElements;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WorkingMode_StateVectors: EphemerisGenerator.prototype.WorkingMode_StateVectors;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -65,7 +62,7 @@ declare class EphemerisGenerator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(EphemerisGenerator: EphemerisGenerator);
+    constructor(EphemerisGenerator?: EphemerisGenerator);
 
 
     //-------------------------
@@ -126,4 +123,12 @@ declare class EphemerisGenerator extends ProcessInstance {
     static x: number;
     static y: number;
     static z: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    WorkingMode_DatabaseObjects;
+    WorkingMode_OrbitalElements;
+    WorkingMode_StateVectors;
 }

@@ -1,17 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AbsoluteColorimetric: ColorManagementSetup.prototype.AbsoluteColorimetric;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AskUser: ColorManagementSetup.prototype.AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AssignDefault: ColorManagementSetup.prototype.AssignDefault;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ConvertToDefault: ColorManagementSetup.prototype.ConvertToDefault;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DisableCM: ColorManagementSetup.prototype.DisableCM;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DiscardEmbedded: ColorManagementSetup.prototype.DiscardEmbedded;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const KeepEmbedded: ColorManagementSetup.prototype.KeepEmbedded;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const LeaveUntagged: ColorManagementSetup.prototype.LeaveUntagged;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Perceptual: ColorManagementSetup.prototype.Perceptual;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RelativeColorimetric: ColorManagementSetup.prototype.RelativeColorimetric;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Saturation: ColorManagementSetup.prototype.Saturation;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -45,7 +34,7 @@ declare class ColorManagementSetup extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ColorManagementSetup: ColorManagementSetup);
+    constructor(ColorManagementSetup?: ColorManagementSetup);
 
 
     //-------------------------
@@ -78,4 +67,20 @@ declare class ColorManagementSetup extends ProcessInstance {
     static updateMonitorProfile: string;
     static useLowResolutionCLUTs: boolean;
     static useProofingBPC: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AbsoluteColorimetric;
+    AskUser;
+    AssignDefault;
+    ConvertToDefault;
+    DisableCM;
+    DiscardEmbedded;
+    KeepEmbedded;
+    LeaveUntagged;
+    Perceptual;
+    RelativeColorimetric;
+    Saturation;
 }

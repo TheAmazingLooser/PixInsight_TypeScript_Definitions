@@ -17,7 +17,7 @@ declare class ConvertToRGBColor extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ConvertToRGBColor: ConvertToRGBColor);
+    constructor(ConvertToRGBColor?: ConvertToRGBColor);
 
 
     //-------------------------
@@ -32,5 +32,10 @@ declare class ConvertToRGBColor extends ProcessInstance {
 
     //-------------------------
     //----static Properties----
+    //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
     //-------------------------
 }

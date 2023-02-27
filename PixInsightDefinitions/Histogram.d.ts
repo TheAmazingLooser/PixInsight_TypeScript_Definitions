@@ -84,4 +84,9 @@ declare class Histogram {
     static peakLevel: number;
     static resolution: number;
     static totalCount: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

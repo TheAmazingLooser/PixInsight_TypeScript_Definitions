@@ -25,7 +25,7 @@ declare class ToolButton extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -49,4 +49,9 @@ declare class ToolButton extends Control {
     static pushed: boolean;
     static state: number;
     static text: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

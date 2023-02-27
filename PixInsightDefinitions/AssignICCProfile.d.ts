@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AssignDefaultProfile: AssignICCProfile.prototype.AssignDefaultProfile;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AssignNewProfile: AssignICCProfile.prototype.AssignNewProfile;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const LeaveUntagged: AssignICCProfile.prototype.LeaveUntagged;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -22,7 +19,7 @@ declare class AssignICCProfile extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AssignICCProfile: AssignICCProfile);
+    constructor(AssignICCProfile?: AssignICCProfile);
 
 
     //-------------------------
@@ -40,4 +37,12 @@ declare class AssignICCProfile extends ProcessInstance {
     //-------------------------
     static mode: number;
     static targetProfile: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AssignDefaultProfile;
+    AssignNewProfile;
+    LeaveUntagged;
 }

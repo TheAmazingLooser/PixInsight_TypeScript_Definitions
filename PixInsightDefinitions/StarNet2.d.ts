@@ -1,8 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const itemOne: StarNet2.prototype.itemOne;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const itemTwo: StarNet2.prototype.itemTwo;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -21,7 +19,7 @@ declare class StarNet2 extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarNet2: StarNet2);
+    constructor(StarNet2?: StarNet2);
 
 
     //-------------------------
@@ -39,4 +37,11 @@ declare class StarNet2 extends ProcessInstance {
     //-------------------------
     static mask: boolean;
     static stride: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    itemOne;
+    itemTwo;
 }

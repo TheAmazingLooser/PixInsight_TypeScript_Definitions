@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const CustomKeyword: FluxCalibration.prototype.CustomKeyword;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Literal: FluxCalibration.prototype.Literal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StandardKeyword: FluxCalibration.prototype.StandardKeyword;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -47,7 +44,7 @@ declare class FluxCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FluxCalibration: FluxCalibration);
+    constructor(FluxCalibration?: FluxCalibration);
 
 
     //-------------------------
@@ -90,4 +87,12 @@ declare class FluxCalibration extends ProcessInstance {
     static wavelength: number;
     static wavelengthKeyword: string;
     static wavelengthMode: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    CustomKeyword;
+    Literal;
+    StandardKeyword;
 }

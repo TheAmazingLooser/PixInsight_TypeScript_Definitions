@@ -1,12 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AllPixelChanges: MultiscaleMedianTransform.prototype.AllPixelChanges;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DecreasingPixels: MultiscaleMedianTransform.prototype.DecreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Disabled: MultiscaleMedianTransform.prototype.Disabled;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IncreasingPixels: MultiscaleMedianTransform.prototype.IncreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MedianWaveletTransform: MultiscaleMedianTransform.prototype.MedianWaveletTransform;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MultiscaleMedianTransform: MultiscaleMedianTransform.prototype.MultiscaleMedianTransform;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -39,7 +33,7 @@ declare class MultiscaleMedianTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MultiscaleMedianTransform: MultiscaleMedianTransform);
+    constructor(MultiscaleMedianTransform?: MultiscaleMedianTransform);
 
 
     //-------------------------
@@ -71,4 +65,15 @@ declare class MultiscaleMedianTransform extends ProcessInstance {
     static toChrominance: boolean;
     static toLuminance: boolean;
     static transform: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AllPixelChanges;
+    DecreasingPixels;
+    Disabled;
+    IncreasingPixels;
+    MedianWaveletTransform;
+    MultiscaleMedianTransform;
 }

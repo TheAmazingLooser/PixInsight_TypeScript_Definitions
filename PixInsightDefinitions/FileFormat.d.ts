@@ -55,7 +55,7 @@ declare class FileFormat {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(nameExtOrMime: string, toRead: boolean /* false*/, toWrite: boolean /* false*/);
+    constructor(nameExtOrMime: string, toRead?: boolean /* false*/, toWrite?: boolean /* false*/);
     constructor(fmt: FileFormat);
 
 
@@ -120,4 +120,9 @@ declare class FileFormat {
     static supportsViewProperties: boolean;
     static usesFormatSpecificData: boolean;
     static version: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

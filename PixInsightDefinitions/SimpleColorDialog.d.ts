@@ -20,7 +20,7 @@ declare class SimpleColorDialog extends Dialog {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(color: number);
+    constructor(color?: number);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class SimpleColorDialog extends Dialog {
     static alphaEnabled: boolean;
     static color: number;
     static grayscale: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

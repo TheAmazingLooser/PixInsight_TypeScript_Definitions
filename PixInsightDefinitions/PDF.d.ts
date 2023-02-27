@@ -35,7 +35,7 @@ declare class PDF {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(filePath: string);
+    constructor(filePath?: string);
 
 
     //-------------------------
@@ -69,4 +69,9 @@ declare class PDF {
     static rightMargin: number;
     static title: string;
     static topMargin: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

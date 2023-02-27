@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const CIEL: Rescale.prototype.CIEL;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CIEY: Rescale.prototype.CIEY;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGBK: Rescale.prototype.RGBK;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGBK_Individual: Rescale.prototype.RGBK_Individual;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -22,7 +18,7 @@ declare class Rescale extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Rescale: Rescale);
+    constructor(Rescale?: Rescale);
 
 
     //-------------------------
@@ -39,4 +35,13 @@ declare class Rescale extends ProcessInstance {
     //----static Properties----
     //-------------------------
     static mode: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    CIEL;
+    CIEY;
+    RGBK;
+    RGBK_Individual;
 }

@@ -19,7 +19,7 @@ declare class NoiseXTerminator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NoiseXTerminator: NoiseXTerminator);
+    constructor(NoiseXTerminator?: NoiseXTerminator);
 
 
     //-------------------------
@@ -37,4 +37,9 @@ declare class NoiseXTerminator extends ProcessInstance {
     //-------------------------
     static denoise: number;
     static detail: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

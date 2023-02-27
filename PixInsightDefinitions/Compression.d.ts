@@ -55,4 +55,9 @@ declare class Compression {
     static itemSize: number;
     static maxCompressionLevel: number;
     static subblockSize: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -24,9 +24,9 @@ declare class ByteArray {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(length: number, value: number);
-    constructor(a: ByteArray, startIndex: number, count: number);
-    constructor(a: any /* TypedArray */, startIndex: number, endIndex: number);
+    constructor(length: number, value?: number);
+    constructor(a: ByteArray, startIndex?: number, count?: number);
+    constructor(a: any /* TypedArray */, startIndex?: number, endIndex?: number);
     constructor(s: string);
 
 
@@ -207,32 +207,32 @@ declare class ByteArray {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public fromBase64(base64: string): ByteArray;
+    public static fromBase64(base64: string): ByteArray;
 
 
-    public fromByteValues(): ByteArray;
-    public fromByteValues(...b: any[]): ByteArray;
+    public static fromByteValues(): ByteArray;
+    public static fromByteValues(...b: any[]): ByteArray;
 
 
-    public fromHex(hex: string): ByteArray;
+    public static fromHex(hex: string): ByteArray;
 
 
-    public fromURLEncoded(url: string): ByteArray;
+    public static fromURLEncoded(url: string): ByteArray;
 
 
-    public stringToLocal8Bit(str: string): ByteArray;
-    public stringToLocal8Bit(str: string, startIndex: number): ByteArray;
-    public stringToLocal8Bit(str: string, startIndex: number, count: number): ByteArray;
+    public static stringToLocal8Bit(str: string): ByteArray;
+    public static stringToLocal8Bit(str: string, startIndex: number): ByteArray;
+    public static stringToLocal8Bit(str: string, startIndex: number, count: number): ByteArray;
 
 
-    public stringToMBS(str: string): ByteArray;
-    public stringToMBS(str: string, startIndex: number): ByteArray;
-    public stringToMBS(str: string, startIndex: number, count: number): ByteArray;
+    public static stringToMBS(str: string): ByteArray;
+    public static stringToMBS(str: string, startIndex: number): ByteArray;
+    public static stringToMBS(str: string, startIndex: number, count: number): ByteArray;
 
 
-    public stringToUTF8(str: string): ByteArray;
-    public stringToUTF8(str: string, startIndex: number): ByteArray;
-    public stringToUTF8(str: string, startIndex: number, count: number): ByteArray;
+    public static stringToUTF8(str: string): ByteArray;
+    public static stringToUTF8(str: string, startIndex: number): ByteArray;
+    public static stringToUTF8(str: string, startIndex: number, count: number): ByteArray;
 
 
 
@@ -246,4 +246,9 @@ declare class ByteArray {
     static length: number;
     static lowerBound: number;
     static upperBound: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

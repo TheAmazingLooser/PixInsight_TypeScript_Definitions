@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Automatic: HDRMultiscaleTransform.prototype.Automatic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Manual: HDRMultiscaleTransform.prototype.Manual;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoMidtonesBalance: HDRMultiscaleTransform.prototype.NoMidtonesBalance;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -39,7 +36,7 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(HDRMultiscaleTransform: HDRMultiscaleTransform);
+    constructor(HDRMultiscaleTransform?: HDRMultiscaleTransform);
 
 
     //-------------------------
@@ -74,4 +71,12 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
     static smallScaleDeringing: number;
     static toLightness: boolean;
     static toLuminanceOnly: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Automatic;
+    Manual;
+    NoMidtonesBalance;
 }

@@ -92,4 +92,9 @@ declare class NetworkTransfer {
     static totalSpeed: number;
     static totalTime: number;
     static url: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

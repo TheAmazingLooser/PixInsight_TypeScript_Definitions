@@ -25,7 +25,7 @@ declare class Pen {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(color: number /* 0xff000000*/, width: number /* 0*/, style: number /* PenStyle_Solid*/, cap: number /* PenCap_Flat*/, join: number /* PenJoin_Miter*/);
+    constructor(color?: number /* 0xff000000*/, width?: number /* 0*/, style?: number /* PenStyle_Solid*/, cap?: number /* PenCap_Flat*/, join?: number /* PenJoin_Miter*/);
     constructor(p: Pen);
 
 
@@ -53,4 +53,9 @@ declare class Pen {
     static join: number;
     static style: number;
     static width: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

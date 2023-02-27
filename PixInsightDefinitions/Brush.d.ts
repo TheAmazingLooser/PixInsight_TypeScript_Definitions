@@ -23,7 +23,7 @@ declare class Brush {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(color: number /* 0xff000000*/, style: number /* BrushStyle_Solid*/);
+    constructor(color?: number /* 0xff000000*/, style?: number /* BrushStyle_Solid*/);
     constructor(b: Brush);
 
 
@@ -49,4 +49,9 @@ declare class Brush {
     static isStippled: boolean;
     static stipple: Bitmap;
     static style: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

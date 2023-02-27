@@ -1,14 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Gray: PixelMath.prototype.Gray;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGB: PixelMath.prototype.RGB;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SameAsTarget: PixelMath.prototype.SameAsTarget;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f32: PixelMath.prototype.f32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f64: PixelMath.prototype.f64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i16: PixelMath.prototype.i16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i32: PixelMath.prototype.i32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i8: PixelMath.prototype.i8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -54,7 +46,7 @@ declare class PixelMath extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(PixelMath: PixelMath);
+    constructor(PixelMath?: PixelMath);
 
 
     //-------------------------
@@ -99,4 +91,17 @@ declare class PixelMath extends ProcessInstance {
     static use64BitWorkingImage: boolean;
     static useSingleExpression: boolean;
     static variables: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Gray;
+    RGB;
+    SameAsTarget;
+    f32;
+    f64;
+    i16;
+    i32;
+    i8;
 }

@@ -1,31 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Auto: Debayer.prototype.Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BGGR: Debayer.prototype.BGGR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BGRG: Debayer.prototype.BGRG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bilinear: Debayer.prototype.Bilinear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GBGR: Debayer.prototype.GBGR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GBRG: Debayer.prototype.GBRG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GRBG: Debayer.prototype.GRBG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GRGB: Debayer.prototype.GRGB;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_KSigma: Debayer.prototype.NoiseEvaluation_KSigma;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_MRS: Debayer.prototype.NoiseEvaluation_MRS;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_NStar: Debayer.prototype.NoiseEvaluation_NStar;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_Abort: Debayer.prototype.OnError_Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_AskUser: Debayer.prototype.OnError_AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_Continue: Debayer.prototype.OnError_Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Auto: Debayer.prototype.PSFType_Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Gaussian: Debayer.prototype.PSFType_Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat15: Debayer.prototype.PSFType_Moffat15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat4: Debayer.prototype.PSFType_Moffat4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat6: Debayer.prototype.PSFType_Moffat6;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat8: Debayer.prototype.PSFType_Moffat8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_MoffatA: Debayer.prototype.PSFType_MoffatA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGBG: Debayer.prototype.RGBG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RGGB: Debayer.prototype.RGGB;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SuperPixel: Debayer.prototype.SuperPixel;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const VNG: Debayer.prototype.VNG;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -122,7 +97,7 @@ declare class Debayer extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Debayer: Debayer);
+    constructor(Debayer?: Debayer);
 
 
     //-------------------------
@@ -218,4 +193,34 @@ declare class Debayer extends ProcessInstance {
     static structureLayers: number;
     static targetItems: Array<any>;
     static useFileThreads: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Auto;
+    BGGR;
+    BGRG;
+    Bilinear;
+    GBGR;
+    GBRG;
+    GRBG;
+    GRGB;
+    NoiseEvaluation_KSigma;
+    NoiseEvaluation_MRS;
+    NoiseEvaluation_NStar;
+    OnError_Abort;
+    OnError_AskUser;
+    OnError_Continue;
+    PSFType_Auto;
+    PSFType_Gaussian;
+    PSFType_Moffat15;
+    PSFType_Moffat4;
+    PSFType_Moffat6;
+    PSFType_Moffat8;
+    PSFType_MoffatA;
+    RGBG;
+    RGGB;
+    SuperPixel;
+    VNG;
 }

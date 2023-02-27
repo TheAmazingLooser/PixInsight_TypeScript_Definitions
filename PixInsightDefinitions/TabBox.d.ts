@@ -23,7 +23,7 @@ declare class TabBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -95,4 +95,9 @@ declare class TabBox extends Control {
     static numberOfPages: number;
     static rightControl: Control;
     static tabPosition: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

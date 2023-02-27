@@ -18,7 +18,7 @@ declare class FITSHeader extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FITSHeader: FITSHeader);
+    constructor(FITSHeader?: FITSHeader);
 
 
     //-------------------------
@@ -35,4 +35,9 @@ declare class FITSHeader extends ProcessInstance {
     //----static Properties----
     //-------------------------
     static keywords: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

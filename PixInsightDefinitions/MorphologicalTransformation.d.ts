@@ -1,13 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Closing: MorphologicalTransformation.prototype.Closing;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Dilation: MorphologicalTransformation.prototype.Dilation;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Erosion: MorphologicalTransformation.prototype.Erosion;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median: MorphologicalTransformation.prototype.Median;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Midpoint: MorphologicalTransformation.prototype.Midpoint;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Opening: MorphologicalTransformation.prototype.Opening;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Selection: MorphologicalTransformation.prototype.Selection;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -34,7 +27,7 @@ declare class MorphologicalTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MorphologicalTransformation: MorphologicalTransformation);
+    constructor(MorphologicalTransformation?: MorphologicalTransformation);
 
 
     //-------------------------
@@ -60,4 +53,16 @@ declare class MorphologicalTransformation extends ProcessInstance {
     static structureName: string;
     static structureSize: number;
     static structureWayTable: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Closing;
+    Dilation;
+    Erosion;
+    Median;
+    Midpoint;
+    Opening;
+    Selection;
 }

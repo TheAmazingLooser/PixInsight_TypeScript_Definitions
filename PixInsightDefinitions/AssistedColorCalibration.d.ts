@@ -25,7 +25,7 @@ declare class AssistedColorCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AssistedColorCalibration: AssistedColorCalibration);
+    constructor(AssistedColorCalibration?: AssistedColorCalibration);
 
 
     //-------------------------
@@ -49,4 +49,9 @@ declare class AssistedColorCalibration extends ProcessInstance {
     static SaturationBoost: number;
     static backgroundRef: string;
     static redCorrectionFactor: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

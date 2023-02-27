@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Rescale: BackgroundNeutralization.prototype.Rescale;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RescaleAsNeeded: BackgroundNeutralization.prototype.RescaleAsNeeded;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TargetBackground: BackgroundNeutralization.prototype.TargetBackground;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Truncate: BackgroundNeutralization.prototype.Truncate;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -31,7 +27,7 @@ declare class BackgroundNeutralization extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(BackgroundNeutralization: BackgroundNeutralization);
+    constructor(BackgroundNeutralization?: BackgroundNeutralization);
 
 
     //-------------------------
@@ -57,4 +53,13 @@ declare class BackgroundNeutralization extends ProcessInstance {
     static roiY1: number;
     static targetBackground: number;
     static useROI: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Rescale;
+    RescaleAsNeeded;
+    TargetBackground;
+    Truncate;
 }

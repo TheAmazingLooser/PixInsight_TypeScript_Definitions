@@ -1,15 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Divide: AutomaticBackgroundExtractor.prototype.Divide;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const None: AutomaticBackgroundExtractor.prototype.None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SameAsTarget: AutomaticBackgroundExtractor.prototype.SameAsTarget;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Subtract: AutomaticBackgroundExtractor.prototype.Subtract;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f32: AutomaticBackgroundExtractor.prototype.f32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f64: AutomaticBackgroundExtractor.prototype.f64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i16: AutomaticBackgroundExtractor.prototype.i16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i32: AutomaticBackgroundExtractor.prototype.i32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i8: AutomaticBackgroundExtractor.prototype.i8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -50,7 +41,7 @@ declare class AutomaticBackgroundExtractor extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AutomaticBackgroundExtractor: AutomaticBackgroundExtractor);
+    constructor(AutomaticBackgroundExtractor?: AutomaticBackgroundExtractor);
 
 
     //-------------------------
@@ -90,4 +81,18 @@ declare class AutomaticBackgroundExtractor extends ProcessInstance {
     static useLuminanceLimits: boolean;
     static verboseCoefficients: boolean;
     static writeSampleBoxes: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Divide;
+    None;
+    SameAsTarget;
+    Subtract;
+    f32;
+    f64;
+    i16;
+    i32;
+    i8;
 }

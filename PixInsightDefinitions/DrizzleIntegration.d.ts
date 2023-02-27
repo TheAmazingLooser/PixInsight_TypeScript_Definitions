@@ -1,18 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Abort: DrizzleIntegration.prototype.Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AskUser: DrizzleIntegration.prototype.AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Continue: DrizzleIntegration.prototype.Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Circular: DrizzleIntegration.prototype.Kernel_Circular;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Gaussian: DrizzleIntegration.prototype.Kernel_Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Square: DrizzleIntegration.prototype.Kernel_Square;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Variable10: DrizzleIntegration.prototype.Kernel_Variable10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Variable15: DrizzleIntegration.prototype.Kernel_Variable15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Variable30: DrizzleIntegration.prototype.Kernel_Variable30;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Variable40: DrizzleIntegration.prototype.Kernel_Variable40;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Variable50: DrizzleIntegration.prototype.Kernel_Variable50;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Kernel_Variable60: DrizzleIntegration.prototype.Kernel_Variable60;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -70,7 +58,7 @@ declare class DrizzleIntegration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DrizzleIntegration: DrizzleIntegration);
+    constructor(DrizzleIntegration?: DrizzleIntegration);
 
 
     //-------------------------
@@ -127,4 +115,21 @@ declare class DrizzleIntegration extends ProcessInstance {
     static truncateOnOutOfRange: boolean;
     static useROI: boolean;
     static weightImageId: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Abort;
+    AskUser;
+    Continue;
+    Kernel_Circular;
+    Kernel_Gaussian;
+    Kernel_Square;
+    Kernel_Variable10;
+    Kernel_Variable15;
+    Kernel_Variable30;
+    Kernel_Variable40;
+    Kernel_Variable50;
+    Kernel_Variable60;
 }

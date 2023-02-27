@@ -66,4 +66,9 @@ declare class SurfaceSpline {
     static shapeParameter: number;
     static smoothing: number;
     static usePolynomial: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

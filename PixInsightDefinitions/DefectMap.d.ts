@@ -1,15 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Circular: DefectMap.prototype.Circular;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Gaussian: DefectMap.prototype.Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Horizontal: DefectMap.prototype.Horizontal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Maximum: DefectMap.prototype.Maximum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Mean: DefectMap.prototype.Mean;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median: DefectMap.prototype.Median;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Minimum: DefectMap.prototype.Minimum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Square: DefectMap.prototype.Square;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Vertical: DefectMap.prototype.Vertical;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -30,7 +21,7 @@ declare class DefectMap extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DefectMap: DefectMap);
+    constructor(DefectMap?: DefectMap);
 
 
     //-------------------------
@@ -50,4 +41,18 @@ declare class DefectMap extends ProcessInstance {
     static mapId: string;
     static operation: number;
     static structure: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Circular;
+    Gaussian;
+    Horizontal;
+    Maximum;
+    Mean;
+    Median;
+    Minimum;
+    Square;
+    Vertical;
 }

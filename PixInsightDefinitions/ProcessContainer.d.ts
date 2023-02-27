@@ -82,4 +82,9 @@ declare class ProcessContainer extends ProcessInstance {
     //-------------------------
     static isEmpty: boolean;
     static length: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

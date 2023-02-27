@@ -1,25 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const DataRelease_10: APASS.prototype.DataRelease_10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataRelease_9: APASS.prototype.DataRelease_9;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataRelease_BestAvailable: APASS.prototype.DataRelease_BestAvailable;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_B: APASS.prototype.SortBy_B;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_Dec: APASS.prototype.SortBy_Dec;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_DontSort: APASS.prototype.SortBy_DontSort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_RA: APASS.prototype.SortBy_RA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_V: APASS.prototype.SortBy_V;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_g: APASS.prototype.SortBy_g;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_i: APASS.prototype.SortBy_i;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_r: APASS.prototype.SortBy_r;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_z_s: APASS.prototype.SortBy_z_s;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextFormat_CSV: APASS.prototype.TextFormat_CSV;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextFormat_Tabular: APASS.prototype.TextFormat_Tabular;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextFormat_TabularCompound: APASS.prototype.TextFormat_TabularCompound;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_None: APASS.prototype.TextHeaders_None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_SearchParameters: APASS.prototype.TextHeaders_SearchParameters;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_SearchParametersAndTableColumns: APASS.prototype.TextHeaders_SearchParametersAndTableColumns;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_TableColumns: APASS.prototype.TextHeaders_TableColumns;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -67,7 +48,7 @@ declare class APASS extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(APASS: APASS);
+    constructor(APASS?: APASS);
 
 
     //-------------------------
@@ -114,4 +95,28 @@ declare class APASS extends ProcessInstance {
     static timeTotal: number;
     static timeUncompress: number;
     static verbosity: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    DataRelease_10;
+    DataRelease_9;
+    DataRelease_BestAvailable;
+    SortBy_B;
+    SortBy_Dec;
+    SortBy_DontSort;
+    SortBy_RA;
+    SortBy_V;
+    SortBy_g;
+    SortBy_i;
+    SortBy_r;
+    SortBy_z_s;
+    TextFormat_CSV;
+    TextFormat_Tabular;
+    TextFormat_TabularCompound;
+    TextHeaders_None;
+    TextHeaders_SearchParameters;
+    TextHeaders_SearchParametersAndTableColumns;
+    TextHeaders_TableColumns;
 }

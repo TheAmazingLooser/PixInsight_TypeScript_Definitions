@@ -117,4 +117,9 @@ declare class FileFormatInstance {
     static thumbnail: Image;
     static wasInexactRead: boolean;
     static wasLossyWrite: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

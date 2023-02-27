@@ -36,9 +36,9 @@ declare class ElapsedTime {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public toString(seconds: number): string;
-    public toString(seconds: number, width: number /* 0*/): string;
-    public toString(seconds: number, width: number /* 0*/, precision: number /* 3*/): string;
+    public static toString(seconds: number): string;
+    public static toString(seconds: number, width: number /* 0*/): string;
+    public static toString(seconds: number, width: number /* 0*/, precision: number /* 3*/): string;
 
 
 
@@ -48,4 +48,9 @@ declare class ElapsedTime {
     //-------------------------
     static text: string;
     static value: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

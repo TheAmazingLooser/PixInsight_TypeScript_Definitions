@@ -20,7 +20,7 @@ declare class Script extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Script: Script);
+    constructor(Script?: Script);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class Script extends ProcessInstance {
     static filePath: string;
     static md5sum: string;
     static parameters: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

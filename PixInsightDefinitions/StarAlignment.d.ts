@@ -1,41 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Abort: StarAlignment.prototype.Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Always: StarAlignment.prototype.Always;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AskUser: StarAlignment.prototype.AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Auto: StarAlignment.prototype.Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicBSpline: StarAlignment.prototype.BicubicBSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicSpline: StarAlignment.prototype.BicubicSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bilinear: StarAlignment.prototype.Bilinear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CatmullRomSplineFilter: StarAlignment.prototype.CatmullRomSplineFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Continue: StarAlignment.prototype.Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CubicBSplineFilter: StarAlignment.prototype.CubicBSplineFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DrawMatchedStars: StarAlignment.prototype.DrawMatchedStars;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DrawPutativeStarMatches: StarAlignment.prototype.DrawPutativeStarMatches;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DrawStars: StarAlignment.prototype.DrawStars;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FitPSF_Always: StarAlignment.prototype.FitPSF_Always;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FitPSF_DistortionOnly: StarAlignment.prototype.FitPSF_DistortionOnly;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FitPSF_Never: StarAlignment.prototype.FitPSF_Never;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos3: StarAlignment.prototype.Lanczos3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos4: StarAlignment.prototype.Lanczos4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos5: StarAlignment.prototype.Lanczos5;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MitchellNetravaliFilter: StarAlignment.prototype.MitchellNetravaliFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MosaicOnly: StarAlignment.prototype.MosaicOnly;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NearestNeighbor: StarAlignment.prototype.NearestNeighbor;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoIntersection: StarAlignment.prototype.NoIntersection;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OutputMatrix: StarAlignment.prototype.OutputMatrix;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RegisterMatch: StarAlignment.prototype.RegisterMatch;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RegisterUnion: StarAlignment.prototype.RegisterUnion;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RegisterUnionSeparate: StarAlignment.prototype.RegisterUnionSeparate;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SameAsTarget: StarAlignment.prototype.SameAsTarget;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StructureMap: StarAlignment.prototype.StructureMap;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Structures: StarAlignment.prototype.Structures;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f32: StarAlignment.prototype.f32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const f64: StarAlignment.prototype.f64;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i16: StarAlignment.prototype.i16;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i32: StarAlignment.prototype.i32;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const i8: StarAlignment.prototype.i8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -133,7 +98,7 @@ declare class StarAlignment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarAlignment: StarAlignment);
+    constructor(StarAlignment?: StarAlignment);
 
 
     //-------------------------
@@ -230,4 +195,44 @@ declare class StarAlignment extends ProcessInstance {
     static useSurfaceSplines: boolean;
     static useTriangles: boolean;
     static writeKeywords: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Abort;
+    Always;
+    AskUser;
+    Auto;
+    BicubicBSpline;
+    BicubicSpline;
+    Bilinear;
+    CatmullRomSplineFilter;
+    Continue;
+    CubicBSplineFilter;
+    DrawMatchedStars;
+    DrawPutativeStarMatches;
+    DrawStars;
+    FitPSF_Always;
+    FitPSF_DistortionOnly;
+    FitPSF_Never;
+    Lanczos3;
+    Lanczos4;
+    Lanczos5;
+    MitchellNetravaliFilter;
+    MosaicOnly;
+    NearestNeighbor;
+    NoIntersection;
+    OutputMatrix;
+    RegisterMatch;
+    RegisterUnion;
+    RegisterUnionSeparate;
+    SameAsTarget;
+    StructureMap;
+    Structures;
+    f32;
+    f64;
+    i16;
+    i32;
+    i8;
 }

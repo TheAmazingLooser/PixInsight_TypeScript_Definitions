@@ -21,8 +21,8 @@ declare class GridInterpolation {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(r: Rect, S: SurfaceSpline, delta : number /*  8*/, verbose : boolean /*  false*/);
-    constructor(r: Rect, S: ShepardInterpolation, delta : number /*  8*/, verbose : boolean /*  false*/);
+    constructor(r: Rect, S: SurfaceSpline, delta ?: number /*  8*/, verbose ?: boolean /*  false*/);
+    constructor(r: Rect, S: ShepardInterpolation, delta ?: number /*  8*/, verbose ?: boolean /*  false*/);
     constructor(G: GridInterpolation);
 
 
@@ -66,4 +66,9 @@ declare class GridInterpolation {
     static delta: number;
     static isValid: boolean;
     static referenceRect: Rect;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

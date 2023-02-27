@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Gamma: AutoHistogram.prototype.Gamma;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Logarithm: AutoHistogram.prototype.Logarithm;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MTF: AutoHistogram.prototype.MTF;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -41,7 +38,7 @@ declare class AutoHistogram extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AutoHistogram: AutoHistogram);
+    constructor(AutoHistogram?: AutoHistogram);
 
 
     //-------------------------
@@ -78,4 +75,12 @@ declare class AutoHistogram extends ProcessInstance {
     static targetMedianB: number;
     static targetMedianG: number;
     static targetMedianR: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Gamma;
+    Logarithm;
+    MTF;
 }

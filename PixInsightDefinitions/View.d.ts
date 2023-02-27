@@ -90,7 +90,7 @@ declare class View {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public viewById(id: string): View;
+    public static viewById(id: string): View;
 
 
 
@@ -115,4 +115,9 @@ declare class View {
     static stf: Array<any>;
     static uniqueId: string;
     static window: ImageWindow;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -21,8 +21,8 @@ declare class Cursor {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(shape: number);
-    constructor(param_0: any, hotSpot: Point);
+    constructor(shape?: number);
+    constructor(param_0: any, hotSpot?: Point);
     constructor(param_0: any, hotX: number, hotY: number);
     constructor(csr: Cursor);
 
@@ -47,4 +47,9 @@ declare class Cursor {
     static hotSpot: Point;
     static hotX: number;
     static hotY: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

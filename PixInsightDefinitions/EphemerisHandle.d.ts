@@ -27,7 +27,7 @@ declare class EphemerisHandle {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: EphemerisFile, object: string, origin: string);
+    constructor(parent: EphemerisFile, object: string, origin?: string);
 
 
     //-------------------------
@@ -73,4 +73,9 @@ declare class EphemerisHandle {
     static objectName: string;
     static originId: string;
     static startTime: Date;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

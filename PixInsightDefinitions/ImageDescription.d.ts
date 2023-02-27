@@ -93,4 +93,9 @@ declare class ImageDescription {
     static width: number;
     static xResolution: number;
     static yResolution: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

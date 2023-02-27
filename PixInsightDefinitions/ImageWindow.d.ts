@@ -68,7 +68,7 @@ declare class ImageWindow {
     //-------------------------
     constructor();
     constructor(ImageWindow: ImageWindow);
-    constructor(width: number, height: number, numberOfChannels: number, bitsPerSample: number, floatSample: boolean, color: boolean, id: string);
+    constructor(width: number, height: number, numberOfChannels?: number, bitsPerSample?: number, floatSample?: boolean, color?: boolean, id?: string);
 
 
     //-------------------------
@@ -291,16 +291,16 @@ declare class ImageWindow {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public open(url: string): Array<any>;
-    public open(url: string, id: string /* ''*/): Array<any>;
-    public open(url: string, id: string /* ''*/, formatHints: string /* ''*/): Array<any>;
-    public open(url: string, id: string /* ''*/, formatHints: string /* ''*/, asCopy: boolean /* false*/): Array<any>;
+    public static open(url: string): Array<any>;
+    public static open(url: string, id: string /* ''*/): Array<any>;
+    public static open(url: string, id: string /* ''*/, formatHints: string /* ''*/): Array<any>;
+    public static open(url: string, id: string /* ''*/, formatHints: string /* ''*/, asCopy: boolean /* false*/): Array<any>;
 
 
-    public windowByFilePath(path: string): ImageWindow;
+    public static windowByFilePath(path: string): ImageWindow;
 
 
-    public windowById(id: string): ImageWindow;
+    public static windowById(id: string): ImageWindow;
 
 
 
@@ -357,4 +357,9 @@ declare class ImageWindow {
     static visibleViewportRect: Rect;
     static width: number;
     static zoomFactor: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -22,7 +22,7 @@ declare class ArcsinhStretch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ArcsinhStretch: ArcsinhStretch);
+    constructor(ArcsinhStretch?: ArcsinhStretch);
 
 
     //-------------------------
@@ -43,4 +43,9 @@ declare class ArcsinhStretch extends ProcessInstance {
     static protectHighlights: boolean;
     static stretch: number;
     static useRGBWS: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

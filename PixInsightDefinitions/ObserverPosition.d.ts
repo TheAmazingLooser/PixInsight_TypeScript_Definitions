@@ -26,7 +26,7 @@ declare class ObserverPosition {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(longitude: number, latitude: number, height : number /*  0*/, equatorialRadius: number, flattening: number, regionalCenter: Vector, cioBased : boolean /*  false*/);
+    constructor(longitude: number, latitude: number, height ?: number /*  0*/, equatorialRadius?: number, flattening?: number, regionalCenter?: Vector, cioBased ?: boolean /*  false*/);
 
 
     //-------------------------
@@ -51,4 +51,9 @@ declare class ObserverPosition {
     static longitude: number;
     static phi: number;
     static regionalCenter: Vector;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

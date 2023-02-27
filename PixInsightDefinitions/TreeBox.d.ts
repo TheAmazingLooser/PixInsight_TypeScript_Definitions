@@ -32,7 +32,7 @@ declare class TreeBox extends ScrollBox {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -143,4 +143,9 @@ declare class TreeBox extends ScrollBox {
     static rootDecoration: boolean;
     static selectedNodes: Array<any>;
     static uniformRowHeight: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

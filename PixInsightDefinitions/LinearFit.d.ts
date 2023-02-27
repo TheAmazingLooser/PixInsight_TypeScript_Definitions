@@ -20,7 +20,7 @@ declare class LinearFit extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LinearFit: LinearFit);
+    constructor(LinearFit?: LinearFit);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class LinearFit extends ProcessInstance {
     static referenceViewId: string;
     static rejectHigh: number;
     static rejectLow: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

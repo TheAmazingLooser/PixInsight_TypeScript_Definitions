@@ -22,7 +22,7 @@ declare class RGBColorSystem {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(gamma: number /* 2.2*/, srgbGamma: boolean /* true*/, Y: Array<any> /* Y_srgb*/, x: Array<any> /* x_srgb*/, y: Array<any> /* y_srgb*/);
+    constructor(gamma?: number /* 2.2*/, srgbGamma?: boolean /* true*/, Y?: Array<any> /* Y_srgb*/, x?: Array<any> /* x_srgb*/, y?: Array<any> /* y_srgb*/);
     constructor(rgbws: RGBColorSystem);
 
 
@@ -103,58 +103,58 @@ declare class RGBColorSystem {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public hsiSaturation(r: number, g: number, b: number): number;
+    public static hsiSaturation(r: number, g: number, b: number): number;
 
 
-    public hsiSaturation(rgb: Array<any>): number;
+    public static hsiSaturation(rgb: Array<any>): number;
 
 
-    public hsiToRGB(h: number, s: number, i: number): Array<any>;
+    public static hsiToRGB(h: number, s: number, i: number): Array<any>;
 
 
-    public hsiToRGB(hsi: Array<any>): Array<any>;
+    public static hsiToRGB(hsi: Array<any>): Array<any>;
 
 
-    public hsvSaturation(r: number, g: number, b: number): number;
+    public static hsvSaturation(r: number, g: number, b: number): number;
 
 
-    public hsvSaturation(rgb: Array<any>): number;
+    public static hsvSaturation(rgb: Array<any>): number;
 
 
-    public hsvToRGB(h: number, s: number, v: number): Array<any>;
+    public static hsvToRGB(h: number, s: number, v: number): Array<any>;
 
 
-    public hsvToRGB(hsv: Array<any>): Array<any>;
+    public static hsvToRGB(hsv: Array<any>): Array<any>;
 
 
-    public hue(r: number, g: number, b: number): number;
+    public static hue(r: number, g: number, b: number): number;
 
 
-    public hue(rgb: Array<any>): number;
+    public static hue(rgb: Array<any>): number;
 
 
-    public intensity(r: number, g: number, b: number): number;
+    public static intensity(r: number, g: number, b: number): number;
 
 
-    public intensity(rgb: Array<any>): number;
+    public static intensity(rgb: Array<any>): number;
 
 
-    public rgbToHSI(r: number, g: number, b: number): Array<any>;
+    public static rgbToHSI(r: number, g: number, b: number): Array<any>;
 
 
-    public rgbToHSI(rgb: Array<any>): Array<any>;
+    public static rgbToHSI(rgb: Array<any>): Array<any>;
 
 
-    public rgbToHSV(r: number, g: number, b: number): Array<any>;
+    public static rgbToHSV(r: number, g: number, b: number): Array<any>;
 
 
-    public rgbToHSV(rgb: Array<any>): Array<any>;
+    public static rgbToHSV(rgb: Array<any>): Array<any>;
 
 
-    public value(r: number, g: number, b: number): number;
+    public static value(r: number, g: number, b: number): number;
 
 
-    public value(rgb: Array<any>): number;
+    public static value(rgb: Array<any>): number;
 
 
 
@@ -167,4 +167,9 @@ declare class RGBColorSystem {
     static srgbGamma: boolean;
     static x: Array<any>;
     static y: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

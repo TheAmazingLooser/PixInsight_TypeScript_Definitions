@@ -30,7 +30,7 @@ declare class NumericEdit extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -86,4 +86,9 @@ declare class NumericEdit extends Control {
     static sizer: Sizer;
     static upperBound: number;
     static value: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Bicubic: LarsonSekanina.prototype.Bicubic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicBSpline: LarsonSekanina.prototype.BicubicBSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicSpline: LarsonSekanina.prototype.BicubicSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bilinear: LarsonSekanina.prototype.Bilinear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -34,7 +30,7 @@ declare class LarsonSekanina extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LarsonSekanina: LarsonSekanina);
+    constructor(LarsonSekanina?: LarsonSekanina);
 
 
     //-------------------------
@@ -63,4 +59,13 @@ declare class LarsonSekanina extends ProcessInstance {
     static rangeLow: number;
     static threshold: number;
     static useLuminance: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Bicubic;
+    BicubicBSpline;
+    BicubicSpline;
+    Bilinear;
 }

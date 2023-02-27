@@ -18,7 +18,7 @@ declare class ColorComboBox extends ComboBox {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -43,4 +43,9 @@ declare class ColorComboBox extends ComboBox {
     //----static Properties----
     //-------------------------
     static customRGBA: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

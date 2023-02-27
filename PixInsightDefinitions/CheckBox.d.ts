@@ -21,7 +21,7 @@ declare class CheckBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -41,4 +41,9 @@ declare class CheckBox extends Control {
     static state: number;
     static text: string;
     static tristate: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

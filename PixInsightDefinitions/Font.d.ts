@@ -37,8 +37,8 @@ declare class Font {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(stdFamiliy: number, size: number, unit : string /*  "pt"*/);
-    constructor(family: string, size: number, unit : string /*  "pt"*/);
+    constructor(stdFamiliy: number, size?: number, unit ?: string /*  "pt"*/);
+    constructor(family: string, size?: number, unit ?: string /*  "pt"*/);
     constructor(fnt: Font);
 
 
@@ -75,14 +75,14 @@ declare class Font {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public families(): Array<any>;
-    public families(writingSystem: number): Array<any>;
+    public static families(): Array<any>;
+    public static families(writingSystem: number): Array<any>;
 
 
-    public isFixedPitchFont(family: string): boolean;
+    public static isFixedPitchFont(family: string): boolean;
 
 
-    public isScalableFont(family: string): boolean;
+    public static isScalableFont(family: string): boolean;
 
 
 
@@ -109,4 +109,9 @@ declare class Font {
     static underline: boolean;
     static unscaledPointSize: number;
     static weight: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

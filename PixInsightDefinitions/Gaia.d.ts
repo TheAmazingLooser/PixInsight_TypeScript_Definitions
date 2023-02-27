@@ -1,25 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const DataRelease_2: Gaia.prototype.DataRelease_2;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataRelease_3: Gaia.prototype.DataRelease_3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataRelease_3_SP: Gaia.prototype.DataRelease_3_SP;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataRelease_BestAvailable: Gaia.prototype.DataRelease_BestAvailable;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DataRelease_E3: Gaia.prototype.DataRelease_E3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_Dec: Gaia.prototype.SortBy_Dec;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_DontSort: Gaia.prototype.SortBy_DontSort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_G: Gaia.prototype.SortBy_G;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_G_BP: Gaia.prototype.SortBy_G_BP;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_G_RP: Gaia.prototype.SortBy_G_RP;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_Parallax: Gaia.prototype.SortBy_Parallax;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SortBy_RA: Gaia.prototype.SortBy_RA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextFormat_CSV: Gaia.prototype.TextFormat_CSV;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextFormat_Tabular: Gaia.prototype.TextFormat_Tabular;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextFormat_TabularCompound: Gaia.prototype.TextFormat_TabularCompound;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_None: Gaia.prototype.TextHeaders_None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_SearchParameters: Gaia.prototype.TextHeaders_SearchParameters;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_SearchParametersAndTableColumns: Gaia.prototype.TextHeaders_SearchParametersAndTableColumns;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TextHeaders_TableColumns: Gaia.prototype.TextHeaders_TableColumns;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -74,7 +55,7 @@ declare class Gaia extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Gaia: Gaia);
+    constructor(Gaia?: Gaia);
 
 
     //-------------------------
@@ -128,4 +109,28 @@ declare class Gaia extends ProcessInstance {
     static timeTotal: number;
     static timeUncompress: number;
     static verbosity: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    DataRelease_2;
+    DataRelease_3;
+    DataRelease_3_SP;
+    DataRelease_BestAvailable;
+    DataRelease_E3;
+    SortBy_Dec;
+    SortBy_DontSort;
+    SortBy_G;
+    SortBy_G_BP;
+    SortBy_G_RP;
+    SortBy_Parallax;
+    SortBy_RA;
+    TextFormat_CSV;
+    TextFormat_Tabular;
+    TextFormat_TabularCompound;
+    TextHeaders_None;
+    TextHeaders_SearchParameters;
+    TextHeaders_SearchParametersAndTableColumns;
+    TextHeaders_TableColumns;
 }

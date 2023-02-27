@@ -1,13 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const BLACK: Color.prototype.BLACK;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BLUE: Color.prototype.BLUE;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GRAY: Color.prototype.GRAY;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const GREEN: Color.prototype.GREEN;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RED: Color.prototype.RED;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TRANSPARENT: Color.prototype.TRANSPARENT;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WHITE: Color.prototype.WHITE;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -34,79 +27,79 @@ declare class Color {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public alpha(rgba: number): number;
+    public static alpha(rgba: number): number;
 
 
-    public alphaF(rgba: number): number;
+    public static alphaF(rgba: number): number;
 
 
-    public blue(rgba: number): number;
+    public static blue(rgba: number): number;
 
 
-    public blueF(rgba: number): number;
+    public static blueF(rgba: number): number;
 
 
-    public clearAlpha(rgba: number): number;
+    public static clearAlpha(rgba: number): number;
 
 
-    public clearBlue(rgba: number): number;
+    public static clearBlue(rgba: number): number;
 
 
-    public clearGreen(rgba: number): number;
+    public static clearGreen(rgba: number): number;
 
 
-    public clearRed(rgba: number): number;
+    public static clearRed(rgba: number): number;
 
 
-    public green(rgba: number): number;
+    public static green(rgba: number): number;
 
 
-    public greenF(rgba: number): number;
+    public static greenF(rgba: number): number;
 
 
-    public hsiSaturation(rgba: number): number;
+    public static hsiSaturation(rgba: number): number;
 
 
-    public hsvSaturation(rgba: number): number;
+    public static hsvSaturation(rgba: number): number;
 
 
-    public hue(rgba: number): number;
+    public static hue(rgba: number): number;
 
 
-    public isGray(rgba: number): boolean;
+    public static isGray(rgba: number): boolean;
 
 
-    public red(rgba: number): number;
+    public static red(rgba: number): number;
 
 
-    public redF(rgba: number): number;
+    public static redF(rgba: number): number;
 
 
-    public rgbColorToHexString(rgb: number): string;
+    public static rgbColorToHexString(rgb: number): string;
 
 
-    public rgbaColor(r: number, g: number, b: number, a: number): number;
+    public static rgbaColor(r: number, g: number, b: number, a: number): number;
 
 
-    public rgbaColorF(r: number, g: number, b: number, a: number): number;
+    public static rgbaColorF(r: number, g: number, b: number, a: number): number;
 
 
-    public rgbaColorToHexString(rgba: number): string;
+    public static rgbaColorToHexString(rgba: number): string;
 
 
-    public setAlpha(rgba: number, number: number): number;
+    public static setAlpha(rgba: number, number: number): number;
 
 
-    public setBlue(rgba: number, number: number): number;
+    public static setBlue(rgba: number, number: number): number;
 
 
-    public setGreen(rgba: number, number: number): number;
+    public static setGreen(rgba: number, number: number): number;
 
 
-    public setRed(rgba: number, number: number): number;
+    public static setRed(rgba: number, number: number): number;
 
 
-    public value(rgba: number): number;
+    public static value(rgba: number): number;
 
 
 
@@ -114,4 +107,16 @@ declare class Color {
     //-------------------------
     //----static Properties----
     //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    BLACK;
+    BLUE;
+    GRAY;
+    GREEN;
+    RED;
+    TRANSPARENT;
+    WHITE;
 }

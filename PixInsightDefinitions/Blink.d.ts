@@ -17,7 +17,7 @@ declare class Blink extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Blink: Blink);
+    constructor(Blink?: Blink);
 
 
     //-------------------------
@@ -32,5 +32,10 @@ declare class Blink extends ProcessInstance {
 
     //-------------------------
     //----static Properties----
+    //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
     //-------------------------
 }

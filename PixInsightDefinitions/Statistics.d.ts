@@ -17,7 +17,7 @@ declare class Statistics extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Statistics: Statistics);
+    constructor(Statistics?: Statistics);
 
 
     //-------------------------
@@ -32,5 +32,10 @@ declare class Statistics extends ProcessInstance {
 
     //-------------------------
     //----static Properties----
+    //-------------------------
+
+
+    //-------------------------
+    //--------constants--------
     //-------------------------
 }

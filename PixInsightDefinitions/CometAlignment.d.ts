@@ -1,20 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Auto: CometAlignment.prototype.Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicBSpline: CometAlignment.prototype.BicubicBSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicSpline: CometAlignment.prototype.BicubicSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bilinear: CometAlignment.prototype.Bilinear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CatmullRomSplineFilter: CometAlignment.prototype.CatmullRomSplineFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CubicBSplineFilter: CometAlignment.prototype.CubicBSplineFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos3: CometAlignment.prototype.Lanczos3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos4: CometAlignment.prototype.Lanczos4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos5: CometAlignment.prototype.Lanczos5;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MitchellNetravaliFilter: CometAlignment.prototype.MitchellNetravaliFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NearestNeighbor: CometAlignment.prototype.NearestNeighbor;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_Abort: CometAlignment.prototype.OnError_Abort;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_AskUser: CometAlignment.prototype.OnError_AskUser;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const OnError_Continue: CometAlignment.prototype.OnError_Continue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -70,7 +56,7 @@ declare class CometAlignment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CometAlignment: CometAlignment);
+    constructor(CometAlignment?: CometAlignment);
 
 
     //-------------------------
@@ -125,4 +111,23 @@ declare class CometAlignment extends ProcessInstance {
     static subtractMode: boolean;
     static targetFrames: Array<any>;
     static useFileThreads: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Auto;
+    BicubicBSpline;
+    BicubicSpline;
+    Bilinear;
+    CatmullRomSplineFilter;
+    CubicBSplineFilter;
+    Lanczos3;
+    Lanczos4;
+    Lanczos5;
+    MitchellNetravaliFilter;
+    NearestNeighbor;
+    OnError_Abort;
+    OnError_AskUser;
+    OnError_Continue;
 }

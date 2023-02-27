@@ -1,14 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Median3x3: ACDNR.prototype.Median3x3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median5x5: ACDNR.prototype.Median5x5;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Multiscale: ACDNR.prototype.Multiscale;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const None: ACDNR.prototype.None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Recursive: ACDNR.prototype.Recursive;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const UnweightedAverage3x3: ACDNR.prototype.UnweightedAverage3x3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightedAverage3x3: ACDNR.prototype.WeightedAverage3x3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightedAverage5x5: ACDNR.prototype.WeightedAverage5x5;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -65,7 +57,7 @@ declare class ACDNR extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ACDNR: ACDNR);
+    constructor(ACDNR?: ACDNR);
 
 
     //-------------------------
@@ -121,4 +113,17 @@ declare class ACDNR extends ProcessInstance {
     static starThresholdL: number;
     static useMaskC: boolean;
     static useMaskL: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Median3x3;
+    Median5x5;
+    Multiscale;
+    None;
+    Recursive;
+    UnweightedAverage3x3;
+    WeightedAverage3x3;
+    WeightedAverage5x5;
 }

@@ -1,16 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Auto: Rotation.prototype.Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicBSpline: Rotation.prototype.BicubicBSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const BicubicSpline: Rotation.prototype.BicubicSpline;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bilinear: Rotation.prototype.Bilinear;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CatmullRomSplineFilter: Rotation.prototype.CatmullRomSplineFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CubicBSplineFilter: Rotation.prototype.CubicBSplineFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos3: Rotation.prototype.Lanczos3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Lanczos4: Rotation.prototype.Lanczos4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MitchellNetravaliFilter: Rotation.prototype.MitchellNetravaliFilter;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NearestNeighbor: Rotation.prototype.NearestNeighbor;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -38,7 +28,7 @@ declare class Rotation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Rotation: Rotation);
+    constructor(Rotation?: Rotation);
 
 
     //-------------------------
@@ -65,4 +55,19 @@ declare class Rotation extends ProcessInstance {
     static optimizeFast: boolean;
     static red: number;
     static smoothness: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Auto;
+    BicubicBSpline;
+    BicubicSpline;
+    Bilinear;
+    CatmullRomSplineFilter;
+    CubicBSplineFilter;
+    Lanczos3;
+    Lanczos4;
+    MitchellNetravaliFilter;
+    NearestNeighbor;
 }

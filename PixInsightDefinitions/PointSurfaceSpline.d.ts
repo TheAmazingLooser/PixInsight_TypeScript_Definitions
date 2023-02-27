@@ -20,7 +20,7 @@ declare class PointSurfaceSpline {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(P1: Array<any>, P2: Array<any>, smoothness : number /*  0*/, W : Vector /*  null*/, order : number /*  2*/, allowExtrapolation : boolean /*  true*/, maxSplineLength : number /*  1600*/, bucketCapacity : number /*  64*/, verbose : boolean /*  true*/);
+    constructor(P1: Array<any>, P2: Array<any>, smoothness ?: number /*  0*/, W ?: Vector /*  null*/, order ?: number /*  2*/, allowExtrapolation ?: boolean /*  true*/, maxSplineLength ?: number /*  1600*/, bucketCapacity ?: number /*  64*/, verbose ?: boolean /*  true*/);
 
 
     //-------------------------
@@ -59,4 +59,9 @@ declare class PointSurfaceSpline {
     //-------------------------
     static isRecursive: boolean;
     static isValid: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

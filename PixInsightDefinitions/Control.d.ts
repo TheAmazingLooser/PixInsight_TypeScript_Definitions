@@ -77,7 +77,7 @@ declare class Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -326,4 +326,9 @@ declare class Control {
     static window: Control;
     static windowOpacity: number;
     static windowTitle: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

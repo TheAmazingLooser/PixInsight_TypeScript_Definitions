@@ -23,7 +23,7 @@ declare class QuadTreeNode {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(rect: Rect, index: Array<any>);
+    constructor(rect?: Rect, index?: Array<any>);
 
 
     //-------------------------
@@ -61,4 +61,9 @@ declare class QuadTreeNode {
     static rect: Rect;
     static se: QuadTreeNode;
     static sw: QuadTreeNode;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

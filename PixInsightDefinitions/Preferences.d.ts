@@ -178,7 +178,7 @@ declare class Preferences extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Preferences: Preferences);
+    constructor(Preferences?: Preferences);
 
 
     //-------------------------
@@ -355,4 +355,9 @@ declare class Preferences extends ProcessInstance {
     static Security_enableLocalSigningIdentity: boolean;
     static Security_reportScriptSignatures: boolean;
     static Security_warnOnUnsignedCodeExecution: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

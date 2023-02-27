@@ -38,4 +38,9 @@ declare class ArrayBufferView {
     static buffer: ArrayBuffer;
     static byteLength: number;
     static byteOffset: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

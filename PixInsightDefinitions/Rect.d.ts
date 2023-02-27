@@ -381,4 +381,9 @@ declare class Rect {
     static x1: number;
     static y0: number;
     static y1: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

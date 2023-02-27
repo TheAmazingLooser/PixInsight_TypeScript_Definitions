@@ -20,7 +20,7 @@ declare class GroupBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -39,4 +39,9 @@ declare class GroupBox extends Control {
     static checked: boolean;
     static title: string;
     static titleCheckBox: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

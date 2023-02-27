@@ -26,7 +26,7 @@ declare class AdaptiveStretch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AdaptiveStretch: AdaptiveStretch);
+    constructor(AdaptiveStretch?: AdaptiveStretch);
 
 
     //-------------------------
@@ -51,4 +51,9 @@ declare class AdaptiveStretch extends ProcessInstance {
     static roiY1: number;
     static useProtection: boolean;
     static useROI: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

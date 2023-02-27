@@ -24,7 +24,7 @@ declare class TextBox extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -60,4 +60,9 @@ declare class TextBox extends Frame {
     static selectionEnd: number;
     static selectionStart: number;
     static text: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

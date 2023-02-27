@@ -19,7 +19,7 @@ declare class FourierTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FourierTransform: FourierTransform);
+    constructor(FourierTransform?: FourierTransform);
 
 
     //-------------------------
@@ -37,4 +37,9 @@ declare class FourierTransform extends ProcessInstance {
     //-------------------------
     static centered: boolean;
     static radialCoordinates: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

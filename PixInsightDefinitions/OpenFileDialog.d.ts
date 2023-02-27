@@ -41,4 +41,9 @@ declare class OpenFileDialog extends FileDialog {
     static fileName: string;
     static fileNames: Array<any>;
     static multipleSelections: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

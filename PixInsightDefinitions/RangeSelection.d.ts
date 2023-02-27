@@ -24,7 +24,7 @@ declare class RangeSelection extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(RangeSelection: RangeSelection);
+    constructor(RangeSelection?: RangeSelection);
 
 
     //-------------------------
@@ -47,4 +47,9 @@ declare class RangeSelection extends ProcessInstance {
     static screening: boolean;
     static smoothness: number;
     static toLightness: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

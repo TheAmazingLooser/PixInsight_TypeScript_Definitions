@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Bit10: LocalHistogramEqualization.prototype.Bit10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bit12: LocalHistogramEqualization.prototype.Bit12;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Bit8: LocalHistogramEqualization.prototype.Bit8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -25,7 +22,7 @@ declare class LocalHistogramEqualization extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LocalHistogramEqualization: LocalHistogramEqualization);
+    constructor(LocalHistogramEqualization?: LocalHistogramEqualization);
 
 
     //-------------------------
@@ -46,4 +43,12 @@ declare class LocalHistogramEqualization extends ProcessInstance {
     static histogramBins: number;
     static radius: number;
     static slopeLimit: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Bit10;
+    Bit12;
+    Bit8;
 }

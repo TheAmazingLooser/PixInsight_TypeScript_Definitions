@@ -1,11 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const ConstrainedLeastSquares: RestorationFilter.prototype.ConstrainedLeastSquares;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const External: RestorationFilter.prototype.External;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MotionBlur: RestorationFilter.prototype.MotionBlur;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Parametric: RestorationFilter.prototype.Parametric;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Wiener: RestorationFilter.prototype.Wiener;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -47,7 +42,7 @@ declare class RestorationFilter extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(RestorationFilter: RestorationFilter);
+    constructor(RestorationFilter?: RestorationFilter);
 
 
     //-------------------------
@@ -88,4 +83,14 @@ declare class RestorationFilter extends ProcessInstance {
     static rangeLow: number;
     static toLuminance: boolean;
     static useLuminance: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    ConstrainedLeastSquares;
+    External;
+    MotionBlur;
+    Parametric;
+    Wiener;
 }

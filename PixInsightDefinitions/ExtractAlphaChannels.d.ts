@@ -1,9 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const ActiveAlphaChannel: ExtractAlphaChannels.prototype.ActiveAlphaChannel;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AllAlphaChannels: ExtractAlphaChannels.prototype.AllAlphaChannels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ChannelList: ExtractAlphaChannels.prototype.ChannelList;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -24,7 +21,7 @@ declare class ExtractAlphaChannels extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ExtractAlphaChannels: ExtractAlphaChannels);
+    constructor(ExtractAlphaChannels?: ExtractAlphaChannels);
 
 
     //-------------------------
@@ -44,4 +41,12 @@ declare class ExtractAlphaChannels extends ProcessInstance {
     static channels: number;
     static delete: boolean;
     static extract: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    ActiveAlphaChannel;
+    AllAlphaChannels;
+    ChannelList;
 }

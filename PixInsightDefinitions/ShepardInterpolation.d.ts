@@ -56,4 +56,9 @@ declare class ShepardInterpolation {
     static isValid: boolean;
     static power: number;
     static radius: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

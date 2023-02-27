@@ -26,7 +26,7 @@ declare class Matrix {
     constructor(rows: number, cols: number);
     constructor(value: number, rows: number, cols: number);
     constructor(a00: number, a01: number, a02: number, a10: number, a11: number, a12: number, a20: number, a21: number, a22: number);
-    constructor(A: Matrix, startRow: number, startCol: number, rows: number, cols: number);
+    constructor(A: Matrix, startRow?: number, startCol?: number, rows?: number, cols?: number);
     constructor(a: Array<any>, rows: number, cols: number);
     constructor(a: Array<any>, startIndex: number, rows: number, cols: number);
     constructor(a: any /* TypedArray */, rows: number, cols: number);
@@ -288,58 +288,58 @@ declare class Matrix {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public fromImage(img: Image): Matrix;
-    public fromImage(img: Image, rect: Rect /* 0*/): Matrix;
-    public fromImage(img: Image, rect: Rect /* 0*/, channel: number /* -1*/): Matrix;
+    public static fromImage(img: Image): Matrix;
+    public static fromImage(img: Image, rect: Rect /* 0*/): Matrix;
+    public static fromImage(img: Image, rect: Rect /* 0*/, channel: number /* -1*/): Matrix;
 
 
-    public gaussianFilter(sigma: number): Matrix;
-    public gaussianFilter(sigma: number, epsilon: number /* 0.01*/): Matrix;
-    public gaussianFilter(sigma: number, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
-    public gaussianFilter(sigma: number, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
+    public static gaussianFilter(sigma: number): Matrix;
+    public static gaussianFilter(sigma: number, epsilon: number /* 0.01*/): Matrix;
+    public static gaussianFilter(sigma: number, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
+    public static gaussianFilter(sigma: number, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
 
 
-    public gaussianFilterBySize(size: number): Matrix;
-    public gaussianFilterBySize(size: number, epsilon: number /* 0.01*/): Matrix;
-    public gaussianFilterBySize(size: number, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
-    public gaussianFilterBySize(size: number, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
+    public static gaussianFilterBySize(size: number): Matrix;
+    public static gaussianFilterBySize(size: number, epsilon: number /* 0.01*/): Matrix;
+    public static gaussianFilterBySize(size: number, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
+    public static gaussianFilterBySize(size: number, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
 
 
-    public linearFilter(size: number): Matrix;
-    public linearFilter(size: number, v0: number /* 1.0*/): Matrix;
-    public linearFilter(size: number, v0: number /* 1.0*/, v1: number /* 0.01*/): Matrix;
+    public static linearFilter(size: number): Matrix;
+    public static linearFilter(size: number, v0: number /* 1.0*/): Matrix;
+    public static linearFilter(size: number, v0: number /* 1.0*/, v1: number /* 0.01*/): Matrix;
 
 
-    public moffatFilter(sigma: number): Matrix;
-    public moffatFilter(sigma: number, beta: number /* 4*/): Matrix;
-    public moffatFilter(sigma: number, beta: number /* 4*/, epsilon: number /* 0.01*/): Matrix;
-    public moffatFilter(sigma: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
-    public moffatFilter(sigma: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
+    public static moffatFilter(sigma: number): Matrix;
+    public static moffatFilter(sigma: number, beta: number /* 4*/): Matrix;
+    public static moffatFilter(sigma: number, beta: number /* 4*/, epsilon: number /* 0.01*/): Matrix;
+    public static moffatFilter(sigma: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
+    public static moffatFilter(sigma: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
 
 
-    public moffatFilterBySize(size: number): Matrix;
-    public moffatFilterBySize(size: number, beta: number /* 4*/): Matrix;
-    public moffatFilterBySize(size: number, beta: number /* 4*/, epsilon: number /* 0.01*/): Matrix;
-    public moffatFilterBySize(size: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
-    public moffatFilterBySize(size: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
+    public static moffatFilterBySize(size: number): Matrix;
+    public static moffatFilterBySize(size: number, beta: number /* 4*/): Matrix;
+    public static moffatFilterBySize(size: number, beta: number /* 4*/, epsilon: number /* 0.01*/): Matrix;
+    public static moffatFilterBySize(size: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
+    public static moffatFilterBySize(size: number, beta: number /* 4*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
 
 
-    public unitMatrix(): Matrix;
-    public unitMatrix(n: number /* 3*/): Matrix;
+    public static unitMatrix(): Matrix;
+    public static unitMatrix(n: number /* 3*/): Matrix;
 
 
-    public variableShapeFilter(sigma: number): Matrix;
-    public variableShapeFilter(sigma: number, shape: number /* 2*/): Matrix;
-    public variableShapeFilter(sigma: number, shape: number /* 2*/, epsilon: number /* 0.01*/): Matrix;
-    public variableShapeFilter(sigma: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
-    public variableShapeFilter(sigma: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
+    public static variableShapeFilter(sigma: number): Matrix;
+    public static variableShapeFilter(sigma: number, shape: number /* 2*/): Matrix;
+    public static variableShapeFilter(sigma: number, shape: number /* 2*/, epsilon: number /* 0.01*/): Matrix;
+    public static variableShapeFilter(sigma: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
+    public static variableShapeFilter(sigma: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
 
 
-    public variableShapeFilterBySize(size: number): Matrix;
-    public variableShapeFilterBySize(size: number, shape: number /* 2*/): Matrix;
-    public variableShapeFilterBySize(size: number, shape: number /* 2*/, epsilon: number /* 0.01*/): Matrix;
-    public variableShapeFilterBySize(size: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
-    public variableShapeFilterBySize(size: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
+    public static variableShapeFilterBySize(size: number): Matrix;
+    public static variableShapeFilterBySize(size: number, shape: number /* 2*/): Matrix;
+    public static variableShapeFilterBySize(size: number, shape: number /* 2*/, epsilon: number /* 0.01*/): Matrix;
+    public static variableShapeFilterBySize(size: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/): Matrix;
+    public static variableShapeFilterBySize(size: number, shape: number /* 2*/, epsilon: number /* 0.01*/, rho: number /* 1*/, theta: number /* 0*/): Matrix;
 
 
 
@@ -352,4 +352,9 @@ declare class Matrix {
     static isEmpty: boolean;
     static numberOfElements: number;
     static rows: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

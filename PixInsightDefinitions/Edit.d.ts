@@ -31,7 +31,7 @@ declare class Edit extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -71,4 +71,9 @@ declare class Edit extends Frame {
     static text: string;
     static utf8: ByteArray;
     static validatingRegExp: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

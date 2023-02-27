@@ -22,7 +22,7 @@ declare class Label extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -45,4 +45,9 @@ declare class Label extends Frame {
     static textAlignment: number;
     static useRichText: boolean;
     static wordWrapping: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

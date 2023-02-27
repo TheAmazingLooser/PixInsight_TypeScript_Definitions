@@ -1,8 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const MaskType_Intensity: MaskedStretch.prototype.MaskType_Intensity;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MaskType_Value: MaskedStretch.prototype.MaskType_Value;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -31,7 +29,7 @@ declare class MaskedStretch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MaskedStretch: MaskedStretch);
+    constructor(MaskedStretch?: MaskedStretch);
 
 
     //-------------------------
@@ -59,4 +57,11 @@ declare class MaskedStretch extends ProcessInstance {
     static roiY1: number;
     static targetBackground: number;
     static useROI: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    MaskType_Intensity;
+    MaskType_Value;
 }

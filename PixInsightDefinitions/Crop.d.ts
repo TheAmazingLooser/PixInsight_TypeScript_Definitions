@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AbsoluteCentimeters: Crop.prototype.AbsoluteCentimeters;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AbsoluteInches: Crop.prototype.AbsoluteInches;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AbsolutePixels: Crop.prototype.AbsolutePixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RelativeMargins: Crop.prototype.RelativeMargins;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -35,7 +31,7 @@ declare class Crop extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Crop: Crop);
+    constructor(Crop?: Crop);
 
 
     //-------------------------
@@ -65,4 +61,13 @@ declare class Crop extends ProcessInstance {
     static topMargin: number;
     static xResolution: number;
     static yResolution: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AbsoluteCentimeters;
+    AbsoluteInches;
+    AbsolutePixels;
+    RelativeMargins;
 }

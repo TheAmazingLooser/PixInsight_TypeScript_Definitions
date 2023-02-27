@@ -36,4 +36,9 @@ declare class NumericControl extends NumericEdit {
     //-------------------------
     static exponential: boolean;
     static slider: HorizontalSlider;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

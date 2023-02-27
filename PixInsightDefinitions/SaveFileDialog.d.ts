@@ -39,4 +39,9 @@ declare class SaveFileDialog extends FileDialog {
     //-------------------------
     static fileName: string;
     static overwritePrompt: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

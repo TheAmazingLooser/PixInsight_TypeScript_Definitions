@@ -1,59 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AdaptiveNormalization: ImageIntegration.prototype.AdaptiveNormalization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AdaptiveRejectionNormalization: ImageIntegration.prototype.AdaptiveRejectionNormalization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Additive: ImageIntegration.prototype.Additive;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AdditiveWithScaling: ImageIntegration.prototype.AdditiveWithScaling;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Average: ImageIntegration.prototype.Average;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AverageWeight: ImageIntegration.prototype.AverageWeight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AveragedSigmaClip: ImageIntegration.prototype.AveragedSigmaClip;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const CCDClip: ImageIntegration.prototype.CCDClip;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DontCare: ImageIntegration.prototype.DontCare;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const EqualizeFluxes: ImageIntegration.prototype.EqualizeFluxes;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ExposureTime: ImageIntegration.prototype.ExposureTime;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const KeywordWeight: ImageIntegration.prototype.KeywordWeight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const LinearFit: ImageIntegration.prototype.LinearFit;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const LocalNormalization: ImageIntegration.prototype.LocalNormalization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const LocalRejectionNormalization: ImageIntegration.prototype.LocalRejectionNormalization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Maximum: ImageIntegration.prototype.Maximum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median: ImageIntegration.prototype.Median;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MedianWeight: ImageIntegration.prototype.MedianWeight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MinMax: ImageIntegration.prototype.MinMax;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Minimum: ImageIntegration.prototype.Minimum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Multiplicative: ImageIntegration.prototype.Multiplicative;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MultiplicativeWithScaling: ImageIntegration.prototype.MultiplicativeWithScaling;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoNormalization: ImageIntegration.prototype.NoNormalization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoRejection: ImageIntegration.prototype.NoRejection;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoRejectionNormalization: ImageIntegration.prototype.NoRejectionNormalization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_KSigma: ImageIntegration.prototype.NoiseEvaluation_KSigma;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_MRS: ImageIntegration.prototype.NoiseEvaluation_MRS;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoiseEvaluation_NStar: ImageIntegration.prototype.NoiseEvaluation_NStar;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFSNR: ImageIntegration.prototype.PSFSNR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFScaleSNR: ImageIntegration.prototype.PSFScaleSNR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFSignalWeight: ImageIntegration.prototype.PSFSignalWeight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Auto: ImageIntegration.prototype.PSFType_Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Gaussian: ImageIntegration.prototype.PSFType_Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat15: ImageIntegration.prototype.PSFType_Moffat15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat4: ImageIntegration.prototype.PSFType_Moffat4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat6: ImageIntegration.prototype.PSFType_Moffat6;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat8: ImageIntegration.prototype.PSFType_Moffat8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_MoffatA: ImageIntegration.prototype.PSFType_MoffatA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PercentileClip: ImageIntegration.prototype.PercentileClip;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Rejection_ESD: ImageIntegration.prototype.Rejection_ESD;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Rejection_RCR: ImageIntegration.prototype.Rejection_RCR;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SNREstimate: ImageIntegration.prototype.SNREstimate;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Scale: ImageIntegration.prototype.Scale;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SigmaClip: ImageIntegration.prototype.SigmaClip;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SignalWeight: ImageIntegration.prototype.SignalWeight;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_AvgDev: ImageIntegration.prototype.WeightScale_AvgDev;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_BWMV: ImageIntegration.prototype.WeightScale_BWMV;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_IKSS: ImageIntegration.prototype.WeightScale_IKSS;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_MAD: ImageIntegration.prototype.WeightScale_MAD;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_PBMV: ImageIntegration.prototype.WeightScale_PBMV;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_Qn: ImageIntegration.prototype.WeightScale_Qn;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WeightScale_Sn: ImageIntegration.prototype.WeightScale_Sn;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const WinsorizedSigmaClip: ImageIntegration.prototype.WinsorizedSigmaClip;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -210,7 +157,7 @@ declare class ImageIntegration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ImageIntegration: ImageIntegration);
+    constructor(ImageIntegration?: ImageIntegration);
 
 
     //-------------------------
@@ -366,4 +313,62 @@ declare class ImageIntegration extends ProcessInstance {
     static weightMode: number;
     static weightScale: number;
     static winsorizationCutoff: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AdaptiveNormalization;
+    AdaptiveRejectionNormalization;
+    Additive;
+    AdditiveWithScaling;
+    Average;
+    AverageWeight;
+    AveragedSigmaClip;
+    CCDClip;
+    DontCare;
+    EqualizeFluxes;
+    ExposureTime;
+    KeywordWeight;
+    LinearFit;
+    LocalNormalization;
+    LocalRejectionNormalization;
+    Maximum;
+    Median;
+    MedianWeight;
+    MinMax;
+    Minimum;
+    Multiplicative;
+    MultiplicativeWithScaling;
+    NoNormalization;
+    NoRejection;
+    NoRejectionNormalization;
+    NoiseEvaluation_KSigma;
+    NoiseEvaluation_MRS;
+    NoiseEvaluation_NStar;
+    PSFSNR;
+    PSFScaleSNR;
+    PSFSignalWeight;
+    PSFType_Auto;
+    PSFType_Gaussian;
+    PSFType_Moffat15;
+    PSFType_Moffat4;
+    PSFType_Moffat6;
+    PSFType_Moffat8;
+    PSFType_MoffatA;
+    PercentileClip;
+    Rejection_ESD;
+    Rejection_RCR;
+    SNREstimate;
+    Scale;
+    SigmaClip;
+    SignalWeight;
+    WeightScale_AvgDev;
+    WeightScale_BWMV;
+    WeightScale_IKSS;
+    WeightScale_MAD;
+    WeightScale_PBMV;
+    WeightScale_Qn;
+    WeightScale_Sn;
+    WinsorizedSigmaClip;
 }

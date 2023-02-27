@@ -1,14 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AllPixelChanges: ATrousWaveletTransform.prototype.AllPixelChanges;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const DecreasingPixels: ATrousWaveletTransform.prototype.DecreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Disabled: ATrousWaveletTransform.prototype.Disabled;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Hyperbolic: ATrousWaveletTransform.prototype.Hyperbolic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const IncreasingPixels: ATrousWaveletTransform.prototype.IncreasingPixels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Ln: ATrousWaveletTransform.prototype.Ln;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Log10: ATrousWaveletTransform.prototype.Log10;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const NoFunction: ATrousWaveletTransform.prototype.NoFunction;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -50,7 +42,7 @@ declare class ATrousWaveletTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ATrousWaveletTransform: ATrousWaveletTransform);
+    constructor(ATrousWaveletTransform?: ATrousWaveletTransform);
 
 
     //-------------------------
@@ -91,4 +83,17 @@ declare class ATrousWaveletTransform extends ProcessInstance {
     static toChrominance: boolean;
     static toLuminance: boolean;
     static useMultiresolutionSupport: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AllPixelChanges;
+    DecreasingPixels;
+    Disabled;
+    Hyperbolic;
+    IncreasingPixels;
+    Ln;
+    Log10;
+    NoFunction;
 }

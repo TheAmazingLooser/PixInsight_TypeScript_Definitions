@@ -1,13 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const PSFType_Auto: SpectrophotometricColorCalibration.prototype.PSFType_Auto;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Gaussian: SpectrophotometricColorCalibration.prototype.PSFType_Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat15: SpectrophotometricColorCalibration.prototype.PSFType_Moffat15;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat4: SpectrophotometricColorCalibration.prototype.PSFType_Moffat4;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat6: SpectrophotometricColorCalibration.prototype.PSFType_Moffat6;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_Moffat8: SpectrophotometricColorCalibration.prototype.PSFType_Moffat8;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PSFType_MoffatA: SpectrophotometricColorCalibration.prototype.PSFType_MoffatA;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -77,7 +70,7 @@ declare class SpectrophotometricColorCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SpectrophotometricColorCalibration: SpectrophotometricColorCalibration);
+    constructor(SpectrophotometricColorCalibration?: SpectrophotometricColorCalibration);
 
 
     //-------------------------
@@ -146,4 +139,16 @@ declare class SpectrophotometricColorCalibration extends ProcessInstance {
     static targetSourceCount: number;
     static whiteReferenceName: string;
     static whiteReferenceSpectrum: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    PSFType_Auto;
+    PSFType_Gaussian;
+    PSFType_Moffat15;
+    PSFType_Moffat4;
+    PSFType_Moffat6;
+    PSFType_Moffat8;
+    PSFType_MoffatA;
 }

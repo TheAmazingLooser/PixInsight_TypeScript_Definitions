@@ -1,16 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const B3Spline5x5: Deconvolution.prototype.B3Spline5x5;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const External: Deconvolution.prototype.External;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Gaussian: Deconvolution.prototype.Gaussian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const LinearInterpolation3x3: Deconvolution.prototype.LinearInterpolation3x3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const MotionBlur: Deconvolution.prototype.MotionBlur;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Parametric: Deconvolution.prototype.Parametric;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Poisson: Deconvolution.prototype.Poisson;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const RichardsonLucy: Deconvolution.prototype.RichardsonLucy;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SmallScale3x3: Deconvolution.prototype.SmallScale3x3;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const VanCittert: Deconvolution.prototype.VanCittert;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -59,7 +49,7 @@ declare class Deconvolution extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Deconvolution: Deconvolution);
+    constructor(Deconvolution?: Deconvolution);
 
 
     //-------------------------
@@ -107,4 +97,19 @@ declare class Deconvolution extends ProcessInstance {
     static useLuminance: boolean;
     static useRegularization: boolean;
     static waveletLayers: Array<any>;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    B3Spline5x5;
+    External;
+    Gaussian;
+    LinearInterpolation3x3;
+    MotionBlur;
+    Parametric;
+    Poisson;
+    RichardsonLucy;
+    SmallScale3x3;
+    VanCittert;
 }

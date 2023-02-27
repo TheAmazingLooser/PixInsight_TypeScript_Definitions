@@ -1,15 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Custom: Divide.prototype.Custom;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FixedValueZone: Divide.prototype.FixedValueZone;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const ImageLinearization: Divide.prototype.ImageLinearization;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Maximum: Divide.prototype.Maximum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Mean: Divide.prototype.Mean;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median: Divide.prototype.Median;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Minimum: Divide.prototype.Minimum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PlainDivision: Divide.prototype.PlainDivision;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StatisticalValueZone: Divide.prototype.StatisticalValueZone;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -39,7 +30,7 @@ declare class Divide extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Divide: Divide);
+    constructor(Divide?: Divide);
 
 
     //-------------------------
@@ -68,4 +59,18 @@ declare class Divide extends ProcessInstance {
     static shadowsLimit: number;
     static statisticalDownLimit: number;
     static statisticalUpLimit: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Custom;
+    FixedValueZone;
+    ImageLinearization;
+    Maximum;
+    Mean;
+    Median;
+    Minimum;
+    PlainDivision;
+    StatisticalValueZone;
 }

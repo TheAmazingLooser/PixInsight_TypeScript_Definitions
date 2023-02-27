@@ -29,7 +29,7 @@ declare class SpinBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -60,4 +60,9 @@ declare class SpinBox extends Control {
     static suffix: string;
     static value: number;
     static wrapping: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

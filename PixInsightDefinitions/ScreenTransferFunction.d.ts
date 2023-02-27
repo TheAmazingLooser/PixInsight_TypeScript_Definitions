@@ -1,8 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Grayscale: ScreenTransferFunction.prototype.Grayscale;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SeparateChannels: ScreenTransferFunction.prototype.SeparateChannels;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -21,7 +19,7 @@ declare class ScreenTransferFunction extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ScreenTransferFunction: ScreenTransferFunction);
+    constructor(ScreenTransferFunction?: ScreenTransferFunction);
 
 
     //-------------------------
@@ -39,4 +37,11 @@ declare class ScreenTransferFunction extends ProcessInstance {
     //-------------------------
     static STF: Array<any>;
     static interaction: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Grayscale;
+    SeparateChannels;
 }

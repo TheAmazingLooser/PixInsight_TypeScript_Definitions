@@ -24,9 +24,9 @@ declare class Vector {
     constructor();
     constructor(length: number);
     constructor(value: number, length: number);
-    constructor(v: Vector, startIndex: number /* 0*/, endIndex: number /* v.length*/);
-    constructor(a: Array<any>, startIndex: number /* 0*/, endIndex: number /* a.length*/);
-    constructor(a: any /* TypedArray */, startIndex: number /* 0*/, endIndex: number /* a.length*/);
+    constructor(v: Vector, startIndex?: number /* 0*/, endIndex?: number /* v.length*/);
+    constructor(a: Array<any>, startIndex?: number /* 0*/, endIndex?: number /* a.length*/);
+    constructor(a: any /* TypedArray */, startIndex?: number /* 0*/, endIndex?: number /* a.length*/);
 
 
     //-------------------------
@@ -272,10 +272,10 @@ declare class Vector {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public fromSpherical(longitude: number, latitude: number): Vector;
+    public static fromSpherical(longitude: number, latitude: number): Vector;
 
 
-    public fromSpherical(slon: number, clon: number, slat: number, clat: number): Vector;
+    public static fromSpherical(slon: number, clon: number, slat: number, clat: number): Vector;
 
 
 
@@ -287,4 +287,9 @@ declare class Vector {
     static length: number;
     static lowerBound: number;
     static upperBound: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

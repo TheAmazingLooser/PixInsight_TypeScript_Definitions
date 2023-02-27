@@ -18,7 +18,7 @@ declare class ImageIdentifier extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ImageIdentifier: ImageIdentifier);
+    constructor(ImageIdentifier?: ImageIdentifier);
 
 
     //-------------------------
@@ -35,4 +35,9 @@ declare class ImageIdentifier extends ProcessInstance {
     //----static Properties----
     //-------------------------
     static id: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

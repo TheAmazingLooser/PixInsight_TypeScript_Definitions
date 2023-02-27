@@ -1,27 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AlignmentDevice_PolygonMatching: IndigoCCDFrame.prototype.AlignmentDevice_PolygonMatching;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AlignmentDevice_TriangleSimilarity: IndigoCCDFrame.prototype.AlignmentDevice_TriangleSimilarity;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FrameType_Bias: IndigoCCDFrame.prototype.FrameType_Bias;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FrameType_Dark: IndigoCCDFrame.prototype.FrameType_Dark;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FrameType_Flat: IndigoCCDFrame.prototype.FrameType_Flat;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const FrameType_Light: IndigoCCDFrame.prototype.FrameType_Light;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_Gnomonic: IndigoCCDFrame.prototype.Projection_Gnomonic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_HammerAitoff: IndigoCCDFrame.prototype.Projection_HammerAitoff;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_Mercator: IndigoCCDFrame.prototype.Projection_Mercator;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_Orthographic: IndigoCCDFrame.prototype.Projection_Orthographic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_PlateCarree: IndigoCCDFrame.prototype.Projection_PlateCarree;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_Stereographic: IndigoCCDFrame.prototype.Projection_Stereographic;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Projection_ZenithalEqualArea: IndigoCCDFrame.prototype.Projection_ZenithalEqualArea;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TelescopeSelection_ActiveOrMountController: IndigoCCDFrame.prototype.TelescopeSelection_ActiveOrMountController;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TelescopeSelection_ActiveTelescope: IndigoCCDFrame.prototype.TelescopeSelection_ActiveTelescope;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TelescopeSelection_DeviceName: IndigoCCDFrame.prototype.TelescopeSelection_DeviceName;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TelescopeSelection_MountController: IndigoCCDFrame.prototype.TelescopeSelection_MountController;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const TelescopeSelection_NoTelescope: IndigoCCDFrame.prototype.TelescopeSelection_NoTelescope;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const UploadMode_Client: IndigoCCDFrame.prototype.UploadMode_Client;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const UploadMode_Server: IndigoCCDFrame.prototype.UploadMode_Server;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const UploadMode_ServerAndClient: IndigoCCDFrame.prototype.UploadMode_ServerAndClient;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -82,7 +61,7 @@ declare class IndigoCCDFrame extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IndigoCCDFrame: IndigoCCDFrame);
+    constructor(IndigoCCDFrame?: IndigoCCDFrame);
 
 
     //-------------------------
@@ -142,4 +121,30 @@ declare class IndigoCCDFrame extends ProcessInstance {
     static telescopeDeviceName: string;
     static telescopeSelection: number;
     static uploadMode: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AlignmentDevice_PolygonMatching;
+    AlignmentDevice_TriangleSimilarity;
+    FrameType_Bias;
+    FrameType_Dark;
+    FrameType_Flat;
+    FrameType_Light;
+    Projection_Gnomonic;
+    Projection_HammerAitoff;
+    Projection_Mercator;
+    Projection_Orthographic;
+    Projection_PlateCarree;
+    Projection_Stereographic;
+    Projection_ZenithalEqualArea;
+    TelescopeSelection_ActiveOrMountController;
+    TelescopeSelection_ActiveTelescope;
+    TelescopeSelection_DeviceName;
+    TelescopeSelection_MountController;
+    TelescopeSelection_NoTelescope;
+    UploadMode_Client;
+    UploadMode_Server;
+    UploadMode_ServerAndClient;
 }

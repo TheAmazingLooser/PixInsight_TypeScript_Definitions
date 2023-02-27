@@ -22,7 +22,7 @@ declare class Complex {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(re: number, im: number);
+    constructor(re: number, im?: number);
     constructor(c: Complex);
 
 
@@ -126,10 +126,10 @@ declare class Complex {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public polar(r: number, thetaRadians: number): Complex;
+    public static polar(r: number, thetaRadians: number): Complex;
 
 
-    public polar(r: number, sinTheta: number, cosTheta: number): Complex;
+    public static polar(r: number, sinTheta: number, cosTheta: number): Complex;
 
 
 
@@ -141,4 +141,9 @@ declare class Complex {
     static imag: number;
     static re: number;
     static real: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -24,7 +24,7 @@ declare class CreateAlphaChannels extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CreateAlphaChannels: CreateAlphaChannels);
+    constructor(CreateAlphaChannels?: CreateAlphaChannels);
 
 
     //-------------------------
@@ -47,4 +47,9 @@ declare class CreateAlphaChannels extends ProcessInstance {
     static replace: boolean;
     static sourceId: string;
     static transparency: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

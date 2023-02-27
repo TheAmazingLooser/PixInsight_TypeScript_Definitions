@@ -1,13 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Impulsional: NoiseGenerator.prototype.Impulsional;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const None: NoiseGenerator.prototype.None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Normal: NoiseGenerator.prototype.Normal;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Poisson: NoiseGenerator.prototype.Poisson;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PreserveMean: NoiseGenerator.prototype.PreserveMean;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PreserveMedian: NoiseGenerator.prototype.PreserveMedian;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Uniform: NoiseGenerator.prototype.Uniform;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -28,7 +21,7 @@ declare class NoiseGenerator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NoiseGenerator: NoiseGenerator);
+    constructor(NoiseGenerator?: NoiseGenerator);
 
 
     //-------------------------
@@ -48,4 +41,16 @@ declare class NoiseGenerator extends ProcessInstance {
     static distribution: number;
     static impulsionalNoiseProbability: number;
     static preserveBrightness: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Impulsional;
+    None;
+    Normal;
+    Poisson;
+    PreserveMean;
+    PreserveMedian;
+    Uniform;
 }

@@ -23,7 +23,7 @@ declare class CloneStamp extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CloneStamp: CloneStamp);
+    constructor(CloneStamp?: CloneStamp);
 
 
     //-------------------------
@@ -45,4 +45,9 @@ declare class CloneStamp extends ProcessInstance {
     static clonerColor: number;
     static height: number;
     static width: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

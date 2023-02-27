@@ -27,8 +27,8 @@ declare class TreeBoxNode {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(TreeBox: any, idx: number);
-    constructor(TreeBoxNode: any, idx: number);
+    constructor(TreeBox: any, idx?: number);
+    constructor(TreeBoxNode: any, idx?: number);
 
 
     //-------------------------
@@ -110,4 +110,9 @@ declare class TreeBoxNode {
     static parentTree: TreeBox;
     static selectable: boolean;
     static selected: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

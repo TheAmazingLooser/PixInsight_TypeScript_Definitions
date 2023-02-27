@@ -20,7 +20,7 @@ declare class BRQuadTree {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(objects: Array<any>, bucketCapacity : number /*  40*/);
+    constructor(objects?: Array<any>, bucketCapacity ?: number /*  40*/);
 
 
     //-------------------------
@@ -97,4 +97,9 @@ declare class BRQuadTree {
     static bucketCapacity: number;
     static objects: Array<any>;
     static root: QuadTreeNode;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

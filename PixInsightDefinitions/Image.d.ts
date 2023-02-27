@@ -65,8 +65,8 @@ declare class Image {
     //-------------------------
     constructor();
     constructor(src: Image);
-    constructor(width: number, height: number, numberOfChannels: number /* 1*/, colorSpace: number /* Gray*/, bitsPerSample: number /* 32*/, sampleType: number /* Float*/);
-    constructor(array: any /* TypedArray */, width: number, height: number, numberOfChannels: number /* 1*/, colorSpace: number /* Gray*/);
+    constructor(width: number, height: number, numberOfChannels?: number /* 1*/, colorSpace?: number /* Gray*/, bitsPerSample?: number /* 32*/, sampleType?: number /* Float*/);
+    constructor(array: any /* TypedArray */, width: number, height: number, numberOfChannels?: number /* 1*/, colorSpace?: number /* Gray*/);
 
 
     //-------------------------
@@ -808,34 +808,34 @@ declare class Image {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public CPSM(fftA: Image, fftB: Image): Image;
+    public static CPSM(fftA: Image, fftB: Image): Image;
 
 
-    public PCM(fftA: Image, fftB: Image): Image;
+    public static PCM(fftA: Image, fftB: Image): Image;
 
 
-    public crossPowerSpectrumMatrix(fftA: Image, fftB: Image): Image;
+    public static crossPowerSpectrumMatrix(fftA: Image, fftB: Image): Image;
 
 
-    public fileExtensionsForMimeType(mimeType: string): Array<any>;
+    public static fileExtensionsForMimeType(mimeType: string): Array<any>;
 
 
-    public mimeTypesForFileExtension(pathOrExt: string): Array<any>;
+    public static mimeTypesForFileExtension(pathOrExt: string): Array<any>;
 
 
-    public newComplexImage(): Image;
-    public newComplexImage(bitsPerSample: number /* 32*/): Image;
+    public static newComplexImage(): Image;
+    public static newComplexImage(bitsPerSample: number /* 32*/): Image;
 
 
-    public newFloatImage(): Image;
-    public newFloatImage(bitsPerSample: number /* 32*/): Image;
+    public static newFloatImage(): Image;
+    public static newFloatImage(bitsPerSample: number /* 32*/): Image;
 
 
-    public newUIntImage(): Image;
-    public newUIntImage(bitsPerSample: number /* 16*/): Image;
+    public static newUIntImage(): Image;
+    public static newUIntImage(bitsPerSample: number /* 16*/): Image;
 
 
-    public phaseCorrelationMatrix(fftA: Image, fftB: Image): Image;
+    public static phaseCorrelationMatrix(fftA: Image, fftB: Image): Image;
 
 
 
@@ -889,4 +889,9 @@ declare class Image {
     static statusInitializationEnabled: boolean;
     static statusTotal: number;
     static width: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

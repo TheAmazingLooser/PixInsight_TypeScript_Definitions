@@ -37,9 +37,9 @@ declare class Position {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(t: Date, timescale: string /* "TT"*/);
-    constructor(isoTime: string, timescale: string /* "TT"*/);
-    constructor(jd1: number, jd2: number /* 0*/, timescale: string /* "TT"*/);
+    constructor(t: Date, timescale?: string /* "TT"*/);
+    constructor(isoTime: string, timescale?: string /* "TT"*/);
+    constructor(jd1: number, jd2?: number /* 0*/, timescale?: string /* "TT"*/);
 
 
     //-------------------------
@@ -104,19 +104,19 @@ declare class Position {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public eclipticToEquatorial(r: Vector, eps: number): Vector;
+    public static eclipticToEquatorial(r: Vector, eps: number): Vector;
 
 
-    public eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
+    public static eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
 
 
-    public equatorialToEcliptic(r: Vector, eps: number): Vector;
+    public static equatorialToEcliptic(r: Vector, eps: number): Vector;
 
 
-    public equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
+    public static equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
 
 
-    public icrsEquatorialToGalactic(r: Vector): Vector;
+    public static icrsEquatorialToGalactic(r: Vector): Vector;
 
 
 
@@ -144,4 +144,9 @@ declare class Position {
     static isTopocentric: boolean;
     static observer: ObserverPosition;
     static polarMotionEnabled: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

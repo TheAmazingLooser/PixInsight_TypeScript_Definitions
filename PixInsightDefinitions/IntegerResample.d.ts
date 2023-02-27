@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Average: IntegerResample.prototype.Average;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Maximum: IntegerResample.prototype.Maximum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Median: IntegerResample.prototype.Median;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Minimum: IntegerResample.prototype.Minimum;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -30,7 +26,7 @@ declare class IntegerResample extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IntegerResample: IntegerResample);
+    constructor(IntegerResample?: IntegerResample);
 
 
     //-------------------------
@@ -55,4 +51,13 @@ declare class IntegerResample extends ProcessInstance {
     static xResolution: number;
     static yResolution: number;
     static zoomFactor: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Average;
+    Maximum;
+    Median;
+    Minimum;
 }

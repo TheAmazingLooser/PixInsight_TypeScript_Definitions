@@ -1,31 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const AlignmentMethod_AnalyticalModel: IndigoMount.prototype.AlignmentMethod_AnalyticalModel;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AlignmentMethod_None: IndigoMount.prototype.AlignmentMethod_None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const AlignmentMethod_ServerModel: IndigoMount.prototype.AlignmentMethod_ServerModel;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_FitPointingModel: IndigoMount.prototype.Command_FitPointingModel;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_GoTo: IndigoMount.prototype.Command_GoTo;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveEastStart: IndigoMount.prototype.Command_MoveEastStart;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveEastStop: IndigoMount.prototype.Command_MoveEastStop;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveNorthStart: IndigoMount.prototype.Command_MoveNorthStart;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveNorthStop: IndigoMount.prototype.Command_MoveNorthStop;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveSouthStart: IndigoMount.prototype.Command_MoveSouthStart;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveSouthStop: IndigoMount.prototype.Command_MoveSouthStop;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveWestStart: IndigoMount.prototype.Command_MoveWestStart;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_MoveWestStop: IndigoMount.prototype.Command_MoveWestStop;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_Park: IndigoMount.prototype.Command_Park;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_ParkDefault: IndigoMount.prototype.Command_ParkDefault;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_Sync: IndigoMount.prototype.Command_Sync;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_TestSync: IndigoMount.prototype.Command_TestSync;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Command_Unpark: IndigoMount.prototype.Command_Unpark;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PierSide_East: IndigoMount.prototype.PierSide_East;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PierSide_None: IndigoMount.prototype.PierSide_None;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const PierSide_West: IndigoMount.prototype.PierSide_West;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SlewRate_Centering: IndigoMount.prototype.SlewRate_Centering;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SlewRate_Find: IndigoMount.prototype.SlewRate_Find;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SlewRate_Guide: IndigoMount.prototype.SlewRate_Guide;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const SlewRate_Max: IndigoMount.prototype.SlewRate_Max;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -63,7 +38,7 @@ declare class IndigoMount extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IndigoMount: IndigoMount);
+    constructor(IndigoMount?: IndigoMount);
 
 
     //-------------------------
@@ -100,4 +75,34 @@ declare class IndigoMount extends ProcessInstance {
     static syncTelescopeRA: number;
     static targetDec: number;
     static targetRA: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    AlignmentMethod_AnalyticalModel;
+    AlignmentMethod_None;
+    AlignmentMethod_ServerModel;
+    Command_FitPointingModel;
+    Command_GoTo;
+    Command_MoveEastStart;
+    Command_MoveEastStop;
+    Command_MoveNorthStart;
+    Command_MoveNorthStop;
+    Command_MoveSouthStart;
+    Command_MoveSouthStop;
+    Command_MoveWestStart;
+    Command_MoveWestStop;
+    Command_Park;
+    Command_ParkDefault;
+    Command_Sync;
+    Command_TestSync;
+    Command_Unpark;
+    PierSide_East;
+    PierSide_None;
+    PierSide_West;
+    SlewRate_Centering;
+    SlewRate_Find;
+    SlewRate_Guide;
+    SlewRate_Max;
 }

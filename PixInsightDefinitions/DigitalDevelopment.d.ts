@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const Blue: DigitalDevelopment.prototype.Blue;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Green: DigitalDevelopment.prototype.Green;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Luminance: DigitalDevelopment.prototype.Luminance;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Red: DigitalDevelopment.prototype.Red;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -27,7 +23,7 @@ declare class DigitalDevelopment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DigitalDevelopment: DigitalDevelopment);
+    constructor(DigitalDevelopment?: DigitalDevelopment);
 
 
     //-------------------------
@@ -49,4 +45,13 @@ declare class DigitalDevelopment extends ProcessInstance {
     static m1: number;
     static m2: number;
     static sigma: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    Blue;
+    Green;
+    Luminance;
+    Red;
 }

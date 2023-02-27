@@ -22,7 +22,7 @@ declare class ViewList extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -54,4 +54,9 @@ declare class ViewList extends Control {
     static excludedView: View;
     static includesMainViews: boolean;
     static includesPreviews: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

@@ -71,4 +71,9 @@ declare class FileFind {
     static searchPath: string;
     static size: number;
     static userId: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

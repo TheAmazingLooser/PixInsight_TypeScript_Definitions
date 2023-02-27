@@ -44,7 +44,7 @@ declare class FindingChart extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FindingChart: FindingChart);
+    constructor(FindingChart?: FindingChart);
 
 
     //-------------------------
@@ -87,4 +87,9 @@ declare class FindingChart extends ProcessInstance {
     static outputDirectory: string;
     static outputSuffix: string;
     static starTextColor: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

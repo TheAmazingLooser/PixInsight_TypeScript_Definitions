@@ -31,7 +31,7 @@ declare class Annotation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Annotation: Annotation);
+    constructor(Annotation?: Annotation);
 
 
     //-------------------------
@@ -61,4 +61,9 @@ declare class Annotation extends ProcessInstance {
     static annotationPositionY: number;
     static annotationShowLeader: boolean;
     static annotationText: string;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

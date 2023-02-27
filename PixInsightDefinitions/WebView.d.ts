@@ -21,7 +21,7 @@ declare class WebView extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: Control);
+    constructor(parent?: Control);
 
 
     //-------------------------
@@ -76,4 +76,9 @@ declare class WebView extends Control {
     static hasSelection: boolean;
     static selectedText: string;
     static zoomFactor: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
 }

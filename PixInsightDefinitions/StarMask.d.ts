@@ -1,10 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const StarMask: StarMask.prototype.StarMask;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StarMaskOverlay: StarMask.prototype.StarMaskOverlay;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StructureMap: StarMask.prototype.StructureMap;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const StructureMapOverlay: StarMask.prototype.StructureMapOverlay;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -37,7 +33,7 @@ declare class StarMask extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarMask: StarMask);
+    constructor(StarMask?: StarMask);
 
 
     //-------------------------
@@ -69,4 +65,13 @@ declare class StarMask extends ProcessInstance {
     static structureContours: boolean;
     static truncation: number;
     static waveletLayers: number;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    StarMask;
+    StarMaskOverlay;
+    StructureMap;
+    StructureMapOverlay;
 }

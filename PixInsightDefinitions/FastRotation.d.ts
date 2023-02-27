@@ -1,11 +1,6 @@
 //-------------------------
 //--------Constants--------
 //-------------------------
-/* declare const HorizontalMirror: FastRotation.prototype.HorizontalMirror;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Rotate180: FastRotation.prototype.Rotate180;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Rotate90CCW: FastRotation.prototype.Rotate90CCW;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const Rotate90CW: FastRotation.prototype.Rotate90CW;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
-/* declare const VerticalMirror: FastRotation.prototype.VerticalMirror;*/ // TODO: Implement this correctly so that it will translate to JS with using CLASS_NAME.prototype.CONSTANT_NAME.
 
 
 //-------------------------
@@ -24,7 +19,7 @@ declare class FastRotation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FastRotation: FastRotation);
+    constructor(FastRotation?: FastRotation);
 
 
     //-------------------------
@@ -42,4 +37,14 @@ declare class FastRotation extends ProcessInstance {
     //-------------------------
     static mode: number;
     static noGUIMessages: boolean;
+
+
+    //-------------------------
+    //--------constants--------
+    //-------------------------
+    HorizontalMirror;
+    Rotate180;
+    Rotate90CCW;
+    Rotate90CW;
+    VerticalMirror;
 }
