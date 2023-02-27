@@ -6,8 +6,6 @@ The only real way to get information about the PJSR (PixInsight JavaScript Runti
 This tool only gives an overview of what types are defined in the PJSR and what their methods,... are.
 
 ## Known bugs
-- The parser does not correctly translate functions which have a non-optional parameter after an optional one.
-  The resulting functions will have only optional ones (even though this is wrong by definition).
   
 - There are no constants.
   PI uses a unique `#import`-system which is not represented in the standard ES5 and cannot be reproduced in TypeScript.
@@ -95,4 +93,4 @@ It's written in C#, so if you can't code in C#, you might not be able to help.
 
 **I may port the parser to JavaScript at some point.**
 This would allow me to actually include a script in PI that would generate a complete TypeScript environment in one click.
-But for that to become a reality, I definitely need to get the parser to work as intended.
+But for that to become a reality, I definitely need to get the parser to work as intended first before porting it.
