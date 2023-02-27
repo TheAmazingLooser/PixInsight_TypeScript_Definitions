@@ -50,7 +50,7 @@ declare class AutomaticBackgroundExtractor extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AutomaticBackgroundExtractor?: AutomaticBackgroundExtractor);
+    constructor(AutomaticBackgroundExtractor: AutomaticBackgroundExtractor);
 
 
     //-------------------------

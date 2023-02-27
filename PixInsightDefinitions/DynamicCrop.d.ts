@@ -52,7 +52,7 @@ declare class DynamicCrop extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DynamicCrop?: DynamicCrop);
+    constructor(DynamicCrop: DynamicCrop);
 
 
     //-------------------------

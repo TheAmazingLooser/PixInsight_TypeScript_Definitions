@@ -65,7 +65,7 @@ declare class ACDNR extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ACDNR?: ACDNR);
+    constructor(ACDNR: ACDNR);
 
 
     //-------------------------

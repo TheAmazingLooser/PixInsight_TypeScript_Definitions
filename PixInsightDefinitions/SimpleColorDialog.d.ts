@@ -20,7 +20,7 @@ declare class SimpleColorDialog extends Dialog {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(color?: number);
+    constructor(color: number);
 
 
     //-------------------------

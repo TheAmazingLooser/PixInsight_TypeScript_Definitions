@@ -31,7 +31,7 @@ declare class BackgroundNeutralization extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(BackgroundNeutralization?: BackgroundNeutralization);
+    constructor(BackgroundNeutralization: BackgroundNeutralization);
 
 
     //-------------------------

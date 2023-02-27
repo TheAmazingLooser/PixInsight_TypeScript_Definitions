@@ -27,7 +27,7 @@ declare class UnsharpMask extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(UnsharpMask?: UnsharpMask);
+    constructor(UnsharpMask: UnsharpMask);
 
 
     //-------------------------

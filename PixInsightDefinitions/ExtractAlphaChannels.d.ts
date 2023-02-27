@@ -24,7 +24,7 @@ declare class ExtractAlphaChannels extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ExtractAlphaChannels?: ExtractAlphaChannels);
+    constructor(ExtractAlphaChannels: ExtractAlphaChannels);
 
 
     //-------------------------

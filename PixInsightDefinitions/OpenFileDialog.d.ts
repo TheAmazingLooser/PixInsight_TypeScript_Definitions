@@ -26,7 +26,7 @@ declare class OpenFileDialog extends FileDialog {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public loadImageFilters(): void;
+
 
 
 

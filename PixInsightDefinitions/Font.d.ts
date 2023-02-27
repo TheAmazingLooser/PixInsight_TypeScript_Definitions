@@ -37,8 +37,8 @@ declare class Font {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(stdFamiliy: number, size?: number, unit ?: string /*  "pt"*/);
-    constructor(family: string, size?: number, unit ?: string /*  "pt"*/);
+    constructor(stdFamiliy: number, size: number, unit : string /*  "pt"*/);
+    constructor(family: string, size: number, unit : string /*  "pt"*/);
     constructor(fnt: Font);
 
 
@@ -47,28 +47,43 @@ declare class Font {
     //-------------------------
     public assign(fnt: Font): void;
 
-    public assign(stdFamiliy: number, size?: number, unit ?: string /*  "pt"*/): void;
 
-    public assign(family: string, size?: number, unit ?: string /*  "pt"*/): void;
+    public assign(stdFamiliy: number): void;
+    public assign(stdFamiliy: number, size: number): void;
+    public assign(stdFamiliy: number, size: number, unit: string /* "pt"*/): void;
+
+
+    public assign(family: string): void;
+    public assign(family: string, size: number): void;
+    public assign(family: string, size: number, unit: string /* "pt"*/): void;
+
 
     public boundingRect(s: string): Rect;
 
+
     public isCharDefined(ch: number): boolean;
+
 
     public tightBoundingRect(s: string): Rect;
 
+
     public width(s: string): number;
+
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static families(writingSystem?: number): Array<any>;
+    public families(): Array<any>;
+    public families(writingSystem: number): Array<any>;
 
-    public static isFixedPitchFont(family: string): boolean;
 
-    public static isScalableFont(family: string): boolean;
+    public isFixedPitchFont(family: string): boolean;
+
+
+    public isScalableFont(family: string): boolean;
+
 
 
 

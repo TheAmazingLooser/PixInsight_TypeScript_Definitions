@@ -26,7 +26,7 @@ declare class ChannelCombination extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ChannelCombination?: ChannelCombination);
+    constructor(ChannelCombination: ChannelCombination);
 
 
     //-------------------------

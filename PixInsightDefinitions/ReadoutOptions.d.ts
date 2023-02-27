@@ -47,7 +47,7 @@ declare class ReadoutOptions extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ReadoutOptions?: ReadoutOptions);
+    constructor(ReadoutOptions: ReadoutOptions);
 
 
     //-------------------------

@@ -31,21 +31,21 @@ declare class Edit extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public clear(): void;
 
-    public end(): void;
 
-    public home(): void;
 
-    public selectAll(): void;
 
-    public unselect(): void;
+
+
+
+
+
 
 
 

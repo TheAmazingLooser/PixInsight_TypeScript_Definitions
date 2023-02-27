@@ -55,7 +55,7 @@ declare class FileFormat {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(nameExtOrMime: string, toRead?: boolean /* false*/, toWrite?: boolean /* false*/);
+    constructor(nameExtOrMime: string, toRead: boolean /* false*/, toWrite: boolean /* false*/);
     constructor(fmt: FileFormat);
 
 
@@ -64,11 +64,13 @@ declare class FileFormat {
     //-------------------------
     public disposeFormatSpecificData(data: Object): void;
 
-    public editPreferences(): void;
 
-    public queryFormatStatus(): string;
+
+
+
 
     public validateFormatSpecificData(data: Object): boolean;
+
 
 
 

@@ -32,7 +32,7 @@ declare class GREYCstoration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GREYCstoration?: GREYCstoration);
+    constructor(GREYCstoration: GREYCstoration);
 
 
     //-------------------------

@@ -24,7 +24,7 @@ declare class FastRotation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FastRotation?: FastRotation);
+    constructor(FastRotation: FastRotation);
 
 
     //-------------------------

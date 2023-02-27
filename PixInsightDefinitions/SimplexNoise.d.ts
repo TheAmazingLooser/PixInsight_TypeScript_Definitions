@@ -36,7 +36,7 @@ declare class SimplexNoise extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SimplexNoise?: SimplexNoise);
+    constructor(SimplexNoise: SimplexNoise);
 
 
     //-------------------------

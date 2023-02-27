@@ -35,7 +35,7 @@ declare class PDF {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(filePath?: string);
+    constructor(filePath: string);
 
 
     //-------------------------

@@ -19,7 +19,7 @@ declare class ConicalGradientBrush extends GradientBrush {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(center: Point, angle: number, stops?: Array<any>);
+    constructor(center: Point, angle: number, stops: Array<any>);
 
 
     //-------------------------

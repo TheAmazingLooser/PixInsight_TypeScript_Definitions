@@ -53,7 +53,7 @@ declare class B3Estimator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(B3Estimator?: B3Estimator);
+    constructor(B3Estimator: B3Estimator);
 
 
     //-------------------------

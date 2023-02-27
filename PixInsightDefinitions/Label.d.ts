@@ -22,13 +22,13 @@ declare class Label extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public clear(): void;
+
 
 
 

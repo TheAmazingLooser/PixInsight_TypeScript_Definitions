@@ -31,7 +31,7 @@ declare class MaskedStretch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MaskedStretch?: MaskedStretch);
+    constructor(MaskedStretch: MaskedStretch);
 
 
     //-------------------------

@@ -25,7 +25,7 @@ declare class AstroDenoiseNet extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AstroDenoiseNet?: AstroDenoiseNet);
+    constructor(AstroDenoiseNet: AstroDenoiseNet);
 
 
     //-------------------------

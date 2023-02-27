@@ -23,7 +23,7 @@ declare class ColorSaturation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ColorSaturation?: ColorSaturation);
+    constructor(ColorSaturation: ColorSaturation);
 
 
     //-------------------------

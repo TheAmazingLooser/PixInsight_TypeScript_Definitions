@@ -17,7 +17,7 @@ declare class NoOperation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NoOperation?: NoOperation);
+    constructor(NoOperation: NoOperation);
 
 
     //-------------------------

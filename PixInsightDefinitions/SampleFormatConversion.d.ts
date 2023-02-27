@@ -23,7 +23,7 @@ declare class SampleFormatConversion extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SampleFormatConversion?: SampleFormatConversion);
+    constructor(SampleFormatConversion: SampleFormatConversion);
 
 
     //-------------------------

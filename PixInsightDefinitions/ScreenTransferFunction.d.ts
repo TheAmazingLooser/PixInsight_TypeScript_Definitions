@@ -21,7 +21,7 @@ declare class ScreenTransferFunction extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ScreenTransferFunction?: ScreenTransferFunction);
+    constructor(ScreenTransferFunction: ScreenTransferFunction);
 
 
     //-------------------------

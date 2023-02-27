@@ -122,7 +122,7 @@ declare class SubframeSelector extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SubframeSelector?: SubframeSelector);
+    constructor(SubframeSelector: SubframeSelector);
 
 
     //-------------------------

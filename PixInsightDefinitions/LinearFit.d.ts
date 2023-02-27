@@ -20,7 +20,7 @@ declare class LinearFit extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LinearFit?: LinearFit);
+    constructor(LinearFit: LinearFit);
 
 
     //-------------------------

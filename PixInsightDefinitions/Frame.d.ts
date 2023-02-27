@@ -20,7 +20,7 @@ declare class Frame extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------

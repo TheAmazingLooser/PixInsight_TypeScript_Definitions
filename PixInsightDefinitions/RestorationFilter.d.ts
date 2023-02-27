@@ -47,7 +47,7 @@ declare class RestorationFilter extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(RestorationFilter?: RestorationFilter);
+    constructor(RestorationFilter: RestorationFilter);
 
 
     //-------------------------

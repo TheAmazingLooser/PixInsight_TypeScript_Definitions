@@ -25,7 +25,7 @@ declare class GradientMergeMosaic extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GradientMergeMosaic?: GradientMergeMosaic);
+    constructor(GradientMergeMosaic: GradientMergeMosaic);
 
 
     //-------------------------

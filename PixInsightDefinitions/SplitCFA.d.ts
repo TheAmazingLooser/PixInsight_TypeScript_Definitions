@@ -28,7 +28,7 @@ declare class SplitCFA extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SplitCFA?: SplitCFA);
+    constructor(SplitCFA: SplitCFA);
 
 
     //-------------------------

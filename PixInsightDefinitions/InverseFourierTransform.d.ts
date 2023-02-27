@@ -23,7 +23,7 @@ declare class InverseFourierTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(InverseFourierTransform?: InverseFourierTransform);
+    constructor(InverseFourierTransform: InverseFourierTransform);
 
 
     //-------------------------

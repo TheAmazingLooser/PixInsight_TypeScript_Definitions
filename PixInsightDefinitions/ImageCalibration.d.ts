@@ -110,7 +110,7 @@ declare class ImageCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ImageCalibration?: ImageCalibration);
+    constructor(ImageCalibration: ImageCalibration);
 
 
     //-------------------------

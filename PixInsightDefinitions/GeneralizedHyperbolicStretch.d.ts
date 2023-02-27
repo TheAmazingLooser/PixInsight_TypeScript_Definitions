@@ -45,7 +45,7 @@ declare class GeneralizedHyperbolicStretch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GeneralizedHyperbolicStretch?: GeneralizedHyperbolicStretch);
+    constructor(GeneralizedHyperbolicStretch: GeneralizedHyperbolicStretch);
 
 
     //-------------------------

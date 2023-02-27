@@ -31,7 +31,7 @@ declare class FileTransfer {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public perform(): boolean;
+
 
 
 

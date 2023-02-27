@@ -33,7 +33,7 @@ declare class HDRComposition extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(HDRComposition?: HDRComposition);
+    constructor(HDRComposition: HDRComposition);
 
 
     //-------------------------

@@ -54,7 +54,7 @@ declare class PixelMath extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(PixelMath?: PixelMath);
+    constructor(PixelMath: PixelMath);
 
 
     //-------------------------

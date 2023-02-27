@@ -17,7 +17,7 @@ declare class Invert extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Invert?: Invert);
+    constructor(Invert: Invert);
 
 
     //-------------------------

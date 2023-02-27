@@ -47,7 +47,7 @@ declare class FluxCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FluxCalibration?: FluxCalibration);
+    constructor(FluxCalibration: FluxCalibration);
 
 
     //-------------------------

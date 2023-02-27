@@ -122,7 +122,7 @@ declare class Debayer extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Debayer?: Debayer);
+    constructor(Debayer: Debayer);
 
 
     //-------------------------

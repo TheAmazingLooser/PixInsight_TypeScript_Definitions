@@ -25,7 +25,7 @@ declare class Sandbox extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Sandbox?: Sandbox);
+    constructor(Sandbox: Sandbox);
 
 
     //-------------------------

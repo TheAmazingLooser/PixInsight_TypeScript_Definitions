@@ -20,7 +20,7 @@ declare class GroupBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------

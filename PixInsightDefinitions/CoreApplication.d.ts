@@ -27,27 +27,38 @@ declare class CoreApplication {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static activateInstance(instance: number): void;
+    public activateInstance(instance: number): void;
 
-    public static clearPendingMessages(): void;
 
-    public static firstInstanceAlive(): number;
 
-    public static instancePID(instance: number): string;
 
-    public static isInstanceAlive(instance: number): boolean;
 
-    public static isInstanceRunning(instance: number): boolean;
 
-    public static launchInstance(instance?: number): void;
+    public instancePID(instance: number): string;
 
-    public static otherInstancesRunning(): boolean;
 
-    public static processPendingMessages(msec?: number /* 0*/): void;
+    public isInstanceAlive(instance: number): boolean;
 
-    public static sendMessage(instance: number, message: string, uniqueId?: string): boolean;
 
-    public static terminateInstance(instance: number): void;
+    public isInstanceRunning(instance: number): boolean;
+
+
+    public launchInstance(): void;
+    public launchInstance(instance: number): void;
+
+
+
+
+    public processPendingMessages(): void;
+    public processPendingMessages(msec: number /* 0*/): void;
+
+
+    public sendMessage(instance: number, message: string): boolean;
+    public sendMessage(instance: number, message: string, uniqueId: string): boolean;
+
+
+    public terminateInstance(instance: number): void;
+
 
 
 

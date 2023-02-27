@@ -19,7 +19,7 @@ declare class FourierTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FourierTransform?: FourierTransform);
+    constructor(FourierTransform: FourierTransform);
 
 
     //-------------------------

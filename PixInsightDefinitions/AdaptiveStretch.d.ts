@@ -26,7 +26,7 @@ declare class AdaptiveStretch extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AdaptiveStretch?: AdaptiveStretch);
+    constructor(AdaptiveStretch: AdaptiveStretch);
 
 
     //-------------------------

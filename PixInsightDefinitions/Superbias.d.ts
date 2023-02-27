@@ -25,7 +25,7 @@ declare class Superbias extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Superbias?: Superbias);
+    constructor(Superbias: Superbias);
 
 
     //-------------------------

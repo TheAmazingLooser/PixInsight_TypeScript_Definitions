@@ -26,16 +26,20 @@ declare class ElapsedTime {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public reset(): void;
+
 
     public since(t: ElapsedTime): number;
+
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static toString(seconds: number, width ?: number /*  0*/, precision ?: number /*  3*/): string;
+    public toString(seconds: number): string;
+    public toString(seconds: number, width: number /* 0*/): string;
+    public toString(seconds: number, width: number /* 0*/, precision: number /* 3*/): string;
+
 
 
 

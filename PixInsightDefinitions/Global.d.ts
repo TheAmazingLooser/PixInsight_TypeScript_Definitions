@@ -27,59 +27,94 @@ declare class Global {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static Number(value: void): number;
+    public Number(value: any): number;
 
-    public static Object(value: void): Object;
 
-    public static cerr(text: string): void;
+    public Object(value: any): Object;
 
-    public static cflush(): void;
 
-    public static cout(text: string): void;
+    public cerr(text: string): void;
 
-    public static decodeURI(encodedURI: string): string;
 
-    public static decodeURIComponent(encodedURI: string): string;
 
-    public static encodeURI(URI: string): string;
 
-    public static encodeURIComponent(uriComp: string): string;
+    public cout(text: string): void;
 
-    public static eval(s: string, object?: any): Object;
 
-    public static format(fmt: string, value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any): string;
+    public decodeURI(encodedURI: string): string;
 
-    public static gc(hardGC?: boolean /* true*/): void;
 
-    public static gcBytes(): number;
+    public decodeURIComponent(encodedURI: string): string;
 
-    public static getEnvironmentVariable(varName: string): string;
 
-    public static isFinite(n: number): boolean;
+    public encodeURI(URI: string): string;
 
-    public static isNaN(value: void): boolean;
 
-    public static loadResource(filePath: string, rootPath?: string): boolean;
+    public encodeURIComponent(uriComp: string): string;
 
-    public static matchesWildSpecification(what: string, wildPattern: string): boolean;
 
-    public static msleep(milliseconds: number): void;
+    public eval(s: string): Object;
+    public eval(s: string, object: object): Object;
 
-    public static parseFloat(s: string): number;
 
-    public static parseInt(s: string, radix?: number): number;
+    public format(fmt: string): string;
+    public format(...value: any[]): string;
 
-    public static processEvents(excludeUserInputEvents?: boolean /* false*/, iterations?: number /* 1*/): void;
 
-    public static replaceEnvironmentVariables(s: string): string;
+    public gc(): void;
+    public gc(hardGC: boolean /* true*/): void;
 
-    public static searchDirectory(dirPath: string, recursive?: boolean /* false*/): Array<any>;
 
-    public static sleep(seconds: number): void;
 
-    public static systemOffsetFromUTC(date?: Date): number;
 
-    public static unloadResource(filePath: string, rootPath?: string): boolean;
+    public getEnvironmentVariable(varName: string): string;
+
+
+    public isFinite(n: number): boolean;
+
+
+    public isNaN(value: any): boolean;
+
+
+    public loadResource(filePath: string): boolean;
+    public loadResource(filePath: string, rootPath: string): boolean;
+
+
+    public matchesWildSpecification(what: string, wildPattern: string): boolean;
+
+
+    public msleep(milliseconds: number): void;
+
+
+    public parseFloat(s: string): number;
+
+
+    public parseInt(s: string): number;
+    public parseInt(s: string, radix: number): number;
+
+
+    public processEvents(): void;
+    public processEvents(excludeUserInputEvents: boolean /* false*/): void;
+    public processEvents(excludeUserInputEvents: boolean /* false*/, iterations: number /* 1*/): void;
+
+
+    public replaceEnvironmentVariables(s: string): string;
+
+
+    public searchDirectory(dirPath: string): Array<any>;
+    public searchDirectory(dirPath: string, recursive: boolean /* false*/): Array<any>;
+
+
+    public sleep(seconds: number): void;
+
+
+    public systemOffsetFromUTC(): number;
+    public systemOffsetFromUTC(date: Date | string): number;
+
+
+    public unloadResource(filePath: string): boolean;
+    public unloadResource(filePath: string, rootPath: string): boolean;
+
 
 
 

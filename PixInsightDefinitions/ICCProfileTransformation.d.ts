@@ -26,7 +26,7 @@ declare class ICCProfileTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ICCProfileTransformation?: ICCProfileTransformation);
+    constructor(ICCProfileTransformation: ICCProfileTransformation);
 
 
     //-------------------------

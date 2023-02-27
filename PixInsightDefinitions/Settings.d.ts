@@ -27,21 +27,29 @@ declare class Settings {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static canReadGlobal(key: string): boolean;
+    public canReadGlobal(key: string): boolean;
 
-    public static canWriteGlobal(key: string): boolean;
 
-    public static read(key: string, dataType: number): Object;
+    public canWriteGlobal(key: string): boolean;
 
-    public static readGlobal(key: string, dataType: number): Object;
 
-    public static remove(key: string): boolean;
+    public read(key: string, dataType: number): Object;
 
-    public static removeGlobal(key: string): boolean;
 
-    public static write(key: string, dataType: number, x: Object): void;
+    public readGlobal(key: string, dataType: number): Object;
 
-    public static writeGlobal(key: string, dataType: number, x: Object): void;
+
+    public remove(key: string): boolean;
+
+
+    public removeGlobal(key: string): boolean;
+
+
+    public write(key: string, dataType: number, x: Object): void;
+
+
+    public writeGlobal(key: string, dataType: number, x: Object): void;
+
 
 
 

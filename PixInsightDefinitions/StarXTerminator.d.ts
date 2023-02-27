@@ -20,7 +20,7 @@ declare class StarXTerminator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarXTerminator?: StarXTerminator);
+    constructor(StarXTerminator: StarXTerminator);
 
 
     //-------------------------

@@ -17,7 +17,7 @@ declare class Statistics extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Statistics?: Statistics);
+    constructor(Statistics: Statistics);
 
 
     //-------------------------

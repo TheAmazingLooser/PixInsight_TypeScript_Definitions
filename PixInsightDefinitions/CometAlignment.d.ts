@@ -70,7 +70,7 @@ declare class CometAlignment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CometAlignment?: CometAlignment);
+    constructor(CometAlignment: CometAlignment);
 
 
     //-------------------------

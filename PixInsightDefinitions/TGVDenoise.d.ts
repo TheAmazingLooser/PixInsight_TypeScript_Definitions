@@ -39,7 +39,7 @@ declare class TGVDenoise extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(TGVDenoise?: TGVDenoise);
+    constructor(TGVDenoise: TGVDenoise);
 
 
     //-------------------------

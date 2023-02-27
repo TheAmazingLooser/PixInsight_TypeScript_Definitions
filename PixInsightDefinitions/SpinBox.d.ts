@@ -29,13 +29,14 @@ declare class SpinBox extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
     public setRange(minValue: number, maxValue: number): void;
+
 
 
 

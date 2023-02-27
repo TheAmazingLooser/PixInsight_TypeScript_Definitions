@@ -67,7 +67,7 @@ declare class APASS extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(APASS?: APASS);
+    constructor(APASS: APASS);
 
 
     //-------------------------

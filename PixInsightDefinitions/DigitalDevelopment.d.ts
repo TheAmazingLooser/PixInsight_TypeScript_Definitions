@@ -27,7 +27,7 @@ declare class DigitalDevelopment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DigitalDevelopment?: DigitalDevelopment);
+    constructor(DigitalDevelopment: DigitalDevelopment);
 
 
     //-------------------------

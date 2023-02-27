@@ -26,13 +26,14 @@ declare class Slider extends Control {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control, vertical?: boolean /* false*/);
+    constructor(parent: Control, vertical: boolean /* false*/);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
     public setRange(minValue: number, maxValue: number): void;
+
 
 
 

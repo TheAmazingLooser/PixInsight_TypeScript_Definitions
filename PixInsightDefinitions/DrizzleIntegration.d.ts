@@ -70,7 +70,7 @@ declare class DrizzleIntegration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DrizzleIntegration?: DrizzleIntegration);
+    constructor(DrizzleIntegration: DrizzleIntegration);
 
 
     //-------------------------

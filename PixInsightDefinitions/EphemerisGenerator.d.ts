@@ -65,7 +65,7 @@ declare class EphemerisGenerator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(EphemerisGenerator?: EphemerisGenerator);
+    constructor(EphemerisGenerator: EphemerisGenerator);
 
 
     //-------------------------

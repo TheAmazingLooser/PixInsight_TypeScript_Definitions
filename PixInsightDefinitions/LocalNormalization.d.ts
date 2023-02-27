@@ -98,7 +98,7 @@ declare class LocalNormalization extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LocalNormalization?: LocalNormalization);
+    constructor(LocalNormalization: LocalNormalization);
 
 
     //-------------------------

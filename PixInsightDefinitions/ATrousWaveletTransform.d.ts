@@ -50,7 +50,7 @@ declare class ATrousWaveletTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ATrousWaveletTransform?: ATrousWaveletTransform);
+    constructor(ATrousWaveletTransform: ATrousWaveletTransform);
 
 
     //-------------------------

@@ -41,33 +41,53 @@ declare class FileFormatInstance {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public close(): boolean;
 
-    public create(filePath: string, hints?: string, numberOfImages?: number /* 1*/): boolean;
+
+    public create(filePath: string): boolean;
+    public create(filePath: string, hints: string): boolean;
+    public create(filePath: string, hints: string, numberOfImages: number /* 1*/): boolean;
+
 
     public createImage(d: ImageDescription): boolean;
 
-    public open(filePath: string, hints?: string): Array<any>;
 
-    public read(startRow: number, rowCount: number, channel?: number /* 0*/): Matrix;
+    public open(filePath: string): Array<any>;
+    public open(filePath: string, hints: string): Array<any>;
+
+
+    public read(startRow: number, rowCount: number): Matrix;
+    public read(startRow: number, rowCount: number, channel: number /* 0*/): Matrix;
+
 
     public readImage(Image: Image): boolean;
 
+
     public readImageProperty(id: string): Object | void;
+
 
     public readProperty(id: string): Object | void;
 
+
     public setImageId(id: string): boolean;
+
 
     public setOptions(d: ImageDescription): boolean;
 
-    public write(buffer: Matrix, startRow: number, channel?: number /* 0*/): boolean;
+
+    public write(buffer: Matrix, startRow: number): boolean;
+    public write(buffer: Matrix, startRow: number, channel: number /* 0*/): boolean;
+
 
     public writeImage(Image: Image): boolean;
 
-    public writeImageProperty(id: string, value: Object, type?: number): boolean;
 
-    public writeProperty(id: string, value: Object, type?: number): boolean;
+    public writeImageProperty(id: string, value: Object): boolean;
+    public writeImageProperty(id: string, value: Object, type: number): boolean;
+
+
+    public writeProperty(id: string, value: Object): boolean;
+    public writeProperty(id: string, value: Object, type: number): boolean;
+
 
 
 

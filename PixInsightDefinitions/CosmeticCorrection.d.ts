@@ -39,7 +39,7 @@ declare class CosmeticCorrection extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CosmeticCorrection?: CosmeticCorrection);
+    constructor(CosmeticCorrection: CosmeticCorrection);
 
 
     //-------------------------

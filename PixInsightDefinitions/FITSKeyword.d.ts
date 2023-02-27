@@ -27,7 +27,7 @@ declare class FITSKeyword {
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(name: string, value: string, comment?: string);
+    constructor(name: string, value: string, comment: string);
     constructor(k: FITSKeyword);
 
 
@@ -36,13 +36,16 @@ declare class FITSKeyword {
     //-------------------------
     public assign(k: FITSKeyword): void;
 
-    public assign(name: string, value: string, comment?: string): void;
 
-    public toArray(): Array<any>;
+    public assign(name: string, value: string): void;
+    public assign(name: string, value: string, comment: string): void;
 
-    public toString(): string;
 
-    public trim(): void;
+
+
+
+
+
 
 
 

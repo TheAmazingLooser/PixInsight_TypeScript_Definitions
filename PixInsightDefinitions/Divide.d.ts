@@ -39,7 +39,7 @@ declare class Divide extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Divide?: Divide);
+    constructor(Divide: Divide);
 
 
     //-------------------------

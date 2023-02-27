@@ -42,7 +42,7 @@ declare class DynamicAlignment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DynamicAlignment?: DynamicAlignment);
+    constructor(DynamicAlignment: DynamicAlignment);
 
 
     //-------------------------

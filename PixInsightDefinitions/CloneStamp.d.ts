@@ -23,7 +23,7 @@ declare class CloneStamp extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CloneStamp?: CloneStamp);
+    constructor(CloneStamp: CloneStamp);
 
 
     //-------------------------

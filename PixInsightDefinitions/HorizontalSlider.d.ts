@@ -17,7 +17,7 @@ declare class HorizontalSlider extends Slider {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------

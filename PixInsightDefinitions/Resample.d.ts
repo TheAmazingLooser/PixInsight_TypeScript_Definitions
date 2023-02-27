@@ -48,7 +48,7 @@ declare class Resample extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Resample?: Resample);
+    constructor(Resample: Resample);
 
 
     //-------------------------

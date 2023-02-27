@@ -22,7 +22,7 @@ declare class MergeCFA extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MergeCFA?: MergeCFA);
+    constructor(MergeCFA: MergeCFA);
 
 
     //-------------------------

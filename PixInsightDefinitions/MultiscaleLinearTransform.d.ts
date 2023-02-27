@@ -58,7 +58,7 @@ declare class MultiscaleLinearTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MultiscaleLinearTransform?: MultiscaleLinearTransform);
+    constructor(MultiscaleLinearTransform: MultiscaleLinearTransform);
 
 
     //-------------------------

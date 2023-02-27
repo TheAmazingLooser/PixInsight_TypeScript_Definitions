@@ -24,23 +24,24 @@ declare class TextBox extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public clear(): void;
 
-    public end(): void;
 
-    public home(): void;
+
+
+
 
     public insert(text: string): void;
 
-    public selectAll(): void;
 
-    public unselect(): void;
+
+
+
 
 
 

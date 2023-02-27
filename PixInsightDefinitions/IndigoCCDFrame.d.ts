@@ -82,7 +82,7 @@ declare class IndigoCCDFrame extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IndigoCCDFrame?: IndigoCCDFrame);
+    constructor(IndigoCCDFrame: IndigoCCDFrame);
 
 
     //-------------------------

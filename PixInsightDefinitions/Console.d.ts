@@ -27,39 +27,61 @@ declare class Console {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static beginLog(filePath?: string): void;
+    public beginLog(): void;
+    public beginLog(filePath: string): void;
 
-    public static clear(): void;
 
-    public static critical(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static criticalln(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static endLog(): ByteArray;
+    public critical(): number;
+    public critical(...value: any[]): number;
 
-    public static flush(): void;
 
-    public static hide(animate?: boolean /* true*/): void;
+    public criticalln(): number;
+    public criticalln(...value: any[]): number;
 
-    public static logText(): ByteArray;
 
-    public static note(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static noteln(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static readChar(): number;
 
-    public static readString(): string;
 
-    public static show(animate?: boolean /* true*/): void;
+    public hide(): void;
+    public hide(animate: boolean /* true*/): void;
 
-    public static warning(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static warningln(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static write(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
 
-    public static writeln(value1?: any, value2?: any, value3?: any, value4?: any, value5?: any, value6?: any, value7?: any, value8?: any, value9?: any, value10?: any): number;
+    public note(): number;
+    public note(...value: any[]): number;
+
+
+    public noteln(): number;
+    public noteln(...value: any[]): number;
+
+
+
+
+
+
+    public show(): void;
+    public show(animate: boolean /* true*/): void;
+
+
+    public warning(): number;
+    public warning(...value: any[]): number;
+
+
+    public warningln(): number;
+    public warningln(...value: any[]): number;
+
+
+    public write(): number;
+    public write(...value: any[]): number;
+
+
+    public writeln(): number;
+    public writeln(...value: any[]): number;
+
 
 
 

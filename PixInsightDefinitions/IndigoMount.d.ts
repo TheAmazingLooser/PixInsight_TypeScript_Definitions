@@ -63,7 +63,7 @@ declare class IndigoMount extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IndigoMount?: IndigoMount);
+    constructor(IndigoMount: IndigoMount);
 
 
     //-------------------------

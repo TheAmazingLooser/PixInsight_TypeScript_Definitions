@@ -38,27 +38,37 @@ declare class ScrollBox extends Frame {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent?: Control);
+    constructor(parent: Control);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public hideScrollBars(hide?: boolean /* true*/): void;
+    public hideScrollBars(): void;
+    public hideScrollBars(hide: boolean /* true*/): void;
+
 
     public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
 
+
     public setHorizontalScrollRange(min: number, max: number): void;
+
 
     public setScrollPosition(x: number, y: number): void;
 
+
     public setScrollPosition(pos: Point): void;
+
 
     public setVerticalScrollRange(min: number, max: number): void;
 
-    public showScrollBars(show?: boolean /* true*/): void;
+
+    public showScrollBars(): void;
+    public showScrollBars(show: boolean /* true*/): void;
+
 
     public showScrollBars(showHorz: boolean, showVert: boolean): void;
+
 
 
 

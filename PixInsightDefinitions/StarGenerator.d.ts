@@ -36,7 +36,7 @@ declare class StarGenerator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarGenerator?: StarGenerator);
+    constructor(StarGenerator: StarGenerator);
 
 
     //-------------------------

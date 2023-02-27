@@ -25,176 +25,267 @@ declare class File {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(path?: string, mode?: number /* FileMode_Read|FileMode_Open*/);
+    constructor(path: string, mode: number /* FileMode_Read|FileMode_Open*/);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public close(): void;
+
 
     public create(path: string): void;
 
+
     public createForWriting(path: string): void;
 
-    public flush(): void;
 
-    public open(path: string, mode?: number /* FileMode_Read|FileMode_Open*/): void;
+
+
+    public open(path: string): void;
+    public open(path: string, mode: number /* FileMode_Read|FileMode_Open*/): void;
+
 
     public openForReadWrite(path: string): void;
 
+
     public openForReading(path: string): void;
+
 
     public openOrCreate(path: string): void;
 
-    public outText(text: string, dataType?: number /* DataType_String8*/): void;
 
-    public outTextLn(text: string, dataType?: number /* DataType_String8*/): void;
+    public outText(text: string): void;
+    public outText(text: string, dataType: number /* DataType_String8*/): void;
 
-    public read(data_type: any, count?: any /* 1*/): Object;
+
+    public outTextLn(text: string): void;
+    public outTextLn(text: string, dataType: number /* DataType_String8*/): void;
+
+
+    public read(data_type: any): Object;
+    public read(data_type: any, count: any /* 1*/): Object;
+
 
     public read(DataType_Float32Array: any, length: number): Float32Array;
 
+
     public read(DataType_Float64Array: any, length: number): Float64Array;
+
 
     public read(DataType_Int32Array: any, length: number): Int32Array;
 
+
     public read(DataType_Uint32Array: any, length: number): Uint32Array;
+
 
     public read(DataType_Int16Array: any, length: number): Int16Array;
 
+
     public read(DataType_Uint16Array: any, length: number): Uint16Array;
+
 
     public read(DataType_Int8Array: any, length: number): Int8Array;
 
+
     public read(DataType_Uint8Array: any, length: number): Uint8Array;
+
 
     public read(DataType_Uint8ClampedArray: any, length: number): Uint8ClampedArray;
 
+
     public read(DataType_ByteArray: any, length: number): ByteArray;
+
 
     public read(DataType_Vector: any, length: number): Vector;
 
+
     public read(DataType_Matrix: any, rows: number, cols: number): Matrix;
 
-    public rewind(): void;
 
-    public seek(pos: number, mode?: number /* SeekMode_FromCurrent*/): number;
 
-    public seekEnd(): number;
+
+    public seek(pos: number): number;
+    public seek(pos: number, mode: number /* SeekMode_FromCurrent*/): number;
+
+
+
 
     public write(obj: Object, dataType: number): void;
 
+
     public write(obj: Array<any>): void;
+
 
     public write(obj: any /* TypedArray */): void;
 
+
     public write(obj: ByteArray): void;
+
 
     public write(obj: Vector): void;
 
+
     public write(obj: Matrix): void;
+
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static appendToName(filePath: string, postFix: string): string;
+    public appendToName(filePath: string, postFix: string): string;
 
-    public static changeExtension(filePath: string, newExt: string): string;
 
-    public static changeSuffix(filePath: string, newExt: string): string;
+    public changeExtension(filePath: string, newExt: string): string;
 
-    public static copyFile(targetPath: string, sourcePath: string, progress?: Function, progressThis?: Object /* null*/): void;
 
-    public static copyLink(targetPath: string, sourcePath: string): void;
+    public changeSuffix(filePath: string, newExt: string): string;
 
-    public static copyTimesAndPermissions(targetPath: string, sourcePath: string): void;
 
-    public static createDirectory(dirPath: string, createIntermediateDirs?: boolean /* true*/): void;
+    public copyFile(targetPath: string, sourcePath: string): void;
+    public copyFile(targetPath: string, sourcePath: string, progress: Function): void;
+    public copyFile(targetPath: string, sourcePath: string, progress: Function, progressThis: Object /* null*/): void;
 
-    public static createFile(path: string): File;
 
-    public static createFileForWriting(path: string): File;
+    public copyLink(targetPath: string, sourcePath: string): void;
 
-    public static directoryExists(dirPath: string): boolean;
 
-    public static exists(filePath: string): boolean;
+    public copyTimesAndPermissions(targetPath: string, sourcePath: string): void;
 
-    public static extractCompleteSuffix(filePath: string): string;
 
-    public static extractDirectory(path: string): string;
+    public createDirectory(dirPath: string, createIntermediateDirs: boolean /* true*/): void;
 
-    public static extractDrive(path: string): string;
 
-    public static extractExtension(filePath: string): string;
+    public createFile(path: string): File;
 
-    public static extractName(path: string): string;
 
-    public static extractNameAndExtension(filePath: string): string;
+    public createFileForWriting(path: string): File;
 
-    public static extractNameAndSuffix(filePath: string): string;
 
-    public static extractSuffix(filePath: string): string;
+    public directoryExists(dirPath: string): boolean;
 
-    public static fileURI(path: string): string;
 
-    public static findCompleteSuffix(filePath: string): number;
+    public exists(filePath: string): boolean;
 
-    public static findDrive(path: string): number;
 
-    public static findExtension(filePath: string): number;
+    public extractCompleteSuffix(filePath: string): string;
 
-    public static findName(path: string): number;
 
-    public static findSuffix(filePath: string): number;
+    public extractDirectory(path: string): string;
 
-    public static fullPath(path: string): string;
 
-    public static getAvailableSpace(directory: string): number;
+    public extractDrive(path: string): string;
 
-    public static isReadOnly(filePath: string): boolean;
 
-    public static move(filePath: string, newPath: string): void;
+    public extractExtension(filePath: string): string;
 
-    public static moveFile(targetPath: string, sourcePath: string, progress?: Function, progressThis?: Object /* null*/): void;
 
-    public static openFile(path: string): File;
+    public extractName(path: string): string;
 
-    public static openFileForReading(path: string): File;
 
-    public static openOrCreateFile(path: string): File;
+    public extractNameAndExtension(filePath: string): string;
 
-    public static prependToName(filePath: string, preFix: string): string;
 
-    public static readFile(filePath: string): ByteArray;
+    public extractNameAndSuffix(filePath: string): string;
 
-    public static readLines(filePath: string, options?: number /* ReadTextOptions_None*/): Array<any>;
 
-    public static readTextFile(filePath: string): string;
+    public extractSuffix(filePath: string): string;
 
-    public static remove(filePath: string): void;
 
-    public static removeDirectory(dirPath: string): void;
+    public fileURI(path: string): string;
 
-    public static sameDevice(path1: string, path2: string): boolean;
 
-    public static sameFile(path1: string, path2: string): boolean;
+    public findCompleteSuffix(filePath: string): number;
 
-    public static setPermissions(filePath: string, permissions: number): void;
 
-    public static setReadOnly(filePath: string, readOnly?: boolean /* true*/): void;
+    public findDrive(path: string): number;
 
-    public static uniqueFileName(directory?: string /* ""*/, n?: number /* 8*/, prefix?: string /* ""*/, postfix?: string /* */): string;
 
-    public static unixPathToWindows(path: string): string;
+    public findExtension(filePath: string): number;
 
-    public static windowsPathToUnix(path: string): string;
 
-    public static writeFile(filePath: string, data: ByteArray): void;
+    public findName(path: string): number;
 
-    public static writeTextFile(filePath: string, text: string): void;
+
+    public findSuffix(filePath: string): number;
+
+
+    public fullPath(path: string): string;
+
+
+    public getAvailableSpace(directory: string): number;
+
+
+    public isReadOnly(filePath: string): boolean;
+
+
+    public move(filePath: string, newPath: string): void;
+
+
+    public moveFile(targetPath: string, sourcePath: string): void;
+    public moveFile(targetPath: string, sourcePath: string, progress: Function): void;
+    public moveFile(targetPath: string, sourcePath: string, progress: Function, progressThis: Object /* null*/): void;
+
+
+    public openFile(path: string): File;
+
+
+    public openFileForReading(path: string): File;
+
+
+    public openOrCreateFile(path: string): File;
+
+
+    public prependToName(filePath: string, preFix: string): string;
+
+
+    public readFile(filePath: string): ByteArray;
+
+
+    public readLines(filePath: string): Array<any>;
+    public readLines(filePath: string, options: number /* ReadTextOptions_None*/): Array<any>;
+
+
+    public readTextFile(filePath: string): string;
+
+
+    public remove(filePath: string): void;
+
+
+    public removeDirectory(dirPath: string): void;
+
+
+    public sameDevice(path1: string, path2: string): boolean;
+
+
+    public sameFile(path1: string, path2: string): boolean;
+
+
+    public setPermissions(filePath: string, permissions: number): void;
+
+
+    public setReadOnly(filePath: string): void;
+    public setReadOnly(filePath: string, readOnly: boolean /* true*/): void;
+
+
+    public uniqueFileName(): string;
+    public uniqueFileName(directory: string /* ""*/): string;
+    public uniqueFileName(directory: string /* ""*/, n: number /* 8*/): string;
+    public uniqueFileName(directory: string /* ""*/, n: number /* 8*/, prefix: string /* ""*/): string;
+    public uniqueFileName(directory: string /* ""*/, n: number /* 8*/, prefix: string /* ""*/, postfix: string /* */): string;
+
+
+    public unixPathToWindows(path: string): string;
+
+
+    public windowsPathToUnix(path: string): string;
+
+
+    public writeFile(filePath: string, data: ByteArray): void;
+
+
+    public writeTextFile(filePath: string, text: string): void;
+
 
 
 

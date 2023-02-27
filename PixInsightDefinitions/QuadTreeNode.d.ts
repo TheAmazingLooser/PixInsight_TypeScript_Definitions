@@ -23,7 +23,7 @@ declare class QuadTreeNode {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(rect?: Rect, index?: Array<any>);
+    constructor(rect: Rect, index: Array<any>);
 
 
     //-------------------------
@@ -31,17 +31,19 @@ declare class QuadTreeNode {
     //-------------------------
     public includes(point: Point): boolean;
 
+
     public intersects(rect: Rect): boolean;
 
-    public isLeaf(): boolean;
 
-    public neRect(): Rect;
 
-    public nwRect(): Rect;
 
-    public seRect(): Rect;
 
-    public swRect(): Rect;
+
+
+
+
+
+
 
 
 

@@ -41,7 +41,7 @@ declare class AutoHistogram extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AutoHistogram?: AutoHistogram);
+    constructor(AutoHistogram: AutoHistogram);
 
 
     //-------------------------

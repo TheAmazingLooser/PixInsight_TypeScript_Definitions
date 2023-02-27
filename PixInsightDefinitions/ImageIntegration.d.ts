@@ -210,7 +210,7 @@ declare class ImageIntegration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ImageIntegration?: ImageIntegration);
+    constructor(ImageIntegration: ImageIntegration);
 
 
     //-------------------------

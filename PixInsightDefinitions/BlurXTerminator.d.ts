@@ -27,7 +27,7 @@ declare class BlurXTerminator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(BlurXTerminator?: BlurXTerminator);
+    constructor(BlurXTerminator: BlurXTerminator);
 
 
     //-------------------------

@@ -35,7 +35,7 @@ declare class Crop extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Crop?: Crop);
+    constructor(Crop: Crop);
 
 
     //-------------------------

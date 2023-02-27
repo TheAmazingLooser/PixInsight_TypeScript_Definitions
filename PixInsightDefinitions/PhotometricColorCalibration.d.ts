@@ -65,7 +65,7 @@ declare class PhotometricColorCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(PhotometricColorCalibration?: PhotometricColorCalibration);
+    constructor(PhotometricColorCalibration: PhotometricColorCalibration);
 
 
     //-------------------------

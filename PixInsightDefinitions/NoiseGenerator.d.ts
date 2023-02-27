@@ -28,7 +28,7 @@ declare class NoiseGenerator extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NoiseGenerator?: NoiseGenerator);
+    constructor(NoiseGenerator: NoiseGenerator);
 
 
     //-------------------------

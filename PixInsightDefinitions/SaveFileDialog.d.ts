@@ -25,7 +25,7 @@ declare class SaveFileDialog extends FileDialog {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public loadImageFilters(): void;
+
 
 
 

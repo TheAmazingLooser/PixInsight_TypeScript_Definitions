@@ -33,7 +33,7 @@ declare class ChannelExtraction extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ChannelExtraction?: ChannelExtraction);
+    constructor(ChannelExtraction: ChannelExtraction);
 
 
     //-------------------------

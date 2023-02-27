@@ -25,7 +25,7 @@ declare class LocalHistogramEqualization extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LocalHistogramEqualization?: LocalHistogramEqualization);
+    constructor(LocalHistogramEqualization: LocalHistogramEqualization);
 
 
     //-------------------------

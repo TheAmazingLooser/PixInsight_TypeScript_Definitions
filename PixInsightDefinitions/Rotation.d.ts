@@ -38,7 +38,7 @@ declare class Rotation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Rotation?: Rotation);
+    constructor(Rotation: Rotation);
 
 
     //-------------------------

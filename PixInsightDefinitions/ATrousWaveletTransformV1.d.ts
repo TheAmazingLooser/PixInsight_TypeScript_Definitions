@@ -48,7 +48,7 @@ declare class ATrousWaveletTransformV1 extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ATrousWaveletTransformV1?: ATrousWaveletTransformV1);
+    constructor(ATrousWaveletTransformV1: ATrousWaveletTransformV1);
 
 
     //-------------------------

@@ -34,7 +34,7 @@ declare class MorphologicalTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MorphologicalTransformation?: MorphologicalTransformation);
+    constructor(MorphologicalTransformation: MorphologicalTransformation);
 
 
     //-------------------------

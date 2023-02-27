@@ -28,7 +28,7 @@ declare class Convolution extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Convolution?: Convolution);
+    constructor(Convolution: Convolution);
 
 
     //-------------------------

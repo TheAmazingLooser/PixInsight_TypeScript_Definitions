@@ -33,7 +33,9 @@ declare class Compression {
     //-------------------------
     public compress(data: string | ByteArray | any /* TypedArray */): Array<any>;
 
+
     public uncompress(subblocks: Array<any>): ByteArray;
+
 
 
 

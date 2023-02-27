@@ -178,7 +178,7 @@ declare class Preferences extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Preferences?: Preferences);
+    constructor(Preferences: Preferences);
 
 
     //-------------------------

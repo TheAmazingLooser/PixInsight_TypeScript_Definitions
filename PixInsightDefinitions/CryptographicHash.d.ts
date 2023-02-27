@@ -25,13 +25,15 @@ declare class CryptographicHash {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public finalize(): ByteArray;
+
 
     public hash(ByteArray: ByteArray): ByteArray;
 
-    public initialize(): void;
+
+
 
     public update(data: ByteArray): void;
+
 
 
 

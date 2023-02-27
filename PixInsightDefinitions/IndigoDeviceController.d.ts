@@ -28,7 +28,7 @@ declare class IndigoDeviceController extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IndigoDeviceController?: IndigoDeviceController);
+    constructor(IndigoDeviceController: IndigoDeviceController);
 
 
     //-------------------------

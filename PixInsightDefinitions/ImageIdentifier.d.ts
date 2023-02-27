@@ -18,7 +18,7 @@ declare class ImageIdentifier extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ImageIdentifier?: ImageIdentifier);
+    constructor(ImageIdentifier: ImageIdentifier);
 
 
     //-------------------------

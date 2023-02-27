@@ -22,7 +22,7 @@ declare class AssignICCProfile extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(AssignICCProfile?: AssignICCProfile);
+    constructor(AssignICCProfile: AssignICCProfile);
 
 
     //-------------------------

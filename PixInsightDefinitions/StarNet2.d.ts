@@ -21,7 +21,7 @@ declare class StarNet2 extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarNet2?: StarNet2);
+    constructor(StarNet2: StarNet2);
 
 
     //-------------------------

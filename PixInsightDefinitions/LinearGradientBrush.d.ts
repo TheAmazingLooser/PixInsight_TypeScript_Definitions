@@ -23,7 +23,7 @@ declare class LinearGradientBrush extends GradientBrush {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(start: Point, end: Point, stops?: Array<any>, spread?: number);
+    constructor(start: Point, end: Point, stops: Array<any>, spread: number);
 
 
     //-------------------------

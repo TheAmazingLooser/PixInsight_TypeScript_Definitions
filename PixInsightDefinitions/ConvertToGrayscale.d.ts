@@ -17,7 +17,7 @@ declare class ConvertToGrayscale extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ConvertToGrayscale?: ConvertToGrayscale);
+    constructor(ConvertToGrayscale: ConvertToGrayscale);
 
 
     //-------------------------

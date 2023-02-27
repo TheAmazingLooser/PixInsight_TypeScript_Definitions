@@ -30,7 +30,7 @@ declare class DefectMap extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DefectMap?: DefectMap);
+    constructor(DefectMap: DefectMap);
 
 
     //-------------------------

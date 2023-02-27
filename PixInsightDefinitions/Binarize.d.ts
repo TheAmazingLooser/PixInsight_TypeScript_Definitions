@@ -21,7 +21,7 @@ declare class Binarize extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Binarize?: Binarize);
+    constructor(Binarize: Binarize);
 
 
     //-------------------------

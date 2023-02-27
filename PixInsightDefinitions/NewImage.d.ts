@@ -34,7 +34,7 @@ declare class NewImage extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NewImage?: NewImage);
+    constructor(NewImage: NewImage);
 
 
     //-------------------------

@@ -24,7 +24,7 @@ declare class ExponentialTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ExponentialTransformation?: ExponentialTransformation);
+    constructor(ExponentialTransformation: ExponentialTransformation);
 
 
     //-------------------------

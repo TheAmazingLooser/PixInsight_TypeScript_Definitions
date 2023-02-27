@@ -34,7 +34,7 @@ declare class LarsonSekanina extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(LarsonSekanina?: LarsonSekanina);
+    constructor(LarsonSekanina: LarsonSekanina);
 
 
     //-------------------------

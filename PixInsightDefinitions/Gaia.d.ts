@@ -74,7 +74,7 @@ declare class Gaia extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Gaia?: Gaia);
+    constructor(Gaia: Gaia);
 
 
     //-------------------------

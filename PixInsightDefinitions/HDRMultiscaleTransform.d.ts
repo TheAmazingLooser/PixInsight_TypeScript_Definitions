@@ -39,7 +39,7 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(HDRMultiscaleTransform?: HDRMultiscaleTransform);
+    constructor(HDRMultiscaleTransform: HDRMultiscaleTransform);
 
 
     //-------------------------

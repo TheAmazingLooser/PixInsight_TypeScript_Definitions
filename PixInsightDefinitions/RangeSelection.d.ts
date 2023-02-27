@@ -24,7 +24,7 @@ declare class RangeSelection extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(RangeSelection?: RangeSelection);
+    constructor(RangeSelection: RangeSelection);
 
 
     //-------------------------

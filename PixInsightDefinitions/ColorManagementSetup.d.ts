@@ -45,7 +45,7 @@ declare class ColorManagementSetup extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ColorManagementSetup?: ColorManagementSetup);
+    constructor(ColorManagementSetup: ColorManagementSetup);
 
 
     //-------------------------

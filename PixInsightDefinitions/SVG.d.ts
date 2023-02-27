@@ -27,8 +27,8 @@ declare class SVG {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(filePath: string, width?: number, height?: number);
-    constructor(width?: number, height?: number);
+    constructor(filePath: string, width: number, height: number);
+    constructor(width: number, height: number);
 
 
     //-------------------------

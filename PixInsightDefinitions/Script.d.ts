@@ -20,7 +20,7 @@ declare class Script extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Script?: Script);
+    constructor(Script: Script);
 
 
     //-------------------------

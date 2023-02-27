@@ -26,13 +26,13 @@ declare class MessageBox {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(text?: string, caption?: string, icon?: number, button1?: number, button2?: number, button3?: number, defaultButton?: number, escapeButton?: number);
+    constructor(text: string, caption: string, icon: number, button1: number, button2: number, button3: number, defaultButton: number, escapeButton: number);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public execute(): number;
+
 
 
 

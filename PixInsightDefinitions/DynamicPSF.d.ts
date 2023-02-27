@@ -77,7 +77,7 @@ declare class DynamicPSF extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DynamicPSF?: DynamicPSF);
+    constructor(DynamicPSF: DynamicPSF);
 
 
     //-------------------------

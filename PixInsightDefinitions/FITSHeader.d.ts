@@ -18,7 +18,7 @@ declare class FITSHeader extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(FITSHeader?: FITSHeader);
+    constructor(FITSHeader: FITSHeader);
 
 
     //-------------------------

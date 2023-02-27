@@ -22,15 +22,15 @@ declare class Timer {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(interval?: number /* 1.0*/, periodic?: boolean /* true*/);
+    constructor(interval: number /* 1.0*/, periodic: boolean /* true*/);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public start(): void;
 
-    public stop(): void;
+
+
 
 
 

@@ -31,42 +31,61 @@ declare class EphemerisFile {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(filePath?: string);
+    constructor(filePath: string);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public close(): void;
+
 
     public constantValue(name: string): number;
 
+
     public isConstantAvailable(name: string): boolean;
 
-    public isObjectAvailable(object: string, origin?: string): boolean;
 
-    public objectName(object: string, origin?: string): string;
+    public isObjectAvailable(object: string): boolean;
+    public isObjectAvailable(object: string, origin: string): boolean;
+
+
+    public objectName(object: string): string;
+    public objectName(object: string, origin: string): string;
+
 
     public open(filePath: string): void;
 
-    public visibleObjects(window: ImageWindow, P: Position, magMax?: any, magMin?: any, rect?: Rect): Array<any>;
+
+    public visibleObjects(window: ImageWindow, P: Position): Array<any>;
+    public visibleObjects(window: ImageWindow, P: Position, magMax: any): Array<any>;
+    public visibleObjects(window: ImageWindow, P: Position, magMax: any, magMin: any): Array<any>;
+    public visibleObjects(window: ImageWindow, P: Position, magMax: any, magMin: any, rect: Rect): Array<any>;
+
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static deltaAT(t: Date): number;
+    public deltaAT(t: Date): number;
 
-    public static deltaAT(isoTime: string): number;
 
-    public static deltaAT(jd1: number, jd2?: number): number;
+    public deltaAT(isoTime: string): number;
 
-    public static deltaT(t: Date): number;
 
-    public static deltaT(isoTime: string): number;
+    public deltaAT(jd1: number): number;
+    public deltaAT(jd1: number, jd2: number): number;
 
-    public static deltaT(jd1: number, jd2?: number): number;
+
+    public deltaT(t: Date): number;
+
+
+    public deltaT(isoTime: string): number;
+
+
+    public deltaT(jd1: number): number;
+    public deltaT(jd1: number, jd2: number): number;
+
 
 
 

@@ -30,7 +30,7 @@ declare class IntegerResample extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(IntegerResample?: IntegerResample);
+    constructor(IntegerResample: IntegerResample);
 
 
     //-------------------------

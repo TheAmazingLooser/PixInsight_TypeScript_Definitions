@@ -21,7 +21,7 @@ declare class RGBWorkingSpace extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(RGBWorkingSpace?: RGBWorkingSpace);
+    constructor(RGBWorkingSpace: RGBWorkingSpace);
 
 
     //-------------------------

@@ -21,13 +21,14 @@ declare class SurfaceSimplifier {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(tolerance?: number);
+    constructor(tolerance: number);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
     public simplify(x: Vector, y: Vector, z: Vector): Array<any>;
+
 
 
 

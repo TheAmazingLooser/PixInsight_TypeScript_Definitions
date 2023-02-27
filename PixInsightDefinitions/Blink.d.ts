@@ -17,7 +17,7 @@ declare class Blink extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Blink?: Blink);
+    constructor(Blink: Blink);
 
 
     //-------------------------

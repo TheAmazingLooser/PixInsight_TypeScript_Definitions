@@ -59,7 +59,7 @@ declare class DynamicBackgroundExtraction extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(DynamicBackgroundExtraction?: DynamicBackgroundExtraction);
+    constructor(DynamicBackgroundExtraction: DynamicBackgroundExtraction);
 
 
     //-------------------------

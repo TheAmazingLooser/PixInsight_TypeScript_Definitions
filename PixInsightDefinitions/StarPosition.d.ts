@@ -28,7 +28,7 @@ declare class StarPosition {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(alpha: number, delta: number, muAlpha ?: number /*  0*/, muDelta ?: number /*  0*/, parallax ?: number /*  0*/, radialVelocity ?: number /*  0*/, epoch ?: Date | string | number /*  2451545.0*/);
+    constructor(alpha: number, delta: number, muAlpha : number /*  0*/, muDelta : number /*  0*/, parallax : number /*  0*/, radialVelocity : number /*  0*/, epoch : Date | string | number /*  2451545.0*/);
 
 
     //-------------------------

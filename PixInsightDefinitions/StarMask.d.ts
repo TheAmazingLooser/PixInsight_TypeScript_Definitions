@@ -37,7 +37,7 @@ declare class StarMask extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarMask?: StarMask);
+    constructor(StarMask: StarMask);
 
 
     //-------------------------

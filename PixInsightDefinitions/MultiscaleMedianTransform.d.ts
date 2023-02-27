@@ -39,7 +39,7 @@ declare class MultiscaleMedianTransform extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(MultiscaleMedianTransform?: MultiscaleMedianTransform);
+    constructor(MultiscaleMedianTransform: MultiscaleMedianTransform);
 
 
     //-------------------------

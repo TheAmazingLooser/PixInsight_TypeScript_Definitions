@@ -42,7 +42,7 @@ declare class ColorCalibration extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(ColorCalibration?: ColorCalibration);
+    constructor(ColorCalibration: ColorCalibration);
 
 
     //-------------------------

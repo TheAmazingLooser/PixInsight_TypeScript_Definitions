@@ -22,7 +22,7 @@ declare class Rescale extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Rescale?: Rescale);
+    constructor(Rescale: Rescale);
 
 
     //-------------------------

@@ -133,7 +133,7 @@ declare class StarAlignment extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarAlignment?: StarAlignment);
+    constructor(StarAlignment: StarAlignment);
 
 
     //-------------------------

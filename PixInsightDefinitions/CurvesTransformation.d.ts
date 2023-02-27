@@ -42,7 +42,7 @@ declare class CurvesTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(CurvesTransformation?: CurvesTransformation);
+    constructor(CurvesTransformation: CurvesTransformation);
 
 
     //-------------------------

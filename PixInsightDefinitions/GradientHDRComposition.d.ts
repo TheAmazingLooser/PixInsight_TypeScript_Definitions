@@ -22,7 +22,7 @@ declare class GradientHDRComposition extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(GradientHDRComposition?: GradientHDRComposition);
+    constructor(GradientHDRComposition: GradientHDRComposition);
 
 
     //-------------------------

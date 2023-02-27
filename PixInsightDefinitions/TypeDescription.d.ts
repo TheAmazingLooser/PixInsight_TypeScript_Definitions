@@ -46,42 +46,57 @@ declare class TypeDescription {
     //-------------------------
     public inheritedBy(objectId: string): boolean;
 
+
     public inheritsFrom(objectId: string): boolean;
+
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static beginObjectDefinition(objectId: string): void;
+    public beginObjectDefinition(objectId: string): void;
 
-    public static clearAll(): void;
 
-    public static defineConstant(formalDescription: string): void;
 
-    public static defineConstructor(formalDescription: string): void;
 
-    public static defineEventHandler(formalDescription: string): void;
+    public defineConstant(formalDescription: string): void;
 
-    public static defineIncludedFile(formalDescription: string): void;
 
-    public static defineMethod(formalDescription: string): void;
+    public defineConstructor(formalDescription: string): void;
 
-    public static defineProperty(formalDescription: string, readOnly?: boolean /* false*/): void;
 
-    public static defineStaticMethod(formalDescription: string): void;
+    public defineEventHandler(formalDescription: string): void;
 
-    public static defineStaticProperty(formalDescription: string, readOnly?: boolean /* false*/): void;
 
-    public static endObjectDefinition(): void;
+    public defineIncludedFile(formalDescription: string): void;
 
-    public static enterDefinitionContext(): void;
 
-    public static inherit(objectId: string): void;
+    public defineMethod(formalDescription: string): void;
 
-    public static leaveDefinitionContext(): void;
 
-    public static objectDefined(objectId: string): boolean;
+    public defineProperty(formalDescription: string): void;
+    public defineProperty(formalDescription: string, readOnly: boolean /* false*/): void;
+
+
+    public defineStaticMethod(formalDescription: string): void;
+
+
+    public defineStaticProperty(formalDescription: string): void;
+    public defineStaticProperty(formalDescription: string, readOnly: boolean /* false*/): void;
+
+
+
+
+
+
+    public inherit(objectId: string): void;
+
+
+
+
+    public objectDefined(objectId: string): boolean;
+
 
 
 

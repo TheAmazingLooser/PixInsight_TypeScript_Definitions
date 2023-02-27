@@ -59,7 +59,7 @@ declare class Deconvolution extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Deconvolution?: Deconvolution);
+    constructor(Deconvolution: Deconvolution);
 
 
     //-------------------------

@@ -30,7 +30,7 @@ declare class SCNR extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(SCNR?: SCNR);
+    constructor(SCNR: SCNR);
 
 
     //-------------------------

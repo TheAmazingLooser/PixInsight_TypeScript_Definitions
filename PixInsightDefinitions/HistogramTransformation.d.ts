@@ -18,7 +18,7 @@ declare class HistogramTransformation extends ProcessInstance {
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(HistogramTransformation?: HistogramTransformation);
+    constructor(HistogramTransformation: HistogramTransformation);
 
 
     //-------------------------
