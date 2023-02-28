@@ -7,9 +7,9 @@ This tool only gives an overview of what types are defined in the PJSR and what 
 
 ## Known bugs
   
-- There are no constants.
+- Constant variables are not working properly.
   PI uses a unique `#import`-system which is not represented in the standard ES5 and cannot be reproduced in TypeScript.
-  This leads to the need to declare constants in TypeScript, which is currently missing altogether!
+  This leads to the problem, that you can use a constant in TS but it might not be available in PI (PJSR). I recommend using the value directly!
 
 
 # FAQ
