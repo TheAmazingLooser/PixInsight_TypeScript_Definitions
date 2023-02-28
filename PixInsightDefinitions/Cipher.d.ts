@@ -27,9 +27,7 @@ declare class Cipher {
     //-------------------------
     public decrypt(cipherText: ByteArray): ByteArray;
 
-
     public encrypt(plainText: ByteArray): ByteArray;
-
 
 
 

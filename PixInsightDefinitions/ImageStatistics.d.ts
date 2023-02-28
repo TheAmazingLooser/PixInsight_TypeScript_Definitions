@@ -63,9 +63,7 @@ declare class ImageStatistics {
     //-------------------------
     public assign(s: ImageStatistics): void;
 
-
     public generate(img: Image): void;
-
 
 
 

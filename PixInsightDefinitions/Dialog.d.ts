@@ -25,18 +25,17 @@ declare class Dialog extends Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
-
+    public cancel(): void;
 
     public done(retCode: number): void;
 
+    public execute(): number;
 
+    public newInstance(): void;
 
+    public ok(): void;
 
-
-
-
-
-
+    public open(): void;
 
 
 
@@ -47,11 +46,9 @@ declare class Dialog extends Control {
     public static browseScriptDocumentation(scriptName: string, title: string): boolean;
     public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
 
-
     public static openBrowser(uri: string): void;
     public static openBrowser(uri: string, title: string): void;
     public static openBrowser(uri: string, title: string, width: number, height: number): void;
-
 
 
 

@@ -38,30 +38,21 @@ declare class NumericEdit extends Control {
     //-------------------------
     public enableFixedPrecision(fixed: boolean): void;
 
-
     public enableFixedSign(sign: boolean): void;
-
 
     public enableScientificNotation(enable: boolean): void;
 
-
     public enableValidatingRegExp(enable: boolean): void;
-
 
     public setPrecision(digits: number): void;
 
-
     public setRange(lowerBound: number, upperBound: number): void;
-
 
     public setReal(real: boolean): void;
 
-
     public setScientificNotationTriggerExponent(exp10: number): void;
 
-
     public setValue(value: number): void;
-
 
 
 

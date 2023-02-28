@@ -41,10 +41,9 @@ declare class FileFind {
     //-------------------------
     public begin(path: string): boolean;
 
+    public end(): void;
 
-
-
-
+    public next(): boolean;
 
 
 

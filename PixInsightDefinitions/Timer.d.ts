@@ -28,9 +28,9 @@ declare class Timer {
     //-------------------------
     //--------Functions--------
     //-------------------------
+    public start(): void;
 
-
-
+    public stop(): void;
 
 
 

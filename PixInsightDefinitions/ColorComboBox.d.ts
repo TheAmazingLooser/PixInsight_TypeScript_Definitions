@@ -26,11 +26,9 @@ declare class ColorComboBox extends ComboBox {
     //-------------------------
     public colorForIndex(index: number): number;
 
-
-
+    public currentColor(): number;
 
     public setCurrentColor(rgba: number): void;
-
 
 
 

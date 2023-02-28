@@ -34,9 +34,7 @@ declare class LinearFunction {
     //-------------------------
     public evaluate(x: number): void;
 
-
     public fit(x: Array<any> | any /* TypedArray */, y: Array<any> | any /* TypedArray */): void;
-
 
 
 

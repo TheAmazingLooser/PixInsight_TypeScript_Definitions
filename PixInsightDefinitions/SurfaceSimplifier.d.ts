@@ -31,7 +31,6 @@ declare class SurfaceSimplifier {
 
 
 
-
     //-------------------------
     //----static Functions-----
     //-------------------------

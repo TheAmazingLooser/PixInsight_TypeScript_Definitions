@@ -53,12 +53,10 @@ declare class FileInfo {
     //-------------------------
     public assign(info: FileInfo): void;
 
-
-
+    public clear(): void;
 
     public refresh(): void;
     public refresh(filePath: string): void;
-
 
 
 

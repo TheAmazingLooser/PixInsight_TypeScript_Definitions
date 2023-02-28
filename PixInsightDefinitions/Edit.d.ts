@@ -37,15 +37,15 @@ declare class Edit extends Frame {
     //-------------------------
     //--------Functions--------
     //-------------------------
+    public clear(): void;
 
+    public end(): void;
 
+    public home(): void;
 
+    public selectAll(): void;
 
-
-
-
-
-
+    public unselect(): void;
 
 
 

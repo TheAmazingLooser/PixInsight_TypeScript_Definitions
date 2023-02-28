@@ -37,24 +37,19 @@ declare class EphemerisFile {
     //-------------------------
     //--------Functions--------
     //-------------------------
-
+    public close(): void;
 
     public constantValue(name: string): number;
 
-
     public isConstantAvailable(name: string): boolean;
-
 
     public isObjectAvailable(object: string): boolean;
     public isObjectAvailable(object: string, origin: string): boolean;
 
-
     public objectName(object: string): string;
     public objectName(object: string, origin: string): string;
 
-
     public open(filePath: string): void;
-
 
     public visibleObjects(window: ImageWindow, P: Position): Array<any>;
     public visibleObjects(window: ImageWindow, P: Position, magMax: any): Array<any>;
@@ -63,29 +58,22 @@ declare class EphemerisFile {
 
 
 
-
     //-------------------------
     //----static Functions-----
     //-------------------------
     public static deltaAT(t: Date): number;
 
-
     public static deltaAT(isoTime: string): number;
-
 
     public static deltaAT(jd1: number): number;
     public static deltaAT(jd1: number, jd2: number): number;
 
-
     public static deltaT(t: Date): number;
-
 
     public static deltaT(isoTime: string): number;
 
-
     public static deltaT(jd1: number): number;
     public static deltaT(jd1: number, jd2: number): number;
-
 
 
 

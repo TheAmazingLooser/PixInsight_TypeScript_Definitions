@@ -31,19 +31,17 @@ declare class QuadTreeNode {
     //-------------------------
     public includes(point: Point): boolean;
 
-
     public intersects(rect: Rect): boolean;
 
+    public isLeaf(): boolean;
 
+    public neRect(): Rect;
 
+    public nwRect(): Rect;
 
+    public seRect(): Rect;
 
-
-
-
-
-
-
+    public swRect(): Rect;
 
 
 

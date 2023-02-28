@@ -30,18 +30,17 @@ declare class TextBox extends Frame {
     //-------------------------
     //--------Functions--------
     //-------------------------
+    public clear(): void;
 
+    public end(): void;
 
-
-
-
+    public home(): void;
 
     public insert(text: string): void;
 
+    public selectAll(): void;
 
-
-
-
+    public unselect(): void;
 
 
 

@@ -83,178 +83,135 @@ declare class Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
+    public activateWindow(): void;
 
+    public adjustToContents(): void;
 
-
-
-
+    public bringToFront(): void;
 
     public childByPos(Point: Point): Control;
 
-
     public childByPos(x: number, y: number): Control;
-
 
     public controlToLocal(Control: Control, Point: Point): Point;
 
-
-
+    public ensureLayoutUpdated(): void;
 
     public globalToLocal(Point: Point): Point;
 
+    public hide(): void;
 
-
-
-
+    public hideAlias(): void;
 
     public isAncestorOf(Control: Control): boolean;
 
-
     public localToControl(Control: Control, Point: Point): Point;
-
 
     public localToGlobal(Point: Point): Point;
 
-
     public localToParent(Point: Point): Point;
-
 
     public logicalPixelsToPhysical(size: number): number;
 
-
     public move(Point: Point): void;
-
 
     public move(x: number, y: number): void;
 
-
     public parentToLocal(Point: Point): Point;
-
 
     public physicalPixelsToLogical(size: number): number;
 
+    public render(): Bitmap;
 
-
-
-
+    public repaint(): void;
 
     public repaint(Rect: Rect): void;
 
-
     public repaint(x0: number, y0: number, x1: number, y1: number): void;
-
 
     public resize(w: number, h: number): void;
 
-
-
+    public restyle(): void;
 
     public scaledResource(filePath: string): string;
-
 
     public scaledStyleSheet(cssCode: string): string;
     public scaledStyleSheet(cssCode: string, fontDPI: number /* 0*/): string;
 
-
     public scroll(d: Point): void;
-
 
     public scroll(dx: number, dy: number): void;
 
-
     public scroll(d: Point, Rect: Rect): void;
-
 
     public scroll(dx: number, dy: number, x0: number, y0: number, x1: number, y1: number): void;
 
+    public sendToBack(): void;
 
-
-
-
+    public setCursorToParent(): void;
 
     public setFixedHeight(): void;
     public setFixedHeight(h: number): void;
 
-
     public setFixedSize(): void;
     public setFixedSize(w: number, h: number): void;
-
 
     public setFixedWidth(): void;
     public setFixedWidth(w: number): void;
 
-
     public setMaxHeight(): void;
     public setMaxHeight(h: number): void;
-
 
     public setMaxSize(): void;
     public setMaxSize(w: number, h: number): void;
 
-
     public setMaxWidth(): void;
     public setMaxWidth(w: number): void;
-
 
     public setMinHeight(): void;
     public setMinHeight(h: number): void;
 
-
     public setMinSize(): void;
     public setMinSize(w: number, h: number): void;
-
 
     public setMinWidth(): void;
     public setMinWidth(w: number): void;
 
-
     public setScaledFixedHeight(h: number): void;
-
 
     public setScaledFixedSize(w: number, h: number): void;
 
-
     public setScaledFixedWidth(w: number): void;
-
 
     public setScaledMaxHeight(h: number): void;
 
-
     public setScaledMaxSize(w: number, h: number): void;
-
 
     public setScaledMaxWidth(w: number): void;
 
-
     public setScaledMinHeight(h: number): void;
-
 
     public setScaledMinSize(w: number, h: number): void;
 
-
     public setScaledMinWidth(w: number): void;
 
+    public setVariableHeight(): void;
 
+    public setVariableSize(): void;
 
+    public setVariableWidth(): void;
 
+    public show(): void;
 
-
-
-
-
-
-
+    public showAlias(): void;
 
     public stackUnder(Control: Control): void;
 
-
-
+    public update(): void;
 
     public update(Rect: Rect): void;
 
-
     public update(x0: number, y0: number, x1: number, y1: number): void;
-
 
 
 

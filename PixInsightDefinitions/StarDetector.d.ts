@@ -36,13 +36,10 @@ declare class StarDetector {
     //-------------------------
     public getStructureMap(map: Image): void;
 
-
     public stars(image: Image): Array<any>;
-
 
     public test(image: Image): void;
     public test(image: Image, createStarMaskWindow: boolean /* false*/): void;
-
 
 
 

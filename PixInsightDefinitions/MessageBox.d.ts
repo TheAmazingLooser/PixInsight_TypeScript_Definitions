@@ -32,7 +32,7 @@ declare class MessageBox {
     //-------------------------
     //--------Functions--------
     //-------------------------
-
+    public execute(): number;
 
 
 

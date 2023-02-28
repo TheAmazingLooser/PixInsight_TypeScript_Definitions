@@ -36,35 +36,25 @@ declare class Histogram {
     //-------------------------
     public assign(h: Histogram): void;
 
-
     public clipHigh(count: number): number;
-
 
     public clipLow(count: number): number;
 
-
     public count(level: number): number;
-
 
     public generate(img: Image): void;
 
-
     public histogramLevel(normalizedLevel: number): number;
-
 
     public normalizedClipHigh(count: number): number;
 
-
     public normalizedClipLow(count: number): number;
-
 
     public normalizedLevel(histogramLevel: number): number;
 
-
     public resample(h: Histogram): void;
 
-
-
+    public toArray(): Array<any>;
 
 
 

@@ -36,7 +36,6 @@ declare class Slider extends Control {
 
 
 
-
     //-------------------------
     //----static Functions-----
     //-------------------------

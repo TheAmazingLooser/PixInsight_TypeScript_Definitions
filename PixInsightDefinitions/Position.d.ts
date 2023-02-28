@@ -47,57 +47,41 @@ declare class Position {
     //-------------------------
     public apparent(H: EphemerisHandle): Vector;
 
-
     public apparent(S: StarPosition): Vector;
-
 
     public apparentVisualMagnitude(H: EphemerisHandle): number | void;
 
-
     public astrometric(H: EphemerisHandle): Vector;
-
 
     public astrometric(S: StarPosition): Vector;
 
-
     public canComputeApparentVisualMagnitude(H: EphemerisHandle): boolean;
-
 
     public geometric(H: EphemerisHandle): Vector;
 
-
     public geometric(S: StarPosition): Vector;
 
+    public initCIOBasedParameters(): void;
 
-
-
-
+    public initEquinoxBasedParameters(): void;
 
     public intermediate(H: EphemerisHandle): Vector;
 
-
     public intermediate(S: StarPosition): Vector;
 
-
-
+    public nutationAngles(): Array<any>;
 
     public proper(H: EphemerisHandle): Vector;
 
-
     public proper(S: StarPosition): Vector;
-
 
     public true(H: EphemerisHandle): Vector;
 
-
     public true(S: StarPosition): Vector;
-
 
     public trueDistance(H: EphemerisHandle): number;
 
-
     public trueDistance(S: StarPosition): number;
-
 
 
 
@@ -106,18 +90,13 @@ declare class Position {
     //-------------------------
     public static eclipticToEquatorial(r: Vector, eps: number): Vector;
 
-
     public static eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
-
 
     public static equatorialToEcliptic(r: Vector, eps: number): Vector;
 
-
     public static equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
 
-
     public static icrsEquatorialToGalactic(r: Vector): Vector;
-
 
 
 

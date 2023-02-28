@@ -36,16 +36,14 @@ declare class FITSKeyword {
     //-------------------------
     public assign(k: FITSKeyword): void;
 
-
     public assign(name: string, value: string): void;
     public assign(name: string, value: string, comment: string): void;
 
+    public toArray(): Array<any>;
 
+    public toString(): string;
 
-
-
-
-
+    public trim(): void;
 
 
 

@@ -35,23 +35,17 @@ declare class EphemerisHandle {
     //-------------------------
     public stateVector(Date: Date): Vector;
 
-
     public stateVector(isoTime: string): Vector;
-
 
     public stateVector(jd1: number): Vector;
     public stateVector(jd1: number, jd2: number /* 0*/): Vector;
 
-
     public stateVectors(Date: Date): Array<any>;
-
 
     public stateVectors(isoTime: string): Array<any>;
 
-
     public stateVectors(jd1: number): Array<any>;
     public stateVectors(jd1: number, jd2: number /* 0*/): Array<any>;
-
 
 
 

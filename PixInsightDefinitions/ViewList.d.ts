@@ -28,16 +28,15 @@ declare class ViewList extends Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
+    public getAll(): void;
 
+    public getMainViews(): void;
 
+    public getPreviews(): void;
 
-
-
-
-
+    public reload(): void;
 
     public remove(view: View): void;
-
 
 
 

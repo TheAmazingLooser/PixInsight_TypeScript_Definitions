@@ -39,7 +39,6 @@ declare class SpinBox extends Control {
 
 
 
-
     //-------------------------
     //----static Functions-----
     //-------------------------

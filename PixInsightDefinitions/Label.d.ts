@@ -28,7 +28,7 @@ declare class Label extends Frame {
     //-------------------------
     //--------Functions--------
     //-------------------------
-
+    public clear(): void;
 
 
 

@@ -26,7 +26,7 @@ declare class FileDialog {
     //-------------------------
     //--------Functions--------
     //-------------------------
-
+    public execute(): boolean;
 
 
 

@@ -47,28 +47,21 @@ declare class Font {
     //-------------------------
     public assign(fnt: Font): void;
 
-
     public assign(stdFamiliy: number): void;
     public assign(stdFamiliy: number, size: number): void;
     public assign(stdFamiliy: number, size: number, unit: string /* "pt"*/): void;
-
 
     public assign(family: string): void;
     public assign(family: string, size: number): void;
     public assign(family: string, size: number, unit: string /* "pt"*/): void;
 
-
     public boundingRect(s: string): Rect;
-
 
     public isCharDefined(ch: number): boolean;
 
-
     public tightBoundingRect(s: string): Rect;
 
-
     public width(s: string): number;
-
 
 
 
@@ -78,12 +71,9 @@ declare class Font {
     public static families(): Array<any>;
     public static families(writingSystem: number): Array<any>;
 
-
     public static isFixedPitchFont(family: string): boolean;
 
-
     public static isScalableFont(family: string): boolean;
-
 
 
 

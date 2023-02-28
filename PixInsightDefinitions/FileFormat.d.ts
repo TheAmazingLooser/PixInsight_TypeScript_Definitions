@@ -64,13 +64,11 @@ declare class FileFormat {
     //-------------------------
     public disposeFormatSpecificData(data: Object): void;
 
+    public editPreferences(): void;
 
-
-
-
+    public queryFormatStatus(): string;
 
     public validateFormatSpecificData(data: Object): boolean;
-
 
 
 
