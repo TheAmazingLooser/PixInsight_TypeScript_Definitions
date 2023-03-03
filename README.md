@@ -1,96 +1,86 @@
 # PixInsight TypeScript Definitions
-This repository provides TypeScript definitions to be able to code scripts for PixInsight.
-PixInsight is a software program for editing and processing astrophotographic images.
-It provides a small JavaScript runtime to automate certain processes. However, this JavaScript runtime lacks documentation.
-The only real way to get information about the PJSR (PixInsight JavaScript Runtime) is through the ObjectExplorer in PixInsight.
-This tool only gives an overview of what types are defined in the PJSR and what their methods,... are.
+PixInsight TypeScript Definitions is a project that provides TypeScript definitions for the PixInsight JavaScript Runtime (PJSR). With this project, you can transpile TypeScript code to the correct JavaScript code for the PixInsight JavaScript engine, allowing you to take advantage of all TypeScript benefits such as a typed language, autocompletions from High-Quality IDEs, and better error-handling.
 
-## Known bugs
-  
-- Constant variables are not working properly.
-  PI uses a unique `#import`-system which is not represented in the standard ES5 and cannot be reproduced in TypeScript.
-  This leads to the problem, that you can use a constant in TS but it might not be available in PI (PJSR). I recommend using the value directly!
+All type definitions in this repository are automatically generated using a private generator. By using this project, you can write more reliable and maintainable code for PixInsight, while still benefiting from the advantages of TypeScript. TypeScript's biggest advantage over JavaScript is its strong typing system, which allows for better error detection, improved code quality and easier maintenance.
+## Features
 
+- Provides all defined classes including:
+    - methods
+    - static functions
+    - event handlers
+    - properties
+    - static properties
+    - constants (limited)
+- Provides all globally defined vars from PI
+- Provides all benefits from TypeScript
 
-# FAQ
-## How are definitions generated?
-When you look at a definition file, it seems obvious that they are generated. And guess what... They are!
-To generate them, the following things are needed
+## Quickstart Guide
+### Prerequisites
 
-1) Dump the whole PJSR (this is quite easy, since PI provides you with a class that does all this work for you. The `TypeDescription`.
-2) Convert the dumped data into _.d.ts_ files.
+- Node.js and NPM (you can download them from https://nodejs.org/)
+- TypeScript (you can install it globally by running npm install -g typescript)
+- An IDE of your choice (such as Visual Studio Code, Sublime Text, or Atom)
 
-This all sounds simple in theory, but it gets quite complicated once you start doing it.
-The main complication here is that the methods are just strings representing the function signature. (And BOY, they look uniform, but they're not!)
+Installation
+- Clone the repository by running git clone https://github.com/TheAmazingLooser/PixInsight_TypeScript_Definitions.git in your terminal or by downloading the code as a zip file and extracting it wherever you like.
+- Open the repository in your IDE.
 
-If you want to get the same basic data I have: Here's the JavaScript (run directly in PI) I use to dump the PJSR into a JSON file:
-```js
-var a = {};
+Usage
 
-function process(arra)
+- Write your TypeScript code in the root directory of the project.
+- Open a terminal in the root directory of the project.
+- Run the command tsc --project .\tsconfig.json to transpile your TypeScript code to JavaScript.
+- The transpiled JavaScript files will be generated in the dist folder.
+- You can now use these files in PixInsight.
+
+That's it! With this project, you can enjoy all the benefits of TypeScript while working with the PixInsight JavaScript engine.
+## Usage/Examples
+
+Take the following TypeScript, transpile it on your own and see what it is doing!
+
+```typescript
+function main()
 {
-   for (var element of arra ) {
-      //Console.writeln(JSON.stringify(element));
-      try {
-         if (TypeDescription.objectDefined(element))
-         {
-            var typeDesc = new TypeDescription(element);
+    var window: ImageWindow = ImageWindow.windows[0];
 
-            var obj = {
-               id: typeDesc.id,
-               inherits: typeDesc.inherits,
-               isCoreObject: typeDesc.isCoreObject,
-               isExternalObject: typeDesc.isExternalObject,
-               isNull: typeDesc.isNull,
-               constants: typeDesc.constants,
-               constructors: typeDesc.constructors,
-               eventHandlers: typeDesc.eventHandlers,
-               methods: typeDesc.methods,
-               objectsInherited: typeDesc.objectsInherited,
-               objectsInheriting: typeDesc.objectsInheriting,
-               properties: typeDesc.properties,
-               staticMethods: typeDesc.staticMethods,
-               staticProperties: typeDesc.staticProperties
-            };
-
-            a[element] = obj;
-         } else {
-            // the element is undefined.
-            // In all my testing this never acutally happened.
-            // It seems that PI automatically register everything via the TypeDescription-Class
-         }
-      } catch(ex) {
-         // This is a possibility but should never happen.
-         // Just in case it does happen it would be good to log atleast the class-name where it happened.
-         a[element] = "Error Pasing this class";
-      }
-   }
+    if (window != null)
+        Console.writeln("window: " + window.filePath);
 }
 
-process(TypeDescription.objects);
+// Create a new class as a test
+class Test
+{
+    public static main()
+    {
+        Console.writeln("Static Hello, World!");
+    }
 
-var f = new File();
-f.createForWriting("D:/temp/pi_classes_dump.json");
-f.outText(JSON.stringify(a, null, 4));
-f.flush();
-f.close();
+    public main(){
+        Console.writeln("Non-Static Hello, World!");
+    }
+}
 
+// Extend the class and print a increasing number each time a new instance is created
+class Test2 extends Test
+{
+    private static count: number = 0;
+
+    public constructor()
+    {
+        super();
+        Test2.count++;
+        Console.writeln("Test2 count: " + Test2.count);
+    }
+}
+
+// This is a comment
+main();
+
+Test.main();
+var test = new Test();
+test.main();
+
+var test2 = new Test2();
+var test3 = new Test2();
+var test4 = new Test2();
 ```
-
-Before you run this blindly, you need to _**change the file path**_ so that the file is actually stored where you want it.
-
-## A process is not in the definitions. Why not?
-This can happen. In order for me to generate information about a process, I need to have it installed.
-Not only would this trash up my PI installation, it would also over time fill the definitions with useless processes.
-If you want a very specific process to be part of the definitions, you can fork the repository and make a PR (pull request).
-I'll look at it, and if it fits, I'll approve it.
-
-## How can I help improve the parser/generator for the definitions?
-The JSON file is pretty final. There will be no changes to this in the near future.
-The parser for that file (which also generates the definitions) is currently private.
-If you're really interested in helping me improve it, you might want to know the following:
-It's written in C#, so if you can't code in C#, you might not be able to help.
-
-**I may port the parser to JavaScript at some point.**
-This would allow me to actually include a script in PI that would generate a complete TypeScript environment in one click.
-But for that to become a reality, I definitely need to get the parser to work as intended first before porting it.
