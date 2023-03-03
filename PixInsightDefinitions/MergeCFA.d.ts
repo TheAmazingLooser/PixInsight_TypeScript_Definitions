@@ -36,6 +36,11 @@ declare class MergeCFA extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static outputViewId: string;

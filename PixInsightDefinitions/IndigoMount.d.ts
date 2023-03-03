@@ -52,6 +52,11 @@ declare class IndigoMount extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static AlignmentMethod: number;

@@ -35,6 +35,11 @@ declare class Binarize extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static isGlobal: boolean;

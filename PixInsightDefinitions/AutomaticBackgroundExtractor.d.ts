@@ -55,6 +55,11 @@ declare class AutomaticBackgroundExtractor extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static abeDownsample: number;

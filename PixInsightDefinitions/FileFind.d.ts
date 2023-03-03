@@ -53,6 +53,11 @@ declare class FileFind {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static attributes: number;

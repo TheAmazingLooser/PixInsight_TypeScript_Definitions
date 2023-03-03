@@ -119,6 +119,11 @@ declare class RGBColorSystem {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static Y: Array<any>;

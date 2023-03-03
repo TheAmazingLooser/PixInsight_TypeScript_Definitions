@@ -84,6 +84,11 @@ declare class SpectrophotometricColorCalibration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static applyCalibration: boolean;

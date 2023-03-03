@@ -66,6 +66,11 @@ declare class FileInfo {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static attributes: number;

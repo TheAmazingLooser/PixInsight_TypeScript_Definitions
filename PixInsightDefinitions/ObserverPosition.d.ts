@@ -40,6 +40,11 @@ declare class ObserverPosition {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static cioBased: boolean;

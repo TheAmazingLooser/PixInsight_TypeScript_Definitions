@@ -33,6 +33,11 @@ declare class ConicalGradientBrush extends GradientBrush {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static angle: number;

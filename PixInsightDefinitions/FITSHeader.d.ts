@@ -32,6 +32,11 @@ declare class FITSHeader extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static keywords: Array<any>;

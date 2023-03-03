@@ -50,6 +50,14 @@ declare class TextBox extends Frame {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCaretPositionUpdated: () => void;
+    public onSelectionUpdated: () => void;
+    public onTextUpdated: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static caretPosition: number;

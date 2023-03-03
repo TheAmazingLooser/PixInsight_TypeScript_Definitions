@@ -102,6 +102,20 @@ declare class TreeBox extends ScrollBox {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCurrentNodeUpdated: (currentItem: TreeBoxNode, oldItem: TreeBoxNode) => void;
+    public onNodeActivated: (item: TreeBoxNode, columnIndex: number) => void;
+    public onNodeClicked: (item: TreeBoxNode, columnIndex: number) => void;
+    public onNodeCollapsed: (item: TreeBoxNode) => void;
+    public onNodeDoubleClicked: (item: TreeBoxNode, columnIndex: number) => void;
+    public onNodeEntered: (item: TreeBoxNode, columnIndex: number) => void;
+    public onNodeExpanded: (item: TreeBoxNode) => void;
+    public onNodeSelectionUpdated: () => void;
+    public onNodeUpdated: (item: TreeBoxNode, columnIndex: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static alternateRowColor: boolean;

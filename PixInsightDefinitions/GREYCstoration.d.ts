@@ -43,6 +43,11 @@ declare class GREYCstoration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static amplitude: number;

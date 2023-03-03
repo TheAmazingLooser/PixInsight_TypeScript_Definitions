@@ -82,6 +82,11 @@ declare class SubframeSelector extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static allowClusteredSources: boolean;

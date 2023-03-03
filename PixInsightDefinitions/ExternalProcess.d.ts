@@ -93,6 +93,17 @@ declare class ExternalProcess {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onError: (errorCode: number) => void;
+    public onFinished: (exitCode: number, exitStatus: number) => void;
+    public onStandardErrorDataAvailable: () => void;
+    public onStandardOutputDataAvailable: () => void;
+    public onStarted: () => void;
+    public onStateChanged: (newState: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bytesAvailable: number;

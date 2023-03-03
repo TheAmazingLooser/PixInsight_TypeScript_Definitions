@@ -63,6 +63,11 @@ declare class DynamicPSF extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static astrometry: boolean;

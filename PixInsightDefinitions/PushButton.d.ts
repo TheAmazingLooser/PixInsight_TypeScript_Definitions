@@ -38,6 +38,14 @@ declare class PushButton extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onClick: (checked: boolean) => void;
+    public onPress: () => void;
+    public onRelease: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static defaultButton: boolean;

@@ -36,6 +36,11 @@ declare class OpenFileDialog extends FileDialog {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static fileName: string;

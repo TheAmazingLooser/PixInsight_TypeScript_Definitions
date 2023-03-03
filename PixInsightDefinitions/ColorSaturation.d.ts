@@ -34,6 +34,11 @@ declare class ColorSaturation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static HS: Array<any>;

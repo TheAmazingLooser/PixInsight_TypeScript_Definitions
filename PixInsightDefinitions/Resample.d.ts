@@ -44,6 +44,11 @@ declare class Resample extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static absoluteMode: number;

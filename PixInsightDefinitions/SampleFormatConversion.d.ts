@@ -32,6 +32,11 @@ declare class SampleFormatConversion extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static format: number;

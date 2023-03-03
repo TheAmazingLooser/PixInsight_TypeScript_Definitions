@@ -71,6 +71,14 @@ declare class NetworkTransfer {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onDownloadDataAvailable: (data: ByteArray) => Boolean;
+    public onTransferProgress: (dlTotal: number, dlCurrent: number, ulTotal: number, ulCurrent: number) => Boolean;
+    public onUploadDataRequested: (maxSize: number) => ByteArray;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static aborted: boolean;

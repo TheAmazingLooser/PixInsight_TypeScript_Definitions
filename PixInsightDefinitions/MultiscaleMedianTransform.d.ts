@@ -47,6 +47,11 @@ declare class MultiscaleMedianTransform extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static highRange: number;

@@ -35,6 +35,11 @@ declare class RGBWorkingSpace extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static applyGlobalRGBWS: boolean;

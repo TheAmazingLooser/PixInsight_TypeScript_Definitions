@@ -32,6 +32,11 @@ declare class NumericControl extends NumericEdit {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static exponential: boolean;

@@ -42,6 +42,11 @@ declare class IndigoDeviceController extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static abort: boolean;

@@ -45,6 +45,11 @@ declare class Annotation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static annotationColor: number;

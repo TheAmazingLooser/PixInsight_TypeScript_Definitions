@@ -39,6 +39,11 @@ declare class AssistedColorCalibration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static BlueCorrectionFactor: number;

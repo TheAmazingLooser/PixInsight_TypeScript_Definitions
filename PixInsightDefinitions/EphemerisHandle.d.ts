@@ -55,6 +55,11 @@ declare class EphemerisHandle {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static B_V: number | void;

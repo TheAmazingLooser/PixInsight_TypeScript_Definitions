@@ -53,6 +53,13 @@ declare class Dialog extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onExecute: () => void;
+    public onReturn: (retVal: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static result: number;

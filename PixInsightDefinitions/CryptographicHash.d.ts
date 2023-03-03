@@ -41,6 +41,11 @@ declare class CryptographicHash {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static algorithmName: string;

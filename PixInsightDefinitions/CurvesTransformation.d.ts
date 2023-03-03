@@ -53,6 +53,11 @@ declare class CurvesTransformation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static A: Array<any>;

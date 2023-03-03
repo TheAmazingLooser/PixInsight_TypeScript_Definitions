@@ -83,6 +83,11 @@ declare class View {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static canGoBackward: boolean;

@@ -75,6 +75,11 @@ declare class IndigoCCDFrame extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static alignmentModelFile: string;

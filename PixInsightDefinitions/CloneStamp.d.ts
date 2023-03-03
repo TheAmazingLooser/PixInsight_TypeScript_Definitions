@@ -37,6 +37,11 @@ declare class CloneStamp extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static actions: Array<any>;

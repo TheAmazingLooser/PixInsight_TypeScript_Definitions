@@ -193,6 +193,11 @@ declare class ByteArray {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static available: number;

@@ -37,6 +37,11 @@ declare class DigitalDevelopment extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static a: number;

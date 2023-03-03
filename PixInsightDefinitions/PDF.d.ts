@@ -49,6 +49,11 @@ declare class PDF {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bottomMargin: number;

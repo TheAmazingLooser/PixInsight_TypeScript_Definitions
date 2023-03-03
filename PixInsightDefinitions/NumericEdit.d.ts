@@ -62,6 +62,12 @@ declare class NumericEdit extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onValueUpdated: (value: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoEditWidth: boolean;

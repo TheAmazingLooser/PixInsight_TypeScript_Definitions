@@ -31,6 +31,11 @@ declare class ConvertToGrayscale extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

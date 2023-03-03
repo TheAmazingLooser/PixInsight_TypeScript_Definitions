@@ -63,6 +63,11 @@ declare class B3Estimator extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static backgroundHigh1: number;

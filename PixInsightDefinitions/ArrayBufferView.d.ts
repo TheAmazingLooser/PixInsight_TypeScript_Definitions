@@ -33,6 +33,11 @@ declare class ArrayBufferView {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static buffer: ArrayBuffer;

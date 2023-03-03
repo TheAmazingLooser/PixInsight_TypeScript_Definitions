@@ -33,6 +33,11 @@ declare class FourierTransform extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static centered: boolean;

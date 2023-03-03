@@ -55,6 +55,11 @@ declare class GridInterpolation {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static delta: number;

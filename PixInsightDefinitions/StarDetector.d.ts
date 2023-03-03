@@ -49,6 +49,12 @@ declare class StarDetector {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public progressCallback: (count: number, total: number) => Boolean;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bkgDelta: number;

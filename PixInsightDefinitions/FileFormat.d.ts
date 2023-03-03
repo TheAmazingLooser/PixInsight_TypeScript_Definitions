@@ -78,6 +78,11 @@ declare class FileFormat {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static canEditPreferences: boolean;

@@ -78,6 +78,11 @@ declare class EphemerisFile {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static authors: string;

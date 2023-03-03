@@ -39,6 +39,16 @@ declare class ToolButton extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public default: () => Boolean;
+    public onCheck: (checked: boolean) => void;
+    public onClick: (checked: boolean) => void;
+    public onPress: () => void;
+    public onRelease: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static checkable: boolean;

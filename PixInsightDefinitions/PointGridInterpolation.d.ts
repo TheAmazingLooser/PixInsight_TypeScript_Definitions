@@ -55,6 +55,11 @@ declare class PointGridInterpolation {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static delta: number;

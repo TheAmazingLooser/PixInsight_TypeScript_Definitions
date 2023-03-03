@@ -35,6 +35,11 @@ declare class DefectMap extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static isCFA: boolean;

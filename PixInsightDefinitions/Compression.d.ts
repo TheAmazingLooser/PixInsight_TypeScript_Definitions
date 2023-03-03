@@ -43,6 +43,11 @@ declare class Compression {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static algorithmName: string;

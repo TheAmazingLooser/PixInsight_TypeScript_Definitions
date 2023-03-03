@@ -41,6 +41,11 @@ declare class NewImage extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static colorSpace: number;

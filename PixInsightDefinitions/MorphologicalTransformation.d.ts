@@ -41,6 +41,11 @@ declare class MorphologicalTransformation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static amount: number;

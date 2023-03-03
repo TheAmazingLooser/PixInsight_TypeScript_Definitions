@@ -34,6 +34,11 @@ declare class StarXTerminator extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static overlap: number;

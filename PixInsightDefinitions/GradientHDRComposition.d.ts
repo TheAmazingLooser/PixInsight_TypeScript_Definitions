@@ -36,6 +36,11 @@ declare class GradientHDRComposition extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bKeepLog: boolean;

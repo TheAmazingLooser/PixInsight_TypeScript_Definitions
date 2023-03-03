@@ -31,6 +31,11 @@ declare class ConvertToRGBColor extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

@@ -55,6 +55,13 @@ declare class SectionBar extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCheckSection: (bar: SectionBar) => void;
+    public onToggleSection: (bar: SectionBar, toggleBegin: boolean) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static checkBox: CheckBox;

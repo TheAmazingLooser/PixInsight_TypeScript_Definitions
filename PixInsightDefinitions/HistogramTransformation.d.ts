@@ -32,6 +32,11 @@ declare class HistogramTransformation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static H: Array<any>;

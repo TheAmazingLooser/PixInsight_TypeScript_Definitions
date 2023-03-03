@@ -43,6 +43,11 @@ declare class MaskedStretch extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static backgroundHigh: number;

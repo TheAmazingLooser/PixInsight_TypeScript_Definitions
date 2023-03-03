@@ -37,6 +37,11 @@ declare class Cipher {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static algorithmName: string;

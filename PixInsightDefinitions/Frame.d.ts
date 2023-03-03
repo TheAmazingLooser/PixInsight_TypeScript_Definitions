@@ -34,6 +34,11 @@ declare class Frame extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static borderWidth: number;

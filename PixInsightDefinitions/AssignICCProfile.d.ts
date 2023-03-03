@@ -33,6 +33,11 @@ declare class AssignICCProfile extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static mode: number;

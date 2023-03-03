@@ -52,6 +52,11 @@ declare class SurfaceSpline {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static isValid: boolean;

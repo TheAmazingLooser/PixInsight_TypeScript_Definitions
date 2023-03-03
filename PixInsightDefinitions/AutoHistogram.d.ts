@@ -52,6 +52,11 @@ declare class AutoHistogram extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static clip: boolean;

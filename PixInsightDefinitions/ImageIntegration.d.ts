@@ -171,6 +171,11 @@ declare class ImageIntegration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static adaptiveGridSize: number;

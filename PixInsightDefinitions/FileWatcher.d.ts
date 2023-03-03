@@ -44,6 +44,13 @@ declare class FileWatcher {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onDirectoryChanged: (dirPath: string) => void;
+    public onFileChanged: (filePath: string) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static directories: Array<any>;

@@ -37,6 +37,11 @@ declare class LinearGradientBrush extends GradientBrush {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static end: Point;

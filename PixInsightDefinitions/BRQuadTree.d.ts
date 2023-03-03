@@ -79,6 +79,11 @@ declare class BRQuadTree {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bucketCapacity: number;

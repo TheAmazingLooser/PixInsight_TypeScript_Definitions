@@ -34,6 +34,11 @@ declare class RadialGradientBrush extends GradientBrush {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static center: Point;

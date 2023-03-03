@@ -42,6 +42,11 @@ declare class StarPosition {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static alpha: number;

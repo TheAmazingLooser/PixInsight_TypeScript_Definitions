@@ -221,6 +221,31 @@ declare class Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onChildCreate: (child: Control) => void;
+    public onChildDestroy: (child: Control) => void;
+    public onClose: () => Boolean;
+    public onDestroy: () => void;
+    public onEnter: () => Boolean|void;
+    public onGetFocus: () => Boolean|void;
+    public onHide: () => void;
+    public onKeyPress: (keyCode: number, modifiers: number) => Boolean|void;
+    public onKeyRelease: (keyCode: number, modifiers: number) => Boolean|void;
+    public onLeave: () => Boolean|void;
+    public onLoseFocus: () => Boolean|void;
+    public onMouseDoubleClick: (x: number, y: number, buttonState: number, modifiers: number) => Boolean|void;
+    public onMouseMove: (x: number, y: number, buttonState: number, modifiers: number) => Boolean|void;
+    public onMousePress: (x: number, y: number, button: number, buttonState: number, modifiers: number) => Boolean|void;
+    public onMouseRelease: (x: number, y: number, button: number, buttonState: number, modifiers: number) => Boolean|void;
+    public onMouseWheel: (x: number, y: number, delta: number, buttonState: number, modifiers: number) => Boolean|void;
+    public onMove: (xNew: number, yNew: number, xOld: number, yOld: number) => Boolean|void;
+    public onPaint: (x0: number, y0: number, x1: number, y1: number) => Boolean|void;
+    public onResize: (wNew: number, hNew: number, wOld: number, hOld: number) => Boolean|void;
+    public onShow: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static alternateCanvasColor: number;

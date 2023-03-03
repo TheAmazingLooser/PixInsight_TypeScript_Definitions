@@ -70,6 +70,15 @@ declare class ScrollBox extends Frame {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onHorizontalScrollPosUpdated: (newPos: number) => void;
+    public onHorizontalScrollRangeUpdated: (minPos: number, maxPos: number) => void;
+    public onVerticalScrollPosUpdated: (newPos: number) => void;
+    public onVerticalScrollRangeUpdated: (minPos: number, maxPos: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoScroll: boolean;

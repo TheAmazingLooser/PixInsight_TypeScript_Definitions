@@ -51,6 +51,11 @@ declare class QuadTreeNode {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static index: Array<any>;

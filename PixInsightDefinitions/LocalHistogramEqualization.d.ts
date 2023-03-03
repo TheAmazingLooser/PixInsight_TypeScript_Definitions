@@ -36,6 +36,11 @@ declare class LocalHistogramEqualization extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static amount: number;

@@ -49,6 +49,11 @@ declare class ReadoutOptions extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static broadcast: boolean;

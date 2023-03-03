@@ -34,6 +34,15 @@ declare class RadioButton extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCheck: (checked: boolean) => void;
+    public onClick: (checked: boolean) => void;
+    public onPress: () => void;
+    public onRelease: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static checked: boolean;

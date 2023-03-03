@@ -60,6 +60,11 @@ declare class PixelMath extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static cacheGeneratedImages: boolean;

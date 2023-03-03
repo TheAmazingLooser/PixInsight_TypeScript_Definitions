@@ -44,6 +44,11 @@ declare class LinearFunction {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static adev: number;

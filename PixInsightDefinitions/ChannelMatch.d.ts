@@ -32,6 +32,11 @@ declare class ChannelMatch extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static channels: Array<any>;

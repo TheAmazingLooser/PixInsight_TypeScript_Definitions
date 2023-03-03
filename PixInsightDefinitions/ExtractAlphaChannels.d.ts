@@ -35,6 +35,11 @@ declare class ExtractAlphaChannels extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static channelList: string;

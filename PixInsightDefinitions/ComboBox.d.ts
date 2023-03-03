@@ -74,6 +74,14 @@ declare class ComboBox extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onEditTextUpdated: (text: string) => void;
+    public onItemHighlighted: (itemIndex: number) => void;
+    public onItemSelected: (itemIndex: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoCompletion: boolean;

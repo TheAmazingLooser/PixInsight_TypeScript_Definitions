@@ -92,6 +92,11 @@ declare class LocalNormalization extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoMemoryLimit: number;

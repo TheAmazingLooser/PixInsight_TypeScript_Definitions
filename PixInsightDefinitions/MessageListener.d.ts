@@ -31,6 +31,12 @@ declare class MessageListener {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onMessage: (instance: number, uniqueId: string, message: string) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

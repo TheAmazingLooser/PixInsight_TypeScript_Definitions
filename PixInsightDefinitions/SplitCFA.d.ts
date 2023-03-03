@@ -42,6 +42,11 @@ declare class SplitCFA extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static outputDir: string;

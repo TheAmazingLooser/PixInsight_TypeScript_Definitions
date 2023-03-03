@@ -37,6 +37,11 @@ declare class SurfaceSimplifier {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static centroidInclusionEnabled: boolean;

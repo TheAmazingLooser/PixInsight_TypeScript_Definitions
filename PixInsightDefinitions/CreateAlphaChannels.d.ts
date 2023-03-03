@@ -38,6 +38,11 @@ declare class CreateAlphaChannels extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static closeSource: boolean;

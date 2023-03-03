@@ -111,6 +111,11 @@ declare class Debayer extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static BayerPattern: number;

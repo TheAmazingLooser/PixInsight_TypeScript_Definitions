@@ -36,6 +36,11 @@ declare class ExponentialTransformation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static functionType: number;

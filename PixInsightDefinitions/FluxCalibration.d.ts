@@ -58,6 +58,11 @@ declare class FluxCalibration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static aperture: number;

@@ -36,6 +36,11 @@ declare class Sandbox extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static sampleFive: string;

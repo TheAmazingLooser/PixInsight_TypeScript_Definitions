@@ -47,6 +47,11 @@ declare class HDRComposition extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoExposures: boolean;

@@ -34,6 +34,11 @@ declare class ChannelCombination extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static channels: Array<any>;

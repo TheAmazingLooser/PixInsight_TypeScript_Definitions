@@ -64,6 +64,11 @@ declare class Histogram {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static entropy: number;

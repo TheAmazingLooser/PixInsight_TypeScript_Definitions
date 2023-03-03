@@ -31,6 +31,11 @@ declare class HorizontalSizer extends Sizer {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

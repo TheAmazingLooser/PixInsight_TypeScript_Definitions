@@ -70,6 +70,11 @@ declare class CometAlignment extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static drizzleWriteCometAlignedImage: boolean;

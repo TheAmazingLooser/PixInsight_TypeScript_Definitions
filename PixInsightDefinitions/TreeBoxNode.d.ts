@@ -80,6 +80,11 @@ declare class TreeBoxNode {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static checkable: boolean;

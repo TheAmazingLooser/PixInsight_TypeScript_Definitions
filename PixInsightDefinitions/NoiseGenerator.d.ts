@@ -35,6 +35,11 @@ declare class NoiseGenerator extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static amount: number;

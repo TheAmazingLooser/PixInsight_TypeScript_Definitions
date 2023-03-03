@@ -41,6 +41,11 @@ declare class BackgroundNeutralization extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static backgroundHigh: number;

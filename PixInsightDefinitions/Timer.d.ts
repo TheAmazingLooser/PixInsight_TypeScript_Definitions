@@ -40,6 +40,12 @@ declare class Timer {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onTimeout: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static count: number;

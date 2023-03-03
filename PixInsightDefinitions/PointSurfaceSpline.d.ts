@@ -51,6 +51,11 @@ declare class PointSurfaceSpline {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static isRecursive: boolean;

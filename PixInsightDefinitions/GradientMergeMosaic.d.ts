@@ -37,6 +37,11 @@ declare class GradientMergeMosaic extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static blackPoint: number;

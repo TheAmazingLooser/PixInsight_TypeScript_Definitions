@@ -55,6 +55,16 @@ declare class Edit extends Frame {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCaretPositionUpdated: (oldPos: number, newPos: number) => void;
+    public onEditCompleted: () => void;
+    public onReturnPressed: () => void;
+    public onSelectionUpdated: (start: number, end: number) => void;
+    public onTextUpdated: (text: string) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static caretPosition: number;

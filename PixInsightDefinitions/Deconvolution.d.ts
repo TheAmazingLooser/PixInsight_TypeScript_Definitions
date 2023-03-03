@@ -63,6 +63,11 @@ declare class Deconvolution extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static algorithm: number;

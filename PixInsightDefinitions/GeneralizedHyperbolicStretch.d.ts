@@ -44,6 +44,11 @@ declare class GeneralizedHyperbolicStretch extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static blackPoint: number;

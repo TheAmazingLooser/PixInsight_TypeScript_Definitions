@@ -73,6 +73,11 @@ declare class ImageStatistics {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static averageDeviation: number;

@@ -112,6 +112,11 @@ declare class StarAlignment extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static allowClusteredSources: boolean;

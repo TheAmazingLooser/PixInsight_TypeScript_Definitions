@@ -53,6 +53,11 @@ declare class FITSKeyword {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static comment: string;

@@ -39,6 +39,11 @@ declare class LRGBCombination extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static channels: Array<any>;

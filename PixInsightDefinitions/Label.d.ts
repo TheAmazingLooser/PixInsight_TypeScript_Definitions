@@ -38,6 +38,11 @@ declare class Label extends Frame {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static margin: number;

@@ -36,6 +36,11 @@ declare class FileDialog {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static caption: string;

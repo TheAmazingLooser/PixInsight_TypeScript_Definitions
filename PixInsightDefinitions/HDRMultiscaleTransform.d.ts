@@ -50,6 +50,11 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static deringing: boolean;

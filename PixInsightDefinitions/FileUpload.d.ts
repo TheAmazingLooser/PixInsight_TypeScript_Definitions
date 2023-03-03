@@ -31,6 +31,11 @@ declare class FileUpload extends FileTransfer {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

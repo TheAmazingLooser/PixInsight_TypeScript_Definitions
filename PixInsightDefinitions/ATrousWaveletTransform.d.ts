@@ -56,6 +56,11 @@ declare class ATrousWaveletTransform extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static curveBreakPoint: number;

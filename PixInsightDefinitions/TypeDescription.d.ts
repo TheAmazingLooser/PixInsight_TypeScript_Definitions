@@ -88,6 +88,11 @@ declare class TypeDescription {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static constants: Array<any>;

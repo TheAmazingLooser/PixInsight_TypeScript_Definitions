@@ -38,6 +38,13 @@ declare class ColorComboBox extends ComboBox {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onColorSelected: (rgba: number) => void;
+    public onCurrentColorChanged: (rgba: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static customRGBA: number;

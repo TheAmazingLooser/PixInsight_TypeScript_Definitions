@@ -34,6 +34,12 @@ declare class GroupBox extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCheck: (checked: boolean) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static checked: boolean;

@@ -34,6 +34,11 @@ declare class InverseFourierTransform extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static idOfFirstComponent: string;

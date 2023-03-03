@@ -42,6 +42,11 @@ declare class MessageBox {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static caption: string;

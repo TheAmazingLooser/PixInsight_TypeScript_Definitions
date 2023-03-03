@@ -72,6 +72,12 @@ declare class TabBox extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onPageSelected: (pageIndex: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static currentPageControl: Control;

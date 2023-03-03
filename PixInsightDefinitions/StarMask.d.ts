@@ -47,6 +47,11 @@ declare class StarMask extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static aggregateStructures: boolean;

@@ -50,6 +50,11 @@ declare class DynamicAlignment extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static badSampleColor: number;

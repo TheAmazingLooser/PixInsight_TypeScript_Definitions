@@ -192,6 +192,11 @@ declare class Preferences extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static Application_asteroidEphemeridesFile: string;

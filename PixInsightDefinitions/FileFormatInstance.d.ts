@@ -84,6 +84,11 @@ declare class FileFormatInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static canReadIncrementally: boolean;

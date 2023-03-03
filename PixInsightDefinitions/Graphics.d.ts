@@ -331,6 +331,11 @@ declare class Graphics {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static antialiasing: boolean;

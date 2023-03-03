@@ -56,6 +56,11 @@ declare class ColorCalibration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static backgroundHigh: number;

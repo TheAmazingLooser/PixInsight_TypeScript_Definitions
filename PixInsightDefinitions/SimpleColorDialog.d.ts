@@ -34,6 +34,11 @@ declare class SimpleColorDialog extends Dialog {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static alphaEnabled: boolean;

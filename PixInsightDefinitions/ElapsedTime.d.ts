@@ -42,6 +42,11 @@ declare class ElapsedTime {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static text: string;

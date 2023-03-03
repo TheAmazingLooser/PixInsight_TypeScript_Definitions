@@ -33,6 +33,11 @@ declare class NoiseXTerminator extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static denoise: number;

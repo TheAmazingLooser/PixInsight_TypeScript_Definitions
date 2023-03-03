@@ -65,6 +65,11 @@ declare class ProcessContainer extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static isEmpty: boolean;

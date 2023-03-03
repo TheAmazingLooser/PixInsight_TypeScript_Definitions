@@ -39,6 +39,11 @@ declare class Convolution extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static aspectRatio: number;

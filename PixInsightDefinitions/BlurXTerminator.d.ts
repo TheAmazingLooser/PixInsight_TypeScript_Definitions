@@ -41,6 +41,11 @@ declare class BlurXTerminator extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static adjust_halos: number;

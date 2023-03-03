@@ -40,6 +40,11 @@ declare class AdaptiveStretch extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static maxCurvePoints: number;

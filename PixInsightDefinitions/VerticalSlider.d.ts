@@ -31,6 +31,11 @@ declare class VerticalSlider extends Slider {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

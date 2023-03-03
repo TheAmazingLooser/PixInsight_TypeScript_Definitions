@@ -33,6 +33,11 @@ declare class StarNet2 extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static mask: boolean;

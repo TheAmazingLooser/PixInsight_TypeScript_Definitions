@@ -35,6 +35,11 @@ declare class ChannelExtraction extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static channels: Array<any>;

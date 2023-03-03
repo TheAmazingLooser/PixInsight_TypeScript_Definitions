@@ -62,6 +62,11 @@ declare class MultiscaleLinearTransform extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static curveBreakPoint: number;

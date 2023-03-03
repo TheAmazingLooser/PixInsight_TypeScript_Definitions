@@ -257,6 +257,11 @@ declare class ImageWindow {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static aperture: number;

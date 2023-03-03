@@ -36,6 +36,11 @@ declare class ICCProfileTransformation extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static renderingIntent: number;

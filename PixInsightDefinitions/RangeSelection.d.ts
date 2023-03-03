@@ -38,6 +38,11 @@ declare class RangeSelection extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static fuzziness: number;

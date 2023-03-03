@@ -41,6 +41,11 @@ declare class FileTransfer {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bytesTransferred: number;

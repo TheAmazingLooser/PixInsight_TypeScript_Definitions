@@ -53,6 +53,11 @@ declare class TGVDenoise extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static convergenceEnabledC: boolean;

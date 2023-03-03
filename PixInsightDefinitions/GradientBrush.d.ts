@@ -32,6 +32,11 @@ declare class GradientBrush extends Brush {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static spreadMode: number;

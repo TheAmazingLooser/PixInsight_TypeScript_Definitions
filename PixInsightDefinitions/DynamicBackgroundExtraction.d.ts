@@ -64,6 +64,11 @@ declare class DynamicBackgroundExtraction extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static axisColor: number;

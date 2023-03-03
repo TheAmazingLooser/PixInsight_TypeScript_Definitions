@@ -62,6 +62,11 @@ declare class ImageDescription {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static aperture: number;

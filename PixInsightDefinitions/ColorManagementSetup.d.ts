@@ -48,6 +48,11 @@ declare class ColorManagementSetup extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static defaultEmbedProfilesInGrayscaleImages: boolean;

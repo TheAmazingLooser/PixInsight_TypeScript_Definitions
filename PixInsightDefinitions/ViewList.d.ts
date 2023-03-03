@@ -46,6 +46,13 @@ declare class ViewList extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onCurrentViewUpdated: (view: View) => void;
+    public onViewSelected: (view: View) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static currentView: View;

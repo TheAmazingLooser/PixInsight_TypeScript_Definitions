@@ -100,6 +100,11 @@ declare class Sizer {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static displayPixelRatio: number;

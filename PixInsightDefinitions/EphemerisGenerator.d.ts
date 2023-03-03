@@ -76,6 +76,11 @@ declare class EphemerisGenerator extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static B_V: number;

@@ -35,6 +35,11 @@ declare class SaveFileDialog extends FileDialog {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static fileName: string;

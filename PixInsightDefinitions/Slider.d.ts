@@ -42,6 +42,13 @@ declare class Slider extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onRangeUpdated: (minValue: number, maxValue: number) => void;
+    public onValueUpdated: (value: number) => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static maxValue: number;

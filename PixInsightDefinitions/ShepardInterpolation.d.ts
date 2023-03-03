@@ -46,6 +46,11 @@ declare class ShepardInterpolation {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static isValid: boolean;

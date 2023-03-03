@@ -40,6 +40,11 @@ declare class IntegerResample extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static downsamplingMode: number;

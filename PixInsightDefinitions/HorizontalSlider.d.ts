@@ -31,6 +31,11 @@ declare class HorizontalSlider extends Slider {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
 

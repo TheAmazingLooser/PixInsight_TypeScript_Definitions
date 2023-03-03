@@ -36,6 +36,11 @@ declare class GradientHDRCompression extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bPreserveColor: boolean;

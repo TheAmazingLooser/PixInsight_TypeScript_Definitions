@@ -58,6 +58,11 @@ declare class FindingChart extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoChartMaxMagnitude: boolean;

@@ -56,6 +56,11 @@ declare class DynamicCrop extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static alpha: number;

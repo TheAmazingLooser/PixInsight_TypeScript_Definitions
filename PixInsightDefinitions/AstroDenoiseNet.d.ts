@@ -33,6 +33,11 @@ declare class AstroDenoiseNet extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static mask: boolean;

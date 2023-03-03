@@ -692,6 +692,11 @@ declare class Image {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static bitsPerSample: number;

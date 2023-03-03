@@ -64,6 +64,18 @@ declare class WebView extends Control {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+    public onHTMLAvailable: (html: string) => void;
+    public onLoadFinished: (ok: boolean) => void;
+    public onLoadProgress: (progress: number) => void;
+    public onLoadStarted: () => void;
+    public onPlainTextAvailable: (text: string) => void;
+    public onScriptResultAvailable: (value: Object) => void;
+    public onSelectionUpdated: () => void;
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static backgroundColor: number;

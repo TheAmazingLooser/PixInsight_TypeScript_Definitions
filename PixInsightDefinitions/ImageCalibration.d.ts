@@ -90,6 +90,11 @@ declare class ImageCalibration extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static autoPedestalLimit: number;

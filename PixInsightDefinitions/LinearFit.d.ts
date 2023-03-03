@@ -34,6 +34,11 @@ declare class LinearFit extends ProcessInstance {
 
 
     //-------------------------
+    //-----event-handlers------
+    //-------------------------
+
+
+    //-------------------------
     //----static Properties----
     //-------------------------
     static referenceViewId: string;
