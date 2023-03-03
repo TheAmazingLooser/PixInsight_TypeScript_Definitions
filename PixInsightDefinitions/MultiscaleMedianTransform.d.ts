@@ -54,22 +54,9 @@ declare class MultiscaleMedianTransform extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static highRange: number;
-    static layers: Array<any>;
-    static linear: boolean;
-    static linearMask: boolean;
-    static linearMaskAmpFactor: number;
-    static linearMaskInverted: boolean;
-    static linearMaskPreview: boolean;
-    static linearMaskSmoothness: number;
-    static lowRange: number;
-    static medianWaveletThreshold: number;
-    static previewLayer: number;
-    static previewMode: number;
-    static scaleDelta: number;
-    static toChrominance: boolean;
-    static toLuminance: boolean;
-    static transform: number;
+    static prototype: MultiscaleMedianTransform;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

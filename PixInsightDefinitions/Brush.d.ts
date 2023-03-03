@@ -47,12 +47,9 @@ declare class Brush {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static color: number;
-    static isEmpty: boolean;
-    static isSolid: boolean;
-    static isStippled: boolean;
-    static stipple: Bitmap;
-    static style: number;
+    static prototype: Brush;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

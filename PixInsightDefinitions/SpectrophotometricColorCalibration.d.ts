@@ -91,59 +91,9 @@ declare class SpectrophotometricColorCalibration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static applyCalibration: boolean;
-    static autoLimitMagnitude: boolean;
-    static backgroundHigh: number;
-    static backgroundLow: number;
-    static backgroundROIX0: number;
-    static backgroundROIX1: number;
-    static backgroundROIY0: number;
-    static backgroundROIY1: number;
-    static backgroundReferenceViewId: string;
-    static backgroundUseROI: boolean;
-    static blueFilterBandwidth: number;
-    static blueFilterName: string;
-    static blueFilterTrCurve: string;
-    static blueFilterWavelength: number;
-    static broadbandIntegrationStepSize: number;
-    static catalogId: string;
-    static deviceQECurve: string;
-    static deviceQECurveName: string;
-    static generateGraphs: boolean;
-    static generateStarMaps: boolean;
-    static generateTextFiles: boolean;
-    static greenFilterBandwidth: number;
-    static greenFilterName: string;
-    static greenFilterTrCurve: string;
-    static greenFilterWavelength: number;
-    static limitMagnitude: number;
-    static narrowbandIntegrationSteps: number;
-    static narrowbandMode: boolean;
-    static narrowbandOptimizeStars: boolean;
-    static neutralizeBackground: boolean;
-    static outputDirectory: string;
-    static psfAllowClusteredSources: boolean;
-    static psfChannelSearchTolerance: number;
-    static psfGrowth: number;
-    static psfHotPixelFilterRadius: number;
-    static psfMaxStars: number;
-    static psfMinSNR: number;
-    static psfMinStructureSize: number;
-    static psfNoiseLayers: number;
-    static psfNoiseReductionFilterRadius: number;
-    static psfSearchTolerance: number;
-    static psfStructureLayers: number;
-    static psfType: number;
-    static redFilterBandwidth: number;
-    static redFilterName: string;
-    static redFilterTrCurve: string;
-    static redFilterWavelength: number;
-    static saturationRelative: boolean;
-    static saturationShrinkFactor: number;
-    static saturationThreshold: number;
-    static targetSourceCount: number;
-    static whiteReferenceName: string;
-    static whiteReferenceSpectrum: string;
+    static prototype: SpectrophotometricColorCalibration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

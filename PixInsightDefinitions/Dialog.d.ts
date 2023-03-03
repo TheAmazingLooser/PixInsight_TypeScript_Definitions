@@ -62,8 +62,9 @@ declare class Dialog extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static result: number;
-    static userResizable: boolean;
+    static prototype: Dialog;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

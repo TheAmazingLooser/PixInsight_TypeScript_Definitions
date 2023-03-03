@@ -48,15 +48,9 @@ declare class FileTransfer {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bytesTransferred: number;
-    static isDownload: boolean;
-    static isUpload: boolean;
-    static localFilePath: string;
-    static ok: boolean;
-    static remoteURL: string;
-    static responseCode: number;
-    static totalSpeed: number;
-    static totalTime: number;
+    static prototype: FileTransfer;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

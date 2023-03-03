@@ -40,8 +40,9 @@ declare class ScreenTransferFunction extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static STF: Array<any>;
-    static interaction: number;
+    static prototype: ScreenTransferFunction;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

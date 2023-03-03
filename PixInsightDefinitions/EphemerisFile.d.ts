@@ -85,20 +85,28 @@ declare class EphemerisFile {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static authors: string;
-    static briefDescription: string;
-    static constants: string;
-    static copyright: string;
-    static creationTime: Date;
-    static creatorApplication: string;
-    static creatorOS: string;
-    static description: string;
-    static endTime: Date;
-    static filePath: string;
-    static objects: Array<any>;
-    static organizationName: string;
-    static startTime: Date;
-    static title: string;
+    static prototype: EphemerisFile;
+    static fundamentalEphemeridesFilePath: string;
+    static shortTermFundamentalEphemeridesFilePath: string;
+    static asteroidEphemeridesFilePath: string;
+    static shortTermAsteroidEphemeridesFilePath: string;
+    static kboEphemeridesFilePath: string;
+    static shortTermKBOEphemeridesFilePath: string;
+    static nutationModelFilePath: string;
+    static shortTermNutationModelFilePath: string;
+    static deltaTDataFilePath: string;
+    static deltaATDataFilePath: string;
+    static cipITRSDataFilePath: string;
+    static fundamentalEphemerides: EphemerisFile;
+    static shortTermFundamentalEphemerides: EphemerisFile;
+    static asteroidEphemerides: EphemerisFile;
+    static shortTermAsteroidEphemerides: EphemerisFile;
+    static kboEphemerides: EphemerisFile;
+    static shortTermKBOEphemerides: EphemerisFile;
+    static nutationModel: EphemerisFile;
+    static shortTermNutationModel: EphemerisFile;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

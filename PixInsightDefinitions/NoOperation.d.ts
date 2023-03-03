@@ -38,6 +38,9 @@ declare class NoOperation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: NoOperation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

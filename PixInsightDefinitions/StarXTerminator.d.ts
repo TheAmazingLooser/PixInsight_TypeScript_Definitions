@@ -41,9 +41,9 @@ declare class StarXTerminator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static overlap: number;
-    static stars: boolean;
-    static unscreen: boolean;
+    static prototype: StarXTerminator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

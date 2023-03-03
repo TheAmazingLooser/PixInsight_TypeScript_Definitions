@@ -43,9 +43,9 @@ declare class OpenFileDialog extends FileDialog {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static fileName: string;
-    static fileNames: Array<any>;
-    static multipleSelections: boolean;
+    static prototype: OpenFileDialog;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

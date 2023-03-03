@@ -55,23 +55,9 @@ declare class ColorManagementSetup extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static defaultEmbedProfilesInGrayscaleImages: boolean;
-    static defaultEmbedProfilesInRGBImages: boolean;
-    static defaultGamutCheckEnabled: boolean;
-    static defaultGrayscaleProfile: string;
-    static defaultProofingEnabled: boolean;
-    static defaultRGBProfile: string;
-    static defaultRenderingIntent: number;
-    static detectMonitorProfile: boolean;
-    static enabled: boolean;
-    static gamutWarningColor: number;
-    static onMissingProfile: number;
-    static onProfileMismatch: number;
-    static proofingIntent: number;
-    static proofingProfile: string;
-    static updateMonitorProfile: string;
-    static useLowResolutionCLUTs: boolean;
-    static useProofingBPC: boolean;
+    static prototype: ColorManagementSetup;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

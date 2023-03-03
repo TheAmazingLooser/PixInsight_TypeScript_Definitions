@@ -39,6 +39,9 @@ declare class MessageListener {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: MessageListener;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

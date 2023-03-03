@@ -80,42 +80,9 @@ declare class ImageStatistics {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static averageDeviation: number;
-    static avgDev: number;
-    static avgDevEnabled: boolean;
-    static bendMidvariance: number;
-    static biweightMidvariance: number;
-    static bwmv: number;
-    static bwmvEnabled: boolean;
-    static count: number;
-    static extremesEnabled: boolean;
-    static highRejectionEnabled: boolean;
-    static lowRejectionEnabled: boolean;
-    static mad: number;
-    static madEnabled: boolean;
-    static maximum: number;
-    static maximumPosition: Point;
-    static mean: number;
-    static meanEnabled: boolean;
-    static median: number;
-    static medianDeviation: number;
-    static medianEnabled: boolean;
-    static minimum: number;
-    static minimumPosition: Point;
-    static pbmv: number;
-    static pbmvEnabled: boolean;
-    static qn: number;
-    static qnEnabled: boolean;
-    static rejectionHigh: number;
-    static rejectionLow: number;
-    static sn: number;
-    static snEnabled: boolean;
-    static standardDeviation: number;
-    static stdDev: number;
-    static sumOfSquares: number;
-    static sumOfSquaresEnabled: boolean;
-    static variance: number;
-    static varianceEnabled: boolean;
+    static prototype: ImageStatistics;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

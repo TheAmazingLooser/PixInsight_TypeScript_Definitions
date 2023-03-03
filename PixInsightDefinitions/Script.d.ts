@@ -41,9 +41,9 @@ declare class Script extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static filePath: string;
-    static md5sum: string;
-    static parameters: Array<any>;
+    static prototype: Script;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -44,12 +44,9 @@ declare class CloneStamp extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static actions: Array<any>;
-    static boundsColor: number;
-    static cloner: Array<any>;
-    static clonerColor: number;
-    static height: number;
-    static width: number;
+    static prototype: CloneStamp;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

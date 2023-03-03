@@ -50,18 +50,9 @@ declare class MaskedStretch extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static backgroundHigh: number;
-    static backgroundLow: number;
-    static backgroundReferenceViewId: string;
-    static clippingFraction: number;
-    static maskType: number;
-    static numberOfIterations: number;
-    static roiX0: number;
-    static roiX1: number;
-    static roiY0: number;
-    static roiY1: number;
-    static targetBackground: number;
-    static useROI: boolean;
+    static prototype: MaskedStretch;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

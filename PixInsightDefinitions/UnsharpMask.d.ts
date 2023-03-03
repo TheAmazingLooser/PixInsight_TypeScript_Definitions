@@ -48,16 +48,9 @@ declare class UnsharpMask extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static deringing: boolean;
-    static deringingBright: number;
-    static deringingDark: number;
-    static linear: boolean;
-    static outputDeringingMaps: boolean;
-    static rangeHigh: number;
-    static rangeLow: number;
-    static sigma: number;
-    static useLuminance: boolean;
+    static prototype: UnsharpMask;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

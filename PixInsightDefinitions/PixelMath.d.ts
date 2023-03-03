@@ -67,35 +67,9 @@ declare class PixelMath extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static cacheGeneratedImages: boolean;
-    static clearImageCacheAndExit: boolean;
-    static createNewImage: boolean;
-    static expression: string;
-    static expression0: string;
-    static expression1: string;
-    static expression2: string;
-    static expression3: string;
-    static generateOutput: boolean;
-    static newImageAlpha: boolean;
-    static newImageColorSpace: number;
-    static newImageHeight: number;
-    static newImageId: string;
-    static newImageSampleFormat: number;
-    static newImageWidth: number;
-    static optimization: boolean;
-    static outputData: Array<any>;
-    static rescale: boolean;
-    static rescaleLower: number;
-    static rescaleUpper: number;
-    static showNewImage: boolean;
-    static singleThreaded: boolean;
-    static symbols: string;
-    static truncate: boolean;
-    static truncateLower: number;
-    static truncateUpper: number;
-    static use64BitWorkingImage: boolean;
-    static useSingleExpression: boolean;
-    static variables: string;
+    static prototype: PixelMath;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

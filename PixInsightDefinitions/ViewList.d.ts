@@ -55,11 +55,9 @@ declare class ViewList extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static currentView: View;
-    static excludeIdentifiersPattern: string;
-    static excludedView: View;
-    static includesMainViews: boolean;
-    static includesPreviews: boolean;
+    static prototype: ViewList;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

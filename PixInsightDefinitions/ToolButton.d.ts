@@ -51,14 +51,9 @@ declare class ToolButton extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static checkable: boolean;
-    static checked: boolean;
-    static icon: Bitmap;
-    static iconHeight: number;
-    static iconWidth: number;
-    static pushed: boolean;
-    static state: number;
-    static text: string;
+    static prototype: ToolButton;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

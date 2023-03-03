@@ -43,11 +43,9 @@ declare class MergeCFA extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static outputViewId: string;
-    static sourceCFAImage0: string;
-    static sourceCFAImage1: string;
-    static sourceCFAImage2: string;
-    static sourceCFAImage3: string;
+    static prototype: MergeCFA;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

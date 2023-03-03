@@ -39,7 +39,9 @@ declare class HistogramTransformation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static H: Array<any>;
+    static prototype: HistogramTransformation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

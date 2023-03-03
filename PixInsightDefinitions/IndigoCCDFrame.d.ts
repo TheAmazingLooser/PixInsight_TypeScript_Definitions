@@ -82,50 +82,9 @@ declare class IndigoCCDFrame extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alignmentModelFile: string;
-    static applyPlateSolver: boolean;
-    static autoStretch: boolean;
-    static binningX: number;
-    static binningY: number;
-    static centerTarget: boolean;
-    static clientDownloadDirectory: string;
-    static clientFileNameTemplate: string;
-    static clientFrames: Array<any>;
-    static clientOutputFormatHints: string;
-    static deviceName: string;
-    static enableAlignmentCorrection: boolean;
-    static exposureCount: number;
-    static exposureDelay: number;
-    static exposureTime: number;
-    static externalFilterWheelDeviceName: string;
-    static filterSlot: number;
-    static frameType: number;
-    static linkedAutoStretch: boolean;
-    static newImageIdTemplate: string;
-    static objectName: string;
-    static openClientImages: boolean;
-    static overwriteClientImages: boolean;
-    static requireSelectedTelescope: boolean;
-    static reuseImageWindow: boolean;
-    static saveClientImages: boolean;
-    static serverFileNameTemplate: string;
-    static serverFrames: Array<any>;
-    static serverURL: string;
-    static serverUploadDirectory: string;
-    static solverAlignmentDevice: number;
-    static solverAutoCatalog: boolean;
-    static solverAutoLimitMagnitude: boolean;
-    static solverCatalogName: string;
-    static solverDistortionCorrection: boolean;
-    static solverLimitMagnitude: number;
-    static solverNoiseLayers: number;
-    static solverProjection: number;
-    static solverSplineSmoothing: number;
-    static solverStarSensitivity: number;
-    static telescopeAperture: number;
-    static telescopeDeviceName: string;
-    static telescopeSelection: number;
-    static uploadMode: number;
+    static prototype: IndigoCCDFrame;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

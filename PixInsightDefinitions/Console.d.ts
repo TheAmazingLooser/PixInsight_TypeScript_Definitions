@@ -82,6 +82,8 @@ declare class Console {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static abortEnabled: boolean;
+    static abortRequested: boolean;
 
 
     //-------------------------

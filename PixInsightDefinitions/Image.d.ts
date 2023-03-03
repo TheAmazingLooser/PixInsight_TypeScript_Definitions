@@ -699,52 +699,9 @@ declare class Image {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bitsPerSample: number;
-    static bounds: Rect;
-    static colorSpace: number;
-    static firstSelectedChannel: number;
-    static hasAlphaChannels: boolean;
-    static height: number;
-    static highRangeClippingEnabled: boolean;
-    static interpolation: number;
-    static interpolationClamping: number;
-    static interpolationSmoothness: number;
-    static interpolationXRadius: number;
-    static interpolationYRadius: number;
-    static isColor: boolean;
-    static isComplex: boolean;
-    static isEmpty: boolean;
-    static isGrayscale: boolean;
-    static isInteger: boolean;
-    static isReal: boolean;
-    static isStatusCompleted: boolean;
-    static isStatusInitialized: boolean;
-    static lastSelectedChannel: number;
-    static lowRangeClippingEnabled: boolean;
-    static numberOfAlphaChannels: number;
-    static numberOfAlphaSamples: number;
-    static numberOfChannels: number;
-    static numberOfNominalChannels: number;
-    static numberOfNominalSamples: number;
-    static numberOfPixels: number;
-    static numberOfSamples: number;
-    static numberOfSelectedChannels: number;
-    static numberOfSelectedPixels: number;
-    static numberOfSelectedSamples: number;
-    static rangeClipHigh: number;
-    static rangeClipLow: number;
-    static rangeClippingEnabled: boolean;
-    static sampleType: number;
-    static selectedChannel: number;
-    static selectedPoint: Point;
-    static selectedRect: Rect;
-    static selectionPoint: number;
-    static statusCount: number;
-    static statusEnabled: boolean;
-    static statusInfo: string;
-    static statusInitializationEnabled: boolean;
-    static statusTotal: number;
-    static width: number;
+    static prototype: Image;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

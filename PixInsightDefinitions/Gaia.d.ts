@@ -76,44 +76,9 @@ declare class Gaia extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static centerDec: number;
-    static centerRA: number;
-    static command: string;
-    static countIO: number;
-    static dataRelease: number;
-    static databaseFilePaths: Array<any>;
-    static databaseHasMeanSpectrumData: boolean;
-    static databaseMagnitudeHigh: number;
-    static databaseMagnitudeLow: number;
-    static databaseSpectrumBits: number;
-    static databaseSpectrumCount: number;
-    static databaseSpectrumStart: number;
-    static databaseSpectrumStep: number;
-    static excessCount: number;
-    static exclusionFlags: number;
-    static generateBinaryOutput: boolean;
-    static generateTextOutput: boolean;
-    static inclusionFlags: number;
-    static isValid: boolean;
-    static magnitudeHigh: number;
-    static magnitudeLow: number;
-    static normalizeSpectrum: boolean;
-    static outputDataRelease: number;
-    static outputFilePath: string;
-    static photonFluxUnits: boolean;
-    static radius: number;
-    static rejectCount: number;
-    static requiredFlags: number;
-    static sortBy: number;
-    static sourceLimit: number;
-    static sources: Array<any>;
-    static textFormat: number;
-    static textHeaders: number;
-    static timeDecode: number;
-    static timeIO: number;
-    static timeTotal: number;
-    static timeUncompress: number;
-    static verbosity: number;
+    static prototype: Gaia;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

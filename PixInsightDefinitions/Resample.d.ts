@@ -51,19 +51,9 @@ declare class Resample extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static absoluteMode: number;
-    static clampingThreshold: number;
-    static forceResolution: boolean;
-    static gammaCorrection: boolean;
-    static interpolation: number;
-    static metric: boolean;
-    static mode: number;
-    static noGUIMessages: boolean;
-    static smoothness: number;
-    static xResolution: number;
-    static xSize: number;
-    static yResolution: number;
-    static ySize: number;
+    static prototype: Resample;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

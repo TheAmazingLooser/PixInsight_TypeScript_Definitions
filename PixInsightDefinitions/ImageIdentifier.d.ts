@@ -39,7 +39,9 @@ declare class ImageIdentifier extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static id: string;
+    static prototype: ImageIdentifier;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

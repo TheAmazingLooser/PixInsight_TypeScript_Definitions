@@ -43,11 +43,9 @@ declare class ICCProfileTransformation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static renderingIntent: number;
-    static targetProfile: string;
-    static toDefaultProfile: boolean;
-    static useBlackPointCompensation: boolean;
-    static useFloatingPointTransformation: boolean;
+    static prototype: ICCProfileTransformation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

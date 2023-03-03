@@ -48,16 +48,9 @@ declare class BackgroundNeutralization extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static backgroundHigh: number;
-    static backgroundLow: number;
-    static backgroundReferenceViewId: string;
-    static mode: number;
-    static roiX0: number;
-    static roiX1: number;
-    static roiY0: number;
-    static roiY1: number;
-    static targetBackground: number;
-    static useROI: boolean;
+    static prototype: BackgroundNeutralization;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

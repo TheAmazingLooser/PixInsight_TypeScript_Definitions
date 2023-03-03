@@ -52,20 +52,9 @@ declare class Crop extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alpha: number;
-    static blue: number;
-    static bottomMargin: number;
-    static forceResolution: boolean;
-    static green: number;
-    static leftMargin: number;
-    static metric: boolean;
-    static mode: number;
-    static noGUIMessages: boolean;
-    static red: number;
-    static rightMargin: number;
-    static topMargin: number;
-    static xResolution: number;
-    static yResolution: number;
+    static prototype: Crop;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

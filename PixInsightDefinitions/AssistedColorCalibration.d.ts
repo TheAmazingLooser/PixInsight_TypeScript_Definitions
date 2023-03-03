@@ -46,14 +46,9 @@ declare class AssistedColorCalibration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static BlueCorrectionFactor: number;
-    static GreenCorrectionFactor: number;
-    static HistogramHighlights: number;
-    static HistogramMidtones: number;
-    static HistogramShadows: number;
-    static SaturationBoost: number;
-    static backgroundRef: string;
-    static redCorrectionFactor: number;
+    static prototype: AssistedColorCalibration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

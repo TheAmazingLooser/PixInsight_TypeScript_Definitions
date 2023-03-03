@@ -78,10 +78,9 @@ declare class WebView extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static backgroundColor: number;
-    static hasSelection: boolean;
-    static selectedText: string;
-    static zoomFactor: number;
+    static prototype: WebView;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

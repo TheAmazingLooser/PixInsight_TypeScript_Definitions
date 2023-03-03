@@ -49,17 +49,9 @@ declare class IndigoDeviceController extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static abort: boolean;
-    static devices: Array<any>;
-    static getCommandParameters: string;
-    static getCommandResult: string;
-    static newProperties: Array<any>;
-    static properties: Array<any>;
-    static serverCommand: string;
-    static serverConnect: boolean;
-    static serverHostName: string;
-    static serverPort: number;
-    static verbosity: number;
+    static prototype: IndigoDeviceController;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

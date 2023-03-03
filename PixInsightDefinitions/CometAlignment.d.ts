@@ -77,45 +77,9 @@ declare class CometAlignment extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static drizzleWriteCometAlignedImage: boolean;
-    static drizzleWriteStarAlignedImage: boolean;
-    static drzSaveCometAligned: boolean;
-    static drzSaveStarsAligned: boolean;
-    static enableLinearFit: boolean;
-    static fileThreadOverload: number;
-    static fitPSF: boolean;
-    static generateCometPathMap: boolean;
-    static inputHints: string;
-    static linearClampingThreshold: number;
-    static maxFileReadThreads: number;
-    static maxFileWriteThreads: number;
-    static normalize: boolean;
-    static onError: number;
-    static operandImageFilePath: string;
-    static operandLinearFit: boolean;
-    static operandLinearFitHigh: number;
-    static operandLinearFitLow: number;
-    static operandNormalize: boolean;
-    static operandSubtractAligned: boolean;
-    static outputDir: string;
-    static outputDirectory: string;
-    static outputExtension: string;
-    static outputHints: string;
-    static outputPostfix: string;
-    static outputPrefix: string;
-    static overwrite: boolean;
-    static overwriteExistingFiles: boolean;
-    static pixelInterpolation: number;
-    static postfix: string;
-    static prefix: string;
-    static reference: number;
-    static referenceIndex: number;
-    static rejectHigh: number;
-    static rejectLow: number;
-    static subtractFile: string;
-    static subtractMode: boolean;
-    static targetFrames: Array<any>;
-    static useFileThreads: boolean;
+    static prototype: CometAlignment;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

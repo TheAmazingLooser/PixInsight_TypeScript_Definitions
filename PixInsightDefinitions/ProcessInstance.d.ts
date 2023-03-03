@@ -104,6 +104,9 @@ declare class ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: ProcessInstance;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

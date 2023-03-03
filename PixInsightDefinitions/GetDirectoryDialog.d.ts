@@ -39,7 +39,9 @@ declare class GetDirectoryDialog extends FileDialog {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static directory: string;
+    static prototype: GetDirectoryDialog;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

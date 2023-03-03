@@ -42,10 +42,9 @@ declare class Binarize extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static isGlobal: boolean;
-    static thresholdB: number;
-    static thresholdG: number;
-    static thresholdRK: number;
+    static prototype: Binarize;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -38,6 +38,9 @@ declare class FileUpload extends FileTransfer {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: FileUpload;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

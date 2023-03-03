@@ -62,9 +62,9 @@ declare class GridInterpolation {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static delta: number;
-    static isValid: boolean;
-    static referenceRect: Rect;
+    static prototype: GridInterpolation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

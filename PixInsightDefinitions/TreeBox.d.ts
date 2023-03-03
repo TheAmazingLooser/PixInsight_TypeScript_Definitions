@@ -118,21 +118,9 @@ declare class TreeBox extends ScrollBox {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alternateRowColor: boolean;
-    static currentNode: TreeBoxNode;
-    static headerSorting: boolean;
-    static headerVisible: boolean;
-    static iconHeight: number;
-    static iconWidth: number;
-    static indentSize: number;
-    static multipleSelection: boolean;
-    static nodeDragging: boolean;
-    static nodeExpansion: boolean;
-    static numberOfChildren: number;
-    static numberOfColumns: number;
-    static rootDecoration: boolean;
-    static selectedNodes: Array<any>;
-    static uniformRowHeight: boolean;
+    static prototype: TreeBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

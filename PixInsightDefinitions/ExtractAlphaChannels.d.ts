@@ -42,10 +42,9 @@ declare class ExtractAlphaChannels extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static channelList: string;
-    static channels: number;
-    static delete: boolean;
-    static extract: boolean;
+    static prototype: ExtractAlphaChannels;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

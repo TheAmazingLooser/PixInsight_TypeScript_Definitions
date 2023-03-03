@@ -86,9 +86,6 @@ declare class BRQuadTree {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bucketCapacity: number;
-    static objects: Array<any>;
-    static root: QuadTreeNode;
 
 
     //-------------------------

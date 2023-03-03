@@ -40,8 +40,9 @@ declare class FourierTransform extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static centered: boolean;
-    static radialCoordinates: boolean;
+    static prototype: FourierTransform;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

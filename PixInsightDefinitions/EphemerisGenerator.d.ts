@@ -83,51 +83,9 @@ declare class EphemerisGenerator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static B_V: number;
-    static B_V_defined: boolean;
-    static D: number;
-    static D_defined: boolean;
-    static G: number;
-    static H: number;
-    static KBOsFilePath: string;
-    static M: number;
-    static O: number;
-    static T: number;
-    static a: number;
-    static asteroidsFilePath: string;
-    static databaseFilePath: string;
-    static databaseFormatName: string;
-    static denseOutputToleranceFactor: number;
-    static e: number;
-    static endTimeJD: number;
-    static ephemerisToleranceFactor: number;
-    static epochJD: number;
-    static excludeCoreAsteroids: boolean;
-    static figureEffects: boolean;
-    static fundamentalFilePath: string;
-    static i: number;
-    static objectId: string;
-    static objectName: string;
-    static objects: string;
-    static outputXEPHFile: boolean;
-    static outputXEPHFilePath: string;
-    static overwriteExistingFiles: boolean;
-    static q: number;
-    static relativisticPerturbations: boolean;
-    static separateEarthMoonPerturbers: boolean;
-    static startTimeJD: number;
-    static useAsteroidPerturbers: boolean;
-    static useKBOPerturbers: boolean;
-    static useRegularExpressions: boolean;
-    static velocityExpansions: boolean;
-    static vx: number;
-    static vy: number;
-    static vz: number;
-    static w: number;
-    static workingMode: number;
-    static x: number;
-    static y: number;
-    static z: number;
+    static prototype: EphemerisGenerator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

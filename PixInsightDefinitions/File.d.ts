@@ -221,14 +221,14 @@ declare class File {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static canRead: boolean;
-    static canWrite: boolean;
-    static isEOF: boolean;
-    static isOpen: boolean;
-    static mode: number;
-    static path: string;
-    static position: number;
-    static size: number;
+    static prototype: File;
+    static systemTempDirectory: string;
+    static systemCacheDirectory: string;
+    static homeDirectory: string;
+    static currentWorkingDirectory: string;
+    static rootDirectory: string;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

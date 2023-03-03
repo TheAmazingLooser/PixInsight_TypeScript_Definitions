@@ -51,15 +51,9 @@ declare class Slider extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static maxValue: number;
-    static minValue: number;
-    static normalizedValue: number;
-    static pageSize: number;
-    static stepSize: number;
-    static tickInterval: number;
-    static tickStyle: number;
-    static tracking: boolean;
-    static value: number;
+    static prototype: Slider;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

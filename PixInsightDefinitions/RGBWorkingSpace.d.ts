@@ -42,10 +42,9 @@ declare class RGBWorkingSpace extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static applyGlobalRGBWS: boolean;
-    static channels: Array<any>;
-    static gamma: number;
-    static sRGBGamma: boolean;
+    static prototype: RGBWorkingSpace;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

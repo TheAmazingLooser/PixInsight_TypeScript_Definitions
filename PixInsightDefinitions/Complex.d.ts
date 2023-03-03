@@ -128,10 +128,9 @@ declare class Complex {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static im: number;
-    static imag: number;
-    static re: number;
-    static real: number;
+    static prototype: Complex;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -80,12 +80,9 @@ declare class TabBox extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static currentPageControl: Control;
-    static currentPageIndex: number;
-    static leftControl: Control;
-    static numberOfPages: number;
-    static rightControl: Control;
-    static tabPosition: number;
+    static prototype: TabBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

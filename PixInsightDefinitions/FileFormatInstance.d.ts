@@ -91,24 +91,9 @@ declare class FileFormatInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static canReadIncrementally: boolean;
-    static canWriteIncrementally: boolean;
-    static colorFilterArray: Array<any>;
-    static displayFunction: Array<any>;
-    static filePath: string;
-    static format: FileFormat;
-    static formatSpecificData: Object;
-    static iccProfile: ByteArray;
-    static imageFormatInfo: string;
-    static imageProperties: Array<any>;
-    static isOpen: boolean;
-    static keywords: Array<any>;
-    static properties: Array<any>;
-    static rgbws: RGBColorSystem;
-    static selectedImageIndex: number;
-    static thumbnail: Image;
-    static wasInexactRead: boolean;
-    static wasLossyWrite: boolean;
+    static prototype: FileFormatInstance;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

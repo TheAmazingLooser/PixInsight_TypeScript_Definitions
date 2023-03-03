@@ -46,14 +46,9 @@ declare class Convolution extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static aspectRatio: number;
-    static filterSource: string;
-    static mode: number;
-    static rescaleHighPass: boolean;
-    static rotationAngle: number;
-    static shape: number;
-    static sigma: number;
-    static viewId: string;
+    static prototype: Convolution;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

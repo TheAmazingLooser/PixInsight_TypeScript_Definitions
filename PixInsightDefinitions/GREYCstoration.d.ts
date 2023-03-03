@@ -50,18 +50,9 @@ declare class GREYCstoration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amplitude: number;
-    static angularIntegrationStep: number;
-    static anisotropy: number;
-    static contourPreservation: number;
-    static coupledChannels: boolean;
-    static fastApproximation: boolean;
-    static geometryRegularity: number;
-    static interpolation: number;
-    static noiseScale: number;
-    static numberOfIterations: number;
-    static precision: number;
-    static spatialIntegrationStep: number;
+    static prototype: GREYCstoration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

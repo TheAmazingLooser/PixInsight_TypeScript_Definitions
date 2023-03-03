@@ -85,44 +85,10 @@ declare class FileFormat {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static canEditPreferences: boolean;
-    static canRead: boolean;
-    static canReadIncrementally: boolean;
-    static canStore16Bit: boolean;
-    static canStore32Bit: boolean;
-    static canStore64Bit: boolean;
-    static canStore8Bit: boolean;
-    static canStoreAlphaChannels: boolean;
-    static canStoreColorFilterArrays: boolean;
-    static canStoreComplex: boolean;
-    static canStoreDComplex: boolean;
-    static canStoreDisplayFunctions: boolean;
-    static canStoreDouble: boolean;
-    static canStoreFloat: boolean;
-    static canStoreGrayscale: boolean;
-    static canStoreICCProfiles: boolean;
-    static canStoreImageProperties: boolean;
-    static canStoreKeywords: boolean;
-    static canStoreProperties: boolean;
-    static canStoreRGBColor: boolean;
-    static canStoreRGBWS: boolean;
-    static canStoreResolution: boolean;
-    static canStoreThumbnails: boolean;
-    static canWrite: boolean;
-    static canWriteIncrementally: boolean;
-    static description: string;
-    static fileExtensions: Array<any>;
-    static icon: Bitmap;
-    static implementation: string;
-    static isDeprecated: boolean;
-    static mimeTypes: Array<any>;
+    static prototype: FileFormat;
+    static formats: Array<any>;
+    static length: number;
     static name: string;
-    static smallIcon: Bitmap;
-    static supportsCompression: boolean;
-    static supportsMultipleImages: boolean;
-    static supportsViewProperties: boolean;
-    static usesFormatSpecificData: boolean;
-    static version: number;
 
 
     //-------------------------

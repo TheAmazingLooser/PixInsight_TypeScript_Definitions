@@ -40,8 +40,9 @@ declare class NoiseXTerminator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static denoise: number;
-    static detail: number;
+    static prototype: NoiseXTerminator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

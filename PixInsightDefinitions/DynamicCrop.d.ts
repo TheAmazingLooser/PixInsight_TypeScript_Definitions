@@ -63,31 +63,9 @@ declare class DynamicCrop extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alpha: number;
-    static angle: number;
-    static blue: number;
-    static centerX: number;
-    static centerY: number;
-    static clampingThreshold: number;
-    static forceResolution: boolean;
-    static gammaCorrection: boolean;
-    static green: number;
-    static height: number;
-    static interpolation: number;
-    static metric: boolean;
-    static noGUIMessages: boolean;
-    static optimizeFast: boolean;
-    static outHeight: number;
-    static outWidth: number;
-    static red: number;
-    static refHeight: number;
-    static refWidth: number;
-    static scaleX: number;
-    static scaleY: number;
-    static smoothness: number;
-    static width: number;
-    static xResolution: number;
-    static yResolution: number;
+    static prototype: DynamicCrop;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

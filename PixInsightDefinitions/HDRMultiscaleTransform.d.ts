@@ -57,25 +57,9 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static deringing: boolean;
-    static invertedIterations: boolean;
-    static largeScaleDeringing: number;
-    static luminanceMask: boolean;
-    static medianTransform: boolean;
-    static midtonesBalance: number;
-    static midtonesBalanceMode: number;
-    static numberOfIterations: number;
-    static numberOfLayers: number;
-    static outputDeringingMaps: boolean;
-    static overdrive: number;
-    static preserveHue: boolean;
-    static scalingFunctionColFilter: Array<any>;
-    static scalingFunctionData: Array<any>;
-    static scalingFunctionName: string;
-    static scalingFunctionRowFilter: Array<any>;
-    static smallScaleDeringing: number;
-    static toLightness: boolean;
-    static toLuminanceOnly: boolean;
+    static prototype: HDRMultiscaleTransform;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

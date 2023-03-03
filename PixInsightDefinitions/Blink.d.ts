@@ -38,6 +38,9 @@ declare class Blink extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: Blink;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

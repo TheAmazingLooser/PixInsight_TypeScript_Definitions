@@ -49,16 +49,9 @@ declare class SVG {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static description: string;
-    static filePath: string;
-    static height: number;
-    static isPainting: boolean;
-    static outputData: ByteArray;
-    static resolution: number;
-    static size: Rect;
-    static title: string;
-    static viewBox: Rect;
-    static width: number;
+    static prototype: SVG;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

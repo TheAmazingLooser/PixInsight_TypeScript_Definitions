@@ -45,13 +45,9 @@ declare class RangeSelection extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static fuzziness: number;
-    static highRange: number;
-    static invert: boolean;
-    static lowRange: number;
-    static screening: boolean;
-    static smoothness: number;
-    static toLightness: boolean;
+    static prototype: RangeSelection;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

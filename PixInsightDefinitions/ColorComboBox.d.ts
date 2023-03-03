@@ -47,7 +47,6 @@ declare class ColorComboBox extends ComboBox {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static customRGBA: number;
 
 
     //-------------------------

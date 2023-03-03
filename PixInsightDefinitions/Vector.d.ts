@@ -243,10 +243,9 @@ declare class Vector {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static isEmpty: boolean;
+    static prototype: Vector;
     static length: number;
-    static lowerBound: number;
-    static upperBound: number;
+    static name: string;
 
 
     //-------------------------

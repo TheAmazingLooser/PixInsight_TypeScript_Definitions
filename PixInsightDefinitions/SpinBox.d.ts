@@ -54,18 +54,9 @@ declare class SpinBox extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alignment: number;
-    static autoAdjustWidth: boolean;
-    static editable: boolean;
-    static maxValue: number;
-    static minValue: number;
-    static minimumValueText: string;
-    static normalizedValue: number;
-    static prefix: string;
-    static stepSize: number;
-    static suffix: string;
-    static value: number;
-    static wrapping: boolean;
+    static prototype: SpinBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

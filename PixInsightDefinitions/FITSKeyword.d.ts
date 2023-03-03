@@ -60,15 +60,9 @@ declare class FITSKeyword {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static comment: string;
-    static isBoolean: boolean;
-    static isNull: boolean;
-    static isNumeric: boolean;
-    static isString: boolean;
+    static prototype: FITSKeyword;
+    static length: number;
     static name: string;
-    static numericValue: number;
-    static strippedValue: string;
-    static value: string;
 
 
     //-------------------------

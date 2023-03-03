@@ -60,13 +60,9 @@ declare class TextBox extends Frame {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static caretPosition: number;
-    static hasSelection: boolean;
-    static readOnly: boolean;
-    static selectedText: string;
-    static selectionEnd: number;
-    static selectionStart: number;
-    static text: string;
+    static prototype: TextBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

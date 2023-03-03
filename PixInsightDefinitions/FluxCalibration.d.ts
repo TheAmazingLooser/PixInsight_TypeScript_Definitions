@@ -65,33 +65,9 @@ declare class FluxCalibration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static aperture: number;
-    static apertureKeyword: string;
-    static apertureMode: number;
-    static atmosphericExtinction: number;
-    static atmosphericExtinctionKeyword: string;
-    static atmosphericExtinctionMode: number;
-    static centralObstruction: number;
-    static centralObstructionKeyword: string;
-    static centralObstructionMode: number;
-    static exposureTime: number;
-    static exposureTimeKeyword: string;
-    static exposureTimeMode: number;
-    static filterWidth: number;
-    static filterWidthKeyword: string;
-    static filterWidthMode: number;
-    static quantumEfficiency: number;
-    static quantumEfficiencyKeyword: string;
-    static quantumEfficiencyMode: number;
-    static sensorGain: number;
-    static sensorGainKeyword: string;
-    static sensorGainMode: number;
-    static transmissivity: number;
-    static transmissivityKeyword: string;
-    static transmissivityMode: number;
-    static wavelength: number;
-    static wavelengthKeyword: string;
-    static wavelengthMode: number;
+    static prototype: FluxCalibration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

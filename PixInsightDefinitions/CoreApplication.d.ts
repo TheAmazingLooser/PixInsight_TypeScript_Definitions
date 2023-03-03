@@ -62,6 +62,40 @@ declare class CoreApplication {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: CoreApplication;
+    static platform: string;
+    static programName: string;
+    static language: string;
+    static versionMajor: number;
+    static versionMinor: number;
+    static versionRelease: number;
+    static versionRevision: number;
+    static versionBuild: number;
+    static versionBeta: number;
+    static versionLE: boolean;
+    static versionCodename: string;
+    static filePath: string;
+    static dirPath: string;
+    static baseDirPath: string;
+    static appDirPath: string;
+    static binDirPath: string;
+    static etcDirPath: string;
+    static rscDirPath: string;
+    static includeDirPath: string;
+    static srcDirPath: string;
+    static libDirPath: string;
+    static libraryDirPath: string;
+    static docDirPath: string;
+    static colorDirPath: string;
+    static agentName: string;
+    static caBundleFilePath: string;
+    static startTime: Date;
+    static instance: number;
+    static pid: string;
+    static hasPendingMessages: boolean;
+    static numberOfPendingMessages: number;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

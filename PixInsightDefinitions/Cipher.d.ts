@@ -44,8 +44,9 @@ declare class Cipher {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static algorithmName: string;
-    static keyLength: number;
+    static prototype: Cipher;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

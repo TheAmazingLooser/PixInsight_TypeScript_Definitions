@@ -63,31 +63,9 @@ declare class ColorCalibration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static backgroundHigh: number;
-    static backgroundLow: number;
-    static backgroundROIX0: number;
-    static backgroundROIX1: number;
-    static backgroundROIY0: number;
-    static backgroundROIY1: number;
-    static backgroundReferenceViewId: string;
-    static backgroundUseROI: boolean;
-    static manualBlueFactor: number;
-    static manualGreenFactor: number;
-    static manualRedFactor: number;
-    static manualWhiteBalance: boolean;
-    static noiseLayers: number;
-    static outputBackgroundReferenceMask: boolean;
-    static outputWhiteReferenceMask: boolean;
-    static structureDetection: boolean;
-    static structureLayers: number;
-    static whiteHigh: number;
-    static whiteLow: number;
-    static whiteROIX0: number;
-    static whiteROIX1: number;
-    static whiteROIY0: number;
-    static whiteROIY1: number;
-    static whiteReferenceViewId: string;
-    static whiteUseROI: boolean;
+    static prototype: ColorCalibration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -90,23 +90,9 @@ declare class View {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static canGoBackward: boolean;
-    static canGoForward: boolean;
-    static fullId: string;
-    static historyIndex: number;
-    static id: string;
-    static image: Image;
-    static initialProcessing: ProcessContainer;
-    static isMainView: boolean;
-    static isNull: boolean;
-    static isPreview: boolean;
-    static isView: boolean;
-    static isVirtual: boolean;
-    static processing: ProcessContainer;
-    static properties: Array<any>;
-    static stf: Array<any>;
-    static uniqueId: string;
-    static window: ImageWindow;
+    static prototype: View;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

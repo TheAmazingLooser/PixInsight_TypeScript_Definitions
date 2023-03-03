@@ -51,19 +51,9 @@ declare class LarsonSekanina extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static angleIncrement: number;
-    static centerX: number;
-    static centerY: number;
-    static deringing: number;
-    static disableExtension: boolean;
-    static highPass: boolean;
-    static interpolation: number;
-    static radiusIncrement: number;
-    static rangeHigh: number;
-    static rangeLow: number;
-    static threshold: number;
-    static useLuminance: boolean;
+    static prototype: LarsonSekanina;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

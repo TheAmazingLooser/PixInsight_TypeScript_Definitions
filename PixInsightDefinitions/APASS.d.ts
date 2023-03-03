@@ -69,37 +69,9 @@ declare class APASS extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static centerDec: number;
-    static centerRA: number;
-    static command: string;
-    static countIO: number;
-    static dataRelease: number;
-    static databaseFilePaths: Array<any>;
-    static databaseMagnitudeHigh: number;
-    static databaseMagnitudeLow: number;
-    static excessCount: number;
-    static exclusionFlags: number;
-    static generateBinaryOutput: boolean;
-    static generateTextOutput: boolean;
-    static inclusionFlags: number;
-    static isValid: boolean;
-    static magnitudeHigh: number;
-    static magnitudeLow: number;
-    static outputDataRelease: number;
-    static outputFilePath: string;
-    static radius: number;
-    static rejectCount: number;
-    static requiredFlags: number;
-    static sortBy: number;
-    static sourceLimit: number;
-    static sources: Array<any>;
-    static textFormat: number;
-    static textHeaders: number;
-    static timeDecode: number;
-    static timeIO: number;
-    static timeTotal: number;
-    static timeUncompress: number;
-    static verbosity: number;
+    static prototype: APASS;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

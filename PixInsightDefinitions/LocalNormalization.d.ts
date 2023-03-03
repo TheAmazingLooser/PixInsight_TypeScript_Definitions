@@ -99,67 +99,9 @@ declare class LocalNormalization extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static autoMemoryLimit: number;
-    static backgroundSamplingDelta: number;
-    static fileThreadOverload: number;
-    static generateInvalidData: boolean;
-    static generateNormalizationData: boolean;
-    static generateNormalizedImages: number;
-    static globalLocationNormalization: boolean;
-    static graphOutputDirectory: string;
-    static graphSize: number;
-    static graphTextSize: number;
-    static graphTitleSize: number;
-    static graphTransparent: boolean;
-    static highClippingLevel: number;
-    static hotPixelFilterRadius: number;
-    static inputHints: string;
-    static localScaleCorrections: boolean;
-    static lowClippingLevel: number;
-    static maxFileReadThreads: number;
-    static maxFileWriteThreads: number;
-    static modelScalingFactor: number;
-    static noGUIMessages: boolean;
-    static noScale: boolean;
-    static noiseReductionFilterRadius: number;
-    static onError: number;
-    static outputData: Array<any>;
-    static outputDirectory: string;
-    static outputExtension: string;
-    static outputHints: string;
-    static outputPostfix: string;
-    static outputPrefix: string;
-    static overwriteExistingFiles: boolean;
-    static plotNormalizationFunctions: number;
-    static psfAllowClusteredSources: boolean;
-    static psfGrowth: number;
-    static psfHotPixelFilterRadius: number;
-    static psfMaxStars: number;
-    static psfMinSNR: number;
-    static psfMinStructureSize: number;
-    static psfNoiseLayers: number;
-    static psfNoiseReductionFilterRadius: number;
-    static psfRejectionLimit: number;
-    static psfStructureLayers: number;
-    static psfType: number;
-    static referenceIsView: boolean;
-    static referencePathOrViewId: string;
-    static referenceRejection: boolean;
-    static referenceRejectionThreshold: number;
-    static rejection: boolean;
-    static rejectionLimit: number;
-    static saturationRelative: boolean;
-    static saturationThreshold: number;
-    static scale: number;
-    static scaleEvaluationMethod: number;
-    static showBackgroundModels: boolean;
-    static showLocalScaleModels: boolean;
-    static showRejectionMaps: boolean;
-    static showStructureMaps: boolean;
-    static targetItems: Array<any>;
-    static targetRejectionThreshold: number;
-    static truncate: boolean;
-    static useFileThreads: boolean;
+    static prototype: LocalNormalization;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

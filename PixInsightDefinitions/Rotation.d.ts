@@ -49,17 +49,9 @@ declare class Rotation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alpha: number;
-    static angle: number;
-    static blue: number;
-    static clampingThreshold: number;
-    static gammaCorrection: boolean;
-    static green: number;
-    static interpolation: number;
-    static noGUIMessages: boolean;
-    static optimizeFast: boolean;
-    static red: number;
-    static smoothness: number;
+    static prototype: Rotation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

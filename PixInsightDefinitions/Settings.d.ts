@@ -53,6 +53,7 @@ declare class Settings {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static lastReadOK: boolean;
 
 
     //-------------------------

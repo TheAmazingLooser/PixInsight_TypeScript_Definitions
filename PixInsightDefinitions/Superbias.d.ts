@@ -46,14 +46,9 @@ declare class Superbias extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static columns: boolean;
-    static excludeLargeScale: boolean;
-    static medianTransform: boolean;
-    static multiscaleLayers: number;
-    static rows: boolean;
-    static superbiasViewId: string;
-    static superbiasViewId1: string;
-    static trimmingFactor: number;
+    static prototype: Superbias;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

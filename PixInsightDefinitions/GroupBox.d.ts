@@ -42,9 +42,9 @@ declare class GroupBox extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static checked: boolean;
-    static title: string;
-    static titleCheckBox: boolean;
+    static prototype: GroupBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -48,16 +48,9 @@ declare class MorphologicalTransformation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static highThreshold: number;
-    static interlacingDistance: number;
-    static lowThreshold: number;
-    static numberOfIterations: number;
-    static operator: number;
-    static selectionPoint: number;
-    static structureName: string;
-    static structureSize: number;
-    static structureWayTable: Array<any>;
+    static prototype: MorphologicalTransformation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

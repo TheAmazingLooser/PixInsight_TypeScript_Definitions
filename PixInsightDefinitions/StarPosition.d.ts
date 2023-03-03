@@ -49,17 +49,9 @@ declare class StarPosition {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alpha: number;
-    static declination: number;
-    static delta: number;
-    static epoch: Date;
-    static muAlpha: number;
-    static muDelta: number;
-    static parallax: number;
-    static properMotionDec: number;
-    static properMotionRA: number;
-    static radialVelocity: number;
-    static rightAscension: number;
+    static prototype: StarPosition;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

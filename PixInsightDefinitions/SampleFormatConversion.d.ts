@@ -39,7 +39,9 @@ declare class SampleFormatConversion extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static format: number;
+    static prototype: SampleFormatConversion;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

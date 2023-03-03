@@ -48,8 +48,9 @@ declare class CryptographicHash {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static algorithmName: string;
-    static hashLength: number;
+    static prototype: CryptographicHash;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

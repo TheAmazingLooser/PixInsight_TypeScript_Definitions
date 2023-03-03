@@ -45,11 +45,9 @@ declare class Label extends Frame {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static margin: number;
-    static text: string;
-    static textAlignment: number;
-    static useRichText: boolean;
-    static wordWrapping: boolean;
+    static prototype: Label;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

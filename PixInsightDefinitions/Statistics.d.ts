@@ -38,6 +38,9 @@ declare class Statistics extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: Statistics;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

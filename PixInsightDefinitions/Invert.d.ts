@@ -38,6 +38,9 @@ declare class Invert extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: Invert;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

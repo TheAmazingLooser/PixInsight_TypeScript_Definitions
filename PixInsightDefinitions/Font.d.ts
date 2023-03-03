@@ -85,25 +85,9 @@ declare class Font {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static ascent: number;
-    static bold: boolean;
-    static descent: number;
-    static family: string;
-    static fixedPitch: boolean;
-    static height: number;
-    static isExactMatch: boolean;
-    static italic: boolean;
-    static kerning: boolean;
-    static lineSpacing: number;
-    static maxWidth: number;
-    static overline: boolean;
-    static pixelSize: number;
-    static pointSize: number;
-    static stretchFactor: number;
-    static strikeOut: boolean;
-    static underline: boolean;
-    static unscaledPointSize: number;
-    static weight: number;
+    static prototype: Font;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

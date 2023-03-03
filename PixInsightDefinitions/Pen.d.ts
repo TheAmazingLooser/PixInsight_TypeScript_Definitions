@@ -49,14 +49,9 @@ declare class Pen {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static brush: Brush;
-    static cap: number;
-    static color: number;
-    static isEmpty: boolean;
-    static isSolid: boolean;
-    static join: number;
-    static style: number;
-    static width: number;
+    static prototype: Pen;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

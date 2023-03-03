@@ -41,9 +41,9 @@ declare class Frame extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static borderWidth: number;
-    static lineWidth: number;
-    static style: number;
+    static prototype: Frame;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

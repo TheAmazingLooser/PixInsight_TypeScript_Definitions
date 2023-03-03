@@ -62,16 +62,9 @@ declare class EphemerisHandle {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static B_V: number | void;
-    static D: number | void;
-    static G: number | void;
-    static H: number | void;
-    static endTime: Date;
-    static hasDerivative: boolean;
-    static objectId: string;
-    static objectName: string;
-    static originId: string;
-    static startTime: Date;
+    static prototype: EphemerisHandle;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

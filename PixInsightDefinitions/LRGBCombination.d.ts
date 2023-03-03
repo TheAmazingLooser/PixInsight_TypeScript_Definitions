@@ -46,14 +46,9 @@ declare class LRGBCombination extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static channels: Array<any>;
-    static clipHighlights: boolean;
-    static inheritAstrometricSolution: boolean;
-    static layersProtected: number;
-    static layersRemoved: number;
-    static mL: number;
-    static mc: number;
-    static noiseReduction: boolean;
+    static prototype: LRGBCombination;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

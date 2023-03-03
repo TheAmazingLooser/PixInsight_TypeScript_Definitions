@@ -81,6 +81,9 @@ declare class Security {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: Security;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

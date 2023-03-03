@@ -41,9 +41,9 @@ declare class LinearFit extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static referenceViewId: string;
-    static rejectHigh: number;
-    static rejectLow: number;
+    static prototype: LinearFit;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

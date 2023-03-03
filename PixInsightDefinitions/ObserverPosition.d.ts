@@ -47,15 +47,9 @@ declare class ObserverPosition {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static cioBased: boolean;
-    static equatorialRadius: number;
-    static flattening: number;
-    static height: number;
-    static lambda: number;
-    static latitude: number;
-    static longitude: number;
-    static phi: number;
-    static regionalCenter: Vector;
+    static prototype: ObserverPosition;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

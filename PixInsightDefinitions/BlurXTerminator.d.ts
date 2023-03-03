@@ -48,16 +48,9 @@ declare class BlurXTerminator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static adjust_halos: number;
-    static ai_file: string;
-    static auto_nonstellar_psf: boolean;
-    static correct_first: boolean;
-    static correct_only: boolean;
-    static lum_only: boolean;
-    static nonstellar_psf_diameter: number;
-    static nonstellar_then_stellar: boolean;
-    static sharpen_nonstellar: number;
-    static sharpen_stars: number;
+    static prototype: BlurXTerminator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

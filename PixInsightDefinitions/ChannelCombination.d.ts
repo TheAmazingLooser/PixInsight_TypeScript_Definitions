@@ -41,9 +41,9 @@ declare class ChannelCombination extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static channels: Array<any>;
-    static colorSpace: number;
-    static inheritAstrometricSolution: boolean;
+    static prototype: ChannelCombination;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -39,7 +39,9 @@ declare class ChannelMatch extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static channels: Array<any>;
+    static prototype: ChannelMatch;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

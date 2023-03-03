@@ -172,8 +172,9 @@ declare class Point {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static x: number;
-    static y: number;
+    static prototype: Point;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

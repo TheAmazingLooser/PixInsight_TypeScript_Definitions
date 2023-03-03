@@ -62,9 +62,9 @@ declare class PointGridInterpolation {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static delta: number;
-    static isValid: boolean;
-    static referenceRect: Rect;
+    static prototype: PointGridInterpolation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

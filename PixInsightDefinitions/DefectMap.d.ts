@@ -42,10 +42,9 @@ declare class DefectMap extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static isCFA: boolean;
-    static mapId: string;
-    static operation: number;
-    static structure: number;
+    static prototype: DefectMap;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

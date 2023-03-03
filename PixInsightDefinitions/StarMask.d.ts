@@ -54,22 +54,9 @@ declare class StarMask extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static aggregateStructures: boolean;
-    static binarizeStructures: boolean;
-    static growthCompensation: number;
-    static highlightsClipping: number;
-    static invert: boolean;
-    static largeScaleGrowth: number;
-    static limit: number;
-    static midtonesBalance: number;
-    static mode: number;
-    static noiseThreshold: number;
-    static shadowsClipping: number;
-    static smallScaleGrowth: number;
-    static smoothness: number;
-    static structureContours: boolean;
-    static truncation: number;
-    static waveletLayers: number;
+    static prototype: StarMask;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

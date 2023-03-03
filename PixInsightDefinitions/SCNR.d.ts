@@ -43,11 +43,9 @@ declare class SCNR extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static colorToRemove: number;
-    static preserveLightness: boolean;
-    static preserveLuminance: boolean;
-    static protectionMethod: number;
+    static prototype: SCNR;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

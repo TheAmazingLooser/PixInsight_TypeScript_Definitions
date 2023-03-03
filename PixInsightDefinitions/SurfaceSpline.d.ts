@@ -59,13 +59,9 @@ declare class SurfaceSpline {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static isValid: boolean;
+    static prototype: SurfaceSpline;
     static length: number;
-    static order: number;
-    static rbfType: number;
-    static shapeParameter: number;
-    static smoothing: number;
-    static usePolynomial: boolean;
+    static name: string;
 
 
     //-------------------------

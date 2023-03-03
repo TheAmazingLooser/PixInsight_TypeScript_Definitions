@@ -39,7 +39,9 @@ declare class FITSHeader extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static keywords: Array<any>;
+    static prototype: FITSHeader;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

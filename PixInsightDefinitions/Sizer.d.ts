@@ -107,17 +107,9 @@ declare class Sizer {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static displayPixelRatio: number;
-    static isHorizontal: boolean;
-    static isVertical: boolean;
-    static margin: number /* unsigned */;
-    static numberOfItems: number /* unsigned */;
-    static parentControl: Control;
-    static scaledMargin: number /* unsigned */;
-    static scaledSpacing: number /* unsigned */;
-    static spacing: number /* unsigned */;
-    static unscaledMargin: number /* unsigned */;
-    static unscaledSpacing: number /* unsigned */;
+    static prototype: Sizer;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

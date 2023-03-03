@@ -48,13 +48,9 @@ declare class PushButton extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static defaultButton: boolean;
-    static icon: Bitmap;
-    static iconHeight: number;
-    static iconWidth: number;
-    static pushed: boolean;
-    static state: number;
-    static text: string;
+    static prototype: PushButton;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

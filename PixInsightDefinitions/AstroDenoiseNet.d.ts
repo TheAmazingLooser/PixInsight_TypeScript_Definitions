@@ -40,8 +40,9 @@ declare class AstroDenoiseNet extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static mask: boolean;
-    static stride: number;
+    static prototype: AstroDenoiseNet;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -87,15 +87,9 @@ declare class TreeBoxNode {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static checkable: boolean;
-    static checked: boolean;
-    static enabled: boolean;
-    static expanded: boolean;
-    static numberOfChildren: number;
-    static parent: TreeBoxNode;
-    static parentTree: TreeBox;
-    static selectable: boolean;
-    static selected: boolean;
+    static prototype: TreeBoxNode;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

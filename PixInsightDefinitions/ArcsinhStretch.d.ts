@@ -43,11 +43,9 @@ declare class ArcsinhStretch extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static blackPoint: number;
-    static previewClipped: boolean;
-    static protectHighlights: boolean;
-    static stretch: number;
-    static useRGBWS: boolean;
+    static prototype: ArcsinhStretch;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -248,66 +248,9 @@ declare class Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alternateCanvasColor: number;
-    static availableScreenRect: Rect;
-    static backgroundColor: number;
-    static boundsRect: Rect;
-    static buttonColor: number;
-    static buttonTextColor: number;
-    static canUpdate: boolean;
-    static canvasColor: number;
-    static childToFocus: Control;
-    static childrenRect: Rect;
-    static clientRect: Rect;
-    static cursor: Cursor;
-    static dialog: Dialog;
-    static displayPixelRatio: number;
-    static enabled: boolean;
-    static focusStyle: number;
-    static focusedChild: Control;
-    static font: Font;
-    static foregroundColor: number;
-    static frameRect: Rect;
-    static hasFocus: boolean;
-    static height: number;
-    static highlightColor: number;
-    static highlightedTextColor: number;
-    static isActiveWindow: boolean;
-    static isDialog: boolean;
-    static isFixedHeight: boolean;
-    static isFixedWidth: boolean;
-    static isMaximized: boolean;
-    static isMinimized: boolean;
-    static isModal: boolean;
-    static isUnderMouse: boolean;
-    static isWindow: boolean;
-    static maxHeight: number;
-    static maxWidth: number;
-    static minHeight: number;
-    static minWidth: number;
-    static mouseTracking: boolean;
-    static nextSiblingToFocus: Control;
-    static objectId: string;
-    static parent: Control;
-    static position: Point;
-    static resourcePixelRatio: number;
-    static scaledMaxHeight: number;
-    static scaledMaxWidth: number;
-    static scaledMinHeight: number;
-    static scaledMinWidth: number;
-    static screenRect: Rect;
-    static sizer: Sizer;
-    static smartMinHeight: number;
-    static smartMinWidth: number;
-    static styleSheet: string;
-    static textColor: number;
-    static toolTip: string;
-    static visible: boolean;
-    static visibleRect: Rect;
-    static width: number;
-    static window: Control;
-    static windowOpacity: number;
-    static windowTitle: string;
+    static prototype: Control;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -89,57 +89,9 @@ declare class SubframeSelector extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static allowClusteredSources: boolean;
-    static approvalExpression: string;
-    static auxGraphProperty: number;
-    static brightThreshold: number;
-    static cameraGain: number;
-    static cameraResolution: number;
-    static dataUnit: number;
-    static fileCache: boolean;
-    static fileThreadOverload: number;
-    static graphProperty: number;
-    static hotPixelFilterRadius: number;
-    static inputHints: string;
-    static maxDistortion: number;
-    static maxFileReadThreads: number;
-    static maxFileWriteThreads: number;
-    static maxPSFFits: number;
-    static measurements: Array<any>;
-    static minStructureSize: number;
-    static noiseLayers: number;
-    static noiseReductionFilterRadius: number;
-    static nonInteractive: boolean;
-    static onError: number;
-    static outputDirectory: string;
-    static outputExtension: string;
-    static outputHints: string;
-    static outputKeyword: string;
-    static outputPostfix: string;
-    static outputPrefix: string;
-    static overwriteExistingFiles: boolean;
-    static peakResponse: number;
-    static pedestal: number;
-    static pedestalKeyword: string;
-    static pedestalMode: number;
-    static psfFit: number;
-    static psfFitCircular: boolean;
-    static roiX0: number;
-    static roiX1: number;
-    static roiY0: number;
-    static roiY1: number;
-    static routine: number;
-    static scaleUnit: number;
-    static sensitivity: number;
-    static siteLocalMidnight: number;
-    static sortProperty: number;
-    static structureLayers: number;
-    static subframeScale: number;
-    static subframes: Array<any>;
-    static trimmingFactor: number;
-    static upperLimit: number;
-    static useFileThreads: boolean;
-    static weightingExpression: string;
+    static prototype: SubframeSelector;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

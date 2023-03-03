@@ -53,8 +53,9 @@ declare class FileWatcher {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static directories: Array<any>;
-    static files: Array<any>;
+    static prototype: FileWatcher;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

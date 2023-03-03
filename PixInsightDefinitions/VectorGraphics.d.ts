@@ -338,22 +338,9 @@ declare class VectorGraphics {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static antialiasing: boolean;
-    static backgroundBrush: Brush;
-    static brush: Brush;
-    static brushOrigin: Point;
-    static clipRect: Rect;
-    static clipping: boolean;
-    static compositionOperator: number;
-    static font: Font;
-    static isPainting: boolean;
-    static opacity: number;
-    static pen: Pen;
-    static smoothInterpolation: boolean;
-    static textAntialiasing: boolean;
-    static transformationEnabled: boolean;
-    static transformationMatrix: Matrix;
-    static transparentBackground: boolean;
+    static prototype: VectorGraphics;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

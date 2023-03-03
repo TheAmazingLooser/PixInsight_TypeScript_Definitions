@@ -43,11 +43,9 @@ declare class GradientHDRCompression extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bPreserveColor: boolean;
-    static bRescale01: boolean;
-    static expGradient: number;
-    static logMaxGradient: number;
-    static logMinGradient: number;
+    static prototype: GradientHDRCompression;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

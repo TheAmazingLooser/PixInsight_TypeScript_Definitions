@@ -40,9 +40,6 @@ declare class ArrayBufferView {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static buffer: ArrayBuffer;
-    static byteLength: number;
-    static byteOffset: number;
 
 
     //-------------------------

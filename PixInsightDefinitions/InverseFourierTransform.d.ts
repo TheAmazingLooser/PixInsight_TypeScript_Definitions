@@ -41,9 +41,9 @@ declare class InverseFourierTransform extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static idOfFirstComponent: string;
-    static idOfSecondComponent: string;
-    static onOutOfRangeResult: number;
+    static prototype: InverseFourierTransform;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

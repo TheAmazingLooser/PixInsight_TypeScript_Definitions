@@ -60,28 +60,9 @@ declare class CurvesTransformation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static A: Array<any>;
-    static At: number;
-    static B: Array<any>;
-    static Bt: number;
-    static G: Array<any>;
-    static Gt: number;
-    static H: Array<any>;
-    static Ht: number;
-    static K: Array<any>;
-    static Kt: number;
-    static L: Array<any>;
-    static Lt: number;
-    static R: Array<any>;
-    static Rt: number;
-    static S: Array<any>;
-    static St: number;
-    static a: Array<any>;
-    static at: number;
-    static b: Array<any>;
-    static bt: number;
-    static c: Array<any>;
-    static ct: number;
+    static prototype: CurvesTransformation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

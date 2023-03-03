@@ -38,6 +38,9 @@ declare class ConvertToRGBColor extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: ConvertToRGBColor;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

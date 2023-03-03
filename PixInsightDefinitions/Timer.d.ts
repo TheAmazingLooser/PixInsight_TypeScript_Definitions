@@ -48,11 +48,9 @@ declare class Timer {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static count: number;
-    static interval: number;
-    static isRunning: boolean;
-    static periodic: boolean;
-    static singleShot: boolean;
+    static prototype: Timer;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

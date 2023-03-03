@@ -71,14 +71,9 @@ declare class Histogram {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static entropy: number;
-    static isEmpty: boolean;
-    static lastLevel: number;
-    static normalizedPeakLevel: number;
-    static peakCount: number;
-    static peakLevel: number;
-    static resolution: number;
-    static totalCount: number;
+    static prototype: Histogram;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

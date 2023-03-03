@@ -70,38 +70,9 @@ declare class B3Estimator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static backgroundHigh1: number;
-    static backgroundHigh2: number;
-    static backgroundLow1: number;
-    static backgroundLow2: number;
-    static backgroundROIX01: number;
-    static backgroundROIX02: number;
-    static backgroundROIX11: number;
-    static backgroundROIX12: number;
-    static backgroundROIY01: number;
-    static backgroundROIY02: number;
-    static backgroundROIY11: number;
-    static backgroundROIY12: number;
-    static backgroundReferenceViewId1: string;
-    static backgroundReferenceViewId2: string;
-    static backgroundUseROI1: boolean;
-    static backgroundUseROI2: boolean;
-    static inputCenter1: number;
-    static inputCenter2: number;
-    static inputViewId1: string;
-    static inputViewId2: string;
-    static intensityUnits: number;
-    static outOfRangeMask: boolean;
-    static outOfRangeMaskViewId: string;
-    static outputBackgroundReferenceMask1: boolean;
-    static outputBackgroundReferenceMask2: boolean;
-    static outputCenter: number;
-    static substractBackground1: boolean;
-    static substractBackground2: boolean;
-    static syntheticImage: boolean;
-    static syntheticImageViewId: string;
-    static thermalMap: boolean;
-    static thermalMapViewId: string;
+    static prototype: B3Estimator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

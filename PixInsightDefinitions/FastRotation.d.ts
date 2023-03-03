@@ -40,8 +40,9 @@ declare class FastRotation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static mode: number;
-    static noGUIMessages: boolean;
+    static prototype: FastRotation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

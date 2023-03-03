@@ -41,9 +41,9 @@ declare class RadialGradientBrush extends GradientBrush {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static center: Point;
-    static focalPoint: Point;
-    static radius: number;
+    static prototype: RadialGradientBrush;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

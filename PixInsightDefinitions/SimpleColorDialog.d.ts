@@ -41,9 +41,6 @@ declare class SimpleColorDialog extends Dialog {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static alphaEnabled: boolean;
-    static color: number;
-    static grayscale: boolean;
 
 
     //-------------------------

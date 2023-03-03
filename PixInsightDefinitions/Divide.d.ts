@@ -51,19 +51,9 @@ declare class Divide extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static customNormalization: number;
-    static flatId: string;
-    static highlightsAmount: number;
-    static highlightsContinuity: number;
-    static highlightsLimit: number;
-    static linearization: number;
-    static method: number;
-    static normalization: number;
-    static shadowsAmount: number;
-    static shadowsContinuity: number;
-    static shadowsLimit: number;
-    static statisticalDownLimit: number;
-    static statisticalUpLimit: number;
+    static prototype: Divide;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

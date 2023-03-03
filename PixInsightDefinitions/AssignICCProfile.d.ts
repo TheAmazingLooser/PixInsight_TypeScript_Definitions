@@ -40,8 +40,9 @@ declare class AssignICCProfile extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static mode: number;
-    static targetProfile: string;
+    static prototype: AssignICCProfile;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

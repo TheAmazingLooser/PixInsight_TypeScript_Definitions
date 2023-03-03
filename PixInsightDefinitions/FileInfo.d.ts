@@ -73,32 +73,9 @@ declare class FileInfo {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static attributes: number;
-    static completeSuffix: string;
-    static directory: string;
-    static drive: string;
-    static exists: boolean;
-    static extension: string;
-    static groupId: number;
-    static isDirectory: boolean;
-    static isExecutable: boolean;
-    static isFile: boolean;
-    static isHidden: boolean;
-    static isReadable: boolean;
-    static isSymbolicLink: boolean;
-    static isWritable: boolean;
-    static lastAccessed: Date;
-    static lastModified: Date;
+    static prototype: FileInfo;
+    static length: number;
     static name: string;
-    static nameAndExtension: string;
-    static nameAndSuffix: string;
-    static numberOfHardLinks: number;
-    static path: string;
-    static size: number;
-    static suffix: string;
-    static symbolicLinkTarget: string;
-    static timeCreated: Date;
-    static userId: number;
 
 
     //-------------------------

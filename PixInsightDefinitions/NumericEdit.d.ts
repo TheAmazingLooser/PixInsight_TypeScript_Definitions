@@ -70,19 +70,6 @@ declare class NumericEdit extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static autoEditWidth: boolean;
-    static edit: Edit;
-    static fixed: boolean;
-    static label: Label;
-    static lowerBound: number;
-    static precision: number;
-    static real: boolean;
-    static sciTriggerExp: number;
-    static scientific: boolean;
-    static sign: boolean;
-    static sizer: Sizer;
-    static upperBound: number;
-    static value: number;
 
 
     //-------------------------

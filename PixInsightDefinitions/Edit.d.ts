@@ -67,20 +67,9 @@ declare class Edit extends Frame {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static caretPosition: number;
-    static hasSelection: boolean;
-    static isValid: boolean;
-    static maxLength: number;
-    static modified: boolean;
-    static passwordMode: boolean;
-    static readOnly: boolean;
-    static rightAlignment: boolean;
-    static selectedText: string;
-    static selectionEnd: number;
-    static selectionStart: number;
-    static text: string;
-    static utf8: ByteArray;
-    static validatingRegExp: string;
+    static prototype: Edit;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -47,10 +47,9 @@ declare class Cursor {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bitmap: Bitmap;
-    static hotSpot: Point;
-    static hotX: number;
-    static hotY: number;
+    static prototype: Cursor;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

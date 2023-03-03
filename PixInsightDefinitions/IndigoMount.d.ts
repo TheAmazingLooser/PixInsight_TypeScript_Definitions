@@ -59,27 +59,9 @@ declare class IndigoMount extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static AlignmentMethod: number;
-    static Command: number;
-    static PierSide: number;
-    static SlewRate: number;
-    static alignmentConfig: number;
-    static alignmentModelFile: string;
-    static apparentTargetDec: number;
-    static apparentTargetRA: number;
-    static currentDec: number;
-    static currentLST: number;
-    static currentRA: number;
-    static deviceName: string;
-    static enableAlignmentCorrection: boolean;
-    static geographicLatitude: number;
-    static syncCelestialDec: number;
-    static syncCelestialRA: number;
-    static syncLST: number;
-    static syncTelescopeDec: number;
-    static syncTelescopeRA: number;
-    static targetDec: number;
-    static targetRA: number;
+    static prototype: IndigoMount;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

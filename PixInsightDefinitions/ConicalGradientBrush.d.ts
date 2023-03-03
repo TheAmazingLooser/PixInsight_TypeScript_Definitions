@@ -40,8 +40,9 @@ declare class ConicalGradientBrush extends GradientBrush {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static angle: number;
-    static center: Point;
+    static prototype: ConicalGradientBrush;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

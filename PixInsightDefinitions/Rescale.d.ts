@@ -39,7 +39,9 @@ declare class Rescale extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static mode: number;
+    static prototype: Rescale;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

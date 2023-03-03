@@ -53,9 +53,9 @@ declare class ShepardInterpolation {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static isValid: boolean;
-    static power: number;
-    static radius: number;
+    static prototype: ShepardInterpolation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

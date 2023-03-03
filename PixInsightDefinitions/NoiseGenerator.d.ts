@@ -42,10 +42,9 @@ declare class NoiseGenerator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static distribution: number;
-    static impulsionalNoiseProbability: number;
-    static preserveBrightness: number;
+    static prototype: NoiseGenerator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

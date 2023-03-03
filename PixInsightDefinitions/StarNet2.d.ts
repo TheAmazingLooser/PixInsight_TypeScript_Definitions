@@ -40,8 +40,9 @@ declare class StarNet2 extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static mask: boolean;
-    static stride: number;
+    static prototype: StarNet2;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

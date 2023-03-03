@@ -106,23 +106,9 @@ declare class ExternalProcess {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bytesAvailable: number;
-    static bytesToWrite: number;
-    static environment: Array<any>;
-    static error: number;
-    static exitCode: number;
-    static exitStatus: number;
-    static isRunning: boolean;
-    static isStarting: boolean;
-    static outputData: ByteArray;
-    static pid: number;
-    static standardError: ByteArray;
-    static standardInput: ByteArray | string;
-    static standardOutput: ByteArray;
-    static stderr: ByteArray;
-    static stdin: ByteArray | string;
-    static stdout: ByteArray;
-    static workingDirectory: string;
+    static prototype: ExternalProcess;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

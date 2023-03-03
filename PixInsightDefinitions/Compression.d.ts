@@ -50,14 +50,9 @@ declare class Compression {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static algorithmName: string;
-    static byteShuffling: boolean;
-    static checksums: boolean;
-    static compressionLevel: number;
-    static defaultCompressionLevel: number;
-    static itemSize: number;
-    static maxCompressionLevel: number;
-    static subblockSize: number;
+    static prototype: Compression;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

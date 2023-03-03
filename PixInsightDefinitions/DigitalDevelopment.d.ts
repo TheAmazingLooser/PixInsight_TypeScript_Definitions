@@ -44,12 +44,9 @@ declare class DigitalDevelopment extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static a: number;
-    static b: number;
-    static m0: number;
-    static m1: number;
-    static m2: number;
-    static sigma: number;
+    static prototype: DigitalDevelopment;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

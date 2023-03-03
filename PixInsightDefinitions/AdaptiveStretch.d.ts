@@ -47,15 +47,9 @@ declare class AdaptiveStretch extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static maxCurvePoints: number;
-    static noiseThreshold: number;
-    static protection: number;
-    static roiX0: number;
-    static roiX1: number;
-    static roiY0: number;
-    static roiY1: number;
-    static useProtection: boolean;
-    static useROI: boolean;
+    static prototype: AdaptiveStretch;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

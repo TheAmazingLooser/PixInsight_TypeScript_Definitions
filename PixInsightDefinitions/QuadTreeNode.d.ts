@@ -58,12 +58,6 @@ declare class QuadTreeNode {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static index: Array<any>;
-    static ne: QuadTreeNode;
-    static nw: QuadTreeNode;
-    static rect: Rect;
-    static se: QuadTreeNode;
-    static sw: QuadTreeNode;
 
 
     //-------------------------

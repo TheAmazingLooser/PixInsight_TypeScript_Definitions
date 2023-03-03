@@ -264,55 +264,13 @@ declare class ImageWindow {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static aperture: number;
-    static bitsPerSample: number;
-    static cfaType: string;
-    static currentView: View;
-    static exposure: number;
-    static filePath: string;
-    static fileURL: string;
-    static focalLength: number;
-    static geometry: Rect;
-    static hasMaskReferences: boolean;
-    static hasPendingUpdates: boolean;
-    static height: number;
-    static horizontalResolution: number;
-    static iconic: boolean;
-    static isACopy: boolean;
-    static isClosed: boolean;
-    static isComplexSample: boolean;
-    static isFloatSample: boolean;
-    static isModified: boolean;
-    static isNew: boolean;
-    static isNull: boolean;
-    static isWindow: boolean;
-    static isoSpeed: number;
-    static keywords: Array<any>;
-    static mainView: View;
-    static mask: ImageWindow;
-    static maskEnabled: boolean;
-    static maskInverted: boolean;
-    static maskMode: number;
-    static maskVisible: boolean;
-    static metricResolution: boolean;
-    static numberOfPreviews: number;
-    static position: Point;
-    static previews: Array<any>;
-    static resolution: number;
-    static rgbWorkingSpace: RGBColorSystem;
-    static selectedPreview: View;
-    static transparencyColor: boolean;
-    static transparencyMode: boolean;
-    static transparencyVisible: boolean;
-    static verticalResolution: number;
-    static viewportHeight: number;
-    static viewportPosition: Point;
-    static viewportUpdateRect: Rect;
-    static viewportWidth: number;
-    static visible: boolean;
-    static visibleViewportRect: Rect;
-    static width: number;
-    static zoomFactor: number;
+    static prototype: ImageWindow;
+    static windows: Array<any>;
+    static openWindows: Array<any>;
+    static activeWindow: ImageWindow;
+    static swapFilesDirectory: string;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

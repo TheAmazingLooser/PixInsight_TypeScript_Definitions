@@ -49,17 +49,9 @@ declare class SplitCFA extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static outputDir: string;
-    static outputSubDirCFA: boolean;
-    static outputTree: boolean;
-    static outputViewId0: string;
-    static outputViewId1: string;
-    static outputViewId2: string;
-    static outputViewId3: string;
-    static overwrite: boolean;
-    static postfix: string;
-    static prefix: string;
-    static targetFrames: Array<any>;
+    static prototype: SplitCFA;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -42,10 +42,9 @@ declare class ChannelExtraction extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static channels: Array<any>;
-    static colorSpace: number;
-    static inheritAstrometricSolution: boolean;
-    static sampleFormat: number;
+    static prototype: ChannelExtraction;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

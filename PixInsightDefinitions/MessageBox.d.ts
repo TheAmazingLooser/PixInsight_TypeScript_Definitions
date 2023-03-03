@@ -49,15 +49,9 @@ declare class MessageBox {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static caption: string;
-    static defaultButton: number;
-    static escapeButton: number;
-    static firstButton: number;
-    static icon: number;
-    static result: number;
-    static secondButton: number;
-    static text: string;
-    static thirdButton: number;
+    static prototype: MessageBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

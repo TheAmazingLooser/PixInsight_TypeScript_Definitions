@@ -78,46 +78,9 @@ declare class ACDNR extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amountC: number;
-    static amountL: number;
-    static applyToChrominance: boolean;
-    static applyToLightness: boolean;
-    static applyToLuminance: boolean;
-    static brightSidesOverdriveC: number;
-    static brightSidesOverdriveL: number;
-    static brightSidesThresholdC: number;
-    static brightSidesThresholdL: number;
-    static darkSidesOverdriveC: number;
-    static darkSidesOverdriveL: number;
-    static darkSidesThresholdC: number;
-    static darkSidesThresholdL: number;
-    static iterationsC: number;
-    static iterationsL: number;
-    static maskHighlightsClipping: number;
-    static maskMTF: number;
-    static maskRemovedWaveletLayers: number;
-    static maskShadowsClipping: number;
-    static minStructSizeC: number;
-    static minStructSizeL: number;
-    static prefilterMethodC: number;
-    static prefilterMethodL: number;
-    static previewMask: boolean;
-    static protectBrightSidesC: boolean;
-    static protectBrightSidesL: boolean;
-    static protectDarkSidesC: boolean;
-    static protectDarkSidesL: boolean;
-    static protectionMethodC: number;
-    static protectionMethodL: number;
-    static shapeC: number;
-    static shapeL: number;
-    static sigmaC: number;
-    static sigmaL: number;
-    static starProtectionC: boolean;
-    static starProtectionL: boolean;
-    static starThresholdC: number;
-    static starThresholdL: number;
-    static useMaskC: boolean;
-    static useMaskL: boolean;
+    static prototype: ACDNR;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

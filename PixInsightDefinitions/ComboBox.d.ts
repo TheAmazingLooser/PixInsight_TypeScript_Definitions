@@ -84,16 +84,9 @@ declare class ComboBox extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static autoCompletion: boolean;
-    static currentItem: number;
-    static editEnabled: boolean;
-    static editText: string;
-    static iconHeight: number;
-    static iconWidth: number;
-    static maxVisibleItemCount: number;
-    static minItemCharWidth: number;
-    static numberOfItems: number;
-    static popupToolTip: string;
+    static prototype: ComboBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

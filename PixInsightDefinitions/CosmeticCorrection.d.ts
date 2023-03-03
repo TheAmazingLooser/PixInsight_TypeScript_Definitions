@@ -60,28 +60,9 @@ declare class CosmeticCorrection extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static cfa: boolean;
-    static coldAutoCheck: boolean;
-    static coldAutoValue: number;
-    static coldDarkCheck: boolean;
-    static coldDarkLevel: number;
-    static defects: Array<any>;
-    static hotAutoCheck: boolean;
-    static hotAutoValue: number;
-    static hotDarkCheck: boolean;
-    static hotDarkLevel: number;
-    static masterDarkPath: string;
-    static outputDir: string;
-    static outputExtension: string;
-    static overwrite: boolean;
-    static postfix: string;
-    static prefix: string;
-    static targetFrames: Array<any>;
-    static transferFn: number;
-    static useAutoDetect: boolean;
-    static useDefectList: boolean;
-    static useMasterDark: boolean;
+    static prototype: CosmeticCorrection;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -43,11 +43,9 @@ declare class GradientHDRComposition extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bKeepLog: boolean;
-    static bNegativeBias: boolean;
-    static dLogBias: number;
-    static generateMask: boolean;
-    static targetFrames: Array<any>;
+    static prototype: GradientHDRComposition;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

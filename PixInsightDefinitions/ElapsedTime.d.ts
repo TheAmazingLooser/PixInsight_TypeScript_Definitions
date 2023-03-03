@@ -49,8 +49,9 @@ declare class ElapsedTime {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static text: string;
-    static value: number;
+    static prototype: ElapsedTime;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

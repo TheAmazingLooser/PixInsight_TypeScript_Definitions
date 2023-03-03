@@ -95,27 +95,12 @@ declare class TypeDescription {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static constants: Array<any>;
-    static constructors: Array<any>;
-    static eventHandlers: Array<any>;
-    static hasConstants: boolean;
-    static hasConstructors: boolean;
-    static hasEventHandlers: boolean;
-    static hasMethods: boolean;
-    static hasProperties: boolean;
-    static hasStaticMethods: boolean;
-    static hasStaticProperties: boolean;
-    static id: string;
-    static inherits: boolean;
-    static isCoreObject: boolean;
-    static isExternalObject: boolean;
-    static isNull: boolean;
-    static methods: Array<any>;
-    static objectsInherited: Array<any>;
-    static objectsInheriting: Array<any>;
-    static properties: Array<any>;
-    static staticMethods: Array<any>;
-    static staticProperties: Array<any>;
+    static prototype: TypeDescription;
+    static objects: Array<any>;
+    static coreObjects: Array<any>;
+    static externalObjects: Array<any>;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

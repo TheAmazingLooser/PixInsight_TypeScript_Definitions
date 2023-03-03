@@ -63,31 +63,9 @@ declare class RestorationFilter extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static K: number;
-    static algorithm: number;
-    static amount: number;
-    static deringing: boolean;
-    static deringingBright: number;
-    static deringingDark: number;
-    static gamma: number;
-    static linear: boolean;
-    static outputDeringingMaps: boolean;
-    static psfAspectRatio: number;
-    static psfGaussianAspectRatio: number;
-    static psfGaussianRotationAngle: number;
-    static psfGaussianShape: number;
-    static psfGaussianSigma: number;
-    static psfMode: number;
-    static psfMotionLength: number;
-    static psfMotionRotationAngle: number;
-    static psfRotationAngle: number;
-    static psfShape: number;
-    static psfSigma: number;
-    static psfViewId: string;
-    static rangeHigh: number;
-    static rangeLow: number;
-    static toLuminance: boolean;
-    static useLuminance: boolean;
+    static prototype: RestorationFilter;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

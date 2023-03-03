@@ -64,8 +64,6 @@ declare class SectionBar extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static checkBox: CheckBox;
-    static section: Control;
 
 
     //-------------------------

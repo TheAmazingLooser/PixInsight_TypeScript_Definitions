@@ -70,38 +70,9 @@ declare class Deconvolution extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static algorithm: number;
-    static convergence: number;
-    static deringing: boolean;
-    static deringingBright: number;
-    static deringingDark: number;
-    static deringingSupport: boolean;
-    static deringingSupportAmount: number;
-    static deringingSupportViewId: string;
-    static iterations: Array<any>;
-    static noiseModel: number;
-    static numberOfIterations: number;
-    static numberOfWaveletLayers: number;
-    static psfAspectRatio: number;
-    static psfFFTSizeLimit: number;
-    static psfGaussianAspectRatio: number;
-    static psfGaussianRotationAngle: number;
-    static psfGaussianShape: number;
-    static psfGaussianSigma: number;
-    static psfMode: number;
-    static psfMotionLength: number;
-    static psfMotionRotationAngle: number;
-    static psfRotationAngle: number;
-    static psfShape: number;
-    static psfSigma: number;
-    static psfViewId: string;
-    static rangeHigh: number;
-    static rangeLow: number;
-    static scalingFunction: number;
-    static toLuminance: boolean;
-    static useLuminance: boolean;
-    static useRegularization: boolean;
-    static waveletLayers: Array<any>;
+    static prototype: Deconvolution;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

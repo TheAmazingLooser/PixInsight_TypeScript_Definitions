@@ -293,11 +293,9 @@ declare class Matrix {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static cols: number;
-    static columns: number;
-    static isEmpty: boolean;
-    static numberOfElements: number;
-    static rows: number;
+    static prototype: Matrix;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

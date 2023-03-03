@@ -43,11 +43,9 @@ declare class LocalHistogramEqualization extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static circularKernel: boolean;
-    static histogramBins: number;
-    static radius: number;
-    static slopeLimit: number;
+    static prototype: LocalHistogramEqualization;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

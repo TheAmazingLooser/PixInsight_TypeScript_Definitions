@@ -58,8 +58,9 @@ declare class PointSurfaceSpline {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static isRecursive: boolean;
-    static isValid: boolean;
+    static prototype: PointSurfaceSpline;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

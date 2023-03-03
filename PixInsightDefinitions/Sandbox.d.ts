@@ -43,11 +43,9 @@ declare class Sandbox extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static sampleFive: string;
-    static sampleFour: number;
-    static sampleOne: number;
-    static sampleThree: boolean;
-    static sampleTwo: number;
+    static prototype: Sandbox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

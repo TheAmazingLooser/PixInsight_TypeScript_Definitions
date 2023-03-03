@@ -97,65 +97,9 @@ declare class ImageCalibration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static autoPedestalLimit: number;
-    static calibrateBias: boolean;
-    static calibrateDark: boolean;
-    static calibrateFlat: boolean;
-    static cfaPattern: number;
-    static darkCFADetectionMode: number;
-    static darkOptimizationLow: number;
-    static darkOptimizationThreshold: number;
-    static darkOptimizationWindow: number;
-    static enableCFA: boolean;
-    static evaluateNoise: boolean;
-    static evaluateSignal: boolean;
-    static fileThreadOverload: number;
-    static flatScaleClippingFactor: number;
-    static hotPixelFilterRadius: number;
-    static inputHints: string;
-    static masterBiasEnabled: boolean;
-    static masterBiasPath: string;
-    static masterDarkEnabled: boolean;
-    static masterDarkPath: string;
-    static masterFlatEnabled: boolean;
-    static masterFlatPath: string;
-    static maxFileReadThreads: number;
-    static maxFileWriteThreads: number;
-    static maxStars: number;
-    static minStructureSize: number;
-    static noGUIMessages: boolean;
-    static noiseEvaluationAlgorithm: number;
-    static noiseLayers: number;
-    static noiseReductionFilterRadius: number;
-    static onError: number;
-    static optimizeDarks: boolean;
-    static outputData: Array<any>;
-    static outputDirectory: string;
-    static outputExtension: string;
-    static outputHints: string;
-    static outputPedestal: number;
-    static outputPedestalMode: number;
-    static outputPostfix: string;
-    static outputPrefix: string;
-    static outputSampleFormat: number;
-    static overscanEnabled: boolean;
-    static overscanImageX0: number;
-    static overscanImageX1: number;
-    static overscanImageY0: number;
-    static overscanImageY1: number;
-    static overscanRegions: Array<any>;
-    static overwriteExistingFiles: boolean;
-    static pedestal: number;
-    static pedestalKeyword: string;
-    static pedestalMode: number;
-    static psfGrowth: number;
-    static psfType: number;
-    static saturationRelative: boolean;
-    static saturationThreshold: number;
-    static separateCFAFlatScalingFactors: boolean;
-    static structureLayers: number;
-    static targetFrames: Array<any>;
-    static useFileThreads: boolean;
+    static prototype: ImageCalibration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

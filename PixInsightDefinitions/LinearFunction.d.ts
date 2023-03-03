@@ -51,12 +51,9 @@ declare class LinearFunction {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static adev: number;
-    static b: number;
-    static intercept: number;
-    static isValid: boolean;
-    static m: number;
-    static slope: number;
+    static prototype: LinearFunction;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -44,12 +44,9 @@ declare class LinearGradientBrush extends GradientBrush {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static end: Point;
-    static start: Point;
-    static x1: number;
-    static x2: number;
-    static y1: number;
-    static y2: number;
+    static prototype: LinearGradientBrush;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

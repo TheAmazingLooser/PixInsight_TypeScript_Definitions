@@ -57,25 +57,9 @@ declare class DynamicAlignment extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static badSampleColor: number;
-    static badSampleFillColor: number;
-    static data: Array<any>;
-    static points: Array<any>;
-    static registeredImageId: string;
-    static registeredImageSampleFormat: number;
-    static removedLayers: number;
-    static sampleColor: number;
-    static searchFeatures: boolean;
-    static selectedSampleColor: number;
-    static selectedSampleFillColor: number;
-    static sourceImageHeight: number;
-    static sourceImageId: string;
-    static sourceImageWidth: number;
-    static sourceSearchRadius: number;
-    static targetImageHeight: number;
-    static targetImageWidth: number;
-    static targetSearchRadius: number;
-    static threshold: number;
+    static prototype: DynamicAlignment;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

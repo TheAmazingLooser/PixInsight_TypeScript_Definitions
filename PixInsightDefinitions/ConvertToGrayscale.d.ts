@@ -38,6 +38,9 @@ declare class ConvertToGrayscale extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: ConvertToGrayscale;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

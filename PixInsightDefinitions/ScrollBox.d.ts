@@ -81,27 +81,9 @@ declare class ScrollBox extends Frame {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static autoScroll: boolean;
-    static horizontalAutoScroll: boolean;
-    static horizontalScrollBarVisible: boolean;
-    static horizontalScrollPosition: number;
-    static horizontalTracking: boolean;
-    static lineHeight: number;
-    static lineWidth: number;
-    static maxHorizontalScrollPosition: number;
-    static maxVerticalScrollPosition: number;
-    static minHorizontalScrollPosition: number;
-    static minVerticalScrollPosition: number;
-    static pageHeight: number;
-    static pageWidth: number;
-    static scrollBarsVisible: boolean;
-    static scrollPosition: Point;
-    static tracking: boolean;
-    static verticalAutoScroll: boolean;
-    static verticalScrollBarVisible: boolean;
-    static verticalScrollPosition: number;
-    static verticalTracking: boolean;
-    static viewport: Control;
+    static prototype: ScrollBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

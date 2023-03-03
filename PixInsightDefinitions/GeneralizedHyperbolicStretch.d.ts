@@ -51,19 +51,9 @@ declare class GeneralizedHyperbolicStretch extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static blackPoint: number;
-    static clipType: number;
-    static colourBlend: number;
-    static highlightProtection: number;
-    static inverse: boolean;
-    static localIntensity: number;
-    static shadowProtection: number;
-    static stretchChannel: number;
-    static stretchFactor: number;
-    static stretchType: number;
-    static symmetryPoint: number;
-    static useRGBWorkingSpace: boolean;
-    static whitePoint: number;
+    static prototype: GeneralizedHyperbolicStretch;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

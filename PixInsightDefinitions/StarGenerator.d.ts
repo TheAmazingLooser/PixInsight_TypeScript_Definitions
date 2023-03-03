@@ -53,21 +53,9 @@ declare class StarGenerator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static centerDec: number;
-    static centerRA: number;
-    static epoch: number;
-    static focalLength: number;
-    static limitMagnitude: number;
-    static nonlinear: boolean;
-    static outputFilePath: string;
-    static outputMode: number;
-    static pixelSize: number;
-    static projectionSystem: number;
-    static sensorHeight: number;
-    static sensorWidth: number;
-    static starDatabasePath: string;
-    static starFWHM: number;
-    static targetMinimumValue: number;
+    static prototype: StarGenerator;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

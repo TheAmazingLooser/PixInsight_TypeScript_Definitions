@@ -56,24 +56,9 @@ declare class ReadoutOptions extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static broadcast: boolean;
-    static coordinateItems: number;
-    static coordinatePrecision: number;
-    static data: number;
-    static integerRange: number;
-    static mode: number;
-    static precision: number;
-    static previewCenter: boolean;
-    static previewSize: number;
-    static previewZoomFactor: number;
-    static probeSize: number;
-    static real: boolean;
-    static showAlpha: boolean;
-    static showEclipticCoordinates: boolean;
-    static showEquatorialCoordinates: boolean;
-    static showGalacticCoordinates: boolean;
-    static showMask: boolean;
-    static showPreview: boolean;
+    static prototype: ReadoutOptions;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

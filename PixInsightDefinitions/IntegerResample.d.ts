@@ -47,15 +47,9 @@ declare class IntegerResample extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static downsamplingMode: number;
-    static forceResolution: boolean;
-    static gammaCorrection: boolean;
-    static metric: boolean;
-    static noGUIMessages: boolean;
-    static subsampleMode: number;
-    static xResolution: number;
-    static yResolution: number;
-    static zoomFactor: number;
+    static prototype: IntegerResample;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

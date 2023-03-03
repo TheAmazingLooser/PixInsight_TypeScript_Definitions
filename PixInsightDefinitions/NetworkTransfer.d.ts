@@ -81,17 +81,9 @@ declare class NetworkTransfer {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static aborted: boolean;
-    static bytesTransferred: number;
-    static contentType: string;
-    static customHTTPHeaders: Array<any>;
-    static errorInformation: string;
-    static ok: boolean;
-    static proxyURL: string;
-    static responseCode: string;
-    static totalSpeed: number;
-    static totalTime: number;
-    static url: string;
+    static prototype: NetworkTransfer;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

@@ -44,10 +44,9 @@ declare class SurfaceSimplifier {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static centroidInclusionEnabled: boolean;
-    static rejectFraction: number;
-    static rejectionEnabled: boolean;
-    static tolerance: number;
+    static prototype: SurfaceSimplifier;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

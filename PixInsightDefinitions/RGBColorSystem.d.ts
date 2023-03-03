@@ -126,11 +126,9 @@ declare class RGBColorSystem {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static Y: Array<any>;
-    static gamma: number;
-    static srgbGamma: boolean;
-    static x: Array<any>;
-    static y: Array<any>;
+    static prototype: RGBColorSystem;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

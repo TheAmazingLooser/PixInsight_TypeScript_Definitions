@@ -44,12 +44,9 @@ declare class GradientMergeMosaic extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static blackPoint: number;
-    static generateMask: boolean;
-    static nFeatherRadius: number;
-    static nShrinkCount: number;
-    static targetFrames: Array<any>;
-    static type: number;
+    static prototype: GradientMergeMosaic;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

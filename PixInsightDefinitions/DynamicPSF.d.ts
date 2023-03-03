@@ -70,38 +70,9 @@ declare class DynamicPSF extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static astrometry: boolean;
-    static autoAperture: boolean;
-    static autoPSF: boolean;
-    static autoVariableShapePSF: boolean;
-    static badStarColor: number;
-    static badStarFillColor: number;
-    static betaMax: number;
-    static betaMin: number;
-    static circularPSF: boolean;
-    static gaussianPSF: boolean;
-    static lorentzianPSF: boolean;
-    static moffat10PSF: boolean;
-    static moffat15PSF: boolean;
-    static moffat25PSF: boolean;
-    static moffat4PSF: boolean;
-    static moffat6PSF: boolean;
-    static moffat8PSF: boolean;
-    static moffatPSF: boolean;
-    static psf: Array<any>;
-    static regenerate: boolean;
-    static scaleKeyword: string;
-    static scaleMode: number;
-    static scaleValue: number;
-    static searchRadius: number;
-    static selectedStarColor: number;
-    static selectedStarFillColor: number;
-    static signedAngles: boolean;
-    static starColor: number;
-    static stars: Array<any>;
-    static threshold: number;
-    static variableShapePSF: boolean;
-    static views: Array<any>;
+    static prototype: DynamicPSF;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

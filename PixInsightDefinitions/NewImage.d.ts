@@ -48,16 +48,9 @@ declare class NewImage extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static colorSpace: number;
-    static height: number;
-    static id: string;
-    static numberOfChannels: number;
-    static sampleFormat: number;
-    static v0: number;
-    static v1: number;
-    static v2: number;
-    static va: number;
-    static width: number;
+    static prototype: NewImage;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

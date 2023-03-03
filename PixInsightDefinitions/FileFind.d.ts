@@ -60,21 +60,9 @@ declare class FileFind {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static attributes: number;
-    static created: Date;
-    static groupId: number;
-    static isDirectory: boolean;
-    static isFile: boolean;
-    static isHidden: boolean;
-    static isSymbolicLink: boolean;
-    static isValid: boolean;
-    static lastAccessed: Date;
-    static lastModified: Date;
+    static prototype: FileFind;
+    static length: number;
     static name: string;
-    static numberOfLinks: number;
-    static searchPath: string;
-    static size: number;
-    static userId: number;
 
 
     //-------------------------

@@ -190,11 +190,9 @@ declare class Bitmap {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bounds: Rect;
-    static height: number;
-    static physicalPixelRatio: number;
-    static pixelFormat: number;
-    static width: number;
+    static prototype: Bitmap;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

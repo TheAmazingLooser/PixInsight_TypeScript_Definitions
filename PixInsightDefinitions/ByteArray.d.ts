@@ -200,12 +200,9 @@ declare class ByteArray {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static available: number;
-    static capacity: number;
-    static isEmpty: boolean;
+    static prototype: ByteArray;
     static length: number;
-    static lowerBound: number;
-    static upperBound: number;
+    static name: string;
 
 
     //-------------------------

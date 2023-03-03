@@ -43,11 +43,9 @@ declare class ExponentialTransformation extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static functionType: number;
-    static luminanceMask: boolean;
-    static order: number;
-    static sigma: number;
-    static useLightnessMask: boolean;
+    static prototype: ExponentialTransformation;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

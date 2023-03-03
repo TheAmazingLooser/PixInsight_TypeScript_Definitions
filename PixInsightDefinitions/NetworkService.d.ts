@@ -38,6 +38,9 @@ declare class NetworkService extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: NetworkService;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

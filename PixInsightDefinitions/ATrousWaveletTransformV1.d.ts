@@ -57,25 +57,9 @@ declare class ATrousWaveletTransformV1 extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static curveBreakPoint: number;
-    static highRange: number;
-    static largeScaleFunction: number;
-    static layers: Array<any>;
-    static linear: boolean;
-    static lowRange: number;
-    static noiseThreshold: number;
-    static noiseThresholdingAmount: number;
-    static previewLayer: number;
-    static previewMode: number;
-    static scaleDelta: number;
-    static scalingFunctionData: Array<any>;
-    static scalingFunctionKernelSize: number;
-    static scalingFunctionName: string;
-    static scalingFunctionNoiseLayers: number;
-    static scalingFunctionNoiseSigma: Array<any>;
-    static toChrominance: boolean;
-    static toLuminance: boolean;
-    static version: number;
+    static prototype: ATrousWaveletTransformV1;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

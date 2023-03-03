@@ -45,13 +45,9 @@ declare class CreateAlphaChannels extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static closeSource: boolean;
-    static count: number;
-    static fromImage: boolean;
-    static invertSource: boolean;
-    static replace: boolean;
-    static sourceId: string;
-    static transparency: number;
+    static prototype: CreateAlphaChannels;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

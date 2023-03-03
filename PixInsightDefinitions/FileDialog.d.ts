@@ -43,10 +43,9 @@ declare class FileDialog {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static caption: string;
-    static filters: Array<any>;
-    static initialPath: string;
-    static selectedFileExtension: string;
+    static prototype: FileDialog;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

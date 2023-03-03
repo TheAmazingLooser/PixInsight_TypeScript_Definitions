@@ -108,26 +108,9 @@ declare class Position {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static CIO: number;
-    static CIP: Vector;
-    static CIP_ITRS: Vector;
-    static EO: number;
-    static ERA: number;
-    static GAST: number;
-    static TDB: Date;
-    static TT: Date;
-    static Teph: Date;
-    static UT1: Date;
-    static barycentricPositionOfEarth: Vector;
-    static barycentricPositionOfSun: Vector;
-    static barycentricVelocityOfEarth: Vector;
-    static cioBPNMatrix: Matrix;
-    static epsA: number;
-    static equinoxBPNMatrix: Matrix;
-    static heliocentricPositionOfEarth: Vector;
-    static isTopocentric: boolean;
-    static observer: ObserverPosition;
-    static polarMotionEnabled: boolean;
+    static prototype: Position;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

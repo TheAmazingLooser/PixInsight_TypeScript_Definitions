@@ -43,11 +43,9 @@ declare class SimplexNoise extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static amount: number;
-    static offsetX: number;
-    static offsetY: number;
-    static operator: number;
-    static scale: number;
+    static prototype: SimplexNoise;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

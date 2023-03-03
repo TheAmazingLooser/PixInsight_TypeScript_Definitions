@@ -57,17 +57,6 @@ declare class StarDetector {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static bkgDelta: number;
-    static hotPixelFilterRadius: number;
-    static invert: boolean;
-    static mask: Image;
-    static maxDistortion: number;
-    static noiseReductionFilterRadius: number;
-    static peakResponse: number;
-    static sensitivity: number;
-    static structureLayers: number;
-    static upperLimit: number;
-    static xyStretch: number;
 
 
     //-------------------------

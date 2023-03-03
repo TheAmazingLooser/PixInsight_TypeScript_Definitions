@@ -275,33 +275,9 @@ declare class Rect {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static area: number;
-    static bottom: number;
-    static center: Point;
-    static diagonal: number;
-    static height: number;
-    static hypot: number;
-    static isHorizontalLine: boolean;
-    static isLine: boolean;
-    static isNormal: boolean;
-    static isOrdered: boolean;
-    static isPoint: boolean;
-    static isPointOrLine: boolean;
-    static isRect: boolean;
-    static isVerticalLine: boolean;
-    static left: number;
-    static leftBottom: Point;
-    static leftTop: Point;
-    static perimeter: number;
-    static right: number;
-    static rightBottom: Point;
-    static rightTop: Point;
-    static top: number;
-    static width: number;
-    static x0: number;
-    static x1: number;
-    static y0: number;
-    static y1: number;
+    static prototype: Rect;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

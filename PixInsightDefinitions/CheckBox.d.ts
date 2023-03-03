@@ -46,10 +46,9 @@ declare class CheckBox extends Control {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static checked: boolean;
-    static state: number;
-    static text: string;
-    static tristate: boolean;
+    static prototype: CheckBox;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

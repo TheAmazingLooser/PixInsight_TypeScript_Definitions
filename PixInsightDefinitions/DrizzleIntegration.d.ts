@@ -79,47 +79,9 @@ declare class DrizzleIntegration extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static cfaPattern: string;
-    static closePreviousImages: boolean;
-    static dropShrink: number;
-    static enableAdaptiveNormalization: boolean;
-    static enableCFA: boolean;
-    static enableImageWeighting: boolean;
-    static enableLocalDistortion: boolean;
-    static enableLocalNormalization: boolean;
-    static enableRejection: boolean;
-    static enableSurfaceSplines: boolean;
-    static imageData: Array<any>;
-    static inputData: Array<any>;
-    static inputDirectory: string;
-    static inputHints: string;
-    static integratedPixels: number;
-    static integrationImageId: string;
-    static kernelFunction: number;
-    static kernelGridSize: number;
-    static noGUIMessages: boolean;
-    static numberOfChannels: number;
-    static onError: number;
-    static originX: number;
-    static originY: number;
-    static outputPixels: number;
-    static outputRangeHigh: number;
-    static outputRangeLow: number;
-    static roiX0: number;
-    static roiX1: number;
-    static roiY0: number;
-    static roiY1: number;
-    static scale: number;
-    static totalData: number;
-    static totalRejectedHighB: number;
-    static totalRejectedHighG: number;
-    static totalRejectedHighRK: number;
-    static totalRejectedLowB: number;
-    static totalRejectedLowG: number;
-    static totalRejectedLowRK: number;
-    static truncateOnOutOfRange: boolean;
-    static useROI: boolean;
-    static weightImageId: string;
+    static prototype: DrizzleIntegration;
+    static length: number;
+    static name: string;
 
 
     //-------------------------
