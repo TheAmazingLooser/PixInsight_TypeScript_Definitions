@@ -75,3 +75,5 @@ declare var jsArguments: Array<any>;
 declare var jsScriptResult: boolean;
 declare var console: Console;
 declare var EMath: Math;
+declare var count: number;
+declare var arr: Array<any>;

@@ -12,6 +12,7 @@ declare class Control {
     //-------------------------
     //-------Properties--------
     //-------------------------
+    __base__: any;
     alternateCanvasColor: number;
     availableScreenRect: Rect;
     backgroundColor: number;
@@ -223,26 +224,26 @@ declare class Control {
     //-------------------------
     //-----event-handlers------
     //-------------------------
-    public onChildCreate: (child: Control) => void;
-    public onChildDestroy: (child: Control) => void;
-    public onClose: () => Boolean;
-    public onDestroy: () => void;
-    public onEnter: () => Boolean|void;
-    public onGetFocus: () => Boolean|void;
-    public onHide: () => void;
-    public onKeyPress: (keyCode: number, modifiers: number) => Boolean|void;
-    public onKeyRelease: (keyCode: number, modifiers: number) => Boolean|void;
-    public onLeave: () => Boolean|void;
-    public onLoseFocus: () => Boolean|void;
-    public onMouseDoubleClick: (x: number, y: number, buttonState: number, modifiers: number) => Boolean|void;
-    public onMouseMove: (x: number, y: number, buttonState: number, modifiers: number) => Boolean|void;
-    public onMousePress: (x: number, y: number, button: number, buttonState: number, modifiers: number) => Boolean|void;
-    public onMouseRelease: (x: number, y: number, button: number, buttonState: number, modifiers: number) => Boolean|void;
-    public onMouseWheel: (x: number, y: number, delta: number, buttonState: number, modifiers: number) => Boolean|void;
-    public onMove: (xNew: number, yNew: number, xOld: number, yOld: number) => Boolean|void;
-    public onPaint: (x0: number, y0: number, x1: number, y1: number) => Boolean|void;
-    public onResize: (wNew: number, hNew: number, wOld: number, hOld: number) => Boolean|void;
-    public onShow: () => void;
+    declare public onChildCreate: (child: Control) => void;
+    declare public onChildDestroy: (child: Control) => void;
+    declare public onClose: () => Boolean;
+    declare public onDestroy: () => void;
+    declare public onEnter: () => Boolean|void;
+    declare public onGetFocus: () => Boolean|void;
+    declare public onHide: () => void;
+    declare public onKeyPress: (keyCode: number, modifiers: number) => Boolean|void;
+    declare public onKeyRelease: (keyCode: number, modifiers: number) => Boolean|void;
+    declare public onLeave: () => Boolean|void;
+    declare public onLoseFocus: () => Boolean|void;
+    declare public onMouseDoubleClick: (x: number, y: number, buttonState: number, modifiers: number) => Boolean|void;
+    declare public onMouseMove: (x: number, y: number, buttonState: number, modifiers: number) => Boolean|void;
+    declare public onMousePress: (x: number, y: number, button: number, buttonState: number, modifiers: number) => Boolean|void;
+    declare public onMouseRelease: (x: number, y: number, button: number, buttonState: number, modifiers: number) => Boolean|void;
+    declare public onMouseWheel: (x: number, y: number, delta: number, buttonState: number, modifiers: number) => Boolean|void;
+    declare public onMove: (xNew: number, yNew: number, xOld: number, yOld: number) => Boolean|void;
+    declare public onPaint: (x0: number, y0: number, x1: number, y1: number) => Boolean|void;
+    declare public onResize: (wNew: number, hNew: number, wOld: number, hOld: number) => Boolean|void;
+    declare public onShow: () => void;
 
 
     //-------------------------
