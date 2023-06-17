@@ -38,10 +38,10 @@ declare class TabBox extends Control {
     public clearPageIcon(index: number): void;
 
     public disablePage(index: number): void;
-    public disablePage(index: number, disable: boolean /* true*/): void;
+    public disablePage(index: number, disable: boolean /* true */): void;
 
     public enablePage(index: number): void;
-    public enablePage(index: number, enable: boolean /* true*/): void;
+    public enablePage(index: number, enable: boolean /* true */): void;
 
     public insertPage(index: number, page: Control, label: string): void;
     public insertPage(index: number, page: Control, label: string, icon: Bitmap | string): void;

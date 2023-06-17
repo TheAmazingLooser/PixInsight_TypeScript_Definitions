@@ -49,12 +49,12 @@ declare class ExternalProcess {
     public kill(): void;
 
     public redirectStandardError(fileName: string): void;
-    public redirectStandardError(fileName: string, append: boolean /* false*/): void;
+    public redirectStandardError(fileName: string, append: boolean /* false */): void;
 
     public redirectStandardInput(fileName: string): void;
 
     public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */): void;
-    public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */, append: boolean /* false*/): void;
+    public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */, append: boolean /* false */): void;
 
     public redirectStandardOutput(process: ExternalProcess): void;
 
@@ -64,16 +64,16 @@ declare class ExternalProcess {
     public terminate(): void;
 
     public waitForDataAvailable(): boolean;
-    public waitForDataAvailable(ms: number /* 6000*/): boolean;
+    public waitForDataAvailable(ms: number /* 6000 */): boolean;
 
     public waitForDataWritten(): boolean;
-    public waitForDataWritten(ms: number /* 6000*/): boolean;
+    public waitForDataWritten(ms: number /* 6000 */): boolean;
 
     public waitForFinished(): boolean;
-    public waitForFinished(ms: number /* 6000*/): boolean;
+    public waitForFinished(ms: number /* 6000 */): boolean;
 
     public waitForStarted(): boolean;
-    public waitForStarted(ms: number /* 6000*/): boolean;
+    public waitForStarted(ms: number /* 6000 */): boolean;
 
 
 

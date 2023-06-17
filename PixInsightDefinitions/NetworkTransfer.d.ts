@@ -45,23 +45,23 @@ declare class NetworkTransfer {
     public setCustomHTTPHeaders(headers: Array<any>): void;
 
     public setProxyURL(url: string): void;
-    public setProxyURL(url: string, userName: string /* ""*/): void;
-    public setProxyURL(url: string, userName: string /* ""*/, userPassword: string /* ""*/): void;
+    public setProxyURL(url: string, userName: string /* "" */): void;
+    public setProxyURL(url: string, userName: string /* "" */, userPassword: string /* "" */): void;
 
     public setSSL(): void;
-    public setSSL(useSSL: boolean /* true*/): void;
-    public setSSL(useSSL: boolean /* true*/, forceSSL: boolean /* true*/): void;
-    public setSSL(useSSL: boolean /* true*/, forceSSL: boolean /* true*/, verifyPeer: boolean /* true*/): void;
-    public setSSL(useSSL: boolean /* true*/, forceSSL: boolean /* true*/, verifyPeer: boolean /* true*/, verifyHost: boolean /* true*/): void;
+    public setSSL(useSSL: boolean /* true */): void;
+    public setSSL(useSSL: boolean /* true */, forceSSL: boolean /* true */): void;
+    public setSSL(useSSL: boolean /* true */, forceSSL: boolean /* true */, verifyPeer: boolean /* true */): void;
+    public setSSL(useSSL: boolean /* true */, forceSSL: boolean /* true */, verifyPeer: boolean /* true */, verifyHost: boolean /* true */): void;
 
     public setURL(url: string): void;
-    public setURL(url: string, userName: string /* ""*/): void;
-    public setURL(url: string, userName: string /* ""*/, userPassword: string /* ""*/): void;
+    public setURL(url: string, userName: string /* "" */): void;
+    public setURL(url: string, userName: string /* "" */, userPassword: string /* "" */): void;
 
     public smtp(mailFrom: string, mailRecipients: Array<any>): boolean;
 
     public upload(): boolean;
-    public upload(uploadSize: number /* 0*/): boolean;
+    public upload(uploadSize: number /* 0 */): boolean;
 
 
 

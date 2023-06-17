@@ -6,40 +6,39 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class StarDetector {
+declare class Number {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    bkgDelta: number;
-    hotPixelFilterRadius: number;
-    invert: boolean;
-    mask: Image;
-    maxDistortion: number;
-    noiseReductionFilterRadius: number;
-    peakResponse: number;
-    sensitivity: number;
-    structureLayers: number;
-    upperLimit: number;
-    xyStretch: number;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor();
+    constructor(value?: any /* 0*/);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public getStructureMap(map: Image): void;
+    public toExponential(): string;
+    public toExponential(fractionalDigits: number): string;
 
-    public stars(image: Image): Array<any>;
+    public toFixed(): string;
+    public toFixed(digits: number): string;
 
-    public test(image: Image): void;
-    public test(image: Image, createStarMaskWindow: boolean /* false */): void;
+    public toLocaleString(): string;
+
+    public toPrecision(): string;
+    public toPrecision(precision: number): string;
+
+    public toSource(): string;
+
+    public toString(): string;
+
+    public valueOf(): number;
 
 
 
@@ -51,15 +50,27 @@ declare class StarDetector {
     //-------------------------
     //-----event-handlers------
     //-------------------------
-    public progressCallback: (count: number, total: number) => Boolean;
 
 
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: number;
+    static NaN: number;
+    static POSITIVE_INFINITY: number;
+    static NEGATIVE_INFINITY: number;
+    static MAX_VALUE: number;
+    static MIN_VALUE: number;
+    static length: number;
+    static name: string;
 
 
     //-------------------------
     //--------constants--------
     //-------------------------
+    MAX_VALUE;
+    MIN_VALUE;
+    NEGATIVE_INFINITY;
+    NaN;
+    POSITIVE_INFINITY;
 }

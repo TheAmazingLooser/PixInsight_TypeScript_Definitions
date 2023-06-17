@@ -82,7 +82,7 @@ declare class Bitmap {
     public load(filePath: string): void;
 
     public load(data: ByteArray): void;
-    public load(data: ByteArray, format: string /* "SVG"*/): void;
+    public load(data: ByteArray, format: string /* "SVG" */): void;
 
     public mirrored(): Bitmap;
 
@@ -136,7 +136,7 @@ declare class Bitmap {
     public setAlpha(x0: number, y0: number, x1: number, y1: number, alpha: number): void;
 
     public setAlpha(alpha: Bitmap): void;
-    public setAlpha(alpha: Bitmap, invert: boolean /* false*/): void;
+    public setAlpha(alpha: Bitmap, invert: boolean /* false */): void;
 
     public setPixel(p: Point, v: number): void;
 
@@ -176,9 +176,9 @@ declare class Bitmap {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static fromSVG(data: ByteArray, width: number, height: number, pixelRatio: number /* 1.0*/, flags: number /* 0*/): Bitmap;
+    public static fromSVG(data: ByteArray, width: number, height: number, pixelRatio: number /* 1.0 */, flags: number /* 0 */): Bitmap;
 
-    public static fromSVGFile(filePath: string, width: number, height: number, pixelRatio: number /* 1.0*/, flags: number /* 0*/): Bitmap;
+    public static fromSVGFile(filePath: string, width: number, height: number, pixelRatio: number /* 1.0 */, flags: number /* 0 */): Bitmap;
 
 
 

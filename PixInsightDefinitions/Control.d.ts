@@ -137,7 +137,7 @@ declare class Control {
     public scaledResource(filePath: string): string;
 
     public scaledStyleSheet(cssCode: string): string;
-    public scaledStyleSheet(cssCode: string, fontDPI: number /* 0*/): string;
+    public scaledStyleSheet(cssCode: string, fontDPI: number /* 0 */): string;
 
     public scroll(d: Point): void;
 

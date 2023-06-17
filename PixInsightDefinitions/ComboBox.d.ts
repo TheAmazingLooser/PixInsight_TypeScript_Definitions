@@ -45,9 +45,9 @@ declare class ComboBox extends Control {
     public clearItemText(index: number): void;
 
     public findItem(text: string): number;
-    public findItem(text: string, fromIdx: number /* 0*/): number;
-    public findItem(text: string, fromIdx: number /* 0*/, exactMatch: boolean /* false*/): number;
-    public findItem(text: string, fromIdx: number /* 0*/, exactMatch: boolean /* false*/, caseSensitive: boolean /* false*/): number;
+    public findItem(text: string, fromIdx: number /* 0 */): number;
+    public findItem(text: string, fromIdx: number /* 0 */, exactMatch: boolean /* false */): number;
+    public findItem(text: string, fromIdx: number /* 0 */, exactMatch: boolean /* false */, caseSensitive: boolean /* false */): number;
 
     public hideList(): void;
 

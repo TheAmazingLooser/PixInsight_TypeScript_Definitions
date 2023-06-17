@@ -55,7 +55,7 @@ declare class Security {
 
     public static haveEntitlement(entitlement: string): boolean;
 
-    public static loadSigningKeysFile(filePath: string, password: string | ByteArray, publicKeyOnly: boolean /* false*/): Object;
+    public static loadSigningKeysFile(filePath: string, password: string | ByteArray, publicKeyOnly: boolean /* false */): Object;
 
     public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string): void;
     public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail: string): void;

@@ -100,7 +100,7 @@ declare class ByteArray {
     public reverse(): void;
 
     public secureFill(): void;
-    public secureFill(value: number /* 0*/): void;
+    public secureFill(value: number /* 0 */): void;
 
     public sort(): void;
 

@@ -44,7 +44,7 @@ declare class Sizer {
     public addScaledSpacing(size: number): void;
 
     public addSpacing(size: number): void;
-    public addSpacing(size: number, autoScaling: boolean /* true*/): void;
+    public addSpacing(size: number, autoScaling: boolean /* true */): void;
 
     public addStretch(): void;
     public addStretch(stretchFactor: number): void;
@@ -69,7 +69,7 @@ declare class Sizer {
     public insertScaledSpacing(index: number, size: number): void;
 
     public insertSpacing(index: number, size: number): void;
-    public insertSpacing(index: number, size: number, autoScaling: boolean /* true*/): void;
+    public insertSpacing(index: number, size: number, autoScaling: boolean /* true */): void;
 
     public insertStretch(index: number): void;
     public insertStretch(index: number, stretchFactor: number): void;

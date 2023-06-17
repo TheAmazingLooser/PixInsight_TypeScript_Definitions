@@ -109,12 +109,12 @@ declare class VectorGraphics {
     public drawRect(x0: number, y0: number, x1: number, y1: number): void;
 
     public drawRoundedRect(r: Rect): void;
-    public drawRoundedRect(r: Rect, rx: number /* 25*/): void;
-    public drawRoundedRect(r: Rect, rx: number /* 25*/, ry: number /* 25*/): void;
+    public drawRoundedRect(r: Rect, rx: number /* 25 */): void;
+    public drawRoundedRect(r: Rect, rx: number /* 25 */, ry: number /* 25 */): void;
 
     public drawRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
-    public drawRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/): void;
-    public drawRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/, ry: number /* 25*/): void;
+    public drawRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */): void;
+    public drawRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */, ry: number /* 25 */): void;
 
     public drawScaledBitmap(r: Rect, bmp: Bitmap): void;
 
@@ -135,10 +135,10 @@ declare class VectorGraphics {
     public drawTextRect(x0: number, y0: number, x1: number, y1: number, text: string, align: number): void;
 
     public drawTiledBitmap(r: Rect, bmp: Bitmap): void;
-    public drawTiledBitmap(r: Rect, bmp: Bitmap, origin: Point /* 0*/): void;
+    public drawTiledBitmap(r: Rect, bmp: Bitmap, origin: Point /* 0 */): void;
 
     public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap): void;
-    public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap, ox: number /* 0*/, oy: number /* 0*/): void;
+    public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap, ox: number /* 0 */, oy: number /* 0 */): void;
 
     public end(): void;
 
@@ -174,12 +174,12 @@ declare class VectorGraphics {
     public eraseRect(x0: number, y0: number, x1: number, y1: number): void;
 
     public eraseRoundedRect(r: Rect): void;
-    public eraseRoundedRect(r: Rect, rx: number /* 25*/): void;
-    public eraseRoundedRect(r: Rect, rx: number /* 25*/, ry: number /* 25*/): void;
+    public eraseRoundedRect(r: Rect, rx: number /* 25 */): void;
+    public eraseRoundedRect(r: Rect, rx: number /* 25 */, ry: number /* 25 */): void;
 
     public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
-    public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/): void;
-    public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/, ry: number /* 25*/): void;
+    public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */): void;
+    public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */, ry: number /* 25 */): void;
 
     public fillChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
     public fillChord(center: Point, radius: number, startRadians: number, spanRadians: number, brush: Brush): void;
@@ -228,14 +228,14 @@ declare class VectorGraphics {
     public fillRect(x0: number, y0: number, x1: number, y1: number, brush: Brush): void;
 
     public fillRoundedRect(r: Rect): void;
-    public fillRoundedRect(r: Rect, rx: number /* 25*/): void;
-    public fillRoundedRect(r: Rect, rx: number /* 25*/, ry: number /* 25*/): void;
-    public fillRoundedRect(r: Rect, rx: number /* 25*/, ry: number /* 25*/, brush: Brush): void;
+    public fillRoundedRect(r: Rect, rx: number /* 25 */): void;
+    public fillRoundedRect(r: Rect, rx: number /* 25 */, ry: number /* 25 */): void;
+    public fillRoundedRect(r: Rect, rx: number /* 25 */, ry: number /* 25 */, brush: Brush): void;
 
     public fillRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
-    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/): void;
-    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/, ry: number /* 25*/): void;
-    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/, ry: number /* 25*/, brush: Brush): void;
+    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */): void;
+    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */, ry: number /* 25 */): void;
+    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */, ry: number /* 25 */, brush: Brush): void;
 
     public multiplyTransformation(T: Matrix): void;
 
@@ -300,14 +300,14 @@ declare class VectorGraphics {
     public strokeRect(x0: number, y0: number, x1: number, y1: number, pen: Pen): void;
 
     public strokeRoundedRect(r: Rect): void;
-    public strokeRoundedRect(r: Rect, rx: number /* 25*/): void;
-    public strokeRoundedRect(r: Rect, rx: number /* 25*/, ry: number /* 25*/): void;
-    public strokeRoundedRect(r: Rect, rx: number /* 25*/, ry: number /* 25*/, pen: Pen): void;
+    public strokeRoundedRect(r: Rect, rx: number /* 25 */): void;
+    public strokeRoundedRect(r: Rect, rx: number /* 25 */, ry: number /* 25 */): void;
+    public strokeRoundedRect(r: Rect, rx: number /* 25 */, ry: number /* 25 */, pen: Pen): void;
 
     public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
-    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/): void;
-    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/, ry: number /* 25*/): void;
-    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25*/, ry: number /* 25*/, pen: Pen): void;
+    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */): void;
+    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */, ry: number /* 25 */): void;
+    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx: number /* 25 */, ry: number /* 25 */, pen: Pen): void;
 
     public textRect(r: Rect, text: string): Rect;
     public textRect(r: Rect, text: string, align: number): Rect;

@@ -6,40 +6,28 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class StarDetector {
+declare class JSON {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    bkgDelta: number;
-    hotPixelFilterRadius: number;
-    invert: boolean;
-    mask: Image;
-    maxDistortion: number;
-    noiseReductionFilterRadius: number;
-    peakResponse: number;
-    sensitivity: number;
-    structureLayers: number;
-    upperLimit: number;
-    xyStretch: number;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor();
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public getStructureMap(map: Image): void;
+    public parse(text: string): Object;
+    public parse(text: string, reviver: Function): Object;
 
-    public stars(image: Image): Array<any>;
-
-    public test(image: Image): void;
-    public test(image: Image, createStarMaskWindow: boolean /* false */): void;
+    public stringify(value: Object): string;
+    public stringify(value: Object, replacer: Function | Array<any>): string;
+    public stringify(value: Object, replacer: Function | Array<any>, space: string): string;
 
 
 
@@ -51,7 +39,6 @@ declare class StarDetector {
     //-------------------------
     //-----event-handlers------
     //-------------------------
-    public progressCallback: (count: number, total: number) => Boolean;
 
 
     //-------------------------

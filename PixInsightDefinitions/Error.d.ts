@@ -6,40 +6,26 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class StarDetector {
+declare class Error {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    bkgDelta: number;
-    hotPixelFilterRadius: number;
-    invert: boolean;
-    mask: Image;
-    maxDistortion: number;
-    noiseReductionFilterRadius: number;
-    peakResponse: number;
-    sensitivity: number;
-    structureLayers: number;
-    upperLimit: number;
-    xyStretch: number;
+    message: string;
+    name: string;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor();
+    constructor(message?: string, fileName?: string, lineNumber?: number);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public getStructureMap(map: Image): void;
-
-    public stars(image: Image): Array<any>;
-
-    public test(image: Image): void;
-    public test(image: Image, createStarMaskWindow: boolean /* false */): void;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
 
 
@@ -51,12 +37,14 @@ declare class StarDetector {
     //-------------------------
     //-----event-handlers------
     //-------------------------
-    public progressCallback: (count: number, total: number) => Boolean;
 
 
     //-------------------------
     //----static Properties----
     //-------------------------
+    static prototype: Error;
+    static length: number;
+    static name: string;
 
 
     //-------------------------

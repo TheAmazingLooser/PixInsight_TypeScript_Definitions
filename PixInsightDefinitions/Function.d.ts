@@ -6,46 +6,47 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class EphemerisHandle {
+declare class Function {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    B_V: number | void;
-    D: number | void;
-    G: number | void;
-    H: number | void;
-    endTime: Date;
-    hasDerivative: boolean;
-    objectId: string;
-    objectName: string;
-    originId: string;
-    startTime: Date;
+    arguments: Array<any>;
+    /*"arguments.callee": Function*/
+    /*"arguments.length": number*/
+    caller: Function;
+    length: number;
+    name: string;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(parent: EphemerisFile, object: string, origin?: string);
+    constructor(arg1?: string, arg2?: string, arg3?: string, arg4?: string, arg5?: string, arg6?: string, arg7?: string, arg8?: string, arg9?: string, arg10?: string);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public stateVector(Date: Date): Vector;
+    public apply(thisObject: any): void;
+    public apply(thisObject: any, arguments: Array<any>): void;
 
-    public stateVector(isoTime: string): Vector;
+    public bind(thisObject: any): Function;
+    public bind(...arg: any[]): Function;
 
-    public stateVector(jd1: number): Vector;
-    public stateVector(jd1: number, jd2: number /* 0 */): Vector;
+    public call(thisObject: any): void;
+    public call(...arg: any[]): void;
 
-    public stateVectors(Date: Date): Array<any>;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
-    public stateVectors(isoTime: string): Array<any>;
+    public toLocaleString(): string;
 
-    public stateVectors(jd1: number): Array<any>;
-    public stateVectors(jd1: number, jd2: number /* 0 */): Array<any>;
+    public toSource(): string;
+
+    public toString(): string;
+
+    public valueOf(): string;
 
 
 
@@ -62,7 +63,6 @@ declare class EphemerisHandle {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static prototype: EphemerisHandle;
     static length: number;
     static name: string;
 

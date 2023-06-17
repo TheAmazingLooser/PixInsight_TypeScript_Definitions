@@ -94,7 +94,7 @@ declare class ImageWindow {
     public clearAstrometricSolution(): void;
 
     public close(): number;
-    public close(multiple: boolean /* false*/): number;
+    public close(multiple: boolean /* false */): number;
 
     public commitPendingUpdates(): void;
 
@@ -151,14 +151,14 @@ declare class ImageWindow {
     public previewRect(preview: View): Rect;
 
     public purge(): void;
-    public purge(swapFiles: boolean /* true*/): void;
-    public purge(swapFiles: boolean /* true*/, properties: any /* true*/): void;
-    public purge(swapFiles: boolean /* true*/, properties: any /* true*/, histograms: boolean /* true*/): void;
-    public purge(swapFiles: boolean /* true*/, properties: any /* true*/, histograms: boolean /* true*/, statistics: boolean /* true*/): void;
-    public purge(swapFiles: boolean /* true*/, properties: any /* true*/, histograms: boolean /* true*/, statistics: boolean /* true*/, notify: boolean /* true*/): void;
+    public purge(swapFiles: boolean /* true */): void;
+    public purge(swapFiles: boolean /* true */, properties: any /* true */): void;
+    public purge(swapFiles: boolean /* true */, properties: any /* true */, histograms: boolean /* true */): void;
+    public purge(swapFiles: boolean /* true */, properties: any /* true */, histograms: boolean /* true */, statistics: boolean /* true */): void;
+    public purge(swapFiles: boolean /* true */, properties: any /* true */, histograms: boolean /* true */, statistics: boolean /* true */, notify: boolean /* true */): void;
 
     public redo(): void;
-    public redo(n: number /* 1*/): void;
+    public redo(n: number /* 1 */): void;
 
     public redoAll(): void;
 
@@ -171,22 +171,22 @@ declare class ImageWindow {
     public removeMaskReferences(): void;
 
     public save(): boolean;
-    public save(allowMessages: boolean /* true*/): boolean;
-    public save(allowMessages: boolean /* true*/, strict: boolean /* true*/): boolean;
+    public save(allowMessages: boolean /* true */): boolean;
+    public save(allowMessages: boolean /* true */, strict: boolean /* true */): boolean;
 
     public saveAs(filePath: string): boolean;
-    public saveAs(filePath: string, queryOptions: boolean /* true*/): boolean;
-    public saveAs(filePath: string, queryOptions: boolean /* true*/, allowMessages: boolean /* true*/): boolean;
-    public saveAs(filePath: string, queryOptions: boolean /* true*/, allowMessages: boolean /* true*/, strict: boolean /* true*/): boolean;
-    public saveAs(filePath: string, queryOptions: boolean /* true*/, allowMessages: boolean /* true*/, strict: boolean /* true*/, verifyOverwrite: boolean /* true*/): boolean;
-    public saveAs(filePath: string, queryOptions: boolean /* true*/, allowMessages: boolean /* true*/, strict: boolean /* true*/, verifyOverwrite: boolean /* true*/, formatHints: string /* ''*/): boolean;
+    public saveAs(filePath: string, queryOptions: boolean /* true */): boolean;
+    public saveAs(filePath: string, queryOptions: boolean /* true */, allowMessages: boolean /* true */): boolean;
+    public saveAs(filePath: string, queryOptions: boolean /* true */, allowMessages: boolean /* true */, strict: boolean /* true */): boolean;
+    public saveAs(filePath: string, queryOptions: boolean /* true */, allowMessages: boolean /* true */, strict: boolean /* true */, verifyOverwrite: boolean /* true */): boolean;
+    public saveAs(filePath: string, queryOptions: boolean /* true */, allowMessages: boolean /* true */, strict: boolean /* true */, verifyOverwrite: boolean /* true */, formatHints: string /* '' */): boolean;
 
     public sendToBack(): void;
 
     public setAstrometricSolution(keywords: Array<any>, controlPoints: ByteArray): void;
 
     public setMask(mask: ImageWindow): void;
-    public setMask(mask: ImageWindow, invert: boolean /* false*/): void;
+    public setMask(mask: ImageWindow, invert: boolean /* false */): void;
 
     public setResolution(res: number): void;
 
@@ -204,7 +204,7 @@ declare class ImageWindow {
     public show(): void;
 
     public undo(): void;
-    public undo(n: number /* 1*/): void;
+    public undo(n: number /* 1 */): void;
 
     public undoAll(): void;
 
@@ -233,12 +233,12 @@ declare class ImageWindow {
     public zoomOut(): void;
 
     public zoomToFit(): void;
-    public zoomToFit(allowZoomIn: boolean /* false*/): void;
-    public zoomToFit(allowZoomIn: boolean /* false*/, animate: boolean /* true*/): void;
+    public zoomToFit(allowZoomIn: boolean /* false */): void;
+    public zoomToFit(allowZoomIn: boolean /* false */, animate: boolean /* true */): void;
 
     public zoomToOptimalFit(): void;
-    public zoomToOptimalFit(allowZoomIn: boolean /* false*/): void;
-    public zoomToOptimalFit(allowZoomIn: boolean /* false*/, animate: boolean /* true*/): void;
+    public zoomToOptimalFit(allowZoomIn: boolean /* false */): void;
+    public zoomToOptimalFit(allowZoomIn: boolean /* false */, animate: boolean /* true */): void;
 
 
 
@@ -246,9 +246,9 @@ declare class ImageWindow {
     //----static Functions-----
     //-------------------------
     public static open(url: string): Array<any>;
-    public static open(url: string, id: string /* ''*/): Array<any>;
-    public static open(url: string, id: string /* ''*/, formatHints: string /* ''*/): Array<any>;
-    public static open(url: string, id: string /* ''*/, formatHints: string /* ''*/, asCopy: boolean /* false*/): Array<any>;
+    public static open(url: string, id: string /* '' */): Array<any>;
+    public static open(url: string, id: string /* '' */, formatHints: string /* '' */): Array<any>;
+    public static open(url: string, id: string /* '' */, formatHints: string /* '' */, asCopy: boolean /* false */): Array<any>;
 
     public static windowByFilePath(path: string): ImageWindow;
 

@@ -45,7 +45,7 @@ declare class FileFormatInstance {
 
     public create(filePath: string): boolean;
     public create(filePath: string, hints: string): boolean;
-    public create(filePath: string, hints: string, numberOfImages: number /* 1*/): boolean;
+    public create(filePath: string, hints: string, numberOfImages: number /* 1 */): boolean;
 
     public createImage(d: ImageDescription): boolean;
 
@@ -53,7 +53,7 @@ declare class FileFormatInstance {
     public open(filePath: string, hints: string): Array<any>;
 
     public read(startRow: number, rowCount: number): Matrix;
-    public read(startRow: number, rowCount: number, channel: number /* 0*/): Matrix;
+    public read(startRow: number, rowCount: number, channel: number /* 0 */): Matrix;
 
     public readImage(Image: Image): boolean;
 
@@ -66,7 +66,7 @@ declare class FileFormatInstance {
     public setOptions(d: ImageDescription): boolean;
 
     public write(buffer: Matrix, startRow: number): boolean;
-    public write(buffer: Matrix, startRow: number, channel: number /* 0*/): boolean;
+    public write(buffer: Matrix, startRow: number, channel: number /* 0 */): boolean;
 
     public writeImage(Image: Image): boolean;
 

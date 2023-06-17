@@ -40,12 +40,12 @@ declare class GridInterpolation {
     public evaluate(points: Array<any>): Array<any>;
 
     public initialize(r: Rect, S: SurfaceSpline): void;
-    public initialize(r: Rect, S: SurfaceSpline, delta: number /* 8*/): void;
-    public initialize(r: Rect, S: SurfaceSpline, delta: number /* 8*/, verbose: boolean /* false*/): void;
+    public initialize(r: Rect, S: SurfaceSpline, delta: number /* 8 */): void;
+    public initialize(r: Rect, S: SurfaceSpline, delta: number /* 8 */, verbose: boolean /* false */): void;
 
     public initialize(r: Rect, S: ShepardInterpolation): void;
-    public initialize(r: Rect, S: ShepardInterpolation, delta: number /* 8*/): void;
-    public initialize(r: Rect, S: ShepardInterpolation, delta: number /* 8*/, verbose: boolean /* false*/): void;
+    public initialize(r: Rect, S: ShepardInterpolation, delta: number /* 8 */): void;
+    public initialize(r: Rect, S: ShepardInterpolation, delta: number /* 8 */, verbose: boolean /* false */): void;
 
 
 

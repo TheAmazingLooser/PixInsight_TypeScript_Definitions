@@ -2,7 +2,7 @@
     "compilerOptions": {
       "module": "none",
       "lib": [
-        "es5"
+        
       ],
       "outDir": "dist"
     },
