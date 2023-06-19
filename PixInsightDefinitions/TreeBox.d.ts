@@ -57,7 +57,7 @@ declare class TreeBox extends ScrollBox {
     public headerText(col: number): string;
 
     public hideColumn(col: number): void;
-    public hideColumn(col: number, hide: boolean /* true */): void;
+    public hideColumn(col: number, hide?: boolean /* true */): void;
 
     public insert(idx: number, node: TreeBoxNode): void;
 
@@ -88,11 +88,10 @@ declare class TreeBox extends ScrollBox {
     public setNodeIntoView(TreeBoxNode: TreeBoxNode): void;
 
     public showColumn(col: number): void;
-    public showColumn(col: number, show: boolean /* true */): void;
+    public showColumn(col: number, show?: boolean /* true */): void;
 
     public sort(): void;
-    public sort(col: number /* 0 */): void;
-    public sort(col: number /* 0 */, ascending: boolean /* true */): void;
+    public sort(col?: number /* 0 */, ascending?: boolean /* true */): void;
 
 
 

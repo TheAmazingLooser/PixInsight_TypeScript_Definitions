@@ -32,25 +32,25 @@ declare class Array<T> {
     public concat(...item: any[]): Array<any>;
 
     public every(callback: Function): boolean;
-    public every(callback: Function, thisObject: any): boolean;
+    public every(callback: Function, thisObject?: any): boolean;
 
     public filter(callback: Function): Array<any>;
-    public filter(callback: Function, thisObject: any): Array<any>;
+    public filter(callback: Function, thisObject?: any): Array<any>;
 
     public forEach(callback: Function): void;
-    public forEach(callback: Function, thisObject: any): void;
+    public forEach(callback: Function, thisObject?: any): void;
 
     public indexOf(searchItem: any): number;
-    public indexOf(searchItem: any, fromIndex: number): number;
+    public indexOf(searchItem: any, fromIndex?: number): number;
 
     public join(): string;
-    public join(separator: string): string;
+    public join(separator?: string): string;
 
     public lastIndexOf(searchItem: any): number;
-    public lastIndexOf(searchItem: any, fromIndex: number): number;
+    public lastIndexOf(searchItem: any, fromIndex?: number): number;
 
     public map(callback: Function): Array<any>;
-    public map(callback: Function, thisObject: any): Array<any>;
+    public map(callback: Function, thisObject?: any): Array<any>;
 
     public pop(): any /* item */;
 
@@ -60,10 +60,10 @@ declare class Array<T> {
     public push(...item: any[]): any /* item */;
 
     public reduce(callback: Function): Object;
-    public reduce(callback: Function, initialValue: Object): Object;
+    public reduce(callback: Function, initialValue?: Object): Object;
 
     public reduceRight(callback: Function): Object;
-    public reduceRight(callback: Function, initialValue: Object): Object;
+    public reduceRight(callback: Function, initialValue?: Object): Object;
 
     public reverse(): void;
 
@@ -72,10 +72,10 @@ declare class Array<T> {
     public slice(start: number, end: number): Array<any>;
 
     public some(callback: Function): boolean;
-    public some(callback: Function, thisObject: any): boolean;
+    public some(callback: Function, thisObject?: any): boolean;
 
     public sort(): void;
-    public sort(compare: Function): void;
+    public sort(compare?: Function): void;
 
     public splice(start: number, deleteCount: number): Array<any>;
     public splice(...item: any[]): Array<any>;

@@ -34,14 +34,14 @@ declare class Parameters {
     public static getBoolean(id: string): boolean;
 
     public static getInteger(id: string): number;
-    public static getInteger(id: string, radix: number /* 0 */): number;
+    public static getInteger(id: string, radix?: number /* 0 */): number;
 
     public static getReal(id: string): number;
 
     public static getString(id: string): string;
 
     public static getUInt(id: string): number;
-    public static getUInt(id: string, radix: number /* 0 */): number;
+    public static getUInt(id: string, radix?: number /* 0 */): number;
 
     public static has(id: string): boolean;
 

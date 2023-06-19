@@ -28,13 +28,13 @@ declare class Int16Array extends ArrayBufferView {
     //--------Functions--------
     //-------------------------
     public set(array: any /* TypedArray */): void;
-    public set(array: any /* TypedArray */, offset: number /* 0 */): void;
+    public set(array: any /* TypedArray */, offset?: number /* 0 */): void;
 
     public set(array: Array<any>): void;
-    public set(array: Array<any>, offset: number /* 0 */): void;
+    public set(array: Array<any>, offset?: number /* 0 */): void;
 
     public subarray(begin: number): Int16Array;
-    public subarray(begin: number, end: number): Int16Array;
+    public subarray(begin: number, end?: number): Int16Array;
 
 
 

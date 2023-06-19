@@ -27,11 +27,10 @@ declare class BRQuadTree {
     //--------Functions--------
     //-------------------------
     public avgDist(rect: Rect, dx: number, dy: number): number;
-    public avgDist(rect: Rect, dx: number, dy: number, excludeRect: Rect): number;
+    public avgDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
 
     public build(objects: any): void;
-    public build(objects: any, bucketCapacity: any): void;
-    public build(objects: any, bucketCapacity: any, Rect: Rect): void;
+    public build(objects: any, bucketCapacity?: any, Rect?: Rect): void;
 
     public clear(): void;
 
@@ -46,7 +45,7 @@ declare class BRQuadTree {
     public leafNodeAt(point: Point): QuadTreeNode;
 
     public minDist(rect: Rect, dx: number, dy: number): number;
-    public minDist(rect: Rect, dx: number, dy: number, excludeRect: Rect): number;
+    public minDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
 
     public nodeAt(point: Point): QuadTreeNode;
 
@@ -55,8 +54,7 @@ declare class BRQuadTree {
     public numberOfNodes(): number;
 
     public regenerate(): void;
-    public regenerate(bucketCapacity: any): void;
-    public regenerate(bucketCapacity: any, Rect: Rect): void;
+    public regenerate(bucketCapacity?: any, Rect?: Rect): void;
 
     public remove(obj: Object): void;
 
@@ -67,7 +65,7 @@ declare class BRQuadTree {
     public search(rect: Rect): Array<any>;
 
     public searchWithCallback(rect: Rect, callback: Function): void;
-    public searchWithCallback(rect: Rect, callback: Function, data: Object): void;
+    public searchWithCallback(rect: Rect, callback: Function, data?: Object): void;
 
     public traverse(callback: Function): void;
 

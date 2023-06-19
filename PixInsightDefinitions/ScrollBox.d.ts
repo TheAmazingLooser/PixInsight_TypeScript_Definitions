@@ -45,7 +45,7 @@ declare class ScrollBox extends Frame {
     //--------Functions--------
     //-------------------------
     public hideScrollBars(): void;
-    public hideScrollBars(hide: boolean /* true */): void;
+    public hideScrollBars(hide?: boolean /* true */): void;
 
     public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
 
@@ -58,7 +58,7 @@ declare class ScrollBox extends Frame {
     public setVerticalScrollRange(min: number, max: number): void;
 
     public showScrollBars(): void;
-    public showScrollBars(show: boolean /* true */): void;
+    public showScrollBars(show?: boolean /* true */): void;
 
     public showScrollBars(showHorz: boolean, showVert: boolean): void;
 

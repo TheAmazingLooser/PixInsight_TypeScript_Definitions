@@ -137,7 +137,7 @@ declare class Control {
     public scaledResource(filePath: string): string;
 
     public scaledStyleSheet(cssCode: string): string;
-    public scaledStyleSheet(cssCode: string, fontDPI: number /* 0 */): string;
+    public scaledStyleSheet(cssCode: string, fontDPI?: number /* 0 */): string;
 
     public scroll(d: Point): void;
 
@@ -152,31 +152,31 @@ declare class Control {
     public setCursorToParent(): void;
 
     public setFixedHeight(): void;
-    public setFixedHeight(h: number): void;
+    public setFixedHeight(h?: number): void;
 
     public setFixedSize(): void;
-    public setFixedSize(w: number, h: number): void;
+    public setFixedSize(w?: number, h: number): void;
 
     public setFixedWidth(): void;
-    public setFixedWidth(w: number): void;
+    public setFixedWidth(w?: number): void;
 
     public setMaxHeight(): void;
-    public setMaxHeight(h: number): void;
+    public setMaxHeight(h?: number): void;
 
     public setMaxSize(): void;
-    public setMaxSize(w: number, h: number): void;
+    public setMaxSize(w?: number, h: number): void;
 
     public setMaxWidth(): void;
-    public setMaxWidth(w: number): void;
+    public setMaxWidth(w?: number): void;
 
     public setMinHeight(): void;
-    public setMinHeight(h: number): void;
+    public setMinHeight(h?: number): void;
 
     public setMinSize(): void;
-    public setMinSize(w: number, h: number): void;
+    public setMinSize(w?: number, h: number): void;
 
     public setMinWidth(): void;
-    public setMinWidth(w: number): void;
+    public setMinWidth(w?: number): void;
 
     public setScaledFixedHeight(h: number): void;
 

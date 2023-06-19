@@ -58,16 +58,10 @@ declare class Security {
     public static loadSigningKeysFile(filePath: string, password: string | ByteArray, publicKeyOnly: boolean /* false */): Object;
 
     public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string): void;
-    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail: string): void;
-    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail: string, url: string): void;
-    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail: string, url: string, name: string): void;
-    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail: string, url: string, name: string, info: string): void;
+    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail?: string, url?: string, name?: string, info?: string): void;
 
     public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string): void;
-    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail: string): void;
-    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail: string, url: string): void;
-    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail: string, url: string, name: string): void;
-    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail: string, url: string, name: string, info: string): void;
+    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail?: string, url?: string, name?: string, info?: string): void;
 
     public static validPassword(password: string | ByteArray): boolean;
 

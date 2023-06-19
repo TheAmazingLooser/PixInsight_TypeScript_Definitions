@@ -41,7 +41,7 @@ declare class Bitmap {
     public and(r: Rect, v: number): void;
 
     public and(p: Point, bmp: Bitmap): void;
-    public and(p: Point, bmp: Bitmap, r: Rect): void;
+    public and(p: Point, bmp: Bitmap, r?: Rect): void;
 
     public and(x0: number, y0: number, x1: number, y1: number, v: number): void;
 
@@ -54,10 +54,10 @@ declare class Bitmap {
     public copy(bmp: Bitmap): void;
 
     public copy(p: Point, bmp: Bitmap): void;
-    public copy(p: Point, bmp: Bitmap, r: Rect): void;
+    public copy(p: Point, bmp: Bitmap, r?: Rect): void;
 
     public copy(x: number, y: number, bmp: Bitmap): void;
-    public copy(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+    public copy(x: number, y: number, bmp: Bitmap, x0?: number, y0: number, x1: number, y1: number): void;
 
     public fill(v: number): void;
 
@@ -82,7 +82,7 @@ declare class Bitmap {
     public load(filePath: string): void;
 
     public load(data: ByteArray): void;
-    public load(data: ByteArray, format: string /* "SVG" */): void;
+    public load(data: ByteArray, format?: string /* "SVG" */): void;
 
     public mirrored(): Bitmap;
 
@@ -97,7 +97,7 @@ declare class Bitmap {
     public or(r: Rect, v: number): void;
 
     public or(p: Point, bmp: Bitmap): void;
-    public or(p: Point, bmp: Bitmap, r: Rect): void;
+    public or(p: Point, bmp: Bitmap, r?: Rect): void;
 
     public or(x0: number, y0: number, x1: number, y1: number, v: number): void;
 
@@ -114,20 +114,20 @@ declare class Bitmap {
     public replaceColor(x0: number, y0: number, x1: number, y1: number, replaceThis: number, replaceWith: number): void;
 
     public rotated(angleRadians: number): Bitmap;
-    public rotated(angleRadians: number, mode: any): Bitmap;
+    public rotated(angleRadians: number, mode?: any): Bitmap;
 
     public save(filePath: string): void;
-    public save(filePath: string, quality: number): void;
+    public save(filePath: string, quality?: number): void;
 
     public scaled(scale: number): Bitmap;
 
     public scaled(sx: number, sy: number): Bitmap;
-    public scaled(sx: number, sy: number, mode: any): Bitmap;
+    public scaled(sx: number, sy: number, mode?: any): Bitmap;
 
     public scaledTo(size: number): Bitmap;
 
     public scaledTo(width: number, height: number): Bitmap;
-    public scaledTo(width: number, height: number, mode: any): Bitmap;
+    public scaledTo(width: number, height: number, mode?: any): Bitmap;
 
     public setAlpha(alpha: number): void;
 
@@ -136,7 +136,7 @@ declare class Bitmap {
     public setAlpha(x0: number, y0: number, x1: number, y1: number, alpha: number): void;
 
     public setAlpha(alpha: Bitmap): void;
-    public setAlpha(alpha: Bitmap, invert: boolean /* false */): void;
+    public setAlpha(alpha: Bitmap, invert?: boolean /* false */): void;
 
     public setPixel(p: Point, v: number): void;
 
@@ -159,7 +159,7 @@ declare class Bitmap {
     public xor(r: Rect, v: number): void;
 
     public xor(p: Point, bmp: Bitmap): void;
-    public xor(p: Point, bmp: Bitmap, r: Rect): void;
+    public xor(p: Point, bmp: Bitmap, r?: Rect): void;
 
     public xor(x0: number, y0: number, x1: number, y1: number, v: number): void;
 

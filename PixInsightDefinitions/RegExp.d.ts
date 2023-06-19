@@ -30,12 +30,12 @@ declare class RegExp {
     //--------Functions--------
     //-------------------------
     public exec(): Array<any>;
-    public exec(str: string): Array<any>;
+    public exec(str?: string): Array<any>;
 
     public propertyIsEnumerable(propertyName: string): boolean;
 
     public test(): boolean;
-    public test(str: string): boolean;
+    public test(str?: string): boolean;
 
     public toLocaleString(): string;
 

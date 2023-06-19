@@ -35,19 +35,18 @@ declare class Sizer {
     //--------Functions--------
     //-------------------------
     public add(Control: Control): void;
-    public add(Control: Control, stretchFactor: number): void;
-    public add(Control: Control, stretchFactor: number, alignment: number): void;
+    public add(Control: Control, stretchFactor?: number, alignment?: number): void;
 
     public add(Sizer: Sizer): void;
-    public add(Sizer: Sizer, stretchFactor: number): void;
+    public add(Sizer: Sizer, stretchFactor?: number): void;
 
     public addScaledSpacing(size: number): void;
 
     public addSpacing(size: number): void;
-    public addSpacing(size: number, autoScaling: boolean /* true */): void;
+    public addSpacing(size: number, autoScaling?: boolean /* true */): void;
 
     public addStretch(): void;
-    public addStretch(stretchFactor: number): void;
+    public addStretch(stretchFactor?: number): void;
 
     public addUnscaledSpacing(size: number): void;
 
@@ -60,19 +59,18 @@ declare class Sizer {
     public indexOf(Sizer: Sizer): number;
 
     public insert(index: number, Control: Control): void;
-    public insert(index: number, Control: Control, stretchFactor: number): void;
-    public insert(index: number, Control: Control, stretchFactor: number, alignment: number): void;
+    public insert(index: number, Control: Control, stretchFactor?: number, alignment?: number): void;
 
     public insert(index: number, Sizer: Sizer): void;
-    public insert(index: number, Sizer: Sizer, stretchFactor: number): void;
+    public insert(index: number, Sizer: Sizer, stretchFactor?: number): void;
 
     public insertScaledSpacing(index: number, size: number): void;
 
     public insertSpacing(index: number, size: number): void;
-    public insertSpacing(index: number, size: number, autoScaling: boolean /* true */): void;
+    public insertSpacing(index: number, size: number, autoScaling?: boolean /* true */): void;
 
     public insertStretch(index: number): void;
-    public insertStretch(index: number, stretchFactor: number): void;
+    public insertStretch(index: number, stretchFactor?: number): void;
 
     public insertUnscaledSpacing(index: number, size: number): void;
 

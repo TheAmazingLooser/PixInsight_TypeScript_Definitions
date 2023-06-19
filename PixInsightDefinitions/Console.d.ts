@@ -28,7 +28,7 @@ declare class Console {
     //----static Functions-----
     //-------------------------
     public static beginLog(): void;
-    public static beginLog(filePath: string): void;
+    public static beginLog(filePath?: string): void;
 
     public static clear(): void;
 
@@ -43,7 +43,7 @@ declare class Console {
     public static flush(): void;
 
     public static hide(): void;
-    public static hide(animate: boolean /* true */): void;
+    public static hide(animate?: boolean /* true */): void;
 
     public static logText(): ByteArray;
 
@@ -58,7 +58,7 @@ declare class Console {
     public static readString(): string;
 
     public static show(): void;
-    public static show(animate: boolean /* true */): void;
+    public static show(animate?: boolean /* true */): void;
 
     public static warning(): number;
     public static warning(...value: any[]): number;

@@ -44,10 +44,10 @@ declare class ProcessInstance {
     public executeGlobal(): boolean;
 
     public executeOn(view: View): boolean;
-    public executeOn(view: View, swapFile: boolean /* true */): boolean;
+    public executeOn(view: View, swapFile?: boolean /* true */): boolean;
 
     public executeOn(image: Image): boolean;
-    public executeOn(image: Image, hints: string /* "" */): boolean;
+    public executeOn(image: Image, hints?: string /* "" */): boolean;
 
     public executionTime(): number;
 
@@ -72,10 +72,7 @@ declare class ProcessInstance {
     public startJD(): number;
 
     public toSource(): string;
-    public toSource(language: string /* "JavaScript" */): string;
-    public toSource(language: string /* "JavaScript" */, varId: string /* "" */): string;
-    public toSource(language: string /* "JavaScript" */, varId: string /* "" */, indent: number /* 0 */): string;
-    public toSource(language: string /* "JavaScript" */, varId: string /* "" */, indent: number /* 0 */, flags: number /* 0 */): string;
+    public toSource(language?: string /* "JavaScript" */, varId?: string /* "" */, indent?: number /* 0 */, flags?: number /* 0 */): string;
 
     public validate(): boolean;
 

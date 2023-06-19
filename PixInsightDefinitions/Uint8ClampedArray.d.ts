@@ -28,13 +28,13 @@ declare class Uint8ClampedArray extends ArrayBufferView {
     //--------Functions--------
     //-------------------------
     public set(array: any /* TypedArray */): void;
-    public set(array: any /* TypedArray */, offset: number /* 0 */): void;
+    public set(array: any /* TypedArray */, offset?: number /* 0 */): void;
 
     public set(array: Array<any>): void;
-    public set(array: Array<any>, offset: number /* 0 */): void;
+    public set(array: Array<any>, offset?: number /* 0 */): void;
 
     public subarray(begin: number): Uint8ClampedArray;
-    public subarray(begin: number, end: number): Uint8ClampedArray;
+    public subarray(begin: number, end?: number): Uint8ClampedArray;
 
 
 

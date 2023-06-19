@@ -42,7 +42,7 @@ declare class SurfaceSpline {
     public evaluate(points: Array<any>): Vector;
 
     public initialize(x: Vector, y: Vector, z: Vector): void;
-    public initialize(x: Vector, y: Vector, z: Vector, w: Vector): void;
+    public initialize(x: Vector, y: Vector, z: Vector, w?: Vector): void;
 
 
 

@@ -68,12 +68,12 @@ declare class TypeDescription {
     public static defineMethod(formalDescription: string): void;
 
     public static defineProperty(formalDescription: string): void;
-    public static defineProperty(formalDescription: string, readOnly: boolean /* false */): void;
+    public static defineProperty(formalDescription: string, readOnly?: boolean /* false */): void;
 
     public static defineStaticMethod(formalDescription: string): void;
 
     public static defineStaticProperty(formalDescription: string): void;
-    public static defineStaticProperty(formalDescription: string, readOnly: boolean /* false */): void;
+    public static defineStaticProperty(formalDescription: string, readOnly?: boolean /* false */): void;
 
     public static endObjectDefinition(): void;
 

@@ -56,7 +56,7 @@ declare class FileInfo {
     public clear(): void;
 
     public refresh(): void;
-    public refresh(filePath: string): void;
+    public refresh(filePath?: string): void;
 
 
 

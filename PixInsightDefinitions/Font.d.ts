@@ -48,12 +48,10 @@ declare class Font {
     public assign(fnt: Font): void;
 
     public assign(stdFamiliy: number): void;
-    public assign(stdFamiliy: number, size: number): void;
-    public assign(stdFamiliy: number, size: number, unit: string /* "pt" */): void;
+    public assign(stdFamiliy: number, size?: number, unit?: string /* "pt" */): void;
 
     public assign(family: string): void;
-    public assign(family: string, size: number): void;
-    public assign(family: string, size: number, unit: string /* "pt" */): void;
+    public assign(family: string, size?: number, unit?: string /* "pt" */): void;
 
     public boundingRect(s: string): Rect;
 
@@ -69,7 +67,7 @@ declare class Font {
     //----static Functions-----
     //-------------------------
     public static families(): Array<any>;
-    public static families(writingSystem: number): Array<any>;
+    public static families(writingSystem?: number): Array<any>;
 
     public static isFixedPitchFont(family: string): boolean;
 

@@ -26,7 +26,7 @@ declare class ArrayBuffer {
     //--------Functions--------
     //-------------------------
     public slice(begin: number): ArrayBuffer;
-    public slice(begin: number, end: number): ArrayBuffer;
+    public slice(begin: number, end?: number): ArrayBuffer;
 
 
 

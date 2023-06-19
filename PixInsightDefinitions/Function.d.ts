@@ -30,7 +30,7 @@ declare class Function {
     //--------Functions--------
     //-------------------------
     public apply(thisObject: any): void;
-    public apply(thisObject: any, arguments: Array<any>): void;
+    public apply(thisObject: any, arguments?: Array<any>): void;
 
     public bind(thisObject: any): Function;
     public bind(...arg: any[]): Function;

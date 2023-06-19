@@ -40,7 +40,7 @@ declare class File {
     public flush(): void;
 
     public open(path: string): void;
-    public open(path: string, mode: number /* FileMode_Read|FileMode_Open */): void;
+    public open(path: string, mode?: number /* FileMode_Read|FileMode_Open */): void;
 
     public openForReadWrite(path: string): void;
 
@@ -49,13 +49,13 @@ declare class File {
     public openOrCreate(path: string): void;
 
     public outText(text: string): void;
-    public outText(text: string, dataType: number /* DataType_String8 */): void;
+    public outText(text: string, dataType?: number /* DataType_String8 */): void;
 
     public outTextLn(text: string): void;
-    public outTextLn(text: string, dataType: number /* DataType_String8 */): void;
+    public outTextLn(text: string, dataType?: number /* DataType_String8 */): void;
 
     public read(data_type: any): Object;
-    public read(data_type: any, count: any /* 1 */): Object;
+    public read(data_type: any, count?: any /* 1 */): Object;
 
     public read(DataType_Float32Array: any, length: number): Float32Array;
 
@@ -84,7 +84,7 @@ declare class File {
     public rewind(): void;
 
     public seek(pos: number): number;
-    public seek(pos: number, mode: number /* SeekMode_FromCurrent */): number;
+    public seek(pos: number, mode?: number /* SeekMode_FromCurrent */): number;
 
     public seekEnd(): number;
 
@@ -112,8 +112,7 @@ declare class File {
     public static changeSuffix(filePath: string, newExt: string): string;
 
     public static copyFile(targetPath: string, sourcePath: string): void;
-    public static copyFile(targetPath: string, sourcePath: string, progress: Function): void;
-    public static copyFile(targetPath: string, sourcePath: string, progress: Function, progressThis: Object /* null */): void;
+    public static copyFile(targetPath: string, sourcePath: string, progress?: Function, progressThis?: Object /* null */): void;
 
     public static copyLink(targetPath: string, sourcePath: string): void;
 
@@ -166,8 +165,7 @@ declare class File {
     public static move(filePath: string, newPath: string): void;
 
     public static moveFile(targetPath: string, sourcePath: string): void;
-    public static moveFile(targetPath: string, sourcePath: string, progress: Function): void;
-    public static moveFile(targetPath: string, sourcePath: string, progress: Function, progressThis: Object /* null */): void;
+    public static moveFile(targetPath: string, sourcePath: string, progress?: Function, progressThis?: Object /* null */): void;
 
     public static openFile(path: string): File;
 
@@ -180,7 +178,7 @@ declare class File {
     public static readFile(filePath: string): ByteArray;
 
     public static readLines(filePath: string): Array<any>;
-    public static readLines(filePath: string, options: number /* ReadTextOptions_None */): Array<any>;
+    public static readLines(filePath: string, options?: number /* ReadTextOptions_None */): Array<any>;
 
     public static readTextFile(filePath: string): string;
 
@@ -195,13 +193,10 @@ declare class File {
     public static setPermissions(filePath: string, permissions: number): void;
 
     public static setReadOnly(filePath: string): void;
-    public static setReadOnly(filePath: string, readOnly: boolean /* true */): void;
+    public static setReadOnly(filePath: string, readOnly?: boolean /* true */): void;
 
     public static uniqueFileName(): string;
-    public static uniqueFileName(directory: string /* "" */): string;
-    public static uniqueFileName(directory: string /* "" */, n: number /* 8 */): string;
-    public static uniqueFileName(directory: string /* "" */, n: number /* 8 */, prefix: string /* "" */): string;
-    public static uniqueFileName(directory: string /* "" */, n: number /* 8 */, prefix: string /* "" */, postfix: string /*  */): string;
+    public static uniqueFileName(directory?: string /* "" */, n?: number /* 8 */, prefix?: string /* "" */, postfix?: string /*  */): string;
 
     public static unixPathToWindows(path: string): string;
 

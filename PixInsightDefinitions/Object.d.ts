@@ -57,7 +57,7 @@ declare class Object {
     //----static Functions-----
     //-------------------------
     public static create(proto: Object): Object;
-    public static create(proto: Object, propertiesObject: Object): Object;
+    public static create(proto: Object, propertiesObject?: Object): Object;
 
     public static defineProperties(obj: Object, props: Object): void;
 

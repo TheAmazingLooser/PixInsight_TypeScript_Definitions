@@ -28,7 +28,7 @@ declare class Math {
     //----static Functions-----
     //-------------------------
     public static MAD(data: Array<any> | any /* TypedArray */): number;
-    public static MAD(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): number;
+    public static MAD(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */): number;
 
     public static Qn(data: Array<any> | any /* TypedArray */): number;
 
@@ -43,15 +43,14 @@ declare class Math {
     public static ahav(x: number): number;
 
     public static angle(deg: number): number;
-    public static angle(deg: number, min: number /* 0 */): number;
-    public static angle(deg: number, min: number /* 0 */, sec: number /* 0 */): number;
+    public static angle(deg: number, min?: number /* 0 */, sec?: number /* 0 */): number;
 
     public static asin(x: number): number;
 
     public static asinh(x: number): number;
 
     public static atan(y: number): number;
-    public static atan(y: number, x: number /* 1 */): number;
+    public static atan(y: number, x?: number /* 1 */): number;
 
     public static atan2(y: number, x: number): number;
 
@@ -60,17 +59,13 @@ declare class Math {
     public static atanh(x: number): number;
 
     public static avgDev(data: Array<any> | any /* TypedArray */): number;
-    public static avgDev(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): number;
+    public static avgDev(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */): number;
 
     public static bendMidvariance(data: Array<any> | any /* TypedArray */): number;
-    public static bendMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): number;
-    public static bendMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, beta: number /* 0.2 */): number;
+    public static bendMidvariance(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */, beta?: number /* 0.2 */): number;
 
     public static biweightMidvariance(data: Array<any> | any /* TypedArray */): number;
-    public static biweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): number;
-    public static biweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, sigma: number /* MAD(data,center) */): number;
-    public static biweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, sigma: number /* MAD(data,center) */, k: number /* 9 */): number;
-    public static biweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, sigma: number /* MAD(data,center) */, k: number /* 9 */, reducedLength: boolean /* false */): number;
+    public static biweightMidvariance(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */, sigma?: number /* MAD(data,center) */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     public static calendarTimeToJD(year: number, month: number, day: number, dayFraction: number): number;
 
@@ -115,7 +110,7 @@ declare class Math {
     public static heapSort(data: any /* TypedArray */): void;
 
     public static initRandomGenerator(): void;
-    public static initRandomGenerator(seed64: Array<any>): void;
+    public static initRandomGenerator(seed64?: Array<any>): void;
 
     public static initRandomGenerator(seedLSW: number, seedMSW: number): void;
 
@@ -124,7 +119,7 @@ declare class Math {
     public static insertionSort(data: any /* TypedArray */): void;
 
     public static jdToCalendarTime(jd1: number): Array<any>;
-    public static jdToCalendarTime(jd1: number, jd2: number): Array<any>;
+    public static jdToCalendarTime(jd1: number, jd2?: number): Array<any>;
 
     public static ldexp(mant: number, exp: number): number;
 
@@ -161,13 +156,10 @@ declare class Math {
     public static mtf(m: number, x: number): number;
 
     public static parseInteger(s: string): number;
-    public static parseInteger(s: string, lowerBound: number): number;
-    public static parseInteger(s: string, lowerBound: number, upperBound: number): number;
+    public static parseInteger(s: string, lowerBound?: number, upperBound?: number): number;
 
     public static parseReal(s: string): number;
-    public static parseReal(s: string, precision: number): number;
-    public static parseReal(s: string, precision: number, lowerBound: number): number;
-    public static parseReal(s: string, precision: number, lowerBound: number, upperBound: number): number;
+    public static parseReal(s: string, precision?: number, lowerBound?: number, upperBound?: number): number;
 
     public static poly(x: number, coeffs: Array<any>): number;
 
@@ -190,14 +182,10 @@ declare class Math {
     public static randomArray(n: number): Array<any>;
 
     public static randomFloat32Array(n: number): Float32Array;
-    public static randomFloat32Array(n: number, distr: string): Float32Array;
-    public static randomFloat32Array(n: number, distr: string, distr_p1: any): Float32Array;
-    public static randomFloat32Array(n: number, distr: string, distr_p1: any, distr_p2: any): Float32Array;
+    public static randomFloat32Array(n: number, distr?: string, distr_p1?: any, distr_p2?: any): Float32Array;
 
     public static randomFloat64Array(n: number): Float64Array;
-    public static randomFloat64Array(n: number, distr: string): Float64Array;
-    public static randomFloat64Array(n: number, distr: string, distr_p1: any): Float64Array;
-    public static randomFloat64Array(n: number, distr: string, distr_p1: any, distr_p2: any): Float64Array;
+    public static randomFloat64Array(n: number, distr?: string, distr_p1?: any, distr_p2?: any): Float64Array;
 
     public static randomSeed32(): number;
 
@@ -212,8 +200,7 @@ declare class Math {
     public static select(data: Array<any> | any /* TypedArray */, k: number): number;
 
     public static sexagesimalToDecimal(sign: number, s1: number): number;
-    public static sexagesimalToDecimal(sign: number, s1: number, s2: number /* 0 */): number;
-    public static sexagesimalToDecimal(sign: number, s1: number, s2: number /* 0 */, s3: number /* 0 */): number;
+    public static sexagesimalToDecimal(sign: number, s1: number, s2?: number /* 0 */, s3?: number /* 0 */): number;
 
     public static sign(x: number): number;
 
@@ -226,7 +213,7 @@ declare class Math {
     public static sqrt(x: number): number;
 
     public static stableAvgDev(data: Array<any> | any /* TypedArray */): number;
-    public static stableAvgDev(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): number;
+    public static stableAvgDev(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */): number;
 
     public static stableMean(data: Array<any> | any /* TypedArray */): number;
 
@@ -249,26 +236,21 @@ declare class Math {
     public static tanh(x: number): number;
 
     public static trimmedMean(data: Array<any> | any /* TypedArray */): number;
-    public static trimmedMean(data: Array<any> | any /* TypedArray */, l: number /* 1 */): number;
-    public static trimmedMean(data: Array<any> | any /* TypedArray */, l: number /* 1 */, h: number /* 1 */): number;
+    public static trimmedMean(data: Array<any> | any /* TypedArray */, l?: number /* 1 */, h?: number /* 1 */): number;
 
     public static trimmedMeanOfSquares(data: Array<any> | any /* TypedArray */): number;
-    public static trimmedMeanOfSquares(data: Array<any> | any /* TypedArray */, l: number /* 1 */): number;
-    public static trimmedMeanOfSquares(data: Array<any> | any /* TypedArray */, l: number /* 1 */, h: number /* 1 */): number;
+    public static trimmedMeanOfSquares(data: Array<any> | any /* TypedArray */, l?: number /* 1 */, h?: number /* 1 */): number;
 
     public static trunc(x: number): number;
 
     public static twoSidedAvgDev(data: Array<any> | any /* TypedArray */): Array<any>;
-    public static twoSidedAvgDev(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): Array<any>;
+    public static twoSidedAvgDev(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */): Array<any>;
 
     public static twoSidedBiweightMidvariance(data: Array<any> | any /* TypedArray */): Array<any>;
-    public static twoSidedBiweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): Array<any>;
-    public static twoSidedBiweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, sigma: Array<any> | number /* twoSidedMAD(data,center) */): Array<any>;
-    public static twoSidedBiweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, sigma: Array<any> | number /* twoSidedMAD(data,center) */, k: number /* 9 */): Array<any>;
-    public static twoSidedBiweightMidvariance(data: Array<any> | any /* TypedArray */, center: number /* median(data) */, sigma: Array<any> | number /* twoSidedMAD(data,center) */, k: number /* 9 */, reducedLength: boolean /* false */): Array<any>;
+    public static twoSidedBiweightMidvariance(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */, sigma?: Array<any> | number /* twoSidedMAD(data,center) */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     public static twoSidedMAD(data: Array<any> | any /* TypedArray */): Array<any>;
-    public static twoSidedMAD(data: Array<any> | any /* TypedArray */, center: number /* median(data) */): Array<any>;
+    public static twoSidedMAD(data: Array<any> | any /* TypedArray */, center?: number /* median(data) */): Array<any>;
 
     public static uiResourceScalingFactor(scalingFactor: number): number;
 

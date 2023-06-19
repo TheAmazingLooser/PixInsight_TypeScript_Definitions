@@ -67,50 +67,42 @@ declare class Date {
     public setDate(day: number): void;
 
     public setFullYear(year: number): void;
-    public setFullYear(year: number, month: number): void;
-    public setFullYear(year: number, month: number, day: number): void;
+    public setFullYear(year: number, month?: number, day?: number): void;
 
     public setHours(hour: number): void;
-    public setHours(hour: number, minute: number): void;
-    public setHours(hour: number, minute: number, second: number): void;
-    public setHours(hour: number, minute: number, second: number, millisecond: number): void;
+    public setHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
 
     public setMilliseconds(millisecond: number): void;
 
     public setMinutes(minute: number): void;
-    public setMinutes(minute: number, second: number): void;
-    public setMinutes(minute: number, second: number, millisecond: number): void;
+    public setMinutes(minute: number, second?: number, millisecond?: number): void;
 
     public setMonth(month: number): void;
-    public setMonth(month: number, day: number): void;
+    public setMonth(month: number, day?: number): void;
 
     public setSeconds(second: number): void;
-    public setSeconds(second: number, millisecond: number): void;
+    public setSeconds(second: number, millisecond?: number): void;
 
     public setTime(time: number): void;
 
     public setUTCDate(day: number): void;
 
     public setUTCFullYear(year: number): void;
-    public setUTCFullYear(year: number, month: number): void;
-    public setUTCFullYear(year: number, month: number, day: number): void;
+    public setUTCFullYear(year: number, month?: number, day?: number): void;
 
     public setUTCHours(hour: number): void;
-    public setUTCHours(hour: number, minute: number): void;
-    public setUTCHours(hour: number, minute: number, second: number): void;
-    public setUTCHours(hour: number, minute: number, second: number, millisecond: number): void;
+    public setUTCHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
 
     public setUTCMilliseconds(millisecond: number): void;
 
     public setUTCMinutes(minute: number): void;
-    public setUTCMinutes(minute: number, second: number): void;
-    public setUTCMinutes(minute: number, second: number, millisecond: number): void;
+    public setUTCMinutes(minute: number, second?: number, millisecond?: number): void;
 
     public setUTCMonth(month: number): void;
-    public setUTCMonth(month: number, day: number): void;
+    public setUTCMonth(month: number, day?: number): void;
 
     public setUTCSeconds(second: number): void;
-    public setUTCSeconds(second: number, millisecond: number): void;
+    public setUTCSeconds(second: number, millisecond?: number): void;
 
     public toDateString(): string;
 
@@ -142,7 +134,7 @@ declare class Date {
     //----static Functions-----
     //-------------------------
     public static UTC(year: number, month: number, day: number): number;
-    public static UTC(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number): number;
+    public static UTC(year: number, month: number, day: number, hour?: number, minute: number, second: number, millisecond: number): number;
 
     public static now(): number;
 

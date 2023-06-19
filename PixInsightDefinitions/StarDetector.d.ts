@@ -39,7 +39,7 @@ declare class StarDetector {
     public stars(image: Image): Array<any>;
 
     public test(image: Image): void;
-    public test(image: Image, createStarMaskWindow: boolean /* false */): void;
+    public test(image: Image, createStarMaskWindow?: boolean /* false */): void;
 
 
 

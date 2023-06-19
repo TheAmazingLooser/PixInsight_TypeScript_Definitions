@@ -43,7 +43,7 @@ declare class View {
     //--------Functions--------
     //-------------------------
     public beginProcess(): void;
-    public beginProcess(undoFlags: number): void;
+    public beginProcess(undoFlags?: number): void;
 
     public cancelProcess(): void;
 
@@ -70,8 +70,7 @@ declare class View {
     public setPropertyAttributes(id: string, attributes: number): boolean;
 
     public setPropertyValue(id: string, value: Object): boolean;
-    public setPropertyValue(id: string, value: Object, type: number): boolean;
-    public setPropertyValue(id: string, value: Object, type: number, attributes: number): boolean;
+    public setPropertyValue(id: string, value: Object, type?: number, attributes?: number): boolean;
 
 
 

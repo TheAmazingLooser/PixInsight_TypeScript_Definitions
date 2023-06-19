@@ -31,16 +31,16 @@ declare class String {
     public concat(...s: any[]): string;
 
     public contains(searchValue: string): boolean;
-    public contains(searchValue: string, fromIndex: number): boolean;
+    public contains(searchValue: string, fromIndex?: number): boolean;
 
     public endsWith(searchValue: string): boolean;
-    public endsWith(searchValue: string, length: number): boolean;
+    public endsWith(searchValue: string, length?: number): boolean;
 
     public indexOf(searchValue: string): number;
-    public indexOf(searchValue: string, fromIndex: number): number;
+    public indexOf(searchValue: string, fromIndex?: number): number;
 
     public lastIndexOf(searchValue: string): number;
-    public lastIndexOf(searchValue: string, fromIndex: number): number;
+    public lastIndexOf(searchValue: string, fromIndex?: number): number;
 
     public localeCompare(compareString: string): number;
 
@@ -51,25 +51,24 @@ declare class String {
     public repeat(n: number): string;
 
     public replace(RegExp: RegExp  |  string, string: string  |  Function): string;
-    public replace(RegExp: RegExp  |  string, string: string  |  Function, flags: string): string;
+    public replace(RegExp: RegExp  |  string, string: string  |  Function, flags?: string): string;
 
     public search(exp: RegExp): number;
 
     public slice(begin: number): string;
-    public slice(begin: number, end: number): string;
+    public slice(begin: number, end?: number): string;
 
     public split(): Array<any>;
-    public split(separator: string): Array<any>;
-    public split(separator: string, limit: number): Array<any>;
+    public split(separator?: string, limit?: number): Array<any>;
 
     public startsWith(searchValue: string): boolean;
-    public startsWith(searchValue: string, fromIndex: number): boolean;
+    public startsWith(searchValue: string, fromIndex?: number): boolean;
 
     public substr(start: number): string;
-    public substr(start: number, length: number): string;
+    public substr(start: number, length?: number): string;
 
     public substring(startIndex: number): string;
-    public substring(startIndex: number, endIndex: number): string;
+    public substring(startIndex: number, endIndex?: number): string;
 
     public toBoolean(): boolean;
 
@@ -78,7 +77,7 @@ declare class String {
     public toFloat(): number;
 
     public toInt(): number;
-    public toInt(base: number /* 0 */): number;
+    public toInt(base?: number /* 0 */): number;
 
     public toLocaleLowerCase(): string;
 
@@ -93,7 +92,7 @@ declare class String {
     public toString(): string;
 
     public toUInt(): number;
-    public toUInt(base: number /* 0 */): number;
+    public toUInt(base?: number /* 0 */): number;
 
     public toUpperCase(): string;
 
@@ -110,12 +109,12 @@ declare class String {
     public tryToFloat(): number | void;
 
     public tryToInt(): number | void;
-    public tryToInt(base: number /* 0 */): number | void;
+    public tryToInt(base?: number /* 0 */): number | void;
 
     public tryToNumber(): number | void;
 
     public tryToUInt(): number | void;
-    public tryToUInt(base: number /* 0 */): number | void;
+    public tryToUInt(base?: number /* 0 */): number | void;
 
     public unquote(): string;
 

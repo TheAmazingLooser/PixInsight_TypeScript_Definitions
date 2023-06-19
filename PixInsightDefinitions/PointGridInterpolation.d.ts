@@ -40,12 +40,10 @@ declare class PointGridInterpolation {
     public evaluate(points: Array<any>): Array<any>;
 
     public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline): void;
-    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta: number /* 8 */): void;
-    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta: number /* 8 */, verbose: boolean /* false */): void;
+    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
     public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation): void;
-    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta: number /* 8 */): void;
-    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta: number /* 8 */, verbose: boolean /* false */): void;
+    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
 
 

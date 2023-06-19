@@ -59,7 +59,7 @@ declare class Rect {
     public add(p: Point): void;
 
     public add(x: number): void;
-    public add(x: number, y: number /* x */): void;
+    public add(x: number, y?: number /* x */): void;
 
     public add(x0: number, y0: number, x1: number, y1: number): void;
 
@@ -78,19 +78,19 @@ declare class Rect {
     public deflateBy(d: Point): void;
 
     public deflateBy(dx: number): void;
-    public deflateBy(dx: number, dy: number /* dx */): void;
+    public deflateBy(dx: number, dy?: number /* dx */): void;
 
     public deflatedBy(d: Point): Rect;
 
     public deflatedBy(dx: number): Rect;
-    public deflatedBy(dx: number, dy: number /* dx */): Rect;
+    public deflatedBy(dx: number, dy?: number /* dx */): Rect;
 
     public div(r: Rect): void;
 
     public div(p: Point): void;
 
     public div(x: number): void;
-    public div(x: number, y: number /* x */): void;
+    public div(x: number, y?: number /* x */): void;
 
     public div(x0: number, y0: number, x1: number, y1: number): void;
 
@@ -101,12 +101,12 @@ declare class Rect {
     public inflateBy(d: Point): void;
 
     public inflateBy(dx: number): void;
-    public inflateBy(dx: number, dy: number /* dx */): void;
+    public inflateBy(dx: number, dy?: number /* dx */): void;
 
     public inflatedBy(d: Point): Rect;
 
     public inflatedBy(dx: number): Rect;
-    public inflatedBy(dx: number, dy: number /* dx */): Rect;
+    public inflatedBy(dx: number, dy?: number /* dx */): Rect;
 
     public intersect(r: Rect): void;
 
@@ -139,29 +139,29 @@ declare class Rect {
     public moveBy(d: Point): void;
 
     public moveBy(dx: number): void;
-    public moveBy(dx: number, dy: number /* dx */): void;
+    public moveBy(dx: number, dy?: number /* dx */): void;
 
     public moveTo(p: Point): void;
 
     public moveTo(x: number): void;
-    public moveTo(x: number, y: number /* x */): void;
+    public moveTo(x: number, y?: number /* x */): void;
 
     public movedBy(d: Point): Rect;
 
     public movedBy(dx: number): Rect;
-    public movedBy(dx: number, dy: number /* dx */): Rect;
+    public movedBy(dx: number, dy?: number /* dx */): Rect;
 
     public movedTo(p: Point): Rect;
 
     public movedTo(x: number): Rect;
-    public movedTo(x: number, y: number /* x */): Rect;
+    public movedTo(x: number, y?: number /* x */): Rect;
 
     public mul(r: Rect): void;
 
     public mul(p: Point): void;
 
     public mul(x: number): void;
-    public mul(x: number, y: number /* x */): void;
+    public mul(x: number, y?: number /* x */): void;
 
     public mul(x0: number, y0: number, x1: number, y1: number): void;
 
@@ -172,51 +172,51 @@ declare class Rect {
     public resizeBy(d: Point): void;
 
     public resizeBy(dx: number): void;
-    public resizeBy(dx: number, dy: number /* dx */): void;
+    public resizeBy(dx: number, dy?: number /* dx */): void;
 
     public resizeTo(width: number): void;
-    public resizeTo(width: number, height: number /* width */): void;
+    public resizeTo(width: number, height?: number /* width */): void;
 
     public resizedBy(d: Point): Rect;
 
     public resizedBy(dx: number): Rect;
-    public resizedBy(dx: number, dy: number /* dx */): Rect;
+    public resizedBy(dx: number, dy?: number /* dx */): Rect;
 
     public resizedTo(width: number): Rect;
-    public resizedTo(width: number, height: number /* width */): Rect;
+    public resizedTo(width: number, height?: number /* width */): Rect;
 
     public rotate(angleRadians: number): void;
-    public rotate(angleRadians: number, center: Point /* 0 */): void;
+    public rotate(angleRadians: number, center?: Point /* 0 */): void;
 
     public rotate(sin: number, cos: number): void;
-    public rotate(sin: number, cos: number, center: Point /* 0 */): void;
+    public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
 
     public rotate(angleRadians: number, xc: number, yc: number): void;
 
     public rotate(sin: number, cos: number, xc: number, yc: number): void;
 
     public rotated(angleRadians: number): Rect;
-    public rotated(angleRadians: number, center: Point /* 0 */): Rect;
+    public rotated(angleRadians: number, center?: Point /* 0 */): Rect;
 
     public rotated(sin: number, cos: number): Rect;
-    public rotated(sin: number, cos: number, center: Point /* 0 */): Rect;
+    public rotated(sin: number, cos: number, center?: Point /* 0 */): Rect;
 
     public rotated(angleRadians: number, xc: number, yc: number): Rect;
 
     public rotated(sin: number, cos: number, xc: number, yc: number): Rect;
 
     public round(): void;
-    public round(n: number /* 0 */): void;
+    public round(n?: number /* 0 */): void;
 
     public rounded(): Rect;
-    public rounded(n: number /* 0 */): Rect;
+    public rounded(n?: number /* 0 */): Rect;
 
     public sub(r: Rect): void;
 
     public sub(p: Point): void;
 
     public sub(x: number): void;
-    public sub(x: number, y: number /* x */): void;
+    public sub(x: number, y?: number /* x */): void;
 
     public sub(x0: number, y0: number, x1: number, y1: number): void;
 
@@ -235,22 +235,22 @@ declare class Rect {
     public translate(p: Point): void;
 
     public translate(x: number): void;
-    public translate(x: number, y: number /* x */): void;
+    public translate(x: number, y?: number /* x */): void;
 
     public translateBy(d: Point): void;
 
     public translateBy(dx: number): void;
-    public translateBy(dx: number, dy: number /* dx */): void;
+    public translateBy(dx: number, dy?: number /* dx */): void;
 
     public translated(p: Point): Rect;
 
     public translated(x: number): Rect;
-    public translated(x: number, y: number /* x */): Rect;
+    public translated(x: number, y?: number /* x */): Rect;
 
     public translatedBy(d: Point): Rect;
 
     public translatedBy(dx: number): Rect;
-    public translatedBy(dx: number, dy: number /* dx */): Rect;
+    public translatedBy(dx: number, dy?: number /* dx */): Rect;
 
     public union(r: Rect): Rect;
 

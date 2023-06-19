@@ -24,15 +24,15 @@ declare class Number {
     //--------Functions--------
     //-------------------------
     public toExponential(): string;
-    public toExponential(fractionalDigits: number): string;
+    public toExponential(fractionalDigits?: number): string;
 
     public toFixed(): string;
-    public toFixed(digits: number): string;
+    public toFixed(digits?: number): string;
 
     public toLocaleString(): string;
 
     public toPrecision(): string;
-    public toPrecision(precision: number): string;
+    public toPrecision(precision?: number): string;
 
     public toSource(): string;
 
