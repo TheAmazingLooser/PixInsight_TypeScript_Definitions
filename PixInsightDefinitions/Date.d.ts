@@ -134,7 +134,7 @@ declare class Date {
     //----static Functions-----
     //-------------------------
     public static UTC(year: number, month: number, day: number): number;
-    public static UTC(year: number, month: number, day: number, hour?: number, minute: number, second: number, millisecond: number): number;
+    public static UTC(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number): number;
 
     public static now(): number;
 

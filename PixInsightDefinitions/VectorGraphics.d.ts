@@ -136,7 +136,7 @@ declare class VectorGraphics {
     public drawTiledBitmap(r: Rect, bmp: Bitmap, origin?: Point /* 0 */): void;
 
     public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap): void;
-    public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap, ox?: number /* 0 */, oy: number /* 0 */): void;
+    public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap, ox: number /* 0 */, oy: number /* 0 */): void;
 
     public end(): void;
 

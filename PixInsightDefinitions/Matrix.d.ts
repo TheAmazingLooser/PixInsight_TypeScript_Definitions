@@ -64,7 +64,7 @@ declare class Matrix {
     public assign(a00: number, a01: number, a02: number, a10: number, a11: number, a12: number, a20: number, a21: number, a22: number): void;
 
     public assign(A: Matrix): void;
-    public assign(A: Matrix, startRow?: number, startCol: number, rows: number, cols: number): void;
+    public assign(A: Matrix, startRow: number, startCol: number, rows: number, cols: number): void;
 
     public assign(a: Array<any>): void;
 
@@ -180,13 +180,13 @@ declare class Matrix {
     public swap(A: Matrix): void;
 
     public toArray(): Array<any>;
-    public toArray(startRow?: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Array<any>;
+    public toArray(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Array<any>;
 
     public toFloat32Array(): Float32Array;
-    public toFloat32Array(startRow?: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float32Array;
+    public toFloat32Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float32Array;
 
     public toFloat64Array(): Float64Array;
-    public toFloat64Array(startRow?: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float64Array;
+    public toFloat64Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float64Array;
 
     public toImage(): Image;
 

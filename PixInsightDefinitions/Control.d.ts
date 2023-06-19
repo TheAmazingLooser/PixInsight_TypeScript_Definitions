@@ -155,7 +155,7 @@ declare class Control {
     public setFixedHeight(h?: number): void;
 
     public setFixedSize(): void;
-    public setFixedSize(w?: number, h: number): void;
+    public setFixedSize(w: number, h: number): void;
 
     public setFixedWidth(): void;
     public setFixedWidth(w?: number): void;
@@ -164,7 +164,7 @@ declare class Control {
     public setMaxHeight(h?: number): void;
 
     public setMaxSize(): void;
-    public setMaxSize(w?: number, h: number): void;
+    public setMaxSize(w: number, h: number): void;
 
     public setMaxWidth(): void;
     public setMaxWidth(w?: number): void;
@@ -173,7 +173,7 @@ declare class Control {
     public setMinHeight(h?: number): void;
 
     public setMinSize(): void;
-    public setMinSize(w?: number, h: number): void;
+    public setMinSize(w: number, h: number): void;
 
     public setMinWidth(): void;
     public setMinWidth(w?: number): void;

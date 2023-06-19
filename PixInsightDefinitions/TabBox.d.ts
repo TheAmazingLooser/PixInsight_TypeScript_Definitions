@@ -33,7 +33,7 @@ declare class TabBox extends Control {
     public addPage(page: Control, label: string, icon?: Bitmap | string): void;
 
     public clearControls(): void;
-    public clearControls(clearLeft?: boolean, clearRight: boolean): void;
+    public clearControls(clearLeft: boolean, clearRight: boolean): void;
 
     public clearPageIcon(index: number): void;
 

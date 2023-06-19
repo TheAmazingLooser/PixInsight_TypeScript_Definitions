@@ -57,7 +57,7 @@ declare class Bitmap {
     public copy(p: Point, bmp: Bitmap, r?: Rect): void;
 
     public copy(x: number, y: number, bmp: Bitmap): void;
-    public copy(x: number, y: number, bmp: Bitmap, x0?: number, y0: number, x1: number, y1: number): void;
+    public copy(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
 
     public fill(v: number): void;
 

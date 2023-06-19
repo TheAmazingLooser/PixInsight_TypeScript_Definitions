@@ -43,10 +43,10 @@ declare class Dialog extends Control {
     //----static Functions-----
     //-------------------------
     public static browseScriptDocumentation(scriptName: string): boolean;
-    public static browseScriptDocumentation(scriptName: string, title?: string, width?: number, height: number): boolean;
+    public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
 
     public static openBrowser(uri: string): void;
-    public static openBrowser(uri: string, title?: string, width?: number, height: number): void;
+    public static openBrowser(uri: string, title: string, width: number, height: number): void;
 
 
 
