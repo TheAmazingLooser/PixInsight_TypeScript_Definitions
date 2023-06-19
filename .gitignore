@@ -1,2 +1,4 @@
-dist/
-/*.ts
+/*
+!/PixinsightDefinitions/
+!ReadMe.md
+!tsconfig.json
