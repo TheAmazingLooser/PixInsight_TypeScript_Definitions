@@ -27,27 +27,184 @@ declare class Parameters {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static clear(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static clear(): void;
 
-    public static get(id: string): string;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public static getBoolean(id: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static get(id: string): string;
 
-    public static getInteger(id: string): number;
-    public static getInteger(id: string, radix?: number /* 0 */): number;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public static getReal(id: string): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getBoolean(id: string): boolean;
 
-    public static getString(id: string): string;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public static getUInt(id: string): number;
-    public static getUInt(id: string, radix?: number /* 0 */): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getInteger(id: string): number;
+    /**
+    DESCRIPTION
+    @param id: String
+    @param radix: int = 0
 
-    public static has(id: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getInteger(id: string, radix?: number /* 0 */): number;
 
-    public static remove(id: string): void;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public static set(id: string, value: Object): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getReal(id: string): number;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getString(id: string): string;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getUInt(id: string): number;
+    /**
+    DESCRIPTION
+    @param id: String
+    @param radix: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getUInt(id: string, radix?: number /* 0 */): number;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static has(id: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static remove(id: string): void;
+
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static set(id: string, value: Object): void;
 
 
 

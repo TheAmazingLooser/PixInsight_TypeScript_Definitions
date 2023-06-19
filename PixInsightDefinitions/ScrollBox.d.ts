@@ -44,23 +44,154 @@ declare class ScrollBox extends Frame {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public hideScrollBars(): void;
-    public hideScrollBars(hide?: boolean /* true */): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hideScrollBars(): void;
+    /**
+    DESCRIPTION
+    @param hide: Boolean = true
 
-    public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hideScrollBars(hide?: boolean /* true */): void;
 
-    public setHorizontalScrollRange(min: number, max: number): void;
+    /**
+    DESCRIPTION
+    @param hideHorz: Boolean
+    @param hideVert: Boolean
 
-    public setScrollPosition(x: number, y: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
 
-    public setScrollPosition(pos: Point): void;
+    /**
+    DESCRIPTION
+    @param min: int
+    @param max: int
 
-    public setVerticalScrollRange(min: number, max: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setHorizontalScrollRange(min: number, max: number): void;
 
-    public showScrollBars(): void;
-    public showScrollBars(show?: boolean /* true */): void;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
 
-    public showScrollBars(showHorz: boolean, showVert: boolean): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScrollPosition(x: number, y: number): void;
+
+    /**
+    DESCRIPTION
+    @param pos: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScrollPosition(pos: Point): void;
+
+    /**
+    DESCRIPTION
+    @param min: int
+    @param max: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setVerticalScrollRange(min: number, max: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public showScrollBars(): void;
+    /**
+    DESCRIPTION
+    @param show: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public showScrollBars(show?: boolean /* true */): void;
+
+    /**
+    DESCRIPTION
+    @param showHorz: Boolean
+    @param showVert: Boolean
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public showScrollBars(showHorz: boolean, showVert: boolean): void;
 
 
 

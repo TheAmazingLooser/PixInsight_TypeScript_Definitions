@@ -26,17 +26,69 @@ declare class ElapsedTime {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public reset(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public reset(): void;
 
-    public since(t: ElapsedTime): number;
+    /**
+    DESCRIPTION
+    @param t: ElapsedTime
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public since(t: ElapsedTime): number;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static toString(seconds: number): string;
-    public static toString(seconds: number, width?: number /* 0 */, precision?: number /* 3 */): string;
+    /**
+    DESCRIPTION
+    @param seconds: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static toString(seconds: number): string;
+    /**
+    DESCRIPTION
+    @param seconds: Number
+    @param width: int = 0
+    @param precision: int = 3
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static toString(seconds: number, width?: number /* 0 */, precision?: number /* 3 */): string;
 
 
 

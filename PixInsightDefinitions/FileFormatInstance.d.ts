@@ -41,39 +41,312 @@ declare class FileFormatInstance {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public close(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public close(): boolean;
 
-    public create(filePath: string): boolean;
-    public create(filePath: string, hints?: string, numberOfImages?: number /* 1 */): boolean;
+    /**
+    DESCRIPTION
+    @param filePath: String
 
-    public createImage(d: ImageDescription): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public create(filePath: string): boolean;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    @param hints: String
+    @param numberOfImages: int = 1
 
-    public open(filePath: string): Array<any>;
-    public open(filePath: string, hints?: string): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public create(filePath: string, hints?: string, numberOfImages?: number /* 1 */): boolean;
 
-    public read(startRow: number, rowCount: number): Matrix;
-    public read(startRow: number, rowCount: number, channel?: number /* 0 */): Matrix;
+    /**
+    DESCRIPTION
+    @param d: ImageDescription
 
-    public readImage(Image: Image): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public createImage(d: ImageDescription): boolean;
 
-    public readImageProperty(id: string): Object | void;
+    /**
+    DESCRIPTION
+    @param filePath: String
 
-    public readProperty(id: string): Object | void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public open(filePath: string): Array<any>;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    @param hints: String
 
-    public setImageId(id: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public open(filePath: string, hints?: string): Array<any>;
 
-    public setOptions(d: ImageDescription): boolean;
+    /**
+    DESCRIPTION
+    @param startRow: int
+    @param rowCount: int
 
-    public write(buffer: Matrix, startRow: number): boolean;
-    public write(buffer: Matrix, startRow: number, channel?: number /* 0 */): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public read(startRow: number, rowCount: number): Matrix;
+    /**
+    DESCRIPTION
+    @param startRow: int
+    @param rowCount: int
+    @param channel: int = 0
 
-    public writeImage(Image: Image): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public read(startRow: number, rowCount: number, channel?: number /* 0 */): Matrix;
 
-    public writeImageProperty(id: string, value: Object): boolean;
-    public writeImageProperty(id: string, value: Object, type?: number): boolean;
+    /**
+    DESCRIPTION
+    @param Image: Image
 
-    public writeProperty(id: string, value: Object): boolean;
-    public writeProperty(id: string, value: Object, type?: number): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public readImage(Image: Image): boolean;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public readImageProperty(id: string): Object | void;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public readProperty(id: string): Object | void;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setImageId(id: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param d: ImageDescription
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setOptions(d: ImageDescription): boolean;
+
+    /**
+    DESCRIPTION
+    @param buffer: Matrix
+    @param startRow: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public write(buffer: Matrix, startRow: number): boolean;
+    /**
+    DESCRIPTION
+    @param buffer: Matrix
+    @param startRow: int
+    @param channel: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public write(buffer: Matrix, startRow: number, channel?: number /* 0 */): boolean;
+
+    /**
+    DESCRIPTION
+    @param Image: Image
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeImage(Image: Image): boolean;
+
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeImageProperty(id: string, value: Object): boolean;
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+    @param type: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeImageProperty(id: string, value: Object, type?: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeProperty(id: string, value: Object): boolean;
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+    @param type: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeProperty(id: string, value: Object, type?: number): boolean;
 
 
 

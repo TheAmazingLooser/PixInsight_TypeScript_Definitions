@@ -34,151 +34,1237 @@ declare class Bitmap {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public and(v: number): void;
+    /**
+    DESCRIPTION
+    @param v: uint32
 
-    public and(bmp: Bitmap): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(v: number): void;
 
-    public and(r: Rect, v: number): void;
+    /**
+    DESCRIPTION
+    @param bmp: Bitmap
 
-    public and(p: Point, bmp: Bitmap): void;
-    public and(p: Point, bmp: Bitmap, r?: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(bmp: Bitmap): void;
 
-    public and(x0: number, y0: number, x1: number, y1: number, v: number): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param v: uint32
 
-    public and(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(r: Rect, v: number): void;
 
-    public assign(bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
 
-    public clear(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(p: Point, bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
+    @param r: Rect
 
-    public copy(bmp: Bitmap): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(p: Point, bmp: Bitmap, r?: Rect): void;
 
-    public copy(p: Point, bmp: Bitmap): void;
-    public copy(p: Point, bmp: Bitmap, r?: Rect): void;
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param v: uint32
 
-    public copy(x: number, y: number, bmp: Bitmap): void;
-    public copy(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(x0: number, y0: number, x1: number, y1: number, v: number): void;
 
-    public fill(v: number): void;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+    @param bmp: Bitmap
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public fill(r: Rect, v: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public and(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
 
-    public fill(x0: number, y0: number, x1: number, y1: number, v: number): void;
+    /**
+    DESCRIPTION
+    @param bmp: Bitmap
 
-    public invert(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(bmp: Bitmap): void;
 
-    public invert(r: Rect): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
-    public invert(x0: number, y0: number, x1: number, y1: number): void;
+    /**
+    DESCRIPTION
+    @param bmp: Bitmap
 
-    public invertRect(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public copy(bmp: Bitmap): void;
 
-    public invertRect(r: Rect): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
 
-    public invertRect(x0: number, y0: number, x1: number, y1: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public copy(p: Point, bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
+    @param r: Rect
 
-    public isEmpty(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public copy(p: Point, bmp: Bitmap, r?: Rect): void;
 
-    public load(filePath: string): void;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+    @param bmp: Bitmap
 
-    public load(data: ByteArray): void;
-    public load(data: ByteArray, format?: string /* "SVG" */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public copy(x: number, y: number, bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+    @param bmp: Bitmap
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public mirrored(): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public copy(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
 
-    public mirroredHorizontally(): Bitmap;
+    /**
+    DESCRIPTION
+    @param v: uint32
 
-    public mirroredVertically(): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public fill(v: number): void;
 
-    public or(v: number): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param v: uint32
 
-    public or(bmp: Bitmap): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public fill(r: Rect, v: number): void;
 
-    public or(r: Rect, v: number): void;
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param v: uint32
 
-    public or(p: Point, bmp: Bitmap): void;
-    public or(p: Point, bmp: Bitmap, r?: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public fill(x0: number, y0: number, x1: number, y1: number, v: number): void;
 
-    public or(x0: number, y0: number, x1: number, y1: number, v: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public invert(): void;
 
-    public or(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
 
-    public pixel(p: Point): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public invert(r: Rect): void;
 
-    public pixel(x: number, y: number): number;
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public replaceColor(replaceThis: number, replaceWith: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public invert(x0: number, y0: number, x1: number, y1: number): void;
 
-    public replaceColor(r: Rect, replaceThis: number, replaceWith: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public invertRect(): void;
 
-    public replaceColor(x0: number, y0: number, x1: number, y1: number, replaceThis: number, replaceWith: number): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
 
-    public rotated(angleRadians: number): Bitmap;
-    public rotated(angleRadians: number, mode?: any): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public invertRect(r: Rect): void;
 
-    public save(filePath: string): void;
-    public save(filePath: string, quality?: number): void;
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public scaled(scale: number): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public invertRect(x0: number, y0: number, x1: number, y1: number): void;
 
-    public scaled(sx: number, sy: number): Bitmap;
-    public scaled(sx: number, sy: number, mode?: any): Bitmap;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isEmpty(): boolean;
 
-    public scaledTo(size: number): Bitmap;
+    /**
+    DESCRIPTION
+    @param filePath: String
 
-    public scaledTo(width: number, height: number): Bitmap;
-    public scaledTo(width: number, height: number, mode?: any): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public load(filePath: string): void;
 
-    public setAlpha(alpha: number): void;
+    /**
+    DESCRIPTION
+    @param data: ByteArray
 
-    public setAlpha(r: Rect, alpha: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public load(data: ByteArray): void;
+    /**
+    DESCRIPTION
+    @param data: ByteArray
+    @param format: String = "SVG"
 
-    public setAlpha(x0: number, y0: number, x1: number, y1: number, alpha: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public load(data: ByteArray, format?: string /* "SVG" */): void;
 
-    public setAlpha(alpha: Bitmap): void;
-    public setAlpha(alpha: Bitmap, invert?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mirrored(): Bitmap;
 
-    public setPixel(p: Point, v: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mirroredHorizontally(): Bitmap;
 
-    public setPixel(x: number, y: number, v: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mirroredVertically(): Bitmap;
 
-    public setTransparency(t: number): void;
+    /**
+    DESCRIPTION
+    @param v: uint32
 
-    public setTransparency(r: Rect, t: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(v: number): void;
 
-    public setTransparency(x0: number, y0: number, x1: number, y1: number, t: number): void;
+    /**
+    DESCRIPTION
+    @param bmp: Bitmap
 
-    public subimage(r: Rect): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(bmp: Bitmap): void;
 
-    public subimage(x0: number, y0: number, x1: number, y1: number): Bitmap;
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param v: uint32
 
-    public xor(v: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(r: Rect, v: number): void;
 
-    public xor(bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
 
-    public xor(r: Rect, v: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(p: Point, bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
+    @param r: Rect
 
-    public xor(p: Point, bmp: Bitmap): void;
-    public xor(p: Point, bmp: Bitmap, r?: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(p: Point, bmp: Bitmap, r?: Rect): void;
 
-    public xor(x0: number, y0: number, x1: number, y1: number, v: number): void;
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param v: uint32
 
-    public xor(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(x0: number, y0: number, x1: number, y1: number, v: number): void;
 
-    public xorRect(v: number): void;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+    @param bmp: Bitmap
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public xorRect(r: Rect, v: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public or(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
 
-    public xorRect(x0: number, y0: number, x1: number, y1: number, v: number): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public pixel(p: Point): number;
+
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public pixel(x: number, y: number): number;
+
+    /**
+    DESCRIPTION
+    @param replaceThis: uint32
+    @param replaceWith: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public replaceColor(replaceThis: number, replaceWith: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param replaceThis: uint32
+    @param replaceWith: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public replaceColor(r: Rect, replaceThis: number, replaceWith: number): void;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param replaceThis: uint32
+    @param replaceWith: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public replaceColor(x0: number, y0: number, x1: number, y1: number, replaceThis: number, replaceWith: number): void;
+
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(angleRadians: number): Bitmap;
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+    @param mode: any
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(angleRadians: number, mode?: any): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param filePath: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public save(filePath: string): void;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    @param quality: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public save(filePath: string, quality?: number): void;
+
+    /**
+    DESCRIPTION
+    @param scale: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaled(scale: number): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param sx: Number
+    @param sy: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaled(sx: number, sy: number): Bitmap;
+    /**
+    DESCRIPTION
+    @param sx: Number
+    @param sy: Number
+    @param mode: any
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaled(sx: number, sy: number, mode?: any): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param size: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaledTo(size: number): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param width: int
+    @param height: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaledTo(width: number, height: number): Bitmap;
+    /**
+    DESCRIPTION
+    @param width: int
+    @param height: int
+    @param mode: any
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaledTo(width: number, height: number, mode?: any): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param alpha: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setAlpha(alpha: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param alpha: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setAlpha(r: Rect, alpha: number): void;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param alpha: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setAlpha(x0: number, y0: number, x1: number, y1: number, alpha: number): void;
+
+    /**
+    DESCRIPTION
+    @param alpha: Bitmap
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setAlpha(alpha: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param alpha: Bitmap
+    @param invert: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setAlpha(alpha: Bitmap, invert?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setPixel(p: Point, v: number): void;
+
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setPixel(x: number, y: number, v: number): void;
+
+    /**
+    DESCRIPTION
+    @param t: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setTransparency(t: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param t: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setTransparency(r: Rect, t: number): void;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param t: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setTransparency(x0: number, y0: number, x1: number, y1: number, t: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public subimage(r: Rect): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public subimage(x0: number, y0: number, x1: number, y1: number): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(v: number): void;
+
+    /**
+    DESCRIPTION
+    @param bmp: Bitmap
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(bmp: Bitmap): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(r: Rect, v: number): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(p: Point, bmp: Bitmap): void;
+    /**
+    DESCRIPTION
+    @param p: Point
+    @param bmp: Bitmap
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(p: Point, bmp: Bitmap, r?: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(x0: number, y0: number, x1: number, y1: number, v: number): void;
+
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
+    @param bmp: Bitmap
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xor(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xorRect(v: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xorRect(r: Rect, v: number): void;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+    @param v: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public xorRect(x0: number, y0: number, x1: number, y1: number, v: number): void;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static fromSVG(data: ByteArray, width: number, height: number, pixelRatio: number /* 1.0 */, flags: number /* 0 */): Bitmap;
+    /**
+    DESCRIPTION
+    @param data: ByteArray
+    @param width: int
+    @param height: int
+    @param pixelRatio: Number = 1.0
+    @param flags: uint32 = 0
 
-    public static fromSVGFile(filePath: string, width: number, height: number, pixelRatio: number /* 1.0 */, flags: number /* 0 */): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static fromSVG(data: ByteArray, width: number, height: number, pixelRatio: number /* 1.0 */, flags: number /* 0 */): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param filePath: String
+    @param width: int
+    @param height: int
+    @param pixelRatio: Number = 1.0
+    @param flags: uint32 = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static fromSVGFile(filePath: string, width: number, height: number, pixelRatio: number /* 1.0 */, flags: number /* 0 */): Bitmap;
 
 
 

@@ -29,92 +29,665 @@ declare class RGBColorSystem {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(rgbws: RGBColorSystem): void;
+    /**
+    DESCRIPTION
+    @param rgbws: RGBColorSystem
 
-    public cieLabToCIELch(L: number, a: number, b: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(rgbws: RGBColorSystem): void;
 
-    public cieLabToCIELch(Lab: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param L: Number
+    @param a: Number
+    @param b: Number
 
-    public cieLabToCIEXYZ(L: number, a: number, b: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLabToCIELch(L: number, a: number, b: number): Array<any>;
 
-    public cieLabToCIEXYZ(Lab: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param Lab: Array
 
-    public cieLabToRGB(L: number, a: number, b: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLabToCIELch(Lab: Array<any>): Array<any>;
 
-    public cieLabToRGB(Lab: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param L: Number
+    @param a: Number
+    @param b: Number
 
-    public cieLchToCIELab(L: number, c: number, h: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLabToCIEXYZ(L: number, a: number, b: number): Array<any>;
 
-    public cieLchToCIELab(Lch: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param Lab: Array
 
-    public cieLchToRGB(L: number, c: number, h: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLabToCIEXYZ(Lab: Array<any>): Array<any>;
 
-    public cieLchToRGB(Lch: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param L: Number
+    @param a: Number
+    @param b: Number
 
-    public cieXYZToCIELab(x: number, y: number, z: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLabToRGB(L: number, a: number, b: number): Array<any>;
 
-    public cieXYZToCIELab(xyz: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param Lab: Array
 
-    public cieXYZToRGB(x: number, y: number, z: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLabToRGB(Lab: Array<any>): Array<any>;
 
-    public cieXYZToRGB(xyz: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param L: Number
+    @param c: Number
+    @param h: Number
 
-    public lightness(r: number, g: number, b: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLchToCIELab(L: number, c: number, h: number): Array<any>;
 
-    public lightness(rgb: Array<any>): number;
+    /**
+    DESCRIPTION
+    @param Lch: Array
 
-    public rgbToCIELab(r: number, g: number, b: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLchToCIELab(Lch: Array<any>): Array<any>;
 
-    public rgbToCIELab(rgb: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param L: Number
+    @param c: Number
+    @param h: Number
 
-    public rgbToCIELch(r: number, g: number, b: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLchToRGB(L: number, c: number, h: number): Array<any>;
 
-    public rgbToCIELch(rgb: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param Lch: Array
 
-    public rgbToCIEXYZ(r: number, g: number, b: number): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieLchToRGB(Lch: Array<any>): Array<any>;
 
-    public rgbToCIEXYZ(rgb: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
+    @param z: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieXYZToCIELab(x: number, y: number, z: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param xyz: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieXYZToCIELab(xyz: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
+    @param z: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieXYZToRGB(x: number, y: number, z: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param xyz: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cieXYZToRGB(xyz: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public lightness(r: number, g: number, b: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public lightness(rgb: Array<any>): number;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rgbToCIELab(r: number, g: number, b: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rgbToCIELab(rgb: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rgbToCIELch(r: number, g: number, b: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rgbToCIELch(rgb: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rgbToCIEXYZ(r: number, g: number, b: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rgbToCIEXYZ(rgb: Array<any>): Array<any>;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static hsiSaturation(r: number, g: number, b: number): number;
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
 
-    public static hsiSaturation(rgb: Array<any>): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsiSaturation(r: number, g: number, b: number): number;
 
-    public static hsiToRGB(h: number, s: number, i: number): Array<any>;
+    /**
+    DESCRIPTION
+    @param rgb: Array
 
-    public static hsiToRGB(hsi: Array<any>): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsiSaturation(rgb: Array<any>): number;
 
-    public static hsvSaturation(r: number, g: number, b: number): number;
+    /**
+    DESCRIPTION
+    @param h: Number
+    @param s: Number
+    @param i: Number
 
-    public static hsvSaturation(rgb: Array<any>): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsiToRGB(h: number, s: number, i: number): Array<any>;
 
-    public static hsvToRGB(h: number, s: number, v: number): Array<any>;
+    /**
+    DESCRIPTION
+    @param hsi: Array
 
-    public static hsvToRGB(hsv: Array<any>): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsiToRGB(hsi: Array<any>): Array<any>;
 
-    public static hue(r: number, g: number, b: number): number;
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
 
-    public static hue(rgb: Array<any>): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsvSaturation(r: number, g: number, b: number): number;
 
-    public static intensity(r: number, g: number, b: number): number;
+    /**
+    DESCRIPTION
+    @param rgb: Array
 
-    public static intensity(rgb: Array<any>): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsvSaturation(rgb: Array<any>): number;
 
-    public static rgbToHSI(r: number, g: number, b: number): Array<any>;
+    /**
+    DESCRIPTION
+    @param h: Number
+    @param s: Number
+    @param v: Number
 
-    public static rgbToHSI(rgb: Array<any>): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsvToRGB(h: number, s: number, v: number): Array<any>;
 
-    public static rgbToHSV(r: number, g: number, b: number): Array<any>;
+    /**
+    DESCRIPTION
+    @param hsv: Array
 
-    public static rgbToHSV(rgb: Array<any>): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsvToRGB(hsv: Array<any>): Array<any>;
 
-    public static value(r: number, g: number, b: number): number;
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
 
-    public static value(rgb: Array<any>): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hue(r: number, g: number, b: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hue(rgb: Array<any>): number;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static intensity(r: number, g: number, b: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static intensity(rgb: Array<any>): number;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbToHSI(r: number, g: number, b: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbToHSI(rgb: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbToHSV(r: number, g: number, b: number): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbToHSV(rgb: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static value(r: number, g: number, b: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgb: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static value(rgb: Array<any>): number;
 
 
 

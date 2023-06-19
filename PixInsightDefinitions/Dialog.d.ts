@@ -25,28 +25,154 @@ declare class Dialog extends Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public cancel(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cancel(): void;
 
-    public done(retCode: number): void;
+    /**
+    DESCRIPTION
+    @param retCode: int
 
-    public execute(): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public done(retCode: number): void;
 
-    public newInstance(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public execute(): number;
 
-    public ok(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public newInstance(): void;
 
-    public open(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public ok(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public open(): void;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static browseScriptDocumentation(scriptName: string): boolean;
-    public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
+    /**
+    DESCRIPTION
+    @param scriptName: String
 
-    public static openBrowser(uri: string): void;
-    public static openBrowser(uri: string, title: string, width: number, height: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static browseScriptDocumentation(scriptName: string): boolean;
+    /**
+    DESCRIPTION
+    @param scriptName: String
+    @param title: String
+    @param width: int
+    @param height: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param uri: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static openBrowser(uri: string): void;
+    /**
+    DESCRIPTION
+    @param uri: String
+    @param title: String
+    @param width: int
+    @param height: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static openBrowser(uri: string, title: string, width: number, height: number): void;
 
 
 

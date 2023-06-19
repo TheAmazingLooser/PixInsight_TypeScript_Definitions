@@ -25,7 +25,20 @@ declare class Error {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public propertyIsEnumerable(propertyName: string): boolean;
+    /**
+    DESCRIPTION
+    @param propertyName: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyIsEnumerable(propertyName: string): boolean;
 
 
 

@@ -23,22 +23,138 @@ declare class Number {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public toExponential(): string;
-    public toExponential(fractionalDigits?: number): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toExponential(): string;
+    /**
+    DESCRIPTION
+    @param fractionalDigits: uint
 
-    public toFixed(): string;
-    public toFixed(digits?: number): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toExponential(fractionalDigits?: number): string;
 
-    public toLocaleString(): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toFixed(): string;
+    /**
+    DESCRIPTION
+    @param digits: uint
 
-    public toPrecision(): string;
-    public toPrecision(precision?: number): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toFixed(digits?: number): string;
 
-    public toSource(): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleString(): string;
 
-    public toString(): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toPrecision(): string;
+    /**
+    DESCRIPTION
+    @param precision: uint
 
-    public valueOf(): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toPrecision(precision?: number): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toSource(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public valueOf(): number;
 
 
 

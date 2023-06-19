@@ -29,24 +29,160 @@ declare class Function {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public apply(thisObject: any): void;
-    public apply(thisObject: any, arguments?: Array<any>): void;
+    /**
+    DESCRIPTION
+    @param thisObject: any
 
-    public bind(thisObject: any): Function;
-    public bind(...arg: any[]): Function;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public apply(thisObject: any): void;
+    /**
+    DESCRIPTION
+    @param thisObject: any
+    @param arguments: Array
 
-    public call(thisObject: any): void;
-    public call(...arg: any[]): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public apply(thisObject: any, arguments?: Array<any>): void;
 
-    public propertyIsEnumerable(propertyName: string): boolean;
+    /**
+    DESCRIPTION
+    @param thisObject: any
 
-    public toLocaleString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public bind(thisObject: any): Function;
+    /**
+    DESCRIPTION
+    @param ...arg: any[]
 
-    public toSource(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public bind(...arg: any[]): Function;
 
-    public toString(): string;
+    /**
+    DESCRIPTION
+    @param thisObject: any
 
-    public valueOf(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public call(thisObject: any): void;
+    /**
+    DESCRIPTION
+    @param ...arg: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public call(...arg: any[]): void;
+
+    /**
+    DESCRIPTION
+    @param propertyName: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyIsEnumerable(propertyName: string): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toSource(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public valueOf(): string;
 
 
 

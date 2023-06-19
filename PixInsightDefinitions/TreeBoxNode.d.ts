@@ -34,43 +34,298 @@ declare class TreeBoxNode {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public add(node: TreeBoxNode): void;
+    /**
+    DESCRIPTION
+    @param node: TreeBoxNode
 
-    public alignment(col: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public add(node: TreeBoxNode): void;
 
-    public backgroundColor(col: number): number;
+    /**
+    DESCRIPTION
+    @param col: int
 
-    public child(index: number): TreeBoxNode;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public alignment(col: number): number;
 
-    public clearIcon(col: number): void;
+    /**
+    DESCRIPTION
+    @param col: int
 
-    public font(col: number): Font;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public backgroundColor(col: number): number;
 
-    public icon(col: number): Bitmap;
+    /**
+    DESCRIPTION
+    @param index: int
 
-    public insert(index: number, node: TreeBoxNode): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public child(index: number): TreeBoxNode;
 
-    public remove(index: number): void;
+    /**
+    DESCRIPTION
+    @param col: int
 
-    public setAlignment(col: number, align: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clearIcon(col: number): void;
 
-    public setBackgroundColor(col: number, rgba: number): void;
+    /**
+    DESCRIPTION
+    @param col: int
 
-    public setFont(col: number, font: Font): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public font(col: number): Font;
 
-    public setIcon(col: number, icon: Bitmap | string): void;
+    /**
+    DESCRIPTION
+    @param col: int
 
-    public setText(col: number, txt: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public icon(col: number): Bitmap;
 
-    public setTextColor(col: number, rgba: number): void;
+    /**
+    DESCRIPTION
+    @param index: int
+    @param node: TreeBoxNode
 
-    public setToolTip(col: number, tip: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public insert(index: number, node: TreeBoxNode): void;
 
-    public text(col: number): string;
+    /**
+    DESCRIPTION
+    @param index: int
 
-    public textColor(col: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public remove(index: number): void;
 
-    public toolTip(col: number): string;
+    /**
+    DESCRIPTION
+    @param col: int
+    @param align: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setAlignment(col: number, align: number): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setBackgroundColor(col: number, rgba: number): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+    @param font: Font
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFont(col: number, font: Font): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+    @param icon: Bitmap|String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setIcon(col: number, icon: Bitmap | string): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+    @param txt: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setText(col: number, txt: string): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setTextColor(col: number, rgba: number): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+    @param tip: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setToolTip(col: number, tip: string): void;
+
+    /**
+    DESCRIPTION
+    @param col: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public text(col: number): string;
+
+    /**
+    DESCRIPTION
+    @param col: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public textColor(col: number): number;
+
+    /**
+    DESCRIPTION
+    @param col: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toolTip(col: number): string;
 
 
 

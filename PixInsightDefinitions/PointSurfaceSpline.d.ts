@@ -26,16 +26,102 @@ declare class PointSurfaceSpline {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public clear(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
-    public evaluate(x: number, y: number): Point;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
 
-    public evaluate(p: Point): Point;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(x: number, y: number): Point;
 
-    public evaluate(points: Array<any>): Array<any>;
+    /**
+    DESCRIPTION
+    @param p: Point
 
-    public initialize(P1: Array<any>, P2: Array<any>): void;
-    public initialize(P1: Array<any>, P2: Array<any>, smoothness?: number /* 0 */, W?: Vector /* null */, order?: number /* 2 */, allowExtrapolation?: boolean /* true */, maxSplineLength?: number /* 1600 */, bucketCapacity?: number /* 64 */, verbose?: boolean /* true */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(p: Point): Point;
+
+    /**
+    DESCRIPTION
+    @param points: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(points: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param P1: Array
+    @param P2: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(P1: Array<any>, P2: Array<any>): void;
+    /**
+    DESCRIPTION
+    @param P1: Array
+    @param P2: Array
+    @param smoothness: Number = 0
+    @param W: Vector = null
+    @param order: int = 2
+    @param allowExtrapolation: Boolean = true
+    @param maxSplineLength: int = 1600
+    @param bucketCapacity: int = 64
+    @param verbose: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(P1: Array<any>, P2: Array<any>, smoothness?: number /* 0 */, W?: Vector /* null */, order?: number /* 2 */, allowExtrapolation?: boolean /* true */, maxSplineLength?: number /* 1600 */, bucketCapacity?: number /* 64 */, verbose?: boolean /* true */): void;
 
 
 

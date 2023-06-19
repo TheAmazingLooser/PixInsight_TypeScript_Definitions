@@ -27,7 +27,22 @@ declare class SurfaceSimplifier {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public simplify(x: Vector, y: Vector, z: Vector): Array<any>;
+    /**
+    DESCRIPTION
+    @param x: Vector
+    @param y: Vector
+    @param z: Vector
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public simplify(x: Vector, y: Vector, z: Vector): Array<any>;
 
 
 

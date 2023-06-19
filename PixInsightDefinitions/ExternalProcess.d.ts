@@ -40,54 +40,394 @@ declare class ExternalProcess {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public closeStandardError(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public closeStandardError(): void;
 
-    public closeStandardInput(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public closeStandardInput(): void;
 
-    public closeStandardOutput(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public closeStandardOutput(): void;
 
-    public kill(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public kill(): void;
 
-    public redirectStandardError(fileName: string): void;
-    public redirectStandardError(fileName: string, append?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param fileName: String
 
-    public redirectStandardInput(fileName: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public redirectStandardError(fileName: string): void;
+    /**
+    DESCRIPTION
+    @param fileName: String
+    @param append: Boolean = false
 
-    public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */): void;
-    public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */, append?: boolean /* false */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public redirectStandardError(fileName: string, append?: boolean /* false */): void;
 
-    public redirectStandardOutput(process: ExternalProcess): void;
+    /**
+    DESCRIPTION
+    @param fileName: String
 
-    public start(program: string): void;
-    public start(program: string, arguments?: Array<any>): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public redirectStandardInput(fileName: string): void;
 
-    public terminate(): void;
+    /**
+    DESCRIPTION
+    @param fileName: String&
 
-    public waitForDataAvailable(): boolean;
-    public waitForDataAvailable(ms?: number /* 6000 */): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */): void;
+    /**
+    DESCRIPTION
+    @param fileName: String&
+    @param append: Boolean = false
 
-    public waitForDataWritten(): boolean;
-    public waitForDataWritten(ms?: number /* 6000 */): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */, append?: boolean /* false */): void;
 
-    public waitForFinished(): boolean;
-    public waitForFinished(ms?: number /* 6000 */): boolean;
+    /**
+    DESCRIPTION
+    @param process: ExternalProcess
 
-    public waitForStarted(): boolean;
-    public waitForStarted(ms?: number /* 6000 */): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public redirectStandardOutput(process: ExternalProcess): void;
+
+    /**
+    DESCRIPTION
+    @param program: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public start(program: string): void;
+    /**
+    DESCRIPTION
+    @param program: String
+    @param arguments: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public start(program: string, arguments?: Array<any>): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public terminate(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForDataAvailable(): boolean;
+    /**
+    DESCRIPTION
+    @param ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForDataAvailable(ms?: number /* 6000 */): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForDataWritten(): boolean;
+    /**
+    DESCRIPTION
+    @param ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForDataWritten(ms?: number /* 6000 */): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForFinished(): boolean;
+    /**
+    DESCRIPTION
+    @param ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForFinished(ms?: number /* 6000 */): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForStarted(): boolean;
+    /**
+    DESCRIPTION
+    @param ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public waitForStarted(ms?: number /* 6000 */): boolean;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static execute(program: string): number;
-    public static execute(program: string, arguments?: Array<any>): number;
+    /**
+    DESCRIPTION
+    @param program: String
 
-    public static startDetached(program: string): number;
-    public static startDetached(program: string, arguments?: Array<any>, workingDirectory?: string): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static execute(program: string): number;
+    /**
+    DESCRIPTION
+    @param program: String
+    @param arguments: Array
 
-    public static startDetached(program: string): number;
-    public static startDetached(program: string, workingDirectory?: string): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static execute(program: string, arguments?: Array<any>): number;
+
+    /**
+    DESCRIPTION
+    @param program: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static startDetached(program: string): number;
+    /**
+    DESCRIPTION
+    @param program: String
+    @param arguments: Array
+    @param workingDirectory: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static startDetached(program: string, arguments?: Array<any>, workingDirectory?: string): number;
+
+    /**
+    DESCRIPTION
+    @param program: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static startDetached(program: string): number;
+    /**
+    DESCRIPTION
+    @param program: String
+    @param workingDirectory: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static startDetached(program: string, workingDirectory?: string): number;
 
 
 

@@ -34,29 +34,211 @@ declare class NetworkTransfer {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public closeConnection(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public closeConnection(): void;
 
-    public download(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public download(): boolean;
 
-    public post(fields: string): boolean;
+    /**
+    DESCRIPTION
+    @param fields: String
 
-    public setConnectionTimeout(seconds: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public post(fields: string): boolean;
 
-    public setCustomHTTPHeaders(headers: Array<any>): void;
+    /**
+    DESCRIPTION
+    @param seconds: int
 
-    public setProxyURL(url: string): void;
-    public setProxyURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setConnectionTimeout(seconds: number): void;
 
-    public setSSL(): void;
-    public setSSL(useSSL?: boolean /* true */, forceSSL?: boolean /* true */, verifyPeer?: boolean /* true */, verifyHost?: boolean /* true */): void;
+    /**
+    DESCRIPTION
+    @param headers: Array
 
-    public setURL(url: string): void;
-    public setURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setCustomHTTPHeaders(headers: Array<any>): void;
 
-    public smtp(mailFrom: string, mailRecipients: Array<any>): boolean;
+    /**
+    DESCRIPTION
+    @param url: String
 
-    public upload(): boolean;
-    public upload(uploadSize?: number /* 0 */): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setProxyURL(url: string): void;
+    /**
+    DESCRIPTION
+    @param url: String
+    @param userName: String = ""
+    @param userPassword: String = ""
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setProxyURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setSSL(): void;
+    /**
+    DESCRIPTION
+    @param useSSL: Boolean = true
+    @param forceSSL: Boolean = true
+    @param verifyPeer: Boolean = true
+    @param verifyHost: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setSSL(useSSL?: boolean /* true */, forceSSL?: boolean /* true */, verifyPeer?: boolean /* true */, verifyHost?: boolean /* true */): void;
+
+    /**
+    DESCRIPTION
+    @param url: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setURL(url: string): void;
+    /**
+    DESCRIPTION
+    @param url: String
+    @param userName: String = ""
+    @param userPassword: String = ""
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
+
+    /**
+    DESCRIPTION
+    @param mailFrom: String
+    @param mailRecipients: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public smtp(mailFrom: string, mailRecipients: Array<any>): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public upload(): boolean;
+    /**
+    DESCRIPTION
+    @param uploadSize: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public upload(uploadSize?: number /* 0 */): boolean;
 
 
 

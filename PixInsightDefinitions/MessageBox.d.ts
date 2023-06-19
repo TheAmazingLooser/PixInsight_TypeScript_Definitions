@@ -32,7 +32,18 @@ declare class MessageBox {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public execute(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public execute(): number;
 
 
 

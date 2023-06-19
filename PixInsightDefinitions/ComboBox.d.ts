@@ -33,36 +33,258 @@ declare class ComboBox extends Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public addItem(text: string): void;
-    public addItem(text: string, icon?: Bitmap | string): void;
+    /**
+    DESCRIPTION
+    @param text: String
 
-    public clear(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public addItem(text: string): void;
+    /**
+    DESCRIPTION
+    @param text: String
+    @param icon: Bitmap|String
 
-    public clearEditText(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public addItem(text: string, icon?: Bitmap | string): void;
 
-    public clearItemIcon(index: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
-    public clearItemText(index: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clearEditText(): void;
 
-    public findItem(text: string): number;
-    public findItem(text: string, fromIdx?: number /* 0 */, exactMatch?: boolean /* false */, caseSensitive?: boolean /* false */): number;
+    /**
+    DESCRIPTION
+    @param index: int
 
-    public hideList(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clearItemIcon(index: number): void;
 
-    public insertItem(index: number, text: string): void;
-    public insertItem(index: number, text: string, icon?: Bitmap | string): void;
+    /**
+    DESCRIPTION
+    @param index: int
 
-    public itemIcon(index: number): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clearItemText(index: number): void;
 
-    public itemText(index: number): string;
+    /**
+    DESCRIPTION
+    @param text: String
 
-    public removeItem(index: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public findItem(text: string): number;
+    /**
+    DESCRIPTION
+    @param text: String
+    @param fromIdx: int = 0
+    @param exactMatch: Boolean = false
+    @param caseSensitive: Boolean = false
 
-    public setItemIcon(index: number, Bitmap: Bitmap  |  string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public findItem(text: string, fromIdx?: number /* 0 */, exactMatch?: boolean /* false */, caseSensitive?: boolean /* false */): number;
 
-    public setItemText(index: number, string: string): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hideList(): void;
 
-    public showList(): void;
+    /**
+    DESCRIPTION
+    @param index: int
+    @param text: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public insertItem(index: number, text: string): void;
+    /**
+    DESCRIPTION
+    @param index: int
+    @param text: String
+    @param icon: Bitmap|String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public insertItem(index: number, text: string, icon?: Bitmap | string): void;
+
+    /**
+    DESCRIPTION
+    @param index: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public itemIcon(index: number): Bitmap;
+
+    /**
+    DESCRIPTION
+    @param index: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public itemText(index: number): string;
+
+    /**
+    DESCRIPTION
+    @param index: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public removeItem(index: number): void;
+
+    /**
+    DESCRIPTION
+    @param index: int
+    @param Bitmap: Bitmap | string
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setItemIcon(index: number, Bitmap: Bitmap  |  string): void;
+
+    /**
+    DESCRIPTION
+    @param index: int
+    @param string: string
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setItemText(index: number, string: string): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public showList(): void;
 
 
 

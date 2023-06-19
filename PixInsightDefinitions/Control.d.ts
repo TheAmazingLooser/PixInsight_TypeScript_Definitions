@@ -84,135 +84,1018 @@ declare class Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public activateWindow(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public activateWindow(): void;
 
-    public adjustToContents(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public adjustToContents(): void;
 
-    public bringToFront(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public bringToFront(): void;
 
-    public childByPos(Point: Point): Control;
+    /**
+    DESCRIPTION
+    @param Point: Point
 
-    public childByPos(x: number, y: number): Control;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public childByPos(Point: Point): Control;
 
-    public controlToLocal(Control: Control, Point: Point): Point;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
 
-    public ensureLayoutUpdated(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public childByPos(x: number, y: number): Control;
 
-    public globalToLocal(Point: Point): Point;
+    /**
+    DESCRIPTION
+    @param Control: Control
+    @param Point: Point
 
-    public hide(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public controlToLocal(Control: Control, Point: Point): Point;
 
-    public hideAlias(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public ensureLayoutUpdated(): void;
 
-    public isAncestorOf(Control: Control): boolean;
+    /**
+    DESCRIPTION
+    @param Point: Point
 
-    public localToControl(Control: Control, Point: Point): Point;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public globalToLocal(Point: Point): Point;
 
-    public localToGlobal(Point: Point): Point;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hide(): void;
 
-    public localToParent(Point: Point): Point;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hideAlias(): void;
 
-    public logicalPixelsToPhysical(size: number): number;
+    /**
+    DESCRIPTION
+    @param Control: Control
 
-    public move(Point: Point): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isAncestorOf(Control: Control): boolean;
 
-    public move(x: number, y: number): void;
+    /**
+    DESCRIPTION
+    @param Control: Control
+    @param Point: Point
 
-    public parentToLocal(Point: Point): Point;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public localToControl(Control: Control, Point: Point): Point;
 
-    public physicalPixelsToLogical(size: number): number;
+    /**
+    DESCRIPTION
+    @param Point: Point
 
-    public render(): Bitmap;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public localToGlobal(Point: Point): Point;
 
-    public repaint(): void;
+    /**
+    DESCRIPTION
+    @param Point: Point
 
-    public repaint(Rect: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public localToParent(Point: Point): Point;
 
-    public repaint(x0: number, y0: number, x1: number, y1: number): void;
+    /**
+    DESCRIPTION
+    @param size: Number
 
-    public resize(w: number, h: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public logicalPixelsToPhysical(size: number): number;
 
-    public restyle(): void;
+    /**
+    DESCRIPTION
+    @param Point: Point
 
-    public scaledResource(filePath: string): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public move(Point: Point): void;
 
-    public scaledStyleSheet(cssCode: string): string;
-    public scaledStyleSheet(cssCode: string, fontDPI?: number /* 0 */): string;
+    /**
+    DESCRIPTION
+    @param x: int
+    @param y: int
 
-    public scroll(d: Point): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public move(x: number, y: number): void;
 
-    public scroll(dx: number, dy: number): void;
+    /**
+    DESCRIPTION
+    @param Point: Point
 
-    public scroll(d: Point, Rect: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public parentToLocal(Point: Point): Point;
 
-    public scroll(dx: number, dy: number, x0: number, y0: number, x1: number, y1: number): void;
+    /**
+    DESCRIPTION
+    @param size: Number
 
-    public sendToBack(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public physicalPixelsToLogical(size: number): number;
 
-    public setCursorToParent(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public render(): Bitmap;
 
-    public setFixedHeight(): void;
-    public setFixedHeight(h?: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public repaint(): void;
 
-    public setFixedSize(): void;
-    public setFixedSize(w: number, h: number): void;
+    /**
+    DESCRIPTION
+    @param Rect: Rect
 
-    public setFixedWidth(): void;
-    public setFixedWidth(w?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public repaint(Rect: Rect): void;
 
-    public setMaxHeight(): void;
-    public setMaxHeight(h?: number): void;
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public setMaxSize(): void;
-    public setMaxSize(w: number, h: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public repaint(x0: number, y0: number, x1: number, y1: number): void;
 
-    public setMaxWidth(): void;
-    public setMaxWidth(w?: number): void;
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
 
-    public setMinHeight(): void;
-    public setMinHeight(h?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resize(w: number, h: number): void;
 
-    public setMinSize(): void;
-    public setMinSize(w: number, h: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public restyle(): void;
 
-    public setMinWidth(): void;
-    public setMinWidth(w?: number): void;
+    /**
+    DESCRIPTION
+    @param filePath: String
 
-    public setScaledFixedHeight(h: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaledResource(filePath: string): string;
 
-    public setScaledFixedSize(w: number, h: number): void;
+    /**
+    DESCRIPTION
+    @param cssCode: String
 
-    public setScaledFixedWidth(w: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaledStyleSheet(cssCode: string): string;
+    /**
+    DESCRIPTION
+    @param cssCode: String
+    @param fontDPI: int = 0
 
-    public setScaledMaxHeight(h: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scaledStyleSheet(cssCode: string, fontDPI?: number /* 0 */): string;
 
-    public setScaledMaxSize(w: number, h: number): void;
+    /**
+    DESCRIPTION
+    @param d: Point
 
-    public setScaledMaxWidth(w: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scroll(d: Point): void;
 
-    public setScaledMinHeight(h: number): void;
+    /**
+    DESCRIPTION
+    @param dx: int
+    @param dy: int
 
-    public setScaledMinSize(w: number, h: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scroll(dx: number, dy: number): void;
 
-    public setScaledMinWidth(w: number): void;
+    /**
+    DESCRIPTION
+    @param d: Point
+    @param Rect: Rect
 
-    public setVariableHeight(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scroll(d: Point, Rect: Rect): void;
 
-    public setVariableSize(): void;
+    /**
+    DESCRIPTION
+    @param dx: int
+    @param dy: int
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
 
-    public setVariableWidth(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public scroll(dx: number, dy: number, x0: number, y0: number, x1: number, y1: number): void;
 
-    public show(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public sendToBack(): void;
 
-    public showAlias(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setCursorToParent(): void;
 
-    public stackUnder(Control: Control): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFixedHeight(): void;
+    /**
+    DESCRIPTION
+    @param h: int
 
-    public update(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFixedHeight(h?: number): void;
 
-    public update(Rect: Rect): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFixedSize(): void;
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
 
-    public update(x0: number, y0: number, x1: number, y1: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFixedSize(w: number, h: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFixedWidth(): void;
+    /**
+    DESCRIPTION
+    @param w: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFixedWidth(w?: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMaxHeight(): void;
+    /**
+    DESCRIPTION
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMaxHeight(h?: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMaxSize(): void;
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMaxSize(w: number, h: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMaxWidth(): void;
+    /**
+    DESCRIPTION
+    @param w: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMaxWidth(w?: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinHeight(): void;
+    /**
+    DESCRIPTION
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinHeight(h?: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinSize(): void;
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinSize(w: number, h: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinWidth(): void;
+    /**
+    DESCRIPTION
+    @param w: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinWidth(w?: number): void;
+
+    /**
+    DESCRIPTION
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledFixedHeight(h: number): void;
+
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledFixedSize(w: number, h: number): void;
+
+    /**
+    DESCRIPTION
+    @param w: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledFixedWidth(w: number): void;
+
+    /**
+    DESCRIPTION
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledMaxHeight(h: number): void;
+
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledMaxSize(w: number, h: number): void;
+
+    /**
+    DESCRIPTION
+    @param w: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledMaxWidth(w: number): void;
+
+    /**
+    DESCRIPTION
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledMinHeight(h: number): void;
+
+    /**
+    DESCRIPTION
+    @param w: int
+    @param h: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledMinSize(w: number, h: number): void;
+
+    /**
+    DESCRIPTION
+    @param w: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScaledMinWidth(w: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setVariableHeight(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setVariableSize(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setVariableWidth(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public show(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public showAlias(): void;
+
+    /**
+    DESCRIPTION
+    @param Control: Control
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stackUnder(Control: Control): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public update(): void;
+
+    /**
+    DESCRIPTION
+    @param Rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public update(Rect: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param x0: int
+    @param y0: int
+    @param x1: int
+    @param y1: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public update(x0: number, y0: number, x1: number, y1: number): void;
 
 
 

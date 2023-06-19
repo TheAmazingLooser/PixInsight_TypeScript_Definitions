@@ -44,46 +44,287 @@ declare class TypeDescription {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public inheritedBy(objectId: string): boolean;
+    /**
+    DESCRIPTION
+    @param objectId: String
 
-    public inheritsFrom(objectId: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inheritedBy(objectId: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param objectId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inheritsFrom(objectId: string): boolean;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static beginObjectDefinition(objectId: string): void;
+    /**
+    DESCRIPTION
+    @param objectId: String
 
-    public static clearAll(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static beginObjectDefinition(objectId: string): void;
 
-    public static defineConstant(formalDescription: string): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static clearAll(): void;
 
-    public static defineConstructor(formalDescription: string): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
 
-    public static defineEventHandler(formalDescription: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineConstant(formalDescription: string): void;
 
-    public static defineIncludedFile(formalDescription: string): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
 
-    public static defineMethod(formalDescription: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineConstructor(formalDescription: string): void;
 
-    public static defineProperty(formalDescription: string): void;
-    public static defineProperty(formalDescription: string, readOnly?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
 
-    public static defineStaticMethod(formalDescription: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineEventHandler(formalDescription: string): void;
 
-    public static defineStaticProperty(formalDescription: string): void;
-    public static defineStaticProperty(formalDescription: string, readOnly?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
 
-    public static endObjectDefinition(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineIncludedFile(formalDescription: string): void;
 
-    public static enterDefinitionContext(): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
 
-    public static inherit(objectId: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineMethod(formalDescription: string): void;
 
-    public static leaveDefinitionContext(): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
 
-    public static objectDefined(objectId: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineProperty(formalDescription: string): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
+    @param readOnly: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineProperty(formalDescription: string, readOnly?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param formalDescription: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineStaticMethod(formalDescription: string): void;
+
+    /**
+    DESCRIPTION
+    @param formalDescription: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineStaticProperty(formalDescription: string): void;
+    /**
+    DESCRIPTION
+    @param formalDescription: String
+    @param readOnly: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineStaticProperty(formalDescription: string, readOnly?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static endObjectDefinition(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static enterDefinitionContext(): void;
+
+    /**
+    DESCRIPTION
+    @param objectId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static inherit(objectId: string): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static leaveDefinitionContext(): void;
+
+    /**
+    DESCRIPTION
+    @param objectId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static objectDefined(objectId: string): boolean;
 
 
 

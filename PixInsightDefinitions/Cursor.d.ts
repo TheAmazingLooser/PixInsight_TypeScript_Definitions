@@ -30,7 +30,20 @@ declare class Cursor {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(csr: Cursor): void;
+    /**
+    DESCRIPTION
+    @param csr: Cursor
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(csr: Cursor): void;
 
 
 

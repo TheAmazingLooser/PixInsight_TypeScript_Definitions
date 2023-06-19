@@ -37,41 +37,282 @@ declare class EphemerisFile {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public close(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public close(): void;
 
-    public constantValue(name: string): number;
+    /**
+    DESCRIPTION
+    @param name: String
 
-    public isConstantAvailable(name: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public constantValue(name: string): number;
 
-    public isObjectAvailable(object: string): boolean;
-    public isObjectAvailable(object: string, origin?: string): boolean;
+    /**
+    DESCRIPTION
+    @param name: String
 
-    public objectName(object: string): string;
-    public objectName(object: string, origin?: string): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isConstantAvailable(name: string): boolean;
 
-    public open(filePath: string): void;
+    /**
+    DESCRIPTION
+    @param object: String
 
-    public visibleObjects(window: ImageWindow, P: Position): Array<any>;
-    public visibleObjects(window: ImageWindow, P: Position, magMax?: any, magMin?: any, rect?: Rect): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isObjectAvailable(object: string): boolean;
+    /**
+    DESCRIPTION
+    @param object: String
+    @param origin: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isObjectAvailable(object: string, origin?: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param object: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public objectName(object: string): string;
+    /**
+    DESCRIPTION
+    @param object: String
+    @param origin: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public objectName(object: string, origin?: string): string;
+
+    /**
+    DESCRIPTION
+    @param filePath: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public open(filePath: string): void;
+
+    /**
+    DESCRIPTION
+    @param window: ImageWindow
+    @param P: Position
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public visibleObjects(window: ImageWindow, P: Position): Array<any>;
+    /**
+    DESCRIPTION
+    @param window: ImageWindow
+    @param P: Position
+    @param magMax: any
+    @param magMin: any
+    @param rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public visibleObjects(window: ImageWindow, P: Position, magMax?: any, magMin?: any, rect?: Rect): Array<any>;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static deltaAT(t: Date): number;
+    /**
+    DESCRIPTION
+    @param t: Date
 
-    public static deltaAT(isoTime: string): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaAT(t: Date): number;
 
-    public static deltaAT(jd1: number): number;
-    public static deltaAT(jd1: number, jd2?: number): number;
+    /**
+    DESCRIPTION
+    @param isoTime: String
 
-    public static deltaT(t: Date): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaAT(isoTime: string): number;
 
-    public static deltaT(isoTime: string): number;
+    /**
+    DESCRIPTION
+    @param jd1: Number
 
-    public static deltaT(jd1: number): number;
-    public static deltaT(jd1: number, jd2?: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaAT(jd1: number): number;
+    /**
+    DESCRIPTION
+    @param jd1: Number
+    @param jd2: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaAT(jd1: number, jd2?: number): number;
+
+    /**
+    DESCRIPTION
+    @param t: Date
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaT(t: Date): number;
+
+    /**
+    DESCRIPTION
+    @param isoTime: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaT(isoTime: string): number;
+
+    /**
+    DESCRIPTION
+    @param jd1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaT(jd1: number): number;
+    /**
+    DESCRIPTION
+    @param jd1: Number
+    @param jd2: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static deltaT(jd1: number, jd2?: number): number;
 
 
 

@@ -27,21 +27,131 @@ declare class Settings {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static canReadGlobal(key: string): boolean;
+    /**
+    DESCRIPTION
+    @param key: String
 
-    public static canWriteGlobal(key: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static canReadGlobal(key: string): boolean;
 
-    public static read(key: string, dataType: number): Object;
+    /**
+    DESCRIPTION
+    @param key: String
 
-    public static readGlobal(key: string, dataType: number): Object;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static canWriteGlobal(key: string): boolean;
 
-    public static remove(key: string): boolean;
+    /**
+    DESCRIPTION
+    @param key: String
+    @param dataType: int
 
-    public static removeGlobal(key: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static read(key: string, dataType: number): Object;
 
-    public static write(key: string, dataType: number, x: Object): void;
+    /**
+    DESCRIPTION
+    @param key: String
+    @param dataType: int
 
-    public static writeGlobal(key: string, dataType: number, x: Object): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static readGlobal(key: string, dataType: number): Object;
+
+    /**
+    DESCRIPTION
+    @param key: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static remove(key: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param key: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static removeGlobal(key: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param key: String
+    @param dataType: int
+    @param x: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static write(key: string, dataType: number, x: Object): void;
+
+    /**
+    DESCRIPTION
+    @param key: String
+    @param dataType: int
+    @param x: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static writeGlobal(key: string, dataType: number, x: Object): void;
 
 
 

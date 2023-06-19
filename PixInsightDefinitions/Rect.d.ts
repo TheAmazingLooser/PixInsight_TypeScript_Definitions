@@ -54,211 +54,1782 @@ declare class Rect {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public add(r: Rect): void;
-
-    public add(p: Point): void;
-
-    public add(x: number): void;
-    public add(x: number, y?: number /* x */): void;
-
-    public add(x0: number, y0: number, x1: number, y1: number): void;
-
-    public assign(r: Rect): void;
-
-    public assign(v: number): void;
-
-    public assign(width: number, height: number): void;
-
-    public assign(x0: number, y0: number, x1: number, y1: number): void;
-
-    public clipCode(p: Point): number;
-
-    public clipCode(x: number, y: number): number;
-
-    public deflateBy(d: Point): void;
-
-    public deflateBy(dx: number): void;
-    public deflateBy(dx: number, dy?: number /* dx */): void;
-
-    public deflatedBy(d: Point): Rect;
-
-    public deflatedBy(dx: number): Rect;
-    public deflatedBy(dx: number, dy?: number /* dx */): Rect;
-
-    public div(r: Rect): void;
-
-    public div(p: Point): void;
-
-    public div(x: number): void;
-    public div(x: number, y?: number /* x */): void;
-
-    public div(x0: number, y0: number, x1: number, y1: number): void;
-
-    public includes(p: Point): boolean;
-
-    public includes(x: number, y: number): boolean;
-
-    public inflateBy(d: Point): void;
-
-    public inflateBy(dx: number): void;
-    public inflateBy(dx: number, dy?: number /* dx */): void;
-
-    public inflatedBy(d: Point): Rect;
-
-    public inflatedBy(dx: number): Rect;
-    public inflatedBy(dx: number, dy?: number /* dx */): Rect;
-
-    public intersect(r: Rect): void;
-
-    public intersect(x0: number, y0: number, x1: number, y1: number): void;
-
-    public intersection(r: Rect): Rect;
-
-    public intersection(x0: number, y0: number, x1: number, y1: number): Rect;
-
-    public intersects(r: Rect): boolean;
-
-    public intersects(x0: number, y0: number, x1: number, y1: number): boolean;
-
-    public isEqualTo(r: Rect): boolean;
-
-    public isEqualTo(p0: Point, p1: Point): boolean;
-
-    public isEqualTo(x0: number, y0: number, x1: number, y1: number): boolean;
-
-    public isEqualTo(scalar: number): boolean;
-
-    public isLessThan(r: Rect): boolean;
-
-    public isLessThan(p0: Point, p1: Point): boolean;
-
-    public isLessThan(x0: number, y0: number, x1: number, y1: number): boolean;
-
-    public isLessThan(scalar: number): boolean;
-
-    public moveBy(d: Point): void;
-
-    public moveBy(dx: number): void;
-    public moveBy(dx: number, dy?: number /* dx */): void;
-
-    public moveTo(p: Point): void;
-
-    public moveTo(x: number): void;
-    public moveTo(x: number, y?: number /* x */): void;
-
-    public movedBy(d: Point): Rect;
-
-    public movedBy(dx: number): Rect;
-    public movedBy(dx: number, dy?: number /* dx */): Rect;
-
-    public movedTo(p: Point): Rect;
-
-    public movedTo(x: number): Rect;
-    public movedTo(x: number, y?: number /* x */): Rect;
-
-    public mul(r: Rect): void;
-
-    public mul(p: Point): void;
-
-    public mul(x: number): void;
-    public mul(x: number, y?: number /* x */): void;
-
-    public mul(x0: number, y0: number, x1: number, y1: number): void;
-
-    public order(): void;
-
-    public ordered(): Rect;
-
-    public resizeBy(d: Point): void;
-
-    public resizeBy(dx: number): void;
-    public resizeBy(dx: number, dy?: number /* dx */): void;
-
-    public resizeTo(width: number): void;
-    public resizeTo(width: number, height?: number /* width */): void;
-
-    public resizedBy(d: Point): Rect;
-
-    public resizedBy(dx: number): Rect;
-    public resizedBy(dx: number, dy?: number /* dx */): Rect;
-
-    public resizedTo(width: number): Rect;
-    public resizedTo(width: number, height?: number /* width */): Rect;
-
-    public rotate(angleRadians: number): void;
-    public rotate(angleRadians: number, center?: Point /* 0 */): void;
-
-    public rotate(sin: number, cos: number): void;
-    public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
-
-    public rotate(angleRadians: number, xc: number, yc: number): void;
-
-    public rotate(sin: number, cos: number, xc: number, yc: number): void;
-
-    public rotated(angleRadians: number): Rect;
-    public rotated(angleRadians: number, center?: Point /* 0 */): Rect;
-
-    public rotated(sin: number, cos: number): Rect;
-    public rotated(sin: number, cos: number, center?: Point /* 0 */): Rect;
-
-    public rotated(angleRadians: number, xc: number, yc: number): Rect;
-
-    public rotated(sin: number, cos: number, xc: number, yc: number): Rect;
-
-    public round(): void;
-    public round(n?: number /* 0 */): void;
-
-    public rounded(): Rect;
-    public rounded(n?: number /* 0 */): Rect;
-
-    public sub(r: Rect): void;
-
-    public sub(p: Point): void;
-
-    public sub(x: number): void;
-    public sub(x: number, y?: number /* x */): void;
-
-    public sub(x0: number, y0: number, x1: number, y1: number): void;
-
-    public symmetric(): Rect;
-
-    public symmetrize(): void;
-
-    public toArray(): Array<any>;
-
-    public toString(): string;
-
-    public transform(M: Matrix): void;
-
-    public transformed(M: Matrix): Rect;
-
-    public translate(p: Point): void;
-
-    public translate(x: number): void;
-    public translate(x: number, y?: number /* x */): void;
-
-    public translateBy(d: Point): void;
-
-    public translateBy(dx: number): void;
-    public translateBy(dx: number, dy?: number /* dx */): void;
-
-    public translated(p: Point): Rect;
-
-    public translated(x: number): Rect;
-    public translated(x: number, y?: number /* x */): Rect;
-
-    public translatedBy(d: Point): Rect;
-
-    public translatedBy(dx: number): Rect;
-    public translatedBy(dx: number, dy?: number /* dx */): Rect;
-
-    public union(r: Rect): Rect;
-
-    public union(x0: number, y0: number, x1: number, y1: number): Rect;
-
-    public unite(r: Rect): void;
-
-    public unite(x0: number, y0: number, x1: number, y1: number): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public add(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public add(p: Point): void;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public add(x: number): void;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public add(x: number, y?: number /* x */): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public add(x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param v: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(v: number): void;
+
+    /**
+    DESCRIPTION
+    @param width: Number
+    @param height: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(width: number, height: number): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clipCode(p: Point): number;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clipCode(x: number, y: number): number;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deflateBy(d: Point): void;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deflateBy(dx: number): void;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deflateBy(dx: number, dy?: number /* dx */): void;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deflatedBy(d: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deflatedBy(dx: number): Rect;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deflatedBy(dx: number, dy?: number /* dx */): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public div(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public div(p: Point): void;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public div(x: number): void;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public div(x: number, y?: number /* x */): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public div(x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public includes(p: Point): boolean;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public includes(x: number, y: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inflateBy(d: Point): void;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inflateBy(dx: number): void;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inflateBy(dx: number, dy?: number /* dx */): void;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inflatedBy(d: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inflatedBy(dx: number): Rect;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public inflatedBy(dx: number, dy?: number /* dx */): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intersect(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intersect(x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intersection(r: Rect): Rect;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intersection(x0: number, y0: number, x1: number, y1: number): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intersects(r: Rect): boolean;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intersects(x0: number, y0: number, x1: number, y1: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isEqualTo(r: Rect): boolean;
+
+    /**
+    DESCRIPTION
+    @param p0: Point
+    @param p1: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isEqualTo(p0: Point, p1: Point): boolean;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isEqualTo(x0: number, y0: number, x1: number, y1: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param scalar: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isEqualTo(scalar: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isLessThan(r: Rect): boolean;
+
+    /**
+    DESCRIPTION
+    @param p0: Point
+    @param p1: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isLessThan(p0: Point, p1: Point): boolean;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isLessThan(x0: number, y0: number, x1: number, y1: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param scalar: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isLessThan(scalar: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public moveBy(d: Point): void;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public moveBy(dx: number): void;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public moveBy(dx: number, dy?: number /* dx */): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public moveTo(p: Point): void;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public moveTo(x: number): void;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public moveTo(x: number, y?: number /* x */): void;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public movedBy(d: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public movedBy(dx: number): Rect;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public movedBy(dx: number, dy?: number /* dx */): Rect;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public movedTo(p: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public movedTo(x: number): Rect;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public movedTo(x: number, y?: number /* x */): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mul(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mul(p: Point): void;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mul(x: number): void;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mul(x: number, y?: number /* x */): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public mul(x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public order(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public ordered(): Rect;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizeBy(d: Point): void;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizeBy(dx: number): void;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizeBy(dx: number, dy?: number /* dx */): void;
+
+    /**
+    DESCRIPTION
+    @param width: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizeTo(width: number): void;
+    /**
+    DESCRIPTION
+    @param width: Number
+    @param height: Number = width
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizeTo(width: number, height?: number /* width */): void;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizedBy(d: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizedBy(dx: number): Rect;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizedBy(dx: number, dy?: number /* dx */): Rect;
+
+    /**
+    DESCRIPTION
+    @param width: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizedTo(width: number): Rect;
+    /**
+    DESCRIPTION
+    @param width: Number
+    @param height: Number = width
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resizedTo(width: number, height?: number /* width */): Rect;
+
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotate(angleRadians: number): void;
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+    @param center: Point = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotate(angleRadians: number, center?: Point /* 0 */): void;
+
+    /**
+    DESCRIPTION
+    @param sin: Number
+    @param cos: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotate(sin: number, cos: number): void;
+    /**
+    DESCRIPTION
+    @param sin: Number
+    @param cos: Number
+    @param center: Point = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
+
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+    @param xc: Number
+    @param yc: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotate(angleRadians: number, xc: number, yc: number): void;
+
+    /**
+    DESCRIPTION
+    @param sin: Number
+    @param cos: Number
+    @param xc: Number
+    @param yc: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotate(sin: number, cos: number, xc: number, yc: number): void;
+
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(angleRadians: number): Rect;
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+    @param center: Point = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(angleRadians: number, center?: Point /* 0 */): Rect;
+
+    /**
+    DESCRIPTION
+    @param sin: Number
+    @param cos: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(sin: number, cos: number): Rect;
+    /**
+    DESCRIPTION
+    @param sin: Number
+    @param cos: Number
+    @param center: Point = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(sin: number, cos: number, center?: Point /* 0 */): Rect;
+
+    /**
+    DESCRIPTION
+    @param angleRadians: Number
+    @param xc: Number
+    @param yc: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(angleRadians: number, xc: number, yc: number): Rect;
+
+    /**
+    DESCRIPTION
+    @param sin: Number
+    @param cos: Number
+    @param xc: Number
+    @param yc: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rotated(sin: number, cos: number, xc: number, yc: number): Rect;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public round(): void;
+    /**
+    DESCRIPTION
+    @param n: uint = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public round(n?: number /* 0 */): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rounded(): Rect;
+    /**
+    DESCRIPTION
+    @param n: uint = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public rounded(n?: number /* 0 */): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public sub(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public sub(p: Point): void;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public sub(x: number): void;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public sub(x: number, y?: number /* x */): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public sub(x0: number, y0: number, x1: number, y1: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public symmetric(): Rect;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public symmetrize(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toArray(): Array<any>;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toString(): string;
+
+    /**
+    DESCRIPTION
+    @param M: Matrix
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public transform(M: Matrix): void;
+
+    /**
+    DESCRIPTION
+    @param M: Matrix
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public transformed(M: Matrix): Rect;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translate(p: Point): void;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translate(x: number): void;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translate(x: number, y?: number /* x */): void;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translateBy(d: Point): void;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translateBy(dx: number): void;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translateBy(dx: number, dy?: number /* dx */): void;
+
+    /**
+    DESCRIPTION
+    @param p: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translated(p: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param x: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translated(x: number): Rect;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number = x
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translated(x: number, y?: number /* x */): Rect;
+
+    /**
+    DESCRIPTION
+    @param d: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translatedBy(d: Point): Rect;
+
+    /**
+    DESCRIPTION
+    @param dx: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translatedBy(dx: number): Rect;
+    /**
+    DESCRIPTION
+    @param dx: Number
+    @param dy: Number = dx
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public translatedBy(dx: number, dy?: number /* dx */): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public union(r: Rect): Rect;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public union(x0: number, y0: number, x1: number, y1: number): Rect;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public unite(r: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param x0: Number
+    @param y0: Number
+    @param x1: Number
+    @param y1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public unite(x0: number, y0: number, x1: number, y1: number): void;
 
 
 

@@ -29,21 +29,149 @@ declare class PointGridInterpolation {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(G: PointGridInterpolation): void;
+    /**
+    DESCRIPTION
+    @param G: PointGridInterpolation
 
-    public clear(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(G: PointGridInterpolation): void;
 
-    public evaluate(x: number, y: number): Point;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
-    public evaluate(p: Point): Point;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
 
-    public evaluate(points: Array<any>): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(x: number, y: number): Point;
 
-    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline): void;
-    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param p: Point
 
-    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation): void;
-    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(p: Point): Point;
+
+    /**
+    DESCRIPTION
+    @param points: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(points: Array<any>): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param Sx: SurfaceSpline
+    @param Sy: SurfaceSpline
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param Sx: SurfaceSpline
+    @param Sy: SurfaceSpline
+    @param delta: int = 8
+    @param verbose: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param Sx: ShepardInterpolation
+    @param Sy: ShepardInterpolation
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation): void;
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param Sx: ShepardInterpolation
+    @param Sy: ShepardInterpolation
+    @param delta: int = 8
+    @param verbose: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
 
 

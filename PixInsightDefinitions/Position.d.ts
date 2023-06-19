@@ -45,58 +45,370 @@ declare class Position {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public apparent(H: EphemerisHandle): Vector;
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
 
-    public apparent(S: StarPosition): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public apparent(H: EphemerisHandle): Vector;
 
-    public apparentVisualMagnitude(H: EphemerisHandle): number | void;
+    /**
+    DESCRIPTION
+    @param S: StarPosition
 
-    public astrometric(H: EphemerisHandle): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public apparent(S: StarPosition): Vector;
 
-    public astrometric(S: StarPosition): Vector;
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
 
-    public canComputeApparentVisualMagnitude(H: EphemerisHandle): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public apparentVisualMagnitude(H: EphemerisHandle): number | void;
 
-    public geometric(H: EphemerisHandle): Vector;
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
 
-    public geometric(S: StarPosition): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public astrometric(H: EphemerisHandle): Vector;
 
-    public initCIOBasedParameters(): void;
+    /**
+    DESCRIPTION
+    @param S: StarPosition
 
-    public initEquinoxBasedParameters(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public astrometric(S: StarPosition): Vector;
 
-    public intermediate(H: EphemerisHandle): Vector;
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
 
-    public intermediate(S: StarPosition): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canComputeApparentVisualMagnitude(H: EphemerisHandle): boolean;
 
-    public nutationAngles(): Array<any>;
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
 
-    public proper(H: EphemerisHandle): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public geometric(H: EphemerisHandle): Vector;
 
-    public proper(S: StarPosition): Vector;
+    /**
+    DESCRIPTION
+    @param S: StarPosition
 
-    public true(H: EphemerisHandle): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public geometric(S: StarPosition): Vector;
 
-    public true(S: StarPosition): Vector;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initCIOBasedParameters(): void;
 
-    public trueDistance(H: EphemerisHandle): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initEquinoxBasedParameters(): void;
 
-    public trueDistance(S: StarPosition): number;
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intermediate(H: EphemerisHandle): Vector;
+
+    /**
+    DESCRIPTION
+    @param S: StarPosition
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public intermediate(S: StarPosition): Vector;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public nutationAngles(): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public proper(H: EphemerisHandle): Vector;
+
+    /**
+    DESCRIPTION
+    @param S: StarPosition
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public proper(S: StarPosition): Vector;
+
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public true(H: EphemerisHandle): Vector;
+
+    /**
+    DESCRIPTION
+    @param S: StarPosition
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public true(S: StarPosition): Vector;
+
+    /**
+    DESCRIPTION
+    @param H: EphemerisHandle
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public trueDistance(H: EphemerisHandle): number;
+
+    /**
+    DESCRIPTION
+    @param S: StarPosition
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public trueDistance(S: StarPosition): number;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static eclipticToEquatorial(r: Vector, eps: number): Vector;
+    /**
+    DESCRIPTION
+    @param r: Vector
+    @param eps: Number
 
-    public static eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static eclipticToEquatorial(r: Vector, eps: number): Vector;
 
-    public static equatorialToEcliptic(r: Vector, eps: number): Vector;
+    /**
+    DESCRIPTION
+    @param r: Vector
+    @param se: Number
+    @param ce: Number
 
-    public static equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
 
-    public static icrsEquatorialToGalactic(r: Vector): Vector;
+    /**
+    DESCRIPTION
+    @param r: Vector
+    @param eps: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static equatorialToEcliptic(r: Vector, eps: number): Vector;
+
+    /**
+    DESCRIPTION
+    @param r: Vector
+    @param se: Number
+    @param ce: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
+
+    /**
+    DESCRIPTION
+    @param r: Vector
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static icrsEquatorialToGalactic(r: Vector): Vector;
 
 
 

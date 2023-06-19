@@ -27,55 +27,390 @@ declare class Color {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static alpha(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static alphaF(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static alpha(rgba: number): number;
 
-    public static blue(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static blueF(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static alphaF(rgba: number): number;
 
-    public static clearAlpha(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static clearBlue(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static blue(rgba: number): number;
 
-    public static clearGreen(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static clearRed(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static blueF(rgba: number): number;
 
-    public static green(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static greenF(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static clearAlpha(rgba: number): number;
 
-    public static hsiSaturation(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static hsvSaturation(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static clearBlue(rgba: number): number;
 
-    public static hue(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static isGray(rgba: number): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static clearGreen(rgba: number): number;
 
-    public static red(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static redF(rgba: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static clearRed(rgba: number): number;
 
-    public static rgbColorToHexString(rgb: number): string;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static rgbaColor(r: number, g: number, b: number, a: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static green(rgba: number): number;
 
-    public static rgbaColorF(r: number, g: number, b: number, a: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static rgbaColorToHexString(rgba: number): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static greenF(rgba: number): number;
 
-    public static setAlpha(rgba: number, number: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static setBlue(rgba: number, number: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsiSaturation(rgba: number): number;
 
-    public static setGreen(rgba: number, number: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
 
-    public static setRed(rgba: number, number: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hsvSaturation(rgba: number): number;
 
-    public static value(rgba: number): number;
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static hue(rgba: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static isGray(rgba: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static red(rgba: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static redF(rgba: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgb: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbColorToHexString(rgb: number): string;
+
+    /**
+    DESCRIPTION
+    @param r: uint8
+    @param g: uint8
+    @param b: uint8
+    @param a: uint8
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbaColor(r: number, g: number, b: number, a: number): number;
+
+    /**
+    DESCRIPTION
+    @param r: Number
+    @param g: Number
+    @param b: Number
+    @param a: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbaColorF(r: number, g: number, b: number, a: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static rgbaColorToHexString(rgba: number): string;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+    @param number: number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static setAlpha(rgba: number, number: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+    @param number: number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static setBlue(rgba: number, number: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+    @param number: number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static setGreen(rgba: number, number: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+    @param number: number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static setRed(rgba: number, number: number): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static value(rgba: number): number;
 
 
 

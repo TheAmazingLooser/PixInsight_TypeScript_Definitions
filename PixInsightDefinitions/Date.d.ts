@@ -26,119 +26,865 @@ declare class Date {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public getDate(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getDate(): number;
 
-    public getDay(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getDay(): number;
 
-    public getFullYear(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getFullYear(): number;
 
-    public getHours(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getHours(): number;
 
-    public getMilliseconds(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getMilliseconds(): number;
 
-    public getMinutes(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getMinutes(): number;
 
-    public getMonth(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getMonth(): number;
 
-    public getSeconds(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getSeconds(): number;
 
-    public getTime(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getTime(): number;
 
-    public getTimezoneOffset(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getTimezoneOffset(): number;
 
-    public getUTCDate(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCDate(): number;
 
-    public getUTCDay(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCDay(): number;
 
-    public getUTCFullYear(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCFullYear(): number;
 
-    public getUTCHours(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCHours(): number;
 
-    public getUTCMilliseconds(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCMilliseconds(): number;
 
-    public getUTCMinutes(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCMinutes(): number;
 
-    public getUTCMonth(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCMonth(): number;
 
-    public getUTCSeconds(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUTCSeconds(): number;
 
-    public propertyIsEnumerable(propertyName: string): boolean;
+    /**
+    DESCRIPTION
+    @param propertyName: String
 
-    public setDate(day: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyIsEnumerable(propertyName: string): boolean;
 
-    public setFullYear(year: number): void;
-    public setFullYear(year: number, month?: number, day?: number): void;
+    /**
+    DESCRIPTION
+    @param day: uint
 
-    public setHours(hour: number): void;
-    public setHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setDate(day: number): void;
 
-    public setMilliseconds(millisecond: number): void;
+    /**
+    DESCRIPTION
+    @param year: uint
 
-    public setMinutes(minute: number): void;
-    public setMinutes(minute: number, second?: number, millisecond?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFullYear(year: number): void;
+    /**
+    DESCRIPTION
+    @param year: uint
+    @param month: uint
+    @param day: uint
 
-    public setMonth(month: number): void;
-    public setMonth(month: number, day?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFullYear(year: number, month?: number, day?: number): void;
 
-    public setSeconds(second: number): void;
-    public setSeconds(second: number, millisecond?: number): void;
+    /**
+    DESCRIPTION
+    @param hour: uint
 
-    public setTime(time: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setHours(hour: number): void;
+    /**
+    DESCRIPTION
+    @param hour: uint
+    @param minute: uint
+    @param second: uint
+    @param millisecond: uint
 
-    public setUTCDate(day: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
 
-    public setUTCFullYear(year: number): void;
-    public setUTCFullYear(year: number, month?: number, day?: number): void;
+    /**
+    DESCRIPTION
+    @param millisecond: uint
 
-    public setUTCHours(hour: number): void;
-    public setUTCHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMilliseconds(millisecond: number): void;
 
-    public setUTCMilliseconds(millisecond: number): void;
+    /**
+    DESCRIPTION
+    @param minute: uint
 
-    public setUTCMinutes(minute: number): void;
-    public setUTCMinutes(minute: number, second?: number, millisecond?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinutes(minute: number): void;
+    /**
+    DESCRIPTION
+    @param minute: uint
+    @param second: uint
+    @param millisecond: uint
 
-    public setUTCMonth(month: number): void;
-    public setUTCMonth(month: number, day?: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMinutes(minute: number, second?: number, millisecond?: number): void;
 
-    public setUTCSeconds(second: number): void;
-    public setUTCSeconds(second: number, millisecond?: number): void;
+    /**
+    DESCRIPTION
+    @param month: uint
 
-    public toDateString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMonth(month: number): void;
+    /**
+    DESCRIPTION
+    @param month: uint
+    @param day: uint
 
-    public toISOString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setMonth(month: number, day?: number): void;
 
-    public toJSON(): string;
+    /**
+    DESCRIPTION
+    @param second: uint
 
-    public toLocaleDateString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setSeconds(second: number): void;
+    /**
+    DESCRIPTION
+    @param second: uint
+    @param millisecond: uint
 
-    public toLocaleFormat(format: string): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setSeconds(second: number, millisecond?: number): void;
 
-    public toLocaleString(): string;
+    /**
+    DESCRIPTION
+    @param time: uint
 
-    public toLocaleTimeString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setTime(time: number): void;
 
-    public toSource(): string;
+    /**
+    DESCRIPTION
+    @param day: uint
 
-    public toString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCDate(day: number): void;
 
-    public toTimeString(): string;
+    /**
+    DESCRIPTION
+    @param year: uint
 
-    public toUTCString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCFullYear(year: number): void;
+    /**
+    DESCRIPTION
+    @param year: uint
+    @param month: uint
+    @param day: uint
 
-    public valueOf(): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCFullYear(year: number, month?: number, day?: number): void;
+
+    /**
+    DESCRIPTION
+    @param hour: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCHours(hour: number): void;
+    /**
+    DESCRIPTION
+    @param hour: uint
+    @param minute: uint
+    @param second: uint
+    @param millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
+
+    /**
+    DESCRIPTION
+    @param millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCMilliseconds(millisecond: number): void;
+
+    /**
+    DESCRIPTION
+    @param minute: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCMinutes(minute: number): void;
+    /**
+    DESCRIPTION
+    @param minute: uint
+    @param second: uint
+    @param millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCMinutes(minute: number, second?: number, millisecond?: number): void;
+
+    /**
+    DESCRIPTION
+    @param month: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCMonth(month: number): void;
+    /**
+    DESCRIPTION
+    @param month: uint
+    @param day: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCMonth(month: number, day?: number): void;
+
+    /**
+    DESCRIPTION
+    @param second: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCSeconds(second: number): void;
+    /**
+    DESCRIPTION
+    @param second: uint
+    @param millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUTCSeconds(second: number, millisecond?: number): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toDateString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toISOString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toJSON(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleDateString(): string;
+
+    /**
+    DESCRIPTION
+    @param format: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleFormat(format: string): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleTimeString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toSource(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toTimeString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toUTCString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public valueOf(): number;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static UTC(year: number, month: number, day: number): number;
-    public static UTC(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number): number;
+    /**
+    DESCRIPTION
+    @param year: uint
+    @param month: uint
+    @param day: uint
 
-    public static now(): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static UTC(year: number, month: number, day: number): number;
+    /**
+    DESCRIPTION
+    @param year: uint
+    @param month: uint
+    @param day: uint
+    @param hour: uint
+    @param minute: uint
+    @param second: uint
+    @param millisecond: uint
 
-    public static parse(dateString: string): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static UTC(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number): number;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static now(): number;
+
+    /**
+    DESCRIPTION
+    @param dateString: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static parse(dateString: string): number;
 
 
 

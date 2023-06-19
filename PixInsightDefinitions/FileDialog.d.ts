@@ -26,7 +26,18 @@ declare class FileDialog {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public execute(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public execute(): boolean;
 
 
 

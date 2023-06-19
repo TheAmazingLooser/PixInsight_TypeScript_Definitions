@@ -24,11 +24,48 @@ declare class ColorComboBox extends ComboBox {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public colorForIndex(index: number): number;
+    /**
+    DESCRIPTION
+    @param index: int
 
-    public currentColor(): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public colorForIndex(index: number): number;
 
-    public setCurrentColor(rgba: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public currentColor(): number;
+
+    /**
+    DESCRIPTION
+    @param rgba: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setCurrentColor(rgba: number): void;
 
 
 

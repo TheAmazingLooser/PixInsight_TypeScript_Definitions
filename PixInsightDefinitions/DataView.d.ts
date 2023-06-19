@@ -23,49 +23,439 @@ declare class DataView extends ArrayBufferView {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public getFloat32(byteOffset: number): number;
-    public getFloat32(byteOffset: number, littleEndian?: boolean /* false */): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
 
-    public getFloat64(byteOffset: number): number;
-    public getFloat64(byteOffset: number, littleEndian?: boolean /* false */): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getFloat32(byteOffset: number): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param littleEndian: Boolean = false
 
-    public getInt16(byteOffset: number): number;
-    public getInt16(byteOffset: number, littleEndian?: boolean /* false */): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getFloat32(byteOffset: number, littleEndian?: boolean /* false */): number;
 
-    public getInt32(byteOffset: number): number;
-    public getInt32(byteOffset: number, littleEndian?: boolean /* false */): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
 
-    public getInt8(byteOffset: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getFloat64(byteOffset: number): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param littleEndian: Boolean = false
 
-    public getUint16(byteOffset: number): number;
-    public getUint16(byteOffset: number, littleEndian?: boolean /* false */): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getFloat64(byteOffset: number, littleEndian?: boolean /* false */): number;
 
-    public getUint32(byteOffset: number): number;
-    public getUint32(byteOffset: number, littleEndian?: boolean /* false */): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
 
-    public getUint8(byteOffset: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getInt16(byteOffset: number): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param littleEndian: Boolean = false
 
-    public setFloat32(byteOffset: number, value: number): void;
-    public setFloat32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getInt16(byteOffset: number, littleEndian?: boolean /* false */): number;
 
-    public setFloat64(byteOffset: number, value: number): void;
-    public setFloat64(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
 
-    public setInt16(byteOffset: number, value: number): void;
-    public setInt16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getInt32(byteOffset: number): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param littleEndian: Boolean = false
 
-    public setInt32(byteOffset: number, value: number): void;
-    public setInt32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getInt32(byteOffset: number, littleEndian?: boolean /* false */): number;
 
-    public setInt8(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
 
-    public setUint16(byteOffset: number, value: number): void;
-    public setUint16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getInt8(byteOffset: number): number;
 
-    public setUint32(byteOffset: number, value: number): void;
-    public setUint32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
 
-    public setUint8(byteOffset: number, value: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUint16(byteOffset: number): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUint16(byteOffset: number, littleEndian?: boolean /* false */): number;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUint32(byteOffset: number): number;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUint32(byteOffset: number, littleEndian?: boolean /* false */): number;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getUint8(byteOffset: number): number;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: float
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFloat32(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: float
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFloat32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: double
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFloat64(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: double
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setFloat64(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: int16
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setInt16(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: int16
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setInt16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: int32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setInt32(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: int32
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setInt32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: int8
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setInt8(byteOffset: number, value: number): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: uint16
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUint16(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: uint16
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUint16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUint32(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: uint32
+    @param littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUint32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+    @param byteOffset: uint32
+    @param value: uint8
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setUint8(byteOffset: number, value: number): void;
 
 
 

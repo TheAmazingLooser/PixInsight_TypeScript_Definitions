@@ -30,7 +30,20 @@ declare class Brush {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(br: Brush): void;
+    /**
+    DESCRIPTION
+    @param br: Brush
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(br: Brush): void;
 
 
 

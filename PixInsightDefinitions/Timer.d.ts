@@ -28,9 +28,31 @@ declare class Timer {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public start(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public start(): void;
 
-    public stop(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stop(): void;
 
 
 

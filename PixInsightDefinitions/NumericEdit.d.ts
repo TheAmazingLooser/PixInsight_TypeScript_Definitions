@@ -36,23 +36,141 @@ declare class NumericEdit extends Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public enableFixedPrecision(fixed: boolean): void;
+    /**
+    DESCRIPTION
+    @param fixed: Boolean
 
-    public enableFixedSign(sign: boolean): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public enableFixedPrecision(fixed: boolean): void;
 
-    public enableScientificNotation(enable: boolean): void;
+    /**
+    DESCRIPTION
+    @param sign: Boolean
 
-    public enableValidatingRegExp(enable: boolean): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public enableFixedSign(sign: boolean): void;
 
-    public setPrecision(digits: number): void;
+    /**
+    DESCRIPTION
+    @param enable: Boolean
 
-    public setRange(lowerBound: number, upperBound: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public enableScientificNotation(enable: boolean): void;
 
-    public setReal(real: boolean): void;
+    /**
+    DESCRIPTION
+    @param enable: Boolean
 
-    public setScientificNotationTriggerExponent(exp10: number): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public enableValidatingRegExp(enable: boolean): void;
 
-    public setValue(value: number): void;
+    /**
+    DESCRIPTION
+    @param digits: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setPrecision(digits: number): void;
+
+    /**
+    DESCRIPTION
+    @param lowerBound: Number
+    @param upperBound: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setRange(lowerBound: number, upperBound: number): void;
+
+    /**
+    DESCRIPTION
+    @param real: Boolean
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setReal(real: boolean): void;
+
+    /**
+    DESCRIPTION
+    @param exp10: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setScientificNotationTriggerExponent(exp10: number): void;
+
+    /**
+    DESCRIPTION
+    @param value: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setValue(value: number): void;
 
 
 

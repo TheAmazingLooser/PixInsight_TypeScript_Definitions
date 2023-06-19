@@ -27,14 +27,95 @@ declare class Float32Array extends ArrayBufferView {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public set(array: any /* TypedArray */): void;
-    public set(array: any /* TypedArray */, offset?: number /* 0 */): void;
+    /**
+    DESCRIPTION
+    @param array: TypedArray
 
-    public set(array: Array<any>): void;
-    public set(array: Array<any>, offset?: number /* 0 */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public set(array: any /* TypedArray */): void;
+    /**
+    DESCRIPTION
+    @param array: TypedArray
+    @param offset: uint32 = 0
 
-    public subarray(begin: number): Float32Array;
-    public subarray(begin: number, end?: number): Float32Array;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public set(array: any /* TypedArray */, offset?: number /* 0 */): void;
+
+    /**
+    DESCRIPTION
+    @param array: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public set(array: Array<any>): void;
+    /**
+    DESCRIPTION
+    @param array: Array
+    @param offset: uint32 = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public set(array: Array<any>, offset?: number /* 0 */): void;
+
+    /**
+    DESCRIPTION
+    @param begin: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public subarray(begin: number): Float32Array;
+    /**
+    DESCRIPTION
+    @param begin: int
+    @param end: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public subarray(begin: number, end?: number): Float32Array;
 
 
 

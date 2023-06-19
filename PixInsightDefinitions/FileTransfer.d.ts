@@ -31,7 +31,18 @@ declare class FileTransfer {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public perform(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public perform(): boolean;
 
 
 

@@ -35,7 +35,21 @@ declare class SpinBox extends Control {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public setRange(minValue: number, maxValue: number): void;
+    /**
+    DESCRIPTION
+    @param minValue: int
+    @param maxValue: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setRange(minValue: number, maxValue: number): void;
 
 
 

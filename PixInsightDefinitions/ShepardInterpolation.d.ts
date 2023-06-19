@@ -26,17 +26,99 @@ declare class ShepardInterpolation {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public clear(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
-    public evaluate(x: number, y: number): number;
+    /**
+    DESCRIPTION
+    @param x: Number
+    @param y: Number
 
-    public evaluate(p: Point): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(x: number, y: number): number;
 
-    public evaluate(points: Array<any>): Vector;
+    /**
+    DESCRIPTION
+    @param p: Point
 
-    public initialize(x: Vector, y: Vector, z: Vector): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(p: Point): number;
 
-    public initialize(r: Rect, x: Vector, y: Vector, z: Vector): void;
+    /**
+    DESCRIPTION
+    @param points: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public evaluate(points: Array<any>): Vector;
+
+    /**
+    DESCRIPTION
+    @param x: Vector
+    @param y: Vector
+    @param z: Vector
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(x: Vector, y: Vector, z: Vector): void;
+
+    /**
+    DESCRIPTION
+    @param r: Rect
+    @param x: Vector
+    @param y: Vector
+    @param z: Vector
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(r: Rect, x: Vector, y: Vector, z: Vector): void;
 
 
 

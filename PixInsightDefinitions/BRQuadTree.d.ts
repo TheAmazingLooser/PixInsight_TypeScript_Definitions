@@ -26,48 +26,362 @@ declare class BRQuadTree {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public avgDist(rect: Rect, dx: number, dy: number): number;
-    public avgDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
+    /**
+    DESCRIPTION
+    @param rect: Rect
+    @param dx: Number
+    @param dy: Number
 
-    public build(objects: any): void;
-    public build(objects: any, bucketCapacity?: any, Rect?: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public avgDist(rect: Rect, dx: number, dy: number): number;
+    /**
+    DESCRIPTION
+    @param rect: Rect
+    @param dx: Number
+    @param dy: Number
+    @param excludeRect: Rect
 
-    public clear(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public avgDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
 
-    public height(): number;
+    /**
+    DESCRIPTION
+    @param objects: any
 
-    public insert(obj: Object): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public build(objects: any): void;
+    /**
+    DESCRIPTION
+    @param objects: any
+    @param bucketCapacity: any
+    @param Rect: Rect
 
-    public isEmpty(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public build(objects: any, bucketCapacity?: any, Rect?: Rect): void;
 
-    public isTree(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
-    public leafNodeAt(point: Point): QuadTreeNode;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public height(): number;
 
-    public minDist(rect: Rect, dx: number, dy: number): number;
-    public minDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
+    /**
+    DESCRIPTION
+    @param obj: Object
 
-    public nodeAt(point: Point): QuadTreeNode;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public insert(obj: Object): void;
 
-    public numberOfLeafNodes(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isEmpty(): boolean;
 
-    public numberOfNodes(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isTree(): boolean;
 
-    public regenerate(): void;
-    public regenerate(bucketCapacity?: any, Rect?: Rect): void;
+    /**
+    DESCRIPTION
+    @param point: Point
 
-    public remove(obj: Object): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public leafNodeAt(point: Point): QuadTreeNode;
 
-    public removeAtPoint(point: Point): void;
+    /**
+    DESCRIPTION
+    @param rect: Rect
+    @param dx: Number
+    @param dy: Number
 
-    public removeAtRect(rect: Rect): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public minDist(rect: Rect, dx: number, dy: number): number;
+    /**
+    DESCRIPTION
+    @param rect: Rect
+    @param dx: Number
+    @param dy: Number
+    @param excludeRect: Rect
 
-    public search(rect: Rect): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public minDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
 
-    public searchWithCallback(rect: Rect, callback: Function): void;
-    public searchWithCallback(rect: Rect, callback: Function, data?: Object): void;
+    /**
+    DESCRIPTION
+    @param point: Point
 
-    public traverse(callback: Function): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public nodeAt(point: Point): QuadTreeNode;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public numberOfLeafNodes(): number;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public numberOfNodes(): number;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public regenerate(): void;
+    /**
+    DESCRIPTION
+    @param bucketCapacity: any
+    @param Rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public regenerate(bucketCapacity?: any, Rect?: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public remove(obj: Object): void;
+
+    /**
+    DESCRIPTION
+    @param point: Point
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public removeAtPoint(point: Point): void;
+
+    /**
+    DESCRIPTION
+    @param rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public removeAtRect(rect: Rect): void;
+
+    /**
+    DESCRIPTION
+    @param rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public search(rect: Rect): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param rect: Rect
+    @param callback: Function
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public searchWithCallback(rect: Rect, callback: Function): void;
+    /**
+    DESCRIPTION
+    @param rect: Rect
+    @param callback: Function
+    @param data: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public searchWithCallback(rect: Rect, callback: Function, data?: Object): void;
+
+    /**
+    DESCRIPTION
+    @param callback: Function
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public traverse(callback: Function): void;
 
 
 

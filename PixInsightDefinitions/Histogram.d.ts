@@ -34,27 +34,168 @@ declare class Histogram {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(h: Histogram): void;
+    /**
+    DESCRIPTION
+    @param h: Histogram
 
-    public clipHigh(count: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(h: Histogram): void;
 
-    public clipLow(count: number): number;
+    /**
+    DESCRIPTION
+    @param count: uint
 
-    public count(level: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clipHigh(count: number): number;
 
-    public generate(img: Image): void;
+    /**
+    DESCRIPTION
+    @param count: uint
 
-    public histogramLevel(normalizedLevel: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clipLow(count: number): number;
 
-    public normalizedClipHigh(count: number): number;
+    /**
+    DESCRIPTION
+    @param level: int
 
-    public normalizedClipLow(count: number): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public count(level: number): number;
 
-    public normalizedLevel(histogramLevel: number): number;
+    /**
+    DESCRIPTION
+    @param img: Image
 
-    public resample(h: Histogram): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public generate(img: Image): void;
 
-    public toArray(): Array<any>;
+    /**
+    DESCRIPTION
+    @param normalizedLevel: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public histogramLevel(normalizedLevel: number): number;
+
+    /**
+    DESCRIPTION
+    @param count: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public normalizedClipHigh(count: number): number;
+
+    /**
+    DESCRIPTION
+    @param count: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public normalizedClipLow(count: number): number;
+
+    /**
+    DESCRIPTION
+    @param histogramLevel: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public normalizedLevel(histogramLevel: number): number;
+
+    /**
+    DESCRIPTION
+    @param h: Histogram
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public resample(h: Histogram): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toArray(): Array<any>;
 
 
 

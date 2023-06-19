@@ -28,7 +28,18 @@ declare class Label extends Frame {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public clear(): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
 
 
 

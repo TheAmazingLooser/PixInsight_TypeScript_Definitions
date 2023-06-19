@@ -42,42 +42,262 @@ declare class View {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public beginProcess(): void;
-    public beginProcess(undoFlags?: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public beginProcess(): void;
+    /**
+    DESCRIPTION
+    @param undoFlags: uint
 
-    public cancelProcess(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public beginProcess(undoFlags?: number): void;
 
-    public computeOrFetchProperty(id: string): Object | void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public cancelProcess(): void;
 
-    public computeProperty(id: string): Object | void;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public deleteProperty(id: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public computeOrFetchProperty(id: string): Object | void;
 
-    public endProcess(): void;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public exportProperties(FileFormatInstance: FileFormatInstance): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public computeProperty(id: string): Object | void;
 
-    public hasProperty(id: string): boolean;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public importProperties(FileFormatInstance: FileFormatInstance): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public deleteProperty(id: string): boolean;
 
-    public propertyAttributes(id: string): number | void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public endProcess(): void;
 
-    public propertyType(id: string): number | void;
+    /**
+    DESCRIPTION
+    @param FileFormatInstance: FileFormatInstance
 
-    public propertyValue(id: string): Object | void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public exportProperties(FileFormatInstance: FileFormatInstance): number;
 
-    public setPropertyAttributes(id: string, attributes: number): boolean;
+    /**
+    DESCRIPTION
+    @param id: String
 
-    public setPropertyValue(id: string, value: Object): boolean;
-    public setPropertyValue(id: string, value: Object, type?: number, attributes?: number): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hasProperty(id: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param FileFormatInstance: FileFormatInstance
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public importProperties(FileFormatInstance: FileFormatInstance): string;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyAttributes(id: string): number | void;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyType(id: string): number | void;
+
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyValue(id: string): Object | void;
+
+    /**
+    DESCRIPTION
+    @param id: String
+    @param attributes: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setPropertyAttributes(id: string, attributes: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setPropertyValue(id: string, value: Object): boolean;
+    /**
+    DESCRIPTION
+    @param id: String
+    @param value: Object
+    @param type: uint
+    @param attributes: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setPropertyValue(id: string, value: Object, type?: number, attributes?: number): boolean;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static viewById(id: string): View;
+    /**
+    DESCRIPTION
+    @param id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static viewById(id: string): View;
 
 
 

@@ -62,13 +62,61 @@ declare class FileFormat {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public disposeFormatSpecificData(data: Object): void;
+    /**
+    DESCRIPTION
+    @param data: Object
 
-    public editPreferences(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public disposeFormatSpecificData(data: Object): void;
 
-    public queryFormatStatus(): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public editPreferences(): void;
 
-    public validateFormatSpecificData(data: Object): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public queryFormatStatus(): string;
+
+    /**
+    DESCRIPTION
+    @param data: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public validateFormatSpecificData(data: Object): boolean;
 
 
 

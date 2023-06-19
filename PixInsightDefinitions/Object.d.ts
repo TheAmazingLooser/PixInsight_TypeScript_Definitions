@@ -25,63 +25,414 @@ declare class Object {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public __defineGetter__(property: string, getter: Function): void;
+    /**
+    DESCRIPTION
+    @param property: String
+    @param getter: Function
 
-    public __defineSetter__(property: string, setter: Function): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public __defineGetter__(property: string, getter: Function): void;
 
-    public __lookupGetter__(property: string): Function;
+    /**
+    DESCRIPTION
+    @param property: String
+    @param setter: Function
 
-    public __lookupSetter__(property: string): Function;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public __defineSetter__(property: string, setter: Function): void;
 
-    public hasOwnProperty(property: string): boolean;
+    /**
+    DESCRIPTION
+    @param property: String
 
-    public isPrototypeOf(obj: Object): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public __lookupGetter__(property: string): Function;
 
-    public propertyIsEnumerable(property: string): boolean;
+    /**
+    DESCRIPTION
+    @param property: String
 
-    public toLocaleString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public __lookupSetter__(property: string): Function;
 
-    public toSource(): string;
+    /**
+    DESCRIPTION
+    @param property: String
 
-    public toString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hasOwnProperty(property: string): boolean;
 
-    public unwatch(property: string): void;
+    /**
+    DESCRIPTION
+    @param obj: Object
 
-    public valueOf(): Object;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isPrototypeOf(obj: Object): boolean;
 
-    public watch(property: string, handler: Function): void;
+    /**
+    DESCRIPTION
+    @param property: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public propertyIsEnumerable(property: string): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toLocaleString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toSource(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toString(): string;
+
+    /**
+    DESCRIPTION
+    @param property: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public unwatch(property: string): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public valueOf(): Object;
+
+    /**
+    DESCRIPTION
+    @param property: String
+    @param handler: Function
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public watch(property: string, handler: Function): void;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static create(proto: Object): Object;
-    public static create(proto: Object, propertiesObject?: Object): Object;
+    /**
+    DESCRIPTION
+    @param proto: Object
 
-    public static defineProperties(obj: Object, props: Object): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static create(proto: Object): Object;
+    /**
+    DESCRIPTION
+    @param proto: Object
+    @param propertiesObject: Object
 
-    public static defineProperty(obj: Object, prop: string, descriptor: Object): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static create(proto: Object, propertiesObject?: Object): Object;
 
-    public static freeze(obj: Object): Object;
+    /**
+    DESCRIPTION
+    @param obj: Object
+    @param props: Object
 
-    public static getOwnPropertyDescriptor(obj: Object, prop: string): Object;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineProperties(obj: Object, props: Object): void;
 
-    public static getOwnPropertyNames(obj: Object): Array<any>;
+    /**
+    DESCRIPTION
+    @param obj: Object
+    @param prop: String
+    @param descriptor: Object
 
-    public static getPrototypeOf(obj: Object): Object;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static defineProperty(obj: Object, prop: string, descriptor: Object): void;
 
-    public static isExtensible(obj: Object): boolean;
+    /**
+    DESCRIPTION
+    @param obj: Object
 
-    public static isFrozen(obj: Object): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static freeze(obj: Object): Object;
 
-    public static isSealed(obj: Object): boolean;
+    /**
+    DESCRIPTION
+    @param obj: Object
+    @param prop: String
 
-    public static keys(obj: Object): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getOwnPropertyDescriptor(obj: Object, prop: string): Object;
 
-    public static preventExtensions(obj: Object): Object;
+    /**
+    DESCRIPTION
+    @param obj: Object
 
-    public static seal(obj: Object): Object;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getOwnPropertyNames(obj: Object): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static getPrototypeOf(obj: Object): Object;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static isExtensible(obj: Object): boolean;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static isFrozen(obj: Object): boolean;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static isSealed(obj: Object): boolean;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static keys(obj: Object): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static preventExtensions(obj: Object): Object;
+
+    /**
+    DESCRIPTION
+    @param obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static seal(obj: Object): Object;
 
 
 

@@ -51,12 +51,60 @@ declare class FileInfo {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(info: FileInfo): void;
+    /**
+    DESCRIPTION
+    @param info: FileInfo
 
-    public clear(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(info: FileInfo): void;
 
-    public refresh(): void;
-    public refresh(filePath?: string): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public refresh(): void;
+    /**
+    DESCRIPTION
+    @param filePath: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public refresh(filePath?: string): void;
 
 
 

@@ -34,16 +34,91 @@ declare class FITSKeyword {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(k: FITSKeyword): void;
+    /**
+    DESCRIPTION
+    @param k: FITSKeyword
 
-    public assign(name: string, value: string): void;
-    public assign(name: string, value: string, comment?: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(k: FITSKeyword): void;
 
-    public toArray(): Array<any>;
+    /**
+    DESCRIPTION
+    @param name: String
+    @param value: String
 
-    public toString(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(name: string, value: string): void;
+    /**
+    DESCRIPTION
+    @param name: String
+    @param value: String
+    @param comment: String
 
-    public trim(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(name: string, value: string, comment?: string): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toArray(): Array<any>;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toString(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public trim(): void;
 
 
 

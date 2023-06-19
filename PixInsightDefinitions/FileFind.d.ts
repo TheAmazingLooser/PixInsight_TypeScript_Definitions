@@ -39,11 +39,46 @@ declare class FileFind {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public begin(path: string): boolean;
+    /**
+    DESCRIPTION
+    @param path: String
 
-    public end(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public begin(path: string): boolean;
 
-    public next(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public end(): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public next(): boolean;
 
 
 

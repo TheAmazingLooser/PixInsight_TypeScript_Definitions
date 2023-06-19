@@ -26,15 +26,78 @@ declare class FileWatcher {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public addPath(path: string): void;
+    /**
+    DESCRIPTION
+    @param path: String
 
-    public addPaths(paths: Array<any>): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public addPath(path: string): void;
 
-    public clear(): void;
+    /**
+    DESCRIPTION
+    @param paths: Array
 
-    public removePath(path: string): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public addPaths(paths: Array<any>): void;
 
-    public removePaths(paths: Array<any>): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public clear(): void;
+
+    /**
+    DESCRIPTION
+    @param path: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public removePath(path: string): void;
+
+    /**
+    DESCRIPTION
+    @param paths: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public removePaths(paths: Array<any>): void;
 
 
 

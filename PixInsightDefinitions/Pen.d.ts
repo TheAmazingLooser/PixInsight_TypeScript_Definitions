@@ -32,7 +32,20 @@ declare class Pen {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(p: Pen): void;
+    /**
+    DESCRIPTION
+    @param p: Pen
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(p: Pen): void;
 
 
 

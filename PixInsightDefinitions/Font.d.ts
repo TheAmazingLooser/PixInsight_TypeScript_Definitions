@@ -45,33 +45,204 @@ declare class Font {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(fnt: Font): void;
+    /**
+    DESCRIPTION
+    @param fnt: Font
 
-    public assign(stdFamiliy: number): void;
-    public assign(stdFamiliy: number, size?: number, unit?: string /* "pt" */): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(fnt: Font): void;
 
-    public assign(family: string): void;
-    public assign(family: string, size?: number, unit?: string /* "pt" */): void;
+    /**
+    DESCRIPTION
+    @param stdFamiliy: int
 
-    public boundingRect(s: string): Rect;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(stdFamiliy: number): void;
+    /**
+    DESCRIPTION
+    @param stdFamiliy: int
+    @param size: Number
+    @param unit: String = "pt"
 
-    public isCharDefined(ch: number): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(stdFamiliy: number, size?: number, unit?: string /* "pt" */): void;
 
-    public tightBoundingRect(s: string): Rect;
+    /**
+    DESCRIPTION
+    @param family: String
 
-    public width(s: string): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(family: string): void;
+    /**
+    DESCRIPTION
+    @param family: String
+    @param size: Number
+    @param unit: String = "pt"
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(family: string, size?: number, unit?: string /* "pt" */): void;
+
+    /**
+    DESCRIPTION
+    @param s: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public boundingRect(s: string): Rect;
+
+    /**
+    DESCRIPTION
+    @param ch: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isCharDefined(ch: number): boolean;
+
+    /**
+    DESCRIPTION
+    @param s: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public tightBoundingRect(s: string): Rect;
+
+    /**
+    DESCRIPTION
+    @param s: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public width(s: string): number;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static families(): Array<any>;
-    public static families(writingSystem?: number): Array<any>;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static families(): Array<any>;
+    /**
+    DESCRIPTION
+    @param writingSystem: int
 
-    public static isFixedPitchFont(family: string): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static families(writingSystem?: number): Array<any>;
 
-    public static isScalableFont(family: string): boolean;
+    /**
+    DESCRIPTION
+    @param family: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static isFixedPitchFont(family: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param family: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static isScalableFont(family: string): boolean;
 
 
 

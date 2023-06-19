@@ -23,73 +23,474 @@ declare class ProcessInstance {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(ProcessInstance: ProcessInstance): void;
+    /**
+    DESCRIPTION
+    @param ProcessInstance: ProcessInstance
 
-    public canExecuteGlobal(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(ProcessInstance: ProcessInstance): void;
 
-    public canExecuteOn(view: View): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canExecuteGlobal(): boolean;
 
-    public canExecuteOn(image: Image): boolean;
+    /**
+    DESCRIPTION
+    @param view: View
 
-    public canLaunchInterface(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canExecuteOn(view: View): boolean;
 
-    public canProcessGlobal(): boolean;
+    /**
+    DESCRIPTION
+    @param image: Image
 
-    public canProcessImages(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canExecuteOn(image: Image): boolean;
 
-    public canProcessViews(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canLaunchInterface(): boolean;
 
-    public description(): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canProcessGlobal(): boolean;
 
-    public executeGlobal(): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canProcessImages(): boolean;
 
-    public executeOn(view: View): boolean;
-    public executeOn(view: View, swapFile?: boolean /* true */): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public canProcessViews(): boolean;
 
-    public executeOn(image: Image): boolean;
-    public executeOn(image: Image, hints?: string /* "" */): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public description(): string;
 
-    public executionTime(): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public executeGlobal(): boolean;
 
-    public isAssignable(): boolean;
+    /**
+    DESCRIPTION
+    @param view: View
 
-    public isHistoryUpdater(view: View): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public executeOn(view: View): boolean;
+    /**
+    DESCRIPTION
+    @param view: View
+    @param swapFile: Boolean = true
 
-    public isMaskable(view: View, mask: ImageWindow): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public executeOn(view: View, swapFile?: boolean /* true */): boolean;
 
-    public launch(): void;
+    /**
+    DESCRIPTION
+    @param image: Image
 
-    public launchInterface(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public executeOn(image: Image): boolean;
+    /**
+    DESCRIPTION
+    @param image: Image
+    @param hints: String = ""
 
-    public processCategory(): string;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public executeOn(image: Image, hints?: string /* "" */): boolean;
 
-    public processId(): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public executionTime(): number;
 
-    public readIcon(iconId: string): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isAssignable(): boolean;
 
-    public setDescription(text: string): void;
+    /**
+    DESCRIPTION
+    @param view: View
 
-    public startJD(): number;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isHistoryUpdater(view: View): boolean;
 
-    public toSource(): string;
-    public toSource(language?: string /* "JavaScript" */, varId?: string /* "" */, indent?: number /* 0 */, flags?: number /* 0 */): string;
+    /**
+    DESCRIPTION
+    @param view: View
+    @param mask: ImageWindow
 
-    public validate(): boolean;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public isMaskable(view: View, mask: ImageWindow): boolean;
 
-    public writeIcon(iconId: string): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public launch(): void;
 
-    public writeInstanceAddr(instanceAddr: string): boolean;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public launchInterface(): boolean;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public processCategory(): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public processId(): string;
+
+    /**
+    DESCRIPTION
+    @param iconId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public readIcon(iconId: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param text: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public setDescription(text: string): void;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public startJD(): number;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toSource(): string;
+    /**
+    DESCRIPTION
+    @param language: String = "JavaScript"
+    @param varId: String = ""
+    @param indent: int = 0
+    @param flags: uint = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public toSource(language?: string /* "JavaScript" */, varId?: string /* "" */, indent?: number /* 0 */, flags?: number /* 0 */): string;
+
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public validate(): boolean;
+
+    /**
+    DESCRIPTION
+    @param iconId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeIcon(iconId: string): boolean;
+
+    /**
+    DESCRIPTION
+    @param instanceAddr: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public writeInstanceAddr(instanceAddr: string): boolean;
 
 
 
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static fromIcon(iconId: string): ProcessInstance;
+    /**
+    DESCRIPTION
+    @param iconId: String
 
-    public static icons(): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static fromIcon(iconId: string): ProcessInstance;
 
-    public static iconsByProcessId(processId: string): Array<any>;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static icons(): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param processId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public static iconsByProcessId(processId: string): Array<any>;
 
 
 

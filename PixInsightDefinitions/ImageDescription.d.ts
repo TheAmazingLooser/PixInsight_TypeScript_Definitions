@@ -52,7 +52,20 @@ declare class ImageDescription {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public assign(r: ImageDescription): void;
+    /**
+    DESCRIPTION
+    @param r: ImageDescription
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public assign(r: ImageDescription): void;
 
 
 

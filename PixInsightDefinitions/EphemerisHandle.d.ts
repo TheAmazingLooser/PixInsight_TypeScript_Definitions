@@ -33,19 +33,125 @@ declare class EphemerisHandle {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public stateVector(Date: Date): Vector;
+    /**
+    DESCRIPTION
+    @param Date: Date
 
-    public stateVector(isoTime: string): Vector;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVector(Date: Date): Vector;
 
-    public stateVector(jd1: number): Vector;
-    public stateVector(jd1: number, jd2?: number /* 0 */): Vector;
+    /**
+    DESCRIPTION
+    @param isoTime: String
 
-    public stateVectors(Date: Date): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVector(isoTime: string): Vector;
 
-    public stateVectors(isoTime: string): Array<any>;
+    /**
+    DESCRIPTION
+    @param jd1: Number
 
-    public stateVectors(jd1: number): Array<any>;
-    public stateVectors(jd1: number, jd2?: number /* 0 */): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVector(jd1: number): Vector;
+    /**
+    DESCRIPTION
+    @param jd1: Number
+    @param jd2: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVector(jd1: number, jd2?: number /* 0 */): Vector;
+
+    /**
+    DESCRIPTION
+    @param Date: Date
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVectors(Date: Date): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param isoTime: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVectors(isoTime: string): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param jd1: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVectors(jd1: number): Array<any>;
+    /**
+    DESCRIPTION
+    @param jd1: Number
+    @param jd2: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stateVectors(jd1: number, jd2?: number /* 0 */): Array<any>;
 
 
 

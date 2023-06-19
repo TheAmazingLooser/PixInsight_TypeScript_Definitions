@@ -1,38 +1,328 @@
+    /**
+    DESCRIPTION
+    @param value: any
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 /* declare function Number(value: any): number; */
+    /**
+    DESCRIPTION
+    @param value: any
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 /* declare function Object(value: any): Object; */
+    /**
+    DESCRIPTION
+    @param text: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function cerr(text: string): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function cflush(): void;
+    /**
+    DESCRIPTION
+    @param text: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function cout(text: string): void;
+    /**
+    DESCRIPTION
+    @param encodedURI: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function decodeURI(encodedURI: string): string;
+    /**
+    DESCRIPTION
+    @param encodedURI: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function decodeURIComponent(encodedURI: string): string;
+    /**
+    DESCRIPTION
+    @param URI: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function encodeURI(URI: string): string;
+    /**
+    DESCRIPTION
+    @param uriComp: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function encodeURIComponent(uriComp: string): string;
+    /**
+    DESCRIPTION
+    @param s: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function eval(s: string): Object;
+    /**
+    DESCRIPTION
+    @param s: String
+    @param Object: Object
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function eval(s: string, Object?: Object): Object;
+    /**
+    DESCRIPTION
+    @param fmt: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function format(fmt: string): string;
+    /**
+    DESCRIPTION
+    @param ...value: any[]
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function format(...value: any[]): string;
+    /**
+    DESCRIPTION
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function gc(): void;
+    /**
+    DESCRIPTION
+    @param hardGC: Boolean = true
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function gc(hardGC?: boolean /* true */): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function gcBytes(): number;
+    /**
+    DESCRIPTION
+    @param varName: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function getEnvironmentVariable(varName: string): string;
+    /**
+    DESCRIPTION
+    @param n: Number
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function isFinite(n: number): boolean;
+    /**
+    DESCRIPTION
+    @param value: any
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function isNaN(value: any): boolean;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function loadResource(filePath: string): boolean;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    @param rootPath: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function loadResource(filePath: string, rootPath?: string): boolean;
+    /**
+    DESCRIPTION
+    @param what: String
+    @param wildPattern: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function matchesWildSpecification(what: string, wildPattern: string): boolean;
+    /**
+    DESCRIPTION
+    @param milliseconds: uint
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function msleep(milliseconds: number): void;
+    /**
+    DESCRIPTION
+    @param s: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function parseFloat(s: string): number;
+    /**
+    DESCRIPTION
+    @param s: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function parseInt(s: string): number;
+    /**
+    DESCRIPTION
+    @param s: String
+    @param radix: uint
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function parseInt(s: string, radix?: number): number;
+    /**
+    DESCRIPTION
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function processEvents(): void;
+    /**
+    DESCRIPTION
+    @param excludeUserInputEvents: Boolean = false
+    @param iterations: int = 1
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function processEvents(excludeUserInputEvents?: boolean /* false */, iterations?: number /* 1 */): void;
+    /**
+    DESCRIPTION
+    @param s: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function replaceEnvironmentVariables(s: string): string;
+    /**
+    DESCRIPTION
+    @param dirPath: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function searchDirectory(dirPath: string): Array<any>;
+    /**
+    DESCRIPTION
+    @param dirPath: String
+    @param recursive: Boolean = false
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function searchDirectory(dirPath: string, recursive?: boolean /* false */): Array<any>;
+    /**
+    DESCRIPTION
+    @param seconds: Number
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function sleep(seconds: number): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function systemOffsetFromUTC(): number;
+    /**
+    DESCRIPTION
+    @param date: Date|String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function systemOffsetFromUTC(date?: Date | string): number;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function unloadResource(filePath: string): boolean;
+    /**
+    DESCRIPTION
+    @param filePath: String
+    @param rootPath: String
+    ```javascript
+    ```
+    ```typescript
+    ```
+    */
 declare function unloadResource(filePath: string, rootPath?: string): boolean;
 declare var NaN: number;
 declare var Infinity: number;

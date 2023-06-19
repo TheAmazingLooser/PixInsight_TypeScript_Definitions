@@ -34,12 +34,65 @@ declare class StarDetector {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public getStructureMap(map: Image): void;
+    /**
+    DESCRIPTION
+    @param map: Image
 
-    public stars(image: Image): Array<any>;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public getStructureMap(map: Image): void;
 
-    public test(image: Image): void;
-    public test(image: Image, createStarMaskWindow?: boolean /* false */): void;
+    /**
+    DESCRIPTION
+    @param image: Image
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public stars(image: Image): Array<any>;
+
+    /**
+    DESCRIPTION
+    @param image: Image
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public test(image: Image): void;
+    /**
+    DESCRIPTION
+    @param image: Image
+    @param createStarMaskWindow: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public test(image: Image, createStarMaskWindow?: boolean /* false */): void;
 
 
 

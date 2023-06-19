@@ -25,9 +25,35 @@ declare class Cipher {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public decrypt(cipherText: ByteArray): ByteArray;
+    /**
+    DESCRIPTION
+    @param cipherText: ByteArray
 
-    public encrypt(plainText: ByteArray): ByteArray;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public decrypt(cipherText: ByteArray): ByteArray;
+
+    /**
+    DESCRIPTION
+    @param plainText: ByteArray
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public encrypt(plainText: ByteArray): ByteArray;
 
 
 

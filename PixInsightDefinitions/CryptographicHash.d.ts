@@ -25,13 +25,61 @@ declare class CryptographicHash {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    public finalize(): ByteArray;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public finalize(): ByteArray;
 
-    public hash(ByteArray: ByteArray): ByteArray;
+    /**
+    DESCRIPTION
+    @param ByteArray: ByteArray
 
-    public initialize(): void;
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public hash(ByteArray: ByteArray): ByteArray;
 
-    public update(data: ByteArray): void;
+    /**
+    DESCRIPTION
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public initialize(): void;
+
+    /**
+    DESCRIPTION
+    @param data: ByteArray
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+	public update(data: ByteArray): void;
 
 
 
