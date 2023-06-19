@@ -28,6 +28,8 @@ declare class PointSurfaceSpline {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -37,12 +39,14 @@ declare class PointSurfaceSpline {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
+
+    x: Number
+    y: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -53,11 +57,13 @@ declare class PointSurfaceSpline {
     
     ```
     */
-	public evaluate(x: number, y: number): Point;
+    public evaluate(x: number, y: number): Point;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -68,11 +74,13 @@ declare class PointSurfaceSpline {
     
     ```
     */
-	public evaluate(p: Point): Point;
+    public evaluate(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param points: Array
+
+
+    points: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -83,12 +91,14 @@ declare class PointSurfaceSpline {
     
     ```
     */
-	public evaluate(points: Array<any>): Array<any>;
+    public evaluate(points: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param P1: Array
-    @param P2: Array
+
+
+    P1: Array
+    P2: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -99,18 +109,20 @@ declare class PointSurfaceSpline {
     
     ```
     */
-	public initialize(P1: Array<any>, P2: Array<any>): void;
+    public initialize(P1: Array<any>, P2: Array<any>): void;
     /**
     DESCRIPTION
-    @param P1: Array
-    @param P2: Array
-    @param smoothness: Number = 0
-    @param W: Vector = null
-    @param order: int = 2
-    @param allowExtrapolation: Boolean = true
-    @param maxSplineLength: int = 1600
-    @param bucketCapacity: int = 64
-    @param verbose: Boolean = true
+
+
+    P1: Array
+    P2: Array
+    smoothness: Number = 0
+    W: Vector = null
+    order: int = 2
+    allowExtrapolation: Boolean = true
+    maxSplineLength: int = 1600
+    bucketCapacity: int = 64
+    verbose: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -121,7 +133,7 @@ declare class PointSurfaceSpline {
     
     ```
     */
-	public initialize(P1: Array<any>, P2: Array<any>, smoothness?: number /* 0 */, W?: Vector /* null */, order?: number /* 2 */, allowExtrapolation?: boolean /* true */, maxSplineLength?: number /* 1600 */, bucketCapacity?: number /* 64 */, verbose?: boolean /* true */): void;
+    public initialize(P1: Array<any>, P2: Array<any>, smoothness?: number /* 0 */, W?: Vector /* null */, order?: number /* 2 */, allowExtrapolation?: boolean /* true */, maxSplineLength?: number /* 1600 */, bucketCapacity?: number /* 64 */, verbose?: boolean /* true */): void;
 
 
 

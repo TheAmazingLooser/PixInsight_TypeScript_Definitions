@@ -36,7 +36,9 @@ declare class Histogram {
     //-------------------------
     /**
     DESCRIPTION
-    @param h: Histogram
+
+
+    h: Histogram
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -47,11 +49,13 @@ declare class Histogram {
     
     ```
     */
-	public assign(h: Histogram): void;
+    public assign(h: Histogram): void;
 
     /**
     DESCRIPTION
-    @param count: uint
+
+
+    count: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -62,11 +66,13 @@ declare class Histogram {
     
     ```
     */
-	public clipHigh(count: number): number;
+    public clipHigh(count: number): number;
 
     /**
     DESCRIPTION
-    @param count: uint
+
+
+    count: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -77,11 +83,13 @@ declare class Histogram {
     
     ```
     */
-	public clipLow(count: number): number;
+    public clipLow(count: number): number;
 
     /**
     DESCRIPTION
-    @param level: int
+
+
+    level: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -92,11 +100,13 @@ declare class Histogram {
     
     ```
     */
-	public count(level: number): number;
+    public count(level: number): number;
 
     /**
     DESCRIPTION
-    @param img: Image
+
+
+    img: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -107,11 +117,13 @@ declare class Histogram {
     
     ```
     */
-	public generate(img: Image): void;
+    public generate(img: Image): void;
 
     /**
     DESCRIPTION
-    @param normalizedLevel: Number
+
+
+    normalizedLevel: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -122,11 +134,13 @@ declare class Histogram {
     
     ```
     */
-	public histogramLevel(normalizedLevel: number): number;
+    public histogramLevel(normalizedLevel: number): number;
 
     /**
     DESCRIPTION
-    @param count: uint
+
+
+    count: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -137,11 +151,13 @@ declare class Histogram {
     
     ```
     */
-	public normalizedClipHigh(count: number): number;
+    public normalizedClipHigh(count: number): number;
 
     /**
     DESCRIPTION
-    @param count: uint
+
+
+    count: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -152,11 +168,13 @@ declare class Histogram {
     
     ```
     */
-	public normalizedClipLow(count: number): number;
+    public normalizedClipLow(count: number): number;
 
     /**
     DESCRIPTION
-    @param histogramLevel: int
+
+
+    histogramLevel: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -167,11 +185,13 @@ declare class Histogram {
     
     ```
     */
-	public normalizedLevel(histogramLevel: number): number;
+    public normalizedLevel(histogramLevel: number): number;
 
     /**
     DESCRIPTION
-    @param h: Histogram
+
+
+    h: Histogram
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -182,10 +202,12 @@ declare class Histogram {
     
     ```
     */
-	public resample(h: Histogram): void;
+    public resample(h: Histogram): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -195,7 +217,7 @@ declare class Histogram {
     
     ```
     */
-	public toArray(): Array<any>;
+    public toArray(): Array<any>;
 
 
 

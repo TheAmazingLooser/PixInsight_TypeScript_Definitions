@@ -31,7 +31,9 @@ declare class Function {
     //-------------------------
     /**
     DESCRIPTION
-    @param thisObject: any
+
+
+    thisObject: any
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -42,11 +44,13 @@ declare class Function {
     
     ```
     */
-	public apply(thisObject: any): void;
+    public apply(thisObject: any): void;
     /**
     DESCRIPTION
-    @param thisObject: any
-    @param arguments: Array
+
+
+    thisObject: any
+    arguments: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -57,40 +61,13 @@ declare class Function {
     
     ```
     */
-	public apply(thisObject: any, arguments?: Array<any>): void;
-
-    /**
-    DESCRIPTION
-    @param thisObject: any
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public bind(thisObject: any): Function;
-    /**
-    DESCRIPTION
-    @param ...arg: any[]
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public bind(...arg: any[]): Function;
+    public apply(thisObject: any, arguments?: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param thisObject: any
+
+
+    thisObject: any
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -101,10 +78,12 @@ declare class Function {
     
     ```
     */
-	public call(thisObject: any): void;
+    public bind(thisObject: any): Function;
     /**
     DESCRIPTION
-    @param ...arg: any[]
+
+
+    ...arg: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -115,25 +94,14 @@ declare class Function {
     
     ```
     */
-	public call(...arg: any[]): void;
-
-    /**
-    DESCRIPTION
-    @param propertyName: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public propertyIsEnumerable(propertyName: string): boolean;
+    public bind(...arg: any[]): Function;
 
     /**
     DESCRIPTION
+
+
+    thisObject: any
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -143,10 +111,30 @@ declare class Function {
     
     ```
     */
-	public toLocaleString(): string;
+    public call(thisObject: any): void;
+    /**
+    DESCRIPTION
+
+
+    ...arg: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public call(...arg: any[]): void;
 
     /**
     DESCRIPTION
+
+
+    propertyName: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -156,10 +144,12 @@ declare class Function {
     
     ```
     */
-	public toSource(): string;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -169,10 +159,12 @@ declare class Function {
     
     ```
     */
-	public toString(): string;
+    public toLocaleString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -182,7 +174,37 @@ declare class Function {
     
     ```
     */
-	public valueOf(): string;
+    public toSource(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public valueOf(): string;
 
 
 

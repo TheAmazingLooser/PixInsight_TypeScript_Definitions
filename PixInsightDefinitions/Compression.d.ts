@@ -33,7 +33,9 @@ declare class Compression {
     //-------------------------
     /**
     DESCRIPTION
-    @param data: String|ByteArray|TypedArray
+
+
+    data: String|ByteArray|TypedArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -44,11 +46,13 @@ declare class Compression {
     
     ```
     */
-	public compress(data: string | ByteArray | any /* TypedArray */): Array<any>;
+    public compress(data: string | ByteArray | any /* TypedArray */): Array<any>;
 
     /**
     DESCRIPTION
-    @param subblocks: Array
+
+
+    subblocks: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -59,7 +63,7 @@ declare class Compression {
     
     ```
     */
-	public uncompress(subblocks: Array<any>): ByteArray;
+    public uncompress(subblocks: Array<any>): ByteArray;
 
 
 

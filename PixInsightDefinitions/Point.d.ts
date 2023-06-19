@@ -30,8 +30,10 @@ declare class Point {
     //-------------------------
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -41,11 +43,13 @@ declare class Point {
     
     ```
     */
-	public add(p: Point): void;
+    public add(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
+
+    x: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -56,12 +60,14 @@ declare class Point {
     
     ```
     */
-	public add(x: number): void;
+    public add(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
 
+
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -71,12 +77,14 @@ declare class Point {
     
     ```
     */
-	public add(x: number, y?: number /* x */): void;
+    public add(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -86,12 +94,14 @@ declare class Point {
     
     ```
     */
-	public assign(p: Point): void;
+    public assign(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -101,12 +111,14 @@ declare class Point {
     
     ```
     */
-	public assign(x: number): void;
+    public assign(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -116,12 +128,14 @@ declare class Point {
     
     ```
     */
-	public assign(x: number, y?: number /* x */): void;
+    public assign(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -131,13 +145,15 @@ declare class Point {
     
     ```
     */
-	public distanceTo(p: Point): number;
+    public distanceTo(p: Point): number;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
 
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -147,11 +163,13 @@ declare class Point {
     
     ```
     */
-	public distanceTo(x: number, y: number): number;
+    public distanceTo(x: number, y: number): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -162,12 +180,14 @@ declare class Point {
     
     ```
     */
-	public div(p: Point): void;
+    public div(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
 
+
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -177,11 +197,13 @@ declare class Point {
     
     ```
     */
-	public div(x: number): void;
+    public div(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
+
+    x: Number
+    y: Number = x
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -192,12 +214,14 @@ declare class Point {
     
     ```
     */
-	public div(x: number, y?: number /* x */): void;
+    public div(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -207,13 +231,15 @@ declare class Point {
     
     ```
     */
-	public dot(p: Point): number;
+    public dot(p: Point): number;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
 
+
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -223,12 +249,14 @@ declare class Point {
     
     ```
     */
-	public dot(x: number, y: number): number;
+    public dot(x: number, y: number): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -238,13 +266,15 @@ declare class Point {
     
     ```
     */
-	public isEqualTo(p: Point): boolean;
+    public isEqualTo(p: Point): boolean;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
 
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -254,11 +284,13 @@ declare class Point {
     
     ```
     */
-	public isEqualTo(x: number, y: number): boolean;
+    public isEqualTo(x: number, y: number): boolean;
 
     /**
     DESCRIPTION
-    @param scalar: Number
+
+
+    scalar: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -269,12 +301,14 @@ declare class Point {
     
     ```
     */
-	public isEqualTo(scalar: number): boolean;
+    public isEqualTo(scalar: number): boolean;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -284,13 +318,15 @@ declare class Point {
     
     ```
     */
-	public isLessThan(p: Point): boolean;
+    public isLessThan(p: Point): boolean;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
 
+
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -300,12 +336,14 @@ declare class Point {
     
     ```
     */
-	public isLessThan(x: number, y: number): boolean;
+    public isLessThan(x: number, y: number): boolean;
 
     /**
     DESCRIPTION
-    @param scalar: Number
+
 
+    scalar: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -315,12 +353,14 @@ declare class Point {
     
     ```
     */
-	public isLessThan(scalar: number): boolean;
+    public isLessThan(scalar: number): boolean;
 
     /**
     DESCRIPTION
-    @param d: Point
+
 
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -330,12 +370,14 @@ declare class Point {
     
     ```
     */
-	public moveBy(d: Point): void;
+    public moveBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
 
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -345,12 +387,14 @@ declare class Point {
     
     ```
     */
-	public moveBy(dx: number): void;
+    public moveBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
 
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -360,11 +404,13 @@ declare class Point {
     
     ```
     */
-	public moveBy(dx: number, dy?: number /* dx */): void;
+    public moveBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -375,12 +421,14 @@ declare class Point {
     
     ```
     */
-	public moveTo(p: Point): void;
+    public moveTo(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
 
+
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -390,11 +438,13 @@ declare class Point {
     
     ```
     */
-	public moveTo(x: number): void;
+    public moveTo(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
+
+    x: Number
+    y: Number = x
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -405,12 +455,14 @@ declare class Point {
     
     ```
     */
-	public moveTo(x: number, y?: number /* x */): void;
+    public moveTo(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -420,12 +472,14 @@ declare class Point {
     
     ```
     */
-	public movedBy(d: Point): Point;
+    public movedBy(d: Point): Point;
 
     /**
     DESCRIPTION
-    @param dx: Number
 
+
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -435,12 +489,14 @@ declare class Point {
     
     ```
     */
-	public movedBy(dx: number): Point;
+    public movedBy(dx: number): Point;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
 
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -450,12 +506,14 @@ declare class Point {
     
     ```
     */
-	public movedBy(dx: number, dy?: number /* dx */): Point;
+    public movedBy(dx: number, dy?: number /* dx */): Point;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -465,12 +523,14 @@ declare class Point {
     
     ```
     */
-	public movedTo(p: Point): Point;
+    public movedTo(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -480,12 +540,14 @@ declare class Point {
     
     ```
     */
-	public movedTo(x: number): Point;
+    public movedTo(x: number): Point;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -495,11 +557,13 @@ declare class Point {
     
     ```
     */
-	public movedTo(x: number, y?: number /* x */): Point;
+    public movedTo(x: number, y?: number /* x */): Point;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -510,12 +574,14 @@ declare class Point {
     
     ```
     */
-	public mul(p: Point): void;
+    public mul(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
 
+
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -525,12 +591,14 @@ declare class Point {
     
     ```
     */
-	public mul(x: number): void;
+    public mul(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
 
+
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -540,12 +608,14 @@ declare class Point {
     
     ```
     */
-	public mul(x: number, y?: number /* x */): void;
+    public mul(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
 
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -555,12 +625,14 @@ declare class Point {
     
     ```
     */
-	public rotate(angleRadians: number): void;
+    public rotate(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param center: Point = 0
+
 
+    angleRadians: Number
+    center: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -570,12 +642,14 @@ declare class Point {
     
     ```
     */
-	public rotate(angleRadians: number, center?: Point /* 0 */): void;
+    public rotate(angleRadians: number, center?: Point /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
+
+
+    sin: Number
+    cos: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -586,13 +660,15 @@ declare class Point {
     
     ```
     */
-	public rotate(sin: number, cos: number): void;
+    public rotate(sin: number, cos: number): void;
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param center: Point = 0
 
+
+    sin: Number
+    cos: Number
+    center: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -602,13 +678,15 @@ declare class Point {
     
     ```
     */
-	public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
+    public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param cx: Number
-    @param cy: Number
+
+
+    angleRadians: Number
+    cx: Number
+    cy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -619,15 +697,17 @@ declare class Point {
     
     ```
     */
-	public rotate(angleRadians: number, cx: number, cy: number): void;
+    public rotate(angleRadians: number, cx: number, cy: number): void;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param cx: Number
-    @param cy: Number
 
+
+    sin: Number
+    cos: Number
+    cx: Number
+    cy: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -637,12 +717,14 @@ declare class Point {
     
     ```
     */
-	public rotate(sin: number, cos: number, cx: number, cy: number): void;
+    public rotate(sin: number, cos: number, cx: number, cy: number): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
 
+
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -652,12 +734,14 @@ declare class Point {
     
     ```
     */
-	public rotated(angleRadians: number): Point;
+    public rotated(angleRadians: number): Point;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param center: Point = 0
+
 
+    angleRadians: Number
+    center: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -667,13 +751,15 @@ declare class Point {
     
     ```
     */
-	public rotated(angleRadians: number, center?: Point /* 0 */): Point;
+    public rotated(angleRadians: number, center?: Point /* 0 */): Point;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
+
 
+    sin: Number
+    cos: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -683,13 +769,15 @@ declare class Point {
     
     ```
     */
-	public rotated(sin: number, cos: number): Point;
+    public rotated(sin: number, cos: number): Point;
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param center: Point = 0
+
 
+    sin: Number
+    cos: Number
+    center: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -699,14 +787,16 @@ declare class Point {
     
     ```
     */
-	public rotated(sin: number, cos: number, center?: Point /* 0 */): Point;
+    public rotated(sin: number, cos: number, center?: Point /* 0 */): Point;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param cx: Number
-    @param cy: Number
+
 
+    angleRadians: Number
+    cx: Number
+    cy: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -716,14 +806,16 @@ declare class Point {
     
     ```
     */
-	public rotated(angleRadians: number, cx: number, cy: number): Point;
+    public rotated(angleRadians: number, cx: number, cy: number): Point;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param cx: Number
-    @param cy: Number
+
+
+    sin: Number
+    cos: Number
+    cx: Number
+    cy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -734,10 +826,12 @@ declare class Point {
     
     ```
     */
-	public rotated(sin: number, cos: number, cx: number, cy: number): Point;
+    public rotated(sin: number, cos: number, cx: number, cy: number): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -747,10 +841,12 @@ declare class Point {
     
     ```
     */
-	public round(): void;
+    public round(): void;
     /**
     DESCRIPTION
-    @param n: uint = 0
+
+
+    n: uint = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -761,10 +857,12 @@ declare class Point {
     
     ```
     */
-	public round(n?: number /* 0 */): void;
+    public round(n?: number /* 0 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -774,11 +872,13 @@ declare class Point {
     
     ```
     */
-	public rounded(): Point;
+    public rounded(): Point;
     /**
     DESCRIPTION
-    @param n: uint = 0
 
+
+    n: uint = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -788,12 +888,14 @@ declare class Point {
     
     ```
     */
-	public rounded(n?: number /* 0 */): Point;
+    public rounded(n?: number /* 0 */): Point;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -803,12 +905,14 @@ declare class Point {
     
     ```
     */
-	public sub(p: Point): void;
+    public sub(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -818,11 +922,13 @@ declare class Point {
     
     ```
     */
-	public sub(x: number): void;
+    public sub(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
+
+    x: Number
+    y: Number = x
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -833,10 +939,12 @@ declare class Point {
     
     ```
     */
-	public sub(x: number, y?: number /* x */): void;
+    public sub(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -846,10 +954,12 @@ declare class Point {
     
     ```
     */
-	public symmetric(): Point;
+    public symmetric(): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -859,10 +969,12 @@ declare class Point {
     
     ```
     */
-	public symmetrize(): void;
+    public symmetrize(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -872,10 +984,12 @@ declare class Point {
     
     ```
     */
-	public toArray(): Array<any>;
+    public toArray(): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -885,10 +999,12 @@ declare class Point {
     
     ```
     */
-	public toString(): string;
+    public toString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -898,12 +1014,14 @@ declare class Point {
     
     ```
     */
-	public toVector(): Vector;
+    public toVector(): Vector;
 
     /**
     DESCRIPTION
-    @param M: Matrix
+
 
+    M: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -913,11 +1031,13 @@ declare class Point {
     
     ```
     */
-	public transform(M: Matrix): void;
+    public transform(M: Matrix): void;
 
     /**
     DESCRIPTION
-    @param M: Matrix
+
+
+    M: Matrix
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -928,12 +1048,14 @@ declare class Point {
     
     ```
     */
-	public transformed(M: Matrix): Point;
+    public transformed(M: Matrix): Point;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -943,11 +1065,13 @@ declare class Point {
     
     ```
     */
-	public translate(p: Point): void;
+    public translate(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
+
+    x: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -958,12 +1082,14 @@ declare class Point {
     
     ```
     */
-	public translate(x: number): void;
+    public translate(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
 
+
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -973,12 +1099,14 @@ declare class Point {
     
     ```
     */
-	public translate(x: number, y?: number /* x */): void;
+    public translate(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -988,12 +1116,14 @@ declare class Point {
     
     ```
     */
-	public translateBy(d: Point): void;
+    public translateBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
 
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1003,12 +1133,14 @@ declare class Point {
     
     ```
     */
-	public translateBy(dx: number): void;
+    public translateBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
 
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1018,12 +1150,14 @@ declare class Point {
     
     ```
     */
-	public translateBy(dx: number, dy?: number /* dx */): void;
+    public translateBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1033,12 +1167,14 @@ declare class Point {
     
     ```
     */
-	public translated(p: Point): Point;
+    public translated(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1048,11 +1184,13 @@ declare class Point {
     
     ```
     */
-	public translated(x: number): Point;
+    public translated(x: number): Point;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
+
+    x: Number
+    y: Number = x
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1063,12 +1201,14 @@ declare class Point {
     
     ```
     */
-	public translated(x: number, y?: number /* x */): Point;
+    public translated(x: number, y?: number /* x */): Point;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1078,12 +1218,14 @@ declare class Point {
     
     ```
     */
-	public translatedBy(d: Point): Point;
+    public translatedBy(d: Point): Point;
 
     /**
     DESCRIPTION
-    @param dx: Number
 
+
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1093,12 +1235,14 @@ declare class Point {
     
     ```
     */
-	public translatedBy(dx: number): Point;
+    public translatedBy(dx: number): Point;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
 
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1108,10 +1252,12 @@ declare class Point {
     
     ```
     */
-	public translatedBy(dx: number, dy?: number /* dx */): Point;
+    public translatedBy(dx: number, dy?: number /* dx */): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1121,10 +1267,12 @@ declare class Point {
     
     ```
     */
-	public truncate(): void;
+    public truncate(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1134,7 +1282,7 @@ declare class Point {
     
     ```
     */
-	public truncated(): Point;
+    public truncated(): Point;
 
 
 

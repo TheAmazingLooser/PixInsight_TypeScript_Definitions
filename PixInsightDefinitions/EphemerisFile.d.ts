@@ -39,6 +39,8 @@ declare class EphemerisFile {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -48,11 +50,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public close(): void;
+    public close(): void;
 
     /**
     DESCRIPTION
-    @param name: String
+
+
+    name: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -63,11 +67,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public constantValue(name: string): number;
+    public constantValue(name: string): number;
 
     /**
     DESCRIPTION
-    @param name: String
+
+
+    name: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -78,11 +84,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public isConstantAvailable(name: string): boolean;
+    public isConstantAvailable(name: string): boolean;
 
     /**
     DESCRIPTION
-    @param object: String
+
+
+    object: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -93,11 +101,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public isObjectAvailable(object: string): boolean;
+    public isObjectAvailable(object: string): boolean;
     /**
     DESCRIPTION
-    @param object: String
-    @param origin: String
+
+
+    object: String
+    origin: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -108,41 +118,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public isObjectAvailable(object: string, origin?: string): boolean;
-
-    /**
-    DESCRIPTION
-    @param object: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public objectName(object: string): string;
-    /**
-    DESCRIPTION
-    @param object: String
-    @param origin: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public objectName(object: string, origin?: string): string;
+    public isObjectAvailable(object: string, origin?: string): boolean;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    object: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -153,12 +135,30 @@ declare class EphemerisFile {
     
     ```
     */
-	public open(filePath: string): void;
+    public objectName(object: string): string;
+    /**
+    DESCRIPTION
+
+
+    object: String
+    origin: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public objectName(object: string, origin?: string): string;
 
     /**
     DESCRIPTION
-    @param window: ImageWindow
-    @param P: Position
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -169,14 +169,14 @@ declare class EphemerisFile {
     
     ```
     */
-	public visibleObjects(window: ImageWindow, P: Position): Array<any>;
+    public open(filePath: string): void;
+
     /**
     DESCRIPTION
-    @param window: ImageWindow
-    @param P: Position
-    @param magMax: any
-    @param magMin: any
-    @param rect: Rect
+
+
+    window: ImageWindow
+    P: Position
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -187,7 +187,27 @@ declare class EphemerisFile {
     
     ```
     */
-	public visibleObjects(window: ImageWindow, P: Position, magMax?: any, magMin?: any, rect?: Rect): Array<any>;
+    public visibleObjects(window: ImageWindow, P: Position): Array<any>;
+    /**
+    DESCRIPTION
+
+
+    window: ImageWindow
+    P: Position
+    magMax: any
+    magMin: any
+    rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public visibleObjects(window: ImageWindow, P: Position, magMax?: any, magMin?: any, rect?: Rect): Array<any>;
 
 
 
@@ -196,7 +216,9 @@ declare class EphemerisFile {
     //-------------------------
     /**
     DESCRIPTION
-    @param t: Date
+
+
+    t: Date
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -207,11 +229,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaAT(t: Date): number;
+    public static deltaAT(t: Date): number;
 
     /**
     DESCRIPTION
-    @param isoTime: String
+
+
+    isoTime: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -222,11 +246,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaAT(isoTime: string): number;
+    public static deltaAT(isoTime: string): number;
 
     /**
     DESCRIPTION
-    @param jd1: Number
+
+
+    jd1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -237,11 +263,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaAT(jd1: number): number;
+    public static deltaAT(jd1: number): number;
     /**
     DESCRIPTION
-    @param jd1: Number
-    @param jd2: Number
+
+
+    jd1: Number
+    jd2: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -252,26 +280,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaAT(jd1: number, jd2?: number): number;
-
-    /**
-    DESCRIPTION
-    @param t: Date
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static deltaT(t: Date): number;
+    public static deltaAT(jd1: number, jd2?: number): number;
 
     /**
     DESCRIPTION
-    @param isoTime: String
+
+
+    t: Date
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -282,11 +297,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaT(isoTime: string): number;
+    public static deltaT(t: Date): number;
 
     /**
     DESCRIPTION
-    @param jd1: Number
+
+
+    isoTime: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -297,11 +314,13 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaT(jd1: number): number;
+    public static deltaT(isoTime: string): number;
+
     /**
     DESCRIPTION
-    @param jd1: Number
-    @param jd2: Number
+
+
+    jd1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -312,7 +331,24 @@ declare class EphemerisFile {
     
     ```
     */
-	public static deltaT(jd1: number, jd2?: number): number;
+    public static deltaT(jd1: number): number;
+    /**
+    DESCRIPTION
+
+
+    jd1: Number
+    jd2: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static deltaT(jd1: number, jd2?: number): number;
 
 
 

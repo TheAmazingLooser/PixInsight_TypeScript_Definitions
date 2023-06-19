@@ -28,6 +28,8 @@ declare class ShepardInterpolation {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -37,12 +39,14 @@ declare class ShepardInterpolation {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
+
+    x: Number
+    y: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -53,11 +57,13 @@ declare class ShepardInterpolation {
     
     ```
     */
-	public evaluate(x: number, y: number): number;
+    public evaluate(x: number, y: number): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -68,11 +74,13 @@ declare class ShepardInterpolation {
     
     ```
     */
-	public evaluate(p: Point): number;
+    public evaluate(p: Point): number;
 
     /**
     DESCRIPTION
-    @param points: Array
+
+
+    points: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -83,13 +91,15 @@ declare class ShepardInterpolation {
     
     ```
     */
-	public evaluate(points: Array<any>): Vector;
+    public evaluate(points: Array<any>): Vector;
 
     /**
     DESCRIPTION
-    @param x: Vector
-    @param y: Vector
-    @param z: Vector
+
+
+    x: Vector
+    y: Vector
+    z: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -100,14 +110,16 @@ declare class ShepardInterpolation {
     
     ```
     */
-	public initialize(x: Vector, y: Vector, z: Vector): void;
+    public initialize(x: Vector, y: Vector, z: Vector): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param x: Vector
-    @param y: Vector
-    @param z: Vector
+
+
+    r: Rect
+    x: Vector
+    y: Vector
+    z: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -118,7 +130,7 @@ declare class ShepardInterpolation {
     
     ```
     */
-	public initialize(r: Rect, x: Vector, y: Vector, z: Vector): void;
+    public initialize(r: Rect, x: Vector, y: Vector, z: Vector): void;
 
 
 

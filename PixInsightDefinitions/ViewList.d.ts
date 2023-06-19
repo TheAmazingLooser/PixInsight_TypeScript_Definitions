@@ -30,6 +30,8 @@ declare class ViewList extends Control {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -39,10 +41,12 @@ declare class ViewList extends Control {
     
     ```
     */
-	public getAll(): void;
+    public getAll(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -52,10 +56,12 @@ declare class ViewList extends Control {
     
     ```
     */
-	public getMainViews(): void;
+    public getMainViews(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -65,10 +71,12 @@ declare class ViewList extends Control {
     
     ```
     */
-	public getPreviews(): void;
+    public getPreviews(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -78,11 +86,13 @@ declare class ViewList extends Control {
     
     ```
     */
-	public reload(): void;
+    public reload(): void;
 
     /**
     DESCRIPTION
-    @param view: View
+
+
+    view: View
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -93,7 +103,7 @@ declare class ViewList extends Control {
     
     ```
     */
-	public remove(view: View): void;
+    public remove(view: View): void;
 
 
 

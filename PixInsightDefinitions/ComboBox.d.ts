@@ -35,7 +35,9 @@ declare class ComboBox extends Control {
     //-------------------------
     /**
     DESCRIPTION
-    @param text: String
+
+
+    text: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -46,11 +48,13 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public addItem(text: string): void;
+    public addItem(text: string): void;
     /**
     DESCRIPTION
-    @param text: String
-    @param icon: Bitmap|String
+
+
+    text: String
+    icon: Bitmap|String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -61,23 +65,12 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public addItem(text: string, icon?: Bitmap | string): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public clear(): void;
+    public addItem(text: string, icon?: Bitmap | string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -87,11 +80,11 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public clearEditText(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -102,11 +95,13 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public clearItemIcon(index: number): void;
+    public clearEditText(): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -117,11 +112,13 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public clearItemText(index: number): void;
+    public clearItemIcon(index: number): void;
 
     /**
     DESCRIPTION
-    @param text: String
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -132,27 +129,14 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public findItem(text: string): number;
-    /**
-    DESCRIPTION
-    @param text: String
-    @param fromIdx: int = 0
-    @param exactMatch: Boolean = false
-    @param caseSensitive: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public findItem(text: string, fromIdx?: number /* 0 */, exactMatch?: boolean /* false */, caseSensitive?: boolean /* false */): number;
+    public clearItemText(index: number): void;
 
     /**
     DESCRIPTION
+
+
+    text: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -162,12 +146,30 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public hideList(): void;
+    public findItem(text: string): number;
+    /**
+    DESCRIPTION
+
+
+    text: String
+    fromIdx: int = 0
+    exactMatch: Boolean = false
+    caseSensitive: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public findItem(text: string, fromIdx?: number /* 0 */, exactMatch?: boolean /* false */, caseSensitive?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param text: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -178,27 +180,14 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public insertItem(index: number, text: string): void;
-    /**
-    DESCRIPTION
-    @param index: int
-    @param text: String
-    @param icon: Bitmap|String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insertItem(index: number, text: string, icon?: Bitmap | string): void;
+    public hideList(): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
+    text: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -209,11 +198,31 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public itemIcon(index: number): Bitmap;
+    public insertItem(index: number, text: string): void;
+    /**
+    DESCRIPTION
+
+
+    index: int
+    text: String
+    icon: Bitmap|String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public insertItem(index: number, text: string, icon?: Bitmap | string): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -224,11 +233,13 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public itemText(index: number): string;
+    public itemIcon(index: number): Bitmap;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -239,12 +250,13 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public removeItem(index: number): void;
+    public itemText(index: number): string;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param Bitmap: Bitmap | string
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -255,12 +267,14 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public setItemIcon(index: number, Bitmap: Bitmap  |  string): void;
+    public removeItem(index: number): void;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param string: string
+
+
+    index: int
+    Bitmap: Bitmap | string
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -271,10 +285,15 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public setItemText(index: number, string: string): void;
+    public setItemIcon(index: number, Bitmap: Bitmap  |  string): void;
 
     /**
     DESCRIPTION
+
+
+    index: int
+    string: string
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -284,7 +303,22 @@ declare class ComboBox extends Control {
     
     ```
     */
-	public showList(): void;
+    public setItemText(index: number, string: string): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public showList(): void;
 
 
 

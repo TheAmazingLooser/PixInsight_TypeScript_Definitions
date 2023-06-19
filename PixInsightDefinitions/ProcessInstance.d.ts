@@ -25,7 +25,9 @@ declare class ProcessInstance {
     //-------------------------
     /**
     DESCRIPTION
-    @param ProcessInstance: ProcessInstance
+
+
+    ProcessInstance: ProcessInstance
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -36,10 +38,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public assign(ProcessInstance: ProcessInstance): void;
+    public assign(ProcessInstance: ProcessInstance): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -49,11 +53,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public canExecuteGlobal(): boolean;
+    public canExecuteGlobal(): boolean;
 
     /**
     DESCRIPTION
-    @param view: View
+
+
+    view: View
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -64,11 +70,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public canExecuteOn(view: View): boolean;
+    public canExecuteOn(view: View): boolean;
 
     /**
     DESCRIPTION
-    @param image: Image
+
+
+    image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -79,10 +87,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public canExecuteOn(image: Image): boolean;
+    public canExecuteOn(image: Image): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -92,10 +102,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public canLaunchInterface(): boolean;
+    public canLaunchInterface(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -105,10 +117,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public canProcessGlobal(): boolean;
+    public canProcessGlobal(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -118,10 +132,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public canProcessImages(): boolean;
+    public canProcessImages(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -131,10 +147,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public canProcessViews(): boolean;
+    public canProcessViews(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -144,10 +162,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public description(): string;
+    public description(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -157,11 +177,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public executeGlobal(): boolean;
+    public executeGlobal(): boolean;
 
     /**
     DESCRIPTION
-    @param view: View
+
+
+    view: View
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -172,11 +194,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public executeOn(view: View): boolean;
+    public executeOn(view: View): boolean;
     /**
     DESCRIPTION
-    @param view: View
-    @param swapFile: Boolean = true
+
+
+    view: View
+    swapFile: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -187,40 +211,14 @@ declare class ProcessInstance {
     
     ```
     */
-	public executeOn(view: View, swapFile?: boolean /* true */): boolean;
-
-    /**
-    DESCRIPTION
-    @param image: Image
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public executeOn(image: Image): boolean;
-    /**
-    DESCRIPTION
-    @param image: Image
-    @param hints: String = ""
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public executeOn(image: Image, hints?: string /* "" */): boolean;
+    public executeOn(view: View, swapFile?: boolean /* true */): boolean;
 
     /**
     DESCRIPTION
+
+
+    image: Image
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -230,10 +228,29 @@ declare class ProcessInstance {
     
     ```
     */
-	public executionTime(): number;
+    public executeOn(image: Image): boolean;
+    /**
+    DESCRIPTION
+
+
+    image: Image
+    hints: String = ""
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public executeOn(image: Image, hints?: string /* "" */): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -243,11 +260,11 @@ declare class ProcessInstance {
     
     ```
     */
-	public isAssignable(): boolean;
+    public executionTime(): number;
 
     /**
     DESCRIPTION
-    @param view: View
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -258,12 +275,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public isHistoryUpdater(view: View): boolean;
+    public isAssignable(): boolean;
 
     /**
     DESCRIPTION
-    @param view: View
-    @param mask: ImageWindow
+
+
+    view: View
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -274,10 +292,15 @@ declare class ProcessInstance {
     
     ```
     */
-	public isMaskable(view: View, mask: ImageWindow): boolean;
+    public isHistoryUpdater(view: View): boolean;
 
     /**
     DESCRIPTION
+
+
+    view: View
+    mask: ImageWindow
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -287,10 +310,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public launch(): void;
+    public isMaskable(view: View, mask: ImageWindow): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -300,10 +325,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public launchInterface(): boolean;
+    public launch(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -313,10 +340,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public processCategory(): string;
+    public launchInterface(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -326,11 +355,11 @@ declare class ProcessInstance {
     
     ```
     */
-	public processId(): string;
+    public processCategory(): string;
 
     /**
     DESCRIPTION
-    @param iconId: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -341,11 +370,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public readIcon(iconId: string): boolean;
+    public processId(): string;
 
     /**
     DESCRIPTION
-    @param text: String
+
+
+    iconId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -356,10 +387,14 @@ declare class ProcessInstance {
     
     ```
     */
-	public setDescription(text: string): void;
+    public readIcon(iconId: string): boolean;
 
     /**
     DESCRIPTION
+
+
+    text: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -369,26 +404,11 @@ declare class ProcessInstance {
     
     ```
     */
-	public startJD(): number;
+    public setDescription(text: string): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toSource(): string;
-    /**
-    DESCRIPTION
-    @param language: String = "JavaScript"
-    @param varId: String = ""
-    @param indent: int = 0
-    @param flags: uint = 0
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -399,10 +419,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public toSource(language?: string /* "JavaScript" */, varId?: string /* "" */, indent?: number /* 0 */, flags?: number /* 0 */): string;
+    public startJD(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -412,11 +434,30 @@ declare class ProcessInstance {
     
     ```
     */
-	public validate(): boolean;
+    public toSource(): string;
+    /**
+    DESCRIPTION
+
+
+    language: String = "JavaScript"
+    varId: String = ""
+    indent: int = 0
+    flags: uint = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toSource(language?: string /* "JavaScript" */, varId?: string /* "" */, indent?: number /* 0 */, flags?: number /* 0 */): string;
 
     /**
     DESCRIPTION
-    @param iconId: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -427,11 +468,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public writeIcon(iconId: string): boolean;
+    public validate(): boolean;
 
     /**
     DESCRIPTION
-    @param instanceAddr: String
+
+
+    iconId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -442,7 +485,24 @@ declare class ProcessInstance {
     
     ```
     */
-	public writeInstanceAddr(instanceAddr: string): boolean;
+    public writeIcon(iconId: string): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    instanceAddr: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public writeInstanceAddr(instanceAddr: string): boolean;
 
 
 
@@ -451,7 +511,9 @@ declare class ProcessInstance {
     //-------------------------
     /**
     DESCRIPTION
-    @param iconId: String
+
+
+    iconId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -462,10 +524,12 @@ declare class ProcessInstance {
     
     ```
     */
-	public static fromIcon(iconId: string): ProcessInstance;
+    public static fromIcon(iconId: string): ProcessInstance;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -475,11 +539,13 @@ declare class ProcessInstance {
     
     ```
     */
-	public static icons(): Array<any>;
+    public static icons(): Array<any>;
 
     /**
     DESCRIPTION
-    @param processId: String
+
+
+    processId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -490,7 +556,7 @@ declare class ProcessInstance {
     
     ```
     */
-	public static iconsByProcessId(processId: string): Array<any>;
+    public static iconsByProcessId(processId: string): Array<any>;
 
 
 

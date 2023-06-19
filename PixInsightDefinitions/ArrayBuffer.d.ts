@@ -27,7 +27,9 @@ declare class ArrayBuffer {
     //-------------------------
     /**
     DESCRIPTION
-    @param begin: uint32
+
+
+    begin: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -38,11 +40,13 @@ declare class ArrayBuffer {
     
     ```
     */
-	public slice(begin: number): ArrayBuffer;
+    public slice(begin: number): ArrayBuffer;
     /**
     DESCRIPTION
-    @param begin: uint32
-    @param end: uint32
+
+
+    begin: uint32
+    end: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -53,7 +57,7 @@ declare class ArrayBuffer {
     
     ```
     */
-	public slice(begin: number, end?: number): ArrayBuffer;
+    public slice(begin: number, end?: number): ArrayBuffer;
 
 
 

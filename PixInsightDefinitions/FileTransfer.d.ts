@@ -33,6 +33,8 @@ declare class FileTransfer {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -42,7 +44,7 @@ declare class FileTransfer {
     
     ```
     */
-	public perform(): boolean;
+    public perform(): boolean;
 
 
 

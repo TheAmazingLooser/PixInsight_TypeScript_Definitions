@@ -46,7 +46,9 @@ declare class TypeDescription {
     //-------------------------
     /**
     DESCRIPTION
-    @param objectId: String
+
+
+    objectId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -57,11 +59,13 @@ declare class TypeDescription {
     
     ```
     */
-	public inheritedBy(objectId: string): boolean;
+    public inheritedBy(objectId: string): boolean;
 
     /**
     DESCRIPTION
-    @param objectId: String
+
+
+    objectId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -72,7 +76,7 @@ declare class TypeDescription {
     
     ```
     */
-	public inheritsFrom(objectId: string): boolean;
+    public inheritsFrom(objectId: string): boolean;
 
 
 
@@ -81,7 +85,9 @@ declare class TypeDescription {
     //-------------------------
     /**
     DESCRIPTION
-    @param objectId: String
+
+
+    objectId: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -92,10 +98,12 @@ declare class TypeDescription {
     
     ```
     */
-	public static beginObjectDefinition(objectId: string): void;
+    public static beginObjectDefinition(objectId: string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -105,11 +113,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static clearAll(): void;
+    public static clearAll(): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -120,11 +130,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineConstant(formalDescription: string): void;
+    public static defineConstant(formalDescription: string): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -135,11 +147,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineConstructor(formalDescription: string): void;
+    public static defineConstructor(formalDescription: string): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -150,11 +164,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineEventHandler(formalDescription: string): void;
+    public static defineEventHandler(formalDescription: string): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -165,11 +181,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineIncludedFile(formalDescription: string): void;
+    public static defineIncludedFile(formalDescription: string): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -180,11 +198,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineMethod(formalDescription: string): void;
+    public static defineMethod(formalDescription: string): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -195,11 +215,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineProperty(formalDescription: string): void;
+    public static defineProperty(formalDescription: string): void;
     /**
     DESCRIPTION
-    @param formalDescription: String
-    @param readOnly: Boolean = false
+
+
+    formalDescription: String
+    readOnly: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -210,26 +232,13 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineProperty(formalDescription: string, readOnly?: boolean /* false */): void;
-
-    /**
-    DESCRIPTION
-    @param formalDescription: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static defineStaticMethod(formalDescription: string): void;
+    public static defineProperty(formalDescription: string, readOnly?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param formalDescription: String
+
+
+    formalDescription: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -240,25 +249,14 @@ declare class TypeDescription {
     
     ```
     */
-	public static defineStaticProperty(formalDescription: string): void;
-    /**
-    DESCRIPTION
-    @param formalDescription: String
-    @param readOnly: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static defineStaticProperty(formalDescription: string, readOnly?: boolean /* false */): void;
+    public static defineStaticMethod(formalDescription: string): void;
 
     /**
     DESCRIPTION
+
+
+    formalDescription: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -268,10 +266,29 @@ declare class TypeDescription {
     
     ```
     */
-	public static endObjectDefinition(): void;
+    public static defineStaticProperty(formalDescription: string): void;
+    /**
+    DESCRIPTION
+
+
+    formalDescription: String
+    readOnly: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static defineStaticProperty(formalDescription: string, readOnly?: boolean /* false */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -281,11 +298,11 @@ declare class TypeDescription {
     
     ```
     */
-	public static enterDefinitionContext(): void;
+    public static endObjectDefinition(): void;
 
     /**
     DESCRIPTION
-    @param objectId: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -296,10 +313,14 @@ declare class TypeDescription {
     
     ```
     */
-	public static inherit(objectId: string): void;
+    public static enterDefinitionContext(): void;
 
     /**
     DESCRIPTION
+
+
+    objectId: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -309,11 +330,11 @@ declare class TypeDescription {
     
     ```
     */
-	public static leaveDefinitionContext(): void;
+    public static inherit(objectId: string): void;
 
     /**
     DESCRIPTION
-    @param objectId: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -324,7 +345,24 @@ declare class TypeDescription {
     
     ```
     */
-	public static objectDefined(objectId: string): boolean;
+    public static leaveDefinitionContext(): void;
+
+    /**
+    DESCRIPTION
+
+
+    objectId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static objectDefined(objectId: string): boolean;
 
 
 

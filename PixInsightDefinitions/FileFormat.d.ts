@@ -64,7 +64,9 @@ declare class FileFormat {
     //-------------------------
     /**
     DESCRIPTION
-    @param data: Object
+
+
+    data: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -75,10 +77,12 @@ declare class FileFormat {
     
     ```
     */
-	public disposeFormatSpecificData(data: Object): void;
+    public disposeFormatSpecificData(data: Object): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -88,10 +92,12 @@ declare class FileFormat {
     
     ```
     */
-	public editPreferences(): void;
+    public editPreferences(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -101,11 +107,13 @@ declare class FileFormat {
     
     ```
     */
-	public queryFormatStatus(): string;
+    public queryFormatStatus(): string;
 
     /**
     DESCRIPTION
-    @param data: Object
+
+
+    data: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -116,7 +124,7 @@ declare class FileFormat {
     
     ```
     */
-	public validateFormatSpecificData(data: Object): boolean;
+    public validateFormatSpecificData(data: Object): boolean;
 
 
 

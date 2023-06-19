@@ -36,7 +36,9 @@ declare class FITSKeyword {
     //-------------------------
     /**
     DESCRIPTION
-    @param k: FITSKeyword
+
+
+    k: FITSKeyword
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -47,12 +49,14 @@ declare class FITSKeyword {
     
     ```
     */
-	public assign(k: FITSKeyword): void;
+    public assign(k: FITSKeyword): void;
 
     /**
     DESCRIPTION
-    @param name: String
-    @param value: String
+
+
+    name: String
+    value: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -63,12 +67,14 @@ declare class FITSKeyword {
     
     ```
     */
-	public assign(name: string, value: string): void;
+    public assign(name: string, value: string): void;
     /**
     DESCRIPTION
-    @param name: String
-    @param value: String
-    @param comment: String
+
+
+    name: String
+    value: String
+    comment: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -79,23 +85,12 @@ declare class FITSKeyword {
     
     ```
     */
-	public assign(name: string, value: string, comment?: string): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toArray(): Array<any>;
+    public assign(name: string, value: string, comment?: string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -105,10 +100,12 @@ declare class FITSKeyword {
     
     ```
     */
-	public toString(): string;
+    public toArray(): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -118,7 +115,22 @@ declare class FITSKeyword {
     
     ```
     */
-	public trim(): void;
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public trim(): void;
 
 
 

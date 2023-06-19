@@ -38,7 +38,9 @@ declare class NumericEdit extends Control {
     //-------------------------
     /**
     DESCRIPTION
-    @param fixed: Boolean
+
+
+    fixed: Boolean
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -49,11 +51,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public enableFixedPrecision(fixed: boolean): void;
+    public enableFixedPrecision(fixed: boolean): void;
 
     /**
     DESCRIPTION
-    @param sign: Boolean
+
+
+    sign: Boolean
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -64,11 +68,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public enableFixedSign(sign: boolean): void;
+    public enableFixedSign(sign: boolean): void;
 
     /**
     DESCRIPTION
-    @param enable: Boolean
+
+
+    enable: Boolean
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -79,11 +85,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public enableScientificNotation(enable: boolean): void;
+    public enableScientificNotation(enable: boolean): void;
 
     /**
     DESCRIPTION
-    @param enable: Boolean
+
+
+    enable: Boolean
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -94,11 +102,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public enableValidatingRegExp(enable: boolean): void;
+    public enableValidatingRegExp(enable: boolean): void;
 
     /**
     DESCRIPTION
-    @param digits: int
+
+
+    digits: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -109,12 +119,14 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public setPrecision(digits: number): void;
+    public setPrecision(digits: number): void;
 
     /**
     DESCRIPTION
-    @param lowerBound: Number
-    @param upperBound: Number
+
+
+    lowerBound: Number
+    upperBound: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -125,11 +137,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public setRange(lowerBound: number, upperBound: number): void;
+    public setRange(lowerBound: number, upperBound: number): void;
 
     /**
     DESCRIPTION
-    @param real: Boolean
+
+
+    real: Boolean
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -140,11 +154,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public setReal(real: boolean): void;
+    public setReal(real: boolean): void;
 
     /**
     DESCRIPTION
-    @param exp10: int
+
+
+    exp10: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -155,11 +171,13 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public setScientificNotationTriggerExponent(exp10: number): void;
+    public setScientificNotationTriggerExponent(exp10: number): void;
 
     /**
     DESCRIPTION
-    @param value: Number
+
+
+    value: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -170,7 +188,7 @@ declare class NumericEdit extends Control {
     
     ```
     */
-	public setValue(value: number): void;
+    public setValue(value: number): void;
 
 
 

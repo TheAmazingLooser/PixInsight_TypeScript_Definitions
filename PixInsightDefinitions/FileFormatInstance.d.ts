@@ -43,6 +43,8 @@ declare class FileFormatInstance {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -52,11 +54,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public close(): boolean;
+    public close(): boolean;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -67,12 +71,14 @@ declare class FileFormatInstance {
     
     ```
     */
-	public create(filePath: string): boolean;
+    public create(filePath: string): boolean;
     /**
     DESCRIPTION
-    @param filePath: String
-    @param hints: String
-    @param numberOfImages: int = 1
+
+
+    filePath: String
+    hints: String
+    numberOfImages: int = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -83,26 +89,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public create(filePath: string, hints?: string, numberOfImages?: number /* 1 */): boolean;
-
-    /**
-    DESCRIPTION
-    @param d: ImageDescription
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public createImage(d: ImageDescription): boolean;
+    public create(filePath: string, hints?: string, numberOfImages?: number /* 1 */): boolean;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    d: ImageDescription
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -113,27 +106,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public open(filePath: string): Array<any>;
-    /**
-    DESCRIPTION
-    @param filePath: String
-    @param hints: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public open(filePath: string, hints?: string): Array<any>;
+    public createImage(d: ImageDescription): boolean;
 
     /**
     DESCRIPTION
-    @param startRow: int
-    @param rowCount: int
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -144,12 +123,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public read(startRow: number, rowCount: number): Matrix;
+    public open(filePath: string): Array<any>;
     /**
     DESCRIPTION
-    @param startRow: int
-    @param rowCount: int
-    @param channel: int = 0
+
+
+    filePath: String
+    hints: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -160,26 +140,14 @@ declare class FileFormatInstance {
     
     ```
     */
-	public read(startRow: number, rowCount: number, channel?: number /* 0 */): Matrix;
-
-    /**
-    DESCRIPTION
-    @param Image: Image
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public readImage(Image: Image): boolean;
+    public open(filePath: string, hints?: string): Array<any>;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    startRow: int
+    rowCount: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -190,11 +158,31 @@ declare class FileFormatInstance {
     
     ```
     */
-	public readImageProperty(id: string): Object | void;
+    public read(startRow: number, rowCount: number): Matrix;
+    /**
+    DESCRIPTION
+
+
+    startRow: int
+    rowCount: int
+    channel: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public read(startRow: number, rowCount: number, channel?: number /* 0 */): Matrix;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    Image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -205,11 +193,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public readProperty(id: string): Object | void;
+    public readImage(Image: Image): boolean;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -220,11 +210,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public setImageId(id: string): boolean;
+    public readImageProperty(id: string): Object | void;
 
     /**
     DESCRIPTION
-    @param d: ImageDescription
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -235,12 +227,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public setOptions(d: ImageDescription): boolean;
+    public readProperty(id: string): Object | void;
 
     /**
     DESCRIPTION
-    @param buffer: Matrix
-    @param startRow: int
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -251,27 +244,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public write(buffer: Matrix, startRow: number): boolean;
-    /**
-    DESCRIPTION
-    @param buffer: Matrix
-    @param startRow: int
-    @param channel: int = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public write(buffer: Matrix, startRow: number, channel?: number /* 0 */): boolean;
+    public setImageId(id: string): boolean;
 
     /**
     DESCRIPTION
-    @param Image: Image
+
+
+    d: ImageDescription
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -282,12 +261,14 @@ declare class FileFormatInstance {
     
     ```
     */
-	public writeImage(Image: Image): boolean;
+    public setOptions(d: ImageDescription): boolean;
 
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
+
+
+    buffer: Matrix
+    startRow: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -298,12 +279,14 @@ declare class FileFormatInstance {
     
     ```
     */
-	public writeImageProperty(id: string, value: Object): boolean;
+    public write(buffer: Matrix, startRow: number): boolean;
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
-    @param type: uint
+
+
+    buffer: Matrix
+    startRow: int
+    channel: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -314,12 +297,13 @@ declare class FileFormatInstance {
     
     ```
     */
-	public writeImageProperty(id: string, value: Object, type?: number): boolean;
+    public write(buffer: Matrix, startRow: number, channel?: number /* 0 */): boolean;
 
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
+
+
+    Image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -330,12 +314,14 @@ declare class FileFormatInstance {
     
     ```
     */
-	public writeProperty(id: string, value: Object): boolean;
+    public writeImage(Image: Image): boolean;
+
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
-    @param type: uint
+
+
+    id: String
+    value: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -346,7 +332,61 @@ declare class FileFormatInstance {
     
     ```
     */
-	public writeProperty(id: string, value: Object, type?: number): boolean;
+    public writeImageProperty(id: string, value: Object): boolean;
+    /**
+    DESCRIPTION
+
+
+    id: String
+    value: Object
+    type: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public writeImageProperty(id: string, value: Object, type?: number): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    id: String
+    value: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public writeProperty(id: string, value: Object): boolean;
+    /**
+    DESCRIPTION
+
+
+    id: String
+    value: Object
+    type: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public writeProperty(id: string, value: Object, type?: number): boolean;
 
 
 

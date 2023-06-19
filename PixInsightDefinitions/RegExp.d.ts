@@ -31,6 +31,8 @@ declare class RegExp {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -40,10 +42,12 @@ declare class RegExp {
     
     ```
     */
-	public exec(): Array<any>;
+    public exec(): Array<any>;
     /**
     DESCRIPTION
-    @param str: String
+
+
+    str: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -54,38 +58,13 @@ declare class RegExp {
     
     ```
     */
-	public exec(str?: string): Array<any>;
-
-    /**
-    DESCRIPTION
-    @param propertyName: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public propertyIsEnumerable(propertyName: string): boolean;
+    public exec(str?: string): Array<any>;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public test(): boolean;
-    /**
-    DESCRIPTION
-    @param str: String
+
+
+    propertyName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -96,10 +75,12 @@ declare class RegExp {
     
     ```
     */
-	public test(str?: string): boolean;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -109,10 +90,13 @@ declare class RegExp {
     
     ```
     */
-	public toLocaleString(): string;
-
+    public test(): boolean;
     /**
     DESCRIPTION
+
+
+    str: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -122,10 +106,12 @@ declare class RegExp {
     
     ```
     */
-	public toSource(): string;
+    public test(str?: string): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -135,7 +121,37 @@ declare class RegExp {
     
     ```
     */
-	public toString(): string;
+    public toLocaleString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toSource(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
 
 
 

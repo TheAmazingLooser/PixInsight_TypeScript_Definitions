@@ -29,7 +29,9 @@ declare class Color {
     //-------------------------
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -40,11 +42,13 @@ declare class Color {
     
     ```
     */
-	public static alpha(rgba: number): number;
+    public static alpha(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -55,11 +59,13 @@ declare class Color {
     
     ```
     */
-	public static alphaF(rgba: number): number;
+    public static alphaF(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -70,11 +76,13 @@ declare class Color {
     
     ```
     */
-	public static blue(rgba: number): number;
+    public static blue(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -85,11 +93,13 @@ declare class Color {
     
     ```
     */
-	public static blueF(rgba: number): number;
+    public static blueF(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -100,11 +110,13 @@ declare class Color {
     
     ```
     */
-	public static clearAlpha(rgba: number): number;
+    public static clearAlpha(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -115,11 +127,13 @@ declare class Color {
     
     ```
     */
-	public static clearBlue(rgba: number): number;
+    public static clearBlue(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -130,11 +144,13 @@ declare class Color {
     
     ```
     */
-	public static clearGreen(rgba: number): number;
+    public static clearGreen(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -145,11 +161,13 @@ declare class Color {
     
     ```
     */
-	public static clearRed(rgba: number): number;
+    public static clearRed(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -160,11 +178,13 @@ declare class Color {
     
     ```
     */
-	public static green(rgba: number): number;
+    public static green(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -175,11 +195,13 @@ declare class Color {
     
     ```
     */
-	public static greenF(rgba: number): number;
+    public static greenF(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -190,11 +212,13 @@ declare class Color {
     
     ```
     */
-	public static hsiSaturation(rgba: number): number;
+    public static hsiSaturation(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -205,11 +229,13 @@ declare class Color {
     
     ```
     */
-	public static hsvSaturation(rgba: number): number;
+    public static hsvSaturation(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -220,11 +246,13 @@ declare class Color {
     
     ```
     */
-	public static hue(rgba: number): number;
+    public static hue(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -235,11 +263,13 @@ declare class Color {
     
     ```
     */
-	public static isGray(rgba: number): boolean;
+    public static isGray(rgba: number): boolean;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -250,11 +280,13 @@ declare class Color {
     
     ```
     */
-	public static red(rgba: number): number;
+    public static red(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -265,11 +297,13 @@ declare class Color {
     
     ```
     */
-	public static redF(rgba: number): number;
+    public static redF(rgba: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: uint32
+
+
+    rgb: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -280,14 +314,16 @@ declare class Color {
     
     ```
     */
-	public static rgbColorToHexString(rgb: number): string;
+    public static rgbColorToHexString(rgb: number): string;
 
     /**
     DESCRIPTION
-    @param r: uint8
-    @param g: uint8
-    @param b: uint8
-    @param a: uint8
+
+
+    r: uint8
+    g: uint8
+    b: uint8
+    a: uint8
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -298,14 +334,16 @@ declare class Color {
     
     ```
     */
-	public static rgbaColor(r: number, g: number, b: number, a: number): number;
+    public static rgbaColor(r: number, g: number, b: number, a: number): number;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
-    @param a: Number
+
+
+    r: Number
+    g: Number
+    b: Number
+    a: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -316,11 +354,13 @@ declare class Color {
     
     ```
     */
-	public static rgbaColorF(r: number, g: number, b: number, a: number): number;
+    public static rgbaColorF(r: number, g: number, b: number, a: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -331,12 +371,14 @@ declare class Color {
     
     ```
     */
-	public static rgbaColorToHexString(rgba: number): string;
+    public static rgbaColorToHexString(rgba: number): string;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
-    @param number: number
+
+
+    rgba: uint32
+    number: number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -347,12 +389,14 @@ declare class Color {
     
     ```
     */
-	public static setAlpha(rgba: number, number: number): number;
+    public static setAlpha(rgba: number, number: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
-    @param number: number
+
+
+    rgba: uint32
+    number: number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -363,12 +407,14 @@ declare class Color {
     
     ```
     */
-	public static setBlue(rgba: number, number: number): number;
+    public static setBlue(rgba: number, number: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
-    @param number: number
+
+
+    rgba: uint32
+    number: number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -379,12 +425,14 @@ declare class Color {
     
     ```
     */
-	public static setGreen(rgba: number, number: number): number;
+    public static setGreen(rgba: number, number: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
-    @param number: number
+
+
+    rgba: uint32
+    number: number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -395,11 +443,13 @@ declare class Color {
     
     ```
     */
-	public static setRed(rgba: number, number: number): number;
+    public static setRed(rgba: number, number: number): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -410,7 +460,7 @@ declare class Color {
     
     ```
     */
-	public static value(rgba: number): number;
+    public static value(rgba: number): number;
 
 
 

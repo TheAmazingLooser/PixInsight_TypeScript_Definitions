@@ -42,6 +42,8 @@ declare class ExternalProcess {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -51,10 +53,12 @@ declare class ExternalProcess {
     
     ```
     */
-	public closeStandardError(): void;
+    public closeStandardError(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -64,10 +68,12 @@ declare class ExternalProcess {
     
     ```
     */
-	public closeStandardInput(): void;
+    public closeStandardInput(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -77,10 +83,12 @@ declare class ExternalProcess {
     
     ```
     */
-	public closeStandardOutput(): void;
+    public closeStandardOutput(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -90,11 +98,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public kill(): void;
+    public kill(): void;
 
     /**
     DESCRIPTION
-    @param fileName: String
+
+
+    fileName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -105,11 +115,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public redirectStandardError(fileName: string): void;
+    public redirectStandardError(fileName: string): void;
     /**
     DESCRIPTION
-    @param fileName: String
-    @param append: Boolean = false
+
+
+    fileName: String
+    append: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -120,26 +132,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public redirectStandardError(fileName: string, append?: boolean /* false */): void;
-
-    /**
-    DESCRIPTION
-    @param fileName: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public redirectStandardInput(fileName: string): void;
+    public redirectStandardError(fileName: string, append?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param fileName: String&
+
+
+    fileName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -150,26 +149,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */): void;
-    /**
-    DESCRIPTION
-    @param fileName: String&
-    @param append: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */, append?: boolean /* false */): void;
+    public redirectStandardInput(fileName: string): void;
 
     /**
     DESCRIPTION
-    @param process: ExternalProcess
+
+
+    fileName: String&
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -180,11 +166,30 @@ declare class ExternalProcess {
     
     ```
     */
-	public redirectStandardOutput(process: ExternalProcess): void;
+    public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */): void;
+    /**
+    DESCRIPTION
+
+
+    fileName: String&
+    append: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public redirectStandardOutput(fileName: string /* !!!Call by Reference!!! */, append?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param program: String
+
+
+    process: ExternalProcess
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -195,51 +200,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public start(program: string): void;
-    /**
-    DESCRIPTION
-    @param program: String
-    @param arguments: Array
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public start(program: string, arguments?: Array<any>): void;
+    public redirectStandardOutput(process: ExternalProcess): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public terminate(): void;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public waitForDataAvailable(): boolean;
-    /**
-    DESCRIPTION
-    @param ms: int = 6000
+
+    program: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -250,23 +217,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public waitForDataAvailable(ms?: number /* 6000 */): boolean;
+    public start(program: string): void;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public waitForDataWritten(): boolean;
-    /**
-    DESCRIPTION
-    @param ms: int = 6000
+
+    program: String
+    arguments: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -277,23 +234,11 @@ declare class ExternalProcess {
     
     ```
     */
-	public waitForDataWritten(ms?: number /* 6000 */): boolean;
+    public start(program: string, arguments?: Array<any>): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public waitForFinished(): boolean;
-    /**
-    DESCRIPTION
-    @param ms: int = 6000
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -304,23 +249,11 @@ declare class ExternalProcess {
     
     ```
     */
-	public waitForFinished(ms?: number /* 6000 */): boolean;
+    public terminate(): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public waitForStarted(): boolean;
-    /**
-    DESCRIPTION
-    @param ms: int = 6000
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -331,7 +264,116 @@ declare class ExternalProcess {
     
     ```
     */
-	public waitForStarted(ms?: number /* 6000 */): boolean;
+    public waitForDataAvailable(): boolean;
+    /**
+    DESCRIPTION
+
+
+    ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForDataAvailable(ms?: number /* 6000 */): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForDataWritten(): boolean;
+    /**
+    DESCRIPTION
+
+
+    ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForDataWritten(ms?: number /* 6000 */): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForFinished(): boolean;
+    /**
+    DESCRIPTION
+
+
+    ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForFinished(ms?: number /* 6000 */): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForStarted(): boolean;
+    /**
+    DESCRIPTION
+
+
+    ms: int = 6000
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public waitForStarted(ms?: number /* 6000 */): boolean;
 
 
 
@@ -340,7 +382,9 @@ declare class ExternalProcess {
     //-------------------------
     /**
     DESCRIPTION
-    @param program: String
+
+
+    program: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -351,11 +395,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public static execute(program: string): number;
+    public static execute(program: string): number;
     /**
     DESCRIPTION
-    @param program: String
-    @param arguments: Array
+
+
+    program: String
+    arguments: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -366,42 +412,13 @@ declare class ExternalProcess {
     
     ```
     */
-	public static execute(program: string, arguments?: Array<any>): number;
-
-    /**
-    DESCRIPTION
-    @param program: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static startDetached(program: string): number;
-    /**
-    DESCRIPTION
-    @param program: String
-    @param arguments: Array
-    @param workingDirectory: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static startDetached(program: string, arguments?: Array<any>, workingDirectory?: string): number;
+    public static execute(program: string, arguments?: Array<any>): number;
 
     /**
     DESCRIPTION
-    @param program: String
+
+
+    program: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -412,11 +429,14 @@ declare class ExternalProcess {
     
     ```
     */
-	public static startDetached(program: string): number;
+    public static startDetached(program: string): number;
     /**
     DESCRIPTION
-    @param program: String
-    @param workingDirectory: String
+
+
+    program: String
+    arguments: Array
+    workingDirectory: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -427,7 +447,41 @@ declare class ExternalProcess {
     
     ```
     */
-	public static startDetached(program: string, workingDirectory?: string): number;
+    public static startDetached(program: string, arguments?: Array<any>, workingDirectory?: string): number;
+
+    /**
+    DESCRIPTION
+
+
+    program: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static startDetached(program: string): number;
+    /**
+    DESCRIPTION
+
+
+    program: String
+    workingDirectory: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static startDetached(program: string, workingDirectory?: string): number;
 
 
 

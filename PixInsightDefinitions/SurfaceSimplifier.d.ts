@@ -29,9 +29,11 @@ declare class SurfaceSimplifier {
     //-------------------------
     /**
     DESCRIPTION
-    @param x: Vector
-    @param y: Vector
-    @param z: Vector
+
+
+    x: Vector
+    y: Vector
+    z: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -42,7 +44,7 @@ declare class SurfaceSimplifier {
     
     ```
     */
-	public simplify(x: Vector, y: Vector, z: Vector): Array<any>;
+    public simplify(x: Vector, y: Vector, z: Vector): Array<any>;
 
 
 

@@ -44,19 +44,7 @@ declare class View {
     //-------------------------
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public beginProcess(): void;
-    /**
-    DESCRIPTION
-    @param undoFlags: uint
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -67,10 +55,13 @@ declare class View {
     
     ```
     */
-	public beginProcess(undoFlags?: number): void;
-
+    public beginProcess(): void;
     /**
     DESCRIPTION
+
+
+    undoFlags: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -80,11 +71,11 @@ declare class View {
     
     ```
     */
-	public cancelProcess(): void;
+    public beginProcess(undoFlags?: number): void;
 
     /**
     DESCRIPTION
-    @param id: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -95,11 +86,13 @@ declare class View {
     
     ```
     */
-	public computeOrFetchProperty(id: string): Object | void;
+    public cancelProcess(): void;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -110,11 +103,13 @@ declare class View {
     
     ```
     */
-	public computeProperty(id: string): Object | void;
+    public computeOrFetchProperty(id: string): Object | void;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -125,10 +120,14 @@ declare class View {
     
     ```
     */
-	public deleteProperty(id: string): boolean;
+    public computeProperty(id: string): Object | void;
 
     /**
     DESCRIPTION
+
+
+    id: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -138,11 +137,11 @@ declare class View {
     
     ```
     */
-	public endProcess(): void;
+    public deleteProperty(id: string): boolean;
 
     /**
     DESCRIPTION
-    @param FileFormatInstance: FileFormatInstance
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -153,11 +152,13 @@ declare class View {
     
     ```
     */
-	public exportProperties(FileFormatInstance: FileFormatInstance): number;
+    public endProcess(): void;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    FileFormatInstance: FileFormatInstance
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -168,11 +169,13 @@ declare class View {
     
     ```
     */
-	public hasProperty(id: string): boolean;
+    public exportProperties(FileFormatInstance: FileFormatInstance): number;
 
     /**
     DESCRIPTION
-    @param FileFormatInstance: FileFormatInstance
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -183,11 +186,13 @@ declare class View {
     
     ```
     */
-	public importProperties(FileFormatInstance: FileFormatInstance): string;
+    public hasProperty(id: string): boolean;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    FileFormatInstance: FileFormatInstance
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -198,11 +203,13 @@ declare class View {
     
     ```
     */
-	public propertyAttributes(id: string): number | void;
+    public importProperties(FileFormatInstance: FileFormatInstance): string;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -213,11 +220,13 @@ declare class View {
     
     ```
     */
-	public propertyType(id: string): number | void;
+    public propertyAttributes(id: string): number | void;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -228,12 +237,13 @@ declare class View {
     
     ```
     */
-	public propertyValue(id: string): Object | void;
+    public propertyType(id: string): number | void;
 
     /**
     DESCRIPTION
-    @param id: String
-    @param attributes: uint
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -244,12 +254,14 @@ declare class View {
     
     ```
     */
-	public setPropertyAttributes(id: string, attributes: number): boolean;
+    public propertyValue(id: string): Object | void;
 
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
+
+
+    id: String
+    attributes: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -260,13 +272,14 @@ declare class View {
     
     ```
     */
-	public setPropertyValue(id: string, value: Object): boolean;
+    public setPropertyAttributes(id: string, attributes: number): boolean;
+
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
-    @param type: uint
-    @param attributes: uint
+
+
+    id: String
+    value: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -277,7 +290,26 @@ declare class View {
     
     ```
     */
-	public setPropertyValue(id: string, value: Object, type?: number, attributes?: number): boolean;
+    public setPropertyValue(id: string, value: Object): boolean;
+    /**
+    DESCRIPTION
+
+
+    id: String
+    value: Object
+    type: uint
+    attributes: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setPropertyValue(id: string, value: Object, type?: number, attributes?: number): boolean;
 
 
 
@@ -286,7 +318,9 @@ declare class View {
     //-------------------------
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -297,7 +331,7 @@ declare class View {
     
     ```
     */
-	public static viewById(id: string): View;
+    public static viewById(id: string): View;
 
 
 

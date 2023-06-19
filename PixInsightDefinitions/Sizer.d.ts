@@ -36,7 +36,9 @@ declare class Sizer {
     //-------------------------
     /**
     DESCRIPTION
-    @param Control: Control
+
+
+    Control: Control
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -47,12 +49,14 @@ declare class Sizer {
     
     ```
     */
-	public add(Control: Control): void;
+    public add(Control: Control): void;
     /**
     DESCRIPTION
-    @param Control: Control
-    @param stretchFactor: int
-    @param alignment: int
+
+
+    Control: Control
+    stretchFactor: int
+    alignment: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -63,41 +67,13 @@ declare class Sizer {
     
     ```
     */
-	public add(Control: Control, stretchFactor?: number, alignment?: number): void;
-
-    /**
-    DESCRIPTION
-    @param Sizer: Sizer
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public add(Sizer: Sizer): void;
-    /**
-    DESCRIPTION
-    @param Sizer: Sizer
-    @param stretchFactor: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public add(Sizer: Sizer, stretchFactor?: number): void;
+    public add(Control: Control, stretchFactor?: number, alignment?: number): void;
 
     /**
     DESCRIPTION
-    @param size: int
+
+
+    Sizer: Sizer
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -108,11 +84,30 @@ declare class Sizer {
     
     ```
     */
-	public addScaledSpacing(size: number): void;
+    public add(Sizer: Sizer): void;
+    /**
+    DESCRIPTION
+
+
+    Sizer: Sizer
+    stretchFactor: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public add(Sizer: Sizer, stretchFactor?: number): void;
 
     /**
     DESCRIPTION
-    @param size: int
+
+
+    size: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -123,25 +118,14 @@ declare class Sizer {
     
     ```
     */
-	public addSpacing(size: number): void;
-    /**
-    DESCRIPTION
-    @param size: int
-    @param autoScaling: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public addSpacing(size: number, autoScaling?: boolean /* true */): void;
+    public addScaledSpacing(size: number): void;
 
     /**
     DESCRIPTION
+
+
+    size: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -151,10 +135,13 @@ declare class Sizer {
     
     ```
     */
-	public addStretch(): void;
+    public addSpacing(size: number): void;
     /**
     DESCRIPTION
-    @param stretchFactor: int
+
+
+    size: int
+    autoScaling: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -165,26 +152,11 @@ declare class Sizer {
     
     ```
     */
-	public addStretch(stretchFactor?: number): void;
-
-    /**
-    DESCRIPTION
-    @param size: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public addUnscaledSpacing(size: number): void;
+    public addSpacing(size: number, autoScaling?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param Control: Control
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -195,11 +167,29 @@ declare class Sizer {
     
     ```
     */
-	public has(Control: Control): boolean;
+    public addStretch(): void;
+    /**
+    DESCRIPTION
+
+
+    stretchFactor: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public addStretch(stretchFactor?: number): void;
 
     /**
     DESCRIPTION
-    @param Sizer: Sizer
+
+
+    size: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -210,11 +200,13 @@ declare class Sizer {
     
     ```
     */
-	public has(Sizer: Sizer): boolean;
+    public addUnscaledSpacing(size: number): void;
 
     /**
     DESCRIPTION
-    @param Control: Control
+
+
+    Control: Control
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -225,11 +217,13 @@ declare class Sizer {
     
     ```
     */
-	public indexOf(Control: Control): number;
+    public has(Control: Control): boolean;
 
     /**
     DESCRIPTION
-    @param Sizer: Sizer
+
+
+    Sizer: Sizer
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -240,12 +234,13 @@ declare class Sizer {
     
     ```
     */
-	public indexOf(Sizer: Sizer): number;
+    public has(Sizer: Sizer): boolean;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param Control: Control
+
+
+    Control: Control
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -256,29 +251,13 @@ declare class Sizer {
     
     ```
     */
-	public insert(index: number, Control: Control): void;
-    /**
-    DESCRIPTION
-    @param index: int
-    @param Control: Control
-    @param stretchFactor: int
-    @param alignment: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insert(index: number, Control: Control, stretchFactor?: number, alignment?: number): void;
+    public indexOf(Control: Control): number;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param Sizer: Sizer
+
+
+    Sizer: Sizer
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -289,28 +268,14 @@ declare class Sizer {
     
     ```
     */
-	public insert(index: number, Sizer: Sizer): void;
-    /**
-    DESCRIPTION
-    @param index: int
-    @param Sizer: Sizer
-    @param stretchFactor: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insert(index: number, Sizer: Sizer, stretchFactor?: number): void;
+    public indexOf(Sizer: Sizer): number;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param size: int
+
+
+    index: int
+    Control: Control
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -321,12 +286,33 @@ declare class Sizer {
     
     ```
     */
-	public insertScaledSpacing(index: number, size: number): void;
+    public insert(index: number, Control: Control): void;
+    /**
+    DESCRIPTION
+
+
+    index: int
+    Control: Control
+    stretchFactor: int
+    alignment: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public insert(index: number, Control: Control, stretchFactor?: number, alignment?: number): void;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param size: int
+
+
+    index: int
+    Sizer: Sizer
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -337,12 +323,14 @@ declare class Sizer {
     
     ```
     */
-	public insertSpacing(index: number, size: number): void;
+    public insert(index: number, Sizer: Sizer): void;
     /**
     DESCRIPTION
-    @param index: int
-    @param size: int
-    @param autoScaling: Boolean = true
+
+
+    index: int
+    Sizer: Sizer
+    stretchFactor: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -353,42 +341,14 @@ declare class Sizer {
     
     ```
     */
-	public insertSpacing(index: number, size: number, autoScaling?: boolean /* true */): void;
-
-    /**
-    DESCRIPTION
-    @param index: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insertStretch(index: number): void;
-    /**
-    DESCRIPTION
-    @param index: int
-    @param stretchFactor: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insertStretch(index: number, stretchFactor?: number): void;
+    public insert(index: number, Sizer: Sizer, stretchFactor?: number): void;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param size: int
+
+
+    index: int
+    size: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -399,11 +359,14 @@ declare class Sizer {
     
     ```
     */
-	public insertUnscaledSpacing(index: number, size: number): void;
+    public insertScaledSpacing(index: number, size: number): void;
 
     /**
     DESCRIPTION
-    @param size: Number
+
+
+    index: int
+    size: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -414,11 +377,31 @@ declare class Sizer {
     
     ```
     */
-	public logicalPixelsToPhysical(size: number): number;
+    public insertSpacing(index: number, size: number): void;
+    /**
+    DESCRIPTION
+
+
+    index: int
+    size: int
+    autoScaling: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public insertSpacing(index: number, size: number, autoScaling?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param size: Number
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -429,11 +412,31 @@ declare class Sizer {
     
     ```
     */
-	public physicalPixelsToLogical(size: number): number;
+    public insertStretch(index: number): void;
+    /**
+    DESCRIPTION
+
+
+    index: int
+    stretchFactor: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public insertStretch(index: number, stretchFactor?: number): void;
 
     /**
     DESCRIPTION
-    @param Control: Control
+
+
+    index: int
+    size: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -444,11 +447,13 @@ declare class Sizer {
     
     ```
     */
-	public remove(Control: Control): void;
+    public insertUnscaledSpacing(index: number, size: number): void;
 
     /**
     DESCRIPTION
-    @param Sizer: Sizer
+
+
+    size: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -459,12 +464,13 @@ declare class Sizer {
     
     ```
     */
-	public remove(Sizer: Sizer): void;
+    public logicalPixelsToPhysical(size: number): number;
 
     /**
     DESCRIPTION
-    @param Control: Control
-    @param alignment: int
+
+
+    size: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -475,12 +481,13 @@ declare class Sizer {
     
     ```
     */
-	public setAlignment(Control: Control, alignment: number): void;
+    public physicalPixelsToLogical(size: number): number;
 
     /**
     DESCRIPTION
-    @param Sizer: Sizer
-    @param alignment: int
+
+
+    Control: Control
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -491,12 +498,13 @@ declare class Sizer {
     
     ```
     */
-	public setAlignment(Sizer: Sizer, alignment: number): void;
+    public remove(Control: Control): void;
 
     /**
     DESCRIPTION
-    @param Control: Control
-    @param stretch: int
+
+
+    Sizer: Sizer
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -507,12 +515,14 @@ declare class Sizer {
     
     ```
     */
-	public setStretchFactor(Control: Control, stretch: number): void;
+    public remove(Sizer: Sizer): void;
 
     /**
     DESCRIPTION
-    @param Sizer: Sizer
-    @param stretch: int
+
+
+    Control: Control
+    alignment: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -523,7 +533,61 @@ declare class Sizer {
     
     ```
     */
-	public setStretchFactor(Sizer: Sizer, stretch: number): void;
+    public setAlignment(Control: Control, alignment: number): void;
+
+    /**
+    DESCRIPTION
+
+
+    Sizer: Sizer
+    alignment: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setAlignment(Sizer: Sizer, alignment: number): void;
+
+    /**
+    DESCRIPTION
+
+
+    Control: Control
+    stretch: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setStretchFactor(Control: Control, stretch: number): void;
+
+    /**
+    DESCRIPTION
+
+
+    Sizer: Sizer
+    stretch: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setStretchFactor(Sizer: Sizer, stretch: number): void;
 
 
 

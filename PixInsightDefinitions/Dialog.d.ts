@@ -27,6 +27,8 @@ declare class Dialog extends Control {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -36,11 +38,13 @@ declare class Dialog extends Control {
     
     ```
     */
-	public cancel(): void;
+    public cancel(): void;
 
     /**
     DESCRIPTION
-    @param retCode: int
+
+
+    retCode: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -51,23 +55,12 @@ declare class Dialog extends Control {
     
     ```
     */
-	public done(retCode: number): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public execute(): number;
+    public done(retCode: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -77,10 +70,12 @@ declare class Dialog extends Control {
     
     ```
     */
-	public newInstance(): void;
+    public execute(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -90,10 +85,12 @@ declare class Dialog extends Control {
     
     ```
     */
-	public ok(): void;
+    public newInstance(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -103,7 +100,22 @@ declare class Dialog extends Control {
     
     ```
     */
-	public open(): void;
+    public ok(): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public open(): void;
 
 
 
@@ -112,7 +124,9 @@ declare class Dialog extends Control {
     //-------------------------
     /**
     DESCRIPTION
-    @param scriptName: String
+
+
+    scriptName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -123,13 +137,15 @@ declare class Dialog extends Control {
     
     ```
     */
-	public static browseScriptDocumentation(scriptName: string): boolean;
+    public static browseScriptDocumentation(scriptName: string): boolean;
     /**
     DESCRIPTION
-    @param scriptName: String
-    @param title: String
-    @param width: int
-    @param height: int
+
+
+    scriptName: String
+    title: String
+    width: int
+    height: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -140,11 +156,13 @@ declare class Dialog extends Control {
     
     ```
     */
-	public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
+    public static browseScriptDocumentation(scriptName: string, title: string, width: number, height: number): boolean;
 
     /**
     DESCRIPTION
-    @param uri: String
+
+
+    uri: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -155,13 +173,15 @@ declare class Dialog extends Control {
     
     ```
     */
-	public static openBrowser(uri: string): void;
+    public static openBrowser(uri: string): void;
     /**
     DESCRIPTION
-    @param uri: String
-    @param title: String
-    @param width: int
-    @param height: int
+
+
+    uri: String
+    title: String
+    width: int
+    height: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -172,7 +192,7 @@ declare class Dialog extends Control {
     
     ```
     */
-	public static openBrowser(uri: string, title: string, width: number, height: number): void;
+    public static openBrowser(uri: string, title: string, width: number, height: number): void;
 
 
 

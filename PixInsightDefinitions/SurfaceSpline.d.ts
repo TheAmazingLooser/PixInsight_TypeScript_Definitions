@@ -33,7 +33,9 @@ declare class SurfaceSpline {
     //-------------------------
     /**
     DESCRIPTION
-    @param S: SurfaceSpline
+
+
+    S: SurfaceSpline
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -44,10 +46,12 @@ declare class SurfaceSpline {
     
     ```
     */
-	public assign(S: SurfaceSpline): void;
+    public assign(S: SurfaceSpline): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -57,12 +61,14 @@ declare class SurfaceSpline {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
+
+    x: Number
+    y: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -73,11 +79,13 @@ declare class SurfaceSpline {
     
     ```
     */
-	public evaluate(x: number, y: number): number;
+    public evaluate(x: number, y: number): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -88,11 +96,13 @@ declare class SurfaceSpline {
     
     ```
     */
-	public evaluate(p: Point): number;
+    public evaluate(p: Point): number;
 
     /**
     DESCRIPTION
-    @param points: Array
+
+
+    points: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -103,13 +113,15 @@ declare class SurfaceSpline {
     
     ```
     */
-	public evaluate(points: Array<any>): Vector;
+    public evaluate(points: Array<any>): Vector;
 
     /**
     DESCRIPTION
-    @param x: Vector
-    @param y: Vector
-    @param z: Vector
+
+
+    x: Vector
+    y: Vector
+    z: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -120,13 +132,15 @@ declare class SurfaceSpline {
     
     ```
     */
-	public initialize(x: Vector, y: Vector, z: Vector): void;
+    public initialize(x: Vector, y: Vector, z: Vector): void;
     /**
     DESCRIPTION
-    @param x: Vector
-    @param y: Vector
-    @param z: Vector
-    @param w: Vector
+
+
+    x: Vector
+    y: Vector
+    z: Vector
+    w: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -137,7 +151,7 @@ declare class SurfaceSpline {
     
     ```
     */
-	public initialize(x: Vector, y: Vector, z: Vector, w?: Vector): void;
+    public initialize(x: Vector, y: Vector, z: Vector, w?: Vector): void;
 
 
 

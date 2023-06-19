@@ -29,7 +29,9 @@ declare class CoreApplication {
     //-------------------------
     /**
     DESCRIPTION
-    @param instance: int
+
+
+    instance: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -40,10 +42,12 @@ declare class CoreApplication {
     
     ```
     */
-	public static activateInstance(instance: number): void;
+    public static activateInstance(instance: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -53,10 +57,12 @@ declare class CoreApplication {
     
     ```
     */
-	public static clearPendingMessages(): void;
+    public static clearPendingMessages(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -66,11 +72,13 @@ declare class CoreApplication {
     
     ```
     */
-	public static firstInstanceAlive(): number;
+    public static firstInstanceAlive(): number;
 
     /**
     DESCRIPTION
-    @param instance: int
+
+
+    instance: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -81,11 +89,13 @@ declare class CoreApplication {
     
     ```
     */
-	public static instancePID(instance: number): string;
+    public static instancePID(instance: number): string;
 
     /**
     DESCRIPTION
-    @param instance: int
+
+
+    instance: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -96,11 +106,13 @@ declare class CoreApplication {
     
     ```
     */
-	public static isInstanceAlive(instance: number): boolean;
+    public static isInstanceAlive(instance: number): boolean;
 
     /**
     DESCRIPTION
-    @param instance: int
+
+
+    instance: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -111,23 +123,11 @@ declare class CoreApplication {
     
     ```
     */
-	public static isInstanceRunning(instance: number): boolean;
+    public static isInstanceRunning(instance: number): boolean;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static launchInstance(): void;
-    /**
-    DESCRIPTION
-    @param instance: int
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -138,10 +138,13 @@ declare class CoreApplication {
     
     ```
     */
-	public static launchInstance(instance?: number): void;
-
+    public static launchInstance(): void;
     /**
     DESCRIPTION
+
+
+    instance: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -151,23 +154,11 @@ declare class CoreApplication {
     
     ```
     */
-	public static otherInstancesRunning(): boolean;
+    public static launchInstance(instance?: number): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static processPendingMessages(): void;
-    /**
-    DESCRIPTION
-    @param msec: int = 0
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -178,12 +169,11 @@ declare class CoreApplication {
     
     ```
     */
-	public static processPendingMessages(msec?: number /* 0 */): void;
+    public static otherInstancesRunning(): boolean;
 
     /**
     DESCRIPTION
-    @param instance: int
-    @param message: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -194,12 +184,12 @@ declare class CoreApplication {
     
     ```
     */
-	public static sendMessage(instance: number, message: string): boolean;
+    public static processPendingMessages(): void;
     /**
     DESCRIPTION
-    @param instance: int
-    @param message: String
-    @param uniqueId: String
+
+
+    msec: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -210,11 +200,14 @@ declare class CoreApplication {
     
     ```
     */
-	public static sendMessage(instance: number, message: string, uniqueId?: string): boolean;
+    public static processPendingMessages(msec?: number /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param instance: int
+
+
+    instance: int
+    message: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -225,7 +218,42 @@ declare class CoreApplication {
     
     ```
     */
-	public static terminateInstance(instance: number): void;
+    public static sendMessage(instance: number, message: string): boolean;
+    /**
+    DESCRIPTION
+
+
+    instance: int
+    message: String
+    uniqueId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static sendMessage(instance: number, message: string, uniqueId?: string): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    instance: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static terminateInstance(instance: number): void;
 
 
 

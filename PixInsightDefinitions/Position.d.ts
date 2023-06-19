@@ -47,7 +47,9 @@ declare class Position {
     //-------------------------
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -58,11 +60,13 @@ declare class Position {
     
     ```
     */
-	public apparent(H: EphemerisHandle): Vector;
+    public apparent(H: EphemerisHandle): Vector;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -73,11 +77,13 @@ declare class Position {
     
     ```
     */
-	public apparent(S: StarPosition): Vector;
+    public apparent(S: StarPosition): Vector;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -88,11 +94,13 @@ declare class Position {
     
     ```
     */
-	public apparentVisualMagnitude(H: EphemerisHandle): number | void;
+    public apparentVisualMagnitude(H: EphemerisHandle): number | void;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -103,11 +111,13 @@ declare class Position {
     
     ```
     */
-	public astrometric(H: EphemerisHandle): Vector;
+    public astrometric(H: EphemerisHandle): Vector;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -118,11 +128,13 @@ declare class Position {
     
     ```
     */
-	public astrometric(S: StarPosition): Vector;
+    public astrometric(S: StarPosition): Vector;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -133,11 +145,13 @@ declare class Position {
     
     ```
     */
-	public canComputeApparentVisualMagnitude(H: EphemerisHandle): boolean;
+    public canComputeApparentVisualMagnitude(H: EphemerisHandle): boolean;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -148,11 +162,13 @@ declare class Position {
     
     ```
     */
-	public geometric(H: EphemerisHandle): Vector;
+    public geometric(H: EphemerisHandle): Vector;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -163,10 +179,12 @@ declare class Position {
     
     ```
     */
-	public geometric(S: StarPosition): Vector;
+    public geometric(S: StarPosition): Vector;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -176,10 +194,12 @@ declare class Position {
     
     ```
     */
-	public initCIOBasedParameters(): void;
+    public initCIOBasedParameters(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -189,11 +209,13 @@ declare class Position {
     
     ```
     */
-	public initEquinoxBasedParameters(): void;
+    public initEquinoxBasedParameters(): void;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -204,11 +226,13 @@ declare class Position {
     
     ```
     */
-	public intermediate(H: EphemerisHandle): Vector;
+    public intermediate(H: EphemerisHandle): Vector;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -219,10 +243,12 @@ declare class Position {
     
     ```
     */
-	public intermediate(S: StarPosition): Vector;
+    public intermediate(S: StarPosition): Vector;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -232,11 +258,13 @@ declare class Position {
     
     ```
     */
-	public nutationAngles(): Array<any>;
+    public nutationAngles(): Array<any>;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -247,11 +275,13 @@ declare class Position {
     
     ```
     */
-	public proper(H: EphemerisHandle): Vector;
+    public proper(H: EphemerisHandle): Vector;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -262,11 +292,13 @@ declare class Position {
     
     ```
     */
-	public proper(S: StarPosition): Vector;
+    public proper(S: StarPosition): Vector;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -277,11 +309,13 @@ declare class Position {
     
     ```
     */
-	public true(H: EphemerisHandle): Vector;
+    public true(H: EphemerisHandle): Vector;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -292,11 +326,13 @@ declare class Position {
     
     ```
     */
-	public true(S: StarPosition): Vector;
+    public true(S: StarPosition): Vector;
 
     /**
     DESCRIPTION
-    @param H: EphemerisHandle
+
+
+    H: EphemerisHandle
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -307,11 +343,13 @@ declare class Position {
     
     ```
     */
-	public trueDistance(H: EphemerisHandle): number;
+    public trueDistance(H: EphemerisHandle): number;
 
     /**
     DESCRIPTION
-    @param S: StarPosition
+
+
+    S: StarPosition
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -322,7 +360,7 @@ declare class Position {
     
     ```
     */
-	public trueDistance(S: StarPosition): number;
+    public trueDistance(S: StarPosition): number;
 
 
 
@@ -331,8 +369,10 @@ declare class Position {
     //-------------------------
     /**
     DESCRIPTION
-    @param r: Vector
-    @param eps: Number
+
+
+    r: Vector
+    eps: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -343,13 +383,15 @@ declare class Position {
     
     ```
     */
-	public static eclipticToEquatorial(r: Vector, eps: number): Vector;
+    public static eclipticToEquatorial(r: Vector, eps: number): Vector;
 
     /**
     DESCRIPTION
-    @param r: Vector
-    @param se: Number
-    @param ce: Number
+
+
+    r: Vector
+    se: Number
+    ce: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -360,12 +402,14 @@ declare class Position {
     
     ```
     */
-	public static eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
+    public static eclipticToEquatorial(r: Vector, se: number, ce: number): Vector;
 
     /**
     DESCRIPTION
-    @param r: Vector
-    @param eps: Number
+
+
+    r: Vector
+    eps: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -376,13 +420,15 @@ declare class Position {
     
     ```
     */
-	public static equatorialToEcliptic(r: Vector, eps: number): Vector;
+    public static equatorialToEcliptic(r: Vector, eps: number): Vector;
 
     /**
     DESCRIPTION
-    @param r: Vector
-    @param se: Number
-    @param ce: Number
+
+
+    r: Vector
+    se: Number
+    ce: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -393,11 +439,13 @@ declare class Position {
     
     ```
     */
-	public static equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
+    public static equatorialToEcliptic(r: Vector, se: number, ce: number): Vector;
 
     /**
     DESCRIPTION
-    @param r: Vector
+
+
+    r: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -408,7 +456,7 @@ declare class Position {
     
     ```
     */
-	public static icrsEquatorialToGalactic(r: Vector): Vector;
+    public static icrsEquatorialToGalactic(r: Vector): Vector;
 
 
 

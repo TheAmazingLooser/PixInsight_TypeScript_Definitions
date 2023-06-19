@@ -30,6 +30,8 @@ declare class Timer {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -39,10 +41,12 @@ declare class Timer {
     
     ```
     */
-	public start(): void;
+    public start(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -52,7 +56,7 @@ declare class Timer {
     
     ```
     */
-	public stop(): void;
+    public stop(): void;
 
 
 

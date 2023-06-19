@@ -28,6 +28,8 @@ declare class FileDialog {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -37,7 +39,7 @@ declare class FileDialog {
     
     ```
     */
-	public execute(): boolean;
+    public execute(): boolean;
 
 
 

@@ -29,6 +29,8 @@ declare class Parameters {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -38,11 +40,13 @@ declare class Parameters {
     
     ```
     */
-	public static clear(): void;
+    public static clear(): void;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -53,11 +57,13 @@ declare class Parameters {
     
     ```
     */
-	public static get(id: string): string;
+    public static get(id: string): string;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -68,11 +74,13 @@ declare class Parameters {
     
     ```
     */
-	public static getBoolean(id: string): boolean;
+    public static getBoolean(id: string): boolean;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -83,11 +91,13 @@ declare class Parameters {
     
     ```
     */
-	public static getInteger(id: string): number;
+    public static getInteger(id: string): number;
     /**
     DESCRIPTION
-    @param id: String
-    @param radix: int = 0
+
+
+    id: String
+    radix: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -98,26 +108,13 @@ declare class Parameters {
     
     ```
     */
-	public static getInteger(id: string, radix?: number /* 0 */): number;
-
-    /**
-    DESCRIPTION
-    @param id: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static getReal(id: string): number;
+    public static getInteger(id: string, radix?: number /* 0 */): number;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -128,11 +125,13 @@ declare class Parameters {
     
     ```
     */
-	public static getString(id: string): string;
+    public static getReal(id: string): number;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -143,26 +142,13 @@ declare class Parameters {
     
     ```
     */
-	public static getUInt(id: string): number;
-    /**
-    DESCRIPTION
-    @param id: String
-    @param radix: int = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static getUInt(id: string, radix?: number /* 0 */): number;
+    public static getString(id: string): string;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -173,11 +159,30 @@ declare class Parameters {
     
     ```
     */
-	public static has(id: string): boolean;
+    public static getUInt(id: string): number;
+    /**
+    DESCRIPTION
+
+
+    id: String
+    radix: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static getUInt(id: string, radix?: number /* 0 */): number;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -188,12 +193,13 @@ declare class Parameters {
     
     ```
     */
-	public static remove(id: string): void;
+    public static has(id: string): boolean;
 
     /**
     DESCRIPTION
-    @param id: String
-    @param value: Object
+
+
+    id: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -204,7 +210,25 @@ declare class Parameters {
     
     ```
     */
-	public static set(id: string, value: Object): void;
+    public static remove(id: string): void;
+
+    /**
+    DESCRIPTION
+
+
+    id: String
+    value: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static set(id: string, value: Object): void;
 
 
 

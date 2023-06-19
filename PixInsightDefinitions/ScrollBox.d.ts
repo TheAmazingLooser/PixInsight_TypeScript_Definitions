@@ -46,6 +46,8 @@ declare class ScrollBox extends Frame {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -55,10 +57,12 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public hideScrollBars(): void;
+    public hideScrollBars(): void;
     /**
     DESCRIPTION
-    @param hide: Boolean = true
+
+
+    hide: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -69,28 +73,14 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public hideScrollBars(hide?: boolean /* true */): void;
-
-    /**
-    DESCRIPTION
-    @param hideHorz: Boolean
-    @param hideVert: Boolean
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
+    public hideScrollBars(hide?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param min: int
-    @param max: int
+
+
+    hideHorz: Boolean
+    hideVert: Boolean
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -101,12 +91,14 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public setHorizontalScrollRange(min: number, max: number): void;
+    public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
+
+
+    min: int
+    max: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -117,11 +109,14 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public setScrollPosition(x: number, y: number): void;
+    public setHorizontalScrollRange(min: number, max: number): void;
 
     /**
     DESCRIPTION
-    @param pos: Point
+
+
+    x: int
+    y: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -132,12 +127,13 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public setScrollPosition(pos: Point): void;
+    public setScrollPosition(x: number, y: number): void;
 
     /**
     DESCRIPTION
-    @param min: int
-    @param max: int
+
+
+    pos: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -148,23 +144,14 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public setVerticalScrollRange(min: number, max: number): void;
+    public setScrollPosition(pos: Point): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public showScrollBars(): void;
-    /**
-    DESCRIPTION
-    @param show: Boolean = true
+
+
+    min: int
+    max: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -175,12 +162,11 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public showScrollBars(show?: boolean /* true */): void;
+    public setVerticalScrollRange(min: number, max: number): void;
 
     /**
     DESCRIPTION
-    @param showHorz: Boolean
-    @param showVert: Boolean
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -191,7 +177,41 @@ declare class ScrollBox extends Frame {
     
     ```
     */
-	public showScrollBars(showHorz: boolean, showVert: boolean): void;
+    public showScrollBars(): void;
+    /**
+    DESCRIPTION
+
+
+    show: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public showScrollBars(show?: boolean /* true */): void;
+
+    /**
+    DESCRIPTION
+
+
+    showHorz: Boolean
+    showVert: Boolean
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public showScrollBars(showHorz: boolean, showVert: boolean): void;
 
 
 

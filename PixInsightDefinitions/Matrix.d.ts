@@ -38,6 +38,8 @@ declare class Matrix {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -47,14 +49,16 @@ declare class Matrix {
     
     ```
     */
-	public BWMV(): number;
+    public BWMV(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Number = MAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
+
 
+    center: Number = median()
+    sigma: Number = MAD()
+    k: int = 9
+    reducedLength: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -64,10 +68,12 @@ declare class Matrix {
     
     ```
     */
-	public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
+    public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -77,11 +83,13 @@ declare class Matrix {
     
     ```
     */
-	public MAD(): number;
+    public MAD(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -91,10 +99,12 @@ declare class Matrix {
     
     ```
     */
-	public MAD(center?: number /* median() */): number;
+    public MAD(center?: number /* median() */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -104,11 +114,13 @@ declare class Matrix {
     
     ```
     */
-	public PBMV(): number;
+    public PBMV(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param beta: Number = 0.2
+
+
+    center: Number = median()
+    beta: Number = 0.2
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -119,10 +131,12 @@ declare class Matrix {
     
     ```
     */
-	public PBMV(center?: number /* median() */, beta?: number /* 0.2 */): number;
+    public PBMV(center?: number /* median() */, beta?: number /* 0.2 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -132,10 +146,12 @@ declare class Matrix {
     
     ```
     */
-	public Qn(): number;
+    public Qn(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -145,10 +161,12 @@ declare class Matrix {
     
     ```
     */
-	public Sn(): number;
+    public Sn(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -158,12 +176,14 @@ declare class Matrix {
     
     ```
     */
-	public abs(): Matrix;
+    public abs(): Matrix;
 
     /**
     DESCRIPTION
-    @param s: Number
 
+
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -173,12 +193,14 @@ declare class Matrix {
     
     ```
     */
-	public add(s: number): void;
+    public add(s: number): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
 
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -188,11 +210,13 @@ declare class Matrix {
     
     ```
     */
-	public add(A: Matrix): Matrix;
+    public add(A: Matrix): Matrix;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
+
+    A: Matrix
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -203,12 +227,14 @@ declare class Matrix {
     
     ```
     */
-	public addElementWise(A: Matrix): void;
+    public addElementWise(A: Matrix): void;
 
     /**
     DESCRIPTION
-    @param value: Number
 
+
+    value: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -218,14 +244,16 @@ declare class Matrix {
     
     ```
     */
-	public assign(value: number): void;
+    public assign(value: number): void;
 
     /**
     DESCRIPTION
-    @param value: Number
-    @param rows: int
-    @param cols: int
+
 
+    value: Number
+    rows: int
+    cols: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -235,19 +263,21 @@ declare class Matrix {
     
     ```
     */
-	public assign(value: number, rows: number, cols: number): void;
+    public assign(value: number, rows: number, cols: number): void;
 
     /**
     DESCRIPTION
-    @param a00: Number
-    @param a01: Number
-    @param a02: Number
-    @param a10: Number
-    @param a11: Number
-    @param a12: Number
-    @param a20: Number
-    @param a21: Number
-    @param a22: Number
+
+
+    a00: Number
+    a01: Number
+    a02: Number
+    a10: Number
+    a11: Number
+    a12: Number
+    a20: Number
+    a21: Number
+    a22: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -258,12 +288,14 @@ declare class Matrix {
     
     ```
     */
-	public assign(a00: number, a01: number, a02: number, a10: number, a11: number, a12: number, a20: number, a21: number, a22: number): void;
+    public assign(a00: number, a01: number, a02: number, a10: number, a11: number, a12: number, a20: number, a21: number, a22: number): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
 
+
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -273,15 +305,17 @@ declare class Matrix {
     
     ```
     */
-	public assign(A: Matrix): void;
+    public assign(A: Matrix): void;
     /**
     DESCRIPTION
-    @param A: Matrix
-    @param startRow: int
-    @param startCol: int
-    @param rows: int
-    @param cols: int
+
 
+    A: Matrix
+    startRow: int
+    startCol: int
+    rows: int
+    cols: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -291,11 +325,13 @@ declare class Matrix {
     
     ```
     */
-	public assign(A: Matrix, startRow: number, startCol: number, rows: number, cols: number): void;
+    public assign(A: Matrix, startRow: number, startCol: number, rows: number, cols: number): void;
 
     /**
     DESCRIPTION
-    @param a: Array
+
+
+    a: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -306,14 +342,16 @@ declare class Matrix {
     
     ```
     */
-	public assign(a: Array<any>): void;
+    public assign(a: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param a: Array
-    @param rows: int
-    @param cols: int
 
+
+    a: Array
+    rows: int
+    cols: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -323,15 +361,17 @@ declare class Matrix {
     
     ```
     */
-	public assign(a: Array<any>, rows: number, cols: number): void;
+    public assign(a: Array<any>, rows: number, cols: number): void;
 
     /**
     DESCRIPTION
-    @param a: Array
-    @param startIndex: int
-    @param rows: int
-    @param cols: int
+
 
+    a: Array
+    startIndex: int
+    rows: int
+    cols: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -341,13 +381,15 @@ declare class Matrix {
     
     ```
     */
-	public assign(a: Array<any>, startIndex: number, rows: number, cols: number): void;
+    public assign(a: Array<any>, startIndex: number, rows: number, cols: number): void;
 
     /**
     DESCRIPTION
-    @param a: TypedArray
-    @param rows: int
-    @param cols: int
+
+
+    a: TypedArray
+    rows: int
+    cols: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -358,15 +400,17 @@ declare class Matrix {
     
     ```
     */
-	public assign(a: any /* TypedArray */, rows: number, cols: number): void;
+    public assign(a: any /* TypedArray */, rows: number, cols: number): void;
 
     /**
     DESCRIPTION
-    @param a: TypedArray
-    @param startIndex: int
-    @param rows: int
-    @param cols: int
 
+
+    a: TypedArray
+    startIndex: int
+    rows: int
+    cols: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -376,13 +420,15 @@ declare class Matrix {
     
     ```
     */
-	public assign(a: any /* TypedArray */, startIndex: number, rows: number, cols: number): void;
+    public assign(a: any /* TypedArray */, startIndex: number, rows: number, cols: number): void;
 
     /**
     DESCRIPTION
-    @param row: int
-    @param col: int
+
 
+    row: int
+    col: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -392,14 +438,16 @@ declare class Matrix {
     
     ```
     */
-	public at(row: number, col: number): number;
+    public at(row: number, col: number): number;
 
     /**
     DESCRIPTION
-    @param row: int
-    @param col: int
-    @param value: Number
+
 
+    row: int
+    col: int
+    value: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -409,10 +457,12 @@ declare class Matrix {
     
     ```
     */
-	public at(row: number, col: number, value: number): void;
+    public at(row: number, col: number, value: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -422,10 +472,12 @@ declare class Matrix {
     
     ```
     */
-	public avgDev(): number;
+    public avgDev(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
+
+
+    center: Number = median()
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -436,10 +488,12 @@ declare class Matrix {
     
     ```
     */
-	public avgDev(center?: number /* median() */): number;
+    public avgDev(center?: number /* median() */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -449,12 +503,14 @@ declare class Matrix {
     
     ```
     */
-	public bendMidvariance(): number;
+    public bendMidvariance(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param beta: Number = 0.2
+
 
+    center: Number = median()
+    beta: Number = 0.2
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -464,11 +520,13 @@ declare class Matrix {
     
     ```
     */
-	public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */): number;
+    public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */): number;
 
     /**
     DESCRIPTION
-    @param value: Number
+
+
+    value: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -479,10 +537,12 @@ declare class Matrix {
     
     ```
     */
-	public binarySearch(value: number): Array<any> | void;
+    public binarySearch(value: number): Array<any> | void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -492,14 +552,16 @@ declare class Matrix {
     
     ```
     */
-	public biweightMidvariance(): number;
+    public biweightMidvariance(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Number = MAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
+
 
+    center: Number = median()
+    sigma: Number = MAD()
+    k: int = 9
+    reducedLength: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -509,11 +571,13 @@ declare class Matrix {
     
     ```
     */
-	public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
+    public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -524,12 +588,14 @@ declare class Matrix {
     
     ```
     */
-	public colVector(col: number): Vector;
+    public colVector(col: number): Vector;
 
     /**
     DESCRIPTION
-    @param s: Number
 
+
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -539,12 +605,14 @@ declare class Matrix {
     
     ```
     */
-	public div(s: number): void;
+    public div(s: number): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
 
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -554,10 +622,12 @@ declare class Matrix {
     
     ```
     */
-	public divElementWise(A: Matrix): void;
+    public divElementWise(A: Matrix): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -567,10 +637,12 @@ declare class Matrix {
     
     ```
     */
-	public flip(): void;
+    public flip(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -580,10 +652,12 @@ declare class Matrix {
     
     ```
     */
-	public flipped(): Matrix;
+    public flipped(): Matrix;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -593,10 +667,12 @@ declare class Matrix {
     
     ```
     */
-	public inverse(): Matrix;
+    public inverse(): Matrix;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -606,10 +682,12 @@ declare class Matrix {
     
     ```
     */
-	public invert(): void;
+    public invert(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -619,11 +697,13 @@ declare class Matrix {
     
     ```
     */
-	public invertElementWise(): void;
+    public invertElementWise(): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
+
+    A: Matrix
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -634,12 +714,14 @@ declare class Matrix {
     
     ```
     */
-	public isEqualTo(A: Matrix): boolean;
+    public isEqualTo(A: Matrix): boolean;
 
     /**
     DESCRIPTION
-    @param A: Matrix
 
+
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -649,12 +731,14 @@ declare class Matrix {
     
     ```
     */
-	public isLessThan(A: Matrix): boolean;
+    public isLessThan(A: Matrix): boolean;
 
     /**
     DESCRIPTION
-    @param value: Number
+
 
+    value: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -664,10 +748,12 @@ declare class Matrix {
     
     ```
     */
-	public linearSearch(value: number): Array<any> | void;
+    public linearSearch(value: number): Array<any> | void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -677,10 +763,12 @@ declare class Matrix {
     
     ```
     */
-	public maxElement(): number;
+    public maxElement(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -690,10 +778,12 @@ declare class Matrix {
     
     ```
     */
-	public mean(): number;
+    public mean(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -703,10 +793,12 @@ declare class Matrix {
     
     ```
     */
-	public median(): number;
+    public median(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -716,10 +808,12 @@ declare class Matrix {
     
     ```
     */
-	public minElement(): number;
+    public minElement(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -729,12 +823,14 @@ declare class Matrix {
     
     ```
     */
-	public modulus(): number;
+    public modulus(): number;
 
     /**
     DESCRIPTION
-    @param s: Number
+
 
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -744,12 +840,14 @@ declare class Matrix {
     
     ```
     */
-	public mul(s: number): void;
+    public mul(s: number): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
 
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -759,12 +857,14 @@ declare class Matrix {
     
     ```
     */
-	public mul(A: Matrix): Matrix;
+    public mul(A: Matrix): Matrix;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
 
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -774,11 +874,13 @@ declare class Matrix {
     
     ```
     */
-	public mulElementWise(A: Matrix): void;
+    public mulElementWise(A: Matrix): void;
 
     /**
     DESCRIPTION
-    @param s: Number
+
+
+    s: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -789,12 +891,14 @@ declare class Matrix {
     
     ```
     */
-	public pow(s: number): void;
+    public pow(s: number): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
 
+
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -804,10 +908,12 @@ declare class Matrix {
     
     ```
     */
-	public powElementWise(A: Matrix): void;
+    public powElementWise(A: Matrix): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -817,11 +923,13 @@ declare class Matrix {
     
     ```
     */
-	public rescale(): void;
+    public rescale(): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
+
+
+    v0: Number = 0
+    v1: Number = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -832,12 +940,14 @@ declare class Matrix {
     
     ```
     */
-	public rescale(v0?: number /* 0 */, v1?: number /* 1 */): void;
+    public rescale(v0?: number /* 0 */, v1?: number /* 1 */): void;
 
     /**
     DESCRIPTION
-    @param row: int
 
+
+    row: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -847,12 +957,14 @@ declare class Matrix {
     
     ```
     */
-	public rowVector(row: number): Vector;
+    public rowVector(row: number): Vector;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
 
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -862,10 +974,12 @@ declare class Matrix {
     
     ```
     */
-	public sameElements(A: Matrix): boolean;
+    public sameElements(A: Matrix): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -875,10 +989,12 @@ declare class Matrix {
     
     ```
     */
-	public setAbs(): void;
+    public setAbs(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -888,10 +1004,12 @@ declare class Matrix {
     
     ```
     */
-	public setRandom(): void;
+    public setRandom(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -901,10 +1019,12 @@ declare class Matrix {
     
     ```
     */
-	public setSqr(): void;
+    public setSqr(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -914,10 +1034,12 @@ declare class Matrix {
     
     ```
     */
-	public setSqrt(): void;
+    public setSqrt(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -927,10 +1049,12 @@ declare class Matrix {
     
     ```
     */
-	public sort(): void;
+    public sort(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -940,10 +1064,12 @@ declare class Matrix {
     
     ```
     */
-	public sqr(): Matrix;
+    public sqr(): Matrix;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -953,10 +1079,12 @@ declare class Matrix {
     
     ```
     */
-	public sqrt(): Matrix;
+    public sqrt(): Matrix;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -966,11 +1094,13 @@ declare class Matrix {
     
     ```
     */
-	public stableAvgDev(): number;
+    public stableAvgDev(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
+
 
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -980,10 +1110,12 @@ declare class Matrix {
     
     ```
     */
-	public stableAvgDev(center?: number /* median() */): number;
+    public stableAvgDev(center?: number /* median() */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -993,10 +1125,12 @@ declare class Matrix {
     
     ```
     */
-	public stableMean(): number;
+    public stableMean(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1006,10 +1140,12 @@ declare class Matrix {
     
     ```
     */
-	public stableModulus(): number;
+    public stableModulus(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1019,10 +1155,12 @@ declare class Matrix {
     
     ```
     */
-	public stableSum(): number;
+    public stableSum(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1032,10 +1170,12 @@ declare class Matrix {
     
     ```
     */
-	public stableSumOfSquares(): number;
+    public stableSumOfSquares(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1045,12 +1185,14 @@ declare class Matrix {
     
     ```
     */
-	public stdDev(): number;
+    public stdDev(): number;
 
     /**
     DESCRIPTION
-    @param s: Number
+
 
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1060,11 +1202,13 @@ declare class Matrix {
     
     ```
     */
-	public sub(s: number): void;
+    public sub(s: number): void;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
+
+    A: Matrix
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1075,12 +1219,14 @@ declare class Matrix {
     
     ```
     */
-	public sub(A: Matrix): Matrix;
+    public sub(A: Matrix): Matrix;
 
     /**
     DESCRIPTION
-    @param A: Matrix
 
+
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1090,10 +1236,12 @@ declare class Matrix {
     
     ```
     */
-	public subElementWise(A: Matrix): void;
+    public subElementWise(A: Matrix): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1103,10 +1251,12 @@ declare class Matrix {
     
     ```
     */
-	public sum(): number;
+    public sum(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1116,12 +1266,14 @@ declare class Matrix {
     
     ```
     */
-	public sumOfSquares(): number;
+    public sumOfSquares(): number;
 
     /**
     DESCRIPTION
-    @param A: Matrix
+
 
+    A: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1131,10 +1283,12 @@ declare class Matrix {
     
     ```
     */
-	public swap(A: Matrix): void;
+    public swap(A: Matrix): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1144,14 +1298,16 @@ declare class Matrix {
     
     ```
     */
-	public toArray(): Array<any>;
+    public toArray(): Array<any>;
     /**
     DESCRIPTION
-    @param startRow: int = 0
-    @param startCol: int = 0
-    @param rows: int = rows
-    @param cols: int = cols
 
+
+    startRow: int = 0
+    startCol: int = 0
+    rows: int = rows
+    cols: int = cols
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1161,10 +1317,12 @@ declare class Matrix {
     
     ```
     */
-	public toArray(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Array<any>;
+    public toArray(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1174,13 +1332,15 @@ declare class Matrix {
     
     ```
     */
-	public toFloat32Array(): Float32Array;
+    public toFloat32Array(): Float32Array;
     /**
     DESCRIPTION
-    @param startRow: int = 0
-    @param startCol: int = 0
-    @param rows: int = rows
-    @param cols: int = cols
+
+
+    startRow: int = 0
+    startCol: int = 0
+    rows: int = rows
+    cols: int = cols
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1191,10 +1351,12 @@ declare class Matrix {
     
     ```
     */
-	public toFloat32Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float32Array;
+    public toFloat32Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float32Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1204,14 +1366,16 @@ declare class Matrix {
     
     ```
     */
-	public toFloat64Array(): Float64Array;
+    public toFloat64Array(): Float64Array;
     /**
     DESCRIPTION
-    @param startRow: int = 0
-    @param startCol: int = 0
-    @param rows: int = rows
-    @param cols: int = cols
+
 
+    startRow: int = 0
+    startCol: int = 0
+    rows: int = rows
+    cols: int = cols
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1221,10 +1385,12 @@ declare class Matrix {
     
     ```
     */
-	public toFloat64Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float64Array;
+    public toFloat64Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float64Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1234,10 +1400,12 @@ declare class Matrix {
     
     ```
     */
-	public toImage(): Image;
+    public toImage(): Image;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1247,10 +1415,12 @@ declare class Matrix {
     
     ```
     */
-	public transpose(): Matrix;
+    public transpose(): Matrix;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1260,12 +1430,14 @@ declare class Matrix {
     
     ```
     */
-	public trimmedMean(): number;
+    public trimmedMean(): number;
     /**
     DESCRIPTION
-    @param l: int = 1
-    @param h: int = 1
+
 
+    l: int = 1
+    h: int = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1275,10 +1447,12 @@ declare class Matrix {
     
     ```
     */
-	public trimmedMean(l?: number /* 1 */, h?: number /* 1 */): number;
+    public trimmedMean(l?: number /* 1 */, h?: number /* 1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1288,11 +1462,13 @@ declare class Matrix {
     
     ```
     */
-	public trimmedMeanOfSquares(): number;
+    public trimmedMeanOfSquares(): number;
     /**
     DESCRIPTION
-    @param l: int = 1
-    @param h: int = 1
+
+
+    l: int = 1
+    h: int = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1303,10 +1479,12 @@ declare class Matrix {
     
     ```
     */
-	public trimmedMeanOfSquares(l?: number /* 1 */, h?: number /* 1 */): number;
+    public trimmedMeanOfSquares(l?: number /* 1 */, h?: number /* 1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1316,12 +1494,14 @@ declare class Matrix {
     
     ```
     */
-	public truncate(): void;
+    public truncate(): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
+
 
+    v0: Number = 0
+    v1: Number = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1331,10 +1511,12 @@ declare class Matrix {
     
     ```
     */
-	public truncate(v0?: number /* 0 */, v1?: number /* 1 */): void;
+    public truncate(v0?: number /* 0 */, v1?: number /* 1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1344,11 +1526,13 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedAvgDev(): Array<any>;
+    public twoSidedAvgDev(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1358,10 +1542,12 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedAvgDev(center?: number /* median() */): Array<any>;
+    public twoSidedAvgDev(center?: number /* median() */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1371,13 +1557,15 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedBWMV(): Array<any>;
+    public twoSidedBWMV(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Array|Number = twoSidedMAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
+
+
+    center: Number = median()
+    sigma: Array|Number = twoSidedMAD()
+    k: int = 9
+    reducedLength: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1388,10 +1576,12 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
+    public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1401,14 +1591,16 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedBiweightMidvariance(): Array<any>;
+    public twoSidedBiweightMidvariance(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Array|Number = twoSidedMAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
+
 
+    center: Number = median()
+    sigma: Array|Number = twoSidedMAD()
+    k: int = 9
+    reducedLength: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1418,10 +1610,12 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
+    public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1431,11 +1625,13 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedMAD(): Array<any>;
+    public twoSidedMAD(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1445,10 +1641,12 @@ declare class Matrix {
     
     ```
     */
-	public twoSidedMAD(center?: number /* median() */): Array<any>;
+    public twoSidedMAD(center?: number /* median() */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1458,7 +1656,7 @@ declare class Matrix {
     
     ```
     */
-	public variance(): number;
+    public variance(): number;
 
 
 
@@ -1467,7 +1665,9 @@ declare class Matrix {
     //-------------------------
     /**
     DESCRIPTION
-    @param img: Image
+
+
+    img: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1478,12 +1678,14 @@ declare class Matrix {
     
     ```
     */
-	public static fromImage(img: Image): Matrix;
+    public static fromImage(img: Image): Matrix;
     /**
     DESCRIPTION
-    @param img: Image
-    @param rect: Rect = 0
-    @param channel: int = -1
+
+
+    img: Image
+    rect: Rect = 0
+    channel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1494,43 +1696,13 @@ declare class Matrix {
     
     ```
     */
-	public static fromImage(img: Image, rect?: Rect /* 0 */, channel?: number /* -1 */): Matrix;
-
-    /**
-    DESCRIPTION
-    @param sigma: Number
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static gaussianFilter(sigma: number): Matrix;
-    /**
-    DESCRIPTION
-    @param sigma: Number
-    @param epsilon: Number = 0.01
-    @param rho: Number = 1
-    @param theta: Number = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static gaussianFilter(sigma: number, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+    public static fromImage(img: Image, rect?: Rect /* 0 */, channel?: number /* -1 */): Matrix;
 
     /**
     DESCRIPTION
-    @param size: int
+
+
+    sigma: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1541,13 +1713,15 @@ declare class Matrix {
     
     ```
     */
-	public static gaussianFilterBySize(size: number): Matrix;
+    public static gaussianFilter(sigma: number): Matrix;
     /**
     DESCRIPTION
-    @param size: int
-    @param epsilon: Number = 0.01
-    @param rho: Number = 1
-    @param theta: Number = 0
+
+
+    sigma: Number
+    epsilon: Number = 0.01
+    rho: Number = 1
+    theta: Number = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1558,42 +1732,13 @@ declare class Matrix {
     
     ```
     */
-	public static gaussianFilterBySize(size: number, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
-
-    /**
-    DESCRIPTION
-    @param size: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static linearFilter(size: number): Matrix;
-    /**
-    DESCRIPTION
-    @param size: int
-    @param v0: Number = 1.0
-    @param v1: Number = 0.01
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static linearFilter(size: number, v0?: number /* 1.0 */, v1?: number /* 0.01 */): Matrix;
+    public static gaussianFilter(sigma: number, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
 
     /**
     DESCRIPTION
-    @param sigma: Number
+
+
+    size: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1604,14 +1749,15 @@ declare class Matrix {
     
     ```
     */
-	public static moffatFilter(sigma: number): Matrix;
+    public static gaussianFilterBySize(size: number): Matrix;
     /**
     DESCRIPTION
-    @param sigma: Number
-    @param beta: Number = 4
-    @param epsilon: Number = 0.01
-    @param rho: Number = 1
-    @param theta: Number = 0
+
+
+    size: int
+    epsilon: Number = 0.01
+    rho: Number = 1
+    theta: Number = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1622,43 +1768,14 @@ declare class Matrix {
     
     ```
     */
-	public static moffatFilter(sigma: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
-
-    /**
-    DESCRIPTION
-    @param size: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static moffatFilterBySize(size: number): Matrix;
-    /**
-    DESCRIPTION
-    @param size: int
-    @param beta: Number = 4
-    @param epsilon: Number = 0.01
-    @param rho: Number = 1
-    @param theta: Number = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static moffatFilterBySize(size: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+    public static gaussianFilterBySize(size: number, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
 
     /**
     DESCRIPTION
+
+
+    size: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1668,10 +1785,14 @@ declare class Matrix {
     
     ```
     */
-	public static unitMatrix(): Matrix;
+    public static linearFilter(size: number): Matrix;
     /**
     DESCRIPTION
-    @param n: int = 3
+
+
+    size: int
+    v0: Number = 1.0
+    v1: Number = 0.01
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1682,44 +1803,13 @@ declare class Matrix {
     
     ```
     */
-	public static unitMatrix(n?: number /* 3 */): Matrix;
-
-    /**
-    DESCRIPTION
-    @param sigma: Number
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static variableShapeFilter(sigma: number): Matrix;
-    /**
-    DESCRIPTION
-    @param sigma: Number
-    @param shape: Number = 2
-    @param epsilon: Number = 0.01
-    @param rho: Number = 1
-    @param theta: Number = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static variableShapeFilter(sigma: number, shape?: number /* 2 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+    public static linearFilter(size: number, v0?: number /* 1.0 */, v1?: number /* 0.01 */): Matrix;
 
     /**
     DESCRIPTION
-    @param size: int
+
+
+    sigma: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1730,14 +1820,16 @@ declare class Matrix {
     
     ```
     */
-	public static variableShapeFilterBySize(size: number): Matrix;
+    public static moffatFilter(sigma: number): Matrix;
     /**
     DESCRIPTION
-    @param size: int
-    @param shape: Number = 2
-    @param epsilon: Number = 0.01
-    @param rho: Number = 1
-    @param theta: Number = 0
+
+
+    sigma: Number
+    beta: Number = 4
+    epsilon: Number = 0.01
+    rho: Number = 1
+    theta: Number = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1748,7 +1840,149 @@ declare class Matrix {
     
     ```
     */
-	public static variableShapeFilterBySize(size: number, shape?: number /* 2 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+    public static moffatFilter(sigma: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+
+    /**
+    DESCRIPTION
+
+
+    size: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static moffatFilterBySize(size: number): Matrix;
+    /**
+    DESCRIPTION
+
+
+    size: int
+    beta: Number = 4
+    epsilon: Number = 0.01
+    rho: Number = 1
+    theta: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static moffatFilterBySize(size: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static unitMatrix(): Matrix;
+    /**
+    DESCRIPTION
+
+
+    n: int = 3
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static unitMatrix(n?: number /* 3 */): Matrix;
+
+    /**
+    DESCRIPTION
+
+
+    sigma: Number
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static variableShapeFilter(sigma: number): Matrix;
+    /**
+    DESCRIPTION
+
+
+    sigma: Number
+    shape: Number = 2
+    epsilon: Number = 0.01
+    rho: Number = 1
+    theta: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static variableShapeFilter(sigma: number, shape?: number /* 2 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+
+    /**
+    DESCRIPTION
+
+
+    size: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static variableShapeFilterBySize(size: number): Matrix;
+    /**
+    DESCRIPTION
+
+
+    size: int
+    shape: Number = 2
+    epsilon: Number = 0.01
+    rho: Number = 1
+    theta: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static variableShapeFilterBySize(size: number, shape?: number /* 2 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
 
 
 

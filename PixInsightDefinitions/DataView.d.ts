@@ -25,7 +25,9 @@ declare class DataView extends ArrayBufferView {
     //-------------------------
     /**
     DESCRIPTION
-    @param byteOffset: uint32
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -36,11 +38,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getFloat32(byteOffset: number): number;
+    public getFloat32(byteOffset: number): number;
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param littleEndian: Boolean = false
+
+
+    byteOffset: uint32
+    littleEndian: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -51,41 +55,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getFloat32(byteOffset: number, littleEndian?: boolean /* false */): number;
-
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public getFloat64(byteOffset: number): number;
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param littleEndian: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public getFloat64(byteOffset: number, littleEndian?: boolean /* false */): number;
+    public getFloat32(byteOffset: number, littleEndian?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -96,11 +72,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getInt16(byteOffset: number): number;
+    public getFloat64(byteOffset: number): number;
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param littleEndian: Boolean = false
+
+
+    byteOffset: uint32
+    littleEndian: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -111,41 +89,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getInt16(byteOffset: number, littleEndian?: boolean /* false */): number;
-
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public getInt32(byteOffset: number): number;
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param littleEndian: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public getInt32(byteOffset: number, littleEndian?: boolean /* false */): number;
+    public getFloat64(byteOffset: number, littleEndian?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -156,11 +106,30 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getInt8(byteOffset: number): number;
+    public getInt16(byteOffset: number): number;
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public getInt16(byteOffset: number, littleEndian?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -171,11 +140,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getUint16(byteOffset: number): number;
+    public getInt32(byteOffset: number): number;
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param littleEndian: Boolean = false
+
+
+    byteOffset: uint32
+    littleEndian: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -186,41 +157,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getUint16(byteOffset: number, littleEndian?: boolean /* false */): number;
-
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public getUint32(byteOffset: number): number;
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param littleEndian: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public getUint32(byteOffset: number, littleEndian?: boolean /* false */): number;
+    public getInt32(byteOffset: number, littleEndian?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -231,12 +174,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public getUint8(byteOffset: number): number;
+    public getInt8(byteOffset: number): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: float
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -247,12 +191,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setFloat32(byteOffset: number, value: number): void;
+    public getUint16(byteOffset: number): number;
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: float
-    @param littleEndian: Boolean = false
+
+
+    byteOffset: uint32
+    littleEndian: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -263,44 +208,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setFloat32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
-
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param value: double
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setFloat64(byteOffset: number, value: number): void;
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param value: double
-    @param littleEndian: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setFloat64(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    public getUint16(byteOffset: number, littleEndian?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: int16
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -311,12 +225,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setInt16(byteOffset: number, value: number): void;
+    public getUint32(byteOffset: number): number;
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: int16
-    @param littleEndian: Boolean = false
+
+
+    byteOffset: uint32
+    littleEndian: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -327,44 +242,13 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setInt16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
-
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param value: int32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setInt32(byteOffset: number, value: number): void;
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param value: int32
-    @param littleEndian: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setInt32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    public getUint32(byteOffset: number, littleEndian?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: int8
+
+
+    byteOffset: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -375,12 +259,14 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setInt8(byteOffset: number, value: number): void;
+    public getUint8(byteOffset: number): number;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: uint16
+
+
+    byteOffset: uint32
+    value: float
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -391,12 +277,14 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setUint16(byteOffset: number, value: number): void;
+    public setFloat32(byteOffset: number, value: number): void;
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: uint16
-    @param littleEndian: Boolean = false
+
+
+    byteOffset: uint32
+    value: float
+    littleEndian: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -407,44 +295,14 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setUint16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
-
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param value: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUint32(byteOffset: number, value: number): void;
-    /**
-    DESCRIPTION
-    @param byteOffset: uint32
-    @param value: uint32
-    @param littleEndian: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUint32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+    public setFloat32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param byteOffset: uint32
-    @param value: uint8
+
+
+    byteOffset: uint32
+    value: double
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -455,7 +313,205 @@ declare class DataView extends ArrayBufferView {
     
     ```
     */
-	public setUint8(byteOffset: number, value: number): void;
+    public setFloat64(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: double
+    littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setFloat64(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: int16
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setInt16(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: int16
+    littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setInt16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: int32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setInt32(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: int32
+    littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setInt32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: int8
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setInt8(byteOffset: number, value: number): void;
+
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: uint16
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUint16(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: uint16
+    littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUint16(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: uint32
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUint32(byteOffset: number, value: number): void;
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: uint32
+    littleEndian: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUint32(byteOffset: number, value: number, littleEndian?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+
+
+    byteOffset: uint32
+    value: uint8
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUint8(byteOffset: number, value: number): void;
 
 
 

@@ -34,7 +34,9 @@ declare class Pen {
     //-------------------------
     /**
     DESCRIPTION
-    @param p: Pen
+
+
+    p: Pen
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -45,7 +47,7 @@ declare class Pen {
     
     ```
     */
-	public assign(p: Pen): void;
+    public assign(p: Pen): void;
 
 
 

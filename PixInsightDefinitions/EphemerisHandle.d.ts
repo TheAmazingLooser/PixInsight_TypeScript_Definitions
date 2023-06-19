@@ -35,7 +35,9 @@ declare class EphemerisHandle {
     //-------------------------
     /**
     DESCRIPTION
-    @param Date: Date
+
+
+    Date: Date
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -46,11 +48,13 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVector(Date: Date): Vector;
+    public stateVector(Date: Date): Vector;
 
     /**
     DESCRIPTION
-    @param isoTime: String
+
+
+    isoTime: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -61,11 +65,13 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVector(isoTime: string): Vector;
+    public stateVector(isoTime: string): Vector;
 
     /**
     DESCRIPTION
-    @param jd1: Number
+
+
+    jd1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -76,11 +82,13 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVector(jd1: number): Vector;
+    public stateVector(jd1: number): Vector;
     /**
     DESCRIPTION
-    @param jd1: Number
-    @param jd2: Number = 0
+
+
+    jd1: Number
+    jd2: Number = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -91,26 +99,13 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVector(jd1: number, jd2?: number /* 0 */): Vector;
-
-    /**
-    DESCRIPTION
-    @param Date: Date
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public stateVectors(Date: Date): Array<any>;
+    public stateVector(jd1: number, jd2?: number /* 0 */): Vector;
 
     /**
     DESCRIPTION
-    @param isoTime: String
+
+
+    Date: Date
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -121,11 +116,13 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVectors(isoTime: string): Array<any>;
+    public stateVectors(Date: Date): Array<any>;
 
     /**
     DESCRIPTION
-    @param jd1: Number
+
+
+    isoTime: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -136,11 +133,13 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVectors(jd1: number): Array<any>;
+    public stateVectors(isoTime: string): Array<any>;
+
     /**
     DESCRIPTION
-    @param jd1: Number
-    @param jd2: Number = 0
+
+
+    jd1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -151,7 +150,24 @@ declare class EphemerisHandle {
     
     ```
     */
-	public stateVectors(jd1: number, jd2?: number /* 0 */): Array<any>;
+    public stateVectors(jd1: number): Array<any>;
+    /**
+    DESCRIPTION
+
+
+    jd1: Number
+    jd2: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public stateVectors(jd1: number, jd2?: number /* 0 */): Array<any>;
 
 
 

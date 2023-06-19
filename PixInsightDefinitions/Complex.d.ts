@@ -31,6 +31,8 @@ declare class Complex {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -40,11 +42,13 @@ declare class Complex {
     
     ```
     */
-	public abs(): number;
+    public abs(): number;
 
     /**
     DESCRIPTION
-    @param c: Complex
+
+
+    c: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -55,11 +59,13 @@ declare class Complex {
     
     ```
     */
-	public add(c: Complex): void;
+    public add(c: Complex): void;
 
     /**
     DESCRIPTION
-    @param r: Number
+
+
+    r: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -70,10 +76,12 @@ declare class Complex {
     
     ```
     */
-	public add(r: number): void;
+    public add(r: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -83,11 +91,13 @@ declare class Complex {
     
     ```
     */
-	public arg(): number;
+    public arg(): number;
 
     /**
     DESCRIPTION
-    @param c: Complex
+
+
+    c: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -98,11 +108,13 @@ declare class Complex {
     
     ```
     */
-	public assign(c: Complex): void;
+    public assign(c: Complex): void;
 
     /**
     DESCRIPTION
-    @param r: Number
+
+
+    r: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -113,10 +125,12 @@ declare class Complex {
     
     ```
     */
-	public assign(r: number): void;
+    public assign(r: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -126,10 +140,12 @@ declare class Complex {
     
     ```
     */
-	public conj(): Complex;
+    public conj(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -139,10 +155,12 @@ declare class Complex {
     
     ```
     */
-	public cos(): Complex;
+    public cos(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -152,11 +170,13 @@ declare class Complex {
     
     ```
     */
-	public cosh(): Complex;
+    public cosh(): Complex;
 
     /**
     DESCRIPTION
-    @param c: Complex
+
+
+    c: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -167,11 +187,13 @@ declare class Complex {
     
     ```
     */
-	public div(c: Complex): void;
+    public div(c: Complex): void;
 
     /**
     DESCRIPTION
-    @param r: Number
+
+
+    r: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -182,10 +204,12 @@ declare class Complex {
     
     ```
     */
-	public div(r: number): void;
+    public div(r: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -195,10 +219,12 @@ declare class Complex {
     
     ```
     */
-	public exp(): Complex;
+    public exp(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -208,10 +234,12 @@ declare class Complex {
     
     ```
     */
-	public ln(): Complex;
+    public ln(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -221,10 +249,12 @@ declare class Complex {
     
     ```
     */
-	public log(): Complex;
+    public log(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -234,11 +264,13 @@ declare class Complex {
     
     ```
     */
-	public mag(): number;
+    public mag(): number;
 
     /**
     DESCRIPTION
-    @param c: Complex
+
+
+    c: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -249,11 +281,13 @@ declare class Complex {
     
     ```
     */
-	public mul(c: Complex): void;
+    public mul(c: Complex): void;
 
     /**
     DESCRIPTION
-    @param r: Number
+
+
+    r: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -264,10 +298,12 @@ declare class Complex {
     
     ```
     */
-	public mul(r: number): void;
+    public mul(r: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -277,11 +313,13 @@ declare class Complex {
     
     ```
     */
-	public norm(): number;
+    public norm(): number;
 
     /**
     DESCRIPTION
-    @param c: Complex
+
+
+    c: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -292,11 +330,13 @@ declare class Complex {
     
     ```
     */
-	public pow(c: Complex): void;
+    public pow(c: Complex): void;
 
     /**
     DESCRIPTION
-    @param r: Number
+
+
+    r: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -307,10 +347,12 @@ declare class Complex {
     
     ```
     */
-	public pow(r: number): void;
+    public pow(r: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -320,10 +362,12 @@ declare class Complex {
     
     ```
     */
-	public setConj(): void;
+    public setConj(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -333,10 +377,12 @@ declare class Complex {
     
     ```
     */
-	public setCos(): void;
+    public setCos(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -346,10 +392,12 @@ declare class Complex {
     
     ```
     */
-	public setCosh(): void;
+    public setCosh(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -359,10 +407,12 @@ declare class Complex {
     
     ```
     */
-	public setExp(): void;
+    public setExp(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -372,10 +422,12 @@ declare class Complex {
     
     ```
     */
-	public setLn(): void;
+    public setLn(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -385,10 +437,12 @@ declare class Complex {
     
     ```
     */
-	public setLog(): void;
+    public setLog(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -398,10 +452,12 @@ declare class Complex {
     
     ```
     */
-	public setSin(): void;
+    public setSin(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -411,10 +467,12 @@ declare class Complex {
     
     ```
     */
-	public setSinh(): void;
+    public setSinh(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -424,10 +482,12 @@ declare class Complex {
     
     ```
     */
-	public setSqrt(): void;
+    public setSqrt(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -437,10 +497,12 @@ declare class Complex {
     
     ```
     */
-	public setTan(): void;
+    public setTan(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -450,10 +512,12 @@ declare class Complex {
     
     ```
     */
-	public setTanh(): void;
+    public setTanh(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -463,10 +527,12 @@ declare class Complex {
     
     ```
     */
-	public sin(): Complex;
+    public sin(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -476,10 +542,12 @@ declare class Complex {
     
     ```
     */
-	public sinh(): Complex;
+    public sinh(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -489,11 +557,13 @@ declare class Complex {
     
     ```
     */
-	public sqrt(): Complex;
+    public sqrt(): Complex;
 
     /**
     DESCRIPTION
-    @param c: Complex
+
+
+    c: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -504,11 +574,13 @@ declare class Complex {
     
     ```
     */
-	public sub(c: Complex): void;
+    public sub(c: Complex): void;
 
     /**
     DESCRIPTION
-    @param r: Number
+
+
+    r: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -519,23 +591,12 @@ declare class Complex {
     
     ```
     */
-	public sub(r: number): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tan(): Complex;
+    public sub(r: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -545,10 +606,12 @@ declare class Complex {
     
     ```
     */
-	public tanh(): Complex;
+    public tan(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -558,10 +621,12 @@ declare class Complex {
     
     ```
     */
-	public toArray(): Array<any>;
+    public tanh(): Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -571,7 +636,22 @@ declare class Complex {
     
     ```
     */
-	public toString(): string;
+    public toArray(): Array<any>;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
 
 
 
@@ -580,8 +660,10 @@ declare class Complex {
     //-------------------------
     /**
     DESCRIPTION
-    @param r: Number
-    @param thetaRadians: Number
+
+
+    r: Number
+    thetaRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -592,13 +674,15 @@ declare class Complex {
     
     ```
     */
-	public static polar(r: number, thetaRadians: number): Complex;
+    public static polar(r: number, thetaRadians: number): Complex;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param sinTheta: Number
-    @param cosTheta: Number
+
+
+    r: Number
+    sinTheta: Number
+    cosTheta: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -609,7 +693,7 @@ declare class Complex {
     
     ```
     */
-	public static polar(r: number, sinTheta: number, cosTheta: number): Complex;
+    public static polar(r: number, sinTheta: number, cosTheta: number): Complex;
 
 
 

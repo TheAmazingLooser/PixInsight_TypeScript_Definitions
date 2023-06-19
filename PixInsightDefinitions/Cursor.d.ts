@@ -32,7 +32,9 @@ declare class Cursor {
     //-------------------------
     /**
     DESCRIPTION
-    @param csr: Cursor
+
+
+    csr: Cursor
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -43,7 +45,7 @@ declare class Cursor {
     
     ```
     */
-	public assign(csr: Cursor): void;
+    public assign(csr: Cursor): void;
 
 
 

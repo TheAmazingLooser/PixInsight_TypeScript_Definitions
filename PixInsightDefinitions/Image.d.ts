@@ -74,6 +74,8 @@ declare class Image {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -83,16 +85,18 @@ declare class Image {
     
     ```
     */
-	public BWMV(): number;
+    public BWMV(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Number = MAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    sigma: Number = MAD()
+    k: int = 9
+    reducedLength: Boolean = false
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -103,10 +107,12 @@ declare class Image {
     
     ```
     */
-	public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -116,10 +122,12 @@ declare class Image {
     
     ```
     */
-	public FFT(): void;
+    public FFT(): void;
     /**
     DESCRIPTION
-    @param centered: Boolean = false
+
+
+    centered: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -130,10 +138,12 @@ declare class Image {
     
     ```
     */
-	public FFT(centered?: boolean /* false */): void;
+    public FFT(centered?: boolean /* false */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -143,13 +153,15 @@ declare class Image {
     
     ```
     */
-	public MAD(): number;
+    public MAD(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -160,10 +172,12 @@ declare class Image {
     
     ```
     */
-	public MAD(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public MAD(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -173,14 +187,16 @@ declare class Image {
     
     ```
     */
-	public PBMV(): number;
+    public PBMV(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param beta: Number = 0.2
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    beta: Number = 0.2
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -191,10 +207,12 @@ declare class Image {
     
     ```
     */
-	public PBMV(center?: number /* median() */, beta?: number /* 0.2 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public PBMV(center?: number /* median() */, beta?: number /* 0.2 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -204,12 +222,14 @@ declare class Image {
     
     ```
     */
-	public Qn(): number;
+    public Qn(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -220,10 +240,12 @@ declare class Image {
     
     ```
     */
-	public Qn(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public Qn(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -233,12 +255,14 @@ declare class Image {
     
     ```
     */
-	public Sn(): number;
+    public Sn(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -249,13 +273,15 @@ declare class Image {
     
     ```
     */
-	public Sn(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public Sn(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param kernel: Array
-    @param numberOfLayers: int
 
+
+    kernel: Array
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -265,13 +291,15 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(kernel: Array<any>, numberOfLayers: number): Array<any>;
+    public aTrousWaveletTransform(kernel: Array<any>, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param kernel: Array
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
+
+    kernel: Array
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -282,13 +310,15 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(kernel: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public aTrousWaveletTransform(kernel: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param kernel: Matrix
-    @param numberOfLayers: int
 
+
+    kernel: Matrix
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -298,13 +328,15 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(kernel: Matrix, numberOfLayers: number): Array<any>;
+    public aTrousWaveletTransform(kernel: Matrix, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param kernel: Matrix
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
+
+    kernel: Matrix
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -315,14 +347,16 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(kernel: Matrix, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public aTrousWaveletTransform(kernel: Matrix, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param rowVector: Array
-    @param colVector: Array
-    @param numberOfLayers: int
 
+
+    rowVector: Array
+    colVector: Array
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -332,14 +366,16 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number): Array<any>;
+    public aTrousWaveletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param rowVector: Array
-    @param colVector: Array
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
+
+    rowVector: Array
+    colVector: Array
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -350,14 +386,16 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public aTrousWaveletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param rowVector: Vector
-    @param colVector: Vector
-    @param numberOfLayers: int
 
+
+    rowVector: Vector
+    colVector: Vector
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -367,14 +405,16 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number): Array<any>;
+    public aTrousWaveletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param rowVector: Vector
-    @param colVector: Vector
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
+
+    rowVector: Vector
+    colVector: Vector
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -385,12 +425,14 @@ declare class Image {
     
     ```
     */
-	public aTrousWaveletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public aTrousWaveletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param count: uint
 
+
+    count: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -400,12 +442,14 @@ declare class Image {
     
     ```
     */
-	public advanceStatus(count: number): void;
+    public advanceStatus(count: number): void;
 
     /**
     DESCRIPTION
-    @param width: int
-    @param height: int
+
+
+    width: int
+    height: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -416,14 +460,16 @@ declare class Image {
     
     ```
     */
-	public allocate(width: number, height: number): void;
+    public allocate(width: number, height: number): void;
     /**
     DESCRIPTION
-    @param width: int
-    @param height: int
-    @param numberOfChannels: int = 1
-    @param colorSpace: int = Gray
 
+
+    width: int
+    height: int
+    numberOfChannels: int = 1
+    colorSpace: int = Gray
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -433,11 +479,13 @@ declare class Image {
     
     ```
     */
-	public allocate(width: number, height: number, numberOfChannels?: number /* 1 */, colorSpace?: number /* Gray */): void;
+    public allocate(width: number, height: number, numberOfChannels?: number /* 1 */, colorSpace?: number /* Gray */): void;
 
     /**
     DESCRIPTION
-    @param scalar: Number
+
+
+    scalar: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -448,15 +496,17 @@ declare class Image {
     
     ```
     */
-	public apply(scalar: number): void;
+    public apply(scalar: number): void;
     /**
     DESCRIPTION
-    @param scalar: Number
-    @param op: int
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    scalar: Number
+    op: int
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -466,11 +516,13 @@ declare class Image {
     
     ```
     */
-	public apply(scalar: number, op?: number, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public apply(scalar: number, op?: number, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param scalar: Complex
+
+
+    scalar: Complex
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -481,15 +533,17 @@ declare class Image {
     
     ```
     */
-	public apply(scalar: Complex): void;
+    public apply(scalar: Complex): void;
     /**
     DESCRIPTION
-    @param scalar: Complex
-    @param op: int
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    scalar: Complex
+    op: int
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -499,11 +553,13 @@ declare class Image {
     
     ```
     */
-	public apply(scalar: Complex, op?: number, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public apply(scalar: Complex, op?: number, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param image: Image
+
+
+    image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -514,17 +570,19 @@ declare class Image {
     
     ```
     */
-	public apply(image: Image): void;
+    public apply(image: Image): void;
     /**
     DESCRIPTION
-    @param image: Image
-    @param op: int
-    @param pos: Point = int_max
-    @param channel: int = -1
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    image: Image
+    op: int
+    pos: Point = int_max
+    channel: int = -1
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -534,11 +592,13 @@ declare class Image {
     
     ```
     */
-	public apply(image: Image, op?: number, pos?: Point /* int_max */, channel?: number /* -1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public apply(image: Image, op?: number, pos?: Point /* int_max */, channel?: number /* -1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param Image: Image
+
+
+    Image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -549,14 +609,16 @@ declare class Image {
     
     ```
     */
-	public assign(Image: Image): void;
+    public assign(Image: Image): void;
     /**
     DESCRIPTION
-    @param Image: Image
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    Image: Image
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -566,11 +628,13 @@ declare class Image {
     
     ```
     */
-	public assign(Image: Image, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public assign(Image: Image, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param img: Image
+
+
+    img: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -581,10 +645,12 @@ declare class Image {
     
     ```
     */
-	public assignStatus(img: Image): void;
+    public assignStatus(img: Image): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -594,13 +660,15 @@ declare class Image {
     
     ```
     */
-	public avgDev(): number;
+    public avgDev(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -611,10 +679,12 @@ declare class Image {
     
     ```
     */
-	public avgDev(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public avgDev(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -624,14 +694,16 @@ declare class Image {
     
     ```
     */
-	public bendMidvariance(): number;
+    public bendMidvariance(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param beta: Number = 0.2
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    beta: Number = 0.2
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -642,10 +714,12 @@ declare class Image {
     
     ```
     */
-	public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -655,13 +729,15 @@ declare class Image {
     
     ```
     */
-	public binarize(): void;
+    public binarize(): void;
     /**
     DESCRIPTION
-    @param v: Number = 0.5
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    v: Number = 0.5
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -672,10 +748,12 @@ declare class Image {
     
     ```
     */
-	public binarize(v?: number /* 0.5 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public binarize(v?: number /* 0.5 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -685,16 +763,18 @@ declare class Image {
     
     ```
     */
-	public biweightMidvariance(): number;
+    public biweightMidvariance(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Number = MAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    sigma: Number = MAD()
+    k: int = 9
+    reducedLength: Boolean = false
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -705,12 +785,14 @@ declare class Image {
     
     ```
     */
-	public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param bmp: Bitmap
 
+
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -720,11 +802,13 @@ declare class Image {
     
     ```
     */
-	public blend(bmp: Bitmap): void;
+    public blend(bmp: Bitmap): void;
     /**
     DESCRIPTION
-    @param bmp: Bitmap
-    @param rect: Rect = 0
+
+
+    bmp: Bitmap
+    rect: Rect = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -735,13 +819,15 @@ declare class Image {
     
     ```
     */
-	public blend(bmp: Bitmap, rect?: Rect /* 0 */): void;
+    public blend(bmp: Bitmap, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param bmp: Bitmap
-    @param pos: Point
 
+
+    bmp: Bitmap
+    pos: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -751,12 +837,14 @@ declare class Image {
     
     ```
     */
-	public blend(bmp: Bitmap, pos: Point): void;
+    public blend(bmp: Bitmap, pos: Point): void;
     /**
     DESCRIPTION
-    @param bmp: Bitmap
-    @param pos: Point
-    @param rect: Rect = 0
+
+
+    bmp: Bitmap
+    pos: Point
+    rect: Rect = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -767,16 +855,18 @@ declare class Image {
     
     ```
     */
-	public blend(bmp: Bitmap, pos: Point, rect?: Rect /* 0 */): void;
+    public blend(bmp: Bitmap, pos: Point, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param bmp: Bitmap
-    @param x0: any
-    @param y0: any
-    @param x1: any
-    @param number: number
 
+
+    bmp: Bitmap
+    x0: any
+    y0: any
+    x1: any
+    number: number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -786,17 +876,19 @@ declare class Image {
     
     ```
     */
-	public blend(bmp: Bitmap, x0: any, y0: any, x1: any, number: number): void;
+    public blend(bmp: Bitmap, x0: any, y0: any, x1: any, number: number): void;
 
     /**
     DESCRIPTION
-    @param bmp: Bitmap
-    @param x: any
-    @param y: any
-    @param x0: any
-    @param y0: any
-    @param x1: any
-    @param number: number
+
+
+    bmp: Bitmap
+    x: any
+    y: any
+    x0: any
+    y0: any
+    x1: any
+    number: number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -807,10 +899,12 @@ declare class Image {
     
     ```
     */
-	public blend(bmp: Bitmap, x: any, y: any, x0: any, y0: any, x1: any, number: number): void;
+    public blend(bmp: Bitmap, x: any, y: any, x0: any, y0: any, x1: any, number: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -820,10 +914,12 @@ declare class Image {
     
     ```
     */
-	public canPopSelections(): boolean;
+    public canPopSelections(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -833,12 +929,14 @@ declare class Image {
     
     ```
     */
-	public completeStatus(): void;
+    public completeStatus(): void;
 
     /**
     DESCRIPTION
-    @param kernel: Array
 
+
+    kernel: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -848,14 +946,16 @@ declare class Image {
     
     ```
     */
-	public convolve(kernel: Array<any>): void;
+    public convolve(kernel: Array<any>): void;
     /**
     DESCRIPTION
-    @param kernel: Array
-    @param highPassMode: int = 0
-    @param thr0: Number = 0
-    @param thr1: Number = 0
-    @param interlacing: int = 1
+
+
+    kernel: Array
+    highPassMode: int = 0
+    thr0: Number = 0
+    thr1: Number = 0
+    interlacing: int = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -866,12 +966,14 @@ declare class Image {
     
     ```
     */
-	public convolve(kernel: Array<any>, highPassMode?: number /* 0 */, thr0?: number /* 0 */, thr1?: number /* 0 */, interlacing?: number /* 1 */): void;
+    public convolve(kernel: Array<any>, highPassMode?: number /* 0 */, thr0?: number /* 0 */, thr1?: number /* 0 */, interlacing?: number /* 1 */): void;
 
     /**
     DESCRIPTION
-    @param kernel: Matrix
 
+
+    kernel: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -881,14 +983,16 @@ declare class Image {
     
     ```
     */
-	public convolve(kernel: Matrix): void;
+    public convolve(kernel: Matrix): void;
     /**
     DESCRIPTION
-    @param kernel: Matrix
-    @param highPassMode: int = 0
-    @param thr0: Number = 0
-    @param thr1: Number = 0
-    @param interlacing: int = 1
+
+
+    kernel: Matrix
+    highPassMode: int = 0
+    thr0: Number = 0
+    thr1: Number = 0
+    interlacing: int = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -899,12 +1003,14 @@ declare class Image {
     
     ```
     */
-	public convolve(kernel: Matrix, highPassMode?: number /* 0 */, thr0?: number /* 0 */, thr1?: number /* 0 */, interlacing?: number /* 1 */): void;
+    public convolve(kernel: Matrix, highPassMode?: number /* 0 */, thr0?: number /* 0 */, thr1?: number /* 0 */, interlacing?: number /* 1 */): void;
 
     /**
     DESCRIPTION
-    @param kernel: Array
 
+
+    kernel: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -914,11 +1020,13 @@ declare class Image {
     
     ```
     */
-	public convolveFFT(kernel: Array<any>): void;
+    public convolveFFT(kernel: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param kernel: Matrix
+
+
+    kernel: Matrix
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -929,12 +1037,14 @@ declare class Image {
     
     ```
     */
-	public convolveFFT(kernel: Matrix): void;
+    public convolveFFT(kernel: Matrix): void;
 
     /**
     DESCRIPTION
-    @param respFunc: Image
 
+
+    respFunc: Image
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -944,12 +1054,14 @@ declare class Image {
     
     ```
     */
-	public convolveFFT(respFunc: Image): void;
+    public convolveFFT(respFunc: Image): void;
 
     /**
     DESCRIPTION
-    @param rowVector: Array
-    @param colVector: Array
+
+
+    rowVector: Array
+    colVector: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -960,14 +1072,16 @@ declare class Image {
     
     ```
     */
-	public convolveSeparable(rowVector: Array<any>, colVector: Array<any>): void;
+    public convolveSeparable(rowVector: Array<any>, colVector: Array<any>): void;
     /**
     DESCRIPTION
-    @param rowVector: Array
-    @param colVector: Array
-    @param highPassMode: int = 0
-    @param interlacing: int = 1
 
+
+    rowVector: Array
+    colVector: Array
+    highPassMode: int = 0
+    interlacing: int = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -977,12 +1091,14 @@ declare class Image {
     
     ```
     */
-	public convolveSeparable(rowVector: Array<any>, colVector: Array<any>, highPassMode?: number /* 0 */, interlacing?: number /* 1 */): void;
+    public convolveSeparable(rowVector: Array<any>, colVector: Array<any>, highPassMode?: number /* 0 */, interlacing?: number /* 1 */): void;
 
     /**
     DESCRIPTION
-    @param rowVector: Vector
-    @param colVector: Vector
+
+
+    rowVector: Vector
+    colVector: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -993,14 +1109,16 @@ declare class Image {
     
     ```
     */
-	public convolveSeparable(rowVector: Vector, colVector: Vector): void;
+    public convolveSeparable(rowVector: Vector, colVector: Vector): void;
     /**
     DESCRIPTION
-    @param rowVector: Vector
-    @param colVector: Vector
-    @param highPassMode: int = 0
-    @param interlacing: int = 1
 
+
+    rowVector: Vector
+    colVector: Vector
+    highPassMode: int = 0
+    interlacing: int = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1010,10 +1128,12 @@ declare class Image {
     
     ```
     */
-	public convolveSeparable(rowVector: Vector, colVector: Vector, highPassMode?: number /* 0 */, interlacing?: number /* 1 */): void;
+    public convolveSeparable(rowVector: Vector, colVector: Vector, highPassMode?: number /* 0 */, interlacing?: number /* 1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1023,13 +1143,15 @@ declare class Image {
     
     ```
     */
-	public count(): number;
+    public count(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1039,11 +1161,13 @@ declare class Image {
     
     ```
     */
-	public count(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public count(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param n: int
+
+
+    n: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1054,10 +1178,12 @@ declare class Image {
     
     ```
     */
-	public createAlphaChannels(n: number): void;
+    public createAlphaChannels(n: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1067,10 +1193,12 @@ declare class Image {
     
     ```
     */
-	public crop(): void;
+    public crop(): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
+
+    ...fill: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1081,12 +1209,14 @@ declare class Image {
     
     ```
     */
-	public crop(...fill: any[]): void;
+    public crop(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param fillValues: Array
 
+
+    fillValues: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1096,14 +1226,16 @@ declare class Image {
     
     ```
     */
-	public crop(fillValues: Array<any>): void;
+    public crop(fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param left: int
-    @param top: int
-    @param right: int
-    @param bottom: int
+
+
+    left: int
+    top: int
+    right: int
+    bottom: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1114,11 +1246,13 @@ declare class Image {
     
     ```
     */
-	public cropBy(left: number, top: number, right: number, bottom: number): void;
+    public cropBy(left: number, top: number, right: number, bottom: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
 
+
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1128,15 +1262,17 @@ declare class Image {
     
     ```
     */
-	public cropBy(...fill: any[]): void;
+    public cropBy(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param left: int
-    @param top: int
-    @param right: int
-    @param bottom: int
-    @param fillValues: Array
+
+
+    left: int
+    top: int
+    right: int
+    bottom: int
+    fillValues: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1147,15 +1283,17 @@ declare class Image {
     
     ```
     */
-	public cropBy(left: number, top: number, right: number, bottom: number, fillValues: Array<any>): void;
+    public cropBy(left: number, top: number, right: number, bottom: number, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1165,10 +1303,12 @@ declare class Image {
     
     ```
     */
-	public cropTo(x0: number, y0: number, x1: number, y1: number): void;
+    public cropTo(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
+
+    ...fill: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1179,16 +1319,18 @@ declare class Image {
     
     ```
     */
-	public cropTo(...fill: any[]): void;
+    public cropTo(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param fillValues: Array
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    fillValues: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1198,11 +1340,13 @@ declare class Image {
     
     ```
     */
-	public cropTo(x0: number, y0: number, x1: number, y1: number, fillValues: Array<any>): void;
+    public cropTo(x0: number, y0: number, x1: number, y1: number, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
+
+    r: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1213,11 +1357,13 @@ declare class Image {
     
     ```
     */
-	public cropTo(r: Rect): void;
+    public cropTo(r: Rect): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
 
+
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1227,12 +1373,14 @@ declare class Image {
     
     ```
     */
-	public cropTo(...fill: any[]): void;
+    public cropTo(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param fillValues: Array
+
+
+    r: Rect
+    fillValues: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1243,12 +1391,14 @@ declare class Image {
     
     ```
     */
-	public cropTo(r: Rect, fillValues: Array<any>): void;
+    public cropTo(r: Rect, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param c: int
 
+
+    c: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1258,10 +1408,12 @@ declare class Image {
     
     ```
     */
-	public deleteAlphaChannel(c: number): void;
+    public deleteAlphaChannel(c: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1271,10 +1423,12 @@ declare class Image {
     
     ```
     */
-	public deleteAlphaChannels(): void;
+    public deleteAlphaChannels(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1284,10 +1438,12 @@ declare class Image {
     
     ```
     */
-	public fastFourierTransform(): void;
+    public fastFourierTransform(): void;
     /**
     DESCRIPTION
-    @param centered: Boolean = false
+
+
+    centered: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1298,10 +1454,12 @@ declare class Image {
     
     ```
     */
-	public fastFourierTransform(centered?: boolean /* false */): void;
+    public fastFourierTransform(centered?: boolean /* false */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1311,13 +1469,15 @@ declare class Image {
     
     ```
     */
-	public fill(): void;
+    public fill(): void;
     /**
     DESCRIPTION
-    @param v: Number|Complex
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    v: Number|Complex
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1328,12 +1488,14 @@ declare class Image {
     
     ```
     */
-	public fill(v?: number | Complex, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public fill(v?: number | Complex, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param f: Function
 
+
+    f: Function
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1343,14 +1505,16 @@ declare class Image {
     
     ```
     */
-	public forEachMutablePixel(f: Function): void;
+    public forEachMutablePixel(f: Function): void;
     /**
     DESCRIPTION
-    @param f: Function
-    @param thisObj: Object
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    f: Function
+    thisObj: Object
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1361,12 +1525,14 @@ declare class Image {
     
     ```
     */
-	public forEachMutablePixel(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public forEachMutablePixel(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param f: Function
 
+
+    f: Function
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1376,14 +1542,16 @@ declare class Image {
     
     ```
     */
-	public forEachMutableSample(f: Function): void;
+    public forEachMutableSample(f: Function): void;
     /**
     DESCRIPTION
-    @param f: Function
-    @param thisObj: Object
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    f: Function
+    thisObj: Object
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1394,12 +1562,14 @@ declare class Image {
     
     ```
     */
-	public forEachMutableSample(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public forEachMutableSample(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param f: Function
 
+
+    f: Function
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1409,14 +1579,16 @@ declare class Image {
     
     ```
     */
-	public forEachPixel(f: Function): void;
+    public forEachPixel(f: Function): void;
     /**
     DESCRIPTION
-    @param f: Function
-    @param thisObj: Object
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    f: Function
+    thisObj: Object
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1427,12 +1599,14 @@ declare class Image {
     
     ```
     */
-	public forEachPixel(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public forEachPixel(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param f: Function
 
+
+    f: Function
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1442,14 +1616,16 @@ declare class Image {
     
     ```
     */
-	public forEachSample(f: Function): void;
+    public forEachSample(f: Function): void;
     /**
     DESCRIPTION
-    @param f: Function
-    @param thisObj: Object
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    f: Function
+    thisObj: Object
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1460,10 +1636,12 @@ declare class Image {
     
     ```
     */
-	public forEachSample(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public forEachSample(f: Function, thisObj?: Object, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1473,11 +1651,13 @@ declare class Image {
     
     ```
     */
-	public free(): void;
+    public free(): void;
 
     /**
     DESCRIPTION
-    @param I: Image
+
+
+    I: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1488,12 +1668,14 @@ declare class Image {
     
     ```
     */
-	public getIntensity(I: Image): void;
+    public getIntensity(I: Image): void;
     /**
     DESCRIPTION
-    @param I: Image
-    @param rect: Rect = 0
 
+
+    I: Image
+    rect: Rect = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1503,11 +1685,13 @@ declare class Image {
     
     ```
     */
-	public getIntensity(I: Image, rect?: Rect /* 0 */): void;
+    public getIntensity(I: Image, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param L: Image
+
+
+    L: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1518,12 +1702,14 @@ declare class Image {
     
     ```
     */
-	public getLightness(L: Image): void;
+    public getLightness(L: Image): void;
     /**
     DESCRIPTION
-    @param L: Image
-    @param rect: Rect = 0
 
+
+    L: Image
+    rect: Rect = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1533,11 +1719,13 @@ declare class Image {
     
     ```
     */
-	public getLightness(L: Image, rect?: Rect /* 0 */): void;
+    public getLightness(L: Image, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param Y: Image
+
+
+    Y: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1548,12 +1736,14 @@ declare class Image {
     
     ```
     */
-	public getLuminance(Y: Image): void;
+    public getLuminance(Y: Image): void;
     /**
     DESCRIPTION
-    @param Y: Image
-    @param rect: Rect = 0
 
+
+    Y: Image
+    rect: Rect = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1563,11 +1753,13 @@ declare class Image {
     
     ```
     */
-	public getLuminance(Y: Image, rect?: Rect /* 0 */): void;
+    public getLuminance(Y: Image, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param Vector: Vector
+
+
+    Vector: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1578,12 +1770,14 @@ declare class Image {
     
     ```
     */
-	public getPixelValue(Vector: Vector): void;
+    public getPixelValue(Vector: Vector): void;
 
     /**
     DESCRIPTION
-    @param samples: TypedArray|Array|Vector
 
+
+    samples: TypedArray|Array|Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1593,12 +1787,14 @@ declare class Image {
     
     ```
     */
-	public getSamples(samples: any /* TypedArray */ | Array<any> | Vector): void;
+    public getSamples(samples: any /* TypedArray */ | Array<any> | Vector): void;
     /**
     DESCRIPTION
-    @param samples: TypedArray|Array|Vector
-    @param rect: Rect = 0
-    @param channel: int = -1
+
+
+    samples: TypedArray|Array|Vector
+    rect: Rect = 0
+    channel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1609,10 +1805,12 @@ declare class Image {
     
     ```
     */
-	public getSamples(samples: any /* TypedArray */ | Array<any> | Vector, rect?: Rect /* 0 */, channel?: number /* -1 */): void;
+    public getSamples(samples: any /* TypedArray */ | Array<any> | Vector, rect?: Rect /* 0 */, channel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1622,12 +1820,14 @@ declare class Image {
     
     ```
     */
-	public initPixelIterator(): void;
+    public initPixelIterator(): void;
     /**
     DESCRIPTION
-    @param r: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    r: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1638,10 +1838,12 @@ declare class Image {
     
     ```
     */
-	public initPixelIterator(r?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public initPixelIterator(r?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1651,11 +1853,13 @@ declare class Image {
     
     ```
     */
-	public initSampleIterator(): void;
+    public initSampleIterator(): void;
     /**
     DESCRIPTION
-    @param r: Rect = 0
-    @param channel: int = -1
+
+
+    r: Rect = 0
+    channel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1666,13 +1870,15 @@ declare class Image {
     
     ```
     */
-	public initSampleIterator(r?: Rect /* 0 */, channel?: number /* -1 */): void;
+    public initSampleIterator(r?: Rect /* 0 */, channel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param info: String
-    @param total: uint
 
+
+    info: String
+    total: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1682,12 +1888,14 @@ declare class Image {
     
     ```
     */
-	public initializeStatus(info: string, total: number): void;
+    public initializeStatus(info: string, total: number): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
+
+    x: Number
+    y: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1698,13 +1906,15 @@ declare class Image {
     
     ```
     */
-	public interpolate(x: number, y: number): number;
+    public interpolate(x: number, y: number): number;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
-    @param channel: int = 0
 
+
+    x: Number
+    y: Number
+    channel: int = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1714,11 +1924,13 @@ declare class Image {
     
     ```
     */
-	public interpolate(x: number, y: number, channel?: number /* 0 */): number;
+    public interpolate(x: number, y: number, channel?: number /* 0 */): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1729,12 +1941,14 @@ declare class Image {
     
     ```
     */
-	public interpolate(p: Point): number;
+    public interpolate(p: Point): number;
     /**
     DESCRIPTION
-    @param p: Point
-    @param channel: int = 0
 
+
+    p: Point
+    channel: int = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1744,11 +1958,13 @@ declare class Image {
     
     ```
     */
-	public interpolate(p: Point, channel?: number /* 0 */): number;
+    public interpolate(p: Point, channel?: number /* 0 */): number;
 
     /**
     DESCRIPTION
-    @param layers: Array
+
+
+    layers: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1759,10 +1975,12 @@ declare class Image {
     
     ```
     */
-	public inverseATrousWaveletTransform(layers: Array<any>): void;
+    public inverseATrousWaveletTransform(layers: Array<any>): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1772,10 +1990,12 @@ declare class Image {
     
     ```
     */
-	public inverseFFT(): void;
+    public inverseFFT(): void;
     /**
     DESCRIPTION
-    @param centered: Boolean = false
+
+
+    centered: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1786,10 +2006,12 @@ declare class Image {
     
     ```
     */
-	public inverseFFT(centered?: boolean /* false */): void;
+    public inverseFFT(centered?: boolean /* false */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1799,10 +2021,12 @@ declare class Image {
     
     ```
     */
-	public inverseFastFourierTransform(): void;
+    public inverseFastFourierTransform(): void;
     /**
     DESCRIPTION
-    @param centered: Boolean = false
+
+
+    centered: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1813,12 +2037,14 @@ declare class Image {
     
     ```
     */
-	public inverseFastFourierTransform(centered?: boolean /* false */): void;
+    public inverseFastFourierTransform(centered?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param layers: Array
 
+
+    layers: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1828,11 +2054,13 @@ declare class Image {
     
     ```
     */
-	public inverseMedianWaveletTransform(layers: Array<any>): void;
+    public inverseMedianWaveletTransform(layers: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param layers: Array
+
+
+    layers: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1843,12 +2071,14 @@ declare class Image {
     
     ```
     */
-	public inverseMultiscaleLinearTransform(layers: Array<any>): void;
+    public inverseMultiscaleLinearTransform(layers: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param layers: Array
 
+
+    layers: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1858,11 +2088,13 @@ declare class Image {
     
     ```
     */
-	public inverseMultiscaleMedianTransform(layers: Array<any>): void;
+    public inverseMultiscaleMedianTransform(layers: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param layers: Array
+
+
+    layers: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1873,12 +2105,14 @@ declare class Image {
     
     ```
     */
-	public inverseMultiscaleTransform(layers: Array<any>): void;
+    public inverseMultiscaleTransform(layers: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param layers: Array
 
+
+    layers: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1888,10 +2122,12 @@ declare class Image {
     
     ```
     */
-	public inverseStarletTransform(layers: Array<any>): void;
+    public inverseStarletTransform(layers: Array<any>): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1901,14 +2137,16 @@ declare class Image {
     
     ```
     */
-	public invert(): void;
+    public invert(): void;
     /**
     DESCRIPTION
-    @param v: Number = 1
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    v: Number = 1
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1918,10 +2156,12 @@ declare class Image {
     
     ```
     */
-	public invert(v?: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public invert(v?: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1931,12 +2171,14 @@ declare class Image {
     
     ```
     */
-	public logPolarTransform(): void;
+    public logPolarTransform(): void;
     /**
     DESCRIPTION
-    @param startAngleRadians: Number = 0
-    @param endAngleRadians: Number = 2pi
 
+
+    startAngleRadians: Number = 0
+    endAngleRadians: Number = 2pi
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1946,10 +2188,12 @@ declare class Image {
     
     ```
     */
-	public logPolarTransform(startAngleRadians?: number /* 0 */, endAngleRadians?: number /* 2pi */): void;
+    public logPolarTransform(startAngleRadians?: number /* 0 */, endAngleRadians?: number /* 2pi */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1959,13 +2203,15 @@ declare class Image {
     
     ```
     */
-	public maximum(): number | Complex;
+    public maximum(): number | Complex;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1975,10 +2221,12 @@ declare class Image {
     
     ```
     */
-	public maximum(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number | Complex;
+    public maximum(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number | Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1988,13 +2236,15 @@ declare class Image {
     
     ```
     */
-	public maximumPosition(): Point;
+    public maximumPosition(): Point;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2004,10 +2254,12 @@ declare class Image {
     
     ```
     */
-	public maximumPosition(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Point;
+    public maximumPosition(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2017,13 +2269,15 @@ declare class Image {
     
     ```
     */
-	public mean(): number;
+    public mean(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2033,10 +2287,12 @@ declare class Image {
     
     ```
     */
-	public mean(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public mean(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2046,14 +2302,16 @@ declare class Image {
     
     ```
     */
-	public meanOfSquares(): number;
+    public meanOfSquares(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
-    ```javascript
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
+    ```javascript
     // TODO: Add JavaScript Example
     
     ```
@@ -2062,10 +2320,12 @@ declare class Image {
     
     ```
     */
-	public meanOfSquares(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public meanOfSquares(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2075,13 +2335,15 @@ declare class Image {
     
     ```
     */
-	public median(): number;
+    public median(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2091,12 +2353,14 @@ declare class Image {
     
     ```
     */
-	public median(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public median(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param numberOfLayers: int
+
 
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2106,14 +2370,16 @@ declare class Image {
     
     ```
     */
-	public medianWaveletTransform(numberOfLayers: number): Array<any>;
+    public medianWaveletTransform(numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param numberOfLayers: int
-    @param scalingSequence: int
-    @param layerState: Array
-    @param threshold: Number = 5
+
 
+    numberOfLayers: int
+    scalingSequence: int
+    layerState: Array
+    threshold: Number = 5
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2123,10 +2389,12 @@ declare class Image {
     
     ```
     */
-	public medianWaveletTransform(numberOfLayers: number, scalingSequence?: number, layerState?: Array<any>, threshold?: number /* 5 */): Array<any>;
+    public medianWaveletTransform(numberOfLayers: number, scalingSequence?: number, layerState?: Array<any>, threshold?: number /* 5 */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2136,13 +2404,15 @@ declare class Image {
     
     ```
     */
-	public minimum(): number | Complex;
+    public minimum(): number | Complex;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2152,10 +2422,12 @@ declare class Image {
     
     ```
     */
-	public minimum(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number | Complex;
+    public minimum(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number | Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2165,13 +2437,15 @@ declare class Image {
     
     ```
     */
-	public minimumPosition(): Point;
+    public minimumPosition(): Point;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2181,10 +2455,12 @@ declare class Image {
     
     ```
     */
-	public minimumPosition(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Point;
+    public minimumPosition(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2194,10 +2470,12 @@ declare class Image {
     
     ```
     */
-	public mirrorHorizontal(): void;
+    public mirrorHorizontal(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2207,10 +2485,12 @@ declare class Image {
     
     ```
     */
-	public mirrorVertical(): void;
+    public mirrorVertical(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2220,11 +2500,13 @@ declare class Image {
     
     ```
     */
-	public mmtBackgroundResidual(): Float32Array;
+    public mmtBackgroundResidual(): Float32Array;
     /**
     DESCRIPTION
-    @param scale: int = 256
+
 
+    scale: int = 256
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2234,10 +2516,12 @@ declare class Image {
     
     ```
     */
-	public mmtBackgroundResidual(scale?: number /* 256 */): Float32Array;
+    public mmtBackgroundResidual(scale?: number /* 256 */): Float32Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2247,13 +2531,15 @@ declare class Image {
     
     ```
     */
-	public modulus(): number;
+    public modulus(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2263,13 +2549,15 @@ declare class Image {
     
     ```
     */
-	public modulus(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public modulus(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param operator: int
-    @param structure: Array
+
 
+    operator: int
+    structure: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2279,14 +2567,16 @@ declare class Image {
     
     ```
     */
-	public morphologicalTransformation(operator: number, structure: Array<any>): void;
+    public morphologicalTransformation(operator: number, structure: Array<any>): void;
     /**
     DESCRIPTION
-    @param operator: int
-    @param structure: Array
-    @param thr0: Number = 0
-    @param thr1: Number = 0
-    @param interlacing: int = 1
+
+
+    operator: int
+    structure: Array
+    thr0: Number = 0
+    thr1: Number = 0
+    interlacing: int = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2297,12 +2587,14 @@ declare class Image {
     
     ```
     */
-	public morphologicalTransformation(operator: number, structure: Array<any>, thr0?: number /* 0 */, thr1?: number /* 0 */, interlacing?: number /* 1 */): void;
+    public morphologicalTransformation(operator: number, structure: Array<any>, thr0?: number /* 0 */, thr1?: number /* 0 */, interlacing?: number /* 1 */): void;
 
     /**
     DESCRIPTION
-    @param numberOfLayers: int
 
+
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2312,12 +2604,14 @@ declare class Image {
     
     ```
     */
-	public multiscaleLinearTransform(numberOfLayers: number): Array<any>;
+    public multiscaleLinearTransform(numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
+
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2328,12 +2622,14 @@ declare class Image {
     
     ```
     */
-	public multiscaleLinearTransform(numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public multiscaleLinearTransform(numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param numberOfLayers: int
 
+
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2343,13 +2639,15 @@ declare class Image {
     
     ```
     */
-	public multiscaleMedianTransform(numberOfLayers: number): Array<any>;
+    public multiscaleMedianTransform(numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param numberOfLayers: int
-    @param scalingSequence: int
-    @param layerState: Array
 
+
+    numberOfLayers: int
+    scalingSequence: int
+    layerState: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2359,10 +2657,12 @@ declare class Image {
     
     ```
     */
-	public multiscaleMedianTransform(numberOfLayers: number, scalingSequence?: number, layerState?: Array<any>): Array<any>;
+    public multiscaleMedianTransform(numberOfLayers: number, scalingSequence?: number, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2372,10 +2672,12 @@ declare class Image {
     
     ```
     */
-	public nextPixel(): boolean;
+    public nextPixel(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2385,10 +2687,12 @@ declare class Image {
     
     ```
     */
-	public nextSample(): boolean;
+    public nextSample(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2398,13 +2702,15 @@ declare class Image {
     
     ```
     */
-	public norm(): number;
+    public norm(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2414,10 +2720,12 @@ declare class Image {
     
     ```
     */
-	public norm(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public norm(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2427,12 +2735,14 @@ declare class Image {
     
     ```
     */
-	public normalize(): void;
+    public normalize(): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
 
+
+    v0: Number = 0
+    v1: Number = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2442,14 +2752,16 @@ declare class Image {
     
     ```
     */
-	public normalize(v0: number /* 0 */, v1: number /* 1 */): void;
+    public normalize(v0: number /* 0 */, v1: number /* 1 */): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    v0: Number = 0
+    v1: Number = 1
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2460,12 +2772,14 @@ declare class Image {
     
     ```
     */
-	public normalize(v0: number /* 0 */, v1: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public normalize(v0: number /* 0 */, v1: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param k: Number
 
+
+    k: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2475,14 +2789,16 @@ declare class Image {
     
     ```
     */
-	public orderStatistic(k: number): number;
+    public orderStatistic(k: number): number;
     /**
     DESCRIPTION
-    @param k: Number
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    k: Number
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2492,10 +2808,12 @@ declare class Image {
     
     ```
     */
-	public orderStatistic(k: number, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public orderStatistic(k: number, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2505,10 +2823,12 @@ declare class Image {
     
     ```
     */
-	public pixelValue(): Vector;
+    public pixelValue(): Vector;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2518,12 +2838,14 @@ declare class Image {
     
     ```
     */
-	public polarTransform(): void;
+    public polarTransform(): void;
     /**
     DESCRIPTION
-    @param startAngleRadians: Number = 0
-    @param endAngleRadians: Number = 2pi
+
 
+    startAngleRadians: Number = 0
+    endAngleRadians: Number = 2pi
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2533,10 +2855,12 @@ declare class Image {
     
     ```
     */
-	public polarTransform(startAngleRadians?: number /* 0 */, endAngleRadians?: number /* 2pi */): void;
+    public polarTransform(startAngleRadians?: number /* 0 */, endAngleRadians?: number /* 2pi */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2546,10 +2870,12 @@ declare class Image {
     
     ```
     */
-	public popSelections(): void;
+    public popSelections(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2559,10 +2885,12 @@ declare class Image {
     
     ```
     */
-	public previousPixel(): boolean;
+    public previousPixel(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2572,10 +2900,12 @@ declare class Image {
     
     ```
     */
-	public previousSample(): boolean;
+    public previousSample(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2585,12 +2915,14 @@ declare class Image {
     
     ```
     */
-	public pushSelections(): void;
+    public pushSelections(): void;
 
     /**
     DESCRIPTION
-    @param path: String
 
+
+    path: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2600,10 +2932,12 @@ declare class Image {
     
     ```
     */
-	public readRawFile(path: string): void;
+    public readRawFile(path: string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2613,13 +2947,15 @@ declare class Image {
     
     ```
     */
-	public render(): Bitmap;
+    public render(): Bitmap;
     /**
     DESCRIPTION
-    @param zoomFactor: int = 1
-    @param enableTransparency: Boolean = true
-    @param fast: Boolean = false
 
+
+    zoomFactor: int = 1
+    enableTransparency: Boolean = true
+    fast: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2629,11 +2965,13 @@ declare class Image {
     
     ```
     */
-	public render(zoomFactor?: number /* 1 */, enableTransparency?: boolean /* true */, fast?: boolean /* false */): Bitmap;
+    public render(zoomFactor?: number /* 1 */, enableTransparency?: boolean /* true */, fast?: boolean /* false */): Bitmap;
 
     /**
     DESCRIPTION
-    @param scale: Number
+
+
+    scale: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2644,13 +2982,15 @@ declare class Image {
     
     ```
     */
-	public resample(scale: number): void;
+    public resample(scale: number): void;
 
     /**
     DESCRIPTION
-    @param sx: Number
-    @param sy: Number
 
+
+    sx: Number
+    sy: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2660,14 +3000,16 @@ declare class Image {
     
     ```
     */
-	public resample(sx: number, sy: number): void;
+    public resample(sx: number, sy: number): void;
     /**
     DESCRIPTION
-    @param sx: Number
-    @param sy: Number
-    @param mode: int
-    @param absMode: int
 
+
+    sx: Number
+    sy: Number
+    mode: int
+    absMode: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2677,10 +3019,12 @@ declare class Image {
     
     ```
     */
-	public resample(sx: number, sy: number, mode?: number, absMode?: number): void;
+    public resample(sx: number, sy: number, mode?: number, absMode?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2690,12 +3034,14 @@ declare class Image {
     
     ```
     */
-	public rescale(): void;
+    public rescale(): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
+
 
+    v0: Number = 0
+    v1: Number = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2705,15 +3051,17 @@ declare class Image {
     
     ```
     */
-	public rescale(v0: number /* 0 */, v1: number /* 1 */): void;
+    public rescale(v0: number /* 0 */, v1: number /* 1 */): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    v0: Number = 0
+    v1: Number = 1
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2723,10 +3071,12 @@ declare class Image {
     
     ```
     */
-	public rescale(v0: number /* 0 */, v1: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public rescale(v0: number /* 0 */, v1: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2736,10 +3086,12 @@ declare class Image {
     
     ```
     */
-	public resetChannelSelection(): void;
+    public resetChannelSelection(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2749,10 +3101,12 @@ declare class Image {
     
     ```
     */
-	public resetRectSelection(): void;
+    public resetRectSelection(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2762,11 +3116,13 @@ declare class Image {
     
     ```
     */
-	public resetSelections(): void;
+    public resetSelections(): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
+
+    angleRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2777,13 +3133,15 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number): void;
+    public rotate(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param cx: Number = 0
-    @param cy: Number = 0
 
+
+    angleRadians: Number
+    cx: Number = 0
+    cy: Number = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2793,11 +3151,13 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number, cx: number /* 0 */, cy: number /* 0 */): void;
+    public rotate(angleRadians: number, cx: number /* 0 */, cy: number /* 0 */): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
 
+
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2807,12 +3167,14 @@ declare class Image {
     
     ```
     */
-	public rotate(...fill: any[]): void;
+    public rotate(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
 
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2822,13 +3184,15 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number): void;
+    public rotate(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param cx: Number = 0
-    @param cy: Number = 0
+
 
+    angleRadians: Number
+    cx: Number = 0
+    cy: Number = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2838,14 +3202,16 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number, cx: number /* 0 */, cy: number /* 0 */): void;
+    public rotate(angleRadians: number, cx: number /* 0 */, cy: number /* 0 */): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param cx: Number = 0
-    @param cy: Number = 0
-    @param fillValues: Array
+
 
+    angleRadians: Number
+    cx: Number = 0
+    cy: Number = 0
+    fillValues: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2855,12 +3221,14 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number, cx: number /* 0 */, cy: number /* 0 */, fillValues?: Array<any>): void;
+    public rotate(angleRadians: number, cx: number /* 0 */, cy: number /* 0 */, fillValues?: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
 
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2870,10 +3238,12 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number): void;
+    public rotate(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
+
+    ...fill: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2884,12 +3254,14 @@ declare class Image {
     
     ```
     */
-	public rotate(...fill: any[]): void;
+    public rotate(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
 
+
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2899,12 +3271,14 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number): void;
+    public rotate(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param center: Point = 0
-    @param fillValues: Array
+
+
+    angleRadians: Number
+    center: Point = 0
+    fillValues: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2915,10 +3289,12 @@ declare class Image {
     
     ```
     */
-	public rotate(angleRadians: number, center?: Point /* 0 */, fillValues?: Array<any>): void;
+    public rotate(angleRadians: number, center?: Point /* 0 */, fillValues?: Array<any>): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2928,10 +3304,12 @@ declare class Image {
     
     ```
     */
-	public rotate180(): void;
+    public rotate180(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2941,10 +3319,12 @@ declare class Image {
     
     ```
     */
-	public rotate90ccw(): void;
+    public rotate90ccw(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2954,12 +3334,14 @@ declare class Image {
     
     ```
     */
-	public rotate90cw(): void;
+    public rotate90cw(): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
 
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2969,11 +3351,13 @@ declare class Image {
     
     ```
     */
-	public rotateUnclipped(angleRadians: number): void;
+    public rotateUnclipped(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
 
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2983,12 +3367,14 @@ declare class Image {
     
     ```
     */
-	public rotateUnclipped(...fill: any[]): void;
+    public rotateUnclipped(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
 
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2998,11 +3384,13 @@ declare class Image {
     
     ```
     */
-	public rotateUnclipped(angleRadians: number): void;
+    public rotateUnclipped(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param fillValues: Array
+
+
+    angleRadians: Number
+    fillValues: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3013,12 +3401,14 @@ declare class Image {
     
     ```
     */
-	public rotateUnclipped(angleRadians: number, fillValues?: Array<any>): void;
+    public rotateUnclipped(angleRadians: number, fillValues?: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3028,11 +3418,13 @@ declare class Image {
     
     ```
     */
-	public sample(p: Point): number | Complex;
+    public sample(p: Point): number | Complex;
     /**
     DESCRIPTION
-    @param p: Point
-    @param channel: int = 0
+
+
+    p: Point
+    channel: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3043,13 +3435,15 @@ declare class Image {
     
     ```
     */
-	public sample(p: Point, channel?: number /* 0 */): number | Complex;
+    public sample(p: Point, channel?: number /* 0 */): number | Complex;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
 
+
+    x: int
+    y: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3059,13 +3453,15 @@ declare class Image {
     
     ```
     */
-	public sample(x: number, y: number): number | Complex;
+    public sample(x: number, y: number): number | Complex;
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
-    @param channel: int = 0
 
+
+    x: int
+    y: int
+    channel: int = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3075,10 +3471,12 @@ declare class Image {
     
     ```
     */
-	public sample(x: number, y: number, channel?: number /* 0 */): number | Complex;
+    public sample(x: number, y: number, channel?: number /* 0 */): number | Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3088,10 +3486,12 @@ declare class Image {
     
     ```
     */
-	public sampleValue(): number | Complex;
+    public sampleValue(): number | Complex;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3101,13 +3501,15 @@ declare class Image {
     
     ```
     */
-	public setAbs(): void;
+    public setAbs(): void;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3117,12 +3519,14 @@ declare class Image {
     
     ```
     */
-	public setAbs(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public setAbs(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
-    @param L: Image
+
 
+    L: Image
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3132,13 +3536,15 @@ declare class Image {
     
     ```
     */
-	public setLightness(L: Image): void;
+    public setLightness(L: Image): void;
     /**
     DESCRIPTION
-    @param L: Image
-    @param p: Point = int_max
-    @param rect: Rect = 0
+
 
+    L: Image
+    p: Point = int_max
+    rect: Rect = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3148,12 +3554,14 @@ declare class Image {
     
     ```
     */
-	public setLightness(L: Image, p?: Point /* int_max */, rect?: Rect /* 0 */): void;
+    public setLightness(L: Image, p?: Point /* int_max */, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param Y: Image
+
 
+    Y: Image
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3163,13 +3571,15 @@ declare class Image {
     
     ```
     */
-	public setLuminance(Y: Image): void;
+    public setLuminance(Y: Image): void;
     /**
     DESCRIPTION
-    @param Y: Image
-    @param p: Point = int_max
-    @param rect: Rect = 0
+
 
+    Y: Image
+    p: Point = int_max
+    rect: Rect = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3179,12 +3589,14 @@ declare class Image {
     
     ```
     */
-	public setLuminance(Y: Image, p?: Point /* int_max */, rect?: Rect /* 0 */): void;
+    public setLuminance(Y: Image, p?: Point /* int_max */, rect?: Rect /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param Vector: Vector
+
 
+    Vector: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3194,12 +3606,14 @@ declare class Image {
     
     ```
     */
-	public setPixelValue(Vector: Vector): void;
+    public setPixelValue(Vector: Vector): void;
 
     /**
     DESCRIPTION
-    @param scalar: Number|Complex
-    @param p: Point
+
+
+    scalar: Number|Complex
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3210,13 +3624,15 @@ declare class Image {
     
     ```
     */
-	public setSample(scalar: number | Complex, p: Point): void;
+    public setSample(scalar: number | Complex, p: Point): void;
     /**
     DESCRIPTION
-    @param scalar: Number|Complex
-    @param p: Point
-    @param channel: int = 0
 
+
+    scalar: Number|Complex
+    p: Point
+    channel: int = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3226,13 +3642,15 @@ declare class Image {
     
     ```
     */
-	public setSample(scalar: number | Complex, p: Point, channel?: number /* 0 */): void;
+    public setSample(scalar: number | Complex, p: Point, channel?: number /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param scalar: Number|Complex
-    @param x: int
-    @param y: int
+
+
+    scalar: Number|Complex
+    x: int
+    y: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3243,14 +3661,16 @@ declare class Image {
     
     ```
     */
-	public setSample(scalar: number | Complex, x: number, y: number): void;
+    public setSample(scalar: number | Complex, x: number, y: number): void;
     /**
     DESCRIPTION
-    @param scalar: Number|Complex
-    @param x: int
-    @param y: int
-    @param channel: int = 0
 
+
+    scalar: Number|Complex
+    x: int
+    y: int
+    channel: int = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3260,12 +3680,14 @@ declare class Image {
     
     ```
     */
-	public setSample(scalar: number | Complex, x: number, y: number, channel?: number /* 0 */): void;
+    public setSample(scalar: number | Complex, x: number, y: number, channel?: number /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param number: number | Complex
 
+
+    number: number | Complex
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3275,12 +3697,14 @@ declare class Image {
     
     ```
     */
-	public setSampleValue(number: number  |  Complex): void;
+    public setSampleValue(number: number  |  Complex): void;
 
     /**
     DESCRIPTION
-    @param samples: TypedArray|Array|Vector
+
 
+    samples: TypedArray|Array|Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3290,13 +3714,15 @@ declare class Image {
     
     ```
     */
-	public setSamples(samples: any /* TypedArray */ | Array<any> | Vector): void;
+    public setSamples(samples: any /* TypedArray */ | Array<any> | Vector): void;
     /**
     DESCRIPTION
-    @param samples: TypedArray|Array|Vector
-    @param rect: Rect = 0
-    @param channel: int = -1
+
 
+    samples: TypedArray|Array|Vector
+    rect: Rect = 0
+    channel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3306,10 +3732,12 @@ declare class Image {
     
     ```
     */
-	public setSamples(samples: any /* TypedArray */ | Array<any> | Vector, rect?: Rect /* 0 */, channel?: number /* -1 */): void;
+    public setSamples(samples: any /* TypedArray */ | Array<any> | Vector, rect?: Rect /* 0 */, channel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3319,11 +3747,13 @@ declare class Image {
     
     ```
     */
-	public shift(): void;
+    public shift(): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
 
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3333,11 +3763,13 @@ declare class Image {
     
     ```
     */
-	public shift(...fill: any[]): void;
+    public shift(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param fillValues: Array
+
+
+    fillValues: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3348,13 +3780,15 @@ declare class Image {
     
     ```
     */
-	public shift(fillValues: Array<any>): void;
+    public shift(fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
 
+
+    dx: int
+    dy: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3364,10 +3798,12 @@ declare class Image {
     
     ```
     */
-	public shiftBy(dx: number, dy: number): void;
+    public shiftBy(dx: number, dy: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
+
+    ...fill: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3378,14 +3814,16 @@ declare class Image {
     
     ```
     */
-	public shiftBy(...fill: any[]): void;
+    public shiftBy(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
-    @param fillValues: Array
 
+
+    dx: int
+    dy: int
+    fillValues: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3395,13 +3833,15 @@ declare class Image {
     
     ```
     */
-	public shiftBy(dx: number, dy: number, fillValues: Array<any>): void;
+    public shiftBy(dx: number, dy: number, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
 
+
+    dx: int
+    dy: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3411,11 +3851,13 @@ declare class Image {
     
     ```
     */
-	public shiftTo(dx: number, dy: number): void;
+    public shiftTo(dx: number, dy: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
 
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3425,14 +3867,16 @@ declare class Image {
     
     ```
     */
-	public shiftTo(...fill: any[]): void;
+    public shiftTo(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
-    @param fillValues: Array
+
 
+    dx: int
+    dy: int
+    fillValues: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3442,12 +3886,14 @@ declare class Image {
     
     ```
     */
-	public shiftTo(dx: number, dy: number, fillValues: Array<any>): void;
+    public shiftTo(dx: number, dy: number, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3457,11 +3903,13 @@ declare class Image {
     
     ```
     */
-	public shiftTo(p: Point): void;
+    public shiftTo(p: Point): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
+
 
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3471,12 +3919,14 @@ declare class Image {
     
     ```
     */
-	public shiftTo(...fill: any[]): void;
+    public shiftTo(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param p: Point
-    @param fillValues: Array
+
+
+    p: Point
+    fillValues: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3487,13 +3937,15 @@ declare class Image {
     
     ```
     */
-	public shiftTo(p: Point, fillValues: Array<any>): void;
+    public shiftTo(p: Point, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
 
+
+    dx: int
+    dy: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3503,12 +3955,14 @@ declare class Image {
     
     ```
     */
-	public skipPixels(dx: number, dy: number): boolean;
+    public skipPixels(dx: number, dy: number): boolean;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
+
+
+    dx: int
+    dy: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3519,13 +3973,15 @@ declare class Image {
     
     ```
     */
-	public skipSamples(dx: number, dy: number): boolean;
+    public skipSamples(dx: number, dy: number): boolean;
 
     /**
     DESCRIPTION
-    @param kernel: Array
-    @param numberOfLayers: int
 
+
+    kernel: Array
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3535,14 +3991,16 @@ declare class Image {
     
     ```
     */
-	public starletTransform(kernel: Array<any>, numberOfLayers: number): Array<any>;
+    public starletTransform(kernel: Array<any>, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param kernel: Array
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
 
+
+    kernel: Array
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3552,13 +4010,15 @@ declare class Image {
     
     ```
     */
-	public starletTransform(kernel: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public starletTransform(kernel: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param kernel: Matrix
-    @param numberOfLayers: int
+
 
+    kernel: Matrix
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3568,14 +4028,16 @@ declare class Image {
     
     ```
     */
-	public starletTransform(kernel: Matrix, numberOfLayers: number): Array<any>;
+    public starletTransform(kernel: Matrix, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param kernel: Matrix
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
 
+    kernel: Matrix
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3585,14 +4047,16 @@ declare class Image {
     
     ```
     */
-	public starletTransform(kernel: Matrix, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public starletTransform(kernel: Matrix, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param rowVector: Array
-    @param colVector: Array
-    @param numberOfLayers: int
+
 
+    rowVector: Array
+    colVector: Array
+    numberOfLayers: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3602,15 +4066,17 @@ declare class Image {
     
     ```
     */
-	public starletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number): Array<any>;
+    public starletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param rowVector: Array
-    @param colVector: Array
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
+
 
+    rowVector: Array
+    colVector: Array
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3620,13 +4086,15 @@ declare class Image {
     
     ```
     */
-	public starletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public starletTransform(rowVector: Array<any>, colVector: Array<any>, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param rowVector: Vector
-    @param colVector: Vector
-    @param numberOfLayers: int
+
+
+    rowVector: Vector
+    colVector: Vector
+    numberOfLayers: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3637,15 +4105,17 @@ declare class Image {
     
     ```
     */
-	public starletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number): Array<any>;
+    public starletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number): Array<any>;
     /**
     DESCRIPTION
-    @param rowVector: Vector
-    @param colVector: Vector
-    @param numberOfLayers: int
-    @param scalingSequence: int = 0
-    @param layerState: Array
 
+
+    rowVector: Vector
+    colVector: Vector
+    numberOfLayers: int
+    scalingSequence: int = 0
+    layerState: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3655,10 +4125,12 @@ declare class Image {
     
     ```
     */
-	public starletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
+    public starletTransform(rowVector: Vector, colVector: Vector, numberOfLayers: number, scalingSequence?: number /* 0 */, layerState?: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3668,13 +4140,15 @@ declare class Image {
     
     ```
     */
-	public stdDev(): number;
+    public stdDev(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3684,10 +4158,12 @@ declare class Image {
     
     ```
     */
-	public stdDev(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public stdDev(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3697,13 +4173,15 @@ declare class Image {
     
     ```
     */
-	public sumOfSquares(): number;
+    public sumOfSquares(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3713,12 +4191,14 @@ declare class Image {
     
     ```
     */
-	public sumOfSquares(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public sumOfSquares(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param img: Image
+
 
+    img: Image
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3728,10 +4208,12 @@ declare class Image {
     
     ```
     */
-	public swap(img: Image): void;
+    public swap(img: Image): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3741,12 +4223,14 @@ declare class Image {
     
     ```
     */
-	public toFloat32Array(): Float32Array;
+    public toFloat32Array(): Float32Array;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param channel: int = -1
+
 
+    rect: Rect = 0
+    channel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3756,10 +4240,12 @@ declare class Image {
     
     ```
     */
-	public toFloat32Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Float32Array;
+    public toFloat32Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Float32Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3769,12 +4255,14 @@ declare class Image {
     
     ```
     */
-	public toFloat64Array(): Float64Array;
+    public toFloat64Array(): Float64Array;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param channel: int = -1
 
+
+    rect: Rect = 0
+    channel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3784,10 +4272,12 @@ declare class Image {
     
     ```
     */
-	public toFloat64Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Float64Array;
+    public toFloat64Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Float64Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3797,12 +4287,14 @@ declare class Image {
     
     ```
     */
-	public toMatrix(): Matrix;
+    public toMatrix(): Matrix;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param channel: int = -1
 
+
+    rect: Rect = 0
+    channel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3812,10 +4304,12 @@ declare class Image {
     
     ```
     */
-	public toMatrix(rect?: Rect /* 0 */, channel?: number /* -1 */): Matrix;
+    public toMatrix(rect?: Rect /* 0 */, channel?: number /* -1 */): Matrix;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3825,12 +4319,14 @@ declare class Image {
     
     ```
     */
-	public toUint16Array(): Uint16Array;
+    public toUint16Array(): Uint16Array;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param channel: int = -1
+
 
+    rect: Rect = 0
+    channel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3840,10 +4336,12 @@ declare class Image {
     
     ```
     */
-	public toUint16Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Uint16Array;
+    public toUint16Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Uint16Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3853,12 +4351,14 @@ declare class Image {
     
     ```
     */
-	public toUint32Array(): Uint32Array;
+    public toUint32Array(): Uint32Array;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param channel: int = -1
+
 
+    rect: Rect = 0
+    channel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3868,10 +4368,12 @@ declare class Image {
     
     ```
     */
-	public toUint32Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Uint32Array;
+    public toUint32Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Uint32Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3881,11 +4383,13 @@ declare class Image {
     
     ```
     */
-	public toUint8Array(): Uint8Array;
+    public toUint8Array(): Uint8Array;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param channel: int = -1
+
+
+    rect: Rect = 0
+    channel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3896,12 +4400,14 @@ declare class Image {
     
     ```
     */
-	public toUint8Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Uint8Array;
+    public toUint8Array(rect?: Rect /* 0 */, channel?: number /* -1 */): Uint8Array;
 
     /**
     DESCRIPTION
-    @param img: Image
 
+
+    img: Image
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3911,12 +4417,14 @@ declare class Image {
     
     ```
     */
-	public transfer(img: Image): void;
+    public transfer(img: Image): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number
+
+
+    dx: Number
+    dy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -3927,11 +4435,13 @@ declare class Image {
     
     ```
     */
-	public translate(dx: number, dy: number): void;
+    public translate(dx: number, dy: number): void;
     /**
     DESCRIPTION
-    @param ...fill: any[]
 
+
+    ...fill: any[]
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3941,14 +4451,16 @@ declare class Image {
     
     ```
     */
-	public translate(...fill: any[]): void;
+    public translate(...fill: any[]): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number
-    @param fillValues: Array
 
+
+    dx: Number
+    dy: Number
+    fillValues: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3958,10 +4470,12 @@ declare class Image {
     
     ```
     */
-	public translate(dx: number, dy: number, fillValues: Array<any>): void;
+    public translate(dx: number, dy: number, fillValues: Array<any>): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3971,12 +4485,14 @@ declare class Image {
     
     ```
     */
-	public truncate(): void;
+    public truncate(): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
+
 
+    v0: Number = 0
+    v1: Number = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -3986,15 +4502,17 @@ declare class Image {
     
     ```
     */
-	public truncate(v0: number /* 0 */, v1: number /* 1 */): void;
+    public truncate(v0: number /* 0 */, v1: number /* 1 */): void;
     /**
     DESCRIPTION
-    @param v0: Number = 0
-    @param v1: Number = 1
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    v0: Number = 0
+    v1: Number = 1
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4004,10 +4522,12 @@ declare class Image {
     
     ```
     */
-	public truncate(v0: number /* 0 */, v1: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
+    public truncate(v0: number /* 0 */, v1: number /* 1 */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4017,13 +4537,15 @@ declare class Image {
     
     ```
     */
-	public twoSidedAvgDev(): Array<any>;
+    public twoSidedAvgDev(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4034,10 +4556,12 @@ declare class Image {
     
     ```
     */
-	public twoSidedAvgDev(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
+    public twoSidedAvgDev(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4047,16 +4571,18 @@ declare class Image {
     
     ```
     */
-	public twoSidedBWMV(): Array<any>;
+    public twoSidedBWMV(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Array = twoSidedMAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
+
+    center: Number = median()
+    sigma: Array = twoSidedMAD()
+    k: int = 9
+    reducedLength: Boolean = false
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4067,10 +4593,12 @@ declare class Image {
     
     ```
     */
-	public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
+    public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4080,17 +4608,19 @@ declare class Image {
     
     ```
     */
-	public twoSidedBiweightMidvariance(): Array<any>;
+    public twoSidedBiweightMidvariance(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Array = twoSidedMAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
 
+
+    center: Number = median()
+    sigma: Array = twoSidedMAD()
+    k: int = 9
+    reducedLength: Boolean = false
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4100,10 +4630,12 @@ declare class Image {
     
     ```
     */
-	public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
+    public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4113,14 +4645,16 @@ declare class Image {
     
     ```
     */
-	public twoSidedMAD(): Array<any>;
+    public twoSidedMAD(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    center: Number = median()
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4130,10 +4664,12 @@ declare class Image {
     
     ```
     */
-	public twoSidedMAD(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
+    public twoSidedMAD(center?: number /* median() */, rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4143,13 +4679,15 @@ declare class Image {
     
     ```
     */
-	public variance(): number;
+    public variance(): number;
     /**
     DESCRIPTION
-    @param rect: Rect = 0
-    @param firstChannel: int = -1
-    @param lastChannel: int = -1
+
 
+    rect: Rect = 0
+    firstChannel: int = -1
+    lastChannel: int = -1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4159,11 +4697,13 @@ declare class Image {
     
     ```
     */
-	public variance(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
+    public variance(rect?: Rect /* 0 */, firstChannel?: number /* -1 */, lastChannel?: number /* -1 */): number;
 
     /**
     DESCRIPTION
-    @param path: String
+
+
+    path: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4174,7 +4714,7 @@ declare class Image {
     
     ```
     */
-	public writeRawFile(path: string): void;
+    public writeRawFile(path: string): void;
 
 
 
@@ -4183,8 +4723,10 @@ declare class Image {
     //-------------------------
     /**
     DESCRIPTION
-    @param fftA: Image
-    @param fftB: Image
+
+
+    fftA: Image
+    fftB: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4195,12 +4737,14 @@ declare class Image {
     
     ```
     */
-	public static CPSM(fftA: Image, fftB: Image): Image;
+    public static CPSM(fftA: Image, fftB: Image): Image;
 
     /**
     DESCRIPTION
-    @param fftA: Image
-    @param fftB: Image
+
+
+    fftA: Image
+    fftB: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4211,12 +4755,14 @@ declare class Image {
     
     ```
     */
-	public static PCM(fftA: Image, fftB: Image): Image;
+    public static PCM(fftA: Image, fftB: Image): Image;
 
     /**
     DESCRIPTION
-    @param fftA: Image
-    @param fftB: Image
+
+
+    fftA: Image
+    fftB: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4227,11 +4773,13 @@ declare class Image {
     
     ```
     */
-	public static crossPowerSpectrumMatrix(fftA: Image, fftB: Image): Image;
+    public static crossPowerSpectrumMatrix(fftA: Image, fftB: Image): Image;
 
     /**
     DESCRIPTION
-    @param mimeType: String
+
+
+    mimeType: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4242,11 +4790,13 @@ declare class Image {
     
     ```
     */
-	public static fileExtensionsForMimeType(mimeType: string): Array<any>;
+    public static fileExtensionsForMimeType(mimeType: string): Array<any>;
 
     /**
     DESCRIPTION
-    @param pathOrExt: String
+
+
+    pathOrExt: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4257,23 +4807,11 @@ declare class Image {
     
     ```
     */
-	public static mimeTypesForFileExtension(pathOrExt: string): Array<any>;
+    public static mimeTypesForFileExtension(pathOrExt: string): Array<any>;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static newComplexImage(): Image;
-    /**
-    DESCRIPTION
-    @param bitsPerSample: int = 32
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4284,23 +4822,12 @@ declare class Image {
     
     ```
     */
-	public static newComplexImage(bitsPerSample?: number /* 32 */): Image;
+    public static newComplexImage(): Image;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static newFloatImage(): Image;
-    /**
-    DESCRIPTION
-    @param bitsPerSample: int = 32
+
+    bitsPerSample: int = 32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4311,10 +4838,12 @@ declare class Image {
     
     ```
     */
-	public static newFloatImage(bitsPerSample?: number /* 32 */): Image;
+    public static newComplexImage(bitsPerSample?: number /* 32 */): Image;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -4324,10 +4853,12 @@ declare class Image {
     
     ```
     */
-	public static newUIntImage(): Image;
+    public static newFloatImage(): Image;
     /**
     DESCRIPTION
-    @param bitsPerSample: int = 16
+
+
+    bitsPerSample: int = 32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4338,12 +4869,11 @@ declare class Image {
     
     ```
     */
-	public static newUIntImage(bitsPerSample?: number /* 16 */): Image;
+    public static newFloatImage(bitsPerSample?: number /* 32 */): Image;
 
     /**
     DESCRIPTION
-    @param fftA: Image
-    @param fftB: Image
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -4354,7 +4884,41 @@ declare class Image {
     
     ```
     */
-	public static phaseCorrelationMatrix(fftA: Image, fftB: Image): Image;
+    public static newUIntImage(): Image;
+    /**
+    DESCRIPTION
+
+
+    bitsPerSample: int = 16
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static newUIntImage(bitsPerSample?: number /* 16 */): Image;
+
+    /**
+    DESCRIPTION
+
+
+    fftA: Image
+    fftB: Image
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static phaseCorrelationMatrix(fftA: Image, fftB: Image): Image;
 
 
 

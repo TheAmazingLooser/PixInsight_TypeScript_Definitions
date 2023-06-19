@@ -47,7 +47,9 @@ declare class Font {
     //-------------------------
     /**
     DESCRIPTION
-    @param fnt: Font
+
+
+    fnt: Font
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -58,11 +60,13 @@ declare class Font {
     
     ```
     */
-	public assign(fnt: Font): void;
+    public assign(fnt: Font): void;
 
     /**
     DESCRIPTION
-    @param stdFamiliy: int
+
+
+    stdFamiliy: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -73,12 +77,14 @@ declare class Font {
     
     ```
     */
-	public assign(stdFamiliy: number): void;
+    public assign(stdFamiliy: number): void;
     /**
     DESCRIPTION
-    @param stdFamiliy: int
-    @param size: Number
-    @param unit: String = "pt"
+
+
+    stdFamiliy: int
+    size: Number
+    unit: String = "pt"
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -89,42 +95,13 @@ declare class Font {
     
     ```
     */
-	public assign(stdFamiliy: number, size?: number, unit?: string /* "pt" */): void;
-
-    /**
-    DESCRIPTION
-    @param family: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public assign(family: string): void;
-    /**
-    DESCRIPTION
-    @param family: String
-    @param size: Number
-    @param unit: String = "pt"
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public assign(family: string, size?: number, unit?: string /* "pt" */): void;
+    public assign(stdFamiliy: number, size?: number, unit?: string /* "pt" */): void;
 
     /**
     DESCRIPTION
-    @param s: String
+
+
+    family: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -135,11 +112,31 @@ declare class Font {
     
     ```
     */
-	public boundingRect(s: string): Rect;
+    public assign(family: string): void;
+    /**
+    DESCRIPTION
+
+
+    family: String
+    size: Number
+    unit: String = "pt"
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public assign(family: string, size?: number, unit?: string /* "pt" */): void;
 
     /**
     DESCRIPTION
-    @param ch: int
+
+
+    s: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -150,11 +147,13 @@ declare class Font {
     
     ```
     */
-	public isCharDefined(ch: number): boolean;
+    public boundingRect(s: string): Rect;
 
     /**
     DESCRIPTION
-    @param s: String
+
+
+    ch: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -165,11 +164,13 @@ declare class Font {
     
     ```
     */
-	public tightBoundingRect(s: string): Rect;
+    public isCharDefined(ch: number): boolean;
 
     /**
     DESCRIPTION
-    @param s: String
+
+
+    s: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -180,7 +181,24 @@ declare class Font {
     
     ```
     */
-	public width(s: string): number;
+    public tightBoundingRect(s: string): Rect;
+
+    /**
+    DESCRIPTION
+
+
+    s: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public width(s: string): number;
 
 
 
@@ -189,6 +207,8 @@ declare class Font {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -198,10 +218,12 @@ declare class Font {
     
     ```
     */
-	public static families(): Array<any>;
+    public static families(): Array<any>;
     /**
     DESCRIPTION
-    @param writingSystem: int
+
+
+    writingSystem: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -212,26 +234,13 @@ declare class Font {
     
     ```
     */
-	public static families(writingSystem?: number): Array<any>;
-
-    /**
-    DESCRIPTION
-    @param family: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static isFixedPitchFont(family: string): boolean;
+    public static families(writingSystem?: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param family: String
+
+
+    family: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -242,7 +251,24 @@ declare class Font {
     
     ```
     */
-	public static isScalableFont(family: string): boolean;
+    public static isFixedPitchFont(family: string): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    family: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static isScalableFont(family: string): boolean;
 
 
 

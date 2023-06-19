@@ -28,6 +28,8 @@ declare class ElapsedTime {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -37,11 +39,13 @@ declare class ElapsedTime {
     
     ```
     */
-	public reset(): void;
+    public reset(): void;
 
     /**
     DESCRIPTION
-    @param t: ElapsedTime
+
+
+    t: ElapsedTime
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -52,7 +56,7 @@ declare class ElapsedTime {
     
     ```
     */
-	public since(t: ElapsedTime): number;
+    public since(t: ElapsedTime): number;
 
 
 
@@ -61,7 +65,9 @@ declare class ElapsedTime {
     //-------------------------
     /**
     DESCRIPTION
-    @param seconds: Number
+
+
+    seconds: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -72,12 +78,14 @@ declare class ElapsedTime {
     
     ```
     */
-	public static toString(seconds: number): string;
+    public static toString(seconds: number): string;
     /**
     DESCRIPTION
-    @param seconds: Number
-    @param width: int = 0
-    @param precision: int = 3
+
+
+    seconds: Number
+    width: int = 0
+    precision: int = 3
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -88,7 +96,7 @@ declare class ElapsedTime {
     
     ```
     */
-	public static toString(seconds: number, width?: number /* 0 */, precision?: number /* 3 */): string;
+    public static toString(seconds: number, width?: number /* 0 */, precision?: number /* 3 */): string;
 
 
 

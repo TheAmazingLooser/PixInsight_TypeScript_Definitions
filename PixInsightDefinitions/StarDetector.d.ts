@@ -36,7 +36,9 @@ declare class StarDetector {
     //-------------------------
     /**
     DESCRIPTION
-    @param map: Image
+
+
+    map: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -47,11 +49,13 @@ declare class StarDetector {
     
     ```
     */
-	public getStructureMap(map: Image): void;
+    public getStructureMap(map: Image): void;
 
     /**
     DESCRIPTION
-    @param image: Image
+
+
+    image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -62,11 +66,13 @@ declare class StarDetector {
     
     ```
     */
-	public stars(image: Image): Array<any>;
+    public stars(image: Image): Array<any>;
 
     /**
     DESCRIPTION
-    @param image: Image
+
+
+    image: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -77,11 +83,13 @@ declare class StarDetector {
     
     ```
     */
-	public test(image: Image): void;
+    public test(image: Image): void;
     /**
     DESCRIPTION
-    @param image: Image
-    @param createStarMaskWindow: Boolean = false
+
+
+    image: Image
+    createStarMaskWindow: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -92,7 +100,7 @@ declare class StarDetector {
     
     ```
     */
-	public test(image: Image, createStarMaskWindow?: boolean /* false */): void;
+    public test(image: Image, createStarMaskWindow?: boolean /* false */): void;
 
 
 

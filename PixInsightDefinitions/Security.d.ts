@@ -29,6 +29,8 @@ declare class Security {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -38,14 +40,16 @@ declare class Security {
     
     ```
     */
-	public static certifiedDevelopers(): Array<any>;
+    public static certifiedDevelopers(): Array<any>;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param newPassword: String|ByteArray
-    @param filePath: String
-    @param password: String|ByteArray
+
+
+    outputFilePath: String
+    newPassword: String|ByteArray
+    filePath: String
+    password: String|ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -56,15 +60,17 @@ declare class Security {
     
     ```
     */
-	public static exportSigningKeysFile(outputFilePath: string, newPassword: string | ByteArray, filePath: string, password: string | ByteArray): void;
+    public static exportSigningKeysFile(outputFilePath: string, newPassword: string | ByteArray, filePath: string, password: string | ByteArray): void;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param inputFilePath: String
-    @param developerId: String
-    @param publicKey: ByteArray
-    @param privateKey: ByteArray
+
+
+    outputFilePath: String
+    inputFilePath: String
+    developerId: String
+    publicKey: ByteArray
+    privateKey: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -75,14 +81,16 @@ declare class Security {
     
     ```
     */
-	public static generateCodeSignatureFile(outputFilePath: string, inputFilePath: string, developerId: string, publicKey: ByteArray, privateKey: ByteArray): void;
+    public static generateCodeSignatureFile(outputFilePath: string, inputFilePath: string, developerId: string, publicKey: ByteArray, privateKey: ByteArray): void;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param inputFilePath: String
-    @param keysFilePath: String
-    @param password: String|ByteArray
+
+
+    outputFilePath: String
+    inputFilePath: String
+    keysFilePath: String
+    password: String|ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -93,12 +101,14 @@ declare class Security {
     
     ```
     */
-	public static generateCodeSignatureFile(outputFilePath: string, inputFilePath: string, keysFilePath: string, password: string | ByteArray): void;
+    public static generateCodeSignatureFile(outputFilePath: string, inputFilePath: string, keysFilePath: string, password: string | ByteArray): void;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param password: String|ByteArray
+
+
+    outputFilePath: String
+    password: String|ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -109,16 +119,18 @@ declare class Security {
     
     ```
     */
-	public static generateLocalSigningKeysFile(outputFilePath: string, password: string | ByteArray): void;
+    public static generateLocalSigningKeysFile(outputFilePath: string, password: string | ByteArray): void;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param scriptFilePath: String
-    @param entitlements: Array
-    @param developerId: String
-    @param publicKey: ByteArray
-    @param privateKey: ByteArray
+
+
+    outputFilePath: String
+    scriptFilePath: String
+    entitlements: Array
+    developerId: String
+    publicKey: ByteArray
+    privateKey: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -129,15 +141,17 @@ declare class Security {
     
     ```
     */
-	public static generateScriptSignatureFile(outputFilePath: string, scriptFilePath: string, entitlements: Array<any>, developerId: string, publicKey: ByteArray, privateKey: ByteArray): void;
+    public static generateScriptSignatureFile(outputFilePath: string, scriptFilePath: string, entitlements: Array<any>, developerId: string, publicKey: ByteArray, privateKey: ByteArray): void;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param scriptFilePath: String
-    @param entitlements: Array
-    @param keysFilePath: String
-    @param password: String|ByteArray
+
+
+    outputFilePath: String
+    scriptFilePath: String
+    entitlements: Array
+    keysFilePath: String
+    password: String|ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -148,13 +162,15 @@ declare class Security {
     
     ```
     */
-	public static generateScriptSignatureFile(outputFilePath: string, scriptFilePath: string, entitlements: Array<any>, keysFilePath: string, password: string | ByteArray): void;
+    public static generateScriptSignatureFile(outputFilePath: string, scriptFilePath: string, entitlements: Array<any>, keysFilePath: string, password: string | ByteArray): void;
 
     /**
     DESCRIPTION
-    @param outputFilePath: String
-    @param developerId: String
-    @param password: String|ByteArray
+
+
+    outputFilePath: String
+    developerId: String
+    password: String|ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -165,14 +181,16 @@ declare class Security {
     
     ```
     */
-	public static generateSigningKeysFile(outputFilePath: string, developerId: string, password: string | ByteArray): void;
+    public static generateSigningKeysFile(outputFilePath: string, developerId: string, password: string | ByteArray): void;
 
     /**
     DESCRIPTION
-    @param filePath: String
-    @param developerId: String
-    @param publicKey: ByteArray
-    @param privateKey: ByteArray
+
+
+    filePath: String
+    developerId: String
+    publicKey: ByteArray
+    privateKey: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -183,13 +201,15 @@ declare class Security {
     
     ```
     */
-	public static generateXMLSignature(filePath: string, developerId: string, publicKey: ByteArray, privateKey: ByteArray): void;
+    public static generateXMLSignature(filePath: string, developerId: string, publicKey: ByteArray, privateKey: ByteArray): void;
 
     /**
     DESCRIPTION
-    @param filePath: String
-    @param keysFilePath: String
-    @param password: String|ByteArray
+
+
+    filePath: String
+    keysFilePath: String
+    password: String|ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -200,11 +220,13 @@ declare class Security {
     
     ```
     */
-	public static generateXMLSignature(filePath: string, keysFilePath: string, password: string | ByteArray): void;
+    public static generateXMLSignature(filePath: string, keysFilePath: string, password: string | ByteArray): void;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -215,11 +237,13 @@ declare class Security {
     
     ```
     */
-	public static getCodeSignature(filePath: string): Object;
+    public static getCodeSignature(filePath: string): Object;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -230,11 +254,13 @@ declare class Security {
     
     ```
     */
-	public static getScriptSignature(filePath: string): Object;
+    public static getScriptSignature(filePath: string): Object;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -245,11 +271,13 @@ declare class Security {
     
     ```
     */
-	public static getXMLSignature(filePath: string): Object;
+    public static getXMLSignature(filePath: string): Object;
 
     /**
     DESCRIPTION
-    @param entitlement: String
+
+
+    entitlement: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -260,13 +288,15 @@ declare class Security {
     
     ```
     */
-	public static haveEntitlement(entitlement: string): boolean;
+    public static haveEntitlement(entitlement: string): boolean;
 
     /**
     DESCRIPTION
-    @param filePath: String
-    @param password: String|ByteArray
-    @param publicKeyOnly: Boolean = false
+
+
+    filePath: String
+    password: String|ByteArray
+    publicKeyOnly: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -277,13 +307,15 @@ declare class Security {
     
     ```
     */
-	public static loadSigningKeysFile(filePath: string, password: string | ByteArray, publicKeyOnly: boolean /* false */): Object;
+    public static loadSigningKeysFile(filePath: string, password: string | ByteArray, publicKeyOnly: boolean /* false */): Object;
 
     /**
     DESCRIPTION
-    @param developerId: String
-    @param publicKey: ByteArray
-    @param contactEmail: String
+
+
+    developerId: String
+    publicKey: ByteArray
+    contactEmail: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -294,16 +326,18 @@ declare class Security {
     
     ```
     */
-	public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string): void;
+    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string): void;
     /**
     DESCRIPTION
-    @param developerId: String
-    @param publicKey: ByteArray
-    @param contactEmail: String
-    @param publicEmail: String
-    @param url: String
-    @param name: String
-    @param info: String
+
+
+    developerId: String
+    publicKey: ByteArray
+    contactEmail: String
+    publicEmail: String
+    url: String
+    name: String
+    info: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -314,48 +348,15 @@ declare class Security {
     
     ```
     */
-	public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail?: string, url?: string, name?: string, info?: string): void;
-
-    /**
-    DESCRIPTION
-    @param keysFilePath: String
-    @param password: String|ByteArray
-    @param contactEmail: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string): void;
-    /**
-    DESCRIPTION
-    @param keysFilePath: String
-    @param password: String|ByteArray
-    @param contactEmail: String
-    @param publicEmail: String
-    @param url: String
-    @param name: String
-    @param info: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail?: string, url?: string, name?: string, info?: string): void;
+    public static submitCertifiedDeveloperData(developerId: string, publicKey: ByteArray, contactEmail: string, publicEmail?: string, url?: string, name?: string, info?: string): void;
 
     /**
     DESCRIPTION
-    @param password: String|ByteArray
+
+
+    keysFilePath: String
+    password: String|ByteArray
+    contactEmail: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -366,7 +367,46 @@ declare class Security {
     
     ```
     */
-	public static validPassword(password: string | ByteArray): boolean;
+    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string): void;
+    /**
+    DESCRIPTION
+
+
+    keysFilePath: String
+    password: String|ByteArray
+    contactEmail: String
+    publicEmail: String
+    url: String
+    name: String
+    info: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static submitCertifiedDeveloperDataWithSigningKeysFile(keysFilePath: string, password: string | ByteArray, contactEmail: string, publicEmail?: string, url?: string, name?: string, info?: string): void;
+
+    /**
+    DESCRIPTION
+
+
+    password: String|ByteArray
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static validPassword(password: string | ByteArray): boolean;
 
 
 

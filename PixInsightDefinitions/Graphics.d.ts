@@ -45,8 +45,10 @@ declare class Graphics {
     //-------------------------
     /**
     DESCRIPTION
-    @param bmp: Bitmap
 
+
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -56,11 +58,13 @@ declare class Graphics {
     
     ```
     */
-	public begin(bmp: Bitmap): void;
+    public begin(bmp: Bitmap): void;
 
     /**
     DESCRIPTION
-    @param svg: SVG
+
+
+    svg: SVG
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -71,12 +75,14 @@ declare class Graphics {
     
     ```
     */
-	public begin(svg: SVG): void;
+    public begin(svg: SVG): void;
 
     /**
     DESCRIPTION
-    @param pdf: PDF
 
+
+    pdf: PDF
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -86,12 +92,14 @@ declare class Graphics {
     
     ```
     */
-	public begin(pdf: PDF): void;
+    public begin(pdf: PDF): void;
 
     /**
     DESCRIPTION
-    @param ctr: Control
 
+
+    ctr: Control
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -101,15 +109,17 @@ declare class Graphics {
     
     ```
     */
-	public begin(ctr: Control): void;
+    public begin(ctr: Control): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -119,16 +129,18 @@ declare class Graphics {
     
     ```
     */
-	public drawArc(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public drawArc(center: Point, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -138,12 +150,14 @@ declare class Graphics {
     
     ```
     */
-	public drawArc(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public drawArc(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param p: Point
-    @param bmp: Bitmap
+
+
+    p: Point
+    bmp: Bitmap
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -154,14 +168,16 @@ declare class Graphics {
     
     ```
     */
-	public drawBitmap(p: Point, bmp: Bitmap): void;
+    public drawBitmap(p: Point, bmp: Bitmap): void;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
-    @param bmp: Bitmap
 
+
+    x: int
+    y: int
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -171,14 +187,16 @@ declare class Graphics {
     
     ```
     */
-	public drawBitmap(x: number, y: number, bmp: Bitmap): void;
+    public drawBitmap(x: number, y: number, bmp: Bitmap): void;
 
     /**
     DESCRIPTION
-    @param p: Point
-    @param bmp: Bitmap
-    @param r: Rect
 
+
+    p: Point
+    bmp: Bitmap
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -188,18 +206,20 @@ declare class Graphics {
     
     ```
     */
-	public drawBitmapRect(p: Point, bmp: Bitmap, r: Rect): void;
+    public drawBitmapRect(p: Point, bmp: Bitmap, r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
-    @param bmp: Bitmap
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
 
+    x: int
+    y: int
+    bmp: Bitmap
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -209,15 +229,17 @@ declare class Graphics {
     
     ```
     */
-	public drawBitmapRect(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
+    public drawBitmapRect(x: number, y: number, bmp: Bitmap, x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -227,15 +249,17 @@ declare class Graphics {
     
     ```
     */
-	public drawChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public drawChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
+
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -246,13 +270,15 @@ declare class Graphics {
     
     ```
     */
-	public drawChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public drawChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
 
+
+    center: Point
+    radius: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -262,14 +288,16 @@ declare class Graphics {
     
     ```
     */
-	public drawCircle(center: Point, radius: number): void;
+    public drawCircle(center: Point, radius: number): void;
 
     /**
     DESCRIPTION
-    @param xc: int
-    @param yc: int
-    @param radius: int
 
+
+    xc: int
+    yc: int
+    radius: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -279,12 +307,14 @@ declare class Graphics {
     
     ```
     */
-	public drawCircle(xc: number, yc: number, radius: number): void;
+    public drawCircle(xc: number, yc: number, radius: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -294,15 +324,17 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipse(r: Rect): void;
+    public drawEllipse(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -312,13 +344,15 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipse(x0: number, y0: number, x1: number, y1: number): void;
+    public drawEllipse(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
+
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -329,17 +363,19 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipticArc(r: Rect, startRadians: number, spanRadians: number): void;
+    public drawEllipticArc(r: Rect, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -349,14 +385,16 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipticArc(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public drawEllipticArc(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -366,17 +404,19 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
+    public drawEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -386,14 +426,16 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public drawEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -403,17 +445,19 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
+    public drawEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -423,13 +467,15 @@ declare class Graphics {
     
     ```
     */
-	public drawEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public drawEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param p0: Point
-    @param p1: Point
+
 
+    p0: Point
+    p1: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -439,14 +485,16 @@ declare class Graphics {
     
     ```
     */
-	public drawLine(p0: Point, p1: Point): void;
+    public drawLine(p0: Point, p1: Point): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -457,15 +505,17 @@ declare class Graphics {
     
     ```
     */
-	public drawLine(x0: number, y0: number, x1: number, y1: number): void;
+    public drawLine(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -475,16 +525,18 @@ declare class Graphics {
     
     ```
     */
-	public drawPie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public drawPie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -494,12 +546,14 @@ declare class Graphics {
     
     ```
     */
-	public drawPie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public drawPie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -509,13 +563,15 @@ declare class Graphics {
     
     ```
     */
-	public drawPoint(p: Point): void;
+    public drawPoint(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
+
 
+    x: int
+    y: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -525,11 +581,13 @@ declare class Graphics {
     
     ```
     */
-	public drawPoint(x: number, y: number): void;
+    public drawPoint(x: number, y: number): void;
 
     /**
     DESCRIPTION
-    @param points: Array
+
+
+    points: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -540,12 +598,14 @@ declare class Graphics {
     
     ```
     */
-	public drawPolygon(points: Array<any>): void;
+    public drawPolygon(points: Array<any>): void;
     /**
     DESCRIPTION
-    @param points: Array
-    @param fillRule: int
 
+
+    points: Array
+    fillRule: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -555,12 +615,14 @@ declare class Graphics {
     
     ```
     */
-	public drawPolygon(points: Array<any>, fillRule?: number): void;
+    public drawPolygon(points: Array<any>, fillRule?: number): void;
 
     /**
     DESCRIPTION
-    @param points: Array
 
+
+    points: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -570,12 +632,14 @@ declare class Graphics {
     
     ```
     */
-	public drawPolyline(points: Array<any>): void;
+    public drawPolyline(points: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -585,15 +649,17 @@ declare class Graphics {
     
     ```
     */
-	public drawRect(r: Rect): void;
+    public drawRect(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -603,11 +669,13 @@ declare class Graphics {
     
     ```
     */
-	public drawRect(x0: number, y0: number, x1: number, y1: number): void;
+    public drawRect(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
+
+    r: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -618,13 +686,15 @@ declare class Graphics {
     
     ```
     */
-	public drawRoundedRect(r: Rect): void;
+    public drawRoundedRect(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param rx: Number = 25
-    @param ry: Number = 25
 
+
+    r: Rect
+    rx: Number = 25
+    ry: Number = 25
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -634,15 +704,17 @@ declare class Graphics {
     
     ```
     */
-	public drawRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */): void;
+    public drawRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -652,16 +724,18 @@ declare class Graphics {
     
     ```
     */
-	public drawRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
+    public drawRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param rx: Number = 25
-    @param ry: Number = 25
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    rx: Number = 25
+    ry: Number = 25
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -671,13 +745,15 @@ declare class Graphics {
     
     ```
     */
-	public drawRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */): void;
+    public drawRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param bmp: Bitmap
+
 
+    r: Rect
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -687,15 +763,17 @@ declare class Graphics {
     
     ```
     */
-	public drawScaledBitmap(r: Rect, bmp: Bitmap): void;
+    public drawScaledBitmap(r: Rect, bmp: Bitmap): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param bmp: Bitmap
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    bmp: Bitmap
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -706,14 +784,16 @@ declare class Graphics {
     
     ```
     */
-	public drawScaledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap): void;
+    public drawScaledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap): void;
 
     /**
     DESCRIPTION
-    @param rdst: Rect
-    @param bmp: Bitmap
-    @param rsrc: Rect
 
+
+    rdst: Rect
+    bmp: Bitmap
+    rsrc: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -723,19 +803,21 @@ declare class Graphics {
     
     ```
     */
-	public drawScaledBitmapRect(rdst: Rect, bmp: Bitmap, rsrc: Rect): void;
+    public drawScaledBitmapRect(rdst: Rect, bmp: Bitmap, rsrc: Rect): void;
 
     /**
     DESCRIPTION
-    @param dx0: int
-    @param dy0: int
-    @param dx1: int
-    @param dy1: int
-    @param bmp: Bitmap
-    @param sx0: int
-    @param sy0: int
-    @param sx1: int
-    @param sy1: int
+
+
+    dx0: int
+    dy0: int
+    dx1: int
+    dy1: int
+    bmp: Bitmap
+    sx0: int
+    sy0: int
+    sx1: int
+    sy1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -746,13 +828,15 @@ declare class Graphics {
     
     ```
     */
-	public drawScaledBitmapRect(dx0: number, dy0: number, dx1: number, dy1: number, bmp: Bitmap, sx0: number, sy0: number, sx1: number, sy1: number): void;
+    public drawScaledBitmapRect(dx0: number, dy0: number, dx1: number, dy1: number, bmp: Bitmap, sx0: number, sy0: number, sx1: number, sy1: number): void;
 
     /**
     DESCRIPTION
-    @param p: Point
-    @param text: String
 
+
+    p: Point
+    text: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -762,14 +846,16 @@ declare class Graphics {
     
     ```
     */
-	public drawText(p: Point, text: string): void;
+    public drawText(p: Point, text: string): void;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
-    @param text: String
 
+
+    x: int
+    y: int
+    text: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -779,13 +865,15 @@ declare class Graphics {
     
     ```
     */
-	public drawText(x: number, y: number, text: string): void;
+    public drawText(x: number, y: number, text: string): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param text: String
+
 
+    r: Rect
+    text: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -795,13 +883,15 @@ declare class Graphics {
     
     ```
     */
-	public drawTextRect(r: Rect, text: string): void;
+    public drawTextRect(r: Rect, text: string): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param text: String
-    @param align: int
+
 
+    r: Rect
+    text: String
+    align: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -811,15 +901,17 @@ declare class Graphics {
     
     ```
     */
-	public drawTextRect(r: Rect, text: string, align?: number): void;
+    public drawTextRect(r: Rect, text: string, align?: number): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param text: String
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    text: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -830,16 +922,18 @@ declare class Graphics {
     
     ```
     */
-	public drawTextRect(x0: number, y0: number, x1: number, y1: number, text: string): void;
+    public drawTextRect(x0: number, y0: number, x1: number, y1: number, text: string): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param text: String
-    @param align: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    text: String
+    align: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -849,13 +943,15 @@ declare class Graphics {
     
     ```
     */
-	public drawTextRect(x0: number, y0: number, x1: number, y1: number, text: string, align?: number): void;
+    public drawTextRect(x0: number, y0: number, x1: number, y1: number, text: string, align?: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param bmp: Bitmap
 
+
+    r: Rect
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -865,13 +961,15 @@ declare class Graphics {
     
     ```
     */
-	public drawTiledBitmap(r: Rect, bmp: Bitmap): void;
+    public drawTiledBitmap(r: Rect, bmp: Bitmap): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param bmp: Bitmap
-    @param origin: Point = 0
+
 
+    r: Rect
+    bmp: Bitmap
+    origin: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -881,16 +979,18 @@ declare class Graphics {
     
     ```
     */
-	public drawTiledBitmap(r: Rect, bmp: Bitmap, origin?: Point /* 0 */): void;
+    public drawTiledBitmap(r: Rect, bmp: Bitmap, origin?: Point /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param bmp: Bitmap
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -900,16 +1000,18 @@ declare class Graphics {
     
     ```
     */
-	public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap): void;
+    public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param bmp: Bitmap
-    @param ox: int = 0
-    @param oy: int = 0
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    bmp: Bitmap
+    ox: int = 0
+    oy: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -920,10 +1022,12 @@ declare class Graphics {
     
     ```
     */
-	public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap, ox: number /* 0 */, oy: number /* 0 */): void;
+    public drawTiledBitmap(x0: number, y0: number, x1: number, y1: number, bmp: Bitmap, ox: number /* 0 */, oy: number /* 0 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -933,15 +1037,17 @@ declare class Graphics {
     
     ```
     */
-	public end(): void;
+    public end(): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -951,16 +1057,18 @@ declare class Graphics {
     
     ```
     */
-	public eraseChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public eraseChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -970,13 +1078,15 @@ declare class Graphics {
     
     ```
     */
-	public eraseChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public eraseChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
+
 
+    center: Point
+    radius: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -986,13 +1096,15 @@ declare class Graphics {
     
     ```
     */
-	public eraseCircle(center: Point, radius: number): void;
+    public eraseCircle(center: Point, radius: number): void;
 
     /**
     DESCRIPTION
-    @param xc: int
-    @param yc: int
-    @param radius: int
+
+
+    xc: int
+    yc: int
+    radius: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1003,12 +1115,14 @@ declare class Graphics {
     
     ```
     */
-	public eraseCircle(xc: number, yc: number, radius: number): void;
+    public eraseCircle(xc: number, yc: number, radius: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1018,15 +1132,17 @@ declare class Graphics {
     
     ```
     */
-	public eraseEllipse(r: Rect): void;
+    public eraseEllipse(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1036,14 +1152,16 @@ declare class Graphics {
     
     ```
     */
-	public eraseEllipse(x0: number, y0: number, x1: number, y1: number): void;
+    public eraseEllipse(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1053,17 +1171,19 @@ declare class Graphics {
     
     ```
     */
-	public eraseEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
+    public eraseEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1073,13 +1193,15 @@ declare class Graphics {
     
     ```
     */
-	public eraseEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public eraseEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
+
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1090,17 +1212,19 @@ declare class Graphics {
     
     ```
     */
-	public eraseEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
+    public eraseEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1110,15 +1234,17 @@ declare class Graphics {
     
     ```
     */
-	public eraseEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public eraseEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1128,16 +1254,18 @@ declare class Graphics {
     
     ```
     */
-	public erasePie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public erasePie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1147,12 +1275,14 @@ declare class Graphics {
     
     ```
     */
-	public erasePie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public erasePie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
 
     /**
     DESCRIPTION
-    @param points: Array
+
 
+    points: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1162,11 +1292,13 @@ declare class Graphics {
     
     ```
     */
-	public erasePolygon(points: Array<any>): void;
+    public erasePolygon(points: Array<any>): void;
     /**
     DESCRIPTION
-    @param points: Array
-    @param fillRule: int
+
+
+    points: Array
+    fillRule: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1177,12 +1309,14 @@ declare class Graphics {
     
     ```
     */
-	public erasePolygon(points: Array<any>, fillRule?: number): void;
+    public erasePolygon(points: Array<any>, fillRule?: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1192,15 +1326,17 @@ declare class Graphics {
     
     ```
     */
-	public eraseRect(r: Rect): void;
+    public eraseRect(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1210,12 +1346,14 @@ declare class Graphics {
     
     ```
     */
-	public eraseRect(x0: number, y0: number, x1: number, y1: number): void;
+    public eraseRect(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1225,13 +1363,15 @@ declare class Graphics {
     
     ```
     */
-	public eraseRoundedRect(r: Rect): void;
+    public eraseRoundedRect(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param rx: Number = 25
-    @param ry: Number = 25
+
 
+    r: Rect
+    rx: Number = 25
+    ry: Number = 25
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1241,14 +1381,16 @@ declare class Graphics {
     
     ```
     */
-	public eraseRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */): void;
+    public eraseRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1259,16 +1401,18 @@ declare class Graphics {
     
     ```
     */
-	public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
+    public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param rx: Number = 25
-    @param ry: Number = 25
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    rx: Number = 25
+    ry: Number = 25
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1278,15 +1422,17 @@ declare class Graphics {
     
     ```
     */
-	public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */): void;
+    public eraseRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1296,15 +1442,17 @@ declare class Graphics {
     
     ```
     */
-	public fillChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public fillChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
+
 
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1314,16 +1462,18 @@ declare class Graphics {
     
     ```
     */
-	public fillChord(center: Point, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillChord(center: Point, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1333,15 +1483,17 @@ declare class Graphics {
     
     ```
     */
-	public fillChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public fillChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
+
+
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1352,13 +1504,15 @@ declare class Graphics {
     
     ```
     */
-	public fillChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
 
+
+    center: Point
+    radius: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1368,13 +1522,15 @@ declare class Graphics {
     
     ```
     */
-	public fillCircle(center: Point, radius: number): void;
+    public fillCircle(center: Point, radius: number): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param brush: Brush
 
+
+    center: Point
+    radius: int
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1384,14 +1540,16 @@ declare class Graphics {
     
     ```
     */
-	public fillCircle(center: Point, radius: number, brush?: Brush): void;
+    public fillCircle(center: Point, radius: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param xc: int
-    @param yc: int
-    @param radius: int
+
 
+    xc: int
+    yc: int
+    radius: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1401,14 +1559,16 @@ declare class Graphics {
     
     ```
     */
-	public fillCircle(xc: number, yc: number, radius: number): void;
+    public fillCircle(xc: number, yc: number, radius: number): void;
     /**
     DESCRIPTION
-    @param xc: int
-    @param yc: int
-    @param radius: int
-    @param brush: Brush
+
 
+    xc: int
+    yc: int
+    radius: int
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1418,12 +1578,14 @@ declare class Graphics {
     
     ```
     */
-	public fillCircle(xc: number, yc: number, radius: number, brush?: Brush): void;
+    public fillCircle(xc: number, yc: number, radius: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1433,12 +1595,14 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipse(r: Rect): void;
+    public fillEllipse(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param brush: Brush
+
 
+    r: Rect
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1448,14 +1612,16 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipse(r: Rect, brush?: Brush): void;
+    public fillEllipse(r: Rect, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1466,15 +1632,17 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipse(x0: number, y0: number, x1: number, y1: number): void;
+    public fillEllipse(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param brush: Brush
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1484,14 +1652,16 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipse(x0: number, y0: number, x1: number, y1: number, brush?: Brush): void;
+    public fillEllipse(x0: number, y0: number, x1: number, y1: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1501,14 +1671,16 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
+    public fillEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
+
 
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1518,17 +1690,19 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticChord(r: Rect, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillEllipticChord(r: Rect, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1538,16 +1712,18 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public fillEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1558,14 +1734,16 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1575,14 +1753,16 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
+    public fillEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1592,17 +1772,19 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticPie(r: Rect, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillEllipticPie(r: Rect, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1612,17 +1794,19 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public fillEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1632,14 +1816,16 @@ declare class Graphics {
     
     ```
     */
-	public fillEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1650,15 +1836,17 @@ declare class Graphics {
     
     ```
     */
-	public fillPie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public fillPie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1668,16 +1856,18 @@ declare class Graphics {
     
     ```
     */
-	public fillPie(center: Point, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillPie(center: Point, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1687,16 +1877,18 @@ declare class Graphics {
     
     ```
     */
-	public fillPie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public fillPie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param brush: Brush
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1706,12 +1898,14 @@ declare class Graphics {
     
     ```
     */
-	public fillPie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
+    public fillPie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param points: Array
+
 
+    points: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1721,12 +1915,14 @@ declare class Graphics {
     
     ```
     */
-	public fillPolygon(points: Array<any>): void;
+    public fillPolygon(points: Array<any>): void;
     /**
     DESCRIPTION
-    @param points: Array
-    @param fillRule: int
-    @param brush: Brush
+
+
+    points: Array
+    fillRule: int
+    brush: Brush
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1737,12 +1933,14 @@ declare class Graphics {
     
     ```
     */
-	public fillPolygon(points: Array<any>, fillRule?: number, brush?: Brush): void;
+    public fillPolygon(points: Array<any>, fillRule?: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1752,11 +1950,13 @@ declare class Graphics {
     
     ```
     */
-	public fillRect(r: Rect): void;
+    public fillRect(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param brush: Brush
+
+
+    r: Rect
+    brush: Brush
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1767,15 +1967,17 @@ declare class Graphics {
     
     ```
     */
-	public fillRect(r: Rect, brush?: Brush): void;
+    public fillRect(r: Rect, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1785,15 +1987,17 @@ declare class Graphics {
     
     ```
     */
-	public fillRect(x0: number, y0: number, x1: number, y1: number): void;
+    public fillRect(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param brush: Brush
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1803,12 +2007,14 @@ declare class Graphics {
     
     ```
     */
-	public fillRect(x0: number, y0: number, x1: number, y1: number, brush?: Brush): void;
+    public fillRect(x0: number, y0: number, x1: number, y1: number, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1818,14 +2024,16 @@ declare class Graphics {
     
     ```
     */
-	public fillRoundedRect(r: Rect): void;
+    public fillRoundedRect(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param rx: Number = 25
-    @param ry: Number = 25
-    @param brush: Brush
+
 
+    r: Rect
+    rx: Number = 25
+    ry: Number = 25
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1835,14 +2043,16 @@ declare class Graphics {
     
     ```
     */
-	public fillRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */, brush?: Brush): void;
+    public fillRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1853,17 +2063,19 @@ declare class Graphics {
     
     ```
     */
-	public fillRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
+    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param rx: Number = 25
-    @param ry: Number = 25
-    @param brush: Brush
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    rx: Number = 25
+    ry: Number = 25
+    brush: Brush
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1873,12 +2085,14 @@ declare class Graphics {
     
     ```
     */
-	public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */, brush?: Brush): void;
+    public fillRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */, brush?: Brush): void;
 
     /**
     DESCRIPTION
-    @param T: Matrix
 
+
+    T: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1888,10 +2102,12 @@ declare class Graphics {
     
     ```
     */
-	public multiplyTransformation(T: Matrix): void;
+    public multiplyTransformation(T: Matrix): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1901,10 +2117,12 @@ declare class Graphics {
     
     ```
     */
-	public popState(): void;
+    public popState(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1914,10 +2132,12 @@ declare class Graphics {
     
     ```
     */
-	public pushState(): void;
+    public pushState(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1927,12 +2147,14 @@ declare class Graphics {
     
     ```
     */
-	public resetTransformation(): void;
+    public resetTransformation(): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
 
+
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1942,12 +2164,14 @@ declare class Graphics {
     
     ```
     */
-	public rotateTransformation(angleRadians: number): void;
+    public rotateTransformation(angleRadians: number): void;
 
     /**
     DESCRIPTION
-    @param sx: Number
 
+
+    sx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1957,12 +2181,14 @@ declare class Graphics {
     
     ```
     */
-	public scaleTransformation(sx: number): void;
+    public scaleTransformation(sx: number): void;
     /**
     DESCRIPTION
-    @param sx: Number
-    @param sy: Number
+
 
+    sx: Number
+    sy: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1972,12 +2198,14 @@ declare class Graphics {
     
     ```
     */
-	public scaleTransformation(sx: number, sy?: number): void;
+    public scaleTransformation(sx: number, sy?: number): void;
 
     /**
     DESCRIPTION
-    @param sx: Number
+
 
+    sx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1987,11 +2215,13 @@ declare class Graphics {
     
     ```
     */
-	public shearTransformation(sx: number): void;
+    public shearTransformation(sx: number): void;
     /**
     DESCRIPTION
-    @param sx: Number
-    @param sy: Number
+
+
+    sx: Number
+    sy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2002,15 +2232,17 @@ declare class Graphics {
     
     ```
     */
-	public shearTransformation(sx: number, sy?: number): void;
+    public shearTransformation(sx: number, sy?: number): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2020,15 +2252,17 @@ declare class Graphics {
     
     ```
     */
-	public strokeChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public strokeChord(center: Point, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
 
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2038,16 +2272,18 @@ declare class Graphics {
     
     ```
     */
-	public strokeChord(center: Point, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokeChord(center: Point, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2057,16 +2293,18 @@ declare class Graphics {
     
     ```
     */
-	public strokeChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public strokeChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
+
 
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2076,13 +2314,15 @@ declare class Graphics {
     
     ```
     */
-	public strokeChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokeChord(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
+
 
+    center: Point
+    radius: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2092,13 +2332,15 @@ declare class Graphics {
     
     ```
     */
-	public strokeCircle(center: Point, radius: number): void;
+    public strokeCircle(center: Point, radius: number): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param pen: Pen
+
 
+    center: Point
+    radius: int
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2108,13 +2350,15 @@ declare class Graphics {
     
     ```
     */
-	public strokeCircle(center: Point, radius: number, pen?: Pen): void;
+    public strokeCircle(center: Point, radius: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param xc: int
-    @param yc: int
-    @param radius: int
+
+
+    xc: int
+    yc: int
+    radius: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2125,14 +2369,16 @@ declare class Graphics {
     
     ```
     */
-	public strokeCircle(xc: number, yc: number, radius: number): void;
+    public strokeCircle(xc: number, yc: number, radius: number): void;
     /**
     DESCRIPTION
-    @param xc: int
-    @param yc: int
-    @param radius: int
-    @param pen: Pen
 
+
+    xc: int
+    yc: int
+    radius: int
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2142,12 +2388,14 @@ declare class Graphics {
     
     ```
     */
-	public strokeCircle(xc: number, yc: number, radius: number, pen?: Pen): void;
+    public strokeCircle(xc: number, yc: number, radius: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2157,12 +2405,14 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipse(r: Rect): void;
+    public strokeEllipse(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param pen: Pen
+
 
+    r: Rect
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2172,15 +2422,17 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipse(r: Rect, pen?: Pen): void;
+    public strokeEllipse(r: Rect, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2190,14 +2442,16 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipse(x0: number, y0: number, x1: number, y1: number): void;
+    public strokeEllipse(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param pen: Pen
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    pen: Pen
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2208,14 +2462,16 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipse(x0: number, y0: number, x1: number, y1: number, pen?: Pen): void;
+    public strokeEllipse(x0: number, y0: number, x1: number, y1: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2225,14 +2481,16 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
+    public strokeEllipticChord(r: Rect, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2242,17 +2500,19 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticChord(r: Rect, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokeEllipticChord(r: Rect, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2262,17 +2522,19 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public strokeEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2282,13 +2544,15 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokeEllipticChord(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
+
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2299,14 +2563,16 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
+    public strokeEllipticPie(r: Rect, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
 
+
+    r: Rect
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2316,17 +2582,19 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticPie(r: Rect, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokeEllipticPie(r: Rect, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2336,17 +2604,19 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
+    public strokeEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2356,15 +2626,17 @@ declare class Graphics {
     
     ```
     */
-	public strokeEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokeEllipticPie(x0: number, y0: number, x1: number, y1: number, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
+
 
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2374,14 +2646,16 @@ declare class Graphics {
     
     ```
     */
-	public strokePie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
+    public strokePie(center: Point, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
+
+
+    center: Point
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2392,16 +2666,18 @@ declare class Graphics {
     
     ```
     */
-	public strokePie(center: Point, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokePie(center: Point, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
 
+
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2411,16 +2687,18 @@ declare class Graphics {
     
     ```
     */
-	public strokePie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
+    public strokePie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number): void;
     /**
     DESCRIPTION
-    @param cx: int
-    @param cy: int
-    @param radius: int
-    @param startRadians: Number
-    @param spanRadians: Number
-    @param pen: Pen
 
+
+    cx: int
+    cy: int
+    radius: int
+    startRadians: Number
+    spanRadians: Number
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2430,12 +2708,14 @@ declare class Graphics {
     
     ```
     */
-	public strokePie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
+    public strokePie(cx: number, cy: number, radius: number, startRadians: number, spanRadians: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param points: Array
+
 
+    points: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2445,13 +2725,15 @@ declare class Graphics {
     
     ```
     */
-	public strokePolygon(points: Array<any>): void;
+    public strokePolygon(points: Array<any>): void;
     /**
     DESCRIPTION
-    @param points: Array
-    @param fillRule: int
-    @param pen: Pen
+
 
+    points: Array
+    fillRule: int
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2461,11 +2743,13 @@ declare class Graphics {
     
     ```
     */
-	public strokePolygon(points: Array<any>, fillRule?: number, pen?: Pen): void;
+    public strokePolygon(points: Array<any>, fillRule?: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
+
+    r: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2476,12 +2760,14 @@ declare class Graphics {
     
     ```
     */
-	public strokeRect(r: Rect): void;
+    public strokeRect(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param pen: Pen
 
+
+    r: Rect
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2491,15 +2777,17 @@ declare class Graphics {
     
     ```
     */
-	public strokeRect(r: Rect, pen?: Pen): void;
+    public strokeRect(r: Rect, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2509,15 +2797,17 @@ declare class Graphics {
     
     ```
     */
-	public strokeRect(x0: number, y0: number, x1: number, y1: number): void;
+    public strokeRect(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param pen: Pen
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2527,12 +2817,14 @@ declare class Graphics {
     
     ```
     */
-	public strokeRect(x0: number, y0: number, x1: number, y1: number, pen?: Pen): void;
+    public strokeRect(x0: number, y0: number, x1: number, y1: number, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2542,13 +2834,15 @@ declare class Graphics {
     
     ```
     */
-	public strokeRoundedRect(r: Rect): void;
+    public strokeRoundedRect(r: Rect): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param rx: Number = 25
-    @param ry: Number = 25
-    @param pen: Pen
+
+
+    r: Rect
+    rx: Number = 25
+    ry: Number = 25
+    pen: Pen
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2559,15 +2853,17 @@ declare class Graphics {
     
     ```
     */
-	public strokeRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */, pen?: Pen): void;
+    public strokeRoundedRect(r: Rect, rx?: number /* 25 */, ry?: number /* 25 */, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2577,17 +2873,19 @@ declare class Graphics {
     
     ```
     */
-	public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
+    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param rx: Number = 25
-    @param ry: Number = 25
-    @param pen: Pen
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    rx: Number = 25
+    ry: Number = 25
+    pen: Pen
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2597,13 +2895,15 @@ declare class Graphics {
     
     ```
     */
-	public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */, pen?: Pen): void;
+    public strokeRoundedRect(x0: number, y0: number, x1: number, y1: number, rx?: number /* 25 */, ry?: number /* 25 */, pen?: Pen): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param text: String
+
 
+    r: Rect
+    text: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2613,13 +2913,15 @@ declare class Graphics {
     
     ```
     */
-	public textRect(r: Rect, text: string): Rect;
+    public textRect(r: Rect, text: string): Rect;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param text: String
-    @param align: int
+
 
+    r: Rect
+    text: String
+    align: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2629,15 +2931,17 @@ declare class Graphics {
     
     ```
     */
-	public textRect(r: Rect, text: string, align?: number): Rect;
+    public textRect(r: Rect, text: string, align?: number): Rect;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param text: String
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    text: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2648,16 +2952,18 @@ declare class Graphics {
     
     ```
     */
-	public textRect(x0: number, y0: number, x1: number, y1: number, text: string): Rect;
+    public textRect(x0: number, y0: number, x1: number, y1: number, text: string): Rect;
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param text: String
-    @param align: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    text: String
+    align: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2667,12 +2973,14 @@ declare class Graphics {
     
     ```
     */
-	public textRect(x0: number, y0: number, x1: number, y1: number, text: string, align?: number): Rect;
+    public textRect(x0: number, y0: number, x1: number, y1: number, text: string, align?: number): Rect;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2682,13 +2990,15 @@ declare class Graphics {
     
     ```
     */
-	public transformed(p: Point): Point;
+    public transformed(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
 
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2698,12 +3008,14 @@ declare class Graphics {
     
     ```
     */
-	public transformed(x: number, y: number): Point;
+    public transformed(x: number, y: number): Point;
 
     /**
     DESCRIPTION
-    @param d: Point
+
 
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -2713,12 +3025,14 @@ declare class Graphics {
     
     ```
     */
-	public translateTransformation(d: Point): void;
+    public translateTransformation(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number
+
+
+    dx: Number
+    dy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -2729,7 +3043,7 @@ declare class Graphics {
     
     ```
     */
-	public translateTransformation(dx: number, dy: number): void;
+    public translateTransformation(dx: number, dy: number): void;
 
 
 

@@ -25,7 +25,9 @@ declare class Boolean {
     //-------------------------
     /**
     DESCRIPTION
-    @param propertyName: String
+
+
+    propertyName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -36,23 +38,12 @@ declare class Boolean {
     
     ```
     */
-	public propertyIsEnumerable(propertyName: string): boolean;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLocaleString(): string;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -62,10 +53,12 @@ declare class Boolean {
     
     ```
     */
-	public toSource(): string;
+    public toLocaleString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -75,10 +68,12 @@ declare class Boolean {
     
     ```
     */
-	public toString(): string;
+    public toSource(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -88,7 +83,22 @@ declare class Boolean {
     
     ```
     */
-	public valueOf(): boolean;
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public valueOf(): boolean;
 
 
 

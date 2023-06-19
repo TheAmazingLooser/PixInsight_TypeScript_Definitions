@@ -36,7 +36,9 @@ declare class TreeBoxNode {
     //-------------------------
     /**
     DESCRIPTION
-    @param node: TreeBoxNode
+
+
+    node: TreeBoxNode
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -47,11 +49,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public add(node: TreeBoxNode): void;
+    public add(node: TreeBoxNode): void;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -62,11 +66,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public alignment(col: number): number;
+    public alignment(col: number): number;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -77,11 +83,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public backgroundColor(col: number): number;
+    public backgroundColor(col: number): number;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -92,11 +100,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public child(index: number): TreeBoxNode;
+    public child(index: number): TreeBoxNode;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -107,11 +117,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public clearIcon(col: number): void;
+    public clearIcon(col: number): void;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -122,11 +134,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public font(col: number): Font;
+    public font(col: number): Font;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -137,12 +151,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public icon(col: number): Bitmap;
+    public icon(col: number): Bitmap;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param node: TreeBoxNode
+
+
+    index: int
+    node: TreeBoxNode
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -153,11 +169,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public insert(index: number, node: TreeBoxNode): void;
+    public insert(index: number, node: TreeBoxNode): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -168,12 +186,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public remove(index: number): void;
+    public remove(index: number): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param align: int
+
+
+    col: int
+    align: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -184,12 +204,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setAlignment(col: number, align: number): void;
+    public setAlignment(col: number, align: number): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param rgba: uint32
+
+
+    col: int
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -200,12 +222,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setBackgroundColor(col: number, rgba: number): void;
+    public setBackgroundColor(col: number, rgba: number): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param font: Font
+
+
+    col: int
+    font: Font
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -216,12 +240,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setFont(col: number, font: Font): void;
+    public setFont(col: number, font: Font): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param icon: Bitmap|String
+
+
+    col: int
+    icon: Bitmap|String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -232,12 +258,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setIcon(col: number, icon: Bitmap | string): void;
+    public setIcon(col: number, icon: Bitmap | string): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param txt: String
+
+
+    col: int
+    txt: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -248,12 +276,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setText(col: number, txt: string): void;
+    public setText(col: number, txt: string): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param rgba: uint32
+
+
+    col: int
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -264,12 +294,14 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setTextColor(col: number, rgba: number): void;
+    public setTextColor(col: number, rgba: number): void;
 
     /**
     DESCRIPTION
-    @param col: int
-    @param tip: String
+
+
+    col: int
+    tip: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -280,11 +312,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public setToolTip(col: number, tip: string): void;
+    public setToolTip(col: number, tip: string): void;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -295,11 +329,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public text(col: number): string;
+    public text(col: number): string;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -310,11 +346,13 @@ declare class TreeBoxNode {
     
     ```
     */
-	public textColor(col: number): number;
+    public textColor(col: number): number;
 
     /**
     DESCRIPTION
-    @param col: int
+
+
+    col: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -325,7 +363,7 @@ declare class TreeBoxNode {
     
     ```
     */
-	public toolTip(col: number): string;
+    public toolTip(col: number): string;
 
 
 

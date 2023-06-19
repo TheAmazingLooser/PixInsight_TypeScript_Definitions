@@ -28,9 +28,11 @@ declare class BRQuadTree {
     //-------------------------
     /**
     DESCRIPTION
-    @param rect: Rect
-    @param dx: Number
-    @param dy: Number
+
+
+    rect: Rect
+    dx: Number
+    dy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -41,13 +43,15 @@ declare class BRQuadTree {
     
     ```
     */
-	public avgDist(rect: Rect, dx: number, dy: number): number;
+    public avgDist(rect: Rect, dx: number, dy: number): number;
     /**
     DESCRIPTION
-    @param rect: Rect
-    @param dx: Number
-    @param dy: Number
-    @param excludeRect: Rect
+
+
+    rect: Rect
+    dx: Number
+    dy: Number
+    excludeRect: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -58,41 +62,14 @@ declare class BRQuadTree {
     
     ```
     */
-	public avgDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
-
-    /**
-    DESCRIPTION
-    @param objects: any
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public build(objects: any): void;
-    /**
-    DESCRIPTION
-    @param objects: any
-    @param bucketCapacity: any
-    @param Rect: Rect
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public build(objects: any, bucketCapacity?: any, Rect?: Rect): void;
+    public avgDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
 
     /**
     DESCRIPTION
+
+
+    objects: any
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -102,10 +79,30 @@ declare class BRQuadTree {
     
     ```
     */
-	public clear(): void;
+    public build(objects: any): void;
+    /**
+    DESCRIPTION
+
+
+    objects: any
+    bucketCapacity: any
+    Rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public build(objects: any, bucketCapacity?: any, Rect?: Rect): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -115,11 +112,11 @@ declare class BRQuadTree {
     
     ```
     */
-	public height(): number;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -130,10 +127,14 @@ declare class BRQuadTree {
     
     ```
     */
-	public insert(obj: Object): void;
+    public height(): number;
 
     /**
     DESCRIPTION
+
+
+    obj: Object
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -143,10 +144,12 @@ declare class BRQuadTree {
     
     ```
     */
-	public isEmpty(): boolean;
+    public insert(obj: Object): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -156,11 +159,11 @@ declare class BRQuadTree {
     
     ```
     */
-	public isTree(): boolean;
+    public isEmpty(): boolean;
 
     /**
     DESCRIPTION
-    @param point: Point
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -171,13 +174,13 @@ declare class BRQuadTree {
     
     ```
     */
-	public leafNodeAt(point: Point): QuadTreeNode;
+    public isTree(): boolean;
 
     /**
     DESCRIPTION
-    @param rect: Rect
-    @param dx: Number
-    @param dy: Number
+
+
+    point: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -188,28 +191,15 @@ declare class BRQuadTree {
     
     ```
     */
-	public minDist(rect: Rect, dx: number, dy: number): number;
-    /**
-    DESCRIPTION
-    @param rect: Rect
-    @param dx: Number
-    @param dy: Number
-    @param excludeRect: Rect
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public minDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
+    public leafNodeAt(point: Point): QuadTreeNode;
 
     /**
     DESCRIPTION
-    @param point: Point
+
+
+    rect: Rect
+    dx: Number
+    dy: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -220,10 +210,33 @@ declare class BRQuadTree {
     
     ```
     */
-	public nodeAt(point: Point): QuadTreeNode;
+    public minDist(rect: Rect, dx: number, dy: number): number;
+    /**
+    DESCRIPTION
+
+
+    rect: Rect
+    dx: Number
+    dy: Number
+    excludeRect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public minDist(rect: Rect, dx: number, dy: number, excludeRect?: Rect): number;
 
     /**
     DESCRIPTION
+
+
+    point: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -233,10 +246,12 @@ declare class BRQuadTree {
     
     ```
     */
-	public numberOfLeafNodes(): number;
+    public nodeAt(point: Point): QuadTreeNode;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -246,24 +261,11 @@ declare class BRQuadTree {
     
     ```
     */
-	public numberOfNodes(): number;
+    public numberOfLeafNodes(): number;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public regenerate(): void;
-    /**
-    DESCRIPTION
-    @param bucketCapacity: any
-    @param Rect: Rect
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -274,11 +276,11 @@ declare class BRQuadTree {
     
     ```
     */
-	public regenerate(bucketCapacity?: any, Rect?: Rect): void;
+    public numberOfNodes(): number;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -289,11 +291,30 @@ declare class BRQuadTree {
     
     ```
     */
-	public remove(obj: Object): void;
+    public regenerate(): void;
+    /**
+    DESCRIPTION
+
+
+    bucketCapacity: any
+    Rect: Rect
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public regenerate(bucketCapacity?: any, Rect?: Rect): void;
 
     /**
     DESCRIPTION
-    @param point: Point
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -304,11 +325,13 @@ declare class BRQuadTree {
     
     ```
     */
-	public removeAtPoint(point: Point): void;
+    public remove(obj: Object): void;
 
     /**
     DESCRIPTION
-    @param rect: Rect
+
+
+    point: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -319,11 +342,13 @@ declare class BRQuadTree {
     
     ```
     */
-	public removeAtRect(rect: Rect): void;
+    public removeAtPoint(point: Point): void;
 
     /**
     DESCRIPTION
-    @param rect: Rect
+
+
+    rect: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -334,12 +359,13 @@ declare class BRQuadTree {
     
     ```
     */
-	public search(rect: Rect): Array<any>;
+    public removeAtRect(rect: Rect): void;
 
     /**
     DESCRIPTION
-    @param rect: Rect
-    @param callback: Function
+
+
+    rect: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -350,27 +376,14 @@ declare class BRQuadTree {
     
     ```
     */
-	public searchWithCallback(rect: Rect, callback: Function): void;
-    /**
-    DESCRIPTION
-    @param rect: Rect
-    @param callback: Function
-    @param data: Object
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public searchWithCallback(rect: Rect, callback: Function, data?: Object): void;
+    public search(rect: Rect): Array<any>;
 
     /**
     DESCRIPTION
-    @param callback: Function
+
+
+    rect: Rect
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -381,7 +394,42 @@ declare class BRQuadTree {
     
     ```
     */
-	public traverse(callback: Function): void;
+    public searchWithCallback(rect: Rect, callback: Function): void;
+    /**
+    DESCRIPTION
+
+
+    rect: Rect
+    callback: Function
+    data: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public searchWithCallback(rect: Rect, callback: Function, data?: Object): void;
+
+    /**
+    DESCRIPTION
+
+
+    callback: Function
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public traverse(callback: Function): void;
 
 
 

@@ -41,7 +41,9 @@ declare class FileFind {
     //-------------------------
     /**
     DESCRIPTION
-    @param path: String
+
+
+    path: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -52,23 +54,12 @@ declare class FileFind {
     
     ```
     */
-	public begin(path: string): boolean;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public end(): void;
+    public begin(path: string): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -78,7 +69,22 @@ declare class FileFind {
     
     ```
     */
-	public next(): boolean;
+    public end(): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public next(): boolean;
 
 
 

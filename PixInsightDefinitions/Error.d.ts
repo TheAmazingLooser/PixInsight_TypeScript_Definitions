@@ -27,7 +27,9 @@ declare class Error {
     //-------------------------
     /**
     DESCRIPTION
-    @param propertyName: String
+
+
+    propertyName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -38,7 +40,7 @@ declare class Error {
     
     ```
     */
-	public propertyIsEnumerable(propertyName: string): boolean;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
 
 

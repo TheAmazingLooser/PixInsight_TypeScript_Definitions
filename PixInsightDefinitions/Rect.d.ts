@@ -56,8 +56,10 @@ declare class Rect {
     //-------------------------
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -67,12 +69,14 @@ declare class Rect {
     
     ```
     */
-	public add(r: Rect): void;
+    public add(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -82,12 +86,14 @@ declare class Rect {
     
     ```
     */
-	public add(p: Point): void;
+    public add(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -97,12 +103,14 @@ declare class Rect {
     
     ```
     */
-	public add(x: number): void;
+    public add(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -112,14 +120,16 @@ declare class Rect {
     
     ```
     */
-	public add(x: number, y?: number /* x */): void;
+    public add(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -130,12 +140,14 @@ declare class Rect {
     
     ```
     */
-	public add(x0: number, y0: number, x1: number, y1: number): void;
+    public add(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -145,11 +157,13 @@ declare class Rect {
     
     ```
     */
-	public assign(r: Rect): void;
+    public assign(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param v: Number
+
+
+    v: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -160,13 +174,15 @@ declare class Rect {
     
     ```
     */
-	public assign(v: number): void;
+    public assign(v: number): void;
 
     /**
     DESCRIPTION
-    @param width: Number
-    @param height: Number
 
+
+    width: Number
+    height: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -176,15 +192,17 @@ declare class Rect {
     
     ```
     */
-	public assign(width: number, height: number): void;
+    public assign(width: number, height: number): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
 
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -194,12 +212,14 @@ declare class Rect {
     
     ```
     */
-	public assign(x0: number, y0: number, x1: number, y1: number): void;
+    public assign(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -209,13 +229,15 @@ declare class Rect {
     
     ```
     */
-	public clipCode(p: Point): number;
+    public clipCode(p: Point): number;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
 
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -225,12 +247,14 @@ declare class Rect {
     
     ```
     */
-	public clipCode(x: number, y: number): number;
+    public clipCode(x: number, y: number): number;
 
     /**
     DESCRIPTION
-    @param d: Point
+
 
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -240,12 +264,14 @@ declare class Rect {
     
     ```
     */
-	public deflateBy(d: Point): void;
+    public deflateBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
 
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -255,12 +281,14 @@ declare class Rect {
     
     ```
     */
-	public deflateBy(dx: number): void;
+    public deflateBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
 
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -270,12 +298,14 @@ declare class Rect {
     
     ```
     */
-	public deflateBy(dx: number, dy?: number /* dx */): void;
+    public deflateBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
+
 
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -285,11 +315,13 @@ declare class Rect {
     
     ```
     */
-	public deflatedBy(d: Point): Rect;
+    public deflatedBy(d: Point): Rect;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
+
+    dx: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -300,12 +332,14 @@ declare class Rect {
     
     ```
     */
-	public deflatedBy(dx: number): Rect;
+    public deflatedBy(dx: number): Rect;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
 
+
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -315,11 +349,13 @@ declare class Rect {
     
     ```
     */
-	public deflatedBy(dx: number, dy?: number /* dx */): Rect;
+    public deflatedBy(dx: number, dy?: number /* dx */): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
+
+    r: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -330,12 +366,14 @@ declare class Rect {
     
     ```
     */
-	public div(r: Rect): void;
+    public div(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -345,12 +383,14 @@ declare class Rect {
     
     ```
     */
-	public div(p: Point): void;
+    public div(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -360,12 +400,14 @@ declare class Rect {
     
     ```
     */
-	public div(x: number): void;
+    public div(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -375,15 +417,17 @@ declare class Rect {
     
     ```
     */
-	public div(x: number, y?: number /* x */): void;
+    public div(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
 
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -393,11 +437,13 @@ declare class Rect {
     
     ```
     */
-	public div(x0: number, y0: number, x1: number, y1: number): void;
+    public div(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -408,13 +454,15 @@ declare class Rect {
     
     ```
     */
-	public includes(p: Point): boolean;
+    public includes(p: Point): boolean;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
 
+
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -424,11 +472,13 @@ declare class Rect {
     
     ```
     */
-	public includes(x: number, y: number): boolean;
+    public includes(x: number, y: number): boolean;
 
     /**
     DESCRIPTION
-    @param d: Point
+
+
+    d: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -439,12 +489,14 @@ declare class Rect {
     
     ```
     */
-	public inflateBy(d: Point): void;
+    public inflateBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
 
+
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -454,11 +506,13 @@ declare class Rect {
     
     ```
     */
-	public inflateBy(dx: number): void;
+    public inflateBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
+
+    dx: Number
+    dy: Number = dx
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -469,12 +523,14 @@ declare class Rect {
     
     ```
     */
-	public inflateBy(dx: number, dy?: number /* dx */): void;
+    public inflateBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -484,11 +540,13 @@ declare class Rect {
     
     ```
     */
-	public inflatedBy(d: Point): Rect;
+    public inflatedBy(d: Point): Rect;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
+
+    dx: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -499,12 +557,14 @@ declare class Rect {
     
     ```
     */
-	public inflatedBy(dx: number): Rect;
+    public inflatedBy(dx: number): Rect;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
 
+
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -514,12 +574,14 @@ declare class Rect {
     
     ```
     */
-	public inflatedBy(dx: number, dy?: number /* dx */): Rect;
+    public inflatedBy(dx: number, dy?: number /* dx */): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -529,15 +591,17 @@ declare class Rect {
     
     ```
     */
-	public intersect(r: Rect): void;
+    public intersect(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
 
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -547,12 +611,14 @@ declare class Rect {
     
     ```
     */
-	public intersect(x0: number, y0: number, x1: number, y1: number): void;
+    public intersect(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -562,14 +628,16 @@ declare class Rect {
     
     ```
     */
-	public intersection(r: Rect): Rect;
+    public intersection(r: Rect): Rect;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -580,12 +648,14 @@ declare class Rect {
     
     ```
     */
-	public intersection(x0: number, y0: number, x1: number, y1: number): Rect;
+    public intersection(x0: number, y0: number, x1: number, y1: number): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -595,14 +665,16 @@ declare class Rect {
     
     ```
     */
-	public intersects(r: Rect): boolean;
+    public intersects(r: Rect): boolean;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -613,12 +685,14 @@ declare class Rect {
     
     ```
     */
-	public intersects(x0: number, y0: number, x1: number, y1: number): boolean;
+    public intersects(x0: number, y0: number, x1: number, y1: number): boolean;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -628,13 +702,15 @@ declare class Rect {
     
     ```
     */
-	public isEqualTo(r: Rect): boolean;
+    public isEqualTo(r: Rect): boolean;
 
     /**
     DESCRIPTION
-    @param p0: Point
-    @param p1: Point
+
 
+    p0: Point
+    p1: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -644,15 +720,17 @@ declare class Rect {
     
     ```
     */
-	public isEqualTo(p0: Point, p1: Point): boolean;
+    public isEqualTo(p0: Point, p1: Point): boolean;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
 
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -662,12 +740,14 @@ declare class Rect {
     
     ```
     */
-	public isEqualTo(x0: number, y0: number, x1: number, y1: number): boolean;
+    public isEqualTo(x0: number, y0: number, x1: number, y1: number): boolean;
 
     /**
     DESCRIPTION
-    @param scalar: Number
+
 
+    scalar: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -677,12 +757,14 @@ declare class Rect {
     
     ```
     */
-	public isEqualTo(scalar: number): boolean;
+    public isEqualTo(scalar: number): boolean;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -692,13 +774,15 @@ declare class Rect {
     
     ```
     */
-	public isLessThan(r: Rect): boolean;
+    public isLessThan(r: Rect): boolean;
 
     /**
     DESCRIPTION
-    @param p0: Point
-    @param p1: Point
+
 
+    p0: Point
+    p1: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -708,15 +792,17 @@ declare class Rect {
     
     ```
     */
-	public isLessThan(p0: Point, p1: Point): boolean;
+    public isLessThan(p0: Point, p1: Point): boolean;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
 
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -726,12 +812,14 @@ declare class Rect {
     
     ```
     */
-	public isLessThan(x0: number, y0: number, x1: number, y1: number): boolean;
+    public isLessThan(x0: number, y0: number, x1: number, y1: number): boolean;
 
     /**
     DESCRIPTION
-    @param scalar: Number
+
 
+    scalar: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -741,11 +829,13 @@ declare class Rect {
     
     ```
     */
-	public isLessThan(scalar: number): boolean;
+    public isLessThan(scalar: number): boolean;
 
     /**
     DESCRIPTION
-    @param d: Point
+
+
+    d: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -756,12 +846,14 @@ declare class Rect {
     
     ```
     */
-	public moveBy(d: Point): void;
+    public moveBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
 
+
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -771,11 +863,13 @@ declare class Rect {
     
     ```
     */
-	public moveBy(dx: number): void;
+    public moveBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
+
+    dx: Number
+    dy: Number = dx
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -786,12 +880,14 @@ declare class Rect {
     
     ```
     */
-	public moveBy(dx: number, dy?: number /* dx */): void;
+    public moveBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
 
+
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -801,12 +897,14 @@ declare class Rect {
     
     ```
     */
-	public moveTo(p: Point): void;
+    public moveTo(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -816,12 +914,14 @@ declare class Rect {
     
     ```
     */
-	public moveTo(x: number): void;
+    public moveTo(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -831,12 +931,14 @@ declare class Rect {
     
     ```
     */
-	public moveTo(x: number, y?: number /* x */): void;
+    public moveTo(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
+
 
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -846,11 +948,13 @@ declare class Rect {
     
     ```
     */
-	public movedBy(d: Point): Rect;
+    public movedBy(d: Point): Rect;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
+
+    dx: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -861,12 +965,14 @@ declare class Rect {
     
     ```
     */
-	public movedBy(dx: number): Rect;
+    public movedBy(dx: number): Rect;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
 
+
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -876,11 +982,13 @@ declare class Rect {
     
     ```
     */
-	public movedBy(dx: number, dy?: number /* dx */): Rect;
+    public movedBy(dx: number, dy?: number /* dx */): Rect;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -891,12 +999,14 @@ declare class Rect {
     
     ```
     */
-	public movedTo(p: Point): Rect;
+    public movedTo(p: Point): Rect;
 
     /**
     DESCRIPTION
-    @param x: Number
 
+
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -906,11 +1016,13 @@ declare class Rect {
     
     ```
     */
-	public movedTo(x: number): Rect;
+    public movedTo(x: number): Rect;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
+
+    x: Number
+    y: Number = x
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -921,12 +1033,14 @@ declare class Rect {
     
     ```
     */
-	public movedTo(x: number, y?: number /* x */): Rect;
+    public movedTo(x: number, y?: number /* x */): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -936,11 +1050,13 @@ declare class Rect {
     
     ```
     */
-	public mul(r: Rect): void;
+    public mul(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -951,12 +1067,14 @@ declare class Rect {
     
     ```
     */
-	public mul(p: Point): void;
+    public mul(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
 
+
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -966,12 +1084,14 @@ declare class Rect {
     
     ```
     */
-	public mul(x: number): void;
+    public mul(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -981,15 +1101,17 @@ declare class Rect {
     
     ```
     */
-	public mul(x: number, y?: number /* x */): void;
+    public mul(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
 
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -999,10 +1121,12 @@ declare class Rect {
     
     ```
     */
-	public mul(x0: number, y0: number, x1: number, y1: number): void;
+    public mul(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1012,10 +1136,12 @@ declare class Rect {
     
     ```
     */
-	public order(): void;
+    public order(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1025,12 +1151,14 @@ declare class Rect {
     
     ```
     */
-	public ordered(): Rect;
+    public ordered(): Rect;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1040,11 +1168,13 @@ declare class Rect {
     
     ```
     */
-	public resizeBy(d: Point): void;
+    public resizeBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
+
+    dx: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1055,12 +1185,14 @@ declare class Rect {
     
     ```
     */
-	public resizeBy(dx: number): void;
+    public resizeBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
 
+
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1070,12 +1202,14 @@ declare class Rect {
     
     ```
     */
-	public resizeBy(dx: number, dy?: number /* dx */): void;
+    public resizeBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param width: Number
+
 
+    width: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1085,12 +1219,14 @@ declare class Rect {
     
     ```
     */
-	public resizeTo(width: number): void;
+    public resizeTo(width: number): void;
     /**
     DESCRIPTION
-    @param width: Number
-    @param height: Number = width
+
 
+    width: Number
+    height: Number = width
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1100,12 +1236,14 @@ declare class Rect {
     
     ```
     */
-	public resizeTo(width: number, height?: number /* width */): void;
+    public resizeTo(width: number, height?: number /* width */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
+
 
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1115,12 +1253,14 @@ declare class Rect {
     
     ```
     */
-	public resizedBy(d: Point): Rect;
+    public resizedBy(d: Point): Rect;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
 
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1130,12 +1270,14 @@ declare class Rect {
     
     ```
     */
-	public resizedBy(dx: number): Rect;
+    public resizedBy(dx: number): Rect;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
 
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1145,12 +1287,14 @@ declare class Rect {
     
     ```
     */
-	public resizedBy(dx: number, dy?: number /* dx */): Rect;
+    public resizedBy(dx: number, dy?: number /* dx */): Rect;
 
     /**
     DESCRIPTION
-    @param width: Number
+
 
+    width: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1160,12 +1304,14 @@ declare class Rect {
     
     ```
     */
-	public resizedTo(width: number): Rect;
+    public resizedTo(width: number): Rect;
     /**
     DESCRIPTION
-    @param width: Number
-    @param height: Number = width
+
 
+    width: Number
+    height: Number = width
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1175,11 +1321,13 @@ declare class Rect {
     
     ```
     */
-	public resizedTo(width: number, height?: number /* width */): Rect;
+    public resizedTo(width: number, height?: number /* width */): Rect;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
+
+    angleRadians: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1190,12 +1338,14 @@ declare class Rect {
     
     ```
     */
-	public rotate(angleRadians: number): void;
+    public rotate(angleRadians: number): void;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param center: Point = 0
 
+
+    angleRadians: Number
+    center: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1205,12 +1355,14 @@ declare class Rect {
     
     ```
     */
-	public rotate(angleRadians: number, center?: Point /* 0 */): void;
+    public rotate(angleRadians: number, center?: Point /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
+
+
+    sin: Number
+    cos: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1221,13 +1373,15 @@ declare class Rect {
     
     ```
     */
-	public rotate(sin: number, cos: number): void;
+    public rotate(sin: number, cos: number): void;
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param center: Point = 0
 
+
+    sin: Number
+    cos: Number
+    center: Point = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1237,14 +1391,16 @@ declare class Rect {
     
     ```
     */
-	public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
+    public rotate(sin: number, cos: number, center?: Point /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param xc: Number
-    @param yc: Number
+
 
+    angleRadians: Number
+    xc: Number
+    yc: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1254,15 +1410,17 @@ declare class Rect {
     
     ```
     */
-	public rotate(angleRadians: number, xc: number, yc: number): void;
+    public rotate(angleRadians: number, xc: number, yc: number): void;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param xc: Number
-    @param yc: Number
+
 
+    sin: Number
+    cos: Number
+    xc: Number
+    yc: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1272,12 +1430,14 @@ declare class Rect {
     
     ```
     */
-	public rotate(sin: number, cos: number, xc: number, yc: number): void;
+    public rotate(sin: number, cos: number, xc: number, yc: number): void;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
+
 
+    angleRadians: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1287,11 +1447,13 @@ declare class Rect {
     
     ```
     */
-	public rotated(angleRadians: number): Rect;
+    public rotated(angleRadians: number): Rect;
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param center: Point = 0
+
+
+    angleRadians: Number
+    center: Point = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1302,13 +1464,15 @@ declare class Rect {
     
     ```
     */
-	public rotated(angleRadians: number, center?: Point /* 0 */): Rect;
+    public rotated(angleRadians: number, center?: Point /* 0 */): Rect;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
 
+
+    sin: Number
+    cos: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1318,12 +1482,14 @@ declare class Rect {
     
     ```
     */
-	public rotated(sin: number, cos: number): Rect;
+    public rotated(sin: number, cos: number): Rect;
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param center: Point = 0
+
+
+    sin: Number
+    cos: Number
+    center: Point = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1334,14 +1500,16 @@ declare class Rect {
     
     ```
     */
-	public rotated(sin: number, cos: number, center?: Point /* 0 */): Rect;
+    public rotated(sin: number, cos: number, center?: Point /* 0 */): Rect;
 
     /**
     DESCRIPTION
-    @param angleRadians: Number
-    @param xc: Number
-    @param yc: Number
 
+
+    angleRadians: Number
+    xc: Number
+    yc: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1351,14 +1519,16 @@ declare class Rect {
     
     ```
     */
-	public rotated(angleRadians: number, xc: number, yc: number): Rect;
+    public rotated(angleRadians: number, xc: number, yc: number): Rect;
 
     /**
     DESCRIPTION
-    @param sin: Number
-    @param cos: Number
-    @param xc: Number
-    @param yc: Number
+
+
+    sin: Number
+    cos: Number
+    xc: Number
+    yc: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1369,10 +1539,12 @@ declare class Rect {
     
     ```
     */
-	public rotated(sin: number, cos: number, xc: number, yc: number): Rect;
+    public rotated(sin: number, cos: number, xc: number, yc: number): Rect;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1382,10 +1554,12 @@ declare class Rect {
     
     ```
     */
-	public round(): void;
+    public round(): void;
     /**
     DESCRIPTION
-    @param n: uint = 0
+
+
+    n: uint = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1396,10 +1570,12 @@ declare class Rect {
     
     ```
     */
-	public round(n?: number /* 0 */): void;
+    public round(n?: number /* 0 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1409,11 +1585,13 @@ declare class Rect {
     
     ```
     */
-	public rounded(): Rect;
+    public rounded(): Rect;
     /**
     DESCRIPTION
-    @param n: uint = 0
+
 
+    n: uint = 0
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1423,12 +1601,14 @@ declare class Rect {
     
     ```
     */
-	public rounded(n?: number /* 0 */): Rect;
+    public rounded(n?: number /* 0 */): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
 
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1438,12 +1618,14 @@ declare class Rect {
     
     ```
     */
-	public sub(r: Rect): void;
+    public sub(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1453,11 +1635,13 @@ declare class Rect {
     
     ```
     */
-	public sub(p: Point): void;
+    public sub(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
+
+    x: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1468,12 +1652,14 @@ declare class Rect {
     
     ```
     */
-	public sub(x: number): void;
+    public sub(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
 
+
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1483,14 +1669,16 @@ declare class Rect {
     
     ```
     */
-	public sub(x: number, y?: number /* x */): void;
+    public sub(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1501,10 +1689,12 @@ declare class Rect {
     
     ```
     */
-	public sub(x0: number, y0: number, x1: number, y1: number): void;
+    public sub(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1514,10 +1704,12 @@ declare class Rect {
     
     ```
     */
-	public symmetric(): Rect;
+    public symmetric(): Rect;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1527,10 +1719,12 @@ declare class Rect {
     
     ```
     */
-	public symmetrize(): void;
+    public symmetrize(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1540,10 +1734,12 @@ declare class Rect {
     
     ```
     */
-	public toArray(): Array<any>;
+    public toArray(): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1553,12 +1749,14 @@ declare class Rect {
     
     ```
     */
-	public toString(): string;
+    public toString(): string;
 
     /**
     DESCRIPTION
-    @param M: Matrix
+
 
+    M: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1568,12 +1766,14 @@ declare class Rect {
     
     ```
     */
-	public transform(M: Matrix): void;
+    public transform(M: Matrix): void;
 
     /**
     DESCRIPTION
-    @param M: Matrix
+
 
+    M: Matrix
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1583,12 +1783,14 @@ declare class Rect {
     
     ```
     */
-	public transformed(M: Matrix): Rect;
+    public transformed(M: Matrix): Rect;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1598,12 +1800,14 @@ declare class Rect {
     
     ```
     */
-	public translate(p: Point): void;
+    public translate(p: Point): void;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1613,11 +1817,13 @@ declare class Rect {
     
     ```
     */
-	public translate(x: number): void;
+    public translate(x: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
+
+    x: Number
+    y: Number = x
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1628,12 +1834,14 @@ declare class Rect {
     
     ```
     */
-	public translate(x: number, y?: number /* x */): void;
+    public translate(x: number, y?: number /* x */): void;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1643,11 +1851,13 @@ declare class Rect {
     
     ```
     */
-	public translateBy(d: Point): void;
+    public translateBy(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: Number
+
+
+    dx: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1658,12 +1868,14 @@ declare class Rect {
     
     ```
     */
-	public translateBy(dx: number): void;
+    public translateBy(dx: number): void;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
 
+
+    dx: Number
+    dy: Number = dx
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1673,12 +1885,14 @@ declare class Rect {
     
     ```
     */
-	public translateBy(dx: number, dy?: number /* dx */): void;
+    public translateBy(dx: number, dy?: number /* dx */): void;
 
     /**
     DESCRIPTION
-    @param p: Point
+
 
+    p: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1688,12 +1902,14 @@ declare class Rect {
     
     ```
     */
-	public translated(p: Point): Rect;
+    public translated(p: Point): Rect;
 
     /**
     DESCRIPTION
-    @param x: Number
+
 
+    x: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1703,12 +1919,14 @@ declare class Rect {
     
     ```
     */
-	public translated(x: number): Rect;
+    public translated(x: number): Rect;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number = x
+
 
+    x: Number
+    y: Number = x
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1718,11 +1936,13 @@ declare class Rect {
     
     ```
     */
-	public translated(x: number, y?: number /* x */): Rect;
+    public translated(x: number, y?: number /* x */): Rect;
 
     /**
     DESCRIPTION
-    @param d: Point
+
+
+    d: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1733,12 +1953,14 @@ declare class Rect {
     
     ```
     */
-	public translatedBy(d: Point): Rect;
+    public translatedBy(d: Point): Rect;
 
     /**
     DESCRIPTION
-    @param dx: Number
 
+
+    dx: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1748,11 +1970,13 @@ declare class Rect {
     
     ```
     */
-	public translatedBy(dx: number): Rect;
+    public translatedBy(dx: number): Rect;
     /**
     DESCRIPTION
-    @param dx: Number
-    @param dy: Number = dx
+
+
+    dx: Number
+    dy: Number = dx
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1763,12 +1987,14 @@ declare class Rect {
     
     ```
     */
-	public translatedBy(dx: number, dy?: number /* dx */): Rect;
+    public translatedBy(dx: number, dy?: number /* dx */): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1778,14 +2004,16 @@ declare class Rect {
     
     ```
     */
-	public union(r: Rect): Rect;
+    public union(r: Rect): Rect;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1796,12 +2024,14 @@ declare class Rect {
     
     ```
     */
-	public union(x0: number, y0: number, x1: number, y1: number): Rect;
+    public union(x0: number, y0: number, x1: number, y1: number): Rect;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1811,14 +2041,16 @@ declare class Rect {
     
     ```
     */
-	public unite(r: Rect): void;
+    public unite(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
+
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1829,7 +2061,7 @@ declare class Rect {
     
     ```
     */
-	public unite(x0: number, y0: number, x1: number, y1: number): void;
+    public unite(x0: number, y0: number, x1: number, y1: number): void;
 
 
 

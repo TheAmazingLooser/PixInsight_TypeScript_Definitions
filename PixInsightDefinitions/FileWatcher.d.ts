@@ -28,7 +28,9 @@ declare class FileWatcher {
     //-------------------------
     /**
     DESCRIPTION
-    @param path: String
+
+
+    path: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -39,11 +41,13 @@ declare class FileWatcher {
     
     ```
     */
-	public addPath(path: string): void;
+    public addPath(path: string): void;
 
     /**
     DESCRIPTION
-    @param paths: Array
+
+
+    paths: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -54,10 +58,12 @@ declare class FileWatcher {
     
     ```
     */
-	public addPaths(paths: Array<any>): void;
+    public addPaths(paths: Array<any>): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -67,11 +73,13 @@ declare class FileWatcher {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param path: String
+
+
+    path: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -82,11 +90,13 @@ declare class FileWatcher {
     
     ```
     */
-	public removePath(path: string): void;
+    public removePath(path: string): void;
 
     /**
     DESCRIPTION
-    @param paths: Array
+
+
+    paths: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -97,7 +107,7 @@ declare class FileWatcher {
     
     ```
     */
-	public removePaths(paths: Array<any>): void;
+    public removePaths(paths: Array<any>): void;
 
 
 

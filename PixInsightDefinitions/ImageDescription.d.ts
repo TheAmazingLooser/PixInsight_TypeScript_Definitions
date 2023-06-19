@@ -54,7 +54,9 @@ declare class ImageDescription {
     //-------------------------
     /**
     DESCRIPTION
-    @param r: ImageDescription
+
+
+    r: ImageDescription
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -65,7 +67,7 @@ declare class ImageDescription {
     
     ```
     */
-	public assign(r: ImageDescription): void;
+    public assign(r: ImageDescription): void;
 
 
 

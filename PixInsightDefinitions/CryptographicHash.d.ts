@@ -27,6 +27,8 @@ declare class CryptographicHash {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -36,11 +38,13 @@ declare class CryptographicHash {
     
     ```
     */
-	public finalize(): ByteArray;
+    public finalize(): ByteArray;
 
     /**
     DESCRIPTION
-    @param ByteArray: ByteArray
+
+
+    ByteArray: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -51,10 +55,12 @@ declare class CryptographicHash {
     
     ```
     */
-	public hash(ByteArray: ByteArray): ByteArray;
+    public hash(ByteArray: ByteArray): ByteArray;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -64,11 +70,13 @@ declare class CryptographicHash {
     
     ```
     */
-	public initialize(): void;
+    public initialize(): void;
 
     /**
     DESCRIPTION
-    @param data: ByteArray
+
+
+    data: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -79,7 +87,7 @@ declare class CryptographicHash {
     
     ```
     */
-	public update(data: ByteArray): void;
+    public update(data: ByteArray): void;
 
 
 

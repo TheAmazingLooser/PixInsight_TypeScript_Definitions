@@ -31,7 +31,9 @@ declare class PointGridInterpolation {
     //-------------------------
     /**
     DESCRIPTION
-    @param G: PointGridInterpolation
+
+
+    G: PointGridInterpolation
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -42,10 +44,12 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public assign(G: PointGridInterpolation): void;
+    public assign(G: PointGridInterpolation): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -55,12 +59,14 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
+
+    x: Number
+    y: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -71,11 +77,13 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public evaluate(x: number, y: number): Point;
+    public evaluate(x: number, y: number): Point;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -86,11 +94,13 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public evaluate(p: Point): Point;
+    public evaluate(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param points: Array
+
+
+    points: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -101,13 +111,15 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public evaluate(points: Array<any>): Array<any>;
+    public evaluate(points: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param Sx: SurfaceSpline
-    @param Sy: SurfaceSpline
+
+
+    r: Rect
+    Sx: SurfaceSpline
+    Sy: SurfaceSpline
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -118,14 +130,16 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline): void;
+    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param Sx: SurfaceSpline
-    @param Sy: SurfaceSpline
-    @param delta: int = 8
-    @param verbose: Boolean = false
+
+
+    r: Rect
+    Sx: SurfaceSpline
+    Sy: SurfaceSpline
+    delta: int = 8
+    verbose: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -136,13 +150,15 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+    public initialize(r: Rect, Sx: SurfaceSpline, Sy: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param Sx: ShepardInterpolation
-    @param Sy: ShepardInterpolation
+
+
+    r: Rect
+    Sx: ShepardInterpolation
+    Sy: ShepardInterpolation
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -153,14 +169,16 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation): void;
+    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param Sx: ShepardInterpolation
-    @param Sy: ShepardInterpolation
-    @param delta: int = 8
-    @param verbose: Boolean = false
+
+
+    r: Rect
+    Sx: ShepardInterpolation
+    Sy: ShepardInterpolation
+    delta: int = 8
+    verbose: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -171,7 +189,7 @@ declare class PointGridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+    public initialize(r: Rect, Sx: ShepardInterpolation, Sy: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
 
 

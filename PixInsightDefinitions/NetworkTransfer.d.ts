@@ -36,6 +36,8 @@ declare class NetworkTransfer {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -45,10 +47,12 @@ declare class NetworkTransfer {
     
     ```
     */
-	public closeConnection(): void;
+    public closeConnection(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -58,11 +62,13 @@ declare class NetworkTransfer {
     
     ```
     */
-	public download(): boolean;
+    public download(): boolean;
 
     /**
     DESCRIPTION
-    @param fields: String
+
+
+    fields: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -73,11 +79,13 @@ declare class NetworkTransfer {
     
     ```
     */
-	public post(fields: string): boolean;
+    public post(fields: string): boolean;
 
     /**
     DESCRIPTION
-    @param seconds: int
+
+
+    seconds: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -88,11 +96,13 @@ declare class NetworkTransfer {
     
     ```
     */
-	public setConnectionTimeout(seconds: number): void;
+    public setConnectionTimeout(seconds: number): void;
 
     /**
     DESCRIPTION
-    @param headers: Array
+
+
+    headers: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -103,11 +113,13 @@ declare class NetworkTransfer {
     
     ```
     */
-	public setCustomHTTPHeaders(headers: Array<any>): void;
+    public setCustomHTTPHeaders(headers: Array<any>): void;
 
     /**
     DESCRIPTION
-    @param url: String
+
+
+    url: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -118,12 +130,14 @@ declare class NetworkTransfer {
     
     ```
     */
-	public setProxyURL(url: string): void;
+    public setProxyURL(url: string): void;
     /**
     DESCRIPTION
-    @param url: String
-    @param userName: String = ""
-    @param userPassword: String = ""
+
+
+    url: String
+    userName: String = ""
+    userPassword: String = ""
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -134,41 +148,11 @@ declare class NetworkTransfer {
     
     ```
     */
-	public setProxyURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setSSL(): void;
-    /**
-    DESCRIPTION
-    @param useSSL: Boolean = true
-    @param forceSSL: Boolean = true
-    @param verifyPeer: Boolean = true
-    @param verifyHost: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setSSL(useSSL?: boolean /* true */, forceSSL?: boolean /* true */, verifyPeer?: boolean /* true */, verifyHost?: boolean /* true */): void;
+    public setProxyURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
 
     /**
     DESCRIPTION
-    @param url: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -179,12 +163,15 @@ declare class NetworkTransfer {
     
     ```
     */
-	public setURL(url: string): void;
+    public setSSL(): void;
     /**
     DESCRIPTION
-    @param url: String
-    @param userName: String = ""
-    @param userPassword: String = ""
+
+
+    useSSL: Boolean = true
+    forceSSL: Boolean = true
+    verifyPeer: Boolean = true
+    verifyHost: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -195,39 +182,13 @@ declare class NetworkTransfer {
     
     ```
     */
-	public setURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
-
-    /**
-    DESCRIPTION
-    @param mailFrom: String
-    @param mailRecipients: Array
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public smtp(mailFrom: string, mailRecipients: Array<any>): boolean;
+    public setSSL(useSSL?: boolean /* true */, forceSSL?: boolean /* true */, verifyPeer?: boolean /* true */, verifyHost?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public upload(): boolean;
-    /**
-    DESCRIPTION
-    @param uploadSize: Number = 0
+
+
+    url: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -238,7 +199,74 @@ declare class NetworkTransfer {
     
     ```
     */
-	public upload(uploadSize?: number /* 0 */): boolean;
+    public setURL(url: string): void;
+    /**
+    DESCRIPTION
+
+
+    url: String
+    userName: String = ""
+    userPassword: String = ""
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setURL(url: string, userName?: string /* "" */, userPassword?: string /* "" */): void;
+
+    /**
+    DESCRIPTION
+
+
+    mailFrom: String
+    mailRecipients: Array
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public smtp(mailFrom: string, mailRecipients: Array<any>): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public upload(): boolean;
+    /**
+    DESCRIPTION
+
+
+    uploadSize: Number = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public upload(uploadSize?: number /* 0 */): boolean;
 
 
 

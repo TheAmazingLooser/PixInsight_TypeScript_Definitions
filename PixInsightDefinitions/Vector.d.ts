@@ -34,6 +34,8 @@ declare class Vector {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -43,14 +45,16 @@ declare class Vector {
     
     ```
     */
-	public BWMV(): number;
+    public BWMV(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Number = MAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
 
+
+    center: Number = median()
+    sigma: Number = MAD()
+    k: int = 9
+    reducedLength: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -60,10 +64,12 @@ declare class Vector {
     
     ```
     */
-	public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
+    public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -73,10 +79,12 @@ declare class Vector {
     
     ```
     */
-	public MAD(): number;
+    public MAD(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
+
+
+    center: Number = median()
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -87,10 +95,12 @@ declare class Vector {
     
     ```
     */
-	public MAD(center?: number /* median() */): number;
+    public MAD(center?: number /* median() */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -100,12 +110,14 @@ declare class Vector {
     
     ```
     */
-	public PBMV(): number;
+    public PBMV(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param beta: Number = 0.2
+
 
+    center: Number = median()
+    beta: Number = 0.2
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -115,10 +127,12 @@ declare class Vector {
     
     ```
     */
-	public PBMV(center?: number /* median() */, beta?: number /* 0.2 */): number;
+    public PBMV(center?: number /* median() */, beta?: number /* 0.2 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -128,10 +142,12 @@ declare class Vector {
     
     ```
     */
-	public Qn(): number;
+    public Qn(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -141,10 +157,12 @@ declare class Vector {
     
     ```
     */
-	public Sn(): number;
+    public Sn(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -154,11 +172,13 @@ declare class Vector {
     
     ```
     */
-	public abs(): Vector;
+    public abs(): Vector;
 
     /**
     DESCRIPTION
-    @param s: Number
+
+
+    s: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -169,12 +189,14 @@ declare class Vector {
     
     ```
     */
-	public add(s: number): void;
+    public add(s: number): void;
 
     /**
     DESCRIPTION
-    @param v: Vector
 
+
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -184,12 +206,14 @@ declare class Vector {
     
     ```
     */
-	public add(v: Vector): void;
+    public add(v: Vector): void;
 
     /**
     DESCRIPTION
-    @param value: Number
+
 
+    value: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -199,12 +223,14 @@ declare class Vector {
     
     ```
     */
-	public assign(value: number): void;
+    public assign(value: number): void;
 
     /**
     DESCRIPTION
-    @param value: Number
-    @param length: int
+
+
+    value: Number
+    length: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -215,12 +241,14 @@ declare class Vector {
     
     ```
     */
-	public assign(value: number, length: number): void;
+    public assign(value: number, length: number): void;
 
     /**
     DESCRIPTION
-    @param v: Vector
 
+
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -230,13 +258,15 @@ declare class Vector {
     
     ```
     */
-	public assign(v: Vector): void;
+    public assign(v: Vector): void;
     /**
     DESCRIPTION
-    @param v: Vector
-    @param startIndex: int = 0
-    @param endIndex: int = v.length
+
 
+    v: Vector
+    startIndex: int = 0
+    endIndex: int = v.length
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -246,11 +276,13 @@ declare class Vector {
     
     ```
     */
-	public assign(v: Vector, startIndex?: number /* 0 */, endIndex?: number /* v.length */): void;
+    public assign(v: Vector, startIndex?: number /* 0 */, endIndex?: number /* v.length */): void;
 
     /**
     DESCRIPTION
-    @param a: Array
+
+
+    a: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -261,13 +293,15 @@ declare class Vector {
     
     ```
     */
-	public assign(a: Array<any>): void;
+    public assign(a: Array<any>): void;
     /**
     DESCRIPTION
-    @param a: Array
-    @param startIndex: int = 0
-    @param endIndex: int = a.length
 
+
+    a: Array
+    startIndex: int = 0
+    endIndex: int = a.length
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -277,12 +311,14 @@ declare class Vector {
     
     ```
     */
-	public assign(a: Array<any>, startIndex?: number /* 0 */, endIndex?: number /* a.length */): void;
+    public assign(a: Array<any>, startIndex?: number /* 0 */, endIndex?: number /* a.length */): void;
 
     /**
     DESCRIPTION
-    @param a: TypedArray
+
 
+    a: TypedArray
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -292,12 +328,14 @@ declare class Vector {
     
     ```
     */
-	public assign(a: any /* TypedArray */): void;
+    public assign(a: any /* TypedArray */): void;
     /**
     DESCRIPTION
-    @param a: TypedArray
-    @param startIndex: int = 0
-    @param endIndex: int = a.length
+
+
+    a: TypedArray
+    startIndex: int = 0
+    endIndex: int = a.length
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -308,12 +346,14 @@ declare class Vector {
     
     ```
     */
-	public assign(a: any /* TypedArray */, startIndex?: number /* 0 */, endIndex?: number /* a.length */): void;
+    public assign(a: any /* TypedArray */, startIndex?: number /* 0 */, endIndex?: number /* a.length */): void;
 
     /**
     DESCRIPTION
-    @param index: int
 
+
+    index: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -323,13 +363,15 @@ declare class Vector {
     
     ```
     */
-	public at(index: number): number;
+    public at(index: number): number;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param value: Number
+
 
+    index: int
+    value: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -339,10 +381,12 @@ declare class Vector {
     
     ```
     */
-	public at(index: number, value: number): void;
+    public at(index: number, value: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -352,11 +396,13 @@ declare class Vector {
     
     ```
     */
-	public avgDev(): number;
+    public avgDev(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -366,10 +412,12 @@ declare class Vector {
     
     ```
     */
-	public avgDev(center?: number /* median() */): number;
+    public avgDev(center?: number /* median() */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -379,11 +427,13 @@ declare class Vector {
     
     ```
     */
-	public bendMidvariance(): number;
+    public bendMidvariance(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param beta: Number = 0.2
+
+
+    center: Number = median()
+    beta: Number = 0.2
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -394,12 +444,14 @@ declare class Vector {
     
     ```
     */
-	public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */): number;
+    public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */): number;
 
     /**
     DESCRIPTION
-    @param value: Number
 
+
+    value: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -409,13 +461,15 @@ declare class Vector {
     
     ```
     */
-	public binarySearch(value: number): number;
+    public binarySearch(value: number): number;
     /**
     DESCRIPTION
-    @param value: Number
-    @param startIndex: int = 0
-    @param endIndex: int = length
+
 
+    value: Number
+    startIndex: int = 0
+    endIndex: int = length
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -425,10 +479,12 @@ declare class Vector {
     
     ```
     */
-	public binarySearch(value: number, startIndex?: number /* 0 */, endIndex?: number /* length */): number;
+    public binarySearch(value: number, startIndex?: number /* 0 */, endIndex?: number /* length */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -438,14 +494,16 @@ declare class Vector {
     
     ```
     */
-	public biweightMidvariance(): number;
+    public biweightMidvariance(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Number = MAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
 
+
+    center: Number = median()
+    sigma: Number = MAD()
+    k: int = 9
+    reducedLength: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -455,12 +513,14 @@ declare class Vector {
     
     ```
     */
-	public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
+    public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
 
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -470,11 +530,13 @@ declare class Vector {
     
     ```
     */
-	public cross(v: Vector): Vector;
+    public cross(v: Vector): Vector;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
+
+    v: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -485,12 +547,14 @@ declare class Vector {
     
     ```
     */
-	public crossProduct(v: Vector): Vector;
+    public crossProduct(v: Vector): Vector;
 
     /**
     DESCRIPTION
-    @param s: Number
 
+
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -500,12 +564,14 @@ declare class Vector {
     
     ```
     */
-	public div(s: number): void;
+    public div(s: number): void;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
 
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -515,11 +581,13 @@ declare class Vector {
     
     ```
     */
-	public div(v: Vector): void;
+    public div(v: Vector): void;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
+
+    v: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -530,12 +598,14 @@ declare class Vector {
     
     ```
     */
-	public dot(v: Vector): number;
+    public dot(v: Vector): number;
 
     /**
     DESCRIPTION
-    @param v: Vector
 
+
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -545,12 +615,14 @@ declare class Vector {
     
     ```
     */
-	public dotProduct(v: Vector): number;
+    public dotProduct(v: Vector): number;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
 
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -560,11 +632,13 @@ declare class Vector {
     
     ```
     */
-	public isEqualTo(v: Vector): boolean;
+    public isEqualTo(v: Vector): boolean;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
+
+    v: Vector
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -575,10 +649,12 @@ declare class Vector {
     
     ```
     */
-	public isLessThan(v: Vector): boolean;
+    public isLessThan(v: Vector): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -588,10 +664,12 @@ declare class Vector {
     
     ```
     */
-	public l1norm(): number;
+    public l1norm(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -601,11 +679,13 @@ declare class Vector {
     
     ```
     */
-	public l2norm(): number;
+    public l2norm(): number;
 
     /**
     DESCRIPTION
-    @param value: Number
+
+
+    value: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -616,13 +696,15 @@ declare class Vector {
     
     ```
     */
-	public linearSearch(value: number): number;
+    public linearSearch(value: number): number;
     /**
     DESCRIPTION
-    @param value: Number
-    @param startIndex: int = 0
-    @param endIndex: int = length
 
+
+    value: Number
+    startIndex: int = 0
+    endIndex: int = length
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -632,10 +714,12 @@ declare class Vector {
     
     ```
     */
-	public linearSearch(value: number, startIndex?: number /* 0 */, endIndex?: number /* length */): number;
+    public linearSearch(value: number, startIndex?: number /* 0 */, endIndex?: number /* length */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -645,10 +729,12 @@ declare class Vector {
     
     ```
     */
-	public maxComponent(): number;
+    public maxComponent(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -658,10 +744,12 @@ declare class Vector {
     
     ```
     */
-	public mean(): number;
+    public mean(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -671,10 +759,12 @@ declare class Vector {
     
     ```
     */
-	public median(): number;
+    public median(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -684,10 +774,12 @@ declare class Vector {
     
     ```
     */
-	public minComponent(): number;
+    public minComponent(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -697,12 +789,14 @@ declare class Vector {
     
     ```
     */
-	public modulus(): number;
+    public modulus(): number;
 
     /**
     DESCRIPTION
-    @param s: Number
 
+
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -712,12 +806,14 @@ declare class Vector {
     
     ```
     */
-	public mul(s: number): void;
+    public mul(s: number): void;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
 
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -727,10 +823,12 @@ declare class Vector {
     
     ```
     */
-	public mul(v: Vector): void;
+    public mul(v: Vector): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -740,10 +838,12 @@ declare class Vector {
     
     ```
     */
-	public norm(): number;
+    public norm(): number;
     /**
     DESCRIPTION
-    @param p: Number = 2
+
+
+    p: Number = 2
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -754,12 +854,14 @@ declare class Vector {
     
     ```
     */
-	public norm(p?: number /* 2 */): number;
+    public norm(p?: number /* 2 */): number;
 
     /**
     DESCRIPTION
-    @param k: int
 
+
+    k: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -769,12 +871,14 @@ declare class Vector {
     
     ```
     */
-	public orderStatistic(k: number): number;
+    public orderStatistic(k: number): number;
 
     /**
     DESCRIPTION
-    @param s: Number
+
 
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -784,10 +888,12 @@ declare class Vector {
     
     ```
     */
-	public pow(s: number): void;
+    public pow(s: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -797,10 +903,12 @@ declare class Vector {
     
     ```
     */
-	public reverse(): void;
+    public reverse(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -810,10 +918,12 @@ declare class Vector {
     
     ```
     */
-	public setAbs(): void;
+    public setAbs(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -823,10 +933,12 @@ declare class Vector {
     
     ```
     */
-	public setRandom(): void;
+    public setRandom(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -836,10 +948,12 @@ declare class Vector {
     
     ```
     */
-	public setSqr(): void;
+    public setSqr(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -849,10 +963,12 @@ declare class Vector {
     
     ```
     */
-	public setSqrt(): void;
+    public setSqrt(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -862,10 +978,12 @@ declare class Vector {
     
     ```
     */
-	public setUnit(): void;
+    public setUnit(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -875,10 +993,12 @@ declare class Vector {
     
     ```
     */
-	public sort(): void;
+    public sort(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -888,10 +1008,12 @@ declare class Vector {
     
     ```
     */
-	public sqr(): Vector;
+    public sqr(): Vector;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -901,10 +1023,12 @@ declare class Vector {
     
     ```
     */
-	public sqrt(): Vector;
+    public sqrt(): Vector;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -914,11 +1038,13 @@ declare class Vector {
     
     ```
     */
-	public stableAvgDev(): number;
+    public stableAvgDev(): number;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -928,10 +1054,12 @@ declare class Vector {
     
     ```
     */
-	public stableAvgDev(center?: number /* median() */): number;
+    public stableAvgDev(center?: number /* median() */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -941,10 +1069,12 @@ declare class Vector {
     
     ```
     */
-	public stableMean(): number;
+    public stableMean(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -954,10 +1084,12 @@ declare class Vector {
     
     ```
     */
-	public stableModulus(): number;
+    public stableModulus(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -967,10 +1099,12 @@ declare class Vector {
     
     ```
     */
-	public stableSum(): number;
+    public stableSum(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -980,10 +1114,12 @@ declare class Vector {
     
     ```
     */
-	public stableSumOfSquares(): number;
+    public stableSumOfSquares(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -993,12 +1129,14 @@ declare class Vector {
     
     ```
     */
-	public stdDev(): number;
+    public stdDev(): number;
 
     /**
     DESCRIPTION
-    @param s: Number
 
+
+    s: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1008,12 +1146,14 @@ declare class Vector {
     
     ```
     */
-	public sub(s: number): void;
+    public sub(s: number): void;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
 
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1023,10 +1163,12 @@ declare class Vector {
     
     ```
     */
-	public sub(v: Vector): void;
+    public sub(v: Vector): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1036,10 +1178,12 @@ declare class Vector {
     
     ```
     */
-	public sum(): number;
+    public sum(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1049,12 +1193,14 @@ declare class Vector {
     
     ```
     */
-	public sumOfSquares(): number;
+    public sumOfSquares(): number;
 
     /**
     DESCRIPTION
-    @param v: Vector
+
 
+    v: Vector
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1064,10 +1210,12 @@ declare class Vector {
     
     ```
     */
-	public swap(v: Vector): void;
+    public swap(v: Vector): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1077,12 +1225,14 @@ declare class Vector {
     
     ```
     */
-	public toArray(): Array<any>;
+    public toArray(): Array<any>;
     /**
     DESCRIPTION
-    @param startIndex: int = 0
-    @param endIndex: int = length
 
+
+    startIndex: int = 0
+    endIndex: int = length
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1092,10 +1242,12 @@ declare class Vector {
     
     ```
     */
-	public toArray(startIndex?: number /* 0 */, endIndex?: number /* length */): Array<any>;
+    public toArray(startIndex?: number /* 0 */, endIndex?: number /* length */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1105,11 +1257,13 @@ declare class Vector {
     
     ```
     */
-	public toFloat32Array(): Float32Array;
+    public toFloat32Array(): Float32Array;
     /**
     DESCRIPTION
-    @param startIndex: int = 0
-    @param endIndex: int = length
+
+
+    startIndex: int = 0
+    endIndex: int = length
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1120,10 +1274,12 @@ declare class Vector {
     
     ```
     */
-	public toFloat32Array(startIndex?: number /* 0 */, endIndex?: number /* length */): Float32Array;
+    public toFloat32Array(startIndex?: number /* 0 */, endIndex?: number /* length */): Float32Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1133,12 +1289,14 @@ declare class Vector {
     
     ```
     */
-	public toFloat64Array(): Float64Array;
+    public toFloat64Array(): Float64Array;
     /**
     DESCRIPTION
-    @param startIndex: int = 0
-    @param endIndex: int = length
+
 
+    startIndex: int = 0
+    endIndex: int = length
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1148,10 +1306,12 @@ declare class Vector {
     
     ```
     */
-	public toFloat64Array(startIndex?: number /* 0 */, endIndex?: number /* length */): Float64Array;
+    public toFloat64Array(startIndex?: number /* 0 */, endIndex?: number /* length */): Float64Array;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1161,10 +1321,12 @@ declare class Vector {
     
     ```
     */
-	public toSpherical(): Array<any>;
+    public toSpherical(): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1174,10 +1336,12 @@ declare class Vector {
     
     ```
     */
-	public toSpherical2Pi(): Array<any>;
+    public toSpherical2Pi(): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1187,11 +1351,13 @@ declare class Vector {
     
     ```
     */
-	public trimmedMean(): number;
+    public trimmedMean(): number;
     /**
     DESCRIPTION
-    @param l: int = 1
-    @param h: int = 1
+
+
+    l: int = 1
+    h: int = 1
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1202,10 +1368,12 @@ declare class Vector {
     
     ```
     */
-	public trimmedMean(l?: number /* 1 */, h?: number /* 1 */): number;
+    public trimmedMean(l?: number /* 1 */, h?: number /* 1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1215,12 +1383,14 @@ declare class Vector {
     
     ```
     */
-	public trimmedMeanOfSquares(): number;
+    public trimmedMeanOfSquares(): number;
     /**
     DESCRIPTION
-    @param l: int = 1
-    @param h: int = 1
+
 
+    l: int = 1
+    h: int = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1230,10 +1400,12 @@ declare class Vector {
     
     ```
     */
-	public trimmedMeanOfSquares(l?: number /* 1 */, h?: number /* 1 */): number;
+    public trimmedMeanOfSquares(l?: number /* 1 */, h?: number /* 1 */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1243,11 +1415,13 @@ declare class Vector {
     
     ```
     */
-	public twoSidedAvgDev(): Array<any>;
+    public twoSidedAvgDev(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1257,10 +1431,12 @@ declare class Vector {
     
     ```
     */
-	public twoSidedAvgDev(center?: number /* median() */): Array<any>;
+    public twoSidedAvgDev(center?: number /* median() */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1270,13 +1446,15 @@ declare class Vector {
     
     ```
     */
-	public twoSidedBWMV(): Array<any>;
+    public twoSidedBWMV(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Array|Number = twoSidedMAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
+
+
+    center: Number = median()
+    sigma: Array|Number = twoSidedMAD()
+    k: int = 9
+    reducedLength: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1287,10 +1465,12 @@ declare class Vector {
     
     ```
     */
-	public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
+    public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1300,14 +1480,16 @@ declare class Vector {
     
     ```
     */
-	public twoSidedBiweightMidvariance(): Array<any>;
+    public twoSidedBiweightMidvariance(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
-    @param sigma: Array|Number = twoSidedMAD()
-    @param k: int = 9
-    @param reducedLength: Boolean = false
+
 
+    center: Number = median()
+    sigma: Array|Number = twoSidedMAD()
+    k: int = 9
+    reducedLength: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1317,10 +1499,12 @@ declare class Vector {
     
     ```
     */
-	public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
+    public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1330,11 +1514,13 @@ declare class Vector {
     
     ```
     */
-	public twoSidedMAD(): Array<any>;
+    public twoSidedMAD(): Array<any>;
     /**
     DESCRIPTION
-    @param center: Number = median()
 
+
+    center: Number = median()
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1344,10 +1530,12 @@ declare class Vector {
     
     ```
     */
-	public twoSidedMAD(center?: number /* median() */): Array<any>;
+    public twoSidedMAD(center?: number /* median() */): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1357,10 +1545,12 @@ declare class Vector {
     
     ```
     */
-	public unit(): Vector;
+    public unit(): Vector;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1370,7 +1560,7 @@ declare class Vector {
     
     ```
     */
-	public variance(): number;
+    public variance(): number;
 
 
 
@@ -1379,8 +1569,10 @@ declare class Vector {
     //-------------------------
     /**
     DESCRIPTION
-    @param longitude: Number
-    @param latitude: Number
+
+
+    longitude: Number
+    latitude: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1391,14 +1583,16 @@ declare class Vector {
     
     ```
     */
-	public static fromSpherical(longitude: number, latitude: number): Vector;
+    public static fromSpherical(longitude: number, latitude: number): Vector;
 
     /**
     DESCRIPTION
-    @param slon: Number
-    @param clon: Number
-    @param slat: Number
-    @param clat: Number
+
+
+    slon: Number
+    clon: Number
+    slat: Number
+    clat: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1409,7 +1603,7 @@ declare class Vector {
     
     ```
     */
-	public static fromSpherical(slon: number, clon: number, slat: number, clat: number): Vector;
+    public static fromSpherical(slon: number, clon: number, slat: number, clat: number): Vector;
 
 
 

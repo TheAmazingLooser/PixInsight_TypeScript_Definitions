@@ -32,6 +32,8 @@ declare class TextBox extends Frame {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -41,10 +43,12 @@ declare class TextBox extends Frame {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -54,10 +58,12 @@ declare class TextBox extends Frame {
     
     ```
     */
-	public end(): void;
+    public end(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -67,11 +73,13 @@ declare class TextBox extends Frame {
     
     ```
     */
-	public home(): void;
+    public home(): void;
 
     /**
     DESCRIPTION
-    @param text: String
+
+
+    text: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -82,23 +90,12 @@ declare class TextBox extends Frame {
     
     ```
     */
-	public insert(text: string): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public selectAll(): void;
+    public insert(text: string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -108,7 +105,22 @@ declare class TextBox extends Frame {
     
     ```
     */
-	public unselect(): void;
+    public selectAll(): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public unselect(): void;
 
 
 

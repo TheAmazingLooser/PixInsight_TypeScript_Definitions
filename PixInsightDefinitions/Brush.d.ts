@@ -32,7 +32,9 @@ declare class Brush {
     //-------------------------
     /**
     DESCRIPTION
-    @param br: Brush
+
+
+    br: Brush
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -43,7 +45,7 @@ declare class Brush {
     
     ```
     */
-	public assign(br: Brush): void;
+    public assign(br: Brush): void;
 
 
 

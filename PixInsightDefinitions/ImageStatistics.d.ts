@@ -63,7 +63,9 @@ declare class ImageStatistics {
     //-------------------------
     /**
     DESCRIPTION
-    @param s: ImageStatistics
+
+
+    s: ImageStatistics
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -74,11 +76,13 @@ declare class ImageStatistics {
     
     ```
     */
-	public assign(s: ImageStatistics): void;
+    public assign(s: ImageStatistics): void;
 
     /**
     DESCRIPTION
-    @param img: Image
+
+
+    img: Image
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -89,7 +93,7 @@ declare class ImageStatistics {
     
     ```
     */
-	public generate(img: Image): void;
+    public generate(img: Image): void;
 
 
 

@@ -30,6 +30,8 @@ declare class Label extends Frame {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -39,7 +41,7 @@ declare class Label extends Frame {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
 
 

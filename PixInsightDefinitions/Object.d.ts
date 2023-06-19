@@ -27,8 +27,10 @@ declare class Object {
     //-------------------------
     /**
     DESCRIPTION
-    @param property: String
-    @param getter: Function
+
+
+    property: String
+    getter: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -39,12 +41,14 @@ declare class Object {
     
     ```
     */
-	public __defineGetter__(property: string, getter: Function): void;
+    public __defineGetter__(property: string, getter: Function): void;
 
     /**
     DESCRIPTION
-    @param property: String
-    @param setter: Function
+
+
+    property: String
+    setter: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -55,11 +59,13 @@ declare class Object {
     
     ```
     */
-	public __defineSetter__(property: string, setter: Function): void;
+    public __defineSetter__(property: string, setter: Function): void;
 
     /**
     DESCRIPTION
-    @param property: String
+
+
+    property: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -70,11 +76,13 @@ declare class Object {
     
     ```
     */
-	public __lookupGetter__(property: string): Function;
+    public __lookupGetter__(property: string): Function;
 
     /**
     DESCRIPTION
-    @param property: String
+
+
+    property: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -85,11 +93,13 @@ declare class Object {
     
     ```
     */
-	public __lookupSetter__(property: string): Function;
+    public __lookupSetter__(property: string): Function;
 
     /**
     DESCRIPTION
-    @param property: String
+
+
+    property: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -100,11 +110,13 @@ declare class Object {
     
     ```
     */
-	public hasOwnProperty(property: string): boolean;
+    public hasOwnProperty(property: string): boolean;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -115,11 +127,13 @@ declare class Object {
     
     ```
     */
-	public isPrototypeOf(obj: Object): boolean;
+    public isPrototypeOf(obj: Object): boolean;
 
     /**
     DESCRIPTION
-    @param property: String
+
+
+    property: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -130,10 +144,12 @@ declare class Object {
     
     ```
     */
-	public propertyIsEnumerable(property: string): boolean;
+    public propertyIsEnumerable(property: string): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -143,10 +159,12 @@ declare class Object {
     
     ```
     */
-	public toLocaleString(): string;
+    public toLocaleString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -156,10 +174,12 @@ declare class Object {
     
     ```
     */
-	public toSource(): string;
+    public toSource(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -169,11 +189,13 @@ declare class Object {
     
     ```
     */
-	public toString(): string;
+    public toString(): string;
 
     /**
     DESCRIPTION
-    @param property: String
+
+
+    property: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -184,10 +206,12 @@ declare class Object {
     
     ```
     */
-	public unwatch(property: string): void;
+    public unwatch(property: string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -197,12 +221,14 @@ declare class Object {
     
     ```
     */
-	public valueOf(): Object;
+    public valueOf(): Object;
 
     /**
     DESCRIPTION
-    @param property: String
-    @param handler: Function
+
+
+    property: String
+    handler: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -213,7 +239,7 @@ declare class Object {
     
     ```
     */
-	public watch(property: string, handler: Function): void;
+    public watch(property: string, handler: Function): void;
 
 
 
@@ -222,7 +248,9 @@ declare class Object {
     //-------------------------
     /**
     DESCRIPTION
-    @param proto: Object
+
+
+    proto: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -233,11 +261,13 @@ declare class Object {
     
     ```
     */
-	public static create(proto: Object): Object;
+    public static create(proto: Object): Object;
     /**
     DESCRIPTION
-    @param proto: Object
-    @param propertiesObject: Object
+
+
+    proto: Object
+    propertiesObject: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -248,29 +278,14 @@ declare class Object {
     
     ```
     */
-	public static create(proto: Object, propertiesObject?: Object): Object;
-
-    /**
-    DESCRIPTION
-    @param obj: Object
-    @param props: Object
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static defineProperties(obj: Object, props: Object): void;
+    public static create(proto: Object, propertiesObject?: Object): Object;
 
     /**
     DESCRIPTION
-    @param obj: Object
-    @param prop: String
-    @param descriptor: Object
+
+
+    obj: Object
+    props: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -281,11 +296,15 @@ declare class Object {
     
     ```
     */
-	public static defineProperty(obj: Object, prop: string, descriptor: Object): void;
+    public static defineProperties(obj: Object, props: Object): void;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
+    prop: String
+    descriptor: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -296,12 +315,13 @@ declare class Object {
     
     ```
     */
-	public static freeze(obj: Object): Object;
+    public static defineProperty(obj: Object, prop: string, descriptor: Object): void;
 
     /**
     DESCRIPTION
-    @param obj: Object
-    @param prop: String
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -312,11 +332,14 @@ declare class Object {
     
     ```
     */
-	public static getOwnPropertyDescriptor(obj: Object, prop: string): Object;
+    public static freeze(obj: Object): Object;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
+    prop: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -327,11 +350,13 @@ declare class Object {
     
     ```
     */
-	public static getOwnPropertyNames(obj: Object): Array<any>;
+    public static getOwnPropertyDescriptor(obj: Object, prop: string): Object;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -342,11 +367,13 @@ declare class Object {
     
     ```
     */
-	public static getPrototypeOf(obj: Object): Object;
+    public static getOwnPropertyNames(obj: Object): Array<any>;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -357,11 +384,13 @@ declare class Object {
     
     ```
     */
-	public static isExtensible(obj: Object): boolean;
+    public static getPrototypeOf(obj: Object): Object;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -372,11 +401,13 @@ declare class Object {
     
     ```
     */
-	public static isFrozen(obj: Object): boolean;
+    public static isExtensible(obj: Object): boolean;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -387,11 +418,13 @@ declare class Object {
     
     ```
     */
-	public static isSealed(obj: Object): boolean;
+    public static isFrozen(obj: Object): boolean;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -402,11 +435,13 @@ declare class Object {
     
     ```
     */
-	public static keys(obj: Object): Array<any>;
+    public static isSealed(obj: Object): boolean;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -417,11 +452,13 @@ declare class Object {
     
     ```
     */
-	public static preventExtensions(obj: Object): Object;
+    public static keys(obj: Object): Array<any>;
 
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -432,7 +469,24 @@ declare class Object {
     
     ```
     */
-	public static seal(obj: Object): Object;
+    public static preventExtensions(obj: Object): Object;
+
+    /**
+    DESCRIPTION
+
+
+    obj: Object
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static seal(obj: Object): Object;
 
 
 

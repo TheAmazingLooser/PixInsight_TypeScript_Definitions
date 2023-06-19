@@ -31,7 +31,9 @@ declare class GridInterpolation {
     //-------------------------
     /**
     DESCRIPTION
-    @param G: GridInterpolation
+
+
+    G: GridInterpolation
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -42,10 +44,12 @@ declare class GridInterpolation {
     
     ```
     */
-	public assign(G: GridInterpolation): void;
+    public assign(G: GridInterpolation): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -55,12 +59,14 @@ declare class GridInterpolation {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
+
+    x: Number
+    y: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -71,11 +77,13 @@ declare class GridInterpolation {
     
     ```
     */
-	public evaluate(x: number, y: number): number;
+    public evaluate(x: number, y: number): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -86,11 +94,13 @@ declare class GridInterpolation {
     
     ```
     */
-	public evaluate(p: Point): number;
+    public evaluate(p: Point): number;
 
     /**
     DESCRIPTION
-    @param points: Array
+
+
+    points: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -101,12 +111,14 @@ declare class GridInterpolation {
     
     ```
     */
-	public evaluate(points: Array<any>): Array<any>;
+    public evaluate(points: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param S: SurfaceSpline
+
+
+    r: Rect
+    S: SurfaceSpline
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -117,13 +129,15 @@ declare class GridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, S: SurfaceSpline): void;
+    public initialize(r: Rect, S: SurfaceSpline): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param S: SurfaceSpline
-    @param delta: int = 8
-    @param verbose: Boolean = false
+
+
+    r: Rect
+    S: SurfaceSpline
+    delta: int = 8
+    verbose: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -134,12 +148,14 @@ declare class GridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, S: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+    public initialize(r: Rect, S: SurfaceSpline, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param S: ShepardInterpolation
+
+
+    r: Rect
+    S: ShepardInterpolation
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -150,13 +166,15 @@ declare class GridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, S: ShepardInterpolation): void;
+    public initialize(r: Rect, S: ShepardInterpolation): void;
     /**
     DESCRIPTION
-    @param r: Rect
-    @param S: ShepardInterpolation
-    @param delta: int = 8
-    @param verbose: Boolean = false
+
+
+    r: Rect
+    S: ShepardInterpolation
+    delta: int = 8
+    verbose: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -167,7 +185,7 @@ declare class GridInterpolation {
     
     ```
     */
-	public initialize(r: Rect, S: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
+    public initialize(r: Rect, S: ShepardInterpolation, delta?: number /* 8 */, verbose?: boolean /* false */): void;
 
 
 

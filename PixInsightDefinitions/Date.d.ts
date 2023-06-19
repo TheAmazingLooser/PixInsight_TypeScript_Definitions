@@ -28,6 +28,8 @@ declare class Date {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -37,10 +39,12 @@ declare class Date {
     
     ```
     */
-	public getDate(): number;
+    public getDate(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -50,10 +54,12 @@ declare class Date {
     
     ```
     */
-	public getDay(): number;
+    public getDay(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -63,10 +69,12 @@ declare class Date {
     
     ```
     */
-	public getFullYear(): number;
+    public getFullYear(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -76,10 +84,12 @@ declare class Date {
     
     ```
     */
-	public getHours(): number;
+    public getHours(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -89,10 +99,12 @@ declare class Date {
     
     ```
     */
-	public getMilliseconds(): number;
+    public getMilliseconds(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -102,10 +114,12 @@ declare class Date {
     
     ```
     */
-	public getMinutes(): number;
+    public getMinutes(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -115,10 +129,12 @@ declare class Date {
     
     ```
     */
-	public getMonth(): number;
+    public getMonth(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -128,10 +144,12 @@ declare class Date {
     
     ```
     */
-	public getSeconds(): number;
+    public getSeconds(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -141,10 +159,12 @@ declare class Date {
     
     ```
     */
-	public getTime(): number;
+    public getTime(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -154,10 +174,12 @@ declare class Date {
     
     ```
     */
-	public getTimezoneOffset(): number;
+    public getTimezoneOffset(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -167,10 +189,12 @@ declare class Date {
     
     ```
     */
-	public getUTCDate(): number;
+    public getUTCDate(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -180,10 +204,12 @@ declare class Date {
     
     ```
     */
-	public getUTCDay(): number;
+    public getUTCDay(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -193,10 +219,12 @@ declare class Date {
     
     ```
     */
-	public getUTCFullYear(): number;
+    public getUTCFullYear(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -206,10 +234,12 @@ declare class Date {
     
     ```
     */
-	public getUTCHours(): number;
+    public getUTCHours(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -219,10 +249,12 @@ declare class Date {
     
     ```
     */
-	public getUTCMilliseconds(): number;
+    public getUTCMilliseconds(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -232,10 +264,12 @@ declare class Date {
     
     ```
     */
-	public getUTCMinutes(): number;
+    public getUTCMinutes(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -245,10 +279,12 @@ declare class Date {
     
     ```
     */
-	public getUTCMonth(): number;
+    public getUTCMonth(): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -258,11 +294,13 @@ declare class Date {
     
     ```
     */
-	public getUTCSeconds(): number;
+    public getUTCSeconds(): number;
 
     /**
     DESCRIPTION
-    @param propertyName: String
+
+
+    propertyName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -273,11 +311,13 @@ declare class Date {
     
     ```
     */
-	public propertyIsEnumerable(propertyName: string): boolean;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
     /**
     DESCRIPTION
-    @param day: uint
+
+
+    day: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -288,11 +328,13 @@ declare class Date {
     
     ```
     */
-	public setDate(day: number): void;
+    public setDate(day: number): void;
 
     /**
     DESCRIPTION
-    @param year: uint
+
+
+    year: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -303,12 +345,14 @@ declare class Date {
     
     ```
     */
-	public setFullYear(year: number): void;
+    public setFullYear(year: number): void;
     /**
     DESCRIPTION
-    @param year: uint
-    @param month: uint
-    @param day: uint
+
+
+    year: uint
+    month: uint
+    day: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -319,43 +363,13 @@ declare class Date {
     
     ```
     */
-	public setFullYear(year: number, month?: number, day?: number): void;
-
-    /**
-    DESCRIPTION
-    @param hour: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setHours(hour: number): void;
-    /**
-    DESCRIPTION
-    @param hour: uint
-    @param minute: uint
-    @param second: uint
-    @param millisecond: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
+    public setFullYear(year: number, month?: number, day?: number): void;
 
     /**
     DESCRIPTION
-    @param millisecond: uint
+
+
+    hour: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -366,11 +380,32 @@ declare class Date {
     
     ```
     */
-	public setMilliseconds(millisecond: number): void;
+    public setHours(hour: number): void;
+    /**
+    DESCRIPTION
+
+
+    hour: uint
+    minute: uint
+    second: uint
+    millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
 
     /**
     DESCRIPTION
-    @param minute: uint
+
+
+    millisecond: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -381,27 +416,13 @@ declare class Date {
     
     ```
     */
-	public setMinutes(minute: number): void;
-    /**
-    DESCRIPTION
-    @param minute: uint
-    @param second: uint
-    @param millisecond: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setMinutes(minute: number, second?: number, millisecond?: number): void;
+    public setMilliseconds(millisecond: number): void;
 
     /**
     DESCRIPTION
-    @param month: uint
+
+
+    minute: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -412,11 +433,14 @@ declare class Date {
     
     ```
     */
-	public setMonth(month: number): void;
+    public setMinutes(minute: number): void;
     /**
     DESCRIPTION
-    @param month: uint
-    @param day: uint
+
+
+    minute: uint
+    second: uint
+    millisecond: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -427,41 +451,13 @@ declare class Date {
     
     ```
     */
-	public setMonth(month: number, day?: number): void;
-
-    /**
-    DESCRIPTION
-    @param second: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setSeconds(second: number): void;
-    /**
-    DESCRIPTION
-    @param second: uint
-    @param millisecond: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setSeconds(second: number, millisecond?: number): void;
+    public setMinutes(minute: number, second?: number, millisecond?: number): void;
 
     /**
     DESCRIPTION
-    @param time: uint
+
+
+    month: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -472,11 +468,30 @@ declare class Date {
     
     ```
     */
-	public setTime(time: number): void;
+    public setMonth(month: number): void;
+    /**
+    DESCRIPTION
+
+
+    month: uint
+    day: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setMonth(month: number, day?: number): void;
 
     /**
     DESCRIPTION
-    @param day: uint
+
+
+    second: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -487,11 +502,30 @@ declare class Date {
     
     ```
     */
-	public setUTCDate(day: number): void;
+    public setSeconds(second: number): void;
+    /**
+    DESCRIPTION
+
+
+    second: uint
+    millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setSeconds(second: number, millisecond?: number): void;
 
     /**
     DESCRIPTION
-    @param year: uint
+
+
+    time: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -502,27 +536,13 @@ declare class Date {
     
     ```
     */
-	public setUTCFullYear(year: number): void;
-    /**
-    DESCRIPTION
-    @param year: uint
-    @param month: uint
-    @param day: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUTCFullYear(year: number, month?: number, day?: number): void;
+    public setTime(time: number): void;
 
     /**
     DESCRIPTION
-    @param hour: uint
+
+
+    day: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -533,28 +553,13 @@ declare class Date {
     
     ```
     */
-	public setUTCHours(hour: number): void;
-    /**
-    DESCRIPTION
-    @param hour: uint
-    @param minute: uint
-    @param second: uint
-    @param millisecond: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUTCHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
+    public setUTCDate(day: number): void;
 
     /**
     DESCRIPTION
-    @param millisecond: uint
+
+
+    year: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -565,11 +570,31 @@ declare class Date {
     
     ```
     */
-	public setUTCMilliseconds(millisecond: number): void;
+    public setUTCFullYear(year: number): void;
+    /**
+    DESCRIPTION
+
+
+    year: uint
+    month: uint
+    day: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUTCFullYear(year: number, month?: number, day?: number): void;
 
     /**
     DESCRIPTION
-    @param minute: uint
+
+
+    hour: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -580,12 +605,15 @@ declare class Date {
     
     ```
     */
-	public setUTCMinutes(minute: number): void;
+    public setUTCHours(hour: number): void;
     /**
     DESCRIPTION
-    @param minute: uint
-    @param second: uint
-    @param millisecond: uint
+
+
+    hour: uint
+    minute: uint
+    second: uint
+    millisecond: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -596,41 +624,13 @@ declare class Date {
     
     ```
     */
-	public setUTCMinutes(minute: number, second?: number, millisecond?: number): void;
-
-    /**
-    DESCRIPTION
-    @param month: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUTCMonth(month: number): void;
-    /**
-    DESCRIPTION
-    @param month: uint
-    @param day: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUTCMonth(month: number, day?: number): void;
+    public setUTCHours(hour: number, minute?: number, second?: number, millisecond?: number): void;
 
     /**
     DESCRIPTION
-    @param second: uint
+
+
+    millisecond: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -641,25 +641,14 @@ declare class Date {
     
     ```
     */
-	public setUTCSeconds(second: number): void;
-    /**
-    DESCRIPTION
-    @param second: uint
-    @param millisecond: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setUTCSeconds(second: number, millisecond?: number): void;
+    public setUTCMilliseconds(millisecond: number): void;
 
     /**
     DESCRIPTION
+
+
+    minute: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -669,10 +658,32 @@ declare class Date {
     
     ```
     */
-	public toDateString(): string;
+    public setUTCMinutes(minute: number): void;
+    /**
+    DESCRIPTION
+
+
+    minute: uint
+    second: uint
+    millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUTCMinutes(minute: number, second?: number, millisecond?: number): void;
 
     /**
     DESCRIPTION
+
+
+    month: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -682,10 +693,31 @@ declare class Date {
     
     ```
     */
-	public toISOString(): string;
+    public setUTCMonth(month: number): void;
+    /**
+    DESCRIPTION
+
+
+    month: uint
+    day: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUTCMonth(month: number, day?: number): void;
 
     /**
     DESCRIPTION
+
+
+    second: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -695,10 +727,29 @@ declare class Date {
     
     ```
     */
-	public toJSON(): string;
+    public setUTCSeconds(second: number): void;
+    /**
+    DESCRIPTION
+
+
+    second: uint
+    millisecond: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setUTCSeconds(second: number, millisecond?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -708,11 +759,11 @@ declare class Date {
     
     ```
     */
-	public toLocaleDateString(): string;
+    public toDateString(): string;
 
     /**
     DESCRIPTION
-    @param format: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -723,23 +774,12 @@ declare class Date {
     
     ```
     */
-	public toLocaleFormat(format: string): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLocaleString(): string;
+    public toISOString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -749,10 +789,12 @@ declare class Date {
     
     ```
     */
-	public toLocaleTimeString(): string;
+    public toJSON(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -762,10 +804,14 @@ declare class Date {
     
     ```
     */
-	public toSource(): string;
+    public toLocaleDateString(): string;
 
     /**
     DESCRIPTION
+
+
+    format: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -775,10 +821,12 @@ declare class Date {
     
     ```
     */
-	public toString(): string;
+    public toLocaleFormat(format: string): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -788,10 +836,12 @@ declare class Date {
     
     ```
     */
-	public toTimeString(): string;
+    public toLocaleString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -801,10 +851,12 @@ declare class Date {
     
     ```
     */
-	public toUTCString(): string;
+    public toLocaleTimeString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -814,7 +866,67 @@ declare class Date {
     
     ```
     */
-	public valueOf(): number;
+    public toSource(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toTimeString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toUTCString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public valueOf(): number;
 
 
 
@@ -823,9 +935,11 @@ declare class Date {
     //-------------------------
     /**
     DESCRIPTION
-    @param year: uint
-    @param month: uint
-    @param day: uint
+
+
+    year: uint
+    month: uint
+    day: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -836,16 +950,18 @@ declare class Date {
     
     ```
     */
-	public static UTC(year: number, month: number, day: number): number;
+    public static UTC(year: number, month: number, day: number): number;
     /**
     DESCRIPTION
-    @param year: uint
-    @param month: uint
-    @param day: uint
-    @param hour: uint
-    @param minute: uint
-    @param second: uint
-    @param millisecond: uint
+
+
+    year: uint
+    month: uint
+    day: uint
+    hour: uint
+    minute: uint
+    second: uint
+    millisecond: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -856,24 +972,11 @@ declare class Date {
     
     ```
     */
-	public static UTC(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number): number;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static now(): number;
+    public static UTC(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number): number;
 
     /**
     DESCRIPTION
-    @param dateString: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -884,7 +987,24 @@ declare class Date {
     
     ```
     */
-	public static parse(dateString: string): number;
+    public static now(): number;
+
+    /**
+    DESCRIPTION
+
+
+    dateString: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static parse(dateString: string): number;
 
 
 

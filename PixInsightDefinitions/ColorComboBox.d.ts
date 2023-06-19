@@ -26,7 +26,9 @@ declare class ColorComboBox extends ComboBox {
     //-------------------------
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -37,10 +39,12 @@ declare class ColorComboBox extends ComboBox {
     
     ```
     */
-	public colorForIndex(index: number): number;
+    public colorForIndex(index: number): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -50,11 +54,13 @@ declare class ColorComboBox extends ComboBox {
     
     ```
     */
-	public currentColor(): number;
+    public currentColor(): number;
 
     /**
     DESCRIPTION
-    @param rgba: uint32
+
+
+    rgba: uint32
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -65,7 +71,7 @@ declare class ColorComboBox extends ComboBox {
     
     ```
     */
-	public setCurrentColor(rgba: number): void;
+    public setCurrentColor(rgba: number): void;
 
 
 

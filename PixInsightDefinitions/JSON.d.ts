@@ -24,7 +24,9 @@ declare class JSON {
     //-------------------------
     /**
     DESCRIPTION
-    @param text: String
+
+
+    text: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -35,11 +37,13 @@ declare class JSON {
     
     ```
     */
-	public parse(text: string): Object;
+    public parse(text: string): Object;
     /**
     DESCRIPTION
-    @param text: String
-    @param reviver: Function
+
+
+    text: String
+    reviver: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -50,11 +54,13 @@ declare class JSON {
     
     ```
     */
-	public parse(text: string, reviver?: Function): Object;
+    public parse(text: string, reviver?: Function): Object;
 
     /**
     DESCRIPTION
-    @param value: Object
+
+
+    value: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -65,12 +71,14 @@ declare class JSON {
     
     ```
     */
-	public stringify(value: Object): string;
+    public stringify(value: Object): string;
     /**
     DESCRIPTION
-    @param value: Object
-    @param replacer: Function|Array
-    @param space: String
+
+
+    value: Object
+    replacer: Function|Array
+    space: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -81,7 +89,7 @@ declare class JSON {
     
     ```
     */
-	public stringify(value: Object, replacer?: Function | Array<any>, space?: string): string;
+    public stringify(value: Object, replacer?: Function | Array<any>, space?: string): string;
 
 
 

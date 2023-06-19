@@ -29,7 +29,9 @@ declare class Settings {
     //-------------------------
     /**
     DESCRIPTION
-    @param key: String
+
+
+    key: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -40,11 +42,13 @@ declare class Settings {
     
     ```
     */
-	public static canReadGlobal(key: string): boolean;
+    public static canReadGlobal(key: string): boolean;
 
     /**
     DESCRIPTION
-    @param key: String
+
+
+    key: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -55,12 +59,14 @@ declare class Settings {
     
     ```
     */
-	public static canWriteGlobal(key: string): boolean;
+    public static canWriteGlobal(key: string): boolean;
 
     /**
     DESCRIPTION
-    @param key: String
-    @param dataType: int
+
+
+    key: String
+    dataType: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -71,12 +77,14 @@ declare class Settings {
     
     ```
     */
-	public static read(key: string, dataType: number): Object;
+    public static read(key: string, dataType: number): Object;
 
     /**
     DESCRIPTION
-    @param key: String
-    @param dataType: int
+
+
+    key: String
+    dataType: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -87,11 +95,13 @@ declare class Settings {
     
     ```
     */
-	public static readGlobal(key: string, dataType: number): Object;
+    public static readGlobal(key: string, dataType: number): Object;
 
     /**
     DESCRIPTION
-    @param key: String
+
+
+    key: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -102,11 +112,13 @@ declare class Settings {
     
     ```
     */
-	public static remove(key: string): boolean;
+    public static remove(key: string): boolean;
 
     /**
     DESCRIPTION
-    @param key: String
+
+
+    key: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -117,13 +129,15 @@ declare class Settings {
     
     ```
     */
-	public static removeGlobal(key: string): boolean;
+    public static removeGlobal(key: string): boolean;
 
     /**
     DESCRIPTION
-    @param key: String
-    @param dataType: int
-    @param x: Object
+
+
+    key: String
+    dataType: int
+    x: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -134,13 +148,15 @@ declare class Settings {
     
     ```
     */
-	public static write(key: string, dataType: number, x: Object): void;
+    public static write(key: string, dataType: number, x: Object): void;
 
     /**
     DESCRIPTION
-    @param key: String
-    @param dataType: int
-    @param x: Object
+
+
+    key: String
+    dataType: int
+    x: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -151,7 +167,7 @@ declare class Settings {
     
     ```
     */
-	public static writeGlobal(key: string, dataType: number, x: Object): void;
+    public static writeGlobal(key: string, dataType: number, x: Object): void;
 
 
 

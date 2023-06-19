@@ -26,7 +26,9 @@ declare class String {
     //-------------------------
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -37,11 +39,13 @@ declare class String {
     
     ```
     */
-	public charAt(index: number): string;
+    public charAt(index: number): string;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -52,11 +56,13 @@ declare class String {
     
     ```
     */
-	public charCodeAt(index: number): number;
+    public charCodeAt(index: number): number;
 
     /**
     DESCRIPTION
-    @param ...s: any[]
+
+
+    ...s: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -67,11 +73,13 @@ declare class String {
     
     ```
     */
-	public concat(...s: any[]): string;
+    public concat(...s: any[]): string;
 
     /**
     DESCRIPTION
-    @param searchValue: String
+
+
+    searchValue: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -82,11 +90,13 @@ declare class String {
     
     ```
     */
-	public contains(searchValue: string): boolean;
+    public contains(searchValue: string): boolean;
     /**
     DESCRIPTION
-    @param searchValue: String
-    @param fromIndex: uint
+
+
+    searchValue: String
+    fromIndex: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -97,41 +107,13 @@ declare class String {
     
     ```
     */
-	public contains(searchValue: string, fromIndex?: number): boolean;
-
-    /**
-    DESCRIPTION
-    @param searchValue: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public endsWith(searchValue: string): boolean;
-    /**
-    DESCRIPTION
-    @param searchValue: String
-    @param length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public endsWith(searchValue: string, length?: number): boolean;
+    public contains(searchValue: string, fromIndex?: number): boolean;
 
     /**
     DESCRIPTION
-    @param searchValue: String
+
+
+    searchValue: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -142,11 +124,13 @@ declare class String {
     
     ```
     */
-	public indexOf(searchValue: string): number;
+    public endsWith(searchValue: string): boolean;
     /**
     DESCRIPTION
-    @param searchValue: String
-    @param fromIndex: uint
+
+
+    searchValue: String
+    length: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -157,41 +141,13 @@ declare class String {
     
     ```
     */
-	public indexOf(searchValue: string, fromIndex?: number): number;
-
-    /**
-    DESCRIPTION
-    @param searchValue: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public lastIndexOf(searchValue: string): number;
-    /**
-    DESCRIPTION
-    @param searchValue: String
-    @param fromIndex: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public lastIndexOf(searchValue: string, fromIndex?: number): number;
+    public endsWith(searchValue: string, length?: number): boolean;
 
     /**
     DESCRIPTION
-    @param compareString: String
+
+
+    searchValue: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -202,11 +158,30 @@ declare class String {
     
     ```
     */
-	public localeCompare(compareString: string): number;
+    public indexOf(searchValue: string): number;
+    /**
+    DESCRIPTION
+
+
+    searchValue: String
+    fromIndex: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public indexOf(searchValue: string, fromIndex?: number): number;
 
     /**
     DESCRIPTION
-    @param exp: RegExp
+
+
+    searchValue: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -217,10 +192,31 @@ declare class String {
     
     ```
     */
-	public match(exp: RegExp): Array<any>;
+    public lastIndexOf(searchValue: string): number;
+    /**
+    DESCRIPTION
+
+
+    searchValue: String
+    fromIndex: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public lastIndexOf(searchValue: string, fromIndex?: number): number;
 
     /**
     DESCRIPTION
+
+
+    compareString: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -230,11 +226,13 @@ declare class String {
     
     ```
     */
-	public quote(): string;
+    public localeCompare(compareString: string): number;
 
     /**
     DESCRIPTION
-    @param n: uint
+
+
+    exp: RegExp
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -245,12 +243,11 @@ declare class String {
     
     ```
     */
-	public repeat(n: number): string;
+    public match(exp: RegExp): Array<any>;
 
     /**
     DESCRIPTION
-    @param RegExp: RegExp | string
-    @param string: string | Function
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -261,27 +258,13 @@ declare class String {
     
     ```
     */
-	public replace(RegExp: RegExp  |  string, string: string  |  Function): string;
-    /**
-    DESCRIPTION
-    @param RegExp: RegExp | string
-    @param string: string | Function
-    @param flags: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public replace(RegExp: RegExp  |  string, string: string  |  Function, flags?: string): string;
+    public quote(): string;
 
     /**
     DESCRIPTION
-    @param exp: RegExp
+
+
+    n: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -292,11 +275,14 @@ declare class String {
     
     ```
     */
-	public search(exp: RegExp): number;
+    public repeat(n: number): string;
 
     /**
     DESCRIPTION
-    @param begin: int
+
+
+    RegExp: RegExp | string
+    string: string | Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -307,11 +293,14 @@ declare class String {
     
     ```
     */
-	public slice(begin: number): string;
+    public replace(RegExp: RegExp  |  string, string: string  |  Function): string;
     /**
     DESCRIPTION
-    @param begin: int
-    @param end: int
+
+
+    RegExp: RegExp | string
+    string: string | Function
+    flags: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -322,39 +311,13 @@ declare class String {
     
     ```
     */
-	public slice(begin: number, end?: number): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public split(): Array<any>;
-    /**
-    DESCRIPTION
-    @param separator: String
-    @param limit: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public split(separator?: string, limit?: number): Array<any>;
+    public replace(RegExp: RegExp  |  string, string: string  |  Function, flags?: string): string;
 
     /**
     DESCRIPTION
-    @param searchValue: String
+
+
+    exp: RegExp
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -365,26 +328,13 @@ declare class String {
     
     ```
     */
-	public startsWith(searchValue: string): boolean;
-    /**
-    DESCRIPTION
-    @param searchValue: String
-    @param fromIndex: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public startsWith(searchValue: string, fromIndex?: number): boolean;
+    public search(exp: RegExp): number;
 
     /**
     DESCRIPTION
-    @param start: uint
+
+
+    begin: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -395,11 +345,13 @@ declare class String {
     
     ```
     */
-	public substr(start: number): string;
+    public slice(begin: number): string;
     /**
     DESCRIPTION
-    @param start: uint
-    @param length: uint
+
+
+    begin: int
+    end: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -410,92 +362,11 @@ declare class String {
     
     ```
     */
-	public substr(start: number, length?: number): string;
-
-    /**
-    DESCRIPTION
-    @param startIndex: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public substring(startIndex: number): string;
-    /**
-    DESCRIPTION
-    @param startIndex: uint
-    @param endIndex: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public substring(startIndex: number, endIndex?: number): string;
+    public slice(begin: number, end?: number): string;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toBoolean(): boolean;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toDouble(): number;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toFloat(): number;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toInt(): number;
-    /**
-    DESCRIPTION
-    @param base: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -506,101 +377,13 @@ declare class String {
     
     ```
     */
-	public toInt(base?: number /* 0 */): number;
+    public split(): Array<any>;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLocaleLowerCase(): string;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLocaleUpperCase(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLowerCase(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toNumber(): number;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toSource(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toString(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toUInt(): number;
-    /**
-    DESCRIPTION
-    @param base: int = 0
+    separator: String
+    limit: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -611,114 +394,13 @@ declare class String {
     
     ```
     */
-	public toUInt(base?: number /* 0 */): number;
+    public split(separator?: string, limit?: number): Array<any>;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toUpperCase(): string;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public trim(): string;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public trimLeft(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public trimRight(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tryToBoolean(): boolean | void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tryToDouble(): number | void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tryToFloat(): number | void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tryToInt(): number | void;
-    /**
-    DESCRIPTION
-    @param base: int = 0
+    searchValue: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -729,36 +411,13 @@ declare class String {
     
     ```
     */
-	public tryToInt(base?: number /* 0 */): number | void;
+    public startsWith(searchValue: string): boolean;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tryToNumber(): number | void;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public tryToUInt(): number | void;
-    /**
-    DESCRIPTION
-    @param base: int = 0
+    searchValue: String
+    fromIndex: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -769,10 +428,14 @@ declare class String {
     
     ```
     */
-	public tryToUInt(base?: number /* 0 */): number | void;
+    public startsWith(searchValue: string, fromIndex?: number): boolean;
 
     /**
     DESCRIPTION
+
+
+    start: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -782,10 +445,14 @@ declare class String {
     
     ```
     */
-	public unquote(): string;
-
+    public substr(start: number): string;
     /**
     DESCRIPTION
+
+
+    start: uint
+    length: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -795,7 +462,450 @@ declare class String {
     
     ```
     */
-	public valueOf(): string;
+    public substr(start: number, length?: number): string;
+
+    /**
+    DESCRIPTION
+
+
+    startIndex: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public substring(startIndex: number): string;
+    /**
+    DESCRIPTION
+
+
+    startIndex: uint
+    endIndex: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public substring(startIndex: number, endIndex?: number): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toBoolean(): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toDouble(): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toFloat(): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toInt(): number;
+    /**
+    DESCRIPTION
+
+
+    base: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toInt(base?: number /* 0 */): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toLocaleLowerCase(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toLocaleUpperCase(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toLowerCase(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toNumber(): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toSource(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toUInt(): number;
+    /**
+    DESCRIPTION
+
+
+    base: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toUInt(base?: number /* 0 */): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toUpperCase(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public trim(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public trimLeft(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public trimRight(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToBoolean(): boolean | void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToDouble(): number | void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToFloat(): number | void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToInt(): number | void;
+    /**
+    DESCRIPTION
+
+
+    base: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToInt(base?: number /* 0 */): number | void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToNumber(): number | void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToUInt(): number | void;
+    /**
+    DESCRIPTION
+
+
+    base: int = 0
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public tryToUInt(base?: number /* 0 */): number | void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public unquote(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public valueOf(): string;
 
 
 
@@ -804,7 +914,9 @@ declare class String {
     //-------------------------
     /**
     DESCRIPTION
-    @param ...c: any[]
+
+
+    ...c: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -815,7 +927,7 @@ declare class String {
     
     ```
     */
-	public static fromCharCode(...c: any[]): string;
+    public static fromCharCode(...c: any[]): string;
 
 
 

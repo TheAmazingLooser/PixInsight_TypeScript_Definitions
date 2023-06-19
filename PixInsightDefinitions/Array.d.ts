@@ -30,6 +30,8 @@ declare class Array<T> {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -39,10 +41,12 @@ declare class Array<T> {
     
     ```
     */
-	public concat(): Array<any>;
+    public concat(): Array<any>;
     /**
     DESCRIPTION
-    @param ...item: any[]
+
+
+    ...item: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -53,41 +57,13 @@ declare class Array<T> {
     
     ```
     */
-	public concat(...item: any[]): Array<any>;
-
-    /**
-    DESCRIPTION
-    @param callback: Function
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public every(callback: Function): boolean;
-    /**
-    DESCRIPTION
-    @param callback: Function
-    @param thisObject: any
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public every(callback: Function, thisObject?: any): boolean;
+    public concat(...item: any[]): Array<any>;
 
     /**
     DESCRIPTION
-    @param callback: Function
+
+
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -98,11 +74,13 @@ declare class Array<T> {
     
     ```
     */
-	public filter(callback: Function): Array<any>;
+    public every(callback: Function): boolean;
     /**
     DESCRIPTION
-    @param callback: Function
-    @param thisObject: any
+
+
+    callback: Function
+    thisObject: any
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -113,41 +91,13 @@ declare class Array<T> {
     
     ```
     */
-	public filter(callback: Function, thisObject?: any): Array<any>;
-
-    /**
-    DESCRIPTION
-    @param callback: Function
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public forEach(callback: Function): void;
-    /**
-    DESCRIPTION
-    @param callback: Function
-    @param thisObject: any
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public forEach(callback: Function, thisObject?: any): void;
+    public every(callback: Function, thisObject?: any): boolean;
 
     /**
     DESCRIPTION
-    @param searchItem: any
+
+
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -158,11 +108,13 @@ declare class Array<T> {
     
     ```
     */
-	public indexOf(searchItem: any): number;
+    public filter(callback: Function): Array<any>;
     /**
     DESCRIPTION
-    @param searchItem: any
-    @param fromIndex: int
+
+
+    callback: Function
+    thisObject: any
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -173,38 +125,13 @@ declare class Array<T> {
     
     ```
     */
-	public indexOf(searchItem: any, fromIndex?: number): number;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public join(): string;
-    /**
-    DESCRIPTION
-    @param separator: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public join(separator?: string): string;
+    public filter(callback: Function, thisObject?: any): Array<any>;
 
     /**
     DESCRIPTION
-    @param searchItem: any
+
+
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -215,11 +142,13 @@ declare class Array<T> {
     
     ```
     */
-	public lastIndexOf(searchItem: any): number;
+    public forEach(callback: Function): void;
     /**
     DESCRIPTION
-    @param searchItem: any
-    @param fromIndex: int
+
+
+    callback: Function
+    thisObject: any
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -230,40 +159,14 @@ declare class Array<T> {
     
     ```
     */
-	public lastIndexOf(searchItem: any, fromIndex?: number): number;
-
-    /**
-    DESCRIPTION
-    @param callback: Function
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public map(callback: Function): Array<any>;
-    /**
-    DESCRIPTION
-    @param callback: Function
-    @param thisObject: any
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public map(callback: Function, thisObject?: any): Array<any>;
+    public forEach(callback: Function, thisObject?: any): void;
 
     /**
     DESCRIPTION
+
+
+    searchItem: any
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -273,11 +176,28 @@ declare class Array<T> {
     
     ```
     */
-	public pop(): any /* item */;
+    public indexOf(searchItem: any): number;
+    /**
+    DESCRIPTION
+
+
+    searchItem: any
+    fromIndex: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public indexOf(searchItem: any, fromIndex?: number): number;
 
     /**
     DESCRIPTION
-    @param propertyName: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -288,10 +208,30 @@ declare class Array<T> {
     
     ```
     */
-	public propertyIsEnumerable(propertyName: string): boolean;
+    public join(): string;
+    /**
+    DESCRIPTION
+
+
+    separator: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public join(separator?: string): string;
 
     /**
     DESCRIPTION
+
+
+    searchItem: any
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -301,10 +241,13 @@ declare class Array<T> {
     
     ```
     */
-	public push(): any /* item */;
+    public lastIndexOf(searchItem: any): number;
     /**
     DESCRIPTION
-    @param ...item: any[]
+
+
+    searchItem: any
+    fromIndex: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -315,41 +258,13 @@ declare class Array<T> {
     
     ```
     */
-	public push(...item: any[]): any /* item */;
-
-    /**
-    DESCRIPTION
-    @param callback: Function
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public reduce(callback: Function): Object;
-    /**
-    DESCRIPTION
-    @param callback: Function
-    @param initialValue: Object
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public reduce(callback: Function, initialValue?: Object): Object;
+    public lastIndexOf(searchItem: any, fromIndex?: number): number;
 
     /**
     DESCRIPTION
-    @param callback: Function
+
+
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -360,11 +275,13 @@ declare class Array<T> {
     
     ```
     */
-	public reduceRight(callback: Function): Object;
+    public map(callback: Function): Array<any>;
     /**
     DESCRIPTION
-    @param callback: Function
-    @param initialValue: Object
+
+
+    callback: Function
+    thisObject: any
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -375,23 +292,12 @@ declare class Array<T> {
     
     ```
     */
-	public reduceRight(callback: Function, initialValue?: Object): Object;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public reverse(): void;
+    public map(callback: Function, thisObject?: any): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -401,12 +307,13 @@ declare class Array<T> {
     
     ```
     */
-	public shift(): any /* item */;
+    public pop(): any /* item */;
 
     /**
     DESCRIPTION
-    @param start: uint
-    @param end: int
+
+
+    propertyName: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -417,11 +324,11 @@ declare class Array<T> {
     
     ```
     */
-	public slice(start: number, end: number): Array<any>;
+    public propertyIsEnumerable(propertyName: string): boolean;
 
     /**
     DESCRIPTION
-    @param callback: Function
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -432,11 +339,12 @@ declare class Array<T> {
     
     ```
     */
-	public some(callback: Function): boolean;
+    public push(): any /* item */;
     /**
     DESCRIPTION
-    @param callback: Function
-    @param thisObject: any
+
+
+    ...item: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -447,39 +355,13 @@ declare class Array<T> {
     
     ```
     */
-	public some(callback: Function, thisObject?: any): boolean;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public sort(): void;
-    /**
-    DESCRIPTION
-    @param compare: Function
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public sort(compare?: Function): void;
+    public push(...item: any[]): any /* item */;
 
     /**
     DESCRIPTION
-    @param start: uint
-    @param deleteCount: uint
+
+
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -490,10 +372,13 @@ declare class Array<T> {
     
     ```
     */
-	public splice(start: number, deleteCount: number): Array<any>;
+    public reduce(callback: Function): Object;
     /**
     DESCRIPTION
-    @param ...item: any[]
+
+
+    callback: Function
+    initialValue: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -504,62 +389,13 @@ declare class Array<T> {
     
     ```
     */
-	public splice(...item: any[]): Array<any>;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLocaleString(): string;
+    public reduce(callback: Function, initialValue?: Object): Object;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toSource(): string;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toString(): string;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public unshift(): number;
-    /**
-    DESCRIPTION
-    @param ...item: any[]
+    callback: Function
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -570,10 +406,14 @@ declare class Array<T> {
     
     ```
     */
-	public unshift(...item: any[]): number;
-
+    public reduceRight(callback: Function): Object;
     /**
     DESCRIPTION
+
+
+    callback: Function
+    initialValue: Object
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -583,7 +423,245 @@ declare class Array<T> {
     
     ```
     */
-	public valueOf(): Array<any>;
+    public reduceRight(callback: Function, initialValue?: Object): Object;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public reverse(): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public shift(): any /* item */;
+
+    /**
+    DESCRIPTION
+
+
+    start: uint
+    end: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public slice(start: number, end: number): Array<any>;
+
+    /**
+    DESCRIPTION
+
+
+    callback: Function
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public some(callback: Function): boolean;
+    /**
+    DESCRIPTION
+
+
+    callback: Function
+    thisObject: any
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public some(callback: Function, thisObject?: any): boolean;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public sort(): void;
+    /**
+    DESCRIPTION
+
+
+    compare: Function
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public sort(compare?: Function): void;
+
+    /**
+    DESCRIPTION
+
+
+    start: uint
+    deleteCount: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public splice(start: number, deleteCount: number): Array<any>;
+    /**
+    DESCRIPTION
+
+
+    ...item: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public splice(...item: any[]): Array<any>;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toLocaleString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toSource(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public unshift(): number;
+    /**
+    DESCRIPTION
+
+
+    ...item: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public unshift(...item: any[]): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public valueOf(): Array<any>;
 
 
 
@@ -592,7 +670,9 @@ declare class Array<T> {
     //-------------------------
     /**
     DESCRIPTION
-    @param obj: Object
+
+
+    obj: Object
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -603,7 +683,7 @@ declare class Array<T> {
     
     ```
     */
-	public static isArray(obj: Object): boolean;
+    public static isArray(obj: Object): boolean;
 
 
 

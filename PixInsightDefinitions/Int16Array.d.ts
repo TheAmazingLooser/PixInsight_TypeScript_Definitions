@@ -29,7 +29,9 @@ declare class Int16Array extends ArrayBufferView {
     //-------------------------
     /**
     DESCRIPTION
-    @param array: TypedArray
+
+
+    array: TypedArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -40,11 +42,13 @@ declare class Int16Array extends ArrayBufferView {
     
     ```
     */
-	public set(array: any /* TypedArray */): void;
+    public set(array: any /* TypedArray */): void;
     /**
     DESCRIPTION
-    @param array: TypedArray
-    @param offset: uint32 = 0
+
+
+    array: TypedArray
+    offset: uint32 = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -55,41 +59,13 @@ declare class Int16Array extends ArrayBufferView {
     
     ```
     */
-	public set(array: any /* TypedArray */, offset?: number /* 0 */): void;
-
-    /**
-    DESCRIPTION
-    @param array: Array
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public set(array: Array<any>): void;
-    /**
-    DESCRIPTION
-    @param array: Array
-    @param offset: uint32 = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public set(array: Array<any>, offset?: number /* 0 */): void;
+    public set(array: any /* TypedArray */, offset?: number /* 0 */): void;
 
     /**
     DESCRIPTION
-    @param begin: int
+
+
+    array: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -100,11 +76,13 @@ declare class Int16Array extends ArrayBufferView {
     
     ```
     */
-	public subarray(begin: number): Int16Array;
+    public set(array: Array<any>): void;
     /**
     DESCRIPTION
-    @param begin: int
-    @param end: int
+
+
+    array: Array
+    offset: uint32 = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -115,7 +93,41 @@ declare class Int16Array extends ArrayBufferView {
     
     ```
     */
-	public subarray(begin: number, end?: number): Int16Array;
+    public set(array: Array<any>, offset?: number /* 0 */): void;
+
+    /**
+    DESCRIPTION
+
+
+    begin: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public subarray(begin: number): Int16Array;
+    /**
+    DESCRIPTION
+
+
+    begin: int
+    end: int
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public subarray(begin: number, end?: number): Int16Array;
 
 
 

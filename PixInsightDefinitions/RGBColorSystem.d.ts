@@ -31,7 +31,9 @@ declare class RGBColorSystem {
     //-------------------------
     /**
     DESCRIPTION
-    @param rgbws: RGBColorSystem
+
+
+    rgbws: RGBColorSystem
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -42,13 +44,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public assign(rgbws: RGBColorSystem): void;
+    public assign(rgbws: RGBColorSystem): void;
 
     /**
     DESCRIPTION
-    @param L: Number
-    @param a: Number
-    @param b: Number
+
+
+    L: Number
+    a: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -59,11 +63,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLabToCIELch(L: number, a: number, b: number): Array<any>;
+    public cieLabToCIELch(L: number, a: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param Lab: Array
+
+
+    Lab: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -74,13 +80,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLabToCIELch(Lab: Array<any>): Array<any>;
+    public cieLabToCIELch(Lab: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param L: Number
-    @param a: Number
-    @param b: Number
+
+
+    L: Number
+    a: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -91,11 +99,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLabToCIEXYZ(L: number, a: number, b: number): Array<any>;
+    public cieLabToCIEXYZ(L: number, a: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param Lab: Array
+
+
+    Lab: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -106,13 +116,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLabToCIEXYZ(Lab: Array<any>): Array<any>;
+    public cieLabToCIEXYZ(Lab: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param L: Number
-    @param a: Number
-    @param b: Number
+
+
+    L: Number
+    a: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -123,11 +135,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLabToRGB(L: number, a: number, b: number): Array<any>;
+    public cieLabToRGB(L: number, a: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param Lab: Array
+
+
+    Lab: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -138,13 +152,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLabToRGB(Lab: Array<any>): Array<any>;
+    public cieLabToRGB(Lab: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param L: Number
-    @param c: Number
-    @param h: Number
+
+
+    L: Number
+    c: Number
+    h: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -155,11 +171,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLchToCIELab(L: number, c: number, h: number): Array<any>;
+    public cieLchToCIELab(L: number, c: number, h: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param Lch: Array
+
+
+    Lch: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -170,13 +188,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLchToCIELab(Lch: Array<any>): Array<any>;
+    public cieLchToCIELab(Lch: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param L: Number
-    @param c: Number
-    @param h: Number
+
+
+    L: Number
+    c: Number
+    h: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -187,11 +207,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLchToRGB(L: number, c: number, h: number): Array<any>;
+    public cieLchToRGB(L: number, c: number, h: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param Lch: Array
+
+
+    Lch: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -202,13 +224,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieLchToRGB(Lch: Array<any>): Array<any>;
+    public cieLchToRGB(Lch: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
-    @param z: Number
+
+
+    x: Number
+    y: Number
+    z: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -219,11 +243,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieXYZToCIELab(x: number, y: number, z: number): Array<any>;
+    public cieXYZToCIELab(x: number, y: number, z: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param xyz: Array
+
+
+    xyz: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -234,13 +260,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieXYZToCIELab(xyz: Array<any>): Array<any>;
+    public cieXYZToCIELab(xyz: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
-    @param z: Number
+
+
+    x: Number
+    y: Number
+    z: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -251,11 +279,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieXYZToRGB(x: number, y: number, z: number): Array<any>;
+    public cieXYZToRGB(x: number, y: number, z: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param xyz: Array
+
+
+    xyz: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -266,13 +296,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public cieXYZToRGB(xyz: Array<any>): Array<any>;
+    public cieXYZToRGB(xyz: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -283,11 +315,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public lightness(r: number, g: number, b: number): number;
+    public lightness(r: number, g: number, b: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -298,13 +332,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public lightness(rgb: Array<any>): number;
+    public lightness(rgb: Array<any>): number;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -315,11 +351,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public rgbToCIELab(r: number, g: number, b: number): Array<any>;
+    public rgbToCIELab(r: number, g: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -330,13 +368,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public rgbToCIELab(rgb: Array<any>): Array<any>;
+    public rgbToCIELab(rgb: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -347,11 +387,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public rgbToCIELch(r: number, g: number, b: number): Array<any>;
+    public rgbToCIELch(r: number, g: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -362,13 +404,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public rgbToCIELch(rgb: Array<any>): Array<any>;
+    public rgbToCIELch(rgb: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -379,11 +423,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public rgbToCIEXYZ(r: number, g: number, b: number): Array<any>;
+    public rgbToCIEXYZ(r: number, g: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -394,7 +440,7 @@ declare class RGBColorSystem {
     
     ```
     */
-	public rgbToCIEXYZ(rgb: Array<any>): Array<any>;
+    public rgbToCIEXYZ(rgb: Array<any>): Array<any>;
 
 
 
@@ -403,9 +449,11 @@ declare class RGBColorSystem {
     //-------------------------
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -416,11 +464,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsiSaturation(r: number, g: number, b: number): number;
+    public static hsiSaturation(r: number, g: number, b: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -431,13 +481,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsiSaturation(rgb: Array<any>): number;
+    public static hsiSaturation(rgb: Array<any>): number;
 
     /**
     DESCRIPTION
-    @param h: Number
-    @param s: Number
-    @param i: Number
+
+
+    h: Number
+    s: Number
+    i: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -448,11 +500,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsiToRGB(h: number, s: number, i: number): Array<any>;
+    public static hsiToRGB(h: number, s: number, i: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param hsi: Array
+
+
+    hsi: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -463,13 +517,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsiToRGB(hsi: Array<any>): Array<any>;
+    public static hsiToRGB(hsi: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -480,11 +536,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsvSaturation(r: number, g: number, b: number): number;
+    public static hsvSaturation(r: number, g: number, b: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -495,13 +553,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsvSaturation(rgb: Array<any>): number;
+    public static hsvSaturation(rgb: Array<any>): number;
 
     /**
     DESCRIPTION
-    @param h: Number
-    @param s: Number
-    @param v: Number
+
+
+    h: Number
+    s: Number
+    v: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -512,11 +572,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsvToRGB(h: number, s: number, v: number): Array<any>;
+    public static hsvToRGB(h: number, s: number, v: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param hsv: Array
+
+
+    hsv: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -527,13 +589,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hsvToRGB(hsv: Array<any>): Array<any>;
+    public static hsvToRGB(hsv: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -544,11 +608,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hue(r: number, g: number, b: number): number;
+    public static hue(r: number, g: number, b: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -559,13 +625,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static hue(rgb: Array<any>): number;
+    public static hue(rgb: Array<any>): number;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -576,11 +644,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static intensity(r: number, g: number, b: number): number;
+    public static intensity(r: number, g: number, b: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -591,13 +661,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static intensity(rgb: Array<any>): number;
+    public static intensity(rgb: Array<any>): number;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -608,11 +680,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static rgbToHSI(r: number, g: number, b: number): Array<any>;
+    public static rgbToHSI(r: number, g: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -623,13 +697,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static rgbToHSI(rgb: Array<any>): Array<any>;
+    public static rgbToHSI(rgb: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -640,11 +716,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static rgbToHSV(r: number, g: number, b: number): Array<any>;
+    public static rgbToHSV(r: number, g: number, b: number): Array<any>;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -655,13 +733,15 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static rgbToHSV(rgb: Array<any>): Array<any>;
+    public static rgbToHSV(rgb: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param r: Number
-    @param g: Number
-    @param b: Number
+
+
+    r: Number
+    g: Number
+    b: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -672,11 +752,13 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static value(r: number, g: number, b: number): number;
+    public static value(r: number, g: number, b: number): number;
 
     /**
     DESCRIPTION
-    @param rgb: Array
+
+
+    rgb: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -687,7 +769,7 @@ declare class RGBColorSystem {
     
     ```
     */
-	public static value(rgb: Array<any>): number;
+    public static value(rgb: Array<any>): number;
 
 
 

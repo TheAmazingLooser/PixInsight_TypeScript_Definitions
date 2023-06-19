@@ -26,7 +26,9 @@ declare class ProcessContainer extends ProcessInstance {
     //-------------------------
     /**
     DESCRIPTION
-    @param instance: ProcessInstance
+
+
+    instance: ProcessInstance
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -37,11 +39,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public add(instance: ProcessInstance): void;
+    public add(instance: ProcessInstance): void;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -52,10 +56,12 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public at(index: number): ProcessInstance;
+    public at(index: number): ProcessInstance;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -65,11 +71,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -80,11 +88,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public delete(index: number): void;
+    public delete(index: number): void;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -95,11 +105,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public disable(index: number): void;
+    public disable(index: number): void;
     /**
     DESCRIPTION
-    @param index: uint
-    @param disable: Boolean = true
+
+
+    index: uint
+    disable: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -110,26 +122,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public disable(index: number, disable?: boolean /* true */): void;
-
-    /**
-    DESCRIPTION
-    @param index: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public disabled(index: number): boolean;
+    public disable(index: number, disable?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -140,26 +139,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public enable(index: number): void;
-    /**
-    DESCRIPTION
-    @param index: uint
-    @param enable: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public enable(index: number, enable?: boolean /* true */): void;
+    public disabled(index: number): boolean;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -170,12 +156,30 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public enabled(index: number): boolean;
+    public enable(index: number): void;
+    /**
+    DESCRIPTION
+
+
+    index: uint
+    enable: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public enable(index: number, enable?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param index: uint
-    @param instance: ProcessInstance
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -186,11 +190,14 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public insert(index: number, instance: ProcessInstance): void;
+    public enabled(index: number): boolean;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
+    instance: ProcessInstance
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -201,26 +208,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public invertMask(index: number): void;
-    /**
-    DESCRIPTION
-    @param index: uint
-    @param invert: Boolean
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public invertMask(index: number, invert?: boolean): void;
+    public insert(index: number, instance: ProcessInstance): void;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -231,11 +225,30 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public maskId(index: number): string;
+    public invertMask(index: number): void;
+    /**
+    DESCRIPTION
+
+
+    index: uint
+    invert: Boolean
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public invertMask(index: number, invert?: boolean): void;
 
     /**
     DESCRIPTION
-    @param index: uint
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -246,12 +259,13 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public maskInverted(index: number): boolean;
+    public maskId(index: number): string;
 
     /**
     DESCRIPTION
-    @param index: uint
-    @param mask: ImageWindow
+
+
+    index: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -262,28 +276,14 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public setMask(index: number, mask: ImageWindow): void;
-    /**
-    DESCRIPTION
-    @param index: uint
-    @param mask: ImageWindow
-    @param invert: Boolean = false
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public setMask(index: number, mask: ImageWindow, invert?: boolean /* false */): void;
+    public maskInverted(index: number): boolean;
 
     /**
     DESCRIPTION
-    @param index: uint
-    @param maskId: String
+
+
+    index: uint
+    mask: ImageWindow
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -294,12 +294,14 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public setMask(index: number, maskId: string): void;
+    public setMask(index: number, mask: ImageWindow): void;
     /**
     DESCRIPTION
-    @param index: uint
-    @param maskId: String
-    @param invert: Boolean = false
+
+
+    index: uint
+    mask: ImageWindow
+    invert: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -310,7 +312,43 @@ declare class ProcessContainer extends ProcessInstance {
     
     ```
     */
-	public setMask(index: number, maskId: string, invert?: boolean /* false */): void;
+    public setMask(index: number, mask: ImageWindow, invert?: boolean /* false */): void;
+
+    /**
+    DESCRIPTION
+
+
+    index: uint
+    maskId: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setMask(index: number, maskId: string): void;
+    /**
+    DESCRIPTION
+
+
+    index: uint
+    maskId: String
+    invert: Boolean = false
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setMask(index: number, maskId: string, invert?: boolean /* false */): void;
 
 
 

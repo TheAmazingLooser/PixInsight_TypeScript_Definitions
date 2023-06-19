@@ -29,19 +29,7 @@ declare class Console {
     //-------------------------
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static beginLog(): void;
-    /**
-    DESCRIPTION
-    @param filePath: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -52,36 +40,12 @@ declare class Console {
     
     ```
     */
-	public static beginLog(filePath?: string): void;
+    public static beginLog(): void;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static clear(): void;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static critical(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -92,23 +56,11 @@ declare class Console {
     
     ```
     */
-	public static critical(...value: any[]): number;
+    public static beginLog(filePath?: string): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static criticalln(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -119,49 +71,11 @@ declare class Console {
     
     ```
     */
-	public static criticalln(...value: any[]): number;
+    public static clear(): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static endLog(): ByteArray;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static flush(): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static hide(): void;
-    /**
-    DESCRIPTION
-    @param animate: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -172,36 +86,12 @@ declare class Console {
     
     ```
     */
-	public static hide(animate?: boolean /* true */): void;
+    public static critical(): number;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static logText(): ByteArray;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static note(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+    ...value: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -212,23 +102,11 @@ declare class Console {
     
     ```
     */
-	public static note(...value: any[]): number;
+    public static critical(...value: any[]): number;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static noteln(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -239,49 +117,12 @@ declare class Console {
     
     ```
     */
-	public static noteln(...value: any[]): number;
+    public static criticalln(): number;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static readChar(): number;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static readString(): string;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static show(): void;
-    /**
-    DESCRIPTION
-    @param animate: Boolean = true
+    ...value: any[]
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -292,23 +133,11 @@ declare class Console {
     
     ```
     */
-	public static show(animate?: boolean /* true */): void;
+    public static criticalln(...value: any[]): number;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static warning(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -319,23 +148,11 @@ declare class Console {
     
     ```
     */
-	public static warning(...value: any[]): number;
+    public static endLog(): ByteArray;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static warningln(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -346,23 +163,11 @@ declare class Console {
     
     ```
     */
-	public static warningln(...value: any[]): number;
+    public static flush(): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static write(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -373,23 +178,12 @@ declare class Console {
     
     ```
     */
-	public static write(...value: any[]): number;
+    public static hide(): void;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static writeln(): number;
-    /**
-    DESCRIPTION
-    @param ...value: any[]
+
+    animate: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -400,7 +194,269 @@ declare class Console {
     
     ```
     */
-	public static writeln(...value: any[]): number;
+    public static hide(animate?: boolean /* true */): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static logText(): ByteArray;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static note(): number;
+    /**
+    DESCRIPTION
+
+
+    ...value: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static note(...value: any[]): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static noteln(): number;
+    /**
+    DESCRIPTION
+
+
+    ...value: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static noteln(...value: any[]): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static readChar(): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static readString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static show(): void;
+    /**
+    DESCRIPTION
+
+
+    animate: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static show(animate?: boolean /* true */): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static warning(): number;
+    /**
+    DESCRIPTION
+
+
+    ...value: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static warning(...value: any[]): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static warningln(): number;
+    /**
+    DESCRIPTION
+
+
+    ...value: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static warningln(...value: any[]): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static write(): number;
+    /**
+    DESCRIPTION
+
+
+    ...value: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static write(...value: any[]): number;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static writeln(): number;
+    /**
+    DESCRIPTION
+
+
+    ...value: any[]
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static writeln(...value: any[]): number;
 
 
 

@@ -27,7 +27,9 @@ declare class Cipher {
     //-------------------------
     /**
     DESCRIPTION
-    @param cipherText: ByteArray
+
+
+    cipherText: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -38,11 +40,13 @@ declare class Cipher {
     
     ```
     */
-	public decrypt(cipherText: ByteArray): ByteArray;
+    public decrypt(cipherText: ByteArray): ByteArray;
 
     /**
     DESCRIPTION
-    @param plainText: ByteArray
+
+
+    plainText: ByteArray
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -53,7 +57,7 @@ declare class Cipher {
     
     ```
     */
-	public encrypt(plainText: ByteArray): ByteArray;
+    public encrypt(plainText: ByteArray): ByteArray;
 
 
 

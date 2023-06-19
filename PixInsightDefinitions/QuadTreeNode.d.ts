@@ -31,7 +31,9 @@ declare class QuadTreeNode {
     //-------------------------
     /**
     DESCRIPTION
-    @param point: Point
+
+
+    point: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -42,11 +44,13 @@ declare class QuadTreeNode {
     
     ```
     */
-	public includes(point: Point): boolean;
+    public includes(point: Point): boolean;
 
     /**
     DESCRIPTION
-    @param rect: Rect
+
+
+    rect: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -57,23 +61,12 @@ declare class QuadTreeNode {
     
     ```
     */
-	public intersects(rect: Rect): boolean;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public isLeaf(): boolean;
+    public intersects(rect: Rect): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -83,10 +76,12 @@ declare class QuadTreeNode {
     
     ```
     */
-	public neRect(): Rect;
+    public isLeaf(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -96,10 +91,12 @@ declare class QuadTreeNode {
     
     ```
     */
-	public nwRect(): Rect;
+    public neRect(): Rect;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -109,10 +106,12 @@ declare class QuadTreeNode {
     
     ```
     */
-	public seRect(): Rect;
+    public nwRect(): Rect;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -122,7 +121,22 @@ declare class QuadTreeNode {
     
     ```
     */
-	public swRect(): Rect;
+    public seRect(): Rect;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public swRect(): Rect;
 
 
 

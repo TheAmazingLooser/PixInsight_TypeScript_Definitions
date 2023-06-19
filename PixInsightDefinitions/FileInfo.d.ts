@@ -53,7 +53,9 @@ declare class FileInfo {
     //-------------------------
     /**
     DESCRIPTION
-    @param info: FileInfo
+
+
+    info: FileInfo
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -64,36 +66,11 @@ declare class FileInfo {
     
     ```
     */
-	public assign(info: FileInfo): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public clear(): void;
+    public assign(info: FileInfo): void;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public refresh(): void;
-    /**
-    DESCRIPTION
-    @param filePath: String
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -104,7 +81,38 @@ declare class FileInfo {
     
     ```
     */
-	public refresh(filePath?: string): void;
+    public clear(): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public refresh(): void;
+    /**
+    DESCRIPTION
+
+
+    filePath: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public refresh(filePath?: string): void;
 
 
 

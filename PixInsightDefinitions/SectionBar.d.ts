@@ -27,6 +27,8 @@ declare class SectionBar extends Control {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -36,10 +38,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public enableCheckBox(): void;
+    public enableCheckBox(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -49,10 +53,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public hasCheckBox(): boolean;
+    public hasCheckBox(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -62,10 +68,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public hasSection(): boolean;
+    public hasSection(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -75,10 +83,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public isChecked(): boolean;
+    public isChecked(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -88,10 +98,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public isCollapsed(): boolean;
+    public isCollapsed(): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -101,11 +113,13 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public isExpanded(): boolean;
+    public isExpanded(): boolean;
 
     /**
     DESCRIPTION
-    @param section: Control
+
+
+    section: Control
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -116,11 +130,13 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public setSection(section: Control): void;
+    public setSection(section: Control): void;
 
     /**
     DESCRIPTION
-    @param title: String
+
+
+    title: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -131,23 +147,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public setTitle(title: string): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public title(): string;
+    public setTitle(title: string): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -157,10 +162,12 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public toggleSection(): void;
+    public title(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -170,7 +177,22 @@ declare class SectionBar extends Control {
     
     ```
     */
-	public updateSection(): void;
+    public toggleSection(): void;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public updateSection(): void;
 
 
 

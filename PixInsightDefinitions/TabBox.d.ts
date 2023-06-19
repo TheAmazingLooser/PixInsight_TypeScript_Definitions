@@ -31,8 +31,10 @@ declare class TabBox extends Control {
     //-------------------------
     /**
     DESCRIPTION
-    @param page: Control
-    @param label: String
+
+
+    page: Control
+    label: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -43,12 +45,14 @@ declare class TabBox extends Control {
     
     ```
     */
-	public addPage(page: Control, label: string): void;
+    public addPage(page: Control, label: string): void;
     /**
     DESCRIPTION
-    @param page: Control
-    @param label: String
-    @param icon: Bitmap|String
+
+
+    page: Control
+    label: String
+    icon: Bitmap|String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -59,39 +63,11 @@ declare class TabBox extends Control {
     
     ```
     */
-	public addPage(page: Control, label: string, icon?: Bitmap | string): void;
-
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public clearControls(): void;
-    /**
-    DESCRIPTION
-    @param clearLeft: Boolean
-    @param clearRight: Boolean
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public clearControls(clearLeft: boolean, clearRight: boolean): void;
+    public addPage(page: Control, label: string, icon?: Bitmap | string): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -102,11 +78,30 @@ declare class TabBox extends Control {
     
     ```
     */
-	public clearPageIcon(index: number): void;
+    public clearControls(): void;
+    /**
+    DESCRIPTION
+
+
+    clearLeft: Boolean
+    clearRight: Boolean
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public clearControls(clearLeft: boolean, clearRight: boolean): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -117,26 +112,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public disablePage(index: number): void;
-    /**
-    DESCRIPTION
-    @param index: int
-    @param disable: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public disablePage(index: number, disable?: boolean /* true */): void;
+    public clearPageIcon(index: number): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -147,11 +129,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public enablePage(index: number): void;
+    public disablePage(index: number): void;
     /**
     DESCRIPTION
-    @param index: int
-    @param enable: Boolean = true
+
+
+    index: int
+    disable: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -162,45 +146,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public enablePage(index: number, enable?: boolean /* true */): void;
-
-    /**
-    DESCRIPTION
-    @param index: int
-    @param page: Control
-    @param label: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insertPage(index: number, page: Control, label: string): void;
-    /**
-    DESCRIPTION
-    @param index: int
-    @param page: Control
-    @param label: String
-    @param icon: Bitmap|String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public insertPage(index: number, page: Control, label: string, icon?: Bitmap | string): void;
+    public disablePage(index: number, disable?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -211,11 +163,32 @@ declare class TabBox extends Control {
     
     ```
     */
-	public isPageEnabled(index: number): boolean;
+    public enablePage(index: number): void;
+    /**
+    DESCRIPTION
+
+
+    index: int
+    enable: Boolean = true
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public enablePage(index: number, enable?: boolean /* true */): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
+    page: Control
+    label: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -226,11 +199,32 @@ declare class TabBox extends Control {
     
     ```
     */
-	public pageControlByIndex(index: number): Control;
+    public insertPage(index: number, page: Control, label: string): void;
+    /**
+    DESCRIPTION
+
+
+    index: int
+    page: Control
+    label: String
+    icon: Bitmap|String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public insertPage(index: number, page: Control, label: string, icon?: Bitmap | string): void;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -241,11 +235,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public pageIcon(index: number): Bitmap;
+    public isPageEnabled(index: number): boolean;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -256,11 +252,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public pageLabel(index: number): string;
+    public pageControlByIndex(index: number): Control;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -271,11 +269,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public pageToolTip(index: number): string;
+    public pageIcon(index: number): Bitmap;
 
     /**
     DESCRIPTION
-    @param index: int
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -286,12 +286,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public removePage(index: number): void;
+    public pageLabel(index: number): string;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param icon: Bitmap|String
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -302,12 +303,13 @@ declare class TabBox extends Control {
     
     ```
     */
-	public setPageIcon(index: number, icon: Bitmap | string): void;
+    public pageToolTip(index: number): string;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param label: String
+
+
+    index: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -318,12 +320,14 @@ declare class TabBox extends Control {
     
     ```
     */
-	public setPageLabel(index: number, label: string): void;
+    public removePage(index: number): void;
 
     /**
     DESCRIPTION
-    @param index: int
-    @param tip: String
+
+
+    index: int
+    icon: Bitmap|String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -334,7 +338,43 @@ declare class TabBox extends Control {
     
     ```
     */
-	public setPageToolTip(index: number, tip: string): void;
+    public setPageIcon(index: number, icon: Bitmap | string): void;
+
+    /**
+    DESCRIPTION
+
+
+    index: int
+    label: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setPageLabel(index: number, label: string): void;
+
+    /**
+    DESCRIPTION
+
+
+    index: int
+    tip: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public setPageToolTip(index: number, tip: string): void;
 
 
 

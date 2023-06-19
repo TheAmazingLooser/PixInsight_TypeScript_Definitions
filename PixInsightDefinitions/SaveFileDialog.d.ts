@@ -27,6 +27,8 @@ declare class SaveFileDialog extends FileDialog {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -36,7 +38,7 @@ declare class SaveFileDialog extends FileDialog {
     
     ```
     */
-	public loadImageFilters(): void;
+    public loadImageFilters(): void;
 
 
 

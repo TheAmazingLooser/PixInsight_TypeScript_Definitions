@@ -86,6 +86,8 @@ declare class Control {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -95,10 +97,12 @@ declare class Control {
     
     ```
     */
-	public activateWindow(): void;
+    public activateWindow(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -108,10 +112,12 @@ declare class Control {
     
     ```
     */
-	public adjustToContents(): void;
+    public adjustToContents(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -121,11 +127,13 @@ declare class Control {
     
     ```
     */
-	public bringToFront(): void;
+    public bringToFront(): void;
 
     /**
     DESCRIPTION
-    @param Point: Point
+
+
+    Point: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -136,13 +144,15 @@ declare class Control {
     
     ```
     */
-	public childByPos(Point: Point): Control;
+    public childByPos(Point: Point): Control;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
 
+
+    x: int
+    y: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -152,12 +162,14 @@ declare class Control {
     
     ```
     */
-	public childByPos(x: number, y: number): Control;
+    public childByPos(x: number, y: number): Control;
 
     /**
     DESCRIPTION
-    @param Control: Control
-    @param Point: Point
+
+
+    Control: Control
+    Point: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -168,10 +180,12 @@ declare class Control {
     
     ```
     */
-	public controlToLocal(Control: Control, Point: Point): Point;
+    public controlToLocal(Control: Control, Point: Point): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -181,12 +195,14 @@ declare class Control {
     
     ```
     */
-	public ensureLayoutUpdated(): void;
+    public ensureLayoutUpdated(): void;
 
     /**
     DESCRIPTION
-    @param Point: Point
 
+
+    Point: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -196,10 +212,12 @@ declare class Control {
     
     ```
     */
-	public globalToLocal(Point: Point): Point;
+    public globalToLocal(Point: Point): Point;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -209,10 +227,12 @@ declare class Control {
     
     ```
     */
-	public hide(): void;
+    public hide(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -222,12 +242,14 @@ declare class Control {
     
     ```
     */
-	public hideAlias(): void;
+    public hideAlias(): void;
 
     /**
     DESCRIPTION
-    @param Control: Control
+
 
+    Control: Control
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -237,13 +259,15 @@ declare class Control {
     
     ```
     */
-	public isAncestorOf(Control: Control): boolean;
+    public isAncestorOf(Control: Control): boolean;
 
     /**
     DESCRIPTION
-    @param Control: Control
-    @param Point: Point
+
 
+    Control: Control
+    Point: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -253,11 +277,13 @@ declare class Control {
     
     ```
     */
-	public localToControl(Control: Control, Point: Point): Point;
+    public localToControl(Control: Control, Point: Point): Point;
 
     /**
     DESCRIPTION
-    @param Point: Point
+
+
+    Point: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -268,12 +294,14 @@ declare class Control {
     
     ```
     */
-	public localToGlobal(Point: Point): Point;
+    public localToGlobal(Point: Point): Point;
 
     /**
     DESCRIPTION
-    @param Point: Point
 
+
+    Point: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -283,11 +311,13 @@ declare class Control {
     
     ```
     */
-	public localToParent(Point: Point): Point;
+    public localToParent(Point: Point): Point;
 
     /**
     DESCRIPTION
-    @param size: Number
+
+
+    size: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -298,12 +328,14 @@ declare class Control {
     
     ```
     */
-	public logicalPixelsToPhysical(size: number): number;
+    public logicalPixelsToPhysical(size: number): number;
 
     /**
     DESCRIPTION
-    @param Point: Point
 
+
+    Point: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -313,13 +345,15 @@ declare class Control {
     
     ```
     */
-	public move(Point: Point): void;
+    public move(Point: Point): void;
 
     /**
     DESCRIPTION
-    @param x: int
-    @param y: int
 
+
+    x: int
+    y: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -329,12 +363,14 @@ declare class Control {
     
     ```
     */
-	public move(x: number, y: number): void;
+    public move(x: number, y: number): void;
 
     /**
     DESCRIPTION
-    @param Point: Point
+
 
+    Point: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -344,12 +380,14 @@ declare class Control {
     
     ```
     */
-	public parentToLocal(Point: Point): Point;
+    public parentToLocal(Point: Point): Point;
 
     /**
     DESCRIPTION
-    @param size: Number
+
 
+    size: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -359,10 +397,12 @@ declare class Control {
     
     ```
     */
-	public physicalPixelsToLogical(size: number): number;
+    public physicalPixelsToLogical(size: number): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -372,10 +412,12 @@ declare class Control {
     
     ```
     */
-	public render(): Bitmap;
+    public render(): Bitmap;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -385,12 +427,14 @@ declare class Control {
     
     ```
     */
-	public repaint(): void;
+    public repaint(): void;
 
     /**
     DESCRIPTION
-    @param Rect: Rect
+
 
+    Rect: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -400,15 +444,17 @@ declare class Control {
     
     ```
     */
-	public repaint(Rect: Rect): void;
+    public repaint(Rect: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -418,13 +464,15 @@ declare class Control {
     
     ```
     */
-	public repaint(x0: number, y0: number, x1: number, y1: number): void;
+    public repaint(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
+
 
+    w: int
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -434,10 +482,12 @@ declare class Control {
     
     ```
     */
-	public resize(w: number, h: number): void;
+    public resize(w: number, h: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -447,11 +497,13 @@ declare class Control {
     
     ```
     */
-	public restyle(): void;
+    public restyle(): void;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
+
+    filePath: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -462,12 +514,14 @@ declare class Control {
     
     ```
     */
-	public scaledResource(filePath: string): string;
+    public scaledResource(filePath: string): string;
 
     /**
     DESCRIPTION
-    @param cssCode: String
 
+
+    cssCode: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -477,11 +531,13 @@ declare class Control {
     
     ```
     */
-	public scaledStyleSheet(cssCode: string): string;
+    public scaledStyleSheet(cssCode: string): string;
     /**
     DESCRIPTION
-    @param cssCode: String
-    @param fontDPI: int = 0
+
+
+    cssCode: String
+    fontDPI: int = 0
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -492,12 +548,14 @@ declare class Control {
     
     ```
     */
-	public scaledStyleSheet(cssCode: string, fontDPI?: number /* 0 */): string;
+    public scaledStyleSheet(cssCode: string, fontDPI?: number /* 0 */): string;
 
     /**
     DESCRIPTION
-    @param d: Point
 
+
+    d: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -507,13 +565,15 @@ declare class Control {
     
     ```
     */
-	public scroll(d: Point): void;
+    public scroll(d: Point): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
 
+
+    dx: int
+    dy: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -523,13 +583,15 @@ declare class Control {
     
     ```
     */
-	public scroll(dx: number, dy: number): void;
+    public scroll(dx: number, dy: number): void;
 
     /**
     DESCRIPTION
-    @param d: Point
-    @param Rect: Rect
+
 
+    d: Point
+    Rect: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -539,17 +601,19 @@ declare class Control {
     
     ```
     */
-	public scroll(d: Point, Rect: Rect): void;
+    public scroll(d: Point, Rect: Rect): void;
 
     /**
     DESCRIPTION
-    @param dx: int
-    @param dy: int
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
 
+    dx: int
+    dy: int
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -559,10 +623,12 @@ declare class Control {
     
     ```
     */
-	public scroll(dx: number, dy: number, x0: number, y0: number, x1: number, y1: number): void;
+    public scroll(dx: number, dy: number, x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -572,10 +638,12 @@ declare class Control {
     
     ```
     */
-	public sendToBack(): void;
+    public sendToBack(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -585,10 +653,12 @@ declare class Control {
     
     ```
     */
-	public setCursorToParent(): void;
+    public setCursorToParent(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -598,11 +668,13 @@ declare class Control {
     
     ```
     */
-	public setFixedHeight(): void;
+    public setFixedHeight(): void;
     /**
     DESCRIPTION
-    @param h: int
 
+
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -612,10 +684,12 @@ declare class Control {
     
     ```
     */
-	public setFixedHeight(h?: number): void;
+    public setFixedHeight(h?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -625,12 +699,14 @@ declare class Control {
     
     ```
     */
-	public setFixedSize(): void;
+    public setFixedSize(): void;
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
 
+
+    w: int
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -640,10 +716,12 @@ declare class Control {
     
     ```
     */
-	public setFixedSize(w: number, h: number): void;
+    public setFixedSize(w: number, h: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -653,11 +731,13 @@ declare class Control {
     
     ```
     */
-	public setFixedWidth(): void;
+    public setFixedWidth(): void;
     /**
     DESCRIPTION
-    @param w: int
 
+
+    w: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -667,10 +747,12 @@ declare class Control {
     
     ```
     */
-	public setFixedWidth(w?: number): void;
+    public setFixedWidth(w?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -680,11 +762,13 @@ declare class Control {
     
     ```
     */
-	public setMaxHeight(): void;
+    public setMaxHeight(): void;
     /**
     DESCRIPTION
-    @param h: int
 
+
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -694,10 +778,12 @@ declare class Control {
     
     ```
     */
-	public setMaxHeight(h?: number): void;
+    public setMaxHeight(h?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -707,12 +793,14 @@ declare class Control {
     
     ```
     */
-	public setMaxSize(): void;
+    public setMaxSize(): void;
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
+
 
+    w: int
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -722,10 +810,12 @@ declare class Control {
     
     ```
     */
-	public setMaxSize(w: number, h: number): void;
+    public setMaxSize(w: number, h: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -735,11 +825,13 @@ declare class Control {
     
     ```
     */
-	public setMaxWidth(): void;
+    public setMaxWidth(): void;
     /**
     DESCRIPTION
-    @param w: int
+
 
+    w: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -749,10 +841,12 @@ declare class Control {
     
     ```
     */
-	public setMaxWidth(w?: number): void;
+    public setMaxWidth(w?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -762,10 +856,12 @@ declare class Control {
     
     ```
     */
-	public setMinHeight(): void;
+    public setMinHeight(): void;
     /**
     DESCRIPTION
-    @param h: int
+
+
+    h: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -776,10 +872,12 @@ declare class Control {
     
     ```
     */
-	public setMinHeight(h?: number): void;
+    public setMinHeight(h?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -789,11 +887,13 @@ declare class Control {
     
     ```
     */
-	public setMinSize(): void;
+    public setMinSize(): void;
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
+
+
+    w: int
+    h: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -804,10 +904,12 @@ declare class Control {
     
     ```
     */
-	public setMinSize(w: number, h: number): void;
+    public setMinSize(w: number, h: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -817,11 +919,13 @@ declare class Control {
     
     ```
     */
-	public setMinWidth(): void;
+    public setMinWidth(): void;
     /**
     DESCRIPTION
-    @param w: int
 
+
+    w: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -831,12 +935,14 @@ declare class Control {
     
     ```
     */
-	public setMinWidth(w?: number): void;
+    public setMinWidth(w?: number): void;
 
     /**
     DESCRIPTION
-    @param h: int
+
 
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -846,13 +952,15 @@ declare class Control {
     
     ```
     */
-	public setScaledFixedHeight(h: number): void;
+    public setScaledFixedHeight(h: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
+
 
+    w: int
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -862,12 +970,14 @@ declare class Control {
     
     ```
     */
-	public setScaledFixedSize(w: number, h: number): void;
+    public setScaledFixedSize(w: number, h: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
+
 
+    w: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -877,12 +987,14 @@ declare class Control {
     
     ```
     */
-	public setScaledFixedWidth(w: number): void;
+    public setScaledFixedWidth(w: number): void;
 
     /**
     DESCRIPTION
-    @param h: int
+
 
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -892,13 +1004,15 @@ declare class Control {
     
     ```
     */
-	public setScaledMaxHeight(h: number): void;
+    public setScaledMaxHeight(h: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
+
 
+    w: int
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -908,12 +1022,14 @@ declare class Control {
     
     ```
     */
-	public setScaledMaxSize(w: number, h: number): void;
+    public setScaledMaxSize(w: number, h: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
+
 
+    w: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -923,12 +1039,14 @@ declare class Control {
     
     ```
     */
-	public setScaledMaxWidth(w: number): void;
+    public setScaledMaxWidth(w: number): void;
 
     /**
     DESCRIPTION
-    @param h: int
+
 
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -938,13 +1056,15 @@ declare class Control {
     
     ```
     */
-	public setScaledMinHeight(h: number): void;
+    public setScaledMinHeight(h: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
-    @param h: int
+
 
+    w: int
+    h: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -954,11 +1074,13 @@ declare class Control {
     
     ```
     */
-	public setScaledMinSize(w: number, h: number): void;
+    public setScaledMinSize(w: number, h: number): void;
 
     /**
     DESCRIPTION
-    @param w: int
+
+
+    w: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -969,10 +1091,12 @@ declare class Control {
     
     ```
     */
-	public setScaledMinWidth(w: number): void;
+    public setScaledMinWidth(w: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -982,10 +1106,12 @@ declare class Control {
     
     ```
     */
-	public setVariableHeight(): void;
+    public setVariableHeight(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -995,10 +1121,12 @@ declare class Control {
     
     ```
     */
-	public setVariableSize(): void;
+    public setVariableSize(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1008,10 +1136,12 @@ declare class Control {
     
     ```
     */
-	public setVariableWidth(): void;
+    public setVariableWidth(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1021,10 +1151,12 @@ declare class Control {
     
     ```
     */
-	public show(): void;
+    public show(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1034,12 +1166,14 @@ declare class Control {
     
     ```
     */
-	public showAlias(): void;
+    public showAlias(): void;
 
     /**
     DESCRIPTION
-    @param Control: Control
+
 
+    Control: Control
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1049,10 +1183,12 @@ declare class Control {
     
     ```
     */
-	public stackUnder(Control: Control): void;
+    public stackUnder(Control: Control): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1062,12 +1198,14 @@ declare class Control {
     
     ```
     */
-	public update(): void;
+    public update(): void;
 
     /**
     DESCRIPTION
-    @param Rect: Rect
+
 
+    Rect: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1077,14 +1215,16 @@ declare class Control {
     
     ```
     */
-	public update(Rect: Rect): void;
+    public update(Rect: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1095,7 +1235,7 @@ declare class Control {
     
     ```
     */
-	public update(x0: number, y0: number, x1: number, y1: number): void;
+    public update(x0: number, y0: number, x1: number, y1: number): void;
 
 
 

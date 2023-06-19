@@ -76,8 +76,10 @@ declare class ImageWindow {
     //-------------------------
     /**
     DESCRIPTION
-    @param bmp: Bitmap
 
+
+    bmp: Bitmap
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -87,12 +89,14 @@ declare class ImageWindow {
     
     ```
     */
-	public applyColorTransformation(bmp: Bitmap): void;
+    public applyColorTransformation(bmp: Bitmap): void;
     /**
     DESCRIPTION
-    @param bmp: Bitmap
-    @param view: View
 
+
+    bmp: Bitmap
+    view: View
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -102,10 +106,12 @@ declare class ImageWindow {
     
     ```
     */
-	public applyColorTransformation(bmp: Bitmap, view?: View): void;
+    public applyColorTransformation(bmp: Bitmap, view?: View): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -115,10 +121,12 @@ declare class ImageWindow {
     
     ```
     */
-	public astrometricSolution(): Array<any>;
+    public astrometricSolution(): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -128,10 +136,12 @@ declare class ImageWindow {
     
     ```
     */
-	public astrometricSolutionSummary(): string;
+    public astrometricSolutionSummary(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -141,12 +151,14 @@ declare class ImageWindow {
     
     ```
     */
-	public bringToFront(): void;
+    public bringToFront(): void;
 
     /**
     DESCRIPTION
-    @param eqDeg: Point
 
+
+    eqDeg: Point
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -156,13 +168,15 @@ declare class ImageWindow {
     
     ```
     */
-	public celestialToImage(eqDeg: Point): Point;
+    public celestialToImage(eqDeg: Point): Point;
 
     /**
     DESCRIPTION
-    @param alphaDeg: Number
-    @param deltaDeg: Number
 
+
+    alphaDeg: Number
+    deltaDeg: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -172,12 +186,14 @@ declare class ImageWindow {
     
     ```
     */
-	public celestialToImage(alphaDeg: number, deltaDeg: number): Point;
+    public celestialToImage(alphaDeg: number, deltaDeg: number): Point;
 
     /**
     DESCRIPTION
-    @param eqDeg: Array
+
 
+    eqDeg: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -187,12 +203,14 @@ declare class ImageWindow {
     
     ```
     */
-	public celestialToImage(eqDeg: Array<any>): Array<any>;
+    public celestialToImage(eqDeg: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param alphaDeg: Array
-    @param deltaDeg: Array
+
+
+    alphaDeg: Array
+    deltaDeg: Array
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -203,10 +221,12 @@ declare class ImageWindow {
     
     ```
     */
-	public celestialToImage(alphaDeg: Array<any>, deltaDeg: Array<any>): Array<any>;
+    public celestialToImage(alphaDeg: Array<any>, deltaDeg: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -216,10 +236,12 @@ declare class ImageWindow {
     
     ```
     */
-	public clearAstrometricSolution(): void;
+    public clearAstrometricSolution(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -229,11 +251,13 @@ declare class ImageWindow {
     
     ```
     */
-	public close(): number;
+    public close(): number;
     /**
     DESCRIPTION
-    @param multiple: Boolean = false
+
 
+    multiple: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -243,10 +267,12 @@ declare class ImageWindow {
     
     ```
     */
-	public close(multiple?: boolean /* false */): number;
+    public close(multiple?: boolean /* false */): number;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -256,12 +282,14 @@ declare class ImageWindow {
     
     ```
     */
-	public commitPendingUpdates(): void;
+    public commitPendingUpdates(): void;
 
     /**
     DESCRIPTION
-    @param source: ImageWindow
 
+
+    source: ImageWindow
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -271,13 +299,15 @@ declare class ImageWindow {
     
     ```
     */
-	public copyAstrometricSolution(source: ImageWindow): void;
+    public copyAstrometricSolution(source: ImageWindow): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
-    @param id: String
 
+
+    r: Rect
+    id: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -287,16 +317,18 @@ declare class ImageWindow {
     
     ```
     */
-	public createPreview(r: Rect, id: string): View;
+    public createPreview(r: Rect, id: string): View;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param id: String
+
 
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    id: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -306,10 +338,12 @@ declare class ImageWindow {
     
     ```
     */
-	public createPreview(x0: number, y0: number, x1: number, y1: number, id: string): View;
+    public createPreview(x0: number, y0: number, x1: number, y1: number, id: string): View;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -319,11 +353,13 @@ declare class ImageWindow {
     
     ```
     */
-	public deiconize(): void;
+    public deiconize(): void;
 
     /**
     DESCRIPTION
-    @param preview: View
+
+
+    preview: View
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -334,10 +370,12 @@ declare class ImageWindow {
     
     ```
     */
-	public deletePreview(preview: View): void;
+    public deletePreview(preview: View): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -347,10 +385,12 @@ declare class ImageWindow {
     
     ```
     */
-	public deletePreviews(): void;
+    public deletePreviews(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -360,10 +400,12 @@ declare class ImageWindow {
     
     ```
     */
-	public fitWindow(): void;
+    public fitWindow(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -373,12 +415,14 @@ declare class ImageWindow {
     
     ```
     */
-	public forceClose(): void;
+    public forceClose(): void;
 
     /**
     DESCRIPTION
-    @param index: uint
 
+
+    index: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -388,10 +432,12 @@ declare class ImageWindow {
     
     ```
     */
-	public go(index: number): void;
+    public go(index: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -401,10 +447,12 @@ declare class ImageWindow {
     
     ```
     */
-	public hide(): void;
+    public hide(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -414,12 +462,14 @@ declare class ImageWindow {
     
     ```
     */
-	public iconize(): void;
+    public iconize(): void;
 
     /**
     DESCRIPTION
-    @param k: Number
+
 
+    k: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -429,11 +479,13 @@ declare class ImageWindow {
     
     ```
     */
-	public imageScalarToViewport(k: number): number;
+    public imageScalarToViewport(k: number): number;
 
     /**
     DESCRIPTION
-    @param xy: Point
+
+
+    xy: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -444,13 +496,15 @@ declare class ImageWindow {
     
     ```
     */
-	public imageToCelestial(xy: Point): Point;
+    public imageToCelestial(xy: Point): Point;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
 
+
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -460,12 +514,14 @@ declare class ImageWindow {
     
     ```
     */
-	public imageToCelestial(x: number, y: number): Point;
+    public imageToCelestial(x: number, y: number): Point;
 
     /**
     DESCRIPTION
-    @param xy: Array
 
+
+    xy: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -475,13 +531,15 @@ declare class ImageWindow {
     
     ```
     */
-	public imageToCelestial(xy: Array<any>): Array<any>;
+    public imageToCelestial(xy: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param x: Array
-    @param y: Array
+
 
+    x: Array
+    y: Array
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -491,11 +549,13 @@ declare class ImageWindow {
     
     ```
     */
-	public imageToCelestial(x: Array<any>, y: Array<any>): Array<any>;
+    public imageToCelestial(x: Array<any>, y: Array<any>): Array<any>;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -506,12 +566,14 @@ declare class ImageWindow {
     
     ```
     */
-	public imageToViewport(p: Point): Point;
+    public imageToViewport(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -521,12 +583,14 @@ declare class ImageWindow {
     
     ```
     */
-	public imageToViewport(r: Rect): Rect;
+    public imageToViewport(r: Rect): Rect;
 
     /**
     DESCRIPTION
-    @param mask: ImageWindow
+
 
+    mask: ImageWindow
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -536,12 +600,14 @@ declare class ImageWindow {
     
     ```
     */
-	public isMaskCompatible(mask: ImageWindow): boolean;
+    public isMaskCompatible(mask: ImageWindow): boolean;
 
     /**
     DESCRIPTION
-    @param window: ImageWindow
+
 
+    window: ImageWindow
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -551,11 +617,13 @@ declare class ImageWindow {
     
     ```
     */
-	public isMaskOf(window: ImageWindow): boolean;
+    public isMaskOf(window: ImageWindow): boolean;
 
     /**
     DESCRIPTION
-    @param view: View
+
+
+    view: View
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -566,13 +634,15 @@ declare class ImageWindow {
     
     ```
     */
-	public isValidView(view: View): boolean;
+    public isValidView(view: View): boolean;
 
     /**
     DESCRIPTION
-    @param preview: View
-    @param r: Rect
 
+
+    preview: View
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -582,13 +652,15 @@ declare class ImageWindow {
     
     ```
     */
-	public modifyPreview(preview: View, r: Rect): void;
+    public modifyPreview(preview: View, r: Rect): void;
     /**
     DESCRIPTION
-    @param preview: View
-    @param r: Rect
-    @param id: String
+
 
+    preview: View
+    r: Rect
+    id: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -598,15 +670,17 @@ declare class ImageWindow {
     
     ```
     */
-	public modifyPreview(preview: View, r: Rect, id?: string): void;
+    public modifyPreview(preview: View, r: Rect, id?: string): void;
 
     /**
     DESCRIPTION
-    @param preview: View
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
+
+
+    preview: View
+    x0: int
+    y0: int
+    x1: int
+    y1: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -617,16 +691,18 @@ declare class ImageWindow {
     
     ```
     */
-	public modifyPreview(preview: View, x0: number, y0: number, x1: number, y1: number): void;
+    public modifyPreview(preview: View, x0: number, y0: number, x1: number, y1: number): void;
     /**
     DESCRIPTION
-    @param preview: View
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
-    @param id: String
 
+
+    preview: View
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+    id: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -636,12 +712,14 @@ declare class ImageWindow {
     
     ```
     */
-	public modifyPreview(preview: View, x0: number, y0: number, x1: number, y1: number, id?: string): void;
+    public modifyPreview(preview: View, x0: number, y0: number, x1: number, y1: number, id?: string): void;
 
     /**
     DESCRIPTION
-    @param id: String
 
+
+    id: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -651,12 +729,14 @@ declare class ImageWindow {
     
     ```
     */
-	public previewById(id: string): View;
+    public previewById(id: string): View;
 
     /**
     DESCRIPTION
-    @param preview: View
+
 
+    preview: View
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -666,10 +746,12 @@ declare class ImageWindow {
     
     ```
     */
-	public previewRect(preview: View): Rect;
+    public previewRect(preview: View): Rect;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -679,15 +761,17 @@ declare class ImageWindow {
     
     ```
     */
-	public purge(): void;
+    public purge(): void;
     /**
     DESCRIPTION
-    @param swapFiles: Boolean = true
-    @param properties: any = true
-    @param histograms: Boolean = true
-    @param statistics: Boolean = true
-    @param notify: Boolean = true
 
+
+    swapFiles: Boolean = true
+    properties: any = true
+    histograms: Boolean = true
+    statistics: Boolean = true
+    notify: Boolean = true
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -697,10 +781,12 @@ declare class ImageWindow {
     
     ```
     */
-	public purge(swapFiles?: boolean /* true */, properties?: any /* true */, histograms?: boolean /* true */, statistics?: boolean /* true */, notify?: boolean /* true */): void;
+    public purge(swapFiles?: boolean /* true */, properties?: any /* true */, histograms?: boolean /* true */, statistics?: boolean /* true */, notify?: boolean /* true */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -710,11 +796,13 @@ declare class ImageWindow {
     
     ```
     */
-	public redo(): void;
+    public redo(): void;
     /**
     DESCRIPTION
-    @param n: uint = 1
+
 
+    n: uint = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -724,10 +812,12 @@ declare class ImageWindow {
     
     ```
     */
-	public redo(n?: number /* 1 */): void;
+    public redo(n?: number /* 1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -737,10 +827,12 @@ declare class ImageWindow {
     
     ```
     */
-	public redoAll(): void;
+    public redoAll(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -750,10 +842,12 @@ declare class ImageWindow {
     
     ```
     */
-	public regenerate(): void;
+    public regenerate(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -763,10 +857,12 @@ declare class ImageWindow {
     
     ```
     */
-	public regenerateAstrometricSolution(): void;
+    public regenerateAstrometricSolution(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -776,10 +872,12 @@ declare class ImageWindow {
     
     ```
     */
-	public removeMask(): void;
+    public removeMask(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -789,10 +887,12 @@ declare class ImageWindow {
     
     ```
     */
-	public removeMaskReferences(): void;
+    public removeMaskReferences(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -802,12 +902,14 @@ declare class ImageWindow {
     
     ```
     */
-	public save(): boolean;
+    public save(): boolean;
     /**
     DESCRIPTION
-    @param allowMessages: Boolean = true
-    @param strict: Boolean = true
 
+
+    allowMessages: Boolean = true
+    strict: Boolean = true
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -817,12 +919,14 @@ declare class ImageWindow {
     
     ```
     */
-	public save(allowMessages?: boolean /* true */, strict?: boolean /* true */): boolean;
+    public save(allowMessages?: boolean /* true */, strict?: boolean /* true */): boolean;
 
     /**
     DESCRIPTION
-    @param filePath: String
+
 
+    filePath: String
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -832,15 +936,17 @@ declare class ImageWindow {
     
     ```
     */
-	public saveAs(filePath: string): boolean;
+    public saveAs(filePath: string): boolean;
     /**
     DESCRIPTION
-    @param filePath: String
-    @param queryOptions: Boolean = true
-    @param allowMessages: Boolean = true
-    @param strict: Boolean = true
-    @param verifyOverwrite: Boolean = true
-    @param formatHints: String = ''
+
+
+    filePath: String
+    queryOptions: Boolean = true
+    allowMessages: Boolean = true
+    strict: Boolean = true
+    verifyOverwrite: Boolean = true
+    formatHints: String = ''
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -851,10 +957,12 @@ declare class ImageWindow {
     
     ```
     */
-	public saveAs(filePath: string, queryOptions?: boolean /* true */, allowMessages?: boolean /* true */, strict?: boolean /* true */, verifyOverwrite?: boolean /* true */, formatHints?: string /* '' */): boolean;
+    public saveAs(filePath: string, queryOptions?: boolean /* true */, allowMessages?: boolean /* true */, strict?: boolean /* true */, verifyOverwrite?: boolean /* true */, formatHints?: string /* '' */): boolean;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -864,13 +972,15 @@ declare class ImageWindow {
     
     ```
     */
-	public sendToBack(): void;
+    public sendToBack(): void;
 
     /**
     DESCRIPTION
-    @param keywords: Array
-    @param controlPoints: ByteArray
 
+
+    keywords: Array
+    controlPoints: ByteArray
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -880,12 +990,14 @@ declare class ImageWindow {
     
     ```
     */
-	public setAstrometricSolution(keywords: Array<any>, controlPoints: ByteArray): void;
+    public setAstrometricSolution(keywords: Array<any>, controlPoints: ByteArray): void;
 
     /**
     DESCRIPTION
-    @param mask: ImageWindow
+
 
+    mask: ImageWindow
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -895,12 +1007,14 @@ declare class ImageWindow {
     
     ```
     */
-	public setMask(mask: ImageWindow): void;
+    public setMask(mask: ImageWindow): void;
     /**
     DESCRIPTION
-    @param mask: ImageWindow
-    @param invert: Boolean = false
+
 
+    mask: ImageWindow
+    invert: Boolean = false
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -910,11 +1024,13 @@ declare class ImageWindow {
     
     ```
     */
-	public setMask(mask: ImageWindow, invert?: boolean /* false */): void;
+    public setMask(mask: ImageWindow, invert?: boolean /* false */): void;
 
     /**
     DESCRIPTION
-    @param res: Number
+
+
+    res: Number
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -925,13 +1041,15 @@ declare class ImageWindow {
     
     ```
     */
-	public setResolution(res: number): void;
+    public setResolution(res: number): void;
 
     /**
     DESCRIPTION
-    @param xRes: Number
-    @param yRes: Number
 
+
+    xRes: Number
+    yRes: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -941,13 +1059,15 @@ declare class ImageWindow {
     
     ```
     */
-	public setResolution(xRes: number, yRes: number): void;
+    public setResolution(xRes: number, yRes: number): void;
     /**
     DESCRIPTION
-    @param xRes: Number
-    @param yRes: Number
-    @param metric: Boolean
 
+
+    xRes: Number
+    yRes: Number
+    metric: Boolean
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -957,13 +1077,15 @@ declare class ImageWindow {
     
     ```
     */
-	public setResolution(xRes: number, yRes: number, metric?: boolean): void;
+    public setResolution(xRes: number, yRes: number, metric?: boolean): void;
 
     /**
     DESCRIPTION
-    @param bitsPerSample: int
-    @param floatSample: Boolean
+
 
+    bitsPerSample: int
+    floatSample: Boolean
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -973,11 +1095,13 @@ declare class ImageWindow {
     
     ```
     */
-	public setSampleFormat(bitsPerSample: number, floatSample: boolean): void;
+    public setSampleFormat(bitsPerSample: number, floatSample: boolean): void;
 
     /**
     DESCRIPTION
-    @param center: Point
+
+
+    center: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -988,12 +1112,14 @@ declare class ImageWindow {
     
     ```
     */
-	public setViewport(center: Point): void;
+    public setViewport(center: Point): void;
     /**
     DESCRIPTION
-    @param center: Point
-    @param zoomFactor: int
 
+
+    center: Point
+    zoomFactor: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1003,13 +1129,15 @@ declare class ImageWindow {
     
     ```
     */
-	public setViewport(center: Point, zoomFactor?: number): void;
+    public setViewport(center: Point, zoomFactor?: number): void;
 
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
+
 
+    x: Number
+    y: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1019,13 +1147,15 @@ declare class ImageWindow {
     
     ```
     */
-	public setViewport(x: number, y: number): void;
+    public setViewport(x: number, y: number): void;
     /**
     DESCRIPTION
-    @param x: Number
-    @param y: Number
-    @param zoomFactor: int
+
 
+    x: Number
+    y: Number
+    zoomFactor: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1035,10 +1165,12 @@ declare class ImageWindow {
     
     ```
     */
-	public setViewport(x: number, y: number, zoomFactor?: number): void;
+    public setViewport(x: number, y: number, zoomFactor?: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1048,10 +1180,12 @@ declare class ImageWindow {
     
     ```
     */
-	public show(): void;
+    public show(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1061,11 +1195,13 @@ declare class ImageWindow {
     
     ```
     */
-	public undo(): void;
+    public undo(): void;
     /**
     DESCRIPTION
-    @param n: uint = 1
 
+
+    n: uint = 1
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1075,10 +1211,12 @@ declare class ImageWindow {
     
     ```
     */
-	public undo(n?: number /* 1 */): void;
+    public undo(n?: number /* 1 */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1088,10 +1226,12 @@ declare class ImageWindow {
     
     ```
     */
-	public undoAll(): void;
+    public undoAll(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1101,11 +1241,13 @@ declare class ImageWindow {
     
     ```
     */
-	public updateAstrometryMetadata(): void;
+    public updateAstrometryMetadata(): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
+
+
+    r: Rect
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1116,15 +1258,17 @@ declare class ImageWindow {
     
     ```
     */
-	public updateImageRect(r: Rect): void;
+    public updateImageRect(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: Number
-    @param y0: Number
-    @param x1: Number
-    @param y1: Number
 
+
+    x0: Number
+    y0: Number
+    x1: Number
+    y1: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1134,10 +1278,12 @@ declare class ImageWindow {
     
     ```
     */
-	public updateImageRect(x0: number, y0: number, x1: number, y1: number): void;
+    public updateImageRect(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1147,10 +1293,12 @@ declare class ImageWindow {
     
     ```
     */
-	public updateMaskReferences(): void;
+    public updateMaskReferences(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1160,12 +1308,14 @@ declare class ImageWindow {
     
     ```
     */
-	public updateViewport(): void;
+    public updateViewport(): void;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1175,15 +1325,17 @@ declare class ImageWindow {
     
     ```
     */
-	public updateViewportRect(r: Rect): void;
+    public updateViewportRect(r: Rect): void;
 
     /**
     DESCRIPTION
-    @param x0: int
-    @param y0: int
-    @param x1: int
-    @param y1: int
 
+
+    x0: int
+    y0: int
+    x1: int
+    y1: int
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1193,12 +1345,14 @@ declare class ImageWindow {
     
     ```
     */
-	public updateViewportRect(x0: number, y0: number, x1: number, y1: number): void;
+    public updateViewportRect(x0: number, y0: number, x1: number, y1: number): void;
 
     /**
     DESCRIPTION
-    @param k: Number
+
 
+    k: Number
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1208,11 +1362,13 @@ declare class ImageWindow {
     
     ```
     */
-	public viewportScalarToImage(k: number): number;
+    public viewportScalarToImage(k: number): number;
 
     /**
     DESCRIPTION
-    @param p: Point
+
+
+    p: Point
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1223,12 +1379,14 @@ declare class ImageWindow {
     
     ```
     */
-	public viewportToImage(p: Point): Point;
+    public viewportToImage(p: Point): Point;
 
     /**
     DESCRIPTION
-    @param r: Rect
 
+
+    r: Rect
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1238,10 +1396,12 @@ declare class ImageWindow {
     
     ```
     */
-	public viewportToImage(r: Rect): Rect;
+    public viewportToImage(r: Rect): Rect;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1251,10 +1411,12 @@ declare class ImageWindow {
     
     ```
     */
-	public zoomIn(): void;
+    public zoomIn(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1264,10 +1426,12 @@ declare class ImageWindow {
     
     ```
     */
-	public zoomOut(): void;
+    public zoomOut(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1277,12 +1441,14 @@ declare class ImageWindow {
     
     ```
     */
-	public zoomToFit(): void;
+    public zoomToFit(): void;
     /**
     DESCRIPTION
-    @param allowZoomIn: Boolean = false
-    @param animate: Boolean = true
 
+
+    allowZoomIn: Boolean = false
+    animate: Boolean = true
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1292,10 +1458,12 @@ declare class ImageWindow {
     
     ```
     */
-	public zoomToFit(allowZoomIn?: boolean /* false */, animate?: boolean /* true */): void;
+    public zoomToFit(allowZoomIn?: boolean /* false */, animate?: boolean /* true */): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -1305,11 +1473,13 @@ declare class ImageWindow {
     
     ```
     */
-	public zoomToOptimalFit(): void;
+    public zoomToOptimalFit(): void;
     /**
     DESCRIPTION
-    @param allowZoomIn: Boolean = false
-    @param animate: Boolean = true
+
+
+    allowZoomIn: Boolean = false
+    animate: Boolean = true
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1320,7 +1490,7 @@ declare class ImageWindow {
     
     ```
     */
-	public zoomToOptimalFit(allowZoomIn?: boolean /* false */, animate?: boolean /* true */): void;
+    public zoomToOptimalFit(allowZoomIn?: boolean /* false */, animate?: boolean /* true */): void;
 
 
 
@@ -1329,7 +1499,9 @@ declare class ImageWindow {
     //-------------------------
     /**
     DESCRIPTION
-    @param url: String
+
+
+    url: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1340,13 +1512,15 @@ declare class ImageWindow {
     
     ```
     */
-	public static open(url: string): Array<any>;
+    public static open(url: string): Array<any>;
     /**
     DESCRIPTION
-    @param url: String
-    @param id: String = ''
-    @param formatHints: String = ''
-    @param asCopy: Boolean = false
+
+
+    url: String
+    id: String = ''
+    formatHints: String = ''
+    asCopy: Boolean = false
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1357,26 +1531,13 @@ declare class ImageWindow {
     
     ```
     */
-	public static open(url: string, id?: string /* '' */, formatHints?: string /* '' */, asCopy?: boolean /* false */): Array<any>;
-
-    /**
-    DESCRIPTION
-    @param path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public static windowByFilePath(path: string): ImageWindow;
+    public static open(url: string, id?: string /* '' */, formatHints?: string /* '' */, asCopy?: boolean /* false */): Array<any>;
 
     /**
     DESCRIPTION
-    @param id: String
+
+
+    path: String
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -1387,7 +1548,24 @@ declare class ImageWindow {
     
     ```
     */
-	public static windowById(id: string): ImageWindow;
+    public static windowByFilePath(path: string): ImageWindow;
+
+    /**
+    DESCRIPTION
+
+
+    id: String
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public static windowById(id: string): ImageWindow;
 
 
 

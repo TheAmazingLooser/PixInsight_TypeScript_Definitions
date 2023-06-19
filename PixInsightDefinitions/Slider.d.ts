@@ -34,8 +34,10 @@ declare class Slider extends Control {
     //-------------------------
     /**
     DESCRIPTION
-    @param minValue: int
-    @param maxValue: int
+
+
+    minValue: int
+    maxValue: int
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -46,7 +48,7 @@ declare class Slider extends Control {
     
     ```
     */
-	public setRange(minValue: number, maxValue: number): void;
+    public setRange(minValue: number, maxValue: number): void;
 
 
 

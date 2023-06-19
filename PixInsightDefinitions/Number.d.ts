@@ -25,19 +25,7 @@ declare class Number {
     //-------------------------
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toExponential(): string;
-    /**
-    DESCRIPTION
-    @param fractionalDigits: uint
+
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -48,23 +36,12 @@ declare class Number {
     
     ```
     */
-	public toExponential(fractionalDigits?: number): string;
+    public toExponential(): string;
+    /**
+    DESCRIPTION
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toFixed(): string;
-    /**
-    DESCRIPTION
-    @param digits: uint
+
+    fractionalDigits: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -75,36 +52,11 @@ declare class Number {
     
     ```
     */
-	public toFixed(digits?: number): string;
+    public toExponential(fractionalDigits?: number): string;
 
     /**
     DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toLocaleString(): string;
 
-    /**
-    DESCRIPTION
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
-	public toPrecision(): string;
-    /**
-    DESCRIPTION
-    @param precision: uint
 
     ```javascript
     // TODO: Add JavaScript Example
@@ -115,10 +67,13 @@ declare class Number {
     
     ```
     */
-	public toPrecision(precision?: number): string;
-
+    public toFixed(): string;
     /**
     DESCRIPTION
+
+
+    digits: uint
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -128,10 +83,12 @@ declare class Number {
     
     ```
     */
-	public toSource(): string;
+    public toFixed(digits?: number): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -141,10 +98,12 @@ declare class Number {
     
     ```
     */
-	public toString(): string;
+    public toLocaleString(): string;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -154,7 +113,68 @@ declare class Number {
     
     ```
     */
-	public valueOf(): number;
+    public toPrecision(): string;
+    /**
+    DESCRIPTION
+
+
+    precision: uint
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toPrecision(precision?: number): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toSource(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public toString(): string;
+
+    /**
+    DESCRIPTION
+
+
+    ```javascript
+    // TODO: Add JavaScript Example
+    
+    ```
+    ```typescript
+    // TODO: Add TypeScript Example
+    
+    ```
+    */
+    public valueOf(): number;
 
 
 

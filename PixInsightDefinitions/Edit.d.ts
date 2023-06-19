@@ -39,6 +39,8 @@ declare class Edit extends Frame {
     //-------------------------
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -48,10 +50,12 @@ declare class Edit extends Frame {
     
     ```
     */
-	public clear(): void;
+    public clear(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -61,10 +65,12 @@ declare class Edit extends Frame {
     
     ```
     */
-	public end(): void;
+    public end(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -74,10 +80,12 @@ declare class Edit extends Frame {
     
     ```
     */
-	public home(): void;
+    public home(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -87,10 +95,12 @@ declare class Edit extends Frame {
     
     ```
     */
-	public selectAll(): void;
+    public selectAll(): void;
 
     /**
     DESCRIPTION
+
+
     ```javascript
     // TODO: Add JavaScript Example
     
@@ -100,7 +110,7 @@ declare class Edit extends Frame {
     
     ```
     */
-	public unselect(): void;
+    public unselect(): void;
 
 
 
