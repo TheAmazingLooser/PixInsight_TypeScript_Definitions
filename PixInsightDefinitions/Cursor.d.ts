@@ -30,21 +30,6 @@ declare class Cursor {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    csr: Cursor
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public assign(csr: Cursor): void;
 
 

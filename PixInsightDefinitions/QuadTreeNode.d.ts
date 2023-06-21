@@ -29,113 +29,18 @@ declare class QuadTreeNode {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    point: Point
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public includes(point: Point): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    rect: Rect
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public intersects(rect: Rect): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public isLeaf(): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public neRect(): Rect;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public nwRect(): Rect;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public seRect(): Rect;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public swRect(): Rect;
 
 

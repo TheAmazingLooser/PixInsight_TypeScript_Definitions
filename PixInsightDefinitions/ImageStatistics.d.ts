@@ -61,38 +61,8 @@ declare class ImageStatistics {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    s: ImageStatistics
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public assign(s: ImageStatistics): void;
 
-    /**
-    DESCRIPTION
-
-
-    img: Image
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public generate(img: Image): void;
 
 

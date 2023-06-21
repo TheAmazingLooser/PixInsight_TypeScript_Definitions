@@ -44,173 +44,22 @@ declare class ScrollBox extends Frame {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public hideScrollBars(): void;
-    /**
-    DESCRIPTION
-
-
-    hide: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public hideScrollBars(hide?: boolean /* true */): void;
 
-    /**
-    DESCRIPTION
-
-
-    hideHorz: Boolean
-    hideVert: Boolean
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public hideScrollBars(hideHorz: boolean, hideVert: boolean): void;
 
-    /**
-    DESCRIPTION
-
-
-    min: int
-    max: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public setHorizontalScrollRange(min: number, max: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    x: int
-    y: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public setScrollPosition(x: number, y: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    pos: Point
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public setScrollPosition(pos: Point): void;
 
-    /**
-    DESCRIPTION
-
-
-    min: int
-    max: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public setVerticalScrollRange(min: number, max: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public showScrollBars(): void;
-    /**
-    DESCRIPTION
-
-
-    show: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public showScrollBars(show?: boolean /* true */): void;
 
-    /**
-    DESCRIPTION
-
-
-    showHorz: Boolean
-    showVert: Boolean
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public showScrollBars(showHorz: boolean, showVert: boolean): void;
 
 

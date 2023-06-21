@@ -29,128 +29,18 @@ declare class RegExp {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public exec(): Array<any>;
-    /**
-    DESCRIPTION
-
-
-    str: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public exec(str?: string): Array<any>;
 
-    /**
-    DESCRIPTION
-
-
-    propertyName: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public propertyIsEnumerable(propertyName: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public test(): boolean;
-    /**
-    DESCRIPTION
-
-
-    str: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public test(str?: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public toLocaleString(): string;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public toSource(): string;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public toString(): string;
 
 

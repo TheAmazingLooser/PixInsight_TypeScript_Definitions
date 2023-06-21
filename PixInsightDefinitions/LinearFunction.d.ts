@@ -32,39 +32,8 @@ declare class LinearFunction {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    x: Number
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public evaluate(x: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    x: Array|TypedArray
-    y: Array|TypedArray
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public fit(x: Array<any> | any /* TypedArray */, y: Array<any> | any /* TypedArray */): void;
 
 

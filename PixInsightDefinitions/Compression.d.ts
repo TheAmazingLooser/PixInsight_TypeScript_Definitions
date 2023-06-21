@@ -31,38 +31,8 @@ declare class Compression {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    data: String|ByteArray|TypedArray
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public compress(data: string | ByteArray | any /* TypedArray */): Array<any>;
 
-    /**
-    DESCRIPTION
-
-
-    subblocks: Array
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public uncompress(subblocks: Array<any>): ByteArray;
 
 

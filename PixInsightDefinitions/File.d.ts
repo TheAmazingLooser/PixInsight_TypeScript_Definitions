@@ -31,639 +31,73 @@ declare class File {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public close(): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public create(path: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public createForWriting(path: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public flush(): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public open(path: string): void;
-    /**
-    DESCRIPTION
-
-
-    path: String
-    mode: uint32 = FileMode_Read|FileMode_Open
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public open(path: string, mode?: number /* FileMode_Read|FileMode_Open */): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public openForReadWrite(path: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public openForReading(path: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public openOrCreate(path: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    text: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public outText(text: string): void;
-    /**
-    DESCRIPTION
-
-
-    text: String
-    dataType: int = DataType_String8
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public outText(text: string, dataType?: number /* DataType_String8 */): void;
 
-    /**
-    DESCRIPTION
-
-
-    text: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public outTextLn(text: string): void;
-    /**
-    DESCRIPTION
-
-
-    text: String
-    dataType: int = DataType_String8
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public outTextLn(text: string, dataType?: number /* DataType_String8 */): void;
 
-    /**
-    DESCRIPTION
-
-
-    data_type: any
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(data_type: any): Object;
-    /**
-    DESCRIPTION
-
-
-    data_type: any
-    count: any = 1
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(data_type: any, count?: any /* 1 */): Object;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Float32Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Float32Array: any, length: number): Float32Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Float64Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Float64Array: any, length: number): Float64Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Int32Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Int32Array: any, length: number): Int32Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Uint32Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Uint32Array: any, length: number): Uint32Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Int16Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Int16Array: any, length: number): Int16Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Uint16Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Uint16Array: any, length: number): Uint16Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Int8Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Int8Array: any, length: number): Int8Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Uint8Array: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Uint8Array: any, length: number): Uint8Array;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Uint8ClampedArray: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Uint8ClampedArray: any, length: number): Uint8ClampedArray;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_ByteArray: any
-    length: uint
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_ByteArray: any, length: number): ByteArray;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Vector: any
-    length: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Vector: any, length: number): Vector;
 
-    /**
-    DESCRIPTION
-
-
-    DataType_Matrix: any
-    rows: int
-    cols: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public read(DataType_Matrix: any, rows: number, cols: number): Matrix;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public rewind(): void;
 
-    /**
-    DESCRIPTION
-
-
-    pos: Number
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public seek(pos: number): number;
-    /**
-    DESCRIPTION
-
-
-    pos: Number
-    mode: int = SeekMode_FromCurrent
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public seek(pos: number, mode?: number /* SeekMode_FromCurrent */): number;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public seekEnd(): number;
 
-    /**
-    DESCRIPTION
-
-
-    obj: Object
-    dataType: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public write(obj: Object, dataType: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    obj: Array
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public write(obj: Array<any>): void;
 
-    /**
-    DESCRIPTION
-
-
-    obj: TypedArray
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public write(obj: any /* TypedArray */): void;
 
-    /**
-    DESCRIPTION
-
-
-    obj: ByteArray
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public write(obj: ByteArray): void;
 
-    /**
-    DESCRIPTION
-
-
-    obj: Vector
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public write(obj: Vector): void;
 
-    /**
-    DESCRIPTION
-
-
-    obj: Matrix
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public write(obj: Matrix): void;
 
 
@@ -671,924 +105,105 @@ declare class File {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    postFix: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static appendToName(filePath: string, postFix: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    newExt: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static changeExtension(filePath: string, newExt: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    newExt: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static changeSuffix(filePath: string, newExt: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    targetPath: String
-    sourcePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static copyFile(targetPath: string, sourcePath: string): void;
-    /**
-    DESCRIPTION
-
-
-    targetPath: String
-    sourcePath: String
-    progress: Function
-    progressThis: Object = null
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static copyFile(targetPath: string, sourcePath: string, progress?: Function, progressThis?: Object /* null */): void;
 
-    /**
-    DESCRIPTION
-
-
-    targetPath: String
-    sourcePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static copyLink(targetPath: string, sourcePath: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    targetPath: String
-    sourcePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static copyTimesAndPermissions(targetPath: string, sourcePath: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    dirPath: String
-    createIntermediateDirs: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static createDirectory(dirPath: string, createIntermediateDirs: boolean /* true */): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static createFile(path: string): File;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static createFileForWriting(path: string): File;
 
-    /**
-    DESCRIPTION
-
-
-    dirPath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static directoryExists(dirPath: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static exists(filePath: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractCompleteSuffix(filePath: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractDirectory(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractDrive(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractExtension(filePath: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractName(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractNameAndExtension(filePath: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractNameAndSuffix(filePath: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static extractSuffix(filePath: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static fileURI(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static findCompleteSuffix(filePath: string): number;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static findDrive(path: string): number;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static findExtension(filePath: string): number;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static findName(path: string): number;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static findSuffix(filePath: string): number;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static fullPath(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    directory: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static getAvailableSpace(directory: string): number;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static isReadOnly(filePath: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    newPath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static move(filePath: string, newPath: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    targetPath: String
-    sourcePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static moveFile(targetPath: string, sourcePath: string): void;
-    /**
-    DESCRIPTION
-
-
-    targetPath: String
-    sourcePath: String
-    progress: Function
-    progressThis: Object = null
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static moveFile(targetPath: string, sourcePath: string, progress?: Function, progressThis?: Object /* null */): void;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static openFile(path: string): File;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static openFileForReading(path: string): File;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static openOrCreateFile(path: string): File;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    preFix: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static prependToName(filePath: string, preFix: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static readFile(filePath: string): ByteArray;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static readLines(filePath: string): Array<any>;
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    options: int = ReadTextOptions_None
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static readLines(filePath: string, options?: number /* ReadTextOptions_None */): Array<any>;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static readTextFile(filePath: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static remove(filePath: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    dirPath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static removeDirectory(dirPath: string): void;
 
-    /**
-    DESCRIPTION
-
-
-    path1: String
-    path2: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static sameDevice(path1: string, path2: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    path1: String
-    path2: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static sameFile(path1: string, path2: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    permissions: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static setPermissions(filePath: string, permissions: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static setReadOnly(filePath: string): void;
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    readOnly: Boolean = true
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static setReadOnly(filePath: string, readOnly?: boolean /* true */): void;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static uniqueFileName(): string;
-    /**
-    DESCRIPTION
-
-
-    directory: String = ""
-    n: int = 8
-    prefix: String = ""
-    postfix: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static uniqueFileName(directory?: string /* "" */, n?: number /* 8 */, prefix?: string /* "" */, postfix?: string /*  */): string;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static unixPathToWindows(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    path: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static windowsPathToUnix(path: string): string;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    data: ByteArray
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static writeFile(filePath: string, data: ByteArray): void;
 
-    /**
-    DESCRIPTION
-
-
-    filePath: String
-    text: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static writeTextFile(filePath: string, text: string): void;
 
 

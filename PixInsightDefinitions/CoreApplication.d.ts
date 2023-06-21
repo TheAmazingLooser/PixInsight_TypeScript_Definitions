@@ -27,232 +27,29 @@ declare class CoreApplication {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    instance: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static activateInstance(instance: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static clearPendingMessages(): void;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static firstInstanceAlive(): number;
 
-    /**
-    DESCRIPTION
-
-
-    instance: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static instancePID(instance: number): string;
 
-    /**
-    DESCRIPTION
-
-
-    instance: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static isInstanceAlive(instance: number): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    instance: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static isInstanceRunning(instance: number): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static launchInstance(): void;
-    /**
-    DESCRIPTION
-
-
-    instance: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static launchInstance(instance?: number): void;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static otherInstancesRunning(): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static processPendingMessages(): void;
-    /**
-    DESCRIPTION
-
-
-    msec: int = 0
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static processPendingMessages(msec?: number /* 0 */): void;
 
-    /**
-    DESCRIPTION
-
-
-    instance: int
-    message: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static sendMessage(instance: number, message: string): boolean;
-    /**
-    DESCRIPTION
-
-
-    instance: int
-    message: String
-    uniqueId: String
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static sendMessage(instance: number, message: string, uniqueId?: string): boolean;
 
-    /**
-    DESCRIPTION
-
-
-    instance: int
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public static terminateInstance(instance: number): void;
 
 

@@ -25,38 +25,7 @@ declare class ArrayBuffer {
     //-------------------------
     //--------Functions--------
     //-------------------------
-    /**
-    DESCRIPTION
-
-
-    begin: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public slice(begin: number): ArrayBuffer;
-    /**
-    DESCRIPTION
-
-
-    begin: uint32
-    end: uint32
-
-    ```javascript
-    // TODO: Add JavaScript Example
-    
-    ```
-    ```typescript
-    // TODO: Add TypeScript Example
-    
-    ```
-    */
     public slice(begin: number, end?: number): ArrayBuffer;
 
 
