@@ -45,6 +45,10 @@ declare class Sizer {
     public addSpacing(size: number): void;
     public addSpacing(size: number, autoScaling?: boolean /* true */): void;
 
+    /**
+    Add a stretching element onto the Sizer.
+    This is where the Sizer will be stretched, if needed (resizing Form)
+    */
     public addStretch(): void;
     public addStretch(stretchFactor?: number): void;
 

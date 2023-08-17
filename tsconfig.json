@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
+      "allowJs": true,
       "module": "none",
       "lib": [
         
       ],
-      "outFile": "dist/app.js"
+      "outFile": "../dist/app.js"
     },
-
     "paths": {
         "*": ["PixInsightDefinitions/*.d.ts"]
     },
