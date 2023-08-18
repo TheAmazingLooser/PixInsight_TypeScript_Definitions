@@ -15,6 +15,7 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
     deringing: boolean;
     invertedIterations: boolean;
     largeScaleDeringing: number;
+    lightnessMask: boolean;
     luminanceMask: boolean;
     medianTransform: boolean;
     midtonesBalance: number;
@@ -29,6 +30,7 @@ declare class HDRMultiscaleTransform extends ProcessInstance {
     scalingFunctionName: string;
     scalingFunctionRowFilter: Array<any>;
     smallScaleDeringing: number;
+    toIntensity: boolean;
     toLightness: boolean;
     toLuminanceOnly: boolean;
 

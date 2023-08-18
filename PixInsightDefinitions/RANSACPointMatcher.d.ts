@@ -6,27 +6,38 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class Script extends ProcessInstance {
+declare class RANSACPointMatcher {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    filePath: string;
-    information: string;
-    md5sum: string;
-    parameters: Array<any>;
+    H: Matrix;
+    M1: Array<any>;
+    M2: Array<any>;
+    bestIteration: number;
+    index: Array<any>;
+    inliersFraction: number;
+    numberOfIterations: number;
+    overlapping: number;
+    peakErrorX: number;
+    peakErrorY: number;
+    quality: number;
+    regularity: number;
+    rmsError: number;
+    rmsErrorDeviation: number;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(Script?: Script);
+    constructor();
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
+
 
 
     //-------------------------
@@ -42,7 +53,7 @@ declare class Script extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static prototype: Script;
+    static prototype: RANSACPointMatcher;
     static length: number;
     static name: string;
 

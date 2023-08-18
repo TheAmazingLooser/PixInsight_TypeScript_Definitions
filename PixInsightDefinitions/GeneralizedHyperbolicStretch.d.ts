@@ -74,4 +74,5 @@ declare class GeneralizedHyperbolicStretch extends ProcessInstance {
     ST_GeneralisedHyperbolic;
     ST_Linear;
     ST_MidtonesTransfer;
+    ST_PowerLaw;
 }

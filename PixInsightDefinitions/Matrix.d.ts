@@ -37,13 +37,13 @@ declare class Matrix {
     //--------Functions--------
     //-------------------------
     public BWMV(): number;
-    public BWMV(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
+    public BWMV(center?: number /*  this.median() */, sigma?: number /*  this.MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     public MAD(): number;
-    public MAD(center?: number /* median() */): number;
+    public MAD(center?: number /*  this.median() */): number;
 
     public PBMV(): number;
-    public PBMV(center?: number /* median() */, beta?: number /* 0.2 */): number;
+    public PBMV(center?: number /*  this.median() */, beta?: number /* 0.2 */): number;
 
     public Qn(): number;
 
@@ -56,6 +56,10 @@ declare class Matrix {
     public add(A: Matrix): Matrix;
 
     public addElementWise(A: Matrix): void;
+
+    public apply(p: Point): Point;
+
+    public apply(x: number, y: number): Point;
 
     public assign(value: number): void;
 
@@ -81,15 +85,15 @@ declare class Matrix {
     public at(row: number, col: number, value: number): void;
 
     public avgDev(): number;
-    public avgDev(center?: number /* median() */): number;
+    public avgDev(center?: number /*  this.median() */): number;
 
     public bendMidvariance(): number;
-    public bendMidvariance(center?: number /* median() */, beta?: number /* 0.2 */): number;
+    public bendMidvariance(center?: number /*  this.median() */, beta?: number /* 0.2 */): number;
 
     public binarySearch(value: number): Array<any> | void;
 
     public biweightMidvariance(): number;
-    public biweightMidvariance(center?: number /* median() */, sigma?: number /* MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
+    public biweightMidvariance(center?: number /*  this.median() */, sigma?: number /*  this.MAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): number;
 
     public colVector(col: number): Vector;
 
@@ -155,7 +159,7 @@ declare class Matrix {
     public sqrt(): Matrix;
 
     public stableAvgDev(): number;
-    public stableAvgDev(center?: number /* median() */): number;
+    public stableAvgDev(center?: number /*  this.median() */): number;
 
     public stableMean(): number;
 
@@ -180,13 +184,13 @@ declare class Matrix {
     public swap(A: Matrix): void;
 
     public toArray(): Array<any>;
-    public toArray(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Array<any>;
+    public toArray(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* this.rows */, cols: number /* this.cols */): Array<any>;
 
     public toFloat32Array(): Float32Array;
-    public toFloat32Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float32Array;
+    public toFloat32Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* this.rows */, cols: number /* this.cols */): Float32Array;
 
     public toFloat64Array(): Float64Array;
-    public toFloat64Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* rows */, cols: number /* cols */): Float64Array;
+    public toFloat64Array(startRow: number /* 0 */, startCol: number /* 0 */, rows: number /* this.rows */, cols: number /* this.cols */): Float64Array;
 
     public toImage(): Image;
 
@@ -202,16 +206,16 @@ declare class Matrix {
     public truncate(v0?: number /* 0 */, v1?: number /* 1 */): void;
 
     public twoSidedAvgDev(): Array<any>;
-    public twoSidedAvgDev(center?: number /* median() */): Array<any>;
+    public twoSidedAvgDev(center?: number /*  this.median() */): Array<any>;
 
     public twoSidedBWMV(): Array<any>;
-    public twoSidedBWMV(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
+    public twoSidedBWMV(center?: number /*  this.median() */, sigma?: Array<any> | number /*  this.twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     public twoSidedBiweightMidvariance(): Array<any>;
-    public twoSidedBiweightMidvariance(center?: number /* median() */, sigma?: Array<any> | number /* twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
+    public twoSidedBiweightMidvariance(center?: number /*  this.median() */, sigma?: Array<any> | number /*  this.twoSidedMAD() */, k?: number /* 9 */, reducedLength?: boolean /* false */): Array<any>;
 
     public twoSidedMAD(): Array<any>;
-    public twoSidedMAD(center?: number /* median() */): Array<any>;
+    public twoSidedMAD(center?: number /*  this.median() */): Array<any>;
 
     public variance(): number;
 
@@ -236,7 +240,7 @@ declare class Matrix {
     public static moffatFilter(sigma: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
 
     public static moffatFilterBySize(size: number): Matrix;
-    public static moffatFilterBySize(size: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rho?: number /* 1 */, theta?: number /* 0 */): Matrix;
+    public static moffatFilterBySize(size: number, beta?: number /* 4 */, epsilon?: number /* 0.01 */, rh?: number /* 1 */, theta?: number /* 0 */): Matrix;
 
     public static unitMatrix(): Matrix;
     public static unitMatrix(n?: number /* 3 */): Matrix;

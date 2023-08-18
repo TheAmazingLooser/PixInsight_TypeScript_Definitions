@@ -72,6 +72,7 @@ declare var jsAbortable: boolean;
 declare var jsAutoGC: boolean;
 declare var jsArguments: Array<any>;
 declare var jsScriptResult: boolean;
+declare var jsScriptInformation: string;
 declare var console: Console;
 declare var EMath: Math;
 declare var count: number;

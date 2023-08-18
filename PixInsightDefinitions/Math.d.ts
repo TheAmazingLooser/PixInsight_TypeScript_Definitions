@@ -109,6 +109,8 @@ declare class Math {
 
     public static heapSort(data: any /* TypedArray */): void;
 
+    public static homography(P1: Array<any>, P2: Array<any>): Matrix;
+
     public static initRandomGenerator(): void;
     public static initRandomGenerator(seed64?: Array<any>): void;
 
@@ -228,8 +230,6 @@ declare class Math {
     public static sum(data: Array<any> | any /* TypedArray */): number;
 
     public static sumOfSquares(data: Array<any> | any /* TypedArray */): number;
-
-    public static svd(A: Matrix): Array<any>;
 
     public static tan(x: number): number;
 

@@ -12,6 +12,7 @@ declare class StarXTerminator extends ProcessInstance {
     //-------------------------
     //-------Properties--------
     //-------------------------
+    ai_file: string;
     overlap: number;
     stars: boolean;
     unscreen: boolean;

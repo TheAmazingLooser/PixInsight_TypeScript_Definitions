@@ -6,89 +6,79 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class StarAlignment extends ProcessInstance {
+declare class FastIntegration extends ProcessInstance {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    allowClusteredSources: boolean;
     brightThreshold: number;
     clampingThreshold: number;
     descriptorsPerStar: number;
-    distortionCorrection: boolean;
-    distortionMapPostfix: string;
-    distortionMatcherExpansion: number;
-    distortionMaxIterations: number;
-    distortionModel: string;
-    fileThreadOverload: number;
-    fitPSF: number;
-    frameAdaptation: boolean;
-    generateDistortionMaps: boolean;
+    fullAlignmentEnabled: boolean;
     generateDrizzleData: boolean;
-    generateMasks: boolean;
+    generateImages: boolean;
+    generateLogFiles: boolean;
+    generateRejectionMaps: boolean;
     hotPixelFilterRadius: number;
-    inheritAstrometricSolution: boolean;
     inputHints: string;
-    intersection: number;
-    invert: boolean;
+    integrationBatchSize: number;
+    integrationPrefetchSize: number;
     linearClampingThreshold: number;
     localMaximaDetectionLimit: number;
-    maskPostfix: string;
     matcherTolerance: number;
-    maxFileReadThreads: number;
-    maxFileWriteThreads: number;
-    maxStarDistortion: number;
+    maxStarSearchIterations: number;
     maxStars: number;
-    memoryLoadControl: boolean;
-    memoryLoadLimit: number;
+    medianErrorTolerance: number;
     minStructureSize: number;
+    minimumSearchSize: number;
     mode: number;
+    noGUIMessages: boolean;
     noiseLayers: number;
     noiseReductionFilterRadius: number;
-    onError: number;
     outputData: Array<any>;
     outputDirectory: string;
     outputExtension: string;
     outputHints: string;
     outputPostfix: string;
     outputPrefix: string;
-    outputSampleFormat: number;
     overwriteExistingFiles: boolean;
+    parallelReadings: number;
+    parallelWritings: number;
     peakResponse: number;
     pixelInterpolation: number;
     polygonSides: number;
-    propagateAstrometricSolutions: boolean;
+    processorsUsed: number;
     psfTolerance: number;
-    randomizeMosaic: boolean;
     ransacMaxIterations: number;
     ransacMaximizeInliers: number;
     ransacMaximizeOverlapping: number;
     ransacMaximizeRegularity: number;
     ransacMinimizeError: number;
+    ransacTolerance: number;
     referenceImage: string;
-    referenceIsFile: boolean;
-    restrictToPreviews: boolean;
+    rejectionAlgorithm: number;
+    rejectionEnabled: boolean;
+    rejectionFluxRatio: number;
     scaleTolerance: number;
     sensitivity: number;
-    splineOrder: number;
-    splineSmoothness: number;
+    sigmaHigh: number;
+    sigmaLow: number;
+    starSearchIterationExpansion: number;
     structureLayers: number;
+    targetReferenceStarsCount: number;
     targets: Array<any>;
     trianglesPerStar: number;
-    undistortedReference: boolean;
     upperLimit: number;
     useBrightnessRelations: boolean;
-    useFileThreads: boolean;
     useScaleDifferences: boolean;
     useTriangles: boolean;
-    writeKeywords: boolean;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(StarAlignment?: StarAlignment);
+    constructor(FastIntegration?: FastIntegration);
 
 
     //-------------------------
@@ -109,7 +99,7 @@ declare class StarAlignment extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static prototype: StarAlignment;
+    static prototype: FastIntegration;
     static length: number;
     static name: string;
 
@@ -117,39 +107,22 @@ declare class StarAlignment extends ProcessInstance {
     //-------------------------
     //--------constants--------
     //-------------------------
-    Abort;
-    Always;
-    AskUser;
     Auto;
     BicubicBSpline;
     BicubicSpline;
     Bilinear;
     CatmullRomSplineFilter;
-    Continue;
     CubicBSplineFilter;
-    DrawMatchedStars;
-    DrawPutativeStarMatches;
     DrawStars;
-    FitPSF_Always;
-    FitPSF_DistortionOnly;
-    FitPSF_Never;
+    Fast;
     Lanczos3;
     Lanczos4;
     Lanczos5;
     MitchellNetravaliFilter;
-    MosaicOnly;
     NearestNeighbor;
-    NoIntersection;
-    OutputMatrix;
-    RegisterMatch;
-    RegisterUnion;
-    RegisterUnionSeparate;
-    SameAsTarget;
+    ReferenceStars;
+    SigmaClipping;
     StructureMap;
     Structures;
-    f32;
-    f64;
-    i16;
-    i32;
-    i8;
+    WinsorizedSigmaClipping;
 }

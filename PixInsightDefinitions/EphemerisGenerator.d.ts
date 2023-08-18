@@ -29,6 +29,8 @@ declare class EphemerisGenerator extends ProcessInstance {
     denseOutputToleranceFactor: number;
     e: number;
     endTimeJD: number;
+    ephemerisMaxExpansionLength: number;
+    ephemerisMaxTruncationError: number;
     ephemerisToleranceFactor: number;
     epochJD: number;
     excludeCoreAsteroids: boolean;
@@ -38,6 +40,7 @@ declare class EphemerisGenerator extends ProcessInstance {
     objectId: string;
     objectName: string;
     objects: string;
+    outputLogFile: boolean;
     outputXEPHFile: boolean;
     outputXEPHFilePath: string;
     overwriteExistingFiles: boolean;

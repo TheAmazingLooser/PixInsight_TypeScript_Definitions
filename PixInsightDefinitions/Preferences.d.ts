@@ -108,6 +108,10 @@ declare class Preferences extends ProcessInstance {
     MainWindow_confirmProgramTermination: boolean;
     MainWindow_desktopSettingsAware: boolean;
     MainWindow_doubleClickLaunchesOpenDialog: boolean;
+    MainWindow_dropShadowBlurRadius: number;
+    MainWindow_dropShadowChildWindows: boolean;
+    MainWindow_dropShadowColor: number;
+    MainWindow_dropShadowIcons: boolean;
     MainWindow_expandFavoritesAtStartup: boolean;
     MainWindow_expandMostUsedAtStartup: boolean;
     MainWindow_expandRecentlyUsedAtStartup: boolean;

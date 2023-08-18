@@ -13,6 +13,7 @@ declare class DynamicPSF extends ProcessInstance {
     //-------Properties--------
     //-------------------------
     astrometry: boolean;
+    astrometryPrecision: number;
     autoAperture: boolean;
     autoPSF: boolean;
     autoVariableShapePSF: boolean;

@@ -21,6 +21,7 @@ declare class ImageWindow {
     fileURL: string;
     focalLength: number;
     geometry: Rect;
+    hasAstrometricSolution: boolean;
     hasMaskReferences: boolean;
     hasPendingUpdates: boolean;
     height: number;
@@ -76,8 +77,6 @@ declare class ImageWindow {
     //-------------------------
     public applyColorTransformation(bmp: Bitmap): void;
     public applyColorTransformation(bmp: Bitmap, view?: View): void;
-
-    public astrometricSolution(): Array<any>;
 
     public astrometricSolutionSummary(): string;
 
@@ -173,8 +172,6 @@ declare class ImageWindow {
     public saveAs(filePath: string, queryOptions?: boolean /* true */, allowMessages?: boolean /* true */, strict?: boolean /* true */, verifyOverwrite?: boolean /* true */, formatHints?: string /* '' */): boolean;
 
     public sendToBack(): void;
-
-    public setAstrometricSolution(keywords: Array<any>, controlPoints: ByteArray): void;
 
     public setMask(mask: ImageWindow): void;
     public setMask(mask: ImageWindow, invert?: boolean /* false */): void;

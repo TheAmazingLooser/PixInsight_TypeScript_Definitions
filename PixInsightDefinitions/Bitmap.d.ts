@@ -114,7 +114,7 @@ declare class Bitmap {
     public replaceColor(x0: number, y0: number, x1: number, y1: number, replaceThis: number, replaceWith: number): void;
 
     public rotated(angleRadians: number): Bitmap;
-    public rotated(angleRadians: number, mode?: any): Bitmap;
+    public rotated(angleRadians: number, interpolation?: any /* BitmapInterpolation_Bilinear */): Bitmap;
 
     public save(filePath: string): void;
     public save(filePath: string, quality?: number): void;
@@ -122,12 +122,12 @@ declare class Bitmap {
     public scaled(scale: number): Bitmap;
 
     public scaled(sx: number, sy: number): Bitmap;
-    public scaled(sx: number, sy: number, mode?: any): Bitmap;
+    public scaled(sx: number, sy: number, interpolation?: any /* BitmapInterpolation_Bilinear */): Bitmap;
 
     public scaledTo(size: number): Bitmap;
 
     public scaledTo(width: number, height: number): Bitmap;
-    public scaledTo(width: number, height: number, mode?: any): Bitmap;
+    public scaledTo(width: number, height: number, interpolation?: any /* BitmapInterpolation_Bilinear */): Bitmap;
 
     public setAlpha(alpha: number): void;
 

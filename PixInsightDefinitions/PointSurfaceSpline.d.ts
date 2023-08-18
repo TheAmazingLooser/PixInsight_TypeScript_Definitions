@@ -12,20 +12,32 @@ declare class PointSurfaceSpline {
     //-------------------------
     //-------Properties--------
     //-------------------------
-    isRecursive: boolean;
+    errorX: number;
+    errorY: number;
+    incrementalFunctionEnabled: boolean;
     isValid: boolean;
+    linearFunction: Matrix;
+    maxSplinePoints: number;
+    pointsX: Array<any>;
+    pointsY: Array<any>;
+    simplifierRejectFraction: number;
+    simplifiersEnabled: boolean;
+    truncatedX: boolean;
+    truncatedY: boolean;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
     constructor();
-    constructor(P1: Array<any>, P2: Array<any>, smoothness ?: number /*  0*/, W ?: Vector /*  null*/, order ?: number /*  2*/, allowExtrapolation ?: boolean /*  true*/, maxSplineLength ?: number /*  1600*/, bucketCapacity ?: number /*  64*/, verbose ?: boolean /*  true*/);
+    constructor(S: PointSurfaceSpline);
 
 
     //-------------------------
     //--------Functions--------
     //-------------------------
+    public assign(S: PointSurfaceSpline): void;
+
     public clear(): void;
 
     public evaluate(x: number, y: number): Point;
@@ -35,7 +47,7 @@ declare class PointSurfaceSpline {
     public evaluate(points: Array<any>): Array<any>;
 
     public initialize(P1: Array<any>, P2: Array<any>): void;
-    public initialize(P1: Array<any>, P2: Array<any>, smoothness?: number /* 0 */, W?: Vector /* null */, order?: number /* 2 */, allowExtrapolation?: boolean /* true */, maxSplineLength?: number /* 1600 */, bucketCapacity?: number /* 64 */, verbose?: boolean /* true */): void;
+    public initialize(P1: Array<any>, P2: Array<any>, smoothness?: number /* 0 */, W?: Vector /* null */, order?: number /* 2 */, rbfType?: number /* RBFType_Default */, eps?: number /* 0 */, polynomial?: boolean /* true */): void;
 
 
 
