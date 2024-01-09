@@ -1,13 +1,23 @@
 {
-    "compilerOptions": {
-      "allowJs": true,
-      "module": "none",
-      "lib": [
-        
-      ],
-      "outFile": "../dist/app.js"
-    },
-    "paths": {
-        "*": ["PixInsightDefinitions/*.d.ts"]
-    },
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "none",
+    "lib": [],
+    "outFile": "./dist/app.js",
+    "baseUrl": "."
+  },
+  "paths": {
+    "*": [
+      "./PixInsightDefinitions/*.d.ts",
+      "./Library/*.ts",
+    ]
+  },
+  "include": [
+    "./PixInsightDefinitions/*.d.ts",
+    "./Library/*.ts",
+    "./src/**/*.ts"],
+  "exclude": [
+    "./dist",
+    "./TypeScript"
+  ]
 }

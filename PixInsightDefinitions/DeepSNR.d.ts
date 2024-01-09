@@ -6,21 +6,22 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class NoiseXTerminator extends ProcessInstance {
+declare class DeepSNR extends ProcessInstance {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    ai_file: string;
-    denoise: number;
-    detail: number;
+    amount: number;
+    linear: boolean;
+    shadows_clipping: number;
+    target_background: number;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NoiseXTerminator?: NoiseXTerminator);
+    constructor(DeepSNR?: DeepSNR);
 
 
     //-------------------------
@@ -41,7 +42,7 @@ declare class NoiseXTerminator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static prototype: NoiseXTerminator;
+    static prototype: DeepSNR;
     static length: number;
     static name: string;
 

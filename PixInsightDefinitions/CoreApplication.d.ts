@@ -31,6 +31,8 @@ declare class CoreApplication {
 
     public static clearPendingMessages(): void;
 
+    public static continueAutoSaveTasks(): void;
+
     public static firstInstanceAlive(): number;
 
     public static instancePID(instance: number): string;
@@ -43,6 +45,8 @@ declare class CoreApplication {
     public static launchInstance(instance?: number): void;
 
     public static otherInstancesRunning(): boolean;
+
+    public static pauseAutoSaveTasks(): void;
 
     public static processPendingMessages(): void;
     public static processPendingMessages(msec?: number /* 0 */): void;
@@ -87,6 +91,7 @@ declare class CoreApplication {
     static libraryDirPath: string;
     static docDirPath: string;
     static colorDirPath: string;
+    static configDirPath: string;
     static agentName: string;
     static caBundleFilePath: string;
     static startTime: Date;

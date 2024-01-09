@@ -6,21 +6,22 @@
 //-------------------------
 //----------Class----------
 //-------------------------
-declare class NoiseXTerminator extends ProcessInstance {
+declare class Colourise extends ProcessInstance {
 
 
     //-------------------------
     //-------Properties--------
     //-------------------------
-    ai_file: string;
-    denoise: number;
-    detail: number;
+    hue: number;
+    midtones: number;
+    saturation: number;
+    shadows: number;
 
 
     //-------------------------
     //------Constructors-------
     //-------------------------
-    constructor(NoiseXTerminator?: NoiseXTerminator);
+    constructor(Colourise?: Colourise);
 
 
     //-------------------------
@@ -41,7 +42,7 @@ declare class NoiseXTerminator extends ProcessInstance {
     //-------------------------
     //----static Properties----
     //-------------------------
-    static prototype: NoiseXTerminator;
+    static prototype: Colourise;
     static length: number;
     static name: string;
 

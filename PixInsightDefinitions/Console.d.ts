@@ -27,8 +27,8 @@ declare class Console {
     //-------------------------
     //----static Functions-----
     //-------------------------
-    public static abort(): ByteArray;
-    public static abort(dontAsk?: boolean /* false */): ByteArray;
+    public static abort(): void;
+    public static abort(dontAsk?: boolean /* false */): void;
 
     public static beginLog(): void;
     public static beginLog(filePath?: string): void;
@@ -59,6 +59,8 @@ declare class Console {
     public static readChar(): number;
 
     public static readString(): string;
+
+    public static resetStatus(): void;
 
     public static show(): void;
     public static show(animate?: boolean /* true */): void;

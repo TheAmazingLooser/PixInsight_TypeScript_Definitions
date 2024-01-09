@@ -13,8 +13,10 @@ declare class Preferences extends ProcessInstance {
     //-------Properties--------
     //-------------------------
     Application_asteroidEphemeridesFile: string;
+    Application_autoSaveSettingsPeriod: number;
     Application_autoUIScaling: boolean;
     Application_cipITRSDataFile: string;
+    Application_compressSettingsBlocks: boolean;
     Application_deltaATDataFile: string;
     Application_deltaTDataFile: string;
     Application_fontResolution: number;
@@ -24,6 +26,9 @@ declare class Preferences extends ProcessInstance {
     Application_kboEphemeridesFile: string;
     Application_lowResFont: string;
     Application_lowResMonoFont: string;
+    Application_messageBoxOkCancelButtonOrder: number;
+    Application_messageBoxYesNoButtonOrder: number;
+    Application_minifySettingsXML: boolean;
     Application_nutationModelFile: string;
     Application_resourceFile01: string;
     Application_resourceFile02: string;
