@@ -90,6 +90,6 @@ var test4 = new Test2();
 ```
 
 ## Limitation
-- [ ] Constants are not properly imported (to remain version independency)
+- [ ] Constants are not properly imported (to remain version independent)
 - [x] ~~Classes do not follow the proper way of how the PJSR wants to get classes defined.~~ With the custom transformer, this now works like a charme!
 - [ ] No real method to use precompiler instructions from PI (`#include`,...)
