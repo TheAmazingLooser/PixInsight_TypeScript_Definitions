@@ -2,3 +2,5 @@
 !/PixinsightDefinitions/
 !ReadMe.md
 !tsconfig.json
+!/TypeScript/
+/TypeScript/node_modules/
