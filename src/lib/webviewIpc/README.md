@@ -10,7 +10,15 @@ Create the `WebView`, attach the bridge, register host functions, then start pol
 import { PixInsightWebViewBridge } from "./lib/webviewIpc/index";
 
 const webView = new WebView(dialog);
-const bridge = new PixInsightWebViewBridge(webView);
+const bridge = new PixInsightWebViewBridge(webView, {
+  allowLocalOnly: true
+}, {
+  enabled: true,       // Opt-in DevTools
+  hotkeyToggle: true   // F12 key toggle at parent dialog level
+});
+
+// Optionally bind F12 to parent dialog
+bridge.bindDevToolsHotkey(dialog);
 
 bridge.registerHandler("getOpenViews", () => {
   return ImageWindow.windows.map(window => window.mainView.id);
@@ -42,6 +50,44 @@ try {
 ```
 
 A complete executable example is available in `src/WebViewIpcLibraryDemo.ts`.
+
+## DevTools Window (External Native Window)
+
+Lightweight native DevTools run outside the inspected `WebView` as a sibling panel in the same PixInsight dialog. This avoids nested modal windows while keeping the controls outside the page DOM.
+
+### Enabling DevTools
+
+Pass a `DevToolsConfig` object as the 3rd parameter when instantiating `PixInsightWebViewBridge`:
+
+```typescript
+const bridge = new PixInsightWebViewBridge(
+  webView,
+  { allowLocalOnly: true },
+  {
+    enabled: true,             // Enables DevTools agent
+    hotkeyToggle: true,        // Bind F12 to open window
+    allowExpressionEval: true, // Permits REPL evaluation
+    allowDomEdits: true        // Permits DOM edits/highlighting
+  }
+);
+
+// Bind F12 key handler on parent dialog
+bridge.bindDevToolsHotkey(parentDialog);
+
+// Add the panel to the same dialog layout beside the WebView
+const devToolsPanel = bridge.attachDevToolsPanel(parentDialog);
+contentSizer.add(webView, 100);
+if (devToolsPanel) contentSizer.add(devToolsPanel, 55);
+```
+
+### DevTools Features
+
+- **Native Sibling Panel**: Lives beside the WebView in the same dialog and never starts a nested modal event loop.
+- **F12 Hotkey Toggle**: Toggles DevTools on or off when F12 is pressed inside the parent dialog.
+- **Console Log Stream**: Intercepts `console.log`, `info`, `warn`, and `error` outputs into a scrollable native `TextBox`.
+- **REPL Evaluation**: Enter expressions into the native input field to evaluate JavaScript inside the `WebView` context asynchronously.
+- **DOM Tree Inspector**: Renders a hierarchical `TreeBox` representation of DOM elements.
+- **Node Highlighting**: Selecting a DOM tree node highlights the corresponding element in the live `WebView`.
 
 ## Browser API
 
@@ -148,15 +194,6 @@ const views = await window.PixInsight.call("ImageWindow.open", [filePath]);
 
 > **Security warning:** `exposeAll()` delegates the signed loader's authority to the loaded page. A compromised page can modify images, close windows, execute installed processes, and reach other capabilities available to the script. The available PJSR surface also changes between PixInsight versions and installations. Use this mode only when that delegation is intentional.
 
-This mode is asynchronous and is not a transparent copy of PJSR JavaScript:
-
-- Native PJSR objects cannot cross JSON directly.
-- Constructors, mutable properties, event handlers, native object identity, and large image buffers require a future handle/proxy layer.
-- Methods returning JSON-compatible data work most naturally.
-- Installed third-party processes differ between systems.
-
-For production tools, prefer high-level handlers or service objects unless full delegation is a deliberate requirement.
-
 ## Loading policy
 
 The default policy accepts local documents only:
@@ -178,10 +215,6 @@ const bridge = new PixInsightWebViewBridge(webView, {
 webView.loadContent("https://amazing-astro.com/application");
 ```
 
-The host polls `window.location.href` with each queued request and rejects IPC when the observed location is not allowed. PixInsight's `WebView` API has no native URL getter or pre-navigation cancellation event, so the bridge cannot prevent an untrusted document from loading; it prevents that document's queued RPC requests from being executed.
-
-Do not use wildcard origins. Keep third-party scripts, analytics, advertisements, and unnecessary remote resources out of pages receiving bridge access, because every script executing in an allowed page shares the page's authority.
-
 ## Security checklist
 
 - Prefer `setHTML()` or local `file://` content.
@@ -198,9 +231,12 @@ Do not use wildcard origins. Keep third-party scripts, analytics, advertisements
 
 ```text
 src/lib/webviewIpc/
-├── clientSource.ts  Browser runtime injected into the WebView
-├── host.ts          PixInsight host bridge
-├── index.ts         Public exports
-├── README.md        Library documentation
-└── types.ts         Public protocol and policy types
+├── clientSource.ts     Browser runtime injected into the WebView
+├── devtoolsSource.ts   Injected in-page DevTools helper agent
+├── devtoolsTypes.ts    DevTools configuration and protocol types
+├── devtoolsUi.ts       External Native PixInsight DevTools Dialog Window
+├── host.ts             PixInsight host bridge
+├── index.ts            Public exports
+├── README.md           Library documentation
+└── types.ts            Public protocol and policy types
 ```

@@ -70,6 +70,7 @@ const DEMO_HTML = `<!DOCTYPE html>
 
     <script>
         function log(msg) {
+            console.log(msg);
             const pre = document.getElementById('logOutput');
             pre.textContent = "[" + new Date().toLocaleTimeString() + "] " + msg + "\\n" + pre.textContent;
         }
@@ -120,6 +121,9 @@ class WebViewIpcDemoDialog extends Dialog {
   private webView: WebView;
   private bridge: PixInsightWebViewBridge;
   private eventTimer: Timer;
+  private devToolsButton: PushButton;
+  private devToolsMenu: Menu;
+  private toggleDevToolsItem: MenuItem;
 
   constructor() {
     super();
@@ -133,17 +137,59 @@ class WebViewIpcDemoDialog extends Dialog {
     this.webView = new WebView(this);
     this.webView.setHTML(DEMO_HTML);
 
+    // Initialize IPC Bridge with strict Iron Shield policy
+    this.bridge = new PixInsightWebViewBridge(
+      this.webView,
+      {
+        allowLocalOnly: true,
+        allowedOrigins: ["file://", "data:", "about:blank"],
+        allowUnregisteredMethods: false
+      },
+      {
+        enabled: true,
+        hotkeyToggle: true,
+        requireTrustedOrigin: true,
+        allowExpressionEval: true,
+        allowDomEdits: true
+      }
+    );
+
+    // F12 opens the native external DevTools window while native controls have focus.
+    this.bridge.bindDevToolsHotkey(this);
+    const devToolsPanel = this.bridge.attachDevToolsPanel(this);
+
+    // Native developer menu. It is outside the WebView and cannot be invoked through page IPC.
+    this.devToolsMenu = new Menu(this);
+    this.devToolsMenu.text = "Developer";
+    this.toggleDevToolsItem = new MenuItem("Toggle WebView DevTools", undefined as any, "F12");
+    this.toggleDevToolsItem.onTrigger = () => {
+      this.bridge.toggleDevTools();
+    };
+    this.devToolsMenu.addItem(this.toggleDevToolsItem);
+
+    this.devToolsButton = new PushButton(this);
+    this.devToolsButton.text = "Developer ▾";
+    this.devToolsButton.toolTip = "Open the native WebView developer menu (F12 toggles DevTools).";
+    this.devToolsButton.onClick = () => {
+      this.devToolsMenu.execute();
+    };
+
+    const menuSizer = new HorizontalSizer();
+    menuSizer.margin = 6;
+    menuSizer.addStretch();
+    menuSizer.add(this.devToolsButton);
+
     const sizer = new VerticalSizer();
     sizer.margin = 0;
-    sizer.add(this.webView);
+    sizer.add(menuSizer);
+    const contentSizer = new HorizontalSizer();
+    contentSizer.spacing = 6;
+    contentSizer.add(this.webView, 100);
+    if (devToolsPanel) {
+      contentSizer.add(devToolsPanel, 55);
+    }
+    sizer.add(contentSizer, 100);
     this.sizer = sizer;
-
-    // Initialize IPC Bridge with strict Iron Shield policy
-    this.bridge = new PixInsightWebViewBridge(this.webView, {
-      allowLocalOnly: true,
-      allowedOrigins: ["file://", "data:", "about:blank"],
-      allowUnregisteredMethods: false
-    });
 
     // Register safe host RPC endpoints
     this.bridge.registerHandler("getOpenViews", () => {

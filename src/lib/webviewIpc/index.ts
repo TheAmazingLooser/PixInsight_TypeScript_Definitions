@@ -6,4 +6,7 @@
 
 export * from "./types";
 export * from "./clientSource";
+export * from "./devtoolsTypes";
+export * from "./devtoolsSource";
+export * from "./devtoolsUi";
 export * from "./host";
