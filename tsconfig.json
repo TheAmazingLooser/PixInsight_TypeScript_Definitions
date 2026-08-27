@@ -1,23 +1,21 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "module": "none",
-    "lib": [],
-    "outFile": "./dist/app.js",
-    "baseUrl": "."
-  },
-  "paths": {
-    "*": [
-      "./PixInsightDefinitions/*.d.ts",
-      "./Library/*.ts",
-    ]
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022"],
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "types": []
   },
   "include": [
-    "./PixInsightDefinitions/*.d.ts",
-    "./Library/*.ts",
-    "./src/**/*.ts"],
+    "types/pjsr.d.ts",
+    "src/**/*"
+  ],
   "exclude": [
-    "./dist",
-    "./TypeScript"
+    "node_modules",
+    "dist"
   ]
 }
