@@ -4,7 +4,9 @@ A bidirectional RPC bridge between PixInsight's V8/PJSR runtime and JavaScript r
 
 ## Minimal setup
 
-Create the `WebView`, attach the bridge, register host functions, then start polling:
+Create the `WebView`, attach the bridge, register host functions, register the page bootstrap, load the HTML, then start polling.
+
+> **PixInsight WebView limitation:** Do not put required application logic in a `<script>` element passed to `WebView.setHTML()`. PixInsight can render the markup and CSS without executing that inline script. The resulting page looks loaded, but buttons have no handlers and no browser-to-host RPC calls are queued. Inject page behavior explicitly from `bridge.onClientReady()`.
 
 ```typescript
 import { PixInsightWebViewBridge } from "./lib/webviewIpc/index";
@@ -24,16 +26,22 @@ bridge.registerHandler("getOpenViews", () => {
   return ImageWindow.windows.map(window => window.mainView.id);
 });
 
+bridge.onClientReady(() => {
+  webView.evaluateScript(`(function() {
+    var button = document.getElementById("refresh");
+    if (!button || !window.PixInsight) return;
+    button.onclick = function() {
+      window.PixInsight.call("getOpenViews").then(function(views) {
+        document.getElementById("output").textContent = JSON.stringify(views);
+      });
+    };
+  })()`);
+});
+
 webView.setHTML(`
   <!doctype html>
   <button id="refresh">Refresh views</button>
   <pre id="output"></pre>
-  <script>
-    document.getElementById("refresh").onclick = async () => {
-      const views = await window.PixInsight.call("getOpenViews");
-      document.getElementById("output").textContent = JSON.stringify(views);
-    };
-  </script>
 `);
 
 bridge.start();
@@ -50,6 +58,48 @@ try {
 ```
 
 A complete executable example is available in `src/WebViewIpcLibraryDemo.ts`.
+
+## Required WebView bootstrap lifecycle
+
+`PixInsightWebViewBridge` treats each navigation as a new document generation. The client runtime, token, page application, DOM handles, and pending inspector commands all belong to that generation.
+
+Use this order:
+
+1. Construct the `WebView`.
+2. Construct `PixInsightWebViewBridge` so it owns the WebView lifecycle callbacks.
+3. Register native RPC handlers.
+4. Register page behavior with `bridge.onClientReady()`.
+5. Call `webView.setHTML()` or `webView.loadContent()`.
+6. Call `bridge.start()`.
+
+`onClientReady()` runs only after the current document has finished loading and the tokenized `window.PixInsight` client has acknowledged readiness. The callback runs again after navigation, so injected application code should use an idempotence guard:
+
+```typescript
+bridge.onClientReady(() => {
+  webView.evaluateScript(`(function() {
+    if (window.__MY_APPLICATION_READY__) return;
+    window.__MY_APPLICATION_READY__ = true;
+    // Bind controls and issue initial RPC calls here.
+  })()`);
+});
+```
+
+Do not call `evaluateScript()` from page bootstrap before `onClientReady()`. Do not regard visible HTML or a populated DevTools DOM tree as proof that inline application JavaScript ran.
+
+### Lifecycle diagnostics
+
+The host prints explicit milestones to the PixInsight Process Console:
+
+```text
+[WebView IPC] Document loaded (generation 1).
+[WebView IPC] Client runtime ready (generation 1).
+[WebView IPC] Invoking 1 page bootstrap handler(s).
+[WebView IPC] Current document origin verified.
+[WebView IPC] Browser RPC queue polling active.
+[WebView IPC] methodName
+```
+
+If the first two lines appear but no application-ready output follows, inspect the `onClientReady()` injection result. If queue polling is active but no method line appears after a click, verify that the click handler was bound by the injected bootstrap and that it called `window.PixInsight.call()`.
 
 ## Native WebView DevTools
 

@@ -175,6 +175,9 @@ describe('PixInsightWebViewBridge Unit Tests', () => {
                 requireTrustedOrigin: true
             }
         );
+        // Most unit tests exercise an already loaded local document. Dedicated
+        // navigation tests override this lifecycle state explicitly.
+        (bridge as any).documentLoaded = true;
     });
 
     it('should correctly evaluate allowed origins under Iron Shield policy', () => {
@@ -221,6 +224,7 @@ describe('PixInsightWebViewBridge Unit Tests', () => {
     });
 
     it('should send DevTools commands and process tagged channel responses', async () => {
+        (bridge as any).devToolsDispatchPermit = true;
         const cmdPromise = bridge.sendDevToolsCommand({ kind: 'snapshot' });
 
         const originScript = mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1];
@@ -229,13 +233,16 @@ describe('PixInsightWebViewBridge Unit Tests', () => {
         // DevTools cannot inject or execute until the current page origin is known and trusted.
         mockWebView.simulateScriptResult('file:///C:/local/index.html');
 
+        (bridge as any).devToolsDispatchPermit = true;
+        (bridge as any).dispatchNextDevToolsCommand();
         const injectionScript = mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1];
         expect(injectionScript).toContain('devtools-agent');
 
         // The first command waits until the in-page agent explicitly acknowledges readiness.
         mockWebView.simulateScriptResult(JSON.stringify({
             channel: 'devtools-agent',
-            ready: true
+            ready: true,
+            generation: (bridge as any).documentGeneration
         }));
 
         const lastScript = mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1];
@@ -260,6 +267,7 @@ describe('PixInsightWebViewBridge Unit Tests', () => {
     });
 
     it('should reject DevTools commands before injection when origin is untrusted', async () => {
+        (bridge as any).devToolsDispatchPermit = true;
         const cmdPromise = bridge.sendDevToolsCommand({ kind: 'snapshot' });
 
         mockWebView.simulateScriptResult('https://malicious-site.com/');
@@ -334,6 +342,70 @@ describe('PixInsightWebViewBridge Unit Tests', () => {
         expect((bridge as any).ipcQueuePopPending).toBe(false);
         expect(commandScript).toContain('__PI_DEVTOOLS_EXECUTE__');
         expect(completed).toBe(false);
+    });
+
+    it('should poll browser RPC before permitting continuous DevTools traffic', () => {
+        (bridge as any).clientAgentReady = true;
+        (bridge as any).devToolsAgentReady = true;
+        bridge.requestDevToolsCommand({ kind: 'popConsole' }, () => {});
+
+        expect(mockWebView.evaluatedScripts.some(script => script.includes('__PI_DEVTOOLS_EXECUTE__'))).toBe(false);
+        (bridge as any).pollNextMessage();
+        expect(mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1]).toBe('window.location.href');
+
+        mockWebView.simulateScriptResult('file:///C:/local/index.html');
+        (bridge as any).pollNextMessage();
+        expect(mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1]).toContain('_popQueue');
+        mockWebView.simulateScriptResult(null);
+        expect(mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1]).toContain('__PI_DEVTOOLS_EXECUTE__');
+    });
+
+    it('should wait for the serialized client handshake before polling IPC', () => {
+        (bridge as any).documentLoaded = true;
+        (bridge as any).clientAgentReady = false;
+        (bridge as any).clientAgentInjectionPending = false;
+        bridge.start(40);
+        (bridge as any).pollNextMessage();
+        const injectionScript = mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1];
+        expect(injectionScript).toContain('ipc-client-agent');
+        expect(injectionScript).toContain('_setToken');
+
+        const scriptCount = mockWebView.evaluatedScripts.length;
+        (bridge as any).pollNextMessage();
+        expect(mockWebView.evaluatedScripts.length).toBe(scriptCount);
+
+        mockWebView.simulateScriptResult(JSON.stringify({
+            channel: 'ipc-client-agent',
+            ready: true,
+            generation: (bridge as any).documentGeneration
+        }));
+        (bridge as any).pollNextMessage();
+        expect(mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1]).toBe('window.location.href');
+    });
+
+    it('should reinject the client runtime after navigation', () => {
+        mockWebView.onLoadStarted!();
+        expect((bridge as any).clientAgentReady).toBe(false);
+        mockWebView.onLoadFinished!(true);
+
+        const injectionScript = mockWebView.evaluatedScripts[mockWebView.evaluatedScripts.length - 1];
+        expect(injectionScript).toContain('ipc-client-agent');
+        expect(injectionScript).toContain('_setToken');
+    });
+
+    it('should ignore a client handshake from the previous document generation', () => {
+        (bridge as any).documentLoaded = true;
+        (bridge as any).documentGeneration = 4;
+        (bridge as any).clientAgentInjectionPending = true;
+
+        mockWebView.simulateScriptResult(JSON.stringify({
+            channel: 'ipc-client-agent',
+            ready: true,
+            generation: 3
+        }));
+
+        expect((bridge as any).clientAgentReady).toBe(false);
+        expect((bridge as any).clientAgentInjectionPending).toBe(true);
     });
 
     it('should support exposeAll and dangerouslyExposeAll for bulk method invocation', () => {

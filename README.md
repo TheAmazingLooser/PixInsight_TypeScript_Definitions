@@ -55,6 +55,7 @@ This definition release was extracted directly from live runtime introspection o
   - Write clean, split-up codebase using standard TypeScript `import { ... } from './lib/...'` and `export`.
   - Built-in fast bundler automatically inlines and bundles all library dependencies from `src/lib/` into self-contained standalone `.js` scripts in `dist/`.
   - Reusable out-of-the-box libraries included: `src/lib/ui.ts` (BaseDialog, MessageBox helpers), `src/lib/astroMath.ts` (ImageStatistics, Matrix Unmixing), `src/lib/processHelper.ts` (StarXTerminator, NoiseXTerminator wrappers).
+  - Secure bidirectional WebView RPC and native DevTools in `src/lib/webviewIpc/`; see its [integration guide](src/lib/webviewIpc/README.md).
 
 - **Automated PixInsight V8 Build Pipeline (`scripts/build.js`)**:
   - Automatically prepends `#engine v8` to all generated `.js` files.
@@ -103,10 +104,12 @@ Any changes saved in `src/**/*.ts` will automatically recompile into `dist/` ins
 │   ├── lib/                 # Reusable multi-file modular libraries (imported via TS)
 │   │   ├── astroMath.ts     # Image statistics, matrix spectral unmixing
 │   │   ├── processHelper.ts # Safe StarXTerminator & NoiseXTerminator wrappers
+│   │   ├── webviewIpc/      # Tokenized WebView RPC, bootstrap lifecycle, and DevTools
 │   │   └── ui.ts            # BaseDialog, styled headers, MessageBox helpers
 │   ├── ModularPipelineDemo.ts # Multi-file demo importing from ./lib/*
 │   ├── InteractiveDialog.ts # Example GUI Dialog application
 │   ├── MyFirstScript.ts     # Minimal starter template
+│   ├── WebViewIpcLibraryDemo.ts # Processing workspace and WebView IPC integration
 │   └── ProcessAutomation.ts # StarXTerminator, NoiseXTerminator & PixelMath example
 ├── types/
 │   └── pjsr.d.ts            # Master TypeScript declaration file (8,877 lines)

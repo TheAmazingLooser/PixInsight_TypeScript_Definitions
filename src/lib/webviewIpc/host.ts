@@ -69,14 +69,20 @@ export class PixInsightWebViewBridge {
   private devToolsAgentReady: boolean = false;
   private devToolsAgentInjectionPending: boolean = false;
   private devToolsOriginProbePending: boolean = false;
+  private clientAgentReady: boolean = false;
+  private clientAgentInjectionPending: boolean = false;
   private locationProbePurpose: "poll" | "devtools" | "query" | null = null;
   private ipcQueuePopPending: boolean = false;
+  private devToolsDispatchPermit: boolean = false;
   private documentGeneration: number = 0;
+  private documentLoaded: boolean = false;
+  private queuePollingAnnounced: boolean = false;
   private isDestroyed: boolean = false;
   private lastVerifiedUrl: string = "";
   private pendingLocationCallback: ((url: string) => void) | null = null;
   private hotkeyDialog: Dialog | null = null;
   private previousDialogKeyPress: ((key: number, modifiers: number) => boolean) | null = null;
+  private clientReadyHandlers: Array<() => void> = [];
 
   /**
    * Constructs a new PixInsightWebViewBridge attached to a PixInsight WebView control.
@@ -156,10 +162,15 @@ export class PixInsightWebViewBridge {
       try {
         if (this.isDestroyed) return;
         this.documentGeneration++;
+        this.documentLoaded = false;
+        this.queuePollingAnnounced = false;
         this.lastVerifiedUrl = "";
         this.locationProbePurpose = null;
         this.ipcQueuePopPending = false;
+        this.devToolsDispatchPermit = false;
         this.devToolsOriginProbePending = false;
+        this.clientAgentReady = false;
+        this.clientAgentInjectionPending = false;
         this.devToolsAgentReady = false;
         this.devToolsAgentInjectionPending = false;
         this.rejectAllDevToolsCommands(new Error("DEVTOOLS_NAVIGATION: The inspected document changed."));
@@ -172,17 +183,47 @@ export class PixInsightWebViewBridge {
     this.webView.onLoadFinished = (ok: boolean) => {
       try {
         if (ok && !this.isDestroyed) {
+          this.documentLoaded = true;
           this.devToolsAgentReady = false;
           this.devToolsAgentInjectionPending = false;
           this.devToolsOriginProbePending = false;
           this.lastVerifiedUrl = "";
+          Console.writeln(`[WebView IPC] Document loaded (generation ${this.documentGeneration}).`);
           this.injectClientRuntime();
-          this.requestRawLocationProbe("poll");
+        } else if (!ok && !this.isDestroyed) {
+          Console.warningln("[WebView IPC] WebView document load failed.");
         }
       } catch (error: any) {
         Console.warningln(`PixInsightWebViewBridge: Load completion failed: ${error.message || error}`);
       }
     };
+  }
+
+  /** Registers a callback invoked after the IPC client is installed in each document. */
+  public onClientReady(handler: () => void): void {
+    try {
+      if (typeof handler !== "function") throw new Error("Client-ready handler must be a function.");
+      this.clientReadyHandlers.push(handler);
+      if (this.clientAgentReady && this.documentLoaded) handler();
+    } catch (error: any) {
+      Console.warningln(`[WebView IPC] Client-ready handler registration failed: ${error.message || error}`);
+    }
+  }
+
+  /** Invokes page bootstrap hooks only for the acknowledged current document. */
+  private notifyClientReady(): void {
+    try {
+      Console.writeln(`[WebView IPC] Invoking ${this.clientReadyHandlers.length} page bootstrap handler(s).`);
+      for (const handler of this.clientReadyHandlers) {
+        try {
+          handler();
+        } catch (error: any) {
+          Console.criticalln(`[WebView IPC] Page bootstrap handler failed: ${error.message || error}`);
+        }
+      }
+    } catch (error: any) {
+      Console.criticalln(`[WebView IPC] Client-ready notification failed: ${error.message || error}`);
+    }
   }
 
   /**
@@ -272,6 +313,7 @@ export class PixInsightWebViewBridge {
       if (
         this.isDestroyed ||
         !this.devToolsConfig.enabled ||
+        !this.documentLoaded ||
         (this.devToolsConfig.requireTrustedOrigin && !this.isOriginAllowed(this.lastVerifiedUrl)) ||
         this.devToolsAgentReady ||
         this.devToolsAgentInjectionPending
@@ -287,18 +329,21 @@ export class PixInsightWebViewBridge {
         consoleForwardRateLimitPerSec: this.devToolsConfig.consoleForwardRateLimitPerSec,
         hotkeyToggle: this.devToolsConfig.hotkeyToggle && this.devToolsPanel !== null
       }).replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+      const generation = this.documentGeneration;
       const script = `(function() {
         try {
           window.__PI_DEVTOOLS_CONFIG__ = ${injectedConfig};
           ${DEVTOOLS_INJECTED_JS}
           return JSON.stringify({
             channel: "devtools-agent",
+            generation: ${generation},
             ready: window.__PI_DEVTOOLS_AGENT__ === true &&
               typeof window.__PI_DEVTOOLS_EXECUTE__ === "function"
           });
         } catch (error) {
           return JSON.stringify({
             channel: "devtools-agent",
+            generation: ${generation},
             ready: false,
             error: error && error.message ? error.message : String(error)
           });
@@ -395,6 +440,10 @@ export class PixInsightWebViewBridge {
 
       this.expireDevToolsCommands();
       if (this.devToolsCommandQueue.length === 0) return;
+      // At most one inspector command may run per completed browser-RPC queue
+      // read. This prevents the continuously polling DevTools panel from
+      // starving normal page-to-host calls.
+      if (!this.devToolsDispatchPermit) return;
       // Raw location and IPC queue results are intentionally untagged. Keep all
       // DevTools evaluations serialized behind them so result channels cannot race.
       if (
@@ -452,6 +501,7 @@ export class PixInsightWebViewBridge {
         return window.__PI_DEVTOOLS_EXECUTE__(${safeJson});
       })()`;
 
+      this.devToolsDispatchPermit = false;
       this.devToolsCommandInFlight = id;
       this.webView.evaluateScript(script);
     } catch (error: any) {
@@ -678,23 +728,21 @@ export class PixInsightWebViewBridge {
    * @param intervalMs Polling interval in milliseconds (default: 40ms).
    */
   public start(intervalMs: number = 40): void {
-    if (this.isDestroyed) {
-      throw new Error("PixInsightWebViewBridge: Cannot start a destroyed bridge instance.");
+    try {
+      if (this.isDestroyed) {
+        throw new Error("PixInsightWebViewBridge: Cannot start a destroyed bridge instance.");
+      }
+
+      if (this.timer) this.timer.stop();
+      this.timer = new Timer();
+      this.timer.interval = intervalMs / 1000.0; // PJSR Timer interval is in seconds
+      this.timer.periodic = true;
+      this.timer.onTimeout = () => this.pollNextMessage();
+
+      this.timer.start();
+    } catch (error: any) {
+      throw error;
     }
-
-    if (this.timer) {
-      this.timer.stop();
-    }
-
-    this.timer = new Timer();
-    this.timer.interval = intervalMs / 1000.0; // PJSR Timer interval is in seconds
-    this.timer.periodic = true;
-    this.timer.onTimeout = () => {
-      this.pollNextMessage();
-    };
-
-    this.injectClientRuntime();
-    this.timer.start();
   }
 
   /**
@@ -714,15 +762,33 @@ export class PixInsightWebViewBridge {
    */
   public injectClientRuntime(): void {
     try {
-      if (this.isDestroyed) return;
-
-      // 1. Inject client library definition
-      this.webView.evaluateScript(WEBVIEW_CLIENT_JS);
-
-      // 2. Set cryptographically generated session token
-      const tokenScript = `if (window.PixInsight) { window.PixInsight._setToken("${this.sessionToken}"); }`;
-      this.webView.evaluateScript(tokenScript);
+      if (this.isDestroyed || this.clientAgentReady || this.clientAgentInjectionPending) return;
+      if (!this.documentLoaded) return;
+      this.clientAgentInjectionPending = true;
+      const safeToken = JSON.stringify(this.sessionToken);
+      const generation = this.documentGeneration;
+      // One serialized evaluation prevents the location/queue poller from racing
+      // ahead of the runtime definition or its session-token initialization.
+      const script = `(function() {
+        try {
+          ${WEBVIEW_CLIENT_JS}
+          if (!window.PixInsight || typeof window.PixInsight._setToken !== "function") {
+            throw new Error("IPC_CLIENT_RUNTIME_UNAVAILABLE");
+          }
+          window.PixInsight._setToken(${safeToken});
+          return JSON.stringify({ channel: "ipc-client-agent", ready: true, generation: ${generation} });
+        } catch (error) {
+          return JSON.stringify({
+            channel: "ipc-client-agent",
+            ready: false,
+            generation: ${generation},
+            error: error && error.message ? error.message : String(error)
+          });
+        }
+      })()`;
+      this.webView.evaluateScript(script);
     } catch (e: any) {
+      this.clientAgentInjectionPending = false;
       Console.warningln(`PixInsightWebViewBridge: Injection error: ${e.message || e}`);
     }
   }
@@ -888,17 +954,42 @@ export class PixInsightWebViewBridge {
     if (this.isDestroyed) return;
 
     try {
+      if (!this.documentLoaded) return;
+      if (!this.clientAgentReady) {
+        this.injectClientRuntime();
+        return;
+      }
       this.expireDevToolsCommands();
-      this.dispatchNextDevToolsCommand();
       if (
         this.devToolsCommandInFlight ||
         this.devToolsAgentInjectionPending ||
         this.locationProbePurpose !== null ||
         this.ipcQueuePopPending
       ) return;
-      // Location and queue data are fetched as separate raw results. An untrusted
-      // page cannot forge location by replacing JSON.stringify().
-      this.requestRawLocationProbe("poll");
+      if (this.devToolsCommandQueue.length > 0 && this.devToolsDispatchPermit) {
+        this.dispatchNextDevToolsCommand();
+        return;
+      }
+      // Verify the document once per navigation, then poll the RPC queue directly.
+      // Re-reading a large data: URL before every queue pop doubled traffic and
+      // could prevent WebView calls from ever reaching the native handler.
+      if (!this.lastVerifiedUrl) {
+        this.requestRawLocationProbe("poll");
+        return;
+      }
+      if (!this.isOriginAllowed(this.lastVerifiedUrl)) return;
+
+      this.ipcQueuePopPending = true;
+      if (!this.queuePollingAnnounced) {
+        this.queuePollingAnnounced = true;
+        Console.writeln("[WebView IPC] Browser RPC queue polling active.");
+      }
+      try {
+        this.webView.evaluateScript("window.PixInsight ? window.PixInsight._popQueue() : null");
+      } catch (error: any) {
+        this.ipcQueuePopPending = false;
+        Console.warningln(`[WebView IPC] Queue poll failed: ${error.message || error}`);
+      }
     } catch (e: any) {
       // Ignore evaluation drop during navigation transitions
     }
@@ -917,6 +1008,7 @@ export class PixInsightWebViewBridge {
       if (result === null || result === undefined) {
         if (this.ipcQueuePopPending) {
           this.ipcQueuePopPending = false;
+          this.devToolsDispatchPermit = true;
           this.dispatchNextDevToolsCommand();
         } else if (this.locationProbePurpose !== null) {
           const failedPurpose = this.locationProbePurpose;
@@ -961,18 +1053,14 @@ export class PixInsightWebViewBridge {
           if (purpose === "devtools") {
             this.dispatchNextDevToolsCommand();
           } else {
-            this.ipcQueuePopPending = true;
-            try {
-              this.webView.evaluateScript("window.PixInsight ? window.PixInsight._popQueue() : null");
-            } catch (error: any) {
-              this.ipcQueuePopPending = false;
-            }
+            Console.writeln("[WebView IPC] Current document origin verified.");
           }
           return;
         }
 
         if (this.ipcQueuePopPending) {
           this.ipcQueuePopPending = false;
+          this.devToolsDispatchPermit = true;
           try {
             const request = JSON.parse(result) as IpcRequest;
             this.processRequest(request);
@@ -988,7 +1076,30 @@ export class PixInsightWebViewBridge {
         try {
           const probe = JSON.parse(result);
 
+          if (probe && probe.channel === "ipc-client-agent") {
+            if (probe.generation !== this.documentGeneration || !this.documentLoaded) return;
+            this.clientAgentInjectionPending = false;
+            this.clientAgentReady = probe.ready === true;
+            if (!this.clientAgentReady) {
+              Console.warningln(`PixInsightWebViewBridge: IPC client rejected: ${probe.error || "unknown error"}`);
+            } else {
+              Console.writeln(`[WebView IPC] Client runtime ready (generation ${this.documentGeneration}).`);
+              this.notifyClientReady();
+            }
+            return;
+          }
+
+          if (probe && probe.channel === "workspace-app") {
+            if (probe.ready) {
+              Console.writeln(`[Workspace Debug] Browser application ready (${probe.stepCount || 0} workflow steps).`);
+            } else {
+              Console.criticalln(`[Workspace Debug] Browser application failed: ${probe.error || "unknown error"}`);
+            }
+            return;
+          }
+
           if (probe && probe.channel === "devtools-agent") {
+            if (probe.generation !== this.documentGeneration || !this.documentLoaded) return;
             this.devToolsAgentInjectionPending = false;
             this.devToolsAgentReady = probe.ready === true;
             if (!this.devToolsAgentReady && probe.error) {
@@ -1012,7 +1123,6 @@ export class PixInsightWebViewBridge {
                 pending.reject(new Error(probe.error || "DEVTOOLS_ERROR"));
               }
             }
-            this.dispatchNextDevToolsCommand();
             return;
           }
 
@@ -1083,6 +1193,9 @@ export class PixInsightWebViewBridge {
 
     // Execution with Stability Pillar try/catch
     try {
+      if (!req.method.startsWith("__")) {
+        Console.writeln(`[WebView IPC] ${req.method}`);
+      }
       const result = handler(req.params, req);
       this.sendResponse(req.id, result, null);
     } catch (err: any) {
@@ -1141,6 +1254,11 @@ export class PixInsightWebViewBridge {
       this.devToolsAgentReady = false;
       this.devToolsAgentInjectionPending = false;
       this.devToolsOriginProbePending = false;
+      this.clientAgentReady = false;
+      this.clientAgentInjectionPending = false;
+      this.devToolsDispatchPermit = false;
+      this.documentLoaded = false;
+      this.queuePollingAnnounced = false;
       this.pendingLocationCallback = null;
     } catch (error: any) {
       this.isDestroyed = true;
