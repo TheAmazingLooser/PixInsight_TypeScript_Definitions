@@ -32,19 +32,30 @@ export type DevToolsCommandKind =
   | "expand"
   | "highlight"
   | "clearHighlight"
+  | "startInspect"
+  | "stopInspect"
+  | "popInspectorEvents"
+  | "scrollIntoView"
+  | "copyNodeValue"
   | "setAttribute"
   | "removeAttribute"
   | "setText"
   | "evaluate"
-  | "popConsole";
+  | "popConsole"
+  | "clearConsole"
+  | "inspectObject"
+  | "releaseObject";
 
 export interface DevToolsCommand {
   id: string;
   kind: DevToolsCommandKind;
+  nodeId?: string;
+  objectId?: string;
   selector?: string;
   path?: string;
   attribute?: string;
   value?: string;
+  valueKind?: "selector" | "innerHTML" | "outerHTML" | "textContent";
   expression?: string;
   maxDepth?: number;
 }
@@ -60,6 +71,8 @@ export interface DevToolsResultEnvelope {
 }
 
 export interface DevToolsDomNode {
+  /** Stable identifier for the current document lifetime. */
+  nodeId: string;
   tag: string;
   id?: string;
   className?: string;
@@ -73,6 +86,35 @@ export interface DevToolsDomNode {
 
 export interface DevToolsConsoleEntry {
   level: "log" | "info" | "warn" | "error";
-  message: string;
+  args: DevToolsValueDescriptor[];
+  timestamp: number;
+  source?: string;
+}
+
+/** Serializable preview of a value retained by the in-page inspector. */
+export interface DevToolsValueDescriptor {
+  type: string;
+  subtype?: string;
+  preview: string;
+  value?: string | number | boolean | null;
+  objectId?: string;
+  expandable?: boolean;
+  propertyCount?: number;
+}
+
+/** One own property returned when a console object is expanded. */
+export interface DevToolsConsoleProperty {
+  name: string;
+  value: DevToolsValueDescriptor;
+  enumerable?: boolean;
+  accessor?: boolean;
+}
+
+/** Browser-to-native event generated while element locator mode is active. */
+export interface DevToolsInspectorEvent {
+  type: "hover" | "select" | "cancel";
+  nodeId?: string;
+  selector?: string;
+  tag?: string;
   timestamp: number;
 }

@@ -51,9 +51,9 @@ try {
 
 A complete executable example is available in `src/WebViewIpcLibraryDemo.ts`.
 
-## DevTools Window (External Native Window)
+## Native WebView DevTools
 
-Lightweight native DevTools run outside the inspected `WebView` as a sibling panel in the same PixInsight dialog. This avoids nested modal windows while keeping the controls outside the page DOM.
+Native DevTools run outside the inspected `WebView` as a sibling panel in the same PixInsight dialog. This avoids nested modal windows while keeping the controls outside the page DOM.
 
 ### Enabling DevTools
 
@@ -65,9 +65,9 @@ const bridge = new PixInsightWebViewBridge(
   { allowLocalOnly: true },
   {
     enabled: true,             // Enables DevTools agent
-    hotkeyToggle: true,        // Bind F12 to open window
+    hotkeyToggle: true,        // Bind F12 to toggle the panel
     allowExpressionEval: true, // Permits REPL evaluation
-    allowDomEdits: true        // Permits DOM edits/highlighting
+    allowDomEdits: true        // Permits attribute and text mutation commands
   }
 );
 
@@ -82,12 +82,23 @@ if (devToolsPanel) contentSizer.add(devToolsPanel, 55);
 
 ### DevTools Features
 
-- **Native Sibling Panel**: Lives beside the WebView in the same dialog and never starts a nested modal event loop.
-- **F12 Hotkey Toggle**: Toggles DevTools on or off when F12 is pressed inside the parent dialog.
-- **Console Log Stream**: Intercepts `console.log`, `info`, `warn`, and `error` outputs into a scrollable native `TextBox`.
-- **REPL Evaluation**: Enter expressions into the native input field to evaluate JavaScript inside the `WebView` context asynchronously.
-- **DOM Tree Inspector**: Renders a hierarchical `TreeBox` representation of DOM elements.
-- **Node Highlighting**: Selecting a DOM tree node highlights the corresponding element in the live `WebView`.
+- **Tabbed Native Panel**: Separate Elements and Console pages live beside the WebView and never start a nested modal event loop.
+- **Bidirectional Element Locator**: “Select element” highlights hovered page elements and reveals the selected node in the native DOM tree. Native tree selection and hover highlight the live page element in return.
+- **Interactive DOM Tree**: Stable per-document node handles, deterministic selectors, bounded snapshots, lazy subtree expansion, and automatic ancestor reveal.
+- **Element Context Menu**: Right-click an element to scroll it into view or copy its selector, `innerHTML`, `outerHTML`, or `textContent`.
+- **Structured Console**: `console.log`, `info`, `warn`, and `error` retain typed argument previews. Objects, arrays, DOM nodes, and `Error` values can be expanded without invoking getters.
+- **Structured REPL**: Expression results use the same expandable remote-object representation as console output.
+- **F12 Hotkey Toggle**: Uses PixInsight's actual `KeyCode.F12`. The native dialog handler preserves any previous key handler, while a token- and origin-validated in-page fallback covers WebView focus.
+- **Operational Limits**: DOM nodes, response size, console rate, retained objects, and native rows are bounded to keep inspection responsive.
+
+### F12 and WebView Focus
+
+PixInsight does not expose Chromium's built-in DevTools protocol through PJSR. This library therefore provides its own injected inspector. A focused WebView may consume keyboard input before its owner dialog receives it, so F12 uses two paths:
+
+1. `bindDevToolsHotkey()` listens for `KeyCode.F12` on the native dialog.
+2. The injected inspector listens for browser `keydown` and calls the private `__devtools_toggle__` bridge method.
+
+The fallback still passes the normal session-token and trusted-origin checks; untrusted pages cannot use it to invoke arbitrary native functionality. Keeping a native menu item with an `F12` shortcut remains a useful platform-level fallback for hosts that reserve browser function keys.
 
 ## Browser API
 
@@ -234,7 +245,7 @@ src/lib/webviewIpc/
 ├── clientSource.ts     Browser runtime injected into the WebView
 ├── devtoolsSource.ts   Injected in-page DevTools helper agent
 ├── devtoolsTypes.ts    DevTools configuration and protocol types
-├── devtoolsUi.ts       External Native PixInsight DevTools Dialog Window
+├── devtoolsUi.ts       Tabbed native DevTools sibling panel
 ├── host.ts             PixInsight host bridge
 ├── index.ts            Public exports
 ├── README.md           Library documentation

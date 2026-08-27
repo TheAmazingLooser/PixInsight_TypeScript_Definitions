@@ -89,8 +89,10 @@ const DEMO_HTML = `<!DOCTYPE html>
             try {
                 log("Calling host method 'calculate' with [10, 32]...");
                 const result = await window.PixInsight.call('calculate', { a: 10, b: 32 });
+                console.log("Structured calculation result", result);
                 log("Result: " + JSON.stringify(result));
             } catch (err) {
+                console.error(err);
                 log("Error: " + err.message);
             }
         });
@@ -142,7 +144,9 @@ class WebViewIpcDemoDialog extends Dialog {
       this.webView,
       {
         allowLocalOnly: true,
-        allowedOrigins: ["file://", "data:", "about:blank"],
+        // Avoid a literal double slash because PixInsight's automatic script
+        // detector can parse it as a comment even when it occurs in a string.
+        allowedOrigins: ["file:" + String.fromCharCode(47, 47), "data:", "about:blank"],
         allowUnregisteredMethods: false
       },
       {
@@ -154,7 +158,7 @@ class WebViewIpcDemoDialog extends Dialog {
       }
     );
 
-    // F12 opens the native external DevTools window while native controls have focus.
+    // F12 is handled natively and by a trusted in-page fallback while WebView has focus.
     this.bridge.bindDevToolsHotkey(this);
     const devToolsPanel = this.bridge.attachDevToolsPanel(this);
 
@@ -169,7 +173,7 @@ class WebViewIpcDemoDialog extends Dialog {
 
     this.devToolsButton = new PushButton(this);
     this.devToolsButton.text = "Developer ▾";
-    this.devToolsButton.toolTip = "Open the native WebView developer menu (F12 toggles DevTools).";
+    this.devToolsButton.toolTip = "Open WebView DevTools (F12 toggles from native or WebView focus).";
     this.devToolsButton.onClick = () => {
       this.devToolsMenu.execute();
     };

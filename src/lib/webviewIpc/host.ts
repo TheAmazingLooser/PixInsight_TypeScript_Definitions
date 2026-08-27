@@ -36,6 +36,14 @@ const BLOCKED_SYSTEM_TARGETS = new Set([
   "Function"
 ]);
 
+// PixInsight's automatic script-language detector can misinterpret a literal
+// double slash inside a JavaScript string as a source comment. Build URL scheme
+// prefixes from individual characters so generated scripts remain parser-safe.
+const URL_SCHEME_SEPARATOR = ":" + String.fromCharCode(47, 47);
+const FILE_URL_PREFIX = "file" + URL_SCHEME_SEPARATOR;
+const HTTP_URL_PREFIX = "http" + URL_SCHEME_SEPARATOR;
+const HTTPS_URL_PREFIX = "https" + URL_SCHEME_SEPARATOR;
+
 /**
  * Host IPC Manager running inside PixInsight V8 Scripting Engine.
  * Wraps a PixInsight WebView control and provides secure, strongly-typed
@@ -52,6 +60,7 @@ export class PixInsightWebViewBridge {
   private devToolsPendingCommands: Map<string, {
     command: DevToolsCommand;
     createdAt: number;
+    documentGeneration: number;
     resolve: (value: any) => void;
     reject: (error: any) => void;
   }> = new Map();
@@ -59,9 +68,15 @@ export class PixInsightWebViewBridge {
   private devToolsCommandInFlight: string | null = null;
   private devToolsAgentReady: boolean = false;
   private devToolsAgentInjectionPending: boolean = false;
+  private devToolsOriginProbePending: boolean = false;
+  private locationProbePurpose: "poll" | "devtools" | "query" | null = null;
+  private ipcQueuePopPending: boolean = false;
+  private documentGeneration: number = 0;
   private isDestroyed: boolean = false;
   private lastVerifiedUrl: string = "";
   private pendingLocationCallback: ((url: string) => void) | null = null;
+  private hotkeyDialog: Dialog | null = null;
+  private previousDialogKeyPress: ((key: number, modifiers: number) => boolean) | null = null;
 
   /**
    * Constructs a new PixInsightWebViewBridge attached to a PixInsight WebView control.
@@ -81,7 +96,7 @@ export class PixInsightWebViewBridge {
     // Default Iron Shield Security Policy
     this.policy = {
       allowLocalOnly: policy?.allowLocalOnly ?? true,
-      allowedOrigins: policy?.allowedOrigins ?? ["file://", "data:", "about:blank"],
+      allowedOrigins: policy?.allowedOrigins ?? [FILE_URL_PREFIX, "data:", "about:blank"],
       allowUnregisteredMethods: policy?.allowUnregisteredMethods ?? false,
       maxMessageAgeMs: policy?.maxMessageAgeMs ?? 30000,
       maxQueueSize: policy?.maxQueueSize ?? 100
@@ -117,20 +132,55 @@ export class PixInsightWebViewBridge {
       }
     });
 
+    // A page can only request this narrow action after normal IPC origin and token validation.
+    // This provides F12 behavior when the embedded WebView consumes native dialog key events.
+    this.registerHandler("__devtools_toggle__", () => {
+      try {
+        if (!this.devToolsConfig.enabled || !this.devToolsConfig.hotkeyToggle) {
+          throw new Error("DEVTOOLS_HOTKEY_DISABLED");
+        }
+        this.toggleDevTools();
+        return { visible: this.devToolsPanel ? this.devToolsPanel.visible : false };
+      } catch (error: any) {
+        throw error;
+      }
+    });
+
     // Wire WebView script result listener for location probes and responses
     this.webView.onScriptResultAvailable = (value: any) => {
       this.handleScriptResult(value);
     };
 
-    // Auto-inject client runtime upon load completion
-    this.webView.onLoadFinished = (ok: boolean) => {
-      if (ok && !this.isDestroyed) {
+    // Navigation invalidates every page-owned handle and pending operation.
+    this.webView.onLoadStarted = () => {
+      try {
+        if (this.isDestroyed) return;
+        this.documentGeneration++;
+        this.lastVerifiedUrl = "";
+        this.locationProbePurpose = null;
+        this.ipcQueuePopPending = false;
+        this.devToolsOriginProbePending = false;
         this.devToolsAgentReady = false;
         this.devToolsAgentInjectionPending = false;
-        this.injectClientRuntime();
-        if (this.devToolsConfig.enabled) {
-          this.injectDevToolsAgent();
+        this.rejectAllDevToolsCommands(new Error("DEVTOOLS_NAVIGATION: The inspected document changed."));
+      } catch (error: any) {
+        Console.warningln(`PixInsightWebViewBridge: Navigation reset failed: ${error.message || error}`);
+      }
+    };
+
+    // Inject only the tokenized IPC runtime on load; DevTools waits for origin verification.
+    this.webView.onLoadFinished = (ok: boolean) => {
+      try {
+        if (ok && !this.isDestroyed) {
+          this.devToolsAgentReady = false;
+          this.devToolsAgentInjectionPending = false;
+          this.devToolsOriginProbePending = false;
+          this.lastVerifiedUrl = "";
+          this.injectClientRuntime();
+          this.requestRawLocationProbe("poll");
         }
+      } catch (error: any) {
+        Console.warningln(`PixInsightWebViewBridge: Load completion failed: ${error.message || error}`);
       }
     };
   }
@@ -141,17 +191,49 @@ export class PixInsightWebViewBridge {
    * @param parentDialog The top-level Dialog containing the WebView.
    */
   public bindDevToolsHotkey(parentDialog: Dialog): void {
-    if (!this.devToolsConfig.enabled || !this.devToolsConfig.hotkeyToggle || !parentDialog) return;
+    try {
+      if (!this.devToolsConfig.enabled || !this.devToolsConfig.hotkeyToggle || !parentDialog) return;
 
-    this.attachDevToolsPanel(parentDialog);
+      this.attachDevToolsPanel(parentDialog);
+      if (this.hotkeyDialog === parentDialog) return;
+      if (this.hotkeyDialog && this.hotkeyDialog !== parentDialog) this.restoreDevToolsHotkey();
 
-    parentDialog.onKeyPress = (key: number) => {
-      if (key === 0x0100003b || key === 123) { // Qt Key_F12 = 0x0100003b / 123
-        this.toggleDevTools();
-        return true;
+      this.hotkeyDialog = parentDialog;
+      this.previousDialogKeyPress = typeof parentDialog.onKeyPress === "function"
+        ? parentDialog.onKeyPress
+        : null;
+
+      parentDialog.onKeyPress = (key: number, modifiers: number) => {
+        try {
+          if (key === KeyCode.F12 && modifiers === KeyboardModifier.None) {
+            this.toggleDevTools();
+            return true;
+          }
+          return this.previousDialogKeyPress
+            ? this.previousDialogKeyPress.call(parentDialog, key, modifiers)
+            : false;
+        } catch (error: any) {
+          Console.warningln(`PixInsightWebViewBridge: F12 handler failed: ${error.message || error}`);
+          return false;
+        }
+      };
+    } catch (error: any) {
+      Console.warningln(`PixInsightWebViewBridge: Could not bind F12: ${error.message || error}`);
+    }
+  }
+
+  /** Restores the dialog key callback that existed before bindDevToolsHotkey(). */
+  private restoreDevToolsHotkey(): void {
+    try {
+      if (this.hotkeyDialog) {
+        this.hotkeyDialog.onKeyPress = this.previousDialogKeyPress as any;
       }
-      return false;
-    };
+    } catch (error: any) {
+      // The parent dialog may already have been destroyed by the PixInsight runtime.
+    } finally {
+      this.hotkeyDialog = null;
+      this.previousDialogKeyPress = null;
+    }
   }
 
   /**
@@ -190,6 +272,7 @@ export class PixInsightWebViewBridge {
       if (
         this.isDestroyed ||
         !this.devToolsConfig.enabled ||
+        (this.devToolsConfig.requireTrustedOrigin && !this.isOriginAllowed(this.lastVerifiedUrl)) ||
         this.devToolsAgentReady ||
         this.devToolsAgentInjectionPending
       ) {
@@ -197,8 +280,16 @@ export class PixInsightWebViewBridge {
       }
 
       this.devToolsAgentInjectionPending = true;
+      const injectedConfig = JSON.stringify({
+        maxSnapshotDepth: this.devToolsConfig.maxSnapshotDepth,
+        maxSnapshotNodes: this.devToolsConfig.maxSnapshotNodes,
+        maxResponsePayloadBytes: this.devToolsConfig.maxResponsePayloadBytes,
+        consoleForwardRateLimitPerSec: this.devToolsConfig.consoleForwardRateLimitPerSec,
+        hotkeyToggle: this.devToolsConfig.hotkeyToggle && this.devToolsPanel !== null
+      }).replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
       const script = `(function() {
         try {
+          window.__PI_DEVTOOLS_CONFIG__ = ${injectedConfig};
           ${DEVTOOLS_INJECTED_JS}
           return JSON.stringify({
             channel: "devtools-agent",
@@ -234,44 +325,53 @@ export class PixInsightWebViewBridge {
   ): void {
     const reject = onError ?? (() => {});
 
-    if (this.isDestroyed) {
-      reject(new Error("PixInsightWebViewBridge: Bridge is destroyed."));
-      return;
-    }
-    if (!this.devToolsConfig.enabled) {
-      reject(new Error("DEVTOOLS_DISABLED: Enable DevTools in bridge configuration."));
-      return;
-    }
-    if (cmd.kind === "evaluate" && !this.devToolsConfig.allowExpressionEval) {
-      reject(new Error("DEVTOOLS_EVAL_DISABLED: Expression evaluation is disabled."));
-      return;
-    }
-    if (
-      (cmd.kind === "setAttribute" || cmd.kind === "removeAttribute" || cmd.kind === "setText") &&
-      !this.devToolsConfig.allowDomEdits
-    ) {
-      reject(new Error("DEVTOOLS_DOM_EDITS_DISABLED: DOM editing is disabled."));
-      return;
-    }
-    if (
-      this.devToolsConfig.requireTrustedOrigin &&
-      this.lastVerifiedUrl &&
-      !this.isOriginAllowed(this.lastVerifiedUrl)
-    ) {
-      reject(new Error("DEVTOOLS_SECURITY_ERROR: Untrusted origin blocked from DevTools execution."));
-      return;
-    }
+    try {
+      if (this.isDestroyed) {
+        reject(new Error("PixInsightWebViewBridge: Bridge is destroyed."));
+        return;
+      }
+      if (!this.devToolsConfig.enabled) {
+        reject(new Error("DEVTOOLS_DISABLED: Enable DevTools in bridge configuration."));
+        return;
+      }
+      if (this.devToolsPendingCommands.size >= this.policy.maxQueueSize) {
+        reject(new Error("DEVTOOLS_QUEUE_FULL: Too many inspector operations are pending."));
+        return;
+      }
+      if (cmd.kind === "evaluate" && !this.devToolsConfig.allowExpressionEval) {
+        reject(new Error("DEVTOOLS_EVAL_DISABLED: Expression evaluation is disabled."));
+        return;
+      }
+      if (
+        (cmd.kind === "setAttribute" || cmd.kind === "removeAttribute" || cmd.kind === "setText") &&
+        !this.devToolsConfig.allowDomEdits
+      ) {
+        reject(new Error("DEVTOOLS_DOM_EDITS_DISABLED: DOM editing is disabled."));
+        return;
+      }
+      if (
+        this.devToolsConfig.requireTrustedOrigin &&
+        this.lastVerifiedUrl &&
+        !this.isOriginAllowed(this.lastVerifiedUrl)
+      ) {
+        reject(new Error("DEVTOOLS_SECURITY_ERROR: Untrusted origin blocked from DevTools execution."));
+        return;
+      }
 
-    const id = `dt_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
-    const command: DevToolsCommand = { id, ...cmd };
-    this.devToolsPendingCommands.set(id, {
-      command,
-      createdAt: Date.now(),
-      resolve: onSuccess,
-      reject
-    });
-    this.devToolsCommandQueue.push(id);
-    this.dispatchNextDevToolsCommand();
+      const id = `dt_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
+      const command: DevToolsCommand = { id, ...cmd };
+      this.devToolsPendingCommands.set(id, {
+        command,
+        createdAt: Date.now(),
+        documentGeneration: this.documentGeneration,
+        resolve: onSuccess,
+        reject
+      });
+      this.devToolsCommandQueue.push(id);
+      this.dispatchNextDevToolsCommand();
+    } catch (error: any) {
+      reject(error);
+    }
   }
 
   /**
@@ -290,26 +390,53 @@ export class PixInsightWebViewBridge {
    * Dispatches one queued command after the page agent has acknowledged readiness.
    */
   private dispatchNextDevToolsCommand(): void {
-    if (this.isDestroyed || this.devToolsCommandInFlight) return;
-
-    this.expireDevToolsCommands();
-    if (this.devToolsCommandQueue.length === 0) return;
-
-    if (!this.devToolsAgentReady) {
-      this.injectDevToolsAgent();
-      return;
-    }
-
-    const id = this.devToolsCommandQueue.shift();
-    if (!id) return;
-
-    const pending = this.devToolsPendingCommands.get(id);
-    if (!pending) {
-      this.dispatchNextDevToolsCommand();
-      return;
-    }
-
     try {
+      if (this.isDestroyed || this.devToolsCommandInFlight) return;
+
+      this.expireDevToolsCommands();
+      if (this.devToolsCommandQueue.length === 0) return;
+      // Raw location and IPC queue results are intentionally untagged. Keep all
+      // DevTools evaluations serialized behind them so result channels cannot race.
+      if (
+        this.ipcQueuePopPending ||
+        (this.locationProbePurpose !== null && this.locationProbePurpose !== "devtools")
+      ) return;
+
+      if (this.devToolsConfig.requireTrustedOrigin && !this.lastVerifiedUrl) {
+        this.requestRawLocationProbe("devtools");
+        return;
+      }
+
+      if (
+        this.devToolsConfig.requireTrustedOrigin &&
+        !this.isOriginAllowed(this.lastVerifiedUrl)
+      ) {
+        this.rejectQueuedDevToolsCommands(
+          new Error("DEVTOOLS_SECURITY_ERROR: Untrusted origin blocked from DevTools execution.")
+        );
+        return;
+      }
+
+      if (!this.devToolsAgentReady) {
+        this.injectDevToolsAgent();
+        return;
+      }
+
+      const id = this.devToolsCommandQueue.shift();
+      if (!id) return;
+
+      const pending = this.devToolsPendingCommands.get(id);
+      if (!pending) {
+        this.dispatchNextDevToolsCommand();
+        return;
+      }
+      if (pending.documentGeneration !== this.documentGeneration) {
+        this.devToolsPendingCommands.delete(id);
+        pending.reject(new Error("DEVTOOLS_NAVIGATION: The inspected document changed."));
+        this.dispatchNextDevToolsCommand();
+        return;
+      }
+
       const safeJson = JSON.stringify(pending.command)
         .replace(/\u2028/g, "\\u2028")
         .replace(/\u2029/g, "\\u2029");
@@ -328,9 +455,44 @@ export class PixInsightWebViewBridge {
       this.devToolsCommandInFlight = id;
       this.webView.evaluateScript(script);
     } catch (error: any) {
-      this.devToolsPendingCommands.delete(id);
-      pending.reject(error);
+      this.devToolsOriginProbePending = false;
+      if (this.locationProbePurpose === "devtools") this.locationProbePurpose = null;
+      const inFlightId = this.devToolsCommandInFlight;
+      if (inFlightId) {
+        const inFlight = this.devToolsPendingCommands.get(inFlightId);
+        this.devToolsPendingCommands.delete(inFlightId);
+        this.devToolsCommandInFlight = null;
+        if (inFlight) inFlight.reject(error);
+      }
       this.dispatchNextDevToolsCommand();
+    }
+  }
+
+  /** Rejects every queued DevTools operation after a shared security failure. */
+  private rejectQueuedDevToolsCommands(error: Error): void {
+    try {
+      const queuedIds = this.devToolsCommandQueue.slice();
+      this.devToolsCommandQueue = [];
+      for (const id of queuedIds) {
+        const pending = this.devToolsPendingCommands.get(id);
+        if (!pending) continue;
+        this.devToolsPendingCommands.delete(id);
+        pending.reject(error);
+      }
+    } catch (caught: any) {
+      Console.warningln(`PixInsightWebViewBridge: Queue rejection failed: ${caught.message || caught}`);
+    }
+  }
+
+  /** Rejects queued and in-flight DevTools operations during navigation or teardown. */
+  private rejectAllDevToolsCommands(error: Error): void {
+    try {
+      for (const pending of this.devToolsPendingCommands.values()) pending.reject(error);
+      this.devToolsPendingCommands.clear();
+      this.devToolsCommandQueue = [];
+      this.devToolsCommandInFlight = null;
+    } catch (caught: any) {
+      Console.warningln(`PixInsightWebViewBridge: Command invalidation failed: ${caught.message || caught}`);
     }
   }
 
@@ -365,12 +527,18 @@ export class PixInsightWebViewBridge {
    */
   private generateSessionToken(): string {
     try {
-      const p1 = Math.random().toString(36).substring(2, 15);
-      const p2 = Math.random().toString(36).substring(2, 15);
-      const p3 = Date.now().toString(36);
-      return `pi_token_${p1}_${p2}_${p3}`;
+      // String.UUID() is provided by the PixInsight V8 runtime and uses the
+      // platform UUID generator, unlike predictable Math.random() output.
+      const runtimeUuid = ("" as any).UUID();
+      if (runtimeUuid && typeof runtimeUuid === "string") {
+        return `pi_token_${runtimeUuid.replace(/[^a-zA-Z0-9]/g, "")}`;
+      }
+      throw new Error("UUID_UNAVAILABLE");
     } catch (e: any) {
-      return `pi_token_${Date.now()}_fallback`;
+      // Node-based unit tests do not expose PJSR's UUID extension. This value is
+      // only a compatibility fallback; production PixInsight uses the branch above.
+      const entropy = `${Date.now()}_${Math.random()}_${Math.random()}`;
+      return `pi_token_${entropy.replace(/[^a-zA-Z0-9]/g, "")}`;
     }
   }
 
@@ -592,16 +760,40 @@ export class PixInsightWebViewBridge {
    * @param callback Callback function receiving the current URL.
    */
   public queryCurrentUrl(callback: (url: string) => void): void {
-    if (this.isDestroyed) {
-      callback("");
-      return;
-    }
-
     try {
+      if (this.isDestroyed || this.locationProbePurpose !== null || this.ipcQueuePopPending) {
+        callback("");
+        return;
+      }
       this.pendingLocationCallback = callback;
-      this.webView.evaluateScript("window.location.href");
+      this.requestRawLocationProbe("query");
     } catch (e: any) {
+      this.pendingLocationCallback = null;
       callback("");
+    }
+  }
+
+  /**
+   * Requests the current location as a raw WebView result. No page-defined
+   * serializer participates in this security decision.
+   */
+  private requestRawLocationProbe(purpose: "poll" | "devtools" | "query"): void {
+    try {
+      if (this.isDestroyed || this.locationProbePurpose !== null || this.ipcQueuePopPending) return;
+      if (purpose === "devtools") this.devToolsOriginProbePending = true;
+      this.locationProbePurpose = purpose;
+      this.webView.evaluateScript("window.location.href");
+    } catch (error: any) {
+      this.locationProbePurpose = null;
+      if (purpose === "devtools") {
+        this.devToolsOriginProbePending = false;
+        this.rejectQueuedDevToolsCommands(new Error("DEVTOOLS_ORIGIN_PROBE_FAILED"));
+      }
+      if (purpose === "query" && this.pendingLocationCallback) {
+        const callback = this.pendingLocationCallback;
+        this.pendingLocationCallback = null;
+        callback("");
+      }
     }
   }
 
@@ -615,30 +807,77 @@ export class PixInsightWebViewBridge {
     if (!url || typeof url !== "string") return false;
 
     try {
-      const lowerUrl = url.toLowerCase().trim();
+      const normalizedUrl = url.trim();
+      const lowerUrl = normalizedUrl.toLowerCase();
 
       // Check Local-Only constraints
       const isLocal =
-        lowerUrl.startsWith("file://") ||
+        lowerUrl.startsWith(FILE_URL_PREFIX) ||
         lowerUrl.startsWith("data:") ||
-        lowerUrl.startsWith("about:blank") ||
         lowerUrl === "about:blank";
 
       if (this.policy.allowLocalOnly && isLocal) {
         return true;
       }
 
-      // Check Whitelisted Domains
+      // HTTP(S) entries are exact origins. This prevents trusted.app.evil and
+      // alternate-port confusion caused by textual prefix comparisons.
       for (const pattern of this.policy.allowedOrigins) {
         const lowerPattern = pattern.toLowerCase().trim();
-        if (lowerPattern === "*" || lowerUrl === lowerPattern || lowerUrl.startsWith(lowerPattern)) {
-          return true;
+        if (lowerPattern === "*") return true;
+        if (lowerPattern === FILE_URL_PREFIX && lowerUrl.startsWith(FILE_URL_PREFIX)) return true;
+        if (lowerPattern === "data:" && lowerUrl.startsWith("data:")) return true;
+        if (lowerPattern === "about:blank" && lowerUrl === "about:blank") return true;
+
+        if (lowerPattern.startsWith(HTTP_URL_PREFIX) || lowerPattern.startsWith(HTTPS_URL_PREFIX)) {
+          const candidateOrigin = this.canonicalizeHttpOrigin(normalizedUrl);
+          const allowedOrigin = this.canonicalizeHttpOrigin(pattern.trim());
+          if (candidateOrigin && allowedOrigin && candidateOrigin === allowedOrigin) return true;
+          continue;
         }
+
+        if (lowerUrl === lowerPattern) return true;
       }
 
       return false;
     } catch (e: any) {
       return false;
+    }
+  }
+
+  /** Canonicalizes an HTTP(S) URL to scheme, host, and effective port. */
+  private canonicalizeHttpOrigin(value: string): string | null {
+    try {
+      const match = /^(https?):\/\/([^\/?#]+)(?:[\/?#]|$)/i.exec(value.trim());
+      if (!match) return null;
+      const scheme = match[1].toLowerCase();
+      const authority = match[2].toLowerCase();
+      if (!authority || authority.includes("@") || authority.includes("%") || /\s/.test(authority)) return null;
+
+      let host = authority;
+      let port = scheme === "https" ? "443" : "80";
+      if (authority.startsWith("[")) {
+        const closingBracket = authority.indexOf("]");
+        if (closingBracket < 0) return null;
+        host = authority.substring(0, closingBracket + 1);
+        const suffix = authority.substring(closingBracket + 1);
+        if (suffix) {
+          if (!/^:\d+$/.test(suffix)) return null;
+          port = suffix.substring(1);
+        }
+      } else {
+        const colon = authority.lastIndexOf(":");
+        if (colon >= 0) {
+          host = authority.substring(0, colon);
+          port = authority.substring(colon + 1);
+        }
+      }
+      if (!host || !/^\d+$/.test(port)) return null;
+      const portNumber = Number(port);
+      if (portNumber < 1 || portNumber > 65535) return null;
+      return scheme + URL_SCHEME_SEPARATOR + host + ":" + portNumber;
+    } catch (error: any) {
+      return null;
     }
   }
 
@@ -651,10 +890,15 @@ export class PixInsightWebViewBridge {
     try {
       this.expireDevToolsCommands();
       this.dispatchNextDevToolsCommand();
-      // First probe location to ensure site is trusted before popping queue
-      this.webView.evaluateScript(
-        `JSON.stringify({ location: window.location.href, msg: window.PixInsight ? window.PixInsight._popQueue() : null })`
-      );
+      if (
+        this.devToolsCommandInFlight ||
+        this.devToolsAgentInjectionPending ||
+        this.locationProbePurpose !== null ||
+        this.ipcQueuePopPending
+      ) return;
+      // Location and queue data are fetched as separate raw results. An untrusted
+      // page cannot forge location by replacing JSON.stringify().
+      this.requestRawLocationProbe("poll");
     } catch (e: any) {
       // Ignore evaluation drop during navigation transitions
     }
@@ -664,21 +908,79 @@ export class PixInsightWebViewBridge {
    * Handles raw JS results returned via webView.onScriptResultAvailable.
    */
   private handleScriptResult(result: any): void {
-    if (this.isDestroyed || result === null || result === undefined) return;
+    if (this.isDestroyed) return;
 
     try {
+      // WebView returns a native null/undefined value when the page IPC queue is
+      // empty. Clear the serialized queue-read state before returning; otherwise
+      // every DevTools command remains blocked behind ipcQueuePopPending forever.
+      if (result === null || result === undefined) {
+        if (this.ipcQueuePopPending) {
+          this.ipcQueuePopPending = false;
+          this.dispatchNextDevToolsCommand();
+        } else if (this.locationProbePurpose !== null) {
+          const failedPurpose = this.locationProbePurpose;
+          this.locationProbePurpose = null;
+          if (failedPurpose === "devtools") {
+            this.devToolsOriginProbePending = false;
+            this.rejectQueuedDevToolsCommands(new Error("DEVTOOLS_ORIGIN_PROBE_FAILED"));
+          } else if (failedPurpose === "query" && this.pendingLocationCallback) {
+            const callback = this.pendingLocationCallback;
+            this.pendingLocationCallback = null;
+            callback("");
+          }
+        }
+        return;
+      }
+
       if (typeof result === "string") {
-        // Direct URL evaluation response for queryCurrentUrl
-        if (
-          this.pendingLocationCallback &&
-          (result.startsWith("http") ||
-            result.startsWith("file:") ||
-            result.startsWith("data:") ||
-            result.startsWith("about:"))
-        ) {
-          const cb = this.pendingLocationCallback;
-          this.pendingLocationCallback = null;
-          cb(result);
+        if (this.locationProbePurpose !== null) {
+          const purpose = this.locationProbePurpose;
+          this.locationProbePurpose = null;
+          if (purpose === "devtools") this.devToolsOriginProbePending = false;
+          this.lastVerifiedUrl = result;
+
+          if (purpose === "query") {
+            const callback = this.pendingLocationCallback;
+            this.pendingLocationCallback = null;
+            if (callback) callback(result);
+            return;
+          }
+
+          if (!this.isOriginAllowed(result)) {
+            if (purpose === "devtools") {
+              this.rejectQueuedDevToolsCommands(
+                new Error("DEVTOOLS_SECURITY_ERROR: Untrusted origin blocked from DevTools execution.")
+              );
+            } else {
+              Console.warningln(`[Iron Shield Security] Blocked WebView origin: '${result}'`);
+            }
+            return;
+          }
+
+          if (purpose === "devtools") {
+            this.dispatchNextDevToolsCommand();
+          } else {
+            this.ipcQueuePopPending = true;
+            try {
+              this.webView.evaluateScript("window.PixInsight ? window.PixInsight._popQueue() : null");
+            } catch (error: any) {
+              this.ipcQueuePopPending = false;
+            }
+          }
+          return;
+        }
+
+        if (this.ipcQueuePopPending) {
+          this.ipcQueuePopPending = false;
+          try {
+            const request = JSON.parse(result) as IpcRequest;
+            this.processRequest(request);
+          } catch (error: any) {
+            // An empty queue or malformed page message is ignored safely.
+          } finally {
+            this.dispatchNextDevToolsCommand();
+          }
           return;
         }
 
@@ -714,23 +1016,6 @@ export class PixInsightWebViewBridge {
             return;
           }
 
-          // Update location and verify origin
-          if (probe && typeof probe.location === "string") {
-            this.lastVerifiedUrl = probe.location;
-
-            if (!this.isOriginAllowed(this.lastVerifiedUrl)) {
-              Console.warningln(
-                `[Iron Shield Security] Blocked IPC request from untrusted origin: '${this.lastVerifiedUrl}'`
-              );
-              return; // REJECT IPC execution from untrusted site!
-            }
-          }
-
-          // Process queued message if origin is verified
-          if (probe && probe.msg) {
-            const req: IpcRequest = JSON.parse(probe.msg);
-            this.processRequest(req);
-          }
         } catch (e: any) {
           // Non-probe string output
         }
@@ -835,23 +1120,31 @@ export class PixInsightWebViewBridge {
    * Destroys and cleans up resources used by the bridge.
    */
   public destroy(): void {
-    this.isDestroyed = true;
-    this.stop();
-    if (this.devToolsPanel) {
-      try {
-        this.devToolsPanel.dispose();
-      } catch (e: any) {}
-      this.devToolsPanel = null;
+    try {
+      if (this.isDestroyed) return;
+      this.stop();
+      this.restoreDevToolsHotkey();
+      if (this.devToolsPanel) {
+        try {
+          this.devToolsPanel.dispose();
+        } catch (error: any) {}
+        this.devToolsPanel = null;
+      }
+      this.isDestroyed = true;
+      this.handlers.clear();
+      for (const pending of this.devToolsPendingCommands.values()) {
+        pending.reject(new Error("DEVTOOLS_DISPOSED: Bridge has been destroyed."));
+      }
+      this.devToolsPendingCommands.clear();
+      this.devToolsCommandQueue = [];
+      this.devToolsCommandInFlight = null;
+      this.devToolsAgentReady = false;
+      this.devToolsAgentInjectionPending = false;
+      this.devToolsOriginProbePending = false;
+      this.pendingLocationCallback = null;
+    } catch (error: any) {
+      this.isDestroyed = true;
+      Console.warningln(`PixInsightWebViewBridge: Destroy failed: ${error.message || error}`);
     }
-    this.handlers.clear();
-    for (const pending of this.devToolsPendingCommands.values()) {
-      pending.reject(new Error("DEVTOOLS_DISPOSED: Bridge has been destroyed."));
-    }
-    this.devToolsPendingCommands.clear();
-    this.devToolsCommandQueue = [];
-    this.devToolsCommandInFlight = null;
-    this.devToolsAgentReady = false;
-    this.devToolsAgentInjectionPending = false;
-    this.pendingLocationCallback = null;
   }
 }
