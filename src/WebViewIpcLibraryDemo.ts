@@ -349,28 +349,28 @@ function restoreImage(target: ImageWindow, backup: ImageWindow): void {
   }
 }
 
-/** Captures live image windows so process-created outputs can be identified behaviorally. */
-function snapshotWindows(): Map<string, ImageWindow> {
+/** Captures stable View unique IDs so process-created outputs can be identified. */
+function snapshotWindows(): Set<string> {
   try {
-    const result = new Map<string, ImageWindow>();
+    const result = new Set<string>();
     for (const window of ImageWindow.windows as ImageWindow[]) {
       if (window && !window.isNull && !window.isClosed && !window.mainView.isNull) {
-        result.set(window.mainView.uniqueId, window);
+        result.add(window.mainView.uniqueId);
       }
     }
     return result;
   } catch (error: any) {
-    return new Map<string, ImageWindow>();
+    return new Set<string>();
   }
 }
 
 /** Finds the most plausible same-size star image created by an extraction process. */
-function findCreatedStarWindow(before: Map<string, ImageWindow>, target: ImageWindow): ImageWindow | null {
+function findCreatedStarWindow(before: Set<string>, target: ImageWindow): ImageWindow | null {
   try {
     const candidates: ImageWindow[] = [];
     const targetImage = target.mainView.image;
     for (const window of ImageWindow.windows as ImageWindow[]) {
-      if (!window || window.isNull || window.isClosed || window === target || before.has(window.mainView.uniqueId)) continue;
+      if (!isUsableWindow(window) || window === target || before.has(window.mainView.uniqueId)) continue;
       const image = window.mainView.image;
       if (
         image.width === targetImage.width &&
@@ -389,15 +389,24 @@ function findCreatedStarWindow(before: Map<string, ImageWindow>, target: ImageWi
   }
 }
 
-/** Closes all process-created windows except a specifically retained output. */
-function closeCreatedWindows(before: Map<string, ImageWindow>, keep?: ImageWindow | null): void {
+/** Resolves a process-created window by stable unique ID after native execution. */
+function resolveWindowByUniqueId(uniqueId: string): ImageWindow | null {
   try {
     for (const window of ImageWindow.windows as ImageWindow[]) {
-      if (!window || window.isNull || window.isClosed || window === keep) continue;
-      if (!before.has(window.mainView.uniqueId)) window.forceClose();
+      if (isUsableWindow(window) && window.mainView.uniqueId === uniqueId) return window;
     }
+    return null;
   } catch (error: any) {
-    Console.warningln(`Could not release extractor output: ${error.message || error}`);
+    return null;
+  }
+}
+
+/** Verifies that a native ImageWindow wrapper still resolves to a live image. */
+function isUsableWindow(window: ImageWindow | null): window is ImageWindow {
+  try {
+    return !!window && !window.isNull && !window.isClosed && !window.mainView.isNull && !!window.mainView.image;
+  } catch (error: any) {
+    return false;
   }
 }
 
@@ -453,11 +462,27 @@ function applyBlurXTerminator(view: View): boolean {
 /** Computes and permanently applies a linked automatic display function. */
 function applyAutoStretch(view: View): void {
   try {
-    const displayFunction = view.image.computeAutoStretch(undefined, undefined, -2.8, 0.25, true);
+    const image = view.image;
+    const channelCount = Math.max(1, image.numberOfNominalChannels);
+    const centers = new Vector(channelCount);
+    const sigmas = new Vector(channelCount);
+
+    // PJSR requires explicit Vector/TypedArray objects for center and sigma;
+    // optional TypeScript arguments cannot be passed as JavaScript undefined.
+    // Compute robust per-channel estimators over the complete image.
+    for (let channel = 0; channel < channelCount; channel++) {
+      const center = image.median(image.bounds, channel, channel);
+      const mad = image.MAD(center, image.bounds, channel, channel);
+      centers[channel] = isFinite(center) ? center : 0;
+      // 1.4826 converts MAD to a Gaussian-compatible robust sigma estimate.
+      sigmas[channel] = isFinite(mad) && mad > 0 ? 1.4826 * mad : 1.0e-6;
+    }
+
+    const displayFunction = image.computeAutoStretch(centers, sigmas, -2.8, 0.25, true);
     if (!displayFunction || displayFunction.length === 0) throw new Error("Auto-stretch calculation returned no data.");
     view.beginProcess(UndoFlag.PixelData);
     try {
-      view.image.applyDisplayFunction(displayFunction);
+      image.applyDisplayFunction(displayFunction);
       view.endProcess();
     } catch (error: any) {
       view.cancelProcess();
@@ -497,7 +522,6 @@ function extractStars(target: ImageWindow, backup: ImageWindow): StarExtractionR
       }
 
       if (!executeProcess(process, target.mainView)) {
-        closeCreatedWindows(before);
         continue;
       }
       let starlessWindow = target;
@@ -509,16 +533,21 @@ function extractStars(target: ImageWindow, backup: ImageWindow): StarExtractionR
         starWindow = null;
       }
       if (imageSignature(starlessWindow) === signatureBefore) {
-        closeCreatedWindows(before);
+        Console.warningln(`[Processing Workspace] ${candidate.label} did not change the target image.`);
         continue;
       }
       if (!starWindow) starWindow = deriveStarImage(backup, starlessWindow);
-      if (starWindow && !starWindow.isNull && !starWindow.isClosed) {
+      if (isUsableWindow(starWindow)) {
+        const starUniqueId = starWindow.mainView.uniqueId;
+        Console.writeln(`[Processing Workspace] Retaining star image '${starWindow.mainView.id}' (${starUniqueId}).`);
         if (starlessWindow !== target) restoreImage(target, starlessWindow);
-        closeCreatedWindows(before, starWindow);
-        return { processLabel: candidate.label, starWindow, starlessWindow: target };
+        const liveStarWindow = resolveWindowByUniqueId(starUniqueId);
+        if (!liveStarWindow) {
+          Console.warningln(`[Processing Workspace] Generated star image '${starUniqueId}' became unavailable.`);
+          continue;
+        }
+        return { processLabel: candidate.label, starWindow: liveStarWindow, starlessWindow: target };
       }
-      closeCreatedWindows(before);
     }
     restoreImage(target, backup);
     return null;
@@ -588,6 +617,7 @@ function enhanceStars(view: View): void {
 function recombineStars(starless: ImageWindow, stars: ImageWindow): void {
   try {
     const pixelMath = new PixelMath();
+    if (!isUsableWindow(stars)) throw new Error("The retained star image is no longer available.");
     pixelMath.expression = `$T + ${stars.mainView.id}`;
     pixelMath.useSingleExpression = true;
     pixelMath.createNewImage = false;
@@ -773,6 +803,10 @@ class WebViewProcessingDialog extends Dialog {
         throw new Error("No available star-extraction process produced a valid starless image.");
       }
       stars = extraction.starWindow;
+      if (!isUsableWindow(stars)) {
+        throw new Error("Star extraction reported success but its output window is unavailable.");
+      }
+      Console.writeln(`[Processing Workspace] Confirmed live star image '${stars.mainView.id}'.`);
       this.report("stars", "completed", `${extraction.processLabel} created starless and star images`, 55);
 
       activeStep = "denoise";
@@ -791,12 +825,14 @@ class WebViewProcessingDialog extends Dialog {
       activeStep = "starColor";
       activeProgress = 84;
       this.report("starColor", "running", "Enhancing star chroma…", 84);
+      if (!isUsableWindow(stars)) throw new Error("The star image was closed before color enhancement.");
       enhanceStars(stars.mainView);
       this.report("starColor", "completed", stars.mainView.image.isColor ? "Star color enhanced" : "Grayscale stars required no color boost", 89);
 
       activeStep = "recombine";
       activeProgress = 93;
       this.report("recombine", "running", "Recombining stars with PixelMath…", 93);
+      if (!isUsableWindow(stars)) throw new Error("The star image was closed before PixelMath recombination.");
       recombineStars(target, stars);
       stars = null;
       if (backup && !backup.isClosed) backup.forceClose();
@@ -808,8 +844,16 @@ class WebViewProcessingDialog extends Dialog {
     } catch (error: any) {
       this.report(activeStep, "failed", error.message || String(error), activeProgress);
       // Preserve useful star/backup intermediates on failure for diagnosis.
-      if (stars && !stars.isClosed) stars.show();
-      if (backup && !backup.isClosed) backup.show();
+      if (isUsableWindow(stars)) {
+        try { stars.show(); } catch (showError: any) {
+          Console.warningln(`[Processing Workspace] Could not show star image: ${showError.message || showError}`);
+        }
+      }
+      if (isUsableWindow(backup)) {
+        try { backup.show(); } catch (showError: any) {
+          Console.warningln(`[Processing Workspace] Could not show backup image: ${showError.message || showError}`);
+        }
+      }
       throw error;
     } finally {
       this.processing = false;
